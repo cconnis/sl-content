@@ -1,0 +1,39 @@
+= Welcome to Sendlane
+:toc: macro
+:toclevels: 2
+:sectnums:
+
+== Introduction
+
+Welcome to the documentation site for my project. This site is designed to help you get started, find detailed information, and get the most out of the software.
+
+== Getting Started
+
+If you're new to the project, start here:
+
+- Link to installation guide.
+- Overview of the project.
+- First steps.
+
+== Features
+
+Here are some key features of this project:
+
+- **Feature 1**: Description of feature 1.
+- **Feature 2**: Description of feature 2.
+- **Feature 3**: Description of feature 3.
+
+== Documentation Sections
+
+Explore the different sections of the documentation:
+
+- <<modules/ROOT/pages/installation.adoc,Installation>>
+- <<modules/ROOT/pages/user-guide.adoc,User Guide>>
+- <<modules/ROOT/pages/api-reference.adoc,API Reference>>
+
+== Community and Support
+
+Have questions? Need help? Join the community or reach out to support:
+
+- Link to community forums.
+- Link to support contact information.
