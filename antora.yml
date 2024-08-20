@@ -1,7 +1,7 @@
 name: content
 title: Content
 version: 1
-start_page: homepage.adoc
+start_page: modules/ROOT/homepage.adoc
 asciidoc:
   attributes:
     source-language: asciidoc@
