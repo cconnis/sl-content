@@ -1,73 +1,20 @@
-= Inline Text Formatting
+= Sendlane partner integration development
 :example-caption!:
+:toc:
 
-You can add the following inline styles to your content:
+== References
+* https://sendlane.stoplight.io/docs/api-documentation/ZG9jOjE1NDIyMzg-overview[Sendlane API v2 Documentation]
+* https://help.sendlane.com/article/451-custom-integration-setup[Introduction to the Sendlane custom integration]
+* https://help.sendlane.com/article/521-how-to-create-a-custom-api-call[Introduction to custom events]
 
-* Bold
-* Italic
-* Monospace
-* Highlight
-
-== Bold and italic
-
-You can bold and italic entire phrases, a word, and characters in a word.
-
-.Bold and italic inline formatting
-----
-*bold phrase* & **char**acter**s**
-
-_italic phrase_ & __char__acter__s__
-
-*_bold italic phrase_* & **__char__**acter**__s__**
-----
-
-.Result
+[IMPORTANT]
+.You need two separate tokens to set up a custom integration:
 ====
-*bold phrase* & **char**acter**s**
-
-_italic phrase_ & __char__acter__s__
-
-*_bold italic phrase_* & **__char__**acter**__s__**
+. A bearer token (manually generated in your account settings) for access to Sendlane's v2 API
+. A custom integration token (automatically generated when creating a new custom integration) that is required as a parameter for all interactions with:
+* The Sendlane v2 API
+* Custom integration calls
+* Onsite behavior
 ====
 
-== Monospace
-
-You can monospace entire phrases, a word, and characters in a word.
-
-.Monospace inline formatting
-----
-`monospace phrase` & ``char``acter``s``
-
-`*monospace bold phrase*` & ``**char**``acter``**s**``
-
-`_monospace italic phrase_` & ``__char__``acter``__s__``
-
-`*_monospace bold italic phrase_*` &
-``**__char__**``acter``**__s__**``
-----
-
-.Result
-====
-`monospace phrase` & ``char``acter``s``
-
-`*monospace bold phrase*` & ``**char**``acter``**s**``
-
-`_monospace italic phrase_` & ``__char__``acter``__s__``
-
-`*_monospace bold italic phrase_*` &
-``**__char__**``acter``**__s__**``
-====
-
-== Highlight
-
-You can highlight entire phrases, a word, and characters in a word.
-
-.Highlight inline formatting
-----
-Let's #highlight this phrase# and part of th##is##.
-----
-
-.Result
-====
-Let's #highlight this phrase# and part of th##is##.
-====
+== Authorization
