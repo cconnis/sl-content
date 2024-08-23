@@ -7,6 +7,7 @@
 * https://help.sendlane.com/article/451-custom-integration-setup[Introduction to the Sendlane custom integration]
 * https://help.sendlane.com/article/521-how-to-create-a-custom-api-call[Introduction to custom events]
 
+== Authorization
 [IMPORTANT]
 .You need two separate tokens to set up a custom integration:
 ====
@@ -17,4 +18,7 @@
 * Onsite behavior
 ====
 
-== Authorization
+=== Generate and store a bearer token
+Bearer tokens blah blah blah expire after a year etc
+
+include::content:shared:partial$apiv2/bearer.adoc[]
