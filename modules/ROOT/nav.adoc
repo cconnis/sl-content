@@ -1,1 +1,1 @@
-* xref:getting-started-custom-integration.adoc[]
+* xref:custom-integration:start.adoc[Getting Started with Custom Integration]

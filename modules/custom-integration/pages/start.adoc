@@ -1,6 +1,4 @@
 = Sendlane partner integration development
-:example-caption!:
-:toc:
 
 == References
 * https://sendlane.stoplight.io/docs/api-documentation/ZG9jOjE1NDIyMzg-overview[Sendlane API v2 Documentation]

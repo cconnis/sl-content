@@ -1,7 +1,7 @@
 name: content
 title: Content
 version: 1
-start_page: ROOT:homepage.adoc
+start_page: custom-integration:start.adoc
 asciidoc:
   attributes:
     source-language: asciidoc@
