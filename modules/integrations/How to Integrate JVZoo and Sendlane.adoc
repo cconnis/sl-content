@@ -1,0 +1,92 @@
+https://www.jvzoo.com/[JVZoo] is an affiliate marketplace that helps
+facilitate and automate sales, marketing and delivery for digital
+vendors in over 200 niches.
+
+By integrating JVZoo with Sendlane, product purchasers can be funneled
+directly to your desired list in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+https://www.jvzoo.com/[active account with JVZoo].
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so JVZoo knows where to place your new
+leads and contacts!
+
+'''''
+
+=== Connecting JVZoo and Sendlane
+
+. https://www.jvzoo.com/[Login] to your JVZoo Account
+. In the top menu bar, click the *_My Account_* drop down menu, then
+click *_Integrations_* at the
+bottomimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d49fa482c7d3a330e3c2f94/file-lc9AKHZCg3.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d49fa482c7d3a330e3c2f94/file-lc9AKHZCg3]
+. Click *_Manage Your Sendlane Account_*
+. Enter your API Key, Hash key and subdomain
+. Click *_Save Sendlane Account_*
+
+Your Integration is now complete!
+
+'''''
+
+=== Next Steps
+
+Now that your Sendlane account is linked up, you’ll need to
+https://jvzoo.zendesk.com/hc/en-us/articles/221696167-Setting-up-your-product[set
+up your product] within JVZoo. 
+
+As you finalize your product, make sure to choose Sendlane under the
+https://jvzoo.zendesk.com/hc/en-us/articles/115000177194-Autoresponder-integration-options-for-Affiliates[Autoresponder
+integration]__ __section! That's where you'll select the Sendlane list
+you would like new contacts to be added to.  
+
+Once you do so, all contact information collected after a purchase will
+be automatically funneled directly to your chosen list in Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to JVZoo, so we're only able to provide
+limited troubleshooting support. However, if you  _do_ need help, the
+JVZoo team is just a few clicks away!
+
+* Visit
+https://jvzoo.zendesk.com/hc/en-us/articles/115002631333-How-to-set-up-Sendlane[JVZoo's
+documentation on Sendlane]
+* Connect with https://jvzoo.zendesk.com/hc/en-us/requests/new[JVZoo's
+support team]
+
+'''''
+
+==== Additional JVZoo Resources
+
+https://www.jvzoo.com/auth/register[Sign up for JVZoo] |
+https://www.jvzoo.com/support[Knowledge Base]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/is-sendlane-affiliate-marketing-friendly[Is
+Sendlane Affiliate Marketing Friendly?]
+* https://www.sendlane.com/blog-posts/6-email-templates-you-need-to-create-the-perfect-product-launch-campaign[6
+Email Templates You Need to Create the Perfect Product Launch Campaign]
+* https://www.sendlane.com/blog-posts/engaging-onboarding-emails[5 Tips
+For Creating Engaging Onboarding Emails ]
+* https://www.sendlane.com/blog-posts/5-post-purchase-emails-you-should-be-sending-to-increase-your-customer-ltv[5
+Post Purchase Emails You Should Be Sending to Increase Your Customer
+LTV]
+
+'''''
+
+=== TL;DR
+
+Login → Account → API → API & Hash + Subdomain

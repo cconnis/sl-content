@@ -1,0 +1,241 @@
+[[top]]
+==== Overview
+
+Some review providers' exports require manual formatting before being
+imported into Sendlane, and imports sometimes fail due to errors in the
+review data. Read on to learn how to fix reviews related errors.
+
+==== In this guide
+
+* link:#before[View errors that occur before import]
+* link:#after[View errors that occur after import]
+* link:#product-id-not-found[Fix a "The product doesn't exist in our
+database" error]
+* link:#pending[Fix import status stuck at Pending]
+* link:#button-gray[Why is the import reviews button grayed out?]
+* link:#video[How do I import videos attached to my reviews?]
+* link:#imported-not-showing-up[I imported my reviews&#44; but they're
+not showing up!]
+* link:#reviews-submitted-not-appearing[Reviews have been submitted via
+the widget on my website&#44; but I don't see them in the Moderation
+tab!]
+
+'''''
+
+[[before]]
+=== View errors that occur before import
+
+You may see errors after uploading your import file but before your
+import is processed due to issues with your .CSV file.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e90964b4dc640d457db32a/file-Fasqi6JqDy.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e90964b4dc640d457db32a/file-Fasqi6JqDy]If
+you receive an error message that says
+`+The file has missing or invalid fields.+` after attempting to import a
+file of reviews:
+
+. Try importing again and ensure you select the correct provider from
+the Product Review Source dropdown. This field determines how the import
+tool interprets your file. Selecting the wrong Product Review Source
+directs the import tool to the wrong interpretation template, and your
+file will not
+import.image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e90aae859b696e0f433dc6/file-k9lvJHW5Db.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e90aae859b696e0f433dc6/file-k9lvJHW5Db]
+. If you have selected the correct Product Review Source, make sure that
+your file is formatted according to the requirements listed in the
+corresponding article below:
+* https://help.sendlane.com/article/656-how-to-import-reviews-from-okendo[How
+to import reviews from Okendo]
+* https://help.sendlane.com/article/643-how-to-import-shopify-product-reviews[How
+to import Shopify Product Reviews]
+* https://help.sendlane.com/article/644-how-to-import-bigcommerce-reviews[How
+to import BigCommerce reviews]
+* https://help.sendlane.com/article/646-how-to-import-loox-reviews[How
+to import Loox reviews]
+* https://help.sendlane.com/article/645-how-to-import-judge-me-reviews[How
+to import Judge.me reviews]
+* https://help.sendlane.com/article/657-how-to-import-reviews-from-stamped-io[How
+to import reviews from Stamped.io]
+* https://help.sendlane.com/article/658-another-provider[How to import
+reviews from another provider]
+
+link:#top[Back to top]
+
+'''''
+
+[[after]]
+=== View errors that occur after import
+
+When a review file import has been successfully imported, you'll see it
+listed in the History section of the Import & Export tab of the Reviews
+page.
+
+If any reviews could not be imported, you'll see
+`+Failed to be imported:+` with the number of reviews not imported in
+the Results column. Click the download button in the Actions column to
+download a file of reviews that could not be imported.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e90c5e2411c5087b68415d/file-LRQ6LPgQg0.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e90c5e2411c5087b68415d/file-LRQ6LPgQg0]Each
+row represents a review that could not be imported. Open the file to
+review each row's error descriptions in the furthest right column, and
+note that one review can have more than one error description.
+
+link:#top[Back to top]
+
+'''''
+
+[[product-id-not-found]]
+=== Fix a "The product doesn't exist in our database" error
+
+`+The product doesn’t exist in our database.+` is usually caused
+by incorrect number formatting in the product ID column of your file
+or a deleted product in your store. First, check your file for incorrect
+number formatting if you receive this error. If you receive the error
+again, check for deleted products in your store.
+
+==== Check for incorrect number formatting
+
+When .CSV files are opened with Excel or Google Sheets, sometimes you'll
+be prompted to apply
+https://support.microsoft.com/en-us/office/display-numbers-in-scientific-exponential-notation-f85a96c0-18a1-4249-81c3-e934cd2aae25[scientific
+formatting] to cells with long strings of numbers. Scientific formatting
+attempts to shorten a long number or add decimal places for easier data
+analysis, and unfortunately, this process renders the product ID
+unreadable by Sendlane's import tool. We've seen the product ID column
+converted to scientific formatting even when selecting No on the prompt
+asking to convert the column. Your product ID column may have scientific
+formatting applied if you see product IDs like `+18427E+12+` or
+`+7792310000000.00+`.
+
+There are two possible solutions:
+
+. Make the following changes to your file, then save it as a .CSV and
+upload to Sendlane:
+.. Change the column's formatting to Number by following
+https://support.microsoft.com/en-us/office/available-number-formats-in-excel-0afe8f52-97db-41f1-b972-4b46e9f1e8d2[Microsoft's
+instructions for Excel], or
+https://support.google.com/docs/answer/56470?hl=en&co=GENIE.Platform%3DDesktop[Google's
+instructions for Google Sheets]. Make sure the new number format does
+not include commas.
+.. Your file may still alter your product IDs by adding a decimal point
+and two zeroes. Remove the decimal points
+(https://support.microsoft.com/en-us/office/round-a-number-to-the-decimal-places-i-want-49b936f9-6904-425d-aa98-02ffb7f9a17b#:~:text=By%20using%20a%20button,digits%20after%20the%20decimal%20point.[Excel],
+https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/660701a16b58437311e412bd/2024-03-29_10-59-20.png[Google
+Sheets]) before saving your file.
+. Retrieve the original .CSV export you received from your previous
+reviews provider, do not open or alter it in any way, and import this
+original file into Sendlane. By not opening the .CSV, you ensure that
+your spreadsheet software can't inadvertently apply scientific
+formatting to your product ID column and didn't inadvertently save the
+file as an Excel (.XLSX) type file.
+
+If you import your original .CSV file and receive the 
+`+The product doesn’t exist in our database.+` error, follow the
+instructions below to check for deleted products in your store.
+
+==== Check for deleted products or site reviews
+
+When products are deleted, they are no longer accessible to Sendlane.
+Sendlane Reviews also does not natively support site reviews, which are
+reviews for your entire store rather that a specific product.
+
+To keep site reviews and reviews for deleted products, you can use your
+eCommerce store's archived product function to create an archived
+product for Sendlane to associate the review with.
+
+Shopify users can follow the steps and video shown below. If you use
+another eCommerce solution, use the help center to find instructions on
+archiving a product and finding the product's ID.
+
+. Click *Products*
+. Click *Add Product*
+. Enter a title for the product (for deleted products we suggest
+"Archived Product" and for site reviews we suggest "Site Review")
+. Click *Save*
+. Scroll to the very bottom of the page
+. Click *Archive Product*
+. Copy the product ID from the end of the product page's URL
+. Replace the existing product ID for any rows in your file containing
+a `+The product doesn’t exist in our database.+` error with the ID you
+copied from your archived product
+. Import your file again
+
+image:https://fast.wistia.com/embed/medias/xo9wteaq22/swatch[https://fast.wistia.com/embed/medias/xo9wteaq22/swatch]
+
+link:#top[Back to top]
+
+'''''
+
+[[pending]]
+=== Fix import status stuck at Pending
+
+If your import status is set to Pending for longer than one hour, you
+may have invalid characters in your review file. The following instances
+are known to cause errors when importing and must be removed from the
+file before importing again:
+
+* The last character in a review is a forward slash `+\+`. Press CMD
+(macOS) or CTRL (Windows) + F and enter `+\+` to find all instances of
+the character. Remove all instances of the character and upload your
+file
+again.image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65ea1de0a7c9e24f3b1c0640/file-8JWXMMvzz8.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65ea1de0a7c9e24f3b1c0640/file-8JWXMMvzz8]
+* The file size is ≥ 10 MB. If your file is significantly larger than 10
+MB, try breaking it up into smaller files
+
+link:#top[Back to top]
+
+'''''
+
+[[button-gray]]
+=== Why is the import reviews button grayed out?
+
+The import button is grayed out when there is no assigned List for
+Reviews in your eCommerce integration. To assign a List for Reviews:
+
+. Navigate to the https://app.sendlane.com/integrations[integrations
+page]
+. Click your *eCommerce integration*
+. Click the *settings* icon
+. Select a List from the *reviews dropdown*
+. Click *Continue*
+
+link:#top[Back to top]
+
+'''''
+
+[[video]]
+=== How do I import videos attached to my reviews?
+
+At this time, Sendlane Reviews supports photos only.
+
+link:#top[Back to top]
+
+'''''
+
+[[imported-not-showing-up]]
+=== I imported my reviews, but they're not showing up!
+
+Ensure that your eCommerce integration has a List selected in its
+settings for Sendlane Reviews:
+
+[cols="^,^",]
+|===
+|*Shopify* |*BigCommerce*
+
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65b83af0120ae85aab8b71d3/file-YmC01HuvdI.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65b83af0120ae85aab8b71d3/file-YmC01HuvdI]
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65b83b9a7bcbce3e1307ccb7/file-GuJGp8HKPv.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65b83b9a7bcbce3e1307ccb7/file-GuJGp8HKPv]
+|===
+
+link:#top[Back to top]
+
+'''''
+
+[[reviews-submitted-not-appearing]]
+=== Reviews have been submitted via the widget on my website, but I don't see them in the Moderation tab!
+
+This issue is generally due to the wrong store being connected to
+Sendlane Reviews. Sendlane Reviews only supports one store per Sendlane
+account. Ensure that your Sendlane Reviews script and widgets are only
+installed in one store.
+
+link:#top[Back to top]
+
+'''''

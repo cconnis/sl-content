@@ -1,0 +1,241 @@
+Set up back in stock notifications for your BigCommerce store to send
+Contacts emails when your products are back in stock! It's as easy as
+creating two Automations and adding a script to your BigCommerce store.
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+ Set up your
+https://help.sendlane.com/article/454-integrate-bigcommerce-and-sendlane[BigCommerce
+integration]
+
+1::
+  This Automation will send an email to Contacts confirming their
+  subscription to back in stock notifications. Create an Automation
+  using the  *Subscribed to Back in Stock trigger*. Add an
+  https://help.sendlane.com/article/449-automation-actions#send-message[email
+  node] with a message that confirms Contacts' subscription to
+  notifications.
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63d41e9126cb8547dcb0ddbd/file-mBHtfzl1gY.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63d41e9126cb8547dcb0ddbd/file-mBHtfzl1gY]
+
+2::
+  This Automation will send an email to Contacts when the product they
+  are interested in is back in stock!
+  +
+  Create an Automation and select the  *Product Back in Stock
+  trigger* from the BigCommerce tab. In the *Units* field, enter the
+  number of units that should be in stock before the Automation sends
+  out back in stock notifications.
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63d41ef51f7c4c45e9fbb5d7/file-jzefpycj8L.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63d41ef51f7c4c45e9fbb5d7/file-jzefpycj8L]
+  +
+  Add an
+  https://help.sendlane.com/article/449-automation-actions#send-message[email
+  node] with a message that informs Contacts that the product they want
+  is back in stock! Use the In Stock block to display the product's
+  photo, price, reviews (if Sendlane Reviews is installed), and a link
+  to
+  purchase:image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d630ee4efad40db94fa61a/file-Ku20LPDjjE.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d630ee4efad40db94fa61a/file-Ku20LPDjjE]
+  +
+   +
+  Add a
+  https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation#goal[Goal
+  node] that checks for purchases, and your finished Automation should
+  look something like this:
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63d01e1c7eb7a63c30e3f2a8/file-XM4bVEziDM.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63d01e1c7eb7a63c30e3f2a8/file-XM4bVEziDM.png]
+
+3::
+  The script below will automatically pull your BigCommerce store’s
+  styling. Check out the link:#style[Style Options section] below for a
+  script that provides more granular control!
+  +
+....
+<script src="https://sendlane.com/scripts/sendlane-backinstock-widget.lib.js"></script>
+<script>
+SendlaneBackInStock.configure({
+    account: {
+        token: "PUBLIC_TOKEN",
+        platform: "bigcommerce",
+    },
+    settings: {
+        cta_button: {
+            text: "Notify me when available",
+        },
+        modal: {
+            headline: "Get notified when this product is back in stock.",
+            email_field_label: "Email",
+            button_label: "Notify me when available",
+            success_message: "We will notify you when it becomes available",
+            disable_phone_field: true,
+        }
+    }
+})
+</script>
+    
+....
+  +
+  Before logging into BigCommerce and adding the script, you must add
+  your BigCommerce integration token to the script. 
+  +
+  To copy your BigCommerce integration token:
+  +
+  . Click the gear icon
+  . Click the copy icon next to the integration token
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64da578c32dda435eb6d40d9/file-NDNw8jG4FB.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64da578c32dda435eb6d40d9/file-NDNw8jG4FB]
+  +
+  Copy the script to a text editor, then replace the `+PUBLIC_TOKEN+`
+  with the token in your
+  https://app.sendlane.com/integrations/bigcommerce[BigCommerce
+  integration's settings].
+  +
+  Add the script to your BigCommerce store: +
+  +
+  . Click *Storefront* 
+  . Click *Script Manager* 
+  . Click *Create a Script*
+  . Enter a descriptive `+name+`
+  . Optional: add a description
+  . Set `+Location on page+` set to `+Footer+`
+  . Set `+Select pages where script will be added+` to `+Store pages+`
+  . Set `+Script Category+` to `+Essential+`
+  . Change the `+Script Type+` to Script
+  . Paste the above script in the *Script contents* field
+  . Click *Save*
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63d41c7d4bd6801a6e91bd05/file-prySqPfDfr.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63d41c7d4bd6801a6e91bd05/file-prySqPfDfr]
+  +
+  Your script is now live!
+
+4::
+  Now that your script is successfully installed, all that's left to do
+  is activate your Automations!
+  +
+  To activate an Automation, go to the 
+  https://app.sendlane.com/automations[Automations page] and click
+  the *Play icon* next to the Automation you want to activate:
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63cf2df626cb8547dcb0d6f8/file-Gd0kLGQlWO.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63cf2df626cb8547dcb0d6f8/file-Gd0kLGQlWO.gif]
+
+'''''
+
+[[style]]
+=== *Style Options*
+
+The following script provides more granular control over the appearance
+and settings for the back in stock notification form and button
+appearing on product pages when a product is out of stock. This script
+can be used in place of the simplified script in step 3.
+
+Before logging into BigCommerce, you'll need to add your BigCommerce
+integration token to the script. Copy the script to a text editor, then
+replace the  `+PUBLIC_TOKEN+` with the token in your
+https://app.sendlane.com/integrations/bigcommerce[BigCommerce
+integration's settings]
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63d41bda7eb7a63c30e3f7c0/file-FI9ALNiXfy.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63d41bda7eb7a63c30e3f7c0/file-FI9ALNiXfy]
+
+....
+<script src="https://sendlane.com/scripts/sendlane-backinstock-widget.lib.js"></script>
+<script>
+SendlaneBackInStock.configure({
+    account: {
+        token: "PUBLIC_TOKEN",
+        platform: "bigcommerce",
+    },
+    settings: {
+        cta_button: {
+            text: "Notify me when available",
+            background_color: "black",
+            text_color: "white",
+            margin: "0.5rem 0",
+            padding: "10px",
+            width: "100%",
+            product_page_button_class: "btn",
+        font_family: "Arial"
+        },
+        modal: {
+            headline: "Get notified when this product is back in stock.",
+            email_field_label: "Email",
+            button_label: "Notify me when available",
+            success_message: "We will notify you when it becomes available",
+            drop_background_color: "rgba(0,0,0,0.4)",
+            background_color: "#fff",
+            text_color: "#222",
+        font_family: "Arial",
+        disable_phone_field: true,
+            button_text_color: "#ffffff",
+            button_background_color: "#006fbb",
+            close_button_color: "#ccc",
+            error_background_color: "#fcd6d7",
+            error_text_color: "#c72e2f",
+            success_background_color: "#d3efcd",
+            success_text_color: "#1B9500"
+        }
+    }
+})
+</script>
+....
+
+[[button]]
+==== *Button Settings*
+
+* `+settings.trigger.text+` - Text displayed on button when an item goes
+out of stock.
+* `+settings.trigger.background_color+` - Button background color
+* `+settings.trigger.text_color+` - The text color of the button
+* `+settings.trigger.margin+` - Margin around the button (defaults to
+'0.5rem 0' or 8px)
+* `+settings.trigger.padding+` - Padding around the button
+* `+settings.trigger.width+` - Override of the button width (defaults to
+100%)
+* `+settings.trigger.product_page_use_button_classes+` - Enabling this
+feature will attempt to use existing buttons' width in the product form
+element on the product page. While enabled, the
+settings.trigger.product_page_button_class will be ignored.
+* `+settings.trigger.product_page_form_element_selector+` - Enabling
+this feature overrides the widget's location for the back in stock
+notification button on the page (defaults to .product-form)
+
+[[form]]
+==== *Subscription Form Settings*
+
+* `+settings.modal.headline+` - Headline that appears at the top of the
+form; (defaults to product name)
+* `+settings.modal.email_field_label+` - Email field label (defaults to
+'Email')
+* `+settings.modal.button_label+` - Text within the submit button
+(defaults to 'Notify me when available')
+* `+settings.modal.success_message+` - Message that appears when form is
+submitted (defaults to '"You're in! We'll let you know when it's back"')
+* `+settings.modal.drop_background_color+` - Drop background color that
+appears when the form is open (defaults to 'rgba(0,0,0,0.4)')
+* `+settings.modal.background_color+` - Background color of the form
+(defaults to white)
+* `+settings.modal.text_color+` - Text color of the popup form (defaults
+to black)
+* `+settings.modal.button_text_color+` - Text color of the button on the
+popup form (defaults to white)
+* `+settings.modal.button_background_color+` - Background color of the
+button on the popup form (defaults to black)
+* `+settings.modal.close_button_color+` - Color of the "X" button that
+closes the form (defaults to #ccc)
+* `+settings.modal.error_background_color+` - Background color of the
+form's error notification (defaults to pale red)
+* `+settings.modal.error_text_color+` - Text color of the form's error
+notification (defaults to red)
+* `+settings.modal.success_background_color+` - Background color of the
+form's success notification (defaults to pale green)
+* `+settings.modal.success_text_color+` - Text color of the form's error
+notification (defaults to green)
+
+=== Additional Resources
+
+* https://www.sendlane.com/blog/introducing-sendlanes-back-in-stock-notifications[Introducing
+Sendlane’s Back-in-Stock Notifications]
+* Learn the ins and outs of marketing automation from experts at
+https://www.ecommerceacademy.com/[eCommerce Academy]
+* https://www.sendlane.com/blog/how-to-improve-ecommerce-emails[6 Ways
+to Improve Your eCommerce Email]

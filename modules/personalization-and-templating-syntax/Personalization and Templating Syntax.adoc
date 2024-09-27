@@ -1,0 +1,463 @@
+[[top]]
+==== Overview
+
+Personalization Tags are codes that pull information stored in Contact
+profiles into email and SMS messages, allowing you to personalize your
+content to each individual Contact. Templating syntax allows you to pull
+dynamic order and product related data into emails and SMS messages.
+Read on to learn how to incorporate personalization tags and templating
+syntax into your marketing!
+
+==== In This Guide
+
+* link:#personalization[Standard Personalization]
+* link:#campaigns[Insert Personalization in Email Subject Lines]
+* link:#email[Insert Personalization in Email Content]
+* link:#sms[Insert Personalization in SMS Messages]
+* link:#advanced[Create a Default Value for Personalization]
+* link:#templating[Advanced Templating Triggers and Filters]
+* link:#var[VAR Personalization Tags]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+If you plan to use Custom Fields to personalize email or SMS content,
+create them in Sendlane and collect data from Contacts
+
+'''''
+
+[[personalization]]
+=== Standard personalization and tags
+
+[width="100%",cols="25%,25%,25%,25%",]
+|===
+|*Personalization Name* |*Personalization Tag* |*Display Example*
+|*Notes*
+
+|First Name |`+{{ contact.first_name }}+` + |John |
+
+|Last Name |`+{{ contact.last_name}}+` |Doe |
+
+|Full Name |`+{{ contact.full_name }}+` |John Doe |
+
+|Email |`+{{ contact.email }}+` |johndoe@sendlane.com |
+
+|Phone |`+{{ contact.phone }}+` |+1123467895 + |
+
+|Unsubscribe |`+{{ subscription.preferences_link }}+` or
+`+{{ subscription.unsubscribe_link }}+` | |Both tags point to the
+https://help.sendlane.com/article/404-how-to-customize-your-unsubscribe-and-email-preferences-pages[subscription
+preferences page]
+
+|Custom Field |`+{{ contact.custom('FIELD_ID') }}+` +
+or +
+`+{{ contact.custom('FIELD_NAME') }}+` |Custom data |Replace
+`+FIELD_ID+` with the
+https://help.sendlane.com/article/551-how-to-find-identifiers#custom-field[custom
+field's ID] or replace `+FIELD_NAME+` with the custom field's name
+
+| + | | |
+|===
+
+link:#top[Back to top]
+
+'''''
+
+[[campaigns]]
+=== Insert Personalization in Email Subject Lines
+
+. Click into the subject line where you want the personalization to
+appear
+. Click the *tag icon*
+. Select a *personalization tag*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645d334c213fbb442001df72/file-Wx6aOdfYSl.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645d334c213fbb442001df72/file-Wx6aOdfYSl]
+
+link:#top[Back to top]
+
+'''''
+
+[[email]]
+=== Insert Personalization in Email Content
+
+. Click into the email wherever you want personalization to appear
+. Click the *three dot* menu
+. Click the *personalization* icon
+. Click the *Select Personalization* dropdown
+. Select a *personalization*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645d4e8c01ee45572cca87aa/file-8IWVGFyAF6.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645d4e8c01ee45572cca87aa/file-8IWVGFyAF6]
+
+If Contacts have data for the selected Custom Field, they'll see their
+data where the personalization tag was inserted. If Contacts do not have
+data for the inserted Custom Field, they will see a blank space unless
+you link:#advanced[create a default value for the field].
+
+[[personalization-styling]]
+===== 🙋 How do I change the font styling for an inserted personalization?
+
+When you select a Custom Field or templating syntax personalization from
+a dropdown, the syntax is inserted into the email as a snippet with
+protections that help avoid breaking the syntax.
+
+To change the styling of an inserted syntax snippet:
+
+. Use your cursor to select the snippet (you may need to select the
+space just before and after the snippet)
+. Paste the snippet somewhere else to remove the formatting by pressing
+`+CMD+`/ `+CTRL+` + `+Shift+` + `+V+`
+. Copy the snippet from where it was pasted in the previous step
+. Paste the snippet back into your email
+. Format the text as normal
+
+link:#top[Back to top]
+
+'''''
+
+[[sms]]
+=== Insert Personalization in SMS Messages
+
+. Click into the SMS message where you want personalization to appear
+. Click the *personalization icon*
+. Select a *personalization*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645e92df213fbb442001e105/file-0J0Qp9pcXr.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645e92df213fbb442001e105/file-0J0Qp9pcXr]
+
+[[sms-tag]]
+===== 🚨 Personalization in SMS must be highlighted pink
+
+Personalization selected from the personalization icon will be
+highlighted in pink when you insert it into your SMS.
+
+Highlighted pink personalization will pull data from Contact profiles
+and display it in the message Contacts receive. If personalization is
+not highlighted pink, it will not pull Contact data and will display as
+a broken personalization tag in the message Contacts receive.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645e969b1140db1f380b80f2/file-acoD5Fabh0.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645e969b1140db1f380b80f2/file-acoD5Fabh0]
+
+link:#top[Back to top]
+
+'''''
+
+[[advanced]]
+=== Create a Default Value for Personalization
+
+If Contacts do not have data for the selected personalization tag, they
+will see a blank space where it was inserted if a default value is not
+specified.
+
+To create a default value for a personalization tag:
+
+. Click the *Audience icon*
+. Click the *Personalization tab*
+. Click the Custom Field's *tag* to copy it
+. Paste the Custom Field where you want it to appear in your email or
+SMS
+. Add `+| default('')+` before the closing curly brackets
+. Enter the default value between the quotation marks
+
+In the first name example used above, the final personalization tag
+would look like  `+{{ contact.first_name | default('Friend') }}+`
+
+link:#top[Back to top]
+
+'''''
+
+[[templating]]
+=== Advanced Templating Triggers and Filters
+
+The following advanced templating syntax requires some knowledge of
+templating syntax and a willingness to experiment. Use the following
+resources to learn more about templating syntax:
+
+* https://twig.symfony.com/doc/3.x/[Twig Documentation]
+* https://stackoverflow.com/[StackOverflow] +
+** https://stackoverflow.com/help/how-to-ask[How do I ask a good
+question?]
+** https://stackoverflow.com/questions/tagged/twig?tab=Votes[Questions
+about Twig]
+
+The following syntax will display all available options for either order
+or checkout data in emails or SMS messages using the specified
+Automation triggers only:
+
+[width="100%",cols="34%,33%,33%",]
+|===
+|*Syntax* |*Shopify Automation Triggers* |*BigCommerce Automation
+Triggers*
+
+|`+{{ trigger.order | json_encode }}+` a|
+* Order Placed (Frequency)
+
+a|
+* Order Placed (Frequency)
+
+|`+{{ trigger.checkout | json_encode }}+` a|
+* Checkout Complete
+* Checkout Created
+* Customer Abandoned Checkout
+
+a|
+* Checkout Started
+
+|===
+
+To see all available options:
+
+. Create an Automation with at least one of the qualifying triggers
+noted in the table above
+. Add an email node to the Automation
+. Add a text block to the email
+. Paste the order or checkout syntax in the text box
+. Click Preview
+. Review available options (copy to a text file for easy reference)
+. Remove the syntax from the text block
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/646fc10367106052aab4ca49/file-USO2yo6thI.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/646fc10367106052aab4ca49/file-USO2yo6thI]
+
+[[ecom-data]]
+==== Shopify or BigCommerce Data Syntax
+
+The following syntax can be used in emails or SMS messages using the
+specified Automation triggers only:
+
+[width="100%",cols="25%,25%,25%,25%",]
+|===
+|*Syntax* |*Notes* |*Shopify Automation Triggers +
+* |*BigCommerce Automation Triggers* +
+
+|`+{{ trigger.order.value }}+` |Replace   `+value+` with any available
+items shown by the link:#encode[json_encode function] + a|
+* Order Placed
+
+a|
+* Order Placed
+
+|`+{{ trigger.product.value }}+` |Replace   `+value+` with any available
+items shown by the link:#encode[json_encode function] a|
+* Product Purchase
+* Product Variant Purchase
+* Product Viewed
+* Abandoned Product Viewed
+
+a|
+* Product Purchased
+* Product Variant Purchased
+* Product Viewed
+* Abandoned Product Viewed
+
+|`+{{ trigger.productvariant.value }}+` |Replace   `+value+` with any
+available items shown by the link:#encode[json_encode function] a|
+* Product Purchase
+* Product Variant Purchase
+* Product Viewed
+* Abandoned Product Viewed
+
+a|
+* Product Purchased
+* Product Variant Purchased
+* Product Viewed
+* Abandoned Product Viewed
+
+a|
+. `+{{ trigger.productname }}+`
+. `+{{ trigger.productprice }}+`
+. `+{{ trigger.productimageurl }}+`
+. `+{{ trigger.producturl }}+`
+
+a|
+Shows a product's: +
+
+. Name
+. Price
+. Image URL
+. URL
+
+a|
+* Product Purchase
+* Product Variant Purchase
+* Product Viewed
+* Abandoned Product Viewed
+* Order Fulfilled
+* Order Cancelled
+* Order Refunded
+* Order Placed (Frequency)
+
+a|
+* Product Purchased
+* Product Variant Purchased
+* Product Viewed
+* Abandoned Product Viewed
+* Order Fulfilled
+* Order Cancelled
+* Order Refunded
+* Order Placed (Frequency)
+
+|===
+
+[width="100%",cols="20%,20%,20%,20%,20%",]
+|===
+| | | | | +
+|===
+
+==== Filters
+
+Personalization tags can be modified by the filters below. In templating
+syntax filters are separated from personalization tags by a pipe symbol
+( `+|+`). Multiple filters can be used on the same personalization tag.
+When multiple filters are present, they cascade from left to right.
+
+[width="99%",cols="20%,16%,16%,16%,16%,16%",]
+|===
+|*Function* |*Tag* |*Display Example* |*Notes* |*Email* |*SMS*
+
+|Capitalize |`+{{'text'|capitalize}}+` +
+`+{{contact.first_name|capitalize}}+` |Text +
+Jimmy |Will capitalize the first letter in a string |✅ |✅
+
+|Date |`+{{"now"|date("m/d/y")}}+` |01/01/2023 |Inserts the date the
+message was sent in the specified format. Month, day, and year can be
+rearranged or removed. `+-+` can be used instead of `+/+` |✅ |✅
+
+|Date Modify |`+{{"now"|date_modify("+1 day")|date("m/d/Y")}}+`
+|01/01/2023 |The date_modify function allows you to add or subtract a
+specified number of days, months, or years to a date. |✅ |✅
+
+|First |`+first+` in a tag like `+{{trigger.getOrder().name|first}}+` |
+|Displays the first item in the specified list or array |✅ |🚫
+
+|Last + |`+last+` in a tag like `+{{trigger.getOrder().name|first}}+` |
+|Displays the last item in the specified list or array |✅ |🚫
+
+|Lower |`+lower+` in a tag like `+{{contact.first_name|lower}}+` |jimmy
+|Returns a string in all lowercase |✅ |✅
+
+|Upper |`+upper+` in a tag like `+{{contact.first_name|upper}}+` |JIMMY
+|Returns a string in all uppercase |✅ |✅
+
+|Title Case |`+title+` in a tag like `+{{'here is some text'|title}}+`
+|Here Is Some Text |Returns a string in title case |✅ |✅
+
+|Number Format |`+{{ |number_format(0, '.', ',') }} +` + | |Set the
+number of decimal places (0), decimal point(s) '.', and thousands
+separators ',' in any number |✅ |🚫
+
+|Random |`+{{ random(['value1','value2','value3']) }}+` |value2 |Returns
+a random value from the list |✅ |✅
+
+|Raw |`+raw+` in a tag like `+{{product.name|raw}}+` | |Returns the raw
+information for the specified value rather than adjusting special
+characters |✅ |🚫
+
+| | | | | |
+|===
+
+link:#top[Back to top]
+
+'''''
+
+[[var]]
+=== VAR Personalization Tags
+
+VAR personalization tags are still functional but no longer being
+updated. We recommend you use personalization tags whenever possible.
+
+[cols=",,",]
+|===
+|*Tag Name* |*Tag Code* |*Display Example*
+
+|Site name |`+VAR_SITE_NAME+` |Sendlane
+
+|Site URL |`+VAR_SITE_URL+`
+|https://www.sendlane.com/[https://www.sendlane.com]
+
+|Contact first name |`+VAR_FIRST_NAME+` |John
+
+|Contact last name |`+VAR_LAST_NAME+` |Doe
+
+|Contact full name |`+VAR_FULL_NAME+` |John Doe
+
+|Contact email |`+VAR_EMAIL+` |john@sendlane.com
+
+|Contact phone number |`+VAR_SUBSCRIBER_PHONE+` |888-927-2664
+
+|Contact mailing address  |`+VAR_MAILING_ADDRESS+` |Sendlane, 10620
+Treena Street Suite 250, San Diego, CA, US 92131
+
+|Contact country  |`+VAR_COUNTRY+` |United States
+
+|Contact state |`+VAR_STATE+` |California
+
+|Contact city |`+VAR_CITY+` |San Diego
+
+|Contact opt-in date |`+VAR_SUBSCRIBE_DATE+` |2020-05-01
+
+|Contact IP address |`+ VAR_SIGNUP_IP+` |172.16.174.1
+
+|Formatted date |`+VAR_FORMATTED_DATE+` |May 1, 2020
+
+|Date |`+ VAR_DATE+` |2020-05-01
+
+|Time |`+VAR_TIME+` |16:32:41
+
+|Year |`+VAR_YEAR+` |2020
+
+|Month |`+VAR_MONTH+` |May
+
+|Day |`+ VAR_DAY+` |Tuesday
+
+|Time sent |`+VAR_TIME_SENT+` |18:39:29
+
+|Date & time |`+VAR_DATE_TIME+` |2020-05-01 16:32:41
+
+|Day, date & time |`+VAR_DAY_DATE_TIME+` |Fri, May 1, 2020 4:32 PM
+
+|Day, date & time |`+VAR_DAY_DATE_TIME+` |Fri, May 1, 2020 4:32 PM
+
+|Campaign ID |`+VAR_CAMPAIGN_ID+` |1
+
+|Automation ID |`+VAR_AUTOMATION_ID+` |2
+|===
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+[[t1]]
+====== My Contact's Personalization Tag isn't populating with their data!
+
+You may not see populated personalization tags for two common reasons:
+
+. The Contact's Profile doesn't have data in the specified field.
+Contact Profiles without data in Personalization Tag fields will see a
+blank space where that Personalization Tag is inserted in any email they
+receive unless you set a link:#advanced[default value].
+. There is a typo in the personalization tag. Copy and paste
+personalization tags from the personalization tab of the audience page
+or this help doc to avoid typos.
+
+====== How can I see available syntax options in an SMS message?
+
+The link:#encode[json_encode function] can only be viewed with an email.
+If you are creating an SMS only Automation, add an email node to view
+available options, then delete the email node when you are finished
+building your Automation.
+
+'''''
+
+[[addl]]
+=== Additional Resources
+
+* https://sendlane.teachable.com/courses/1726540/lectures/39073740[eCommerce
+Academy Campaign Strategy hyper-personalization - Beyond First Name and
+Email]
+* https://www.sendlane.com/blog-posts/the-ultimate-growth-hack-hyper-personalized-email-marketing-and-how-to-do-it[The
+Ultimate Growth Hack: Hyper-Personalized Email Marketing (And How To Do
+it)]
+* https://www.sendlane.com/blog-posts/3-email-personalization-tips-beyond-first-name[Three
+Personalization Tips that Go Beyond a First Name]
+* https://www.sendlane.com/blog-posts/how-to-use-custom-fields-to-create-hyper-personalized-emails[How
+to Use Custom Fields to Create Hyper-Personalized Email]

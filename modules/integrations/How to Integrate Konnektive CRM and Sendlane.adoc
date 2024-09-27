@@ -1,0 +1,70 @@
+https://konnektive.com/want-more-info/[Konnektive] is a CRM and
+Subscription Management System designed to connect every aspect of your
+product business to help your company scale fast while managing all of
+your important business processes.
+
+Integrating Konnektive and Sendlane enables you to funnel email
+information captured by Konnektive directly to your lists in Sendlane!
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://konnektive.com/want-more-info/[Konnektive account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_ → **_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Konnektive knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting Konnektive and Sendlane
+
+. Login to Konnektive and navigate to *_Admin_ *_*→
+Plugins*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65ffa204286364bc966602/file-1KDucp2uVc.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65ffa204286364bc966602/file-1KDucp2uVc]_
+. Choose *_Email Service Providers_* and find Sendlane in the list of
+applications
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65fff62c7d3a7e9ae8dcff/file-gQQQYOCoIX.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65fff62c7d3a7e9ae8dcff/file-gQQQYOCoIX]
+. Next, click on *_Sendlane_* →
+_*Activate*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e66012404286364bc96660b/file-zE45OVPq4i.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e66012404286364bc96660b/file-zE45OVPq4i]_
+. Enter your _Sendlane API Key, Hash Key and Subdomain_ and click
+__*Connect*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e66017504286364bc96660f/file-WVJwXT3Z1e.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e66017504286364bc96660f/file-WVJwXT3Z1e]__Your
+Integration is now complete!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Konnective, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Konnektive team is just a few clicks away!
+
+* Connect with the mailto:info@konnektive.com[Konnektive team]
+
+'''''
+
+==== Additional Konnektive Resources
+
+Sign up for https://konnektive.com/want-more-info/[Konnektive] and check
+out the
+https://konnektive.atlassian.net/wiki/spaces/KCKB/pages/256671868/SendLane%20[Konnektive
+Sendlane guide]!
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/bringing-your-email-marketing-website-data-together-to-maximize-your-sales[5
+Steps to Bring Your Email Marketing & Website Data Together to Maximize
+Your Sales]
+
+'''''
+
+=== TL;DR
+
+Login to Konnektive → _Admin_ → Plugins → Email Service Providers → Find
+Sendlane → _Activate_ → Enter Subdomain / API / Hash → _Connect_ 

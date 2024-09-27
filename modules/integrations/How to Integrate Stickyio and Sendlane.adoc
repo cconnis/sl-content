@@ -1,0 +1,73 @@
+https://www.sticky.io/[Sticky.io] is a fully integrated eCommerce order
+management and billing platform designed to work with any front-end
+experience. 
+
+Using Sticky.io and Sendlane, you can collect emails then seamlessly
+transfer these to your Sendlane list of choice.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+https://www.sticky.io/[active Sticky.io account].
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_ → **_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Sticky.io knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting Sticky.io and Sendlane
+
+. From your Sticky.io homepage, click *_Settings_* and
+select *_Providers_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e85a4b72c7d3a7e9aea3d07/file-CZQ60zvwFB.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e85a4b72c7d3a7e9aea3d07/file-CZQ60zvwFB]
+. Go to *_Actions_* and click on *_Add New Provider Profile_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e85a56b2c7d3a7e9aea3d14/file-NjDOawwrEt.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e85a56b2c7d3a7e9aea3d14/file-NjDOawwrEt]
+. In the Provider Profile, choose *_Type: Auto-Responder/Email_*, and
+then choose *_Sendlane_* from the drop-down in the _Provider_ field. In
+the _Profile Information_ enter your API/Hash Keys and Sendlane
+Subdomain +
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e85a61404286364bc97aee8/file-SwBTkhTIhg.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e85a61404286364bc97aee8/file-SwBTkhTIhg]
+. Don't forget to *_Save_* when you are done. 
+
+Your integration is now complete!
+
+Contacts collected by Sticky.io will now automatically sync with your
+List in Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Sticky.io, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help,
+the Sticky.io team is just a few clicks away!
+
+* Connect with the https://www.sticky.io/contact-us[Sticky.io Team]
+(email or use the chat bubble to start a conversation!)
+* Visit the Sticky.io https://support.sticky.io/en[Support Page]
+
+'''''
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/sticky-io-sendlane-streamline-your-ecommerce-business-build-lasting-customer-relationships[Introducing
+our Partnership With Sticky.io - Streamline Your eCommerce Business &
+Build Lasting Customer Relationships]
+
+'''''
+
+=== TL;DR
+
+Sticky.io homepage →  __Settings __→ _Actions_ →  __Add new provider
+profile __→ _Type: Auto-Responder/Email_, __Sendlane __→ Enter API/Hash
+Keys, Subdomain → _Save_

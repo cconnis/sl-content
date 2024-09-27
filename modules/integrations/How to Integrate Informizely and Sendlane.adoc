@@ -1,0 +1,82 @@
+http://sendlane.net/knowledge-base-informizely-signup[Informizely] is an
+interactive survey tool that can be used with your website, blog and
+even in emails to capture customer data and feedback.
+
+If a visitor's name or email is captured through an Informizely survey,
+you can seamlessly transfer this information to any
+https://help.sendlane.com/article/125-lists[list] within Sendlane and
+trigger automated emails.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+http://sendlane.net/knowledge-base-informizely-signup[Informizely
+account] with a https://www.informizely.com/Help/SurveyTypes[survey]
+created that includes an email address field.
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account so Informizely knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting Informizely and Sendlane
+
+. Login to your Informizely account and click on the *_Settings_* button
+for the survey you wish to
+connectimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce707de2c7d3a5b76431b55/file-SQwDqFTfMv.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce707de2c7d3a5b76431b55/file-SQwDqFTfMv]
+. Click the *_Add an Integration_* button at the bottom of the page
+. Select Sendlane from the list of available integrations
+. Enter your Sendlane details (API key, Hash Key, Sendlane subdomain,
+and List ID) and
+click _Update_image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce708310428632d9eebe043/file-Sa5fqHBNgA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce708310428632d9eebe043/file-Sa5fqHBNgA]
+. A pop up will display if the integration was
+successfulimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce7085e0428632d9eebe046/file-B1KSxhgOry.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce7085e0428632d9eebe046/file-B1KSxhgOry]
+
+Then, once the
+https://www.informizely.com/Help/Faq#codeSnippetLocation[Informizely
+code snippet] is installed on your site, you can begin collecting leads
+immediately!
+
+Visitors who enter their email and complete your survey will be added to
+your Sendlane list automatically.
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Informizely, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Informizely team is just a few clicks away!
+
+* mailto:support@informizely.com[Email] the Informizely team directly
+* Visit the https://www.informizely.com/Help/Faq[Informizely FAQ Page]
+
+'''''
+
+Additional Informizely Resources
+
+http://sendlane.net/knowledge-base-informizely-signup[Sign up for
+Informizely] | https://www.informizely.com/GDPR[Informizely and GDPR] |
+https://www.informizely.com/DataProtection[Data Protection Policies] |
+https://www.informizely.com/Demo[Demo]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-informizely[Sendlane
++ Informizely - Supercharge Your Customer Surveys]
+
+'''''
+
+=== TL;DR
+
+Settings → Add an Integration → Select Sendlane → Enter Sendlane API
+Key, Hash Key, Subdomain, List ID → Update

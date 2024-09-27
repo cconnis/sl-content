@@ -1,0 +1,275 @@
+Sendlane's drag-and-drop MJML email builder allows you to create
+engaging and perfectly branded Campaign and Automation emails.
+
+This guide will introduce you to our email builder and all of its
+features; follow along to build the perfect email or head to specific
+sections:
+
+* link:#sp[Subject and Preheader]
+* link:#styling[Email Styling]
+* link:#layout[Email Layout]
+* link:#elements[Content Elements]
+* link:#email[Saved Email Blocks]
+* link:#content[Email Content Best Practices]
+* link:#template-center[Save an Email as a Reusable Template]
+* link:#files[Create Hyperlinks to Large Files]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Gather your assets - have logo images, product images, and links ready
+to go!
+
+'''''
+
+[[sp]]
+=== Subject and Preheader
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62f5855861ff5d5f24f9b3da/file-rXbEo0a8VW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62f5855861ff5d5f24f9b3da/file-rXbEo0a8VW]
+
+[cols=",",]
+|===
+|*Subject* |The subject line should be an attention-getter. Use 4-6
+compelling words for best results, and consider using the
+https://help.sendlane.com/article/79-what-are-personalization-tags[personalization]
+icon to add personalized data from your Contacts' profiles, like their
+first name.
+
+|*Preheader* |The preheader text is used build curiosity and increase
+your open rates by displaying a summary of your message in your
+audience's inbox!
+|===
+
+link:#top[Back to top]
+
+'''''
+
+[[styling]]
+=== Email Styling
+
+Save time and set up global styling before adding content to your email!
+In the styles tab, you can create default styling for the following
+elements:
+
+* *Links* - Text color and underlining
+* *Buttons* - Background color, border, font color, font family, font
+size, font weight, corner radius (rounding), alignment
+(left/center/right), static or automatic padding
+* *Headings* - Font color, font family, font size, line height, letter
+spacing
+* *Body text* - Font color, font family, font size, line height, letter
+spacing
+
+Click the *Styles tab* in the email builder, then click the *preview eye
+icon* to see previews of your style selections in real-time.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6398ed084d4cf87851c91f89/file-ebyKckQvO5.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6398ed084d4cf87851c91f89/file-ebyKckQvO5]
+
+link:#top[Back to top]
+
+'''''
+
+[[layout]]
+=== Email Layout
+
+Use the Sendlane email builder's layout templates to organize your
+email's content.
+
+Click on a layout block to add it to your email, or drag and drop it
+exactly where you want it.
+
+To delete a layout block you've added to your email, click the *layout
+block* > *Trash can icon* > *Delete*.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6398f21b2f4b24149dcb396d/file-gkD6aQvP8y.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6398f21b2f4b24149dcb396d/file-gkD6aQvP8y]
+
+link:#top[Back to top]
+
+'''''
+
+[[elements]]
+=== Content Elements
+
+The Sendlane email builder provides the following elements:
+
+====== *Text*
+
+****Best for copy and longer sections of text. Adjust the text’s size,
+font family, color, alignment, line height, letter spacing, and add
+hyperlinks, text styling or emojis by clicking the text element.
+
+====== *Title*
+
+****Best for titles, headers, or short sections of text. Adjust the
+title’s size, font family, color, alignment, line height, letter
+spacing, and add hyperlinks, text styling or emojis by clicking the
+title element.
+
+====== *Image*
+
+****Add .JPEG, .PNG, or .GIF images to your emails! There is no file
+size limit, and the email builder will resize images for you. We
+recommend using an image that has been sized to twice the height and
+width you'd like it to display at so the image is optimized for high
+pixel density or retina screens.
+
+Add alt text, adjust alignment, size, and corner radius by clicking on
+the image element. Images can be made clickable by pasting a link in the
+Link field. Linked images can add Tags to Contacts who click the linked
+image by selecting or creating a Tag from the Tag dropdown.
+
+====== *Button*
+
+****Create a clickable button with custom text and styling! Buttons can
+add Tags to Contacts who click the linked image by selecting or creating
+a Tag from the Tag dropdown.
+
+====== *Divider*
+
+****Insert a divider line with custom styling to separate content
+sections.
+
+====== *Spacer*
+
+****Insert a spacer to separate content sections without a visible line.
+
+====== *Social*
+
+****Insert links to your company’s social media profiles! Adjust
+styling, social media icons, and links by clicking the social element.
+
+====== *HTML*
+
+****Insert custom HTML!
+
+====== *Media*
+
+****Insert a link to a YouTube or Vimeo video to create a clickable
+image of the video’s thumbnail. Adjust the video’s alt text, spacing,
+and button styles by clicking the media element.
+
+====== *Link Bar*
+
+****Insert a bar with links to any URL you need! Add, rearrange, and
+style the link bar by clicking on the link bar element.
+
+[[wrap]]
+====== *Text Wrap Image*
+
+****Insert a combination text and image element to wrap text around an
+image! Adjust all text and image settings by clicking on the text wrap
+image element.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63990500efdd5760d1d80ba5/file-GBbVhHLzVA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63990500efdd5760d1d80ba5/file-GBbVhHLzVA]
+
+link:#top[Back to top]
+
+'''''
+
+[[saved]]
+=== Saved Email Blocks
+
+Use saved blocks to create standard email blocks like link bars, social
+media information, and other static information about your company or
+brand! Saved blocks can be used in any email you create in the future.
+
+To create a saved block:
+
+. Click the block you want to save
+. Click the *Settings icon* 
+. Click *Layout* 
+. Click the *Save icon *
+. ****Enter a *name* for the saved block 
+. Click *Save*
+
+*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6398f9ceefdd5760d1d80b9c/file-RrGzXBdmFX.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6398f9ceefdd5760d1d80b9c/file-RrGzXBdmFX]*
+
+link:#top[Back to top]
+
+'''''
+
+=== Email Content Best Practices
+
+Sendlane has https://www.sendlane.com/resources[many resources] to help
+clarify a winning marketing strategy for your brand! Check out our blog
+https://www.sendlane.com/blog/email-design-tips[6 Email Design Tips to
+Increase Engagement] for tips on creating a style guide for your brand,
+optimizing for mobile devices, personalization, color psychology, and
+call-to-action best practices.
+
+In addition to design resources, consult content resources that focus on
+how content can affect deliverability, such as
+https://help.sendlane.com/article/356-spam-folder[Why is my email going
+to the spam folder?]
+
+Here are a few simple rules that can help your email reach as many
+Contacts as possible:
+
+* *Emails should be 40% images at most.* Some inbox providers block
+automatic image downloading which means Contacts who use those services
+will not immediately see any images in your email. Images are also not
+readable by screen readers. Use text or buttons whenever possible!
+* *Content order matters.* Contacts see the top of your email first; if
+the first sections don't grab them, they likely won't continue
+scrolling. Keep logo images and generic brand information at the top of
+an email as small as possible while still being readable, or consider
+moving it to the bottom of the email.
+* *Use one call-to-action per email.* When emails have multiple
+calls-to-action, Contacts aren't sure which is the most important. Keep
+your content focused and concise so Contacts can easily scan it!
+
+link:#top[Back to top]
+
+'''''
+
+[[template-center]]
+=== Save an Email as a Reusable Template
+
+Save an entire email as a template to avoid recreating layouts and
+styling for each email! Using Email Templates is a great way to have
+perfectly branded templates ready to go.
+
+To save an email as a template, click the *three-dot menu* > *Save as
+Template* > Enter a descriptive name > *Save* > *Save*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63c87e9173fe9e2ed71e69f3/file-WsfLUTunNc.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63c87e9173fe9e2ed71e69f3/file-WsfLUTunNc]To
+preview, edit, or delete a saved template, click the template icon
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63c87f311de8565a3847f38e/file-K3cOi8R7B3.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63c87f311de8565a3847f38e/file-K3cOi8R7B3]To
+use a template for a Campaign or Automation email, click the *Custom
+tab* of the template picker > *Use Template*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63c8802a2510956d7c40754c/file-WlzpmI6hOC.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63c8802a2510956d7c40754c/file-WlzpmI6hOC]
+
+link:#top[Back to top]
+
+'''''
+
+[[files]]
+=== Create a Hyperlink for Text or Images to Link to Large Files
+
+Sending marketing emails with attachments, large files, or videos can
+trigger spam filters and cause bounced emails, negatively affecting your
+email deliverability. Using hyperlinks to files avoids these
+deliverability issues and allows you to add Tags to Contacts who click
+your links!
+
+. Upload your file to the file hosting service of your choice
+. Copy the shareable link to your file
+. Highlight text or select an image
+.. For text links, click the link icon
+.. For image links, find the Link field in the Image Settings left-hand
+slideout
+. Insert the link to your file
+. Click the Tag dropdown and select a Tag to apply to Contacts who click
+on your text or image link
+
+[cols="^,^",]
+|===
+|*Links in Text* |*Links in Images*
+
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c38793a47f35db9dbfd5/file-qmsx14CzYA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c38793a47f35db9dbfd5/file-qmsx14CzYA]
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c394e114d11769c3ca95/file-j54U0LGg9O.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c394e114d11769c3ca95/file-j54U0LGg9O]
+|===
+
+link:#top[Back to top]

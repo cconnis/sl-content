@@ -1,0 +1,220 @@
+Customers who review your products have had an impactful experience with
+your brand. Whether their experience was positive or negative, it
+motivated them to take the time to write a review of your products.
+
+Target satisfied customers with content that encourages them to return
+to your store, and target dissatisfied customers with content that
+encourages them to try your brand again.
+
+Sendlane’s powerful
+https://help.sendlane.com/article/137-segments[Segments] and Automation
+triggers makes it easy to connect with your reviewers!
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Set up your reviews widget
+
+Import existing reviews
+
+=== Available Segmentation Options
+
+Campaigns can be targeted based on review activity by using review based
+Segments. Automations can be targeted on review activity by using
+Conditional Split nodes.
+
+Review the segmentation options below, then put them to use in your
+Campaigns and Automations!
+
+==== Positive Reviewers (Evangelists)
+
+Customers who write positive reviews of your products are great sources
+of influence and brand evangelization!
+
+Target this group of engaged and satisfied customers with content like:
+
+* Requests for referrals to your store by sharing the review on social
+media
+* Requests to join your VIP program
+* Special offers thanking them for their reviews
+* Recommended products related to the product they loved
+* New product line announcements
+
+Check out the
+https://www.notion.so/How-to-use-reviews-in-your-flows-fd4da28eb9a243b0a63fd85121a745c7?pvs=21[Sendlane
+Blog] for tips and tricks from our marketing experts on creating
+engaging emails for brand evangelists!
+
+For a general Segment of positive reviewers, create the following
+Segment:
+
+* Submitted Review Rating Greater Than 3 OR Submitted with Photo Rating
+Greater Than 3
+
+{empty}[screenshot of segment parameters]
+
+==== Negative Reviewers (Detractors)
+
+Customers who write negative reviews of your product can detract from
+your brand’s reputation.
+
+Target this group of customers with content like:
+
+* Follow ups to get more information about the customer’s negative
+experience
+* Apologies for known issues, including steps being taken to address
+them
+* Special offers thanking them for their feedback and encouragement to
+give your brand a second chance
+
+For a general Segment of negative reviewers, create the following
+Segment:
+
+* Submitted Review Has Any OR Submitted with Photo Has Any; AND
+* Submitted Review Rating Less Than 3 OR Submitted with Photo Rating
+Less Than 3
+
+{empty}[screenshot of segment parameters]
+
+==== Advanced Parameters
+
+To target more specific groups of negative reviewers, try the following
+additions to the Segments above as AND conditions:
+
+* Repeat reviewers - `+Submitted Review+` `+Number of Reviews+`
+`+Greater Than+` `+1+` OR `+Submitted with Photo+` `+Number of Reviews+`
+`+Greater Than+` `+1+`
+* Recent reviewers - `+Submitted Review+` `+Recent+` [`+Number+`]
+`+Month(s)+` or `+Day(s)+` OR `+Submitted with Photo+` `+Recent+`
+[`+Number+`] `+Month(s)+` or `+Day(s)+`
+* Previous reviewers - `+Submitted Review+` `+Not Recent+` [`+Number+`]
+`+Month(s)+` or `+Day(s)+` OR `+Submitted with Photo+` `+Not Recent+`
+[`+Number+`] `+Month(s)+` or `+Day(s)+`
+* Reviewers of specific products - `+Submitted Review+` `+Product(s)+`
+[`+Is+` or `+Contains+`] [`+Product info+`] OR `+Submitted with Photo+`
+`+Product(s)+` [`+Is+` or `+Contains+`] [`+Product info+`]
+
+=== Create Reviews Segments for Campaigns
+
+Customers who have reviewed your products are great sources of valuable
+customer feedback. Campaigns based on review activity can help you learn
+more about how your customers feel about your products!
+
+Create Segments based on the
+https://www.notion.so/How-to-Target-Customers-Based-on-Product-Reviews-d6d2e216c5fc42f79f48451e4221abed?pvs=21[suggested
+segmentation above], then use those Segments to send
+https://help.sendlane.com/article/153-campaigns#audience[targeted
+Campaigns] to your store’s reviewers.
+
+{empty}[link to blogs]
+
+=== Add Reviews to Existing Abandoned Cart Emails
+
+The abandoned cart block you know and love has been updated to include
+an option for displaying the abandoned product’s average star rating and
+a link to the product’s reviews!
+
+Inserting reviews into abandoned cart emails is seamless with Sendlane
+Reviews. Update your abandoned cart Automations to toggle on reviews and
+increase conversions!
+
+{empty}[gif]
+
+=== Create Automations for Review Activity
+
+Customers who have reviewed your products have the potential to remain
+highly engaged with your brand. Acknowledge the time they spent writing
+a review of your products by creating an Automation that immediately
+lets them know that their feedback matters to you!
+
+Use the Review Submitted trigger to make an ask right after customers
+submit their review, when your brand is still top of mind.
+
+For a positive review, ask for a referral, social media share, to join
+your VIP program, or just send a thank you.
+
+For a negative review, send an apology, a request for more information,
+or a special offer.
+
+==== Add Review Submitted Trigger
+
+Review Submitted triggers are available for Sendlane users who are
+integrated with Shopify or BigCommerce. To add a Review Submitted
+trigger to your Automation:
+
+. Click *+Add Trigger*
+. Click the Shopify or BigCommerce tab
+. Click *Review Submitted*
+. Select your store from the dropdown
+
+==== Add a Conditional Split Node
+
+Conditional Split nodes can be used in a review based Automation to
+separate content based on a review’s rating, recency, frequency, or
+specific products reviewed. To add a Review Submitted trigger to your
+Automation:
+
+. Click the *+ button*
+. Click *Conditional Split*
+. Set the Conditional Split’s conditions based on the
+https://www.notion.so/How-to-Target-Customers-Based-on-Product-Reviews-d6d2e216c5fc42f79f48451e4221abed?pvs=21[suggested
+segmentation above]
+
+Add as many Conditional Splits as you’d like to your Automation for even
+more granularity!
+
+=== Insert Reviews into Emails
+
+Inserting reviews in Campaign and Automation emails is simple with
+Sendlane’s email builder.
+
+To insert a review into an email:
+
+. Scroll to the Shopify or BigCommerce section of the email builder
+Content tab
+. Click or drag and drop the *Reviews block* into your email
+
+{empty}[gif]
+
+==== Review Block Display Options
+
+* *Layout* - Left, center, or right justify the review
+* *Vertical spacing* - Adjust the spacing below and above the reviews in
+the block
+* *Horizontal spacing* - Adjust the spacing to either side of the
+reviews in the block
+
+==== Review Block Content Display Conditions
+
+Reviews inserted into emails are selected dynamically based on the
+conditions you select in the Display Options tab
+
+Set conditions for which reviews appear in the reviews block by
+selecting a *minimum number of stars* and a *product* from the dropdowns
+below your store name.
+
+Set a number of reviews to display in the reviews block from the *Number
+of Reviews* dropdown.
+
+Select which review content elements to display by checking or
+unchecking the checboxes next to *Stars*, *Title*, *Description* (review
+content), and *Author*.
+
+Rearrange review content by dragging and dropping reviews elements in
+the *Content order* section.
+
+Check the *Content Divider* checkbox to insert a divider between
+multiple reviews in the same block.
+
+Select a *Max Character Count* to display reviews that are short and to
+the point.
+
+==== Review Block Style Options
+
+Adjust the following style options for your review block:
+
+* Star Color
+* Star Size
+* Title font color, family, weight, and size
+* Description font color, family, weight, and size
+* Author font color, family, weight, and size

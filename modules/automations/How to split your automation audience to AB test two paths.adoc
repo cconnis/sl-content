@@ -1,0 +1,32 @@
+==== Overview
+
+You can split a specified, random percentage of your automation audience
+to A/B test two automation paths. Read on to learn how to use the
+audience split node.
+
+=== Add an audience split node
+
+Once contacts reach the audience split, they cannot be moved from one
+path to another. If the split percentage is changed after the automation
+has been activated, existing contacts will stay on the path they started
+on.
+
+To create an audience split node:
+
+. Click the *+ button*
+. Click *audience split*
+. Use the *slider* to determine the percentage of the automation's
+audience to send down Side A and Side B
+. Click *Done*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6452b30c803f040e40bf152d/file-mcgt2aDtrq.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6452b30c803f040e40bf152d/file-mcgt2aDtrq]To
+determine a winning path:
+
+. Click the *audience split* node
+. Click the *trash can icon*
+. Select a path to delete
+. Click *Delete*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6470e08a549b2b747a06a379/file-GInmEEjhq6.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6470e08a549b2b747a06a379/file-GInmEEjhq6]
+
+link:#top[Back to top]

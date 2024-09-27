@@ -1,0 +1,91 @@
+Sendlane's intelligent pop-ups are a great tool to use directly on your
+Shopify store! Choose a pop-up, banner, or inline form to collect
+Contacts' email address, phone number, and/or custom data.
+
+In this article, you'll learn how to install each type of Pop-Up in your
+Shopify store:
+
+* link:#Popup[Install a Pop-up or Banner Form]
+* link:#Inline[Install an Inline Form]
+* link:#additional[Additional Resources]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Integrate
+your Shopify store] with your Sendlane account
+
+https://help.sendlane.com/article/308-pop-ups#creating[Create a Pop-Up]
+
+https://help.sendlane.com/article/308-pop-ups#installing[Grab your
+Pop-Up's code]
+
+'''''
+
+[[Popup]]
+=== Install a Pop-up or Banner Form
+
+. Log in to Shopify
+. Click *Online Store* 
+. Click *Themes* 
+. Click the *three dot menu* 
+. Click *Edit Code* 
+. Search for `+header.liquid+`
+. Click into the file
+. Press CTRL + F
+. Type `+</header>+`
+. Paste the code on the line above the `+</header>+` tag
+. Click *Save* 
+. Click *Preview Store* in the top right corner to view a preview of
+your form on your store's website!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/639a1e284d4cf87851c920c8/file-8HoBB22yQa.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/639a1e284d4cf87851c920c8/file-8HoBB22yQa]
+
+link:#top[Back to top]
+
+'''''
+
+=== Install an Inline Form
+
+Inline forms are placed in the section of your Shopify store's
+customization pages where you want the form to appear on your website.
+Instead of editing your store's theme code, you'll create a section for
+your inline form in your theme's customization area.
+
+To open your theme's customization area:
+
+. Log in to Shopify
+. Click *Online Store* 
+. Click *Themes* 
+. Click *Customize*
+. ****Click *Add Section* where you want your inline form to appear
+. Select *Custom Liquid* 
+. Paste your form's code in the box
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/639a2ed7ce7c3c61d800beba/file-S0IbWmOwt3.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/639a2ed7ce7c3c61d800beba/file-S0IbWmOwt3]
+
+link:#top[Back to top]
+
+'''''
+
+[[additional]]
+=== Additional Resources
+
+* https://www.sendlane.com/blog/shopify-integration-personalized-experiences[4
+Ways to Use Sendlane's Shopify Integration to Deliver Personalized
+Customer Experiences]
+* https://www.sendlane.com/blog/shopify-store-launch-checklist[The
+9-Step Guide to Launching a New Shopify Store]
+
+link:#top[Back to top]
+
+=== Troubleshooting
+
+[[theme-variation]]
+====== My theme doesn't have the recommended file to place the Pop-up code!
+
+Because themes vary widely, you may have to experiment with placement.
+If you already use another Pop-up or form product, try placing the code
+in the exact same spot your existing forms were installed in. Reach out
+to the support team of the theme you're using for the most accurate
+advice on where to place third party snippets!

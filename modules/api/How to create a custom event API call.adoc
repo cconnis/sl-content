@@ -1,0 +1,174 @@
+==== Overview
+
+Sendlane’s API allows you to create custom events that can be used to
+trigger Automations. In this guide, you'll learn how to set up your own
+custom triggered automations using a password reset workflow as an
+example.
+
+==== In this guide
+
+. Create a custom event in Sendlane
+. Create an API call
+. Create an automation triggered by the custom event you created
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Set up a
+https://help.sendlane.com/article/451-custom-integration-setup#js-setup[Sendlane
+Custom Integration]
+
+Review Sendlane's
+https://sendlane.stoplight.io/docs/api-documentation/92f2bd02d3f75-custom-integration-events[custom
+event API documentation]
+
+1::
+  Go to your https://app.sendlane.com/integrations/custom[completed
+  Sendlane Custom Integration] and click the *Events* icon. On the
+  Events page, click *Create Event* > Enter a descriptive name >
+  *Create*.
+  +
+  We’ll name our example event `+password-reset+`.
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669ff46438e94c7683947259/file-JNCUR3YLQZ.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669ff46438e94c7683947259/file-JNCUR3YLQZ]
+
+2::
+  Use a JSON snippet like the following to build a password reset
+  request API call:
+  +
+....
+{
+   "custom_event": "CUSTOM_EVENT_NAME",
+   "token": "CUSTOM_EVENT_TOKEN",
+   "email": "jimmykim@sendlane.com",
+   "data": {
+     "password_reset_url": "https://www.yourwebsite.com/reset/1234567890"
+   }
+}
+....
+  +
+  * `+custom_event+` - Your custom event’s name (our example event’s
+  name is `+password-reset+`)
+  +
+  * `+token+` - Grab the token associated with your custom event by
+  heading to the https://app.sendlane.com/integrations/custom[Sendlane
+  Custom Integration page] > Click *Settings* > Click *Copy* > Paste in
+  place of CUSTOM_EVENT_TOKEN
+  +
+  Test your call to confirm your setup. You're good to go if your call
+  is successful and you see example data on the custom events page If
+  your event does not show data in the example column like the example
+  below, review your custom event and API call
+  setup:image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a0224cee46f05d48ed0639/file-sRjULvJvPM.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a0224cee46f05d48ed0639/file-sRjULvJvPM]
+
+3::
+  Create an Automation and select the Custom Event trigger from the
+  Custom integration tab.
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669ff694ea04c55712556798/file-JeFcyThfox.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669ff694ea04c55712556798/file-JeFcyThfox]
+  +
+  ==== Trigger Options
+  +
+  *Store* - Select your store
+  +
+  *Event* - Select the password-reset event
+  +
+  *Limit Per Contact* - Select a limit for how and when Contacts are
+  sent through the Automation. For our password reset example, we
+  selected No Limit so Contacts can reset their password as many times
+  as needed.
+  +
+  * No Limit - The Contact will be sent through the Automation whenever
+  the trigger conditions are met
+  +
+  * Do not trigger when already in Automation - If the trigger
+  conditions are met but the Contact is already being sent through the
+  Automation, the Contact will not trigger the Automation again
+  +
+  * Once Per Day - If the trigger conditions are met but the Contact has
+  already triggered the Automation on the same day, the Contact will not
+  trigger the Automation again
+  +
+  * One Time Only - Contacts will only trigger the Automation one time
+  +
+  ==== Add a wait node
+  +
+  Add a
+  https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation#timing[wait
+  node] of as the first step of the Automation. For our password reset
+  example, we’ll use 1 minute. Wait nodes default to a 1 hour wait.
+  +
+  [[d5d7c79c-e31a-4b85-9280-aa993301664d]]
+  ==== Add an email node
+  +
+  Create an
+  https://help.sendlane.com/article/449-automation-actions#send-message[email
+  node] and use https://twig.symfony.com/doc/3.x/[Twig templating
+  syntax] to pull in data from the payload. Sendlane supports a subset
+  of the Twig language.
+  +
+  ===== Variables
+  +
+  Creating variables allows you to populate data in your email using
+  templating syntax.
+  +
+  For our password reset example, we’ll want to be able to populate the
+  name of our event and data from the payload in our API call. We’ll
+  need two variables; `+name+` to access the event’s name and `+data+`
+  to access data from the payload, including a URL to the password reset
+  page.
+  +
+  To create variables, add a text box element to your email, then copy
+  and paste the following snippets into the text box. The snippets will
+  not be visible to Contacts who receive your email, they are only
+  visible to you inside the Sendlane email builder.
+  +
+....
+{% set name = trigger.getCustomEventName() %}
+{% set data = trigger.getCustomEventData() %}
+....
+  +
+  Once these variables are in place, they can be used to populate data!
+  +
+  [[data]]
+  ===== Populating data in an email
+  +
+  In link:#2[step 2], we made the API call with the following JSON
+  payload
+  +
+....
+{
+   "token": "1234abcd5678edfg",
+   "email": "jimmykim@sendlane.com",
+   "custom_event": "password-reset",
+   "data": {
+     "password_reset_url": "https://www.yourwebsite.com/reset/456789745"
+   }
+}
+....
+  +
+  Now that we’ve set up our `+data+` variable, we can access the
+  `+password_reset_url+` via templating syntax:
+  +
+....
+{{-data.password_reset_url-}}
+....
+  +
+  Pasting this snippet directly into the email will display a raw
+  password reset link. Use the hyperlink function in the email builder,
+  a button, or a custom HTML block to hyperlink the URL.
+  +
+  In the email below, our `+{{-data.password_reset_url-}}+` is made into
+  a hyperlink, and our variable scripts disappear when the email is
+  previewed.
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669ff7b95beb1700e035e519/file-osq8DmQWKa.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669ff7b95beb1700e035e519/file-osq8DmQWKa]
+
+[[resources]]
+=== Additional Resources
+
+* https://help.sendlane.com/article/451-custom-integration-setup[Sendlane
+Custom Integration Setup]
+* https://sendlane.stoplight.io/docs/api-documentation/ZG9jOjE1NDIyMzg-overview[Sendlane
+API Documentation]
+* https://twig.symfony.com/doc/3.x/[Twig Syntax Documentation]
+* https://twig.symfony.com/development[Twig Support]

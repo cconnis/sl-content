@@ -1,0 +1,219 @@
+==== Overview
+
+Using Custom Fields, you can collect and record information about your
+Contacts that can be used to segment your audience, run Automations, and
+personalize your content.
+
+==== In this guide
+
+* link:#new-custom-fields[Creating Custom Fields]
+* link:#collecting-CF-data[Collecting Data for Custom Fields]
+* link:#editing[Editing Custom Field Data]
+* link:#using-cf[Using Custom Fields]
+* link:#Troubleshooting[Troubleshooting]
+* link:#additional[Additional Resources]
+
+[[before]]
+===== 🚦 Before Getting Started
+
+To get the most out of Custom Fields, create a
+https://help.sendlane.com/article/308-pop-ups[Pop-Up] to collect data
+from your https://help.sendlane.com/article/188-contacts[Contacts]. If a
+Contact does not have data in a Custom Field, that Contact will not be
+included in any actions that depend on the Custom Field and the field
+will appear blank for that Contact.
+
+[[delete]]
+===== 🚨 Custom Fields cannot be deleted
+
+Be cautious when creating Custom Fields! Custom Fields cannot be deleted
+from your Sendlane account once they are created.
+
+[[hipaa]]
+===== 🚨 Custom Fields are not HIPAA compliant
+
+Do not use Custom Fields to store personal health information.
+
+'''''
+
+[[new-custom-field]]
+=== Create Custom Fields
+
+Create custom fields in the Sendlane app or while
+https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account#import[importing
+Contacts].
+
+==== Create a Custom Field In Sendlane
+
+. Click on the *Audience* icon in the left-hand menu bar
+. Click the *Personalization* tab
+. Click *+Custom Field* 
+. Enter a short, descriptive name for your Custom Field
+. Select a field type
+. Click *Confirm* to save your Custom Field
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495edb3e9352a3c57926f3e/file-cIlC3BAWjS.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495edb3e9352a3c57926f3e/file-cIlC3BAWjS]
+
+==== Create a Custom Field While Importing Contacts
+
+Creating a Custom Field while importing Contacts allows you to save the
+data from your import file to your Contacts' profiles
+
+. Click on the *Audience* icon in the left-hand menu bar 
+. Click the *Lists* tab
+. Select the List you are importing into
+. Click *Import* 
+. Select your .CSV file
+. In the Field mapping & Import settings window, click the dropdown next
+to the column you’d like to create a Custom Field from 
+. Select *Create Custom Field*
+. Enter a name for your Custom Field next to the dropdown
+. Click *Import Contacts* to import your Contacts and create your new
+Custom Field
+
+link:#top[Back to top]
+
+'''''
+
+[[collecting-CF-data]]
+=== Collecting Data for Custom Fields
+
+[[pop-ups]]
+==== Collect Custom Field Data in Forms
+
+https://help.sendlane.com/article/308-pop-ups[Forms] can collect Custom
+Field data from your Contacts when they opt into your content.
+
+Existing Custom Fields are in the Custom Field dropdowns for
+https://help.sendlane.com/article/622-understanding-sendlane-forms-content-options#fields[Form
+Fields] and
+https://help.sendlane.com/article/622-understanding-sendlane-forms-content-options#option[Option
+Selector] blocks on the Design page of the form builder. You can create
+a new Custom Field from the Forms screen by clicking *+ Custom Field*. 
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e64cfd6ba1d916ec467461/file-AD1HDOwdSV.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e64cfd6ba1d916ec467461/file-AD1HDOwdSV]
+
+[[api]]
+==== Collect Custom Field Data using the Sendlane API
+
+Check out Sendlane’s https://help.sendlane.com/article/83-api-docs[API]
+documentation to learn how to use the POST method to add Contacts with a
+Custom Field.
+
+link:#top[Back to top]
+
+'''''
+
+[[editing]]
+=== Edit Data in Custom Fields
+
+To edit the data in a Custom Field for a Contact:
+
+. Open the
+https://help.sendlane.com/article/188-contacts#contact-profiles[Contact
+sidebar or full Client Profile] and locate the Personalization section
+. Click the *Edit* icon
+. Make your desired changes
+. Click the *green checkmark* to save
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645c1725817a7b0924b22df0/file-vUiiXBy0I4.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645c1725817a7b0924b22df0/file-vUiiXBy0I4]
+
+link:#top[Back to top]
+
+'''''
+
+[[using-cf]]
+=== Using Custom Fields
+
+Custom Fields can be used to add personalization to emails and as
+powerful segmentation options.
+
+==== Insert a Custom Field in an Email
+
+Custom Fields are a great way to personalize your
+https://help.sendlane.com/article/153-campaigns[Campaign] and Automation
+emails! Custom fields can be used as
+https://help.sendlane.com/article/79-what-are-personalization-tags[personalization
+tags] in any email:
+
+. Click into the email wherever you want your Contacts' Custom Field
+data to appear
+. Click the *three dot menu*
+. Click the *personalization* icon
+. Click the *Select Personalization* dropdown
+. Click the *Custom Field* you want to insert
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645c13d6817a7b0924b22dec/file-aU3J9lxxck.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645c13d6817a7b0924b22dec/file-aU3J9lxxck]If
+Contacts have data for the selected Custom Field, they'll see their data
+where the personalization tag was inserted:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645c14d3213fbb442001de68/file-VCdodHcF0c.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/645c14d3213fbb442001de68/file-VCdodHcF0c]
+
+==== Create a Default Value for Custom Fields
+
+If Contacts do not have data for the selected Custom Field, they will
+see a blank space where the personalization tag was inserted if a
+default value is not specified for the Custom Field.
+
+To create a default value for a Custom Field:
+
+. Click the Audience icon
+. Click the Personalization tab
+. Click the Custom Field's tag to copy it
+. Paste the Custom Field where you want it to appear
+. Add `+ | default('') +`before the closing curly brackets
+. Enter the default value between the quotation marks
+
+In the favorite color example used above, the final personalization tag
+would look like
+`+{{ contact.custom('Favorite Color') | default('pink') }}+`
+
+[[trigger]]
+==== Trigger Automations with Custom Fields
+
+Select *Custom field added* as a trigger in an Automation to start an
+Automation when Contacts fill out a Pop-Up with the Custom Field you
+select.
+
+Custom Fields can also be used in Conditional Splits in Automations. In
+the Conditional Split sidebar, select *Custom Fields* from the Condition
+dropdown, then adjust your parameters for the split’s logic depending on
+your Contacts’ Custom Field data.
+
+==== Use Custom Fields to Create Segments
+
+https://help.sendlane.com/article/137-segments[Segmenting] by Custom
+Fields is a great way to target specific audiences to send to! You can
+create Segments based on any Custom Field.
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting  
+
+*I don't see Custom Field data for a Contact!*
+
+Be sure the data point was collected in their contact profile! Without
+that information, the variable tag will not have anything to pull from.
+Some Custom Fields, such as Contact Phone number, are not able to pull
+data when used in an email's subject line.
+
+*I don’t see Custom Field data in my test email!*
+
+Custom Field tags will not populate with Custom Field data in test
+emails. To ensure that your email renders Custom Field data properly,
+make sure that the correct Custom Field VAR code appears in your email.
+
+*How do I delete a Custom Field?*
+
+Custom Fields cannot be deleted.
+
+[[additional]]
+=== Additional Resources
+
+* https://www.sendlane.com/blog-posts/how-to-use-custom-fields-to-create-hyper-personalized-emails[How
+to Use Custom Fields to Create Hyper-Personalized Emails]
+* https://www.sendlane.com/blog-posts/the-ultimate-growth-hack-hyper-personalized-email-marketing-and-how-to-do-it[The
+Ultimate Growth Hack: Hyper-Personalized Email Marketing (and How To Do
+It!)]

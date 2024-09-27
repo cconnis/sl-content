@@ -1,0 +1,21 @@
+==== Overview
+
+Reviews exported from Okendo are compatible with Sendlane Reviews! Read
+on to learn how to export reviews from Okendo.
+
+'''''
+
+. From your Okendo dashboard, click Settings
+. Click *Import/Export*
+. Click the *Export* icon next to Reviews
+. Select *All Time* from the Export from dropdown
+. Click *Request Export*
+. Check your email for a notification from Okendo containing your .CSV
+file
+
+[[next]]
+===== ⏭️ Next Steps
+
+Check out our guide to
+https://help.sendlane.com/article/525-how-to-import-reviews[importing
+your existing reviews!]!

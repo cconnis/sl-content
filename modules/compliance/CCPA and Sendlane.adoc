@@ -1,0 +1,49 @@
+The California Consumers Privacy Act or “CCPA” is a data privacy
+regulation that protects the citizens of California. 
+
+This law gives Californians more control over how their personal and
+private data is sold, shared, and used. It also gives your contacts the
+right to know what information is being collected, shared, or disclosed,
+access the data, and even opt-out or delete the data at any point.
+
+You can learn more about the CCPA and its specifics by visiting their
+https://www.oag.ca.gov/system/files/attachments/press_releases/CCPA%20Fact%20Sheet%20%2800000002%29.pdf[fact
+sheet right here].
+
+'''''
+
+=== How Sendlane is in Compliance
+
+. Both you and your contacts have the ability to manage and delete your
+data, as needed (or desired).
+. We’ve updated our https://sendlane.com/privacy[Privacy Policy] and
+https://sendlane.com/terms[Terms of Service] to reflect the necessary
+actions required by CCPA. This means we’ve laid out a clear explanation,
+along with internal data processes and product capabilities to adjust
+accordingly.
+
+You can learn more about CCPA and Sendlane, and how to make sure your
+email marketing is compliant
+https://www.sendlane.com/blog-posts/ccpa[right here on the Sendlane
+blog]!
+
+'''''
+
+=== Have Questions or Concerns?
+
+For more information on your responsibilities as a _sender_, you can
+visit the https://oag.ca.gov/privacy/ccpa[CCPA website right here] or
+reach out to our support team. 
+
+To request assistance as a _recipient_** **please email
+support@sendlane.com. If you're having trouble with a specific sender,
+please forward a copy of the message you received so we can investigate.
+
+'''''
+
+=== TL;DR
+
+https://www.oag.ca.gov/system/files/attachments/press_releases/CCPA%20Fact%20Sheet%20%2800000002%29.pdf[CCPA]
+(aka California Consumers Privacy Act) establishes privacy regulations
+and procedures that protect the citizens of California. Sendlane is
+fully CCPA compliant.

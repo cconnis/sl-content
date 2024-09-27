@@ -1,0 +1,89 @@
+https://www.convertpro.net/?bsf=2497[Convert Pro] is a WordPress plugin
+that provides an easy-to-use drag & drop editor to create
+high-converting opt-in forms.
+
+Integrating Convert Pro and Sendlane enables you to funnel contacts
+captured by Convert Pro directly to your lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://www.convertpro.net/?bsf=2497[Convert Pro subscription] with the
+plugin installed into WordPress.
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Convert Pro knows where to place
+your new leads and contacts!
+
+'''''
+
+=== Connecting Convert Pro and Sendlane
+
+. From your WordPress dashboard, navigate to *_Convert Pro_* and select
+*_Create
+Newimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d092d602c7d3a1cad5b84fc/file-KQhzXrRv1n.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d092d602c7d3a1cad5b84fc/file-KQhzXrRv1n]_*
+. Select your call-to-action type. For this demo, we'll select *_Modal
+Popup_*
+. Select a template and name your popup
+. You will be directed to the Pop Up editor. Click on *_Form_* and
+insert a field for emails
+. Select *_3. __Connect_* from the top
+menuimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedabb70428632d9eec07fd/file-XvwPGZUxbE.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedabb70428632d9eec07fd/file-XvwPGZUxbE]
+. Select *_Sendlane_* from the list of
+applicationsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedac042c7d3a32d2a4e74f/file-N1MdgvVCAT.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedac042c7d3a32d2a4e74f/file-N1MdgvVCAT]
+. Name your integration, enter your API/Hash keys as well as your
+Sendlane Subdomain, and click
+*_Authenticate_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedacc92c7d3a32d2a4e758/file-kyeAmRZMtl.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedacc92c7d3a32d2a4e758/file-kyeAmRZMtl]
+. Select the list you want the pop up to integrate with, as well as any
+tags you want assigned to your contacts +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedad502c7d3a32d2a4e75d/file-ENX9ZWpzID.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedad502c7d3a32d2a4e75d/file-ENX9ZWpzID]
+. Click *_Next_*, *_Save_*, and then toggle to make public at the top
+right of the page
+
+Your Integration is now complete!
+
+Captured contacts from your Convert Pro will now be synced with your
+selected list in Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Convert Pro, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Convert Pro team is just a few clicks away!
+
+* Connect with the https://www.convertpro.net/contact/[Convert Pro team]
+* Submit a https://www.convertpro.net/support/submit-a-ticket/[support
+ticket]
+
+'''''
+
+=== Additional Convert Pro Resources
+
+https://www.convertpro.net/?bsf=2497[Sign Up for Convert Pro] |
+https://www.convertpro.net/blog/[Blog]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage and Capture Leads]
+* https://www.sendlane.com/blog-posts/converting-landing-pages[4 Design
+Elements of Converting Landing Pages]
+
+'''''
+
+=== TL;DR
+
+Login to WordPress →  _Convert Pro_ → ** _Create New_ → Select
+call-to-action type → Click _Form_ and insert email field →
+_Connect_ → _Sendlane_ → Enter Subdomain / API / Hash →
+_AUTHENTICATE_ → Select List/Tags → _Next_** **→ _Save_ → Toggle on

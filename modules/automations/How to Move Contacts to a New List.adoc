@@ -1,0 +1,113 @@
+This tutorial will teach you how to move contacts from one list to
+another using an Automation.
+
+====== Please Note
+
+This process only works for moving _new_ contacts that come in after the
+automation is activated. If you'd like to move _existing_ contacts, they
+will need to be moved manually using an export and import.
+
+'''''
+
+=== Before Getting Started
+
+Before you can move contacts within your account, please be sure you
+have a source list and a destination list created. 
+
+Once https://help.sendlane.com/article/125-lists[both lists
+are created], you can move on to setting up your automation!
+
+'''''
+
+=== Move Contacts to a New List
+
+https://help.sendlane.com/article/73-automations[**]
+
+. Navigate to __*Automations* __→
+https://help.sendlane.com/article/73-automations[New Automation]__ __and
+select *Start from Scratch*
+. Click to add a trigger, and choose *_Subscribes to a
+list image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe6464ef24ccf588e3fe8a9/file-ZUpaHRqA0Q.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe6464ef24ccf588e3fe8a9/file-ZUpaHRqA0Q]_*
+. Select the source list that includes the contacts you'd like to move
+and click *_Done_*
+. Next, build out your automation with actions, emails, tags, and
+anything else you might need
++
+====== Please Note
+
+One great reason to move contacts via an automation is to filter out
+contacts who have engaged with your emails vs those who have not. This
+can be done using a
+https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation[conditional
+split].
+. Once you have your automation funnel built, select the conditional
+split option from the actions toolbar.
+. You will be able to set the rules for what you want the conditional
+split to look like. This example will check if the subscriber opened any
+campaign in the automation.  
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe64c5240f24b1b2aaf46e0/file-l4GLHOt14j.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe64c5240f24b1b2aaf46e0/file-l4GLHOt14j]
+. Once you have the conditional split set up, add the *Update Contact
+Property* action under the "Yes" or "No" branch, depending on your
+preference__.  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe64704495a886ca7827e70/file-NhFrJTWoNE.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe64704495a886ca7827e70/file-NhFrJTWoNE]__**
+. Click on *_Subscribe to List _*
+. ****Select the destination list that you'd like contacts to move to
+and click _Done._ Repeat steps 7-9 to fill out both sides of the
+conditional split.   __
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe64cd3495a886ca7827e7a/file-hWYT2Xm3hu.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe64cd3495a886ca7827e7a/file-hWYT2Xm3hu]
++
+__
++
+__
+. If you'd like these contacts to remain on both lists, there's nothing
+else for you to do. Once you activate your automation funnel, any new
+contacts that subscribe to your source list will also be added to List
+2.
+
+If you'd like to unsubscribe contacts from your source list once they
+join your destination list, please continue on to the section below for
+next steps.
+
+'''''
+
+=== Next Steps
+
+After you've added your Subscribe to List action, here's how to
+unsubscribe contacts from your source list once they join your
+destination list:
+
+.  Click the *plus icon* (*+*) and under Actions, select *_Update
+Contact Property_*
+. Choose *Unsubscribe from
+List image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe64790f24ccf588e3fe8aa/file-91k2EksHzX.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe64790f24ccf588e3fe8aa/file-91k2EksHzX]* +
+*__*
+. Select your source list from the dropdown and click
+*_Done image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe64d1c41fcb56e4047c0d4/file-BRD9bG8eJA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe64d1c41fcb56e4047c0d4/file-BRD9bG8eJA]_*
+. Toggle the automation status to
+*Active. image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe647aaf24ccf588e3fe8ab/file-UsKXNi8Y5f.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fe647aaf24ccf588e3fe8ab/file-UsKXNi8Y5f]*
+
+And you're all set! Any new contacts will be added to List 2 and
+unsubscribed from List 1!
+
+====== Please Note
+
+The unsubscribe action (if it is unsubscribing the contact from the
+source list [List 1]) will end the automation. Any action you place
+after the unsubscribe action will not happen since the user is
+unsubscribed from the source list.
+
+'''''
+
+=== TL;DR
+
+[.underline]#Move from source to destination list (stay on both)#:
+Automation → New Automation → Start from Scratch → Subscribes to a
+list → Select source list → Done → Update Contact Property → Subscribe
+to List → Select destination list → Done → Active
+
+[.underline]#Move from source to destination list (unsubscribe from
+source#): Automation → New Automation → Start from Scratch → Subscribes
+to a list → Select source list → Done → Update Contact Property →
+Subscribe to List → Select destination list → Done → Update Contact
+Property → Unsubscribe from List → Select source list → Done → Activate 

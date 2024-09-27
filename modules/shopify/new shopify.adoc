@@ -1,0 +1,329 @@
+==== Overview
+
+https://www.shopify.com/[Shopify] is a complete eCommerce platform that
+enables you to start, grow, and manage an eCommerce business. By
+integrating your Shopify store with Sendlane, you can gain insights from
+your customer's behavior and purchase history and use those insights to
+develop targeted email Campaigns and Automation funnels, create highly
+targeted audiences with Segments, and more!
+
+Read on to learn how to connect your Shopify store and Sendlane account!
+
+==== In This Guide
+
+* link:#wycd[What Your Shopify Integration Can Do]
+* link:#connecting[Access the Shopify Integration in Sendlane]
+* link:#install[Install the Sendlane App in Shopify]
+* link:#configure[Configure Shopify Settings in Sendlane]
+* link:#troubleshooting[Troubleshooting & Additional Shopify Resources]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+. https://help.shopify.com/en/manual/intro-to-shopify/initial-setup[Create
+your Shopify store]
+.  The Shopify integration requires five specific Lists to store
+contacts.
+https://help.sendlane.com/article/125-lists#creating-a-list[Create
+Lists] for the following categories in your Sendlane account:
+.. Abandoned cart
+.. Newsletter
+.. Customers
+.. Reviews
+.. Back in stock
+. Ensure you are logged into Sendlane in only ONE browser tab
+
+'''''
+
+[[wycd]]
+==== What You Can Do with Shopify and Sendlane
+
+Sendlane's Shopify integration unlocks the following ways to use data
+from your Shopify store's orders and checkouts, customer profiles, and
+products:
+
+* https://help.sendlane.com/article/448-automation-triggers#shopify[Trigger
+Automations]; including
+https://help.sendlane.com/article/77-retarget-shopify-abandoned-cart-customers[checkout]
+and
+https://help.sendlane.com/article/530-how-to-retarget-shopify-browse-abandoners[browse]
+abandon flows
+* https://help.sendlane.com/article/452-segment-options-and-operators#shopify[Create
+Segments] based on order history, customer profile information and tags,
+and more!
+* https://help.sendlane.com/article/550-how-to-authenticate-a-sending-domain[Set
+up a verified sending domain for your Shopify store]
+* https://help.sendlane.com/article/517-how-to-set-up-back-in-stock-notifications-for-shopify[Create
+Back in Stock notifications]
+* https://help.sendlane.com/article/522-how-to-install-reviews-shopify[Collect
+and display Sendlane Reviews]
+* https://help.sendlane.com/article/507-how-to-generate-unique-coupons-for-shopify[Upload
+and send unique coupon codes]
+* https://help.sendlane.com/article/319-how-to-use-pop-ups-with-shopify[Install
+Sendlane Pop-ups on your Shopify store]
+* https://help.sendlane.com/article/531-how-to-display-selected-products-in-an-email[Select
+specific products or set up a dynamic feed of products to display in
+emails]
+* https://help.sendlane.com/article/507-how-to-generate-unique-coupons-for-shopify[]https://help.sendlane.com/article/535-collect-sms-consent-with-shopify[Collect
+consent to send SMS marketing messages]
+
+'''''
+
+[[ist2]]
+=== Shopify Integration Installation
+
+[[log-out]]
+===== 🚨 Being logged into Sendlane in multiple tabs or windows will cause the integration installation process to fail
+
+Ensure you are logged into Sendlane in only ONE browser tab before
+beginning the installation process. Being logged into multiple tabs will
+cause you to get stuck in an infinite loop between Sendlane and Shopify
+without being able to finalize the installation. If this happens, delete
+the Shopify integration in Sendlane and start the installation process
+again.
+
+===== 🚨 If you are an agency user installing Shopify, you must create a user in the target account to complete the integration process with
+
+Agency users often run into infinite loops when trying to install
+Shopify. To avoid this:
+
+. https://help.sendlane.com/article/399-users[Create a user] in the
+account you want to integrate with Shopify (use plus addressing to use
+your own email address for this new account)
+. Log out of your agency account
+. Activate the new user account
+. Log into Sendlane using the new user account
+. Follow the instructions in this article to complete the Shopify
+integration
+. Log out of the user account
+. Log into your agency account
+. Delete the user you created
+
+===== 🚨 Sendlane will import Contacts with ANY Shopify activity in the past 12 months; new and existing customer activity will begin syncing automatically
+
+If you have imported Contacts into Shopify in the past 12 months, those
+contacts will be included even if they have not purchased a product or
+had any other activity in the past 12 months. Customer activity will
+update existing Sendlane Contact records and create new Sendlane Contact
+records for new customers.
+
+Watch the video below to see the process of integrating Shopify and
+Sendlane from start to finish:
+
+image:https://fast.wistia.com/embed/medias/whqnyn10il/swatch[https://fast.wistia.com/embed/medias/whqnyn10il/swatch]
+
+1
+
+[[lists]]
+====  Create Lists in your Sendlane account
+
+The Shopify integration requires the following Lists in your Sendlane
+account:
+
+. Newsletter
+. Customers
+. Abandoned Checkout
+. Reviews
+. Back in Stock
+
+To create the required Lists:
+
+. Login to Sendlane
+. Click the *Audience*
+. Click *Lists* 
+. Click *+ List* 
+. Enter one of the List names specified above
+. Click *Confirm*
+. Repeat steps 2-6 for the four remaining Lists
+
+2
+
+==== Log out of Sendlane
+
+To ensure your integration connects correctly, log out of Sendlane
+before moving on to the next step. If you do not log out of Sendlane,
+you are likely to run into issues that will require you to delete your
+progress and start the integration process over. 3
+
+[[install]]
+====  Install the Sendlane App in Shopify
+
+. Login to Shopify
+. Click the search bar at the top of the screen
+. In the search bar, click Apps
+. EnterSendlane
+. Click the Sendlane app
+. Click *Install*
+
+4
+
+====  Login to Sendlane
+
+After clicking Install on the Sendlane app in your Shopify store, you
+will be redirected to the Sendlane create account page. You should see
+your Shopify store's name in the URL of the page. Click the Login button
+at the bottom of the screen.
+
+. When you are redirected to your store, click *Install*
+. Note that the end of the URL on the Sendlane registration page
+contains your Shopify store's name
+. At the bottom of the Sendlane registration page, click *Log In*
+. Enter your credentials and log in to Sendlane to be redirected to your
+Shopify integration's settings
+
+5
+
+[[configure]]
+====  Configure Shopify Settings in Sendlane
+
+When you login to Sendlane, you will be redirected to your Shopify
+integration's settings.
+
+. Select the link:#bgs[Lists you created before getting started] for
+newsletter, buyer,
+https://help.sendlane.com/article/522-how-to-install-reviews-shopify[reviews],
+https://help.sendlane.com/article/77-retarget-shopify-abandoned-cart-customers[abandoned
+cart], and
+https://help.sendlane.com/article/517-how-to-set-up-back-in-stock-notifications-for-shopify[back
+in stock] Contacts
+.. If you'd like to automatically remove customers from the abandoned
+cart list once they've made a purchase, check the optional checkbox
+. Select an *address type* to assign to Contacts
+.. Default will bring in the address marked as the Contact's default
+address in Shopify
+. Click *Finalize Installation*
+
+6
+
+[[sync-confirmation]]
+====  Finalize and sync integration
+
+Your integration may take a few seconds or minutes to sync. To complete
+the final sync manually instead of waiting:
+
+. In the Actions column, click the *resync* icon, after which you may
+see your integration status say Syncing
+. Refresh the page to see your integration status say Completed
+. Navigate to the Contacts page to check that customer profiles have
+synced from Shopify
+. Create a Segment with a Product filter to check that products have
+synced from Shopify
+
+Your Shopify integration is now complete!
+
+[[multistore]]
+===== 🙋 How do I connect multiple stores?
+
+To add more than one Shopify store, click Add Store and repeat the steps
+above!
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654ea3696e5cdb01c2a32fea/file-s4Nvhnxp8N.png[file-s4Nvhnxp8N.png]
+
+===== ⏭ Next Steps
+
+* https://help.sendlane.com/article/319-how-to-use-pop-ups-with-shopify[Install
+lead collection forms]
+* https://help.sendlane.com/article/535-collect-sms-consent-with-shopify[Collect
+SMS consent]
+* Set up an
+https://help.sendlane.com/article/77-retarget-shopify-abandoned-cart-customers[abandoned
+cart Automation]
+
+[[troubleshooting]]
+=== Troubleshooting & Additional Shopify Resources
+
+* link:#2[My status is stuck at pending&#44; and I'm getting an error
+that says&#44; "Are you sure you want to install this integration?"]
+* link:#3[My status is stuck at pending&#44; but all of my Lists are
+assigned!]
+* link:#starting-over[I deleted my integration so I can start the
+process over&#44; but I'm still unable to complete the integration!]
+* link:#1[I don't see my Shopify customers in my Sendlane account!]
+
+====== My status is stuck at pending, and I'm getting an error that says, "Are you sure you want to install this integration?"
+
+This error means that your integration's Lists have not been assigned.
+To fix the error:
+
+. Click the *Settings* icon
+. Select Lists for any of the five categories without an assigned List
+. Click *Continue*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65a5c30ca45534249a235ba5/file-5hkdg4UvDD.gif[file-5hkdg4UvDD.gif]
+
+'''''
+
+====== My status is stuck at pending, but all of my Lists are assigned!
+
+If your Shopify integration status is stuck at Pending and all Lists
+have been assigned in Settings, you can always try deleting the
+integrations and starting the integration process over. Sometimes, a
+blip in communication between Sendlane and Shopify interrupts the
+connection process. If this happens, you'll need to delete the Shopify
+integration in Sendlane and the Sendlane app in Shopify.
+
+Delete the existing Shopify integration that is stuck at Pending by
+clicking the trash can icon:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e64b53e114d11769c3c8be/file-lPcKuvVSr4.png[file-lPcKuvVSr4.png]
+
+Delete the Sendlane app in Shopify:
+
+. Click *Settings*
+. Click *Apps and sales channels*
+. Hover over *Sendlane Marketing Automation*
+. Click *Uninstall*
+. Click *Uninstall* again
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65a9ab4df1393916b8ea190d/file-qu1gy9YMcZ.gif[file-qu1gy9YMcZ.gif]
+
+'''''
+
+[[starting-over]]
+====== I deleted my integration so I can start the process over, but I'm still unable to complete the integration!
+
+If your integration process is interrupted, you must:
+
+. Delete the Shopify integration in Sendlane, and
+. Delete the Sendlane app in Shopify, and
+. Ensure you are logged out of Sendlane entirely or logged in on only
+one tab
+
+before starting the integration process again.
+
+Delete the Shopify integration in Sendlane by clicking the trash can
+icon:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e64b53e114d11769c3c8be/file-lPcKuvVSr4.png[file-lPcKuvVSr4.png]
+
+Delete the Sendlane app in Shopify:
+
+. Click *Settings*
+. Click *Apps and sales channels*
+. Hover over *Sendlane Marketing Automation*
+. Click *Uninstall*
+. Click *Uninstall* again
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65a9ab4df1393916b8ea190d/file-qu1gy9YMcZ.gif[file-qu1gy9YMcZ.gif]
+
+'''''
+
+====== I don't see my Shopify customers in my Sendlane account!
+
+If you just completed the integration process, check back later. If you
+visit the Shopify integration page within your Sendlane account and see
+that the status still shows `+Initializing+`, `+Pending+`, or
+`+Syncing+`, some information or actions may not be available.
+
+'''''
+
+[[additional]]
+=== Additional Resources
+
+. Level up your Shopify eCommerce marketing game by learning from the
+experts at https://www.ecommerceacademy.com/[eCommerce Academy]!
+. https://www.sendlane.com/blog/increase-sales-on-shopify[5 Tried &
+Tested Ways to Increase Sales on Shopify]
+. https://www.sendlane.com/blog/abandoned-cart-text-message-shopify[Abandoned
+Cart Text Messages For Shopify]
+. https://www.sendlane.com/blog/sms-marketing-shopify[7 Strategies to
+Kickstart Your SMS Marketing for Shopify Stores]

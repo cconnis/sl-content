@@ -1,0 +1,124 @@
+[[top]]
+==== Overview
+
+Landing pages that Contacts see when they click links in your emails to
+confirm double opt-in, update preferences, or unsubscribe can be styled
+to match your brand. Read on to learn how to customize each landing
+page.
+
+==== In This Guide
+
+* link:#identify[Identify Email Preference Pages]
+* link:#customize[Customize Email Preference Pages] +
+** link:#global[Global Design Tab]
+** link:#page[Page Content Tab]
+
+'''''
+
+[[identify]]
+=== Identify Email Preference Pages
+
+The table below describes the action Contacts take to reach each of the
+four available landing pages:
+
+[cols=",",]
+|===
+|*Contact Action* |*Page Contact Sees*
+
+|Clicks the unsubscribe link in the footer of an email
+|Unsubscribe/Profile Main
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65298e1e9362491a4094a1d7/file-5nQrlm4XUW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65298e1e9362491a4094a1d7/file-5nQrlm4XUW]
+
+|Confirms their unsubscription on the Unsubscribe/Profile Main page
+|Unsubscribe/Profile Confirmation
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65298e409362491a4094a1d8/file-SSKy8rNWz4.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65298e409362491a4094a1d8/file-SSKy8rNWz4]
+
+|Clicks the link they receive in a double opt-in confirmation email
+|Double Opt-In Main
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65298e7d234cd7525132755f/file-tPHJuizI30.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65298e7d234cd7525132755f/file-tPHJuizI30]
+
+|Clicks the confirm subscription link on the double opt-in Main page
+|Double Opt-InConfirmation 
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65298eb01ec9493542047c91/file-uHuCaJCvCD.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65298eb01ec9493542047c91/file-uHuCaJCvCD]
+
+| |
+|===
+
+link:#top[Back to top]
+
+'''''
+
+[[customize]]
+=== Customize Email Preference Pages
+
+. Click *Account* 
+. Click *Email* 
+. Click *Customize pages*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62e810c25a63a6390d8606b4/file-cf3NA7uk4g.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62e810c25a63a6390d8606b4/file-cf3NA7uk4g]
+
+[[global]]
+==== Global Design Tab
+
+The first tab on the Subscription Preferences page updates style
+settings for all pages at once. On the Global Design tab, you can update
+the following elements for all pages:
+
+* *Logo* Click the Logo checkbox and upload a .JPEG, .GIF, or .PNG file
+(recommended size is 256 x 256 pixels)
+* *Page Styles* Set page background color, content background color, and
+text color
+* *Input Fields* Set border color, width, and radius for all input
+fields
+* *Buttons* Set button background color, text color, and border radius
+
+[[page]]
+==== Page Content Tab
+
+The second tab on the Subscription Preferences page updates the main
+title and instruction text for each of the Subscription Preferences
+pages:
+
+* *Unsubscribe/Profile Main* For Contacts who are already subscribed to
+update contact information, consent to receive email or SMS, and report
+abuse
+* *Unsubscribe/Profile Confirmation* What Contacts see when they perform
+one of the above actions
+* *Double Opt-In Main* The confirmation email Contacts receive and click
+to be subscribed to your content if you have Double Opt-In turned on
+* *Double Opt-In Confirmation* What Contacts see when they opt in to
+your content
+
+[[save]]
+===== 🚨 Changes to email preference pages are not automatically saved
+
+Make sure to click Save Changes in the upper right corner to save your
+updates!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/653bec9b8ccb9743447518b1/file-hMoxRWkc5P.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/653bec9b8ccb9743447518b1/file-hMoxRWkc5P]
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+[[invalid]]
+====== I see "invalid action" or another error when testing my unsubscribe and preferences pages!
+
+Usually these errors are caused by being logged into Sendlane. Try
+logging out of Sendlane and testing your links again, if the problem
+persists please reach out to your Customer Success Manger or our 24/7
+product support specialists!
+
+[[selections]]
+====== How can I set up preference options for Contacts to select specific Lists to subscribe to?
+
+Sendlane does not currently provide a way for Contacts to update their
+preferences other than unsubscribing from all emails or SMS messages.
+
+[[rearrange]]
+====== How can I rearrange the blocks on the Unsubscribe/Profile page?
+
+It is not possible to rearrange the blocks for updating subscription
+options, communication preferences, and reporting email abuse.

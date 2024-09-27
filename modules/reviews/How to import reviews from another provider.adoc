@@ -1,0 +1,91 @@
+[[top]]
+==== Overview
+
+You can import a generic file of reviews from a platform not
+specifically supported by the Sendlane Reviews import tool. Read on to
+learn how to format your file for a successful import!
+
+[[criteria]]
+==== Import file criteria
+
+Import files must meet the following criteria for successful processing:
+
+* Your file type is .CSV
+* Your file size is no larger than 10 MB
+* Your file's column headers exactly match the table below.
+* Your file includes all the required column headers, noted in the table
+below with a green checkmark ✅, exactly as they appear in the table
+(i.e., `+product-id+` instead of `+product_id+` will cause an error).
+You must replace the headers in the file you exported from your previous
+provider with the corresponding headers below.
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Column Header |Required |Description |Example
+|`+product_id+` |✅ |Unique identifier for the product |195144121145
+
+|`+product_title+` |  |Name of the product which will appear under the
+review to identify which product the review applies to |Black T-Shirt
+
+|`+title+` |  |Review's title |I love this shirt!
+
+|`+content+` |  |The main content of the review |I like the high
+quality, sleek design, and cool graphic.
+
+|`+rating+` |✅ |Number 1 to 5 |5
+
+|`+email+` |✅ |Email of the person submitting a review
+|sendy@sendlane.com
+
+|`+name+` |  |Name of the person submitting a review |Sendy L
+
+|`+created_at+` |✅ |Date and time review was created |Date format
+(e.g., YYYY-MM-DD)
+
+|`+published+` |✅ a|
+Determines whether the review is published or not published. This field
+accepts the following values to mark a review as published, all other
+values will result in the review not being published: +
+
+* `+Published+`
+* `+published+`
+* `+true+`
+* `+TRUE+`
+* `+True+`
+* `+Active+`
+* `+active+`
+
+|TRUE
+
+|`+reply+` |  |Text of response from store owner |Thanks for your
+review!
+
+|`+replied_at+` |  |Date and time comment was created |Date format
+(e.g., YYYY-MM-DD)
+
+|`+image_urls+` |  |Links to image URLs to display on the review. Use
+commas to separate multiple image URLs.
+|https://cdn.shopify.com/s/files/1/0304/4622/3493/products/T-Shirt-MockUp_DkGray-AutoSquad_1024x1024@2x.jpg?v=1617908104
+
+|`+verified_purchase+` |  |Determines whether a review shows a Verified
+badge (TRUE) or not (FALSE) |TRUE
+
+|  |  |  | 
+|===
+
+[[template]]
+===== 💡 Use the Sendlane Reviews import template to avoid import hiccups!
+
+Use the
+https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/attachments/64b1c02878d5c33f49240f3f/Sendlane_Reviews_Template.csv[Sendlane
+Reviews import template] to format your reviews file.
+
+To use the template:
+
+. Save the template to your desktop
+. Use your preferred spreadsheet editor (Excel, Google Sheets, or
+Numbers) to open the template
+. Paste your reviews into the template, making sure to adjust column
+order and header text to match the table below
+. Save your file as `+.CSV+`
+. Follow the instructions below to upload your reviews!

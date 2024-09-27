@@ -1,0 +1,373 @@
+[[top]]
+==== Overview
+
+You can customize your forms’ device display options, add multiple pages
+to your form, and style every part of your form to seamlessly blend in
+with the rest of your website. Read on to learn about options for
+designing and customizing your Sendlane Forms! 
+
+==== In this guide
+
+* link:#new[New form options]
+* link:#form-pages[Add and rearrange form pages]
+* link:#global-form-styles[Set global form styles]
+* link:#global-form-design[Global Form Design Styles]
+* link:#global-form-fields-styles[Global Form Fields Styles]
+* link:#close-button[Close Button]
+* link:#styles-for-content[Set styles for individual content blocks]
+** link:#image-element[Image]
+** link:#text-element[Text]
+** link:#form-fields-element[Form Fields]
+** link:#option-selector-element[Option Selector]
+** link:#button-element[Button]
+
+[[custom-css]]
+===== 💡 Check out the guide to using custom CSS with Sendlane Forms https://help.sendlane.com/article/667-sendlane-forms-custom-css-guidance[here]
+
+'''''
+
+[[new]]
+=== New form options
+
+When you create a new Sendlane Form, you’re asked to set your form’s
+name, type, device type, and layout:
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfc6d1c2f8d3d7ebfd542/file-wIJ7AwSKs5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfc6d1c2f8d3d7ebfd542/file-wIJ7AwSKs5]
+
+* *Form name* - The name of your form will only be seen inside Sendlane
+and will never be visible on your website. Enter a descriptive name for
+your form.
+* [#type]#*Type*#
+** Pop Up - form that sits on top of your website content (can be full
+screen)
+** Inline - form that is embedded into your website’s content
+* *Device Type*
+** Mobile - display your form only on mobile devices
+** Desktop - display your form only on desktop
+** Desktop & Mobile - display your form on both mobile and desktop
+devices.
+* *Layout*
+** Regular - display your form in the middle of the screen
+** Partial - display your form in the bottom portion of the screen
+
+link:#top[Back to top]
+
+'''''
+
+[[form-pages]]
+=== Add and rearrange form pages
+
+Add or rearrange your form’s pages on the design screen of the form
+builder.
+
+To add a new page to your form:
+
+. Click the *plus* button at the top of the form preview
+. Select a *page type*
+.. Blank page - a page with no default fields except a “next” button
+.. Email - a page with a required email field
+.. SMS - a page with a required phone number field
+. Enter a descriptive *name* for your page
+. Click *Add Page*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfcb51afd880d112b7f28/file-A9jzaek6gJ.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfcb51afd880d112b7f28/file-A9jzaek6gJ]
+
+To rearrange your form’s pages:
+
+. Click and hold the page you want to move
+. Drag it into the position you want
+. Let go of the page
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfcdb1c2f8d3d7ebfd545/file-Q08zsy81LY.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfcdb1c2f8d3d7ebfd545/file-Q08zsy81LY]
+
+link:#top[Back to top]
+
+'''''
+
+[[global-form-styles]]
+=== Set global form styles
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6670be9c5940934e140f4d2d/file-Xg9ViF7C2w.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6670be9c5940934e140f4d2d/file-Xg9ViF7C2w]
+
+Use the Global Styles tab of the Form Design screen to set your form's
+design, global styles for form fields, and to set your form's close
+button styling.
+
+* link:#global-form-design[Global Form Design Styles]
+* link:#global-form-fields-styles[Global Form Fields Styles]
+* link:#close-button[Close Button]
+* https://help.sendlane.com/article/667-sendlane-forms-custom-css-guidance[Custom
+CSS] (separate article)
+
+link:#top[Back to top]
+
+'''''
+
+[[global-form-design]]
+==== Global Form Design Styles
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/665e03de5173914f806c14d4/file-wRrZaGCheT.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/665e03de5173914f806c14d4/file-wRrZaGCheT]
+
+* *Layout* - Select Split to add a left or right justified hero image to
+the default Full form, then select an image from a file or URL (this
+option should only be used for desktop forms; the form's text will
+render incorrectly on mobile if split layout is enabled)
+** Split layout options:
+*** Position - Select to display the hero image on the right or left
+side of your form
+*** Image Size - Select a size for your hero image
+**** Small - Image fills 30% of the form
+**** Medium - Image fills 50% of the form
+**** Large - Image fills 70% of the form
+* *Background* - Select whether to use a color or an image for your
+form's background
+** Color - Select a preset color or enter a hex value for your form’s
+background color
+** Image
+*** Upload type - Select From file to upload an image from your desktop
+or From URL to use an image's URL
+*** Background size - Select one of the following
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#values[CSS
+based background size] options
+**** Cover - Retains the image's aspect ratio while scaling the image to
+the smallest size required to fill the form background
+**** Contain - Retains the image's aspect ratio while scaling the image
+as large as possible without cropping or stretching
+**** Auto - Retains the image's original dimensions
+**** Px - Use the slider to set the image's static width
+*** Background position - Select a position for the image
+*** Background Repeat - Select Repeat Y to repeat the image on the Y
+axis (vertically), select Repeat X to repeat the image on the X axis
+(horizontally)
+*** Fullscreen (Only for link:#type[pop-up type forms with a regular
+layout]) - Check the box to make your form take up the entire screen on
+desktop and mobile (pop-up type forms with a regular layout only)
+*** Overlay Style - If Fullscreen is unchecked, you can select an
+optional overlay style that will fill the rest of the screen with a
+light, medium, or dark shade of gray. Custom colors are not available
+for overlays.
+*** Corner Radius - If Fullscreen is unchecked, you can select a curved
+corner radius
+* *Position* - Select the position on your website the form should
+display in (available only for
+https://help.sendlane.com/article/625-understanding-sendlane-forms-design-and-customization-options#global-form-design[regular
+layout] forms)
+* *Corner radius* - Select a corner radius for the form
+* *Size* - Select a size for the form (available only for desktop
+https://help.sendlane.com/article/625-understanding-sendlane-forms-design-and-customization-options#global-form-design[regular
+layout] forms)
+
+link:#global-form-styles[Back to Global Styles] +
+link:#top[Back to top]
+
+'''''
+
+==== Global Form Fields Styles
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfd561afd880d112b7f29/file-jNKmQnENbC.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfd561afd880d112b7f29/file-jNKmQnENbC]
+
+* *Label position*
+** Inside - show the field label inside the field
+** Outside - show the field above the field
+* *Text alignment* - Select an alignment for form labels
+* *Font color* - Select a preset color or enter a hex value for your
+form labels’ font
+* *Font family* - Select a font family for form labels
+* *Font size* - Select a font size for form labels
+* *Font weight* - Select a font weight for form labels
+* *Corner radius* - Select a corner radius for form field boxes
+* *Background color* - Select a background color for form field boxes
+* *Border* - Check the checkbox to add a border to form fields, then
+select a color and thickness for the border
+
+link:#global-form-styles[Back to Global Styles] +
+link:#top[Back to top]
+
+'''''
+
+==== Close Button
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfd7a1afd880d112b7f2a/file-krKlrkq3lh.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfd7a1afd880d112b7f2a/file-krKlrkq3lh]
+
+* *Size* - Select a size for the close button
+* *Stroke Width* - select a width for the close button
+* *Close icon color* - Select a preset color or enter a hex value for
+your form’s close button
+* *Icon background* - Check the checkbox to select a background color
+for the form’s close button
+
+link:#global-form-styles[Back to Global Styles] +
+link:#top[Back to top]
+
+'''''
+
+[[styles-for-content]]
+=== Set styles for individual content blocks
+
+Use the Content tab of the Form Design page to add and style to elements
+on your form:
+
+* link:#image-element[Image]
+* link:#text-element[Text]
+* link:#form-fields-element[Form Fields]
+* link:#option-selector-element[Option Selector]
+* link:#button-element[Button]
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd009a1c2f8d3d7ebfd54e/file-i9hJBA32CV.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd009a1c2f8d3d7ebfd54e/file-i9hJBA32CV]
+
+link:#top[Back to top]
+
+'''''
+
+[[image-element]]
+==== Image
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfdcf93e735297b4ecbe7/file-fWtGynTZD7.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfdcf93e735297b4ecbe7/file-fWtGynTZD7]
+
+* *Upload Type* - Select From file to upload an image file or From URL
+to paste an image URL into the form builder. Replace the placeholder
+image with an image of your own.
+* *Size* - Adjust the image’s size
+* *Alignment* - Select an alignment for the image
+* *Corner Radius* - Select a corner radius for the image
+* *Margin Top* - Adjust the image’s top margin
+* *Margin Bottom* - Adjust the image’s bottom margin
+
+link:#styles-for-content[Back to Styles for Content] +
+link:#top[Back to top]
+
+'''''
+
+[[text-element]]
+==== Text
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfdf61c2f8d3d7ebfd547/file-LxfuUvMpiC.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfdf61c2f8d3d7ebfd547/file-LxfuUvMpiC]
+
+* *Text field* - Enter text to display on your form
+* *Font color* - Select a preset color or enter a hex value for your
+text element’s font
+* *Font family* - Select a font family for your text element
+* *Font size* - Select a font size for your text element
+* *Font weight* - Select a font weight for your text element
+* *Letter spacing* - Adjust the text element’s spacing between letters
+* *Line Height* - Adjust the text element’s line height
+* *Font Style* - Select U to underline text or _I_ to italicize text
+* *Text Alignment* - Select an alignment for your text element
+* *Margin Top* - Adjust the text element’s top margin
+* *Margin Bottom* - Adjust the text element’s bottom margin
+
+[[hyperlinks]]
+===== 🙋 How do I add a hyperlink to a form?
+
+You can paste hyperlinks created elsewhere, such as in a Google Doc or
+Notion page, into a text element. See
+https://help.sendlane.com/article/667-sendlane-forms-custom-css-guidance#link-color[the
+guide to using custom CSS with Sendlane Forms] to learn how to change
+the color of links in your form.
+
+To add a hyperlink to your form:
+
+. Open a Google Doc, Notion, or other software that allows you to create
+hyperlinks
+. Create your hyperlink
+. Copy your hyperlink
+. Paste the hyperlink into the text field
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/663e6256e7511e33f36eb255/file-koGgBX9eOR.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/663e6256e7511e33f36eb255/file-koGgBX9eOR]
+
+link:#styles-for-content[Back to Styles for Content] +
+link:#top[Back to top]
+
+'''''
+
+[[form-fields-element]]
+==== Form Fields
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfe5b93e735297b4ecbe8/file-GnJEpsci7Z.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfe5b93e735297b4ecbe8/file-GnJEpsci7Z]
+
+* *Order* - Click and hold the drag and drop icon to rearrange form
+fields
+* *Label* - Change a field’s label text in the Label field
+* *Required checkbox* - Check the Required checkbox to mark the field as
+required for form submission
+* *Legal Text* - Click to add and edit legal text appended to email and
+SMS fields
+* *First Name* - Collect a Contact’s first name
+* *Last Name* - Collect a Contact’s last name
+* *Custom* - Select an existing
+https://help.sendlane.com/article/331-custom-fields[custom field] or
+create a new one to collect via your form
+
+The Subscribe, Affiliate, Privacy Statement, and Email Consent fields
+should not be used. They will be removed from the form builder.
+
+link:#styles-for-content[Back to Styles for Content] +
+link:#top[Back to top]
+
+'''''
+
+[[option-selector-element]]
+==== Option Selector
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfe8493e735297b4ecbe9/file-DCi2w5pzWv.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfe8493e735297b4ecbe9/file-DCi2w5pzWv]
+
+* *Type*
+** Checkbox - Allow Contacts to select multiple options
+** Radio Button - Display all options and allow Contacts to select one
+only
+** Dropdown - Allow Contacts to select one option from a dropdown
+* *Custom Field* - Select an existing custom field or create a new one
+* *Options*
+** Use the drag and drop icon to rearrange options
+** Enter text to display on your form for the option in the Option field
+** Enter the text you want to collect in Contacts’ custom field data in
+the Property field
+** Click + Option to add another option
+** Font color - Select a preset color or enter a hex value for your
+options’ font
+** Font family - Select a font family for your options
+** Font size - Select a font size for your options
+** Font weight - Select a font weight for your options
+** Letter spacing - Adjust the options’ spacing between letters
+** Line Height - Adjust the text options’ line height
+** Font Style - Select U to underline text or _I_ to italicize options
+** Margin Top - Adjust the options’ top margin
+** Margin Bottom - Adjust the options’ bottom margin
+
+link:#styles-for-content[Back to Styles for Content] +
+link:#top[Back to top]
+
+'''''
+
+[[button-element]]
+==== Button
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfebf1afd880d112b7f2b/file-kLDLVbi4An.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcfebf1afd880d112b7f2b/file-kLDLVbi4An]
+
+* *Action*
+** Submit and go to next page - Submit data to Sendlane and go to the
+next page of the form
+** Submit and close form - Submit data to Sendlane and close form
+** Submit and go to URL - Submit data to Sendlane and go to a specified
+URL
+** Close Form - Dismiss the form (website visitors who dismiss the form
+will not see it again for three days)
+** Go to URL
+* *Text* - Enter text to display on the button
+* *Font Color* - Select a preset color or enter a hex value for your
+button’s font
+* *Font Family* - Select a font family for your button
+* *Font Size* - Select a font size for your button
+* *Font Weight* - Select a font weight for your button
+* *Letter Spacing* - Adjust the button’s spacing between letters
+* *Line Height* - Adjust the text button’s line height
+* *Font Style* - Select U to underline text or _I_ to italicize button
+text
+* *Margin Top* - Adjust the button’s top margin
+* *Margin Bottom* - Adjust the button’s bottom margin
+* *Corner Radius* - Select a corner radius for form field boxes
+* *Background Color* - Select a background color for form field boxes
+* *Border* - Check the checkbox to add a border to form fields, then
+select a color and thickness for the border
+
+link:#styles-for-content[Back to Styles for Content] +
+link:#top[Back to top]

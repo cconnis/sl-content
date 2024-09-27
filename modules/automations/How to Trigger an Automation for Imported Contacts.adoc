@@ -1,0 +1,100 @@
+Importing contacts is a great way to migrate your audience into
+Sendlane, but since imports don't trigger automations, here's how to do
+just that!
+
+'''''
+
+=== Before Getting Started
+
+If you have not yet imported your contacts, please review our import
+guide
+https://help.sendlane.com/article/190-how-to-import-contacts-into-your-account[here]. 
+
+You will also want to be familiar with
+https://help.sendlane.com/article/73-creating-an-automation?preview=5cd32f1b04286306738ede03[how
+to create an automation] as well as
+https://help.sendlane.com/article/153-how-to-use-email-campaigns#h_1a2b6256-24fd-4a99-8feb-75fec9ae8892[how
+to create a campaign]. 
+
+'''''
+
+=== Triggering an Automation for Imported Contacts
+
+. Create a https://help.sendlane.com/article/153-campaigns[campaign] to
+send to your newly imported contacts - this could be a friendly
+greeting, a newsletter, or any other content you'd like to share
++
+====== Please Note
+
+Do not send the message immediately, instead  _schedule_ the campaign to
+send at a later time so you can complete the rest of the process and
+create your automation.
+. Once you've scheduled your campaign, head over to
+_*Automations* → *New Automation*_ and select the *_Start from scratch_*
+option
+. Next, click to add a trigger, choose _Email Campaign Opened_ and
+select the campaign you just created
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fb060dccff47e00160b9f57/file-6SbPJSFCZm.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fb060dccff47e00160b9f57/file-6SbPJSFCZm]
+. From here, you will be able to build out the rest of your automation
+as desired, adding any
+https://help.sendlane.com/article/73-automations#communications[actions&#44;
+communications or goals] you'd like to use
+. Once you've completed your automation be sure to set the funnel
+from Inactive to *_Active_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fac8bb14cedfd00165af7b6/file-PokYXSCrhe.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fac8bb14cedfd00165af7b6/file-PokYXSCrhe]
++
+**
++
+**
++
+**
++
+**
++
+**
++
+**
++
+**
++
+**
++
+**
++
+**
++
+**
++
+**
++
+**
++
+**
+. From here, you can either allow your campaign to send out at the
+originally scheduled time, or update the schedule to _Send Immediately_
+
+Once the campaign has sent, any imported contacts that open your message
+will trigger the automation and begin flowing through your funnel
+automatically! 
+
+'''''
+
+=== Troubleshooting
+
+* If you cannot select the campaign you created, is the campaign in
+Draft? It will need to be scheduled in order to select that campaign as
+a trigger.
+* Check to make sure the automation is Active once it is complete.
+* Select the correct list to send the initial campaign to. 
+
+'''''
+
+=== TL;DR
+
+_Campaigns_ → _New Campaign_ → create your email → schedule campaign
+(*do not send immediately*) → _Automations_ → _New Automation_ → _Start
+from scratch_ → Add trigger _Email Campaign Opened_ → choose campaign
+for imported contacts → finish building automation → _Activate_ → allow
+campaign to send as scheduled, or update to _Send Immediately_

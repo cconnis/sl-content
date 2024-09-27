@@ -1,0 +1,63 @@
+==== Overview
+
+Sendlane users with active accounts can export contacts from Lists,
+Segments, or as individual contacts to .CSV or .TXT files that contain
+the following fields by default:
+
+[cols=",,",]
+|===
+|Email |Country |Sign-up IP*
+|First Name |Subscribed date |Last used IP
+|Last Name |Added to list date |Subscribed (Yes/No)
+|Phone |Sign-up Source |List
+|===
+
+_*Opt-in details such as Sign-up IP are only available for contacts that
+were collected using a Sendlane Pop-Up or synced through Shopify._
+
+==== In this guide
+
+* link:#export[Export contacts]
+* link:#troubleshooting[Troubleshooting]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Make sure your Sendlane account is active! If your billing plan needs
+attention, you cannot export contact data.
+
+'''''
+
+[[export]]
+=== Export contacts
+
+You can export from the contacts, Lists, Segments, or Tags tabs of the
+https://app.sendlane.com/audience/overview[Audience page]. Below is an
+example of exporting from the Lists tab:
+
+. Select one or more *Lists* 
+. Click *Export*
+. From the dropdown, select All Contacts (both subscribed and
+unsubscribed), Subscribed, or Unsubscribed
+. ****Select one or more optional data points to export by pressing and
+holding down the Command key on your keyboard
+. Select a *file type*
+. Click *Export*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66316671e7511e33f36eaa46/file-v4h9WVjoWr.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66316671e7511e33f36eaa46/file-v4h9WVjoWr]
+
+Your export will begin processing immediately! You will receive an email
+with a copy of your export file to the email address in your Sendlane
+profile. You can also track the status of your export using the
+https://help.sendlane.com/article/387-import-exports[Imports & Exports
+tab] and download the file there when it is complete.
+
+=== Troubleshooting
+
+[[no-export]]
+====== I haven’t received my contact export!
+
+If your plan is active, you've verified your Sendlane account email,
+given the file time to process, checked your spam folder, checked the
+Imports tab, and still have not received your export, please reach out
+to our support team for help!

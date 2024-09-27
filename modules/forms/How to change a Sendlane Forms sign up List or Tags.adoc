@@ -1,0 +1,13 @@
+==== Overview
+
+Sendlane Forms allow you to select a List to add Contacts to when they
+submit the form and add specified Tags to Contacts who submit the form.
+Read on to learn how to edit the List(s) and Tag(s) associated with a
+form!
+
+'''''
+
+To edit a form’s subscription list(s) or tag(s), use the Subscription
+List and Tags dropdowns to select or remove the form’s subscription
+list(s) or tag(s).
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1e711c2f8d3d7ebfd56f/file-w9I9KrzsWF.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1e711c2f8d3d7ebfd56f/file-w9I9KrzsWF]

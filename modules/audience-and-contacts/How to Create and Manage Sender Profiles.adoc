@@ -1,0 +1,159 @@
+[[top]]
+==== Overview
+
+Sender Profiles contain the business, sender name, from email address,
+reply-to email address, and physical address. This information is
+displayed in every email you send with Sendlane.
+
+Create multiple Sender Profiles to best align with your email marketing
+and segmentation strategy!
+
+==== In this Guide
+
+* link:#create-sender-profile[Create an Authenticated Sender Profile]
+* link:#manage[Manage Sender Profiles]
+** link:#edit[Edit a Sender Profile]
+** link:#change-list[Change a List's Sender Profile]
+** link:#delete[Delete a Sender Profile]
+* link:#lists-tab[Create a Sender Profile for a New List]
+
+[[before]]
+===== 🚦 Before Getting Started
+
+Register a custom domain for your business
+
+Create a
+https://help.sendlane.com/article/108-business-website-company-email[custom
+domain email address] using your business' domain
+
+[[free]]
+===== 🚨 Free email accounts cannot be used in Sender Profiles
+
+Sendlane is compliant with all current data processing and privacy
+regulations which require all marketing emails to be sent from a custom
+domain email address.
+
+'''''
+
+[[create-sender-profile]]
+=== Create an Authenticated Sender Profile
+
+To create an authenticated Sender Profile:
+
+. Click the *Audience* icon
+. Click *Sender Profile*
+. Click *+ Sender Profile*
+. [#field-descriptions]#Fill out each field, making sure to use a custom
+domain email address in the From Email and Reply to fields, and your
+business’ address in the Address section#
+.. Sender Name – The name that will show as the Sender when Contacts
+receive your content. Use a name that your audience will recognize to
+build brand recognition and trust!
+.. Company name – The company name that will appear in your email footer
+.. Domain - Select the Verified radio button
+.. From Email
+... Enter an email address prefix (hello in hello@example.com)
+... From the dropdown, select a verified sending domain
+.. Reply To Email – The email address that appears when Contacts reply
+to your email. Use an email address with a custom domain that matches
+your brand.
+.. Address – The
+https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business[CAN-SPAM]
+Act requires a valid physical postal address or P.O. Box to be displayed
+in all marketing emails.
+. Click *Save*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65df5753eeacc5315bb86497/file-rXbo6DJnCs.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65df5753eeacc5315bb86497/file-rXbo6DJnCs]
+
+link:#top[Back to top]
+
+'''''
+
+[[manage]]
+=== Manage Sender Profiles
+
+[[edit]]
+==== Edit a Sender Profile
+
+. Click the *Audience* icon
+. Click the *Sender Profile* tab
+. Click the *gray arrow* next to the Sender Profile you want to edit
+. Click the *Edit* icon
+. Make changes to your Sender Profile
+. Click *Save*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656e5e8f9b21c473b171e506/file-A20ZK35kiw.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656e5e8f9b21c473b171e506/file-A20ZK35kiw]
+
+[[change-list]]
+==== Change a List's Sender Profile
+
+. Click the *Audience* icon
+. Click the *Lists* tab
+. Click the *gray arrow* next to the List you want to change the Sender
+Profile for
+. In the Sender Profile section, click *Edit*
+. Select a new Sender Profile from the dropdown
+. Click *Save*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656e5f7d9b21c473b171e507/file-xM1N9EHTZW.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656e5f7d9b21c473b171e507/file-xM1N9EHTZW]
+
+[[delete]]
+==== Delete a Sender Profile
+
+. Click the *Audience* icon
+. Click the *Sender Profile* tab
+. Click the *gray arrow* next to the Sender Profile you want to delete
+. Click *Delete*
+. Click *Delete Sender Profile*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656e5ffa21bd077525313633/file-HcoE91SwIi.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656e5ffa21bd077525313633/file-HcoE91SwIi]
+
+link:#top[Back to top]
+
+'''''
+
+[[lists-tab]]
+=== Create a Sender Profile for a New List
+
+When you create a new List, you'll have the option to select an existing
+Sender Profile to associate with the List or to create a new Sender
+Profile that will be associated with the List.
+
+To create a Sender Profile for a new List:
+
+. Click the *Audience icon*
+. Click the *Lists* tab
+. Click *+ List*
+. Click *Manage Sender Profile*
+. Fill out the fields in the New Sender Profile window (see
+link:#field-descriptions[step 5 in Create an Authenticated Sender
+Profile above] for information on each field)
+. Click *Add Sender*
+. Click the *Account* icon
+. Click *Sending Domains*
+. Click the *link icon* next to your authenticated domain
+. Under Sender Type, select *Existing*
+. Select the Sender Profile you just created to associate the Sender
+Profile with your authenticated sending domain
+. Click *Confirm*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656e5bbfc618296c744115a4/file-iXJ0WhyiVf.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656e5bbfc618296c744115a4/file-iXJ0WhyiVf]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656e5bc621bd07752531362f/file-t7e7t3prjO.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656e5bc621bd07752531362f/file-t7e7t3prjO]
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656e5d96c618296c744115a7/file-GqGnm2CraS.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656e5d96c618296c744115a7/file-GqGnm2CraS]
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+*My 'From Email' is not being accepted!*
+
+Ensure you are using a valid custom domain email address and that there
+are no typos or spaces in the email address field.
+
+*My email was sent using the wrong Sender Profile!*
+
+Review the Campaign or Automation email's assigned Sender Profile. If
+the correct Sender Profile is selected, please reach out to our Support
+Team.

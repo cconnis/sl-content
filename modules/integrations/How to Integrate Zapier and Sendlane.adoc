@@ -1,0 +1,107 @@
+https://zapier.com/sign-up/[Zapier] is an online automation tool that
+connects your favorite apps together. By setting up connections called
+Zaps, you can automate your day-to-day tasks, and build workflows
+between apps that otherwise wouldn’t be possible.
+
+Need inspiration? See everything that’s possible with
+https://zapier.com/zapbook/Sendlane[Zapier and Sendlane].
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://zapier.com/sign-up/[Zapier account].
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Zapier, and any other tools you
+connect, know where to place your new leads and contacts!
+
+'''''
+
+=== *Connecting Zapier and Sendlane*
+
+. Log into your Zapier account, or create a new one by
+https://zapier.com/sign-up/[clicking here]
+. From your homepage, click *_Make a Zap!_* on the left side of the menu
+bar +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f79293952faff0016aec584/file-awwXCT9oFd.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f79293952faff0016aec584/file-awwXCT9oFd]
+. In the search box beneath "When This Happens...", search for and
+select *_Sendlane_* +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7929cf46e0fb00179896c2/file-Yw55Df0O9Q.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7929cf46e0fb00179896c2/file-Yw55Df0O9Q]
+. Choose the trigger event (we'll use "Contact Saved" in this example).
+Click**_ Continueimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f792aa7c9e77c00162142f7/file-X9MoIharXG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f792aa7c9e77c00162142f7/file-X9MoIharXG]_**
+. Click *_Sign in to Sendlane_* +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f792b36c9e77c00162142f8/file-UTyn84Spl6.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f792b36c9e77c00162142f8/file-UTyn84Spl6]
+. You will be directed to a new page where you will enter your Sendlane
+login information, then click *_Yes, Continue_* +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce452662c7d3a6d82bdca68/file-ZGwyl6E0DH.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce452662c7d3a6d82bdca68/file-ZGwyl6E0DH]
+. You will be redirected back to your setup page in Zapier. You should
+now see your account in the "Sendlane account" field.
+Click ***_Continue_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f792bc04cedfd0017dce27f/file-mBqhg9QfwA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f792bc04cedfd0017dce27f/file-mBqhg9QfwA]
+. Click __*Test Trigger.* __You will be prompted to choose a sample
+contact to set up your Zap. Click
+*_Continue_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f792dc952faff0016aec585/file-1vCA37qpvK.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f792dc952faff0016aec585/file-1vCA37qpvK]
+
+'''''
+
+=== Next Steps
+
+Now that we've set up our Trigger (Contact Saved), we need to set up our
+"Do This.." action
+
+. In the search box beneath "Choose App & Event", search for and select
+your desired
+applicationimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f792fbec9e77c00162142f9/file-h5wN57VkPR.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f792fbec9e77c00162142f9/file-h5wN57VkPR]
+. From here, you will be able to select which action the Trigger will...
+trigger! After making your selection, click *_Continue_*
+. Just as in step 5 before, you will click *_Connect an Account_* and
+enter your credentials for your chosen app
+. Depending on your previous selections, you may be prompted to test
+your Zap, which is highly recommended. 
+. Once your test is successful, click *_Turn on Zap_* +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7932234cedfd0017dce280/file-wHsUVj5AWm.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7932234cedfd0017dce280/file-wHsUVj5AWm]
+
+====== Please Note
+
+Instructions on testing will vary per your chosen apps and settings
+
+Your integration is now complete! 
+
+'''''
+
+**
+
+=== *Troubleshooting*
+
+These integrations are native to Zapier, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Zapier team is just a few clicks away!
+
+* Connect with the https://zapier.com/app/contact-us[Zapier team]
+* Visit the https://zapier.com/help/[Zapier Help & Support Page]
+
+==== Additional Zapier Resources
+
+https://zapier.com/sign-up/[Sign up for Zapier] |
+https://zapier.com/blog/[Zapier Blog] | https://zapier.com/learn/[Learn]
+
+Creating custom fields to use with Zapier? Check out their guide to
+https://zapier.com/help/create/customize/add-custom-values-to-dropdown-menu-fields-in-zaps[add
+custom values] to your Zap!
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/zapier-sendlane-better-together[Zapier
+& Sendlane - Better Together!]
+
+'''''
+
+=== TL;DR
+
+Login →  _Make a Zap!_ → Select Sendlane → _Continue_ → Choose
+Trigger → _Sign in to Sendlane_ → _Yes, Continue_ →__** **Continue__ →
+_Test Trigger_ → Choose Contact → _Continue_ → Select a "Do This..."
+App → Choose Trigger action → _Continue_ → _Connect an Account_ → Test →
+_Turn on Zap_

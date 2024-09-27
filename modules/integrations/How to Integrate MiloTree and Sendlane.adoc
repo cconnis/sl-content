@@ -1,0 +1,83 @@
+https://milotree.com/?rfsn=2062499.a2ed93[MiloTree] is a smart pop-up
+platform that enables you to convert visitors into followers, contacts
+and customers.
+
+By integrating MiloTree with Sendlane, captured leads can be funneled
+directly to your Sendlane Lists!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://milotree.com/?rfsn=2062499.a2ed93[MiloTree account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_ → **_API._*
+
+Last (but not least) be sure you
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account so MiloTree knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting MiloTree and Sendlane
+
+. Log in, and select the *_Email_* icon +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5c3372c7d3a177d6ea255/file-PzbK0rfWKS.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5c3372c7d3a177d6ea255/file-PzbK0rfWKS]
+. Select *_Connect Account_*
+. Click the drop-down menu in the top left corner, select *_Sendlane_*
+from the list of providers and click *_Connect +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5c4a12c7d3a177d6ea260/file-0BXsSNwIdl.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5c4a12c7d3a177d6ea260/file-0BXsSNwIdl]_*
+. From there, you'll be prompted to enter your Sendlane subdomain
+followed by your API key and Hash
+Key. *_image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5c42604286306738efa8d/file-oIRtDS1LoX.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5c42604286306738efa8d/file-oIRtDS1LoX]_*
+. Next, select your desired Sendlane List from the drop-down menu on the
+left
+. Customize your pop-up content to your liking, then click *_Done_*
+. You will be directed back to your home screen. Click the purple
+*_Save_* button at the bottom right of the page +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5cbdb04286306738efac8/file-7xOkxmkthL.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5cbdb04286306738efac8/file-7xOkxmkthL]
+
+Your integration is now complete! 
+
+Captured subscribers will be automatically added to your chosen Sendlane
+list. 
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to MiloTree, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+MiloTree team is just a few clicks away!
+
+* Connect with the https://milotree.com/page/contact-us/[MiloTree team]
+* Visit the https://milotree.com/faq/[MiloTree FAQ page]
+
+'''''
+
+==== Additional MiloTree Resources
+
+https://milotree.com/?rfsn=2062499.a2ed93[Sign up for MiloTree] |
+https://milotree.com/blog/[MiloTree Blog] |
+https://milotree.com/widgets/demo[Demo] |
+https://milotree.com/page/welcome-to-the-blogger-genius-podcast/[Podcast]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-milotree[Sendlane
++ MiloTree - Smart Pop-Ups for Social Media and Email]
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage & Capture Leads]
+
+'''''
+
+=== TL;DR
+
+Login → _Email_ → _Connect Account_ → _Sendlane_ → _Connect_ → Enter
+Sendlane API Key, Hash Key & Subdomain → Select desired list → Customize
+pop-up content → _Done_ → _Save_

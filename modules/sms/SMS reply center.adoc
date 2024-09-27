@@ -1,0 +1,114 @@
+==== Overview
+
+Use Sendlane’s SMS Reply Center to engage directly with Contacts who
+have replied to your SMS Campaigns or Automation messages! You'll have
+access to the Reply Center when you activate your SMS plan with
+Sendlane.
+
+Conversations with Contacts are available in the Reply Center for 30
+days from the thread's latest message.
+
+==== In this guide
+
+* link:#access[Access the Reply Center]
+* link:#find[Find Messages]
+* link:#reply[Reply to Messages]
+* link:#unsub[Manually Unsubscribe Contacts]
+* link:#review[Review Contact SMS Activity]
+
+'''''
+
+[[access]]
+=== Access the Reply Center
+
+Click the *Reply Center* icon to get started! 
+
+image:https://lh6.googleusercontent.com/OtUTY8Suxbq8AW-YGNX2Y2wrQwv9kKsXX2q70OAwOsC6i9oVInrT1Ym7wo7pgRYh4hUxhlEFFV5kZbS9BVuL7VH5-Xfaawg1hu-5hSpW9nZ9jGOGa0gEN9C6tp8f4qn1aPVAUyeB[https://lh6.googleusercontent.com/OtUTY8Suxbq8AW-YGNX2Y2wrQwv9kKsXX2q70OAwOsC6i9oVInrT1Ym7wo7pgRYh4hUxhlEFFV5kZbS9BVuL7VH5-Xfaawg1hu-5hSpW9nZ9jGOGa0gEN9C6tp8f4qn1aPVAUyeB,width=720,height=485]
+
+link:#top[Back to top]
+
+'''''
+
+[[find]]
+=== Find Messages
+
+Use the search bar and checkbox filters to find specific messages using
+Contacts' information or sort messages from Latest to Oldest.
+
+image:https://lh5.googleusercontent.com/_oPkCiP1Y-QPDeGGo0BLwBJigRhsUnfz6_YU7tFv8w2ZgSZGVMDaxufwPdnUBr31DQ9yfOIBcfEpK98j1dYYs0miotAfTZBAPGmfH9WnjOFoVMjHxxeq76VWNfvoI6nBT3f4xGhM[https://lh5.googleusercontent.com/_oPkCiP1Y-QPDeGGo0BLwBJigRhsUnfz6_YU7tFv8w2ZgSZGVMDaxufwPdnUBr31DQ9yfOIBcfEpK98j1dYYs0miotAfTZBAPGmfH9WnjOFoVMjHxxeq76VWNfvoI6nBT3f4xGhM,width=436,height=193]
+
+link:#top[Back to top]
+
+'''''
+
+[[reply]]
+=== Reply to Messages
+
+In the Reply Center, you can use text, emojis, and MMS to reply to
+messages from your Contacts. Tracking links and tagged links are not
+available in the Reply Center.
+
+Compose your message and click the *arrow button* to send your reply to
+your Contact!
+
+link:#top[Back to top]
+
+'''''
+
+[[unsub]]
+=== Manually Unsubscribe Contacts
+
+To unsubscribe a Contact, open their reply in the Reply Center and click
+the *Unsubscribe from SMS* button. The Contact will receive an automated
+message confirming that they have been unsubscribed and will no longer
+receive your SMS content.
+
+Contacts can resubscribe to your SMS content by sending an SMS message
+containing an
+https://help.sendlane.com/article/515-collect-sms-consent-opt-in-keywords[Opt-In
+Keyword] or by replying "unstop" to any SMS message from your account
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63f6a0edb7da6b15a7ea1ab6/file-WTXDRNAGWf.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63f6a0edb7da6b15a7ea1ab6/file-WTXDRNAGWf]
+
+link:#top[Back to top]
+
+'''''
+
+[[review]]
+=== Review Contact SMS Activity
+
+Contacts' SMS activity history appears on the right-hand sidebar of an
+open conversation in the Reply Center.
+
+* *SMS Replies* The number of messages in the Contact's conversation
+* *Last SMS* *Sent* The date of the last SMS message sent to a Contact
+* *Last SMS Clicked* The date of the last time a Contact clicked an SMS
+tracking link
+* *Campaign Conversions* An overview of all SMS Campaigns sent to the
+Contact and the Value of any conversions
+* *Revenue Lifetime Value* The total amount spent by the Contact
+* *Revenue Orders Total* The total number of orders placed by the
+Contact
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63f6a0ba188a9d242a7d5cbd/file-DpasmaKfPd.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63f6a0ba188a9d242a7d5cbd/file-DpasmaKfPd]
+
+link:#top[Back to top]
+
+'''''
+
+[[add]]
+=== Additional SMS Resources
+
+Check out the Sendlane Marketing Journal for tips, tricks, and best
+practices for SMS Marketing:
+
+* https://www.sendlane.com/blog/sms-marketing-business-thrive[How SMS
+Marketing Can Help Your Business Thrive]
+* https://www.sendlane.com/blog/sms-mms-marketing[The New Sendlane
+SMS/MMS Marketing (+ 8 Best Practices)]
+* https://www.sendlane.com/blog/sms-marketing-benefits[8 SMS Marketing
+Benefits & Tips]
+* https://www.sendlane.com/blog/sms-marketing-campaigns[9 Best Practices
+for Writing Effective SMS Campaigns]
+
+link:#top[Back to top]

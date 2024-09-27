@@ -1,0 +1,201 @@
+Warming up a new sending infrastructure is a complex project with many
+moving parts. If you’ve gone through Sendlane’s white glove onboarding,
+you’ll be familiar with the strategic decisions made for every part of
+the process: content, timing, and, most important, audience
+segmentation. Segmentation is absolutely crucial during warm up because
+warm up is the period in which you make or break your
+https://www.socketlabs.com/blog/teach-me-email-what-is-sender-reputation/[sending
+reputation]. But the end of warm up doesn’t mean it’s time to relax on
+segmenting your audience before sending; in fact, you can undo all the
+hard work of warming up your sending reputation with just a few
+insufficiently targeted sends.
+
+Maintaining your sending reputation is a marathon, not a sprint. It’s
+something that has to be monitored and adjusted over the entire life of
+your business. There is never a point at which you can say, “We’ve made
+it; we can send whatever we want, whenever we want” without running the
+risk of burning your domain.
+
+In this guide, we’ll discuss why you should always use segmentation to
+target your sends, and never send to your entire list at once. We’ll
+also provide guidance for creating Segments that make targeting your
+sends nearly as easy as sending to your full list!
+
+[[warming]]
+===== 🚨 If you're just starting out with email, you must warm your sending infrastructure
+
+If you're new to email marketing in general or just new to Sendlane,
+welcome! Please read the
+https://help.sendlane.com/article/489-email-onboarding-guide[Getting
+Started with Email Marketing guide] for information on how to properly
+warm your sending infrastructure. Warming is absolutely critical to
+developing a good sending reputation!
+
+[[full]]
+=== Why You Should Never Send to Your Full List
+
+Sending to your entire list can negatively affect your sending
+reputation, which in turn negatively affects your entire business. Here
+are the most important factors to consider before sending to your full
+list:
+
+* *Spam traps.* There are
+https://www.spamhaus.com/resource-center/spamtraps-fix-the-problem-not-the-symptom/[many
+different types] of inactive or “faked” email addresses that inbox
+providers use as traps to catch marketing emails that are sent without
+consent. When an inbox provider knows that an email address is not used
+by an actual person, it expects the email address to not receive
+marketing email since no one has consented to receive it. When you send
+to spam traps, you’re telling the inbox provider that you don’t collect
+consent from the people you send to. Sending to spam traps is incredibly
+easy to do when sending to your full list because you aren’t using any
+indicators of engagement to determine whether the people you’re sending
+to want to receive your emails.
+* *Email addresses get deactivated.* Even without being turned into an
+official spam trap, old and inactive emails are more likely to
+https://help.sendlane.com/article/355-bounced-emails#hard[hard bounce].
+Hard bounces can negatively affect your sending reputation if you
+accumulate too many, and sending to your entire list at one time is the
+easiest way to amass a lot of hard bounces quickly.
+* *Interests change over time.* People who haven't opened or clicked on
+your marketing emails in months or years aren’t very likely to start
+engaging again. While it’s valuable to keep older Contacts in your
+audience to maintain historical data, it’s important to recognize that
+any number of reasons can cause people to lose interest in your content
+and many of them are completely outside of your control, including
+simple changes in interests. When people receive emails they aren’t
+interested in, they are more likely to report your email as spam, which
+damages your sending reputation.
+* *Unspecific content may inspire unsubscribes.* People want to engage
+in content that feels like it was created just for them. When you send
+to your full list, you’re sending the most generic content possible to
+try and appeal to as many of your Contacts as possible. Generic content
+can lead Contacts to unsubscribe because it doesn’t seem useful or
+relevant.
+* *It costs you money!* Sendlane is a sending based platform, meaning
+you pay for the emails you send, not the Contacts you store in your
+account. Sending to your entire list at once uses up the valuable
+sending credits you pay for and all but certainly harms your sending
+reputation. Sending to your whole list just isn’t worth it.
+
+[[useful-segments]]
+=== Useful Segments to Target Sends for Every Marketing Strategy
+
+Now that we’ve established why sending to your full list is not the best
+use of your sending infrastructure let’s go over what you can do
+instead! The Segments below can be useful to any eCommerce business to
+target Campaigns and increase engagement.
+
+[[time]]
+==== Time Based Engagement Segments
+
+Once you’ve reached 30 days of sending, create a Segment for Contacts
+who have clicked in the last 30 days plus Contacts who subscribed to
+your marketing program within the last 30 days.
+
+To build a Segment for 30 day active Contacts:
+
+. https://help.sendlane.com/article/137-segments#creating-segment[Create
+a new Segment] and name it 30 Day Actives
+. Click the *Engagement & Activity tab*
+. Select *Clicked*
+. Select *Recent*
+. Enter *30*
+. Select *Days*
+. Click *+ or condition*
+. Click the *Contact Properties tab*
+. Select *Subscription Date*
+. Select *in the last*
+. Enter *30*
+. Select *Days*
+. Click *Save*
+
+Your Segment will take a few seconds or minutes to process, depending on
+the size of your overall audience.
+
+Repeat the steps above for two additional segments: one for 60 Day
+Actives and one for 90 Day Actives. These three Segments make up your
+trifecta of positively engaged Contacts and represent the portion of
+your audience that is currently engaging with your content. Your
+positive engagement Segments should look like this, with the number of
+days set to 30, 60, and 90, respectively:
+
+image:https://lh5.googleusercontent.com/xf7XRYhFI5JBjrFKCuS_wFLR_rQevpbKAFb_-i5wO2mVqdqO7CL_xpEFMJV0iRmD6iPiLjLO7dVElO1yoCcTGDBm_1HPXBoPA511cGJkHcL1hY41tIDDc7lGPH-urxtbT5iVl_pgEXswmoi48YGuoJg[https://lh5.googleusercontent.com/xf7XRYhFI5JBjrFKCuS_wFLR_rQevpbKAFb_-i5wO2mVqdqO7CL_xpEFMJV0iRmD6iPiLjLO7dVElO1yoCcTGDBm_1HPXBoPA511cGJkHcL1hY41tIDDc7lGPH-urxtbT5iVl_pgEXswmoi48YGuoJg,width=455,height=385]
+
+Contacts who haven’t been engaging with your content need their own
+Segments too! The following Segment of Contacts who have not clicked in
+the last 90 days and signed up for your emails more than 90 days ago can
+be used as an exclusion list or later re-targeting (though we generally
+recommend against re-targeting in favor of focusing more resources on
+those Contacts who are engaged).
+
+https://help.sendlane.com/article/137-segments#creating-segment[Create a
+new Segment] and name it 90 Day Inactives, then:
+
+. Click the *Engagement & Activity tab*
+. Select *Did Not Click*
+. Select *Recent*
+. Enter *90*
+. Select *Days*
+. Click *+ and condition*
+. Click the *Contact Properties tab*
+. Select *Subscription Date*
+. Select *not in the last*
+. Enter *90*
+. Select *Days*
+. Click *Save*
+
+Your Segment will take a few seconds or minutes to process, depending on
+the size of your overall audience, and should look like this:
+
+image:https://lh4.googleusercontent.com/1ikaz_KU8IhmCpRDDGovJ8fVaXyzOEeYQytajEuVbxF_u_eDKAOjg9l2BVRo-EhwAXeMX0_gqhXIAarPTe8uIHq0L-y8YU96X_gOpYPAbV1cwI8vR2UgtR-RDIPEj2D56SVBuJUG47VJmOQaXanUdoM[https://lh4.googleusercontent.com/1ikaz_KU8IhmCpRDDGovJ8fVaXyzOEeYQytajEuVbxF_u_eDKAOjg9l2BVRo-EhwAXeMX0_gqhXIAarPTe8uIHq0L-y8YU96X_gOpYPAbV1cwI8vR2UgtR-RDIPEj2D56SVBuJUG47VJmOQaXanUdoM,width=440,height=488]
+
+[[purchase]]
+==== Purchase Activity Based Segments
+
+“Purchasers” and “non-purchasers” are great segments of Contacts to have
+ready to go for sales, product announcements, and other special offers.
+
+Purchasers should receive content inviting them to try a different
+product, and non-purchasers should receive content inviting them to try
+your brand for the first time. Check out Sendlane’s many guides to
+https://www.sendlane.com/blog-category/email-marketing[email] and
+https://www.sendlane.com/blog-category/sms-mms-marketing[SMS] marketing
+content for tips on creating effective content for these two important
+segments of your audience.
+
+Because Sendlane allows you to exclude Segments as well as include
+Segments when building your Campaign audience, you only need to build
+one Segment to target both purchasers and non-purchasers: you’ll build
+one Segment for purchasers and exclude that Segment when you want to
+send to non-purchasers!
+
+To build a Segment that will pull everyone who has ever made a purchase:
+
+. https://help.sendlane.com/article/137-segments#creating-segment[Create
+a new Segment] and name it *All Time Purchasers*
+. Click your *eCommerce platform’s tab*
+. Select your *store*
+. Select *order*
+. Select the *order status* you use to indicate that orders are complete
+(usually “Fulfilled”)
+. Select *Exists*
+. Click *Save*
+
+This Segment will dynamically pull any Contact who makes a purchase in
+your eCommerce store and accepts marketing content. You can narrow this
+Segment down by order date, products purchased, and
+https://help.sendlane.com/article/452-segment-options-and-operators[so
+much more] to create even more targeted Segments.
+
+[[additional]]
+=== Additional Resources
+
+* https://www.sendlane.com/blog/email-segmentation-buyer-persona[How to
+Segment Emails Based on Buyer Persona: Step By Step]
+* https://www.sendlane.com/blog/5-steps-to-improve-email-deliverability[5
+Steps to Improve Email Deliverability]
+* https://www.sendlane.com/blog/contact-management-sendlane-audience[6
+Best Ways to Manage Contacts Inside Sendlane Audience]
+* https://www.sendlane.com/blog/how-to-improve-ecommerce-emails[6 Ways
+to Improve Your eCommerce Emails]

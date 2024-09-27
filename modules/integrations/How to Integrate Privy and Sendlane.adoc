@@ -1,0 +1,91 @@
+https://dashboard.privy.com/users/sign_up[Privy] is a lead capture
+platform built to convert website visitors into loyal customers.
+
+By integrating Privy with Sendlane, captured leads can be funneled
+directly to your desired List in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://dashboard.privy.com/users/sign_up[Privy account] with at least
+one campaign created.
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Privy knows where to place your new
+leads and contacts!
+
+'''''
+
+=== Connecting Privy and Sendlane
+
+. From your Privy homepage, click on the dropdown menu in the
+upper-right corner, and select
+*_Integrations_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d13d5b92c7d3a6ebd22975b/file-d3GKJC0cNG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d13d5b92c7d3a6ebd22975b/file-d3GKJC0cNG]
+. Search for and select *_Sendlane_* from the list of
+Integrationsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d13dda804286305cb87c06d/file-XPbVCehQnz.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d13dda804286305cb87c06d/file-XPbVCehQnz]
+. Enter the email you use with Sendlane, your Sendlane Subdomain and API
+Key, and click *_Link
+Account_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d13dfa52c7d3a6ebd2298b7/file-699LJzIsvK.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d13dfa52c7d3a6ebd2298b7/file-699LJzIsvK]
+
+'''''
+
+=== Next Steps
+
+Now that your Sendlane account is linked with Privy, we'll connect a
+specific Privy Campaign to a List in Sendlane.
+
+. From the homepage, click into the Campaign you created prior to
+linking Sendlane. Ours is called *_Newsletter
+Signup_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d13e13804286305cb87c099/file-DQE3B7ev4e.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d13e13804286305cb87c099/file-DQE3B7ev4e]
+. From the Campaign menu, navigate to Automation and click *_+ New
+Rule image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d13f1f204286305cb87c135/file-d7ig3XwBBD.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d13f1f204286305cb87c135/file-d7ig3XwBBD]_*
+. From the dropdown boxes, select your Sendlane account as well as the
+List with which you want this Campaign to integrate
+. Repeat steps 2 and 3 for each List you want synced +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d13e41a2c7d3a6ebd2298db/file-0gYR8MNSAn.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d13e41a2c7d3a6ebd2298db/file-0gYR8MNSAn]
+. Click *_Save_*
+
+Your Integration is now complete!
+
+'''''
+
+=== Troubleshooting
+
+****This integration is native to Privy, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Privy team is just a few clicks away!
+
+https://www.privy.com/contact[Connect] with the Privy team
+
+Visit the Privy https://help.privy.com/hc/en-us[Documentation Page]
+
+==== Additional Privy Resources
+
+https://dashboard.privy.com/users/sign_up[Sign Up for Privy] |
+https://www.privy.com/blog[Blog] | https://www.privy.com/faq[FAQ]
+
+===  Sendlane Resources 
+
+* https://www.sendlane.com/blog-posts/privy-build-smart-opt-in-forms-to-grow-your-email-list[Privy--Build
+Smart Opt-In Forms to Grow Your Email List]
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage and Capture Leads]
+* https://www.sendlane.com/blog-posts/10-surefire-ways-to-get-more-opt-ins-grow-your-ecommerce-email-list[10
+Surefire Ways to Get More Opt-Ins and Grow Your eCommerce Email List ]
+
+'''''
+
+=== TL;DR
+
+Integrating: Homepage → Account drop-down → _Integrations_ → Select
+Sendlane → Enter email/Subdomain/API Key → _Link Account_ → Homepage →
+Campaign → _Automation_ → _+ New Rule_ → Select Sendlane account →
+Select List → _Save_

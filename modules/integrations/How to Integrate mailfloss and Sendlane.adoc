@@ -1,0 +1,81 @@
+https://mailfloss.com/[mailfloss] is an email validation tool that
+automatically removes hard bounces, fakes, and misspelled emails from
+your Sendlane Lists.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://mailfloss.com/[mailfloss account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_ → _API_.*
+
+'''''
+
+=== Connecting mailfloss and Sendlane
+
+. Log into your mailfloss account, or create a new one by
+https://mailfloss.com/[clicking here]
+. From your homepage, *Account* > *Integrations*__ __on the left hand
+side of the screen
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65f4f404286364bc9665c5/file-l4GwveppYb.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65f4f404286364bc9665c5/file-l4GwveppYb]
+. Navigate to *_Add Integration_* (top left) and click on the Sendlane
+icon on the new screen that comes up
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65f5b02c7d3a7e9ae8dcc6/file-IW5l8gRVfE.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65f5b02c7d3a7e9ae8dcc6/file-IW5l8gRVfE]
+. Next, enter your _API Key, Hash Key and Subdomain_ and then click
+_*Connect*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65f6aa04286364bc9665cc/file-ayzOCMGvQg.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65f6aa04286364bc9665cc/file-ayzOCMGvQg]_
+
+And you're done with the integration part of the setup process!
+
+'''''
+
+=== Next Steps
+
+Now that the integration is completed, the next step is setting up the
+actual frequency with which mailfloss will validate and/or remove your
+emails. 
+
+You actually have 4 options available to customize your integration:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65f85904286364bc9665d6/file-e7MTDhlOSC.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65f85904286364bc9665d6/file-e7MTDhlOSC]
+
+. *Safe (recommended)*: this means that mailfloss will only remove the
+ones they are _absolutely certain_ that are not valid__.__
+. *Medium*: this option will allow mailfloss to search for nonexistent
+and disposable email addresses, in addition to the above option
+. *Aggressive (not recommended)*: basically anything that looks remotely
+bad will be removed. This option is not recommended for most users
+. *Custom floss:* if none of the above suit your needs and comes with a
+couple of options for you to choose from, see below
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65fa0d04286364bc9665df/file-UfdvuT11bX.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e65fa0d04286364bc9665df/file-UfdvuT11bX]
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to mailfloss, so we're only able to provide
+limited troubleshooting support. However, if you  _do_ need help, the
+mailfloss team is just a few clicks away!
+
+* Connect with the https://support.mailfloss.com/form[mailfloss Team]
+* Visit the https://support.mailfloss.com/content[mailfloss Help &
+Support Page]
+
+==== Additional mailfloss Resources
+
+https://mailfloss.com/[Sign up for mailfloss] |
+https://mailfloss.com/tour-why-mailfloss-is-the-best/[Tour]
+
+'''''
+
+=== TL;DR
+
+Login →   _Integrations_ → Add Integration →  Select Sendlane → Enter
+API / Hash keys and subdomain → Connect 

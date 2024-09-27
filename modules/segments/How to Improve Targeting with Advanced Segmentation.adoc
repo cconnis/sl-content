@@ -1,0 +1,216 @@
+[[top]]
+==== Overview
+
+Segments are dynamic groupings of Contacts that can be used to target
+content based on Contacts' profile information, preferences, and
+behavior, which can be used as inclusion or exclusion logic when
+building audiences for Campaigns! Segments process every time a Campaign
+is sent to ensure you're using the most up to date information available
+to target your marketing content.
+
+Read on to learn about advanced techniques for Segmenting your audience!
+
+==== In This Guide
+
+[cols=",",]
+|===
+|*Data Used to Create Segment* |*Description*
+
+|link:#activity[Engagement Activity] |Contacts' open or click behavior
+
+|link:#purchase[Purchase Activity] |Data from integrations such as your
+eCommerce store
+
+|link:#custom[Custom Field Data] |Static data about Contacts (gender or
+birthday) generally collected from Pop-ups or forms
+
+|link:#tag[Tag Data] |Dynamic data about Contacts (purchase habits and
+product preferences) appended to Contact Profile fields via Automations
+or tagged links
+|===
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account[Add
+Contacts to your Sendlane account]
+
+ To be able to create Segments using activity/behavior data,
+https://help.sendlane.com/category/169-beacon[set up Beacon]
+
+ To be able to create Segments using custom data, set up
+https://help.sendlane.com/article/331-custom-fields[Custom Fields]
+
+[[new]]
+===== ⚠️ New to Segments? Start here first!
+
+If you've never built a Segment before, check out our guide to
+https://help.sendlane.com/article/137-segments[Segments] and
+https://help.sendlane.com/article/452-segment-options-and-operators[Segment
+Options and Operators] before moving on!
+
+'''''
+
+[[activity]]
+=== Engagement Activity
+
+Engaged Contacts and unengaged Contacts need different types of
+outreach, and Segments are a great way to keep up with your audience's
+engagement patterns.
+
+See the
+https://help.sendlane.com/article/452-segment-options-and-operators#engagement-activity[Engagement
+& Activity section of Segment Options and Operators] for detailed
+descriptions of each available option.
+
+==== Engaged Contacts
+
+A Segment of recently engaged Contacts is vital to your sending cadence
+and is your first line of defense if you start to experience
+deliverability hiccups. Engaged Contacts are more likely to open and
+click your emails which shows inbox providers that your audience is
+healthy and engaged.
+
+This Segment will pull Contacts who clicked a link in an email or SMS
+Campaign, OR opened an email Campaign, OR subscribed to your audience in
+the past X days. Most merchants will do well with the following Segments
+at 30, 60, and 90 day intervals. If your business runs more seasonally,
+adjust the timeframe as needed.
+
+. Clicked > Recent > X > Days, OR
+. Opened > Recent > X > Days, OR
+. Subscription Date > in the last > X > Days
+
+To target your most engaged Contacts,
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560c909d8c4315d1df512eb/file-AoEsOEaJSs.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560c909d8c4315d1df512eb/file-AoEsOEaJSs]
+
+==== Unengaged Contacts
+
+A Segment of unengaged Contacts can be used as an exclusion for
+Campaigns during a deliverability hiccup, or part of a
+https://help.sendlane.com/article/215-how-to-remove-unengaged-contacts-with-segmentation[careful
+re-engagement strategy]. Unengaged Contacts are less likely to open or
+click your emails which can be detrimental to your sending reputation.
+
+This Segment will pull Contacts who have not opened an email or clicked
+a link in an email or SMS in the past X days and have not subscribed to
+your audience in the past X days. Adjust the timeframe as needed for
+your business.
+
+. Did Not Open > Recent > X > Days, OR
+. Did Not Click > Recent > X > Days, AND
+. Subscription Date > not in the last > X > Days
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560ca5ed8c4315d1df512ee/file-5hGa6cKwo0.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560ca5ed8c4315d1df512ee/file-5hGa6cKwo0]
+
+link:#top[Back to top]
+
+'''''
+
+[[purchase]]
+=== Purchase Activity
+
+Contacts' purchase data is segmented by your eCommerce integration.
+Contacts who have made purchases (purchasers) may benefit from content
+inviting them to try new products or giving them information on how to
+use your products, while Contacts who have never purchased
+(non-purchasers) may benefit from content that includes special
+promotions or other incentives to make a purchase.
+
+===== Purchasers - All Time
+
+This Segment pulls all Contacts who have ever completed an order in your
+eCommerce store.
+
+. Store > order > Fulfilled (or the order status your store uses to
+indicate a completed order) > Exists
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560cb9cd8c4315d1df512ef/file-qPm6FDAmzH.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560cb9cd8c4315d1df512ef/file-qPm6FDAmzH]
+
+===== Purchasers - In the Last
+
+This Segment pulls Contacts who have made a purchase in the last X days.
+
+. Store > order > Fulfilled (or the order status your store uses to
+indicate a completed order) > in the last > X days
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560cebb61a11f56e8753a31/file-crXRWOlPTG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560cebb61a11f56e8753a31/file-crXRWOlPTG]
+
+===== Non-Purchasers - All Time
+
+This Segment pulls all Contacts who have never completed an order in
+your eCommerce store.
+
+. Store > order > Fulfilled (or the order status your store uses to
+indicate a completed order) > Does Not Exist
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560cf3488e8fb00a8f821ab/file-Z76zRyvyVT.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560cf3488e8fb00a8f821ab/file-Z76zRyvyVT]
+
+===== Non-Purchasers - In the Last
+
+This Segment pulls Contacts who have not made a purchase in the last X
+days.
+
+. Store > order > Any > Order Date > in the last > X days >
+https://help.sendlane.com/article/137-segments#invert[inverse of this
+condition]
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560cf5488e8fb00a8f821ac/file-CFq03H1CHq.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560cf5488e8fb00a8f821ac/file-CFq03H1CHq]
+
+'''''
+
+[[custom]]
+=== Custom Field Data
+
+To create a Segment using data collected from
+https://help.sendlane.com/article/331-custom-fields[custom fields]:
+
+. https://help.sendlane.com/article/137-segments#creating-segment[Create
+a new Segment]
+. Select Custom Fields from the Options dropdown
+. Select an operator
+. Select a Custom Field
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560c4c2ff620625c3f7f0db/file-X22tpN3ufv.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560c4c2ff620625c3f7f0db/file-X22tpN3ufv]
+
+link:#top[Back to top]
+
+'''''
+
+[[tag]]
+=== Tag Data
+
+To create a Segment using data stored in
+https://help.sendlane.com/article/331-custom-fields[tags]:
+
+. https://help.sendlane.com/article/137-segments#creating-segment[Create
+a new Segment]
+. Select Contact Tag from the Options dropdown
+. Select Has Tag or Does Not Have Tag
+. Select a Tag from the values dropdown
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560c5d4d8c4315d1df512e1/file-0ZcE2IH9vT.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6560c5d4d8c4315d1df512e1/file-0ZcE2IH9vT]
+
+link:#top[Back to top]
+
+'''''
+
+=== Additional Resources
+
+For a more in-depth explanation and overview about segmentation within
+Sendlane, please see our
+https://help.sendlane.com/article/137-segments[Segments] help doc.
+
+* https://www.sendlane.com/new-ebooks/email-marketing-segmentation-for-ecommerce[Everything
+You Must Know About Email Marketing Segmentation for eCommerce in 2023]
+* https://www.sendlane.com/blog/sendlane-email-segmentation[8 Best Ways
+to Segment Your Contacts in Sendlane]
+* https://www.sendlane.com/blog/email-segmentation-buyer-persona[How to
+Segment Emails Based on Buyer Persona: Step By Step]
+
+If you hit any roadblocks, you can also get in touch with our team of
+email marketing automation experts
+mailto:mailto:support@sendlane.com[right here]!
+
+link:#top[Back to to]

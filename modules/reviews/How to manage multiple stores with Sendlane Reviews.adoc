@@ -1,0 +1,54 @@
+==== Overview
+
+You can install Sendlane Reviews in multiple separate Shopify or
+BigCommerce stores! Read on to learn how to manage multiple
+installations.
+
+==== In this guide
+
+* link:#installing[Installing multiple instances of Sendlane Reviews]
+* link:#navigating[Navigating between instances Sendlane Reviews]
+
+'''''
+
+[[installing]]
+=== Installing multiple instances of Sendlane Reviews
+
+Each instance of Sendlane Reviews requires the following:
+
+* Its own
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify],
+https://help.sendlane.com/article/454-integrate-bigcommerce-and-sendlane[BigCommerce],
+or https://help.sendlane.com/article/451-custom-integration-setup[custom
+eCommerce] integration*; you must integrate each Shopify or BigCommerce
+store you want to use Sendlane Reviews for
+* Its own installation; each instance of Sendlane Reviews uses a unique
+token
+
+*Custom integrations cannot connect WooCommerce stores to Sendlane
+Reviews.
+
+[[navigating]]
+=== Navigating between instances Sendlane Reviews
+
+To connect Sendlane Reviews to a new store:
+
+. Complete the
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify]
+or
+https://help.sendlane.com/article/454-integrate-bigcommerce-and-sendlane[BigCommerce]
+integration
+. Click the Reviews icon
+. Under Reviews, click the dropdown
+. Click + Store
+. Select your store
+. Click Continue
+. Proceed with installing the reviews script and widgets!
+.. https://help.sendlane.com/article/522-how-to-install-reviews-shopify[How
+to Install Reviews for Shopify]
+.. https://help.sendlane.com/article/560-how-to-install-reviews-bigcommerce[How
+to Install Reviews for BigCommerce Blueprint Themes]
+.. https://help.sendlane.com/article/567-how-to-install-reviews-for-bigcommerce-stencil-themes[How
+to Install Reviews for BigCommerce Stencil Themes]
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/662c2b765ae8353469c6af23/file-x1J8KJuT3X.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/662c2b765ae8353469c6af23/file-x1J8KJuT3X]

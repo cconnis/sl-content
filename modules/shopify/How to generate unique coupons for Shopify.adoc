@@ -1,0 +1,104 @@
+[[top]]
+==== Overview
+
+You can link a discount created in your Shopify account to a coupon in
+Sendlane for seamless unique code generation. Read on to learn how to
+create coupons with unique codes.
+
+==== In this guide
+
+* link:#create[Create a coupon]
+* link:#replenish[Replenish a coupon]
+
+[[bgs]]
+====== 🚦Before getting started
+
+Read
+https://help.sendlane.com/article/710-understanding-shopify-coupons[Understanding
+Shopify coupon generation] before creating your coupon for important
+information about coupon options.
+
+[[update-shopify]]
+====== ⚠️You may need to update your Shopify app before you can generate coupons
+
+If you integrated your Sendlane and Shopify accounts before September
+2024, you need to accept new terms of service that provide access to the
+Sendlane API before you can create Shopify coupons:
+
+. Log into Sendlane
+. Click the link in the banner
+. When you are redirected to Shopify, accept the app’s updated terms
+
+'''''
+
+[[create]]
+=== Create a coupon
+
+[[time-to-generate]]
+====== ⚠️ Codes take time to generate
+
+You should start generating codes for campaigns at least six hours
+before the campaign is sent.
+
+[[campaign-stop]]
+====== ⚠️ Campaigns will stop sending when coupons are depleted
+
+See the Replenish a coupon section below and
+https://help.sendlane.com/article/649-how-to-stop-and-restart-a-campaign[How
+to start and stop a campaign] for instructions on restarting your
+campaign.
+
+. Create a
+https://help.shopify.com/en/manual/discounts/discount-types[discount] in
+Shopify
+. Log in to Sendlane
+. Click the *Account* icon
+. Click *Coupons*
+. Click *+ Create Coupons*
+. Click *Shopify Integrated*
+. Click *Next*
+. Under Name, enter a descriptive (internal only) name for your coupon
+using only letters and numbers
+. Under Shopify Store, if you have more than one Shopify store connected
+to your Sendlane account, select the Shopify store with the discount you
+created in step 1
+. Under Shopify Coupon, select the Shopify discount you created in step
+1
+. Under Coupon Prefix, enter a prefix that will be appended to your
+unique codes (for example, if you enter `+WELCOME15+` codes will be
+generated as `+WELCOME15-12345+`)
+. Select an Activation type (see more details in
+https://help.sendlane.com/article/710-understanding-shopify-coupons[Understanding
+Shopify coupon generation])
+.. For campaigns:
+... Select Shopify Discount Active Dates
+... Enter the number of coupons you estimate will be needed for your
+campaign’s audience (use the campaign builder's audience estimation to
+see the number of contacts estimated for your campaign)
+... Optional but highly recommended: In the Fallback dropdown, select an
+evergreen discount from your Shopify store to use as a backup code in
+case coupons run out before your campaign finishes sending
+.. For automations:
+... Select Relative Duration
+... Set your desired coupon duration
+. Click *Create*
+
+Check out
+https://help.sendlane.com/article/510-how-to-add-a-unique-coupon-to-an-email[How
+to add coupons to email and SMS] for information on inserting unique
+coupon codes into email and SMS messages.
+
+link:#top[Back to top]
+
+'''''
+
+[[replenish]]
+=== Replenish a Shopify Discount Active Dates coupon
+
+To add more codes to a Shopify Discount Active Dates coupon:
+
+. Click the coupon you want to replenish
+. Under the coupon's name, click *+ Add Coupons*
+. Enter the number of codes to add to your coupon
+. Click *Add Codes*
+. Click *Save*

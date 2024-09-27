@@ -1,0 +1,134 @@
+https://replug.io[Replug] is a tool to help promote your brand and
+collect leads by sharing content online! By optimizing your content
+links with call-to-actions, branding and more, traffic sent to the sites
+in your links will be rerouted back to your site, promoting increased
+traffic and leads.
+
+Integrating Replug and Sendlane enables you to funnel email information
+captured by Replug directly to your lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://replug.io[Replug account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_ → **_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Replug knows where to place your new
+leads and contacts!
+
+'''''
+
+=== Connecting Replug and Sendlane
+
+. Login to Replug, click the dropdown account menu in the top-right
+corner and select
+*_Integrationsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63b87bcff47e00168f7f70/file-VbFWh66b10.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63b87bcff47e00168f7f70/file-VbFWh66b10] +
+_*
+. Find Sendlane in the list of applications and click
+*_Connect_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedc4390428632d9eec08b4/file-rduKFFX8Th.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedc4390428632d9eec08b4/file-rduKFFX8Th]
+. Enter your API/Hash Keys and your entire subdomain
+(_example_.sendlane.com) in the Sendlane URL field, then click
+*_Connectimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5f36ef04286364bc962f2f/file-2aGwep9y8y.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5f36ef04286364bc962f2f/file-2aGwep9y8y]_*
+. Select the List in Sendlane with which you want Replug to integrate
+and click
+*_Saveimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedc5e20428632d9eec08c1/file-71NDeMA2T6.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedc5e20428632d9eec08c1/file-71NDeMA2T6]_*
+
+'''''
+
+=== Connecting to a Specific Campaign
+
+Next, we'll demonstrate how to connect a specific Replug Campaign to
+your Sendlane List
+
+. From the Replug Dashboard, select *_Create a
+Brandimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedc72e0428632d9eec08ca/file-hEz9OKg8Dx.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedc72e0428632d9eec08ca/file-hEz9OKg8Dx]_*
+. Click *_New
+Brand image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63c25452faff00174f0d44/file-7pIRhuWE5p.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63c25452faff00174f0d44/file-7pIRhuWE5p] +
+**_*
+. Enter your company or personal name and your website url, and
+click__ *Save*__image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedc84a2c7d3a32d2a4e834/file-PUCWrDUwjJ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedc84a2c7d3a32d2a4e834/file-PUCWrDUwjJ]
+. Head back to your Dashboard, click *_Create a Campaign_* and then
+*_New Campaign_*, just as in steps 1 & 2
+. Select your brand, name your Campaign, select the Call-To-Action
+option and click
+*_Next_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedc8ad2c7d3a32d2a4e83b/file-5JYPoeQ0Pj.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedc8ad2c7d3a32d2a4e83b/file-5JYPoeQ0Pj]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedc8d42c7d3a32d2a4e83e/file-RU5TtynCYo.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedc8d42c7d3a32d2a4e83e/file-RU5TtynCYo]
+. Click *_Form_*, Select *_Sendlane_* from the list of ESPs, select your
+account & desired List, and click
+*_Next_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedcde30428632d9eec090c/file-vFkJ0HrkqH.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedcde30428632d9eec090c/file-vFkJ0HrkqH]
+. Finish your customizations and click *_Save Campaign_*
+
+Any link generated from this Campaign will now sync with your List in
+Sendlane! 
+
+'''''
+
+=== Creating a Link
+
+Now that the connection between Sendlane and Replug has been made, and
+your campaign is set up, we'll create a link:
+
+. From your Replug Dashboard, click *_Replug Links_* from the top menu,
+followed by *_New
+Link image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63bf6d52faff00174f0d2f/file-4lrkWTECWM.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63bf6d52faff00174f0d2f/file-4lrkWTECWM] +
+_*
+. Select the Campaign you just created, enter the URL you wish to
+shorten and optimize, and click *_Save
+Link_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedcfea2c7d3a32d2a4e87b/file-GC1U4wfmqu.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedcfea2c7d3a32d2a4e87b/file-GC1U4wfmqu]
+. From here, you can copy, edit or share your Link to a variety of
+social media
+appsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedd0cf0428632d9eec0915/file-2UwQeFdnQk.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cedd0cf0428632d9eec0915/file-2UwQeFdnQk]
+
+Your integration is now complete!
+
+Captured contacts from your Replug campaigns will now be synced with
+your selected List in Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Replug, so we're only able to provide
+limited troubleshooting support. However, if you do need help, the
+Replug team is just a few clicks away!
+
+* Connect with the https://replug.io/contact[Replug team]
+
+==== Additional Ever Resources
+
+* https://replug.io[Sign up for Replug]
+* Visit the https://blog.replug.io/[Replug Blog] or read through their
+https://replug.io/use-cases[Use Cases]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/8-ways-marketers-align-social-and-email[8
+Ways Successful Marketers Align Their Social Media and Email Marketing
+for Maximum Success]
+* https://www.sendlane.com/blog-posts/3-tips-to-build-brand-awareness-connect-with-your-customers-using-email-marketing[3
+Ways to Build Brand Awareness & Connect With Your Customers Using Email
+Marketing]
+
+'''''
+
+=== TL;DR
+
+[.underline]#Connecting:# Login to Replug → _Integrations_ → Find
+Sendlane → _Connect_ → Enter Subdomain / API / Hash → _Connect_ → select
+list → _Save_
+
+[.underline]#Creating a campaign:# Replug dashboard → _Create a Brand_ →
+_New Brand_ → Enter name/URL → _Save_ → Replug Dashboard → _Create a
+Campaign_ → ** _New Campaign_ → select your brand, name campaign, select
+Call-to-Action → _Next_ → _Form_ → Sendlane → select account → select
+list → _Next_ → _Save Campaign_
+
+[.underline]#Creating links:# Replug dashboard → _Replug Links_ → _New
+Link_ → select campaign → enter URL → _Save Link_

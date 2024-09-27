@@ -1,0 +1,143 @@
+[[top]]
+==== Overview
+
+Wonderment is a proactive customer experience platform that helps
+Shopify merchants provide customers with detailed order, shipping, and
+tracking information right in emails sent from Sendlane. Read on to
+learn how to integrate your Wonderment and Sendlane accounts!
+
+==== In This Guide
+
+* link:#custom-integration[Create a Custom Integration for Wonderment]
+* link:#integration-token[Add Sendlane Custom Integration Token to
+Wonderment]
+* link:#events[Create Custom Events for Wonderment]
+* link:#api-token[Add Sendlane API Token to Wonderment]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Sign up for a Wonderment account https://app.wonderment.com/[here +
+]
+
+'''''
+
+Check out the video below for a demonstration of integrating a Sendlane
+account with Wonderment:
+
+image:https://fast.wistia.com/embed/medias/6113rxsbxs/swatch[https://fast.wistia.com/embed/medias/6113rxsbxs/swatch]
+
+1::
+  Wonderment connects to Sendlane via the
+  https://help.sendlane.com/article/451-custom-integration-setup[Sendlane
+  custom integration]. To create a custom integration for Wonderment:
+  +
+  . Click on the *Integrations* page
+  . Click the *Sendlane Custom Integration*
+  . Click *Configure*
+  . Click *Create New Custom Integration*
+  . Enter `+Wonderment+` as your *Store Name*
+  . Enter `+https://wonderment.storename.com+` as your *Store URL*
+  . Replace `+storename+` with the name of your store in the *Store URL
+  field*
+  . Select a default *List*
+  . Select a *customer address* type
+  . Click *Continue*
+2::
+  The custom integration token connects your Wonderment and Sendlane
+  accounts. To add the custom integration token to Wonderment:
+  +
+  . Click the *Settings icon* next to the Wonderment custom integration
+  . Click the *copy icon* next to the token
+  . Navigate to the Sendlane integration in your Wonderment account
+  . Paste the integration token in the *Sendlane Access Tokens field*
+  . Click *Save*
+3::
+  Events inside the custom integration will be used as Automation
+  triggers to send Contacts information about their orders. To create
+  events for the Wonderment integration:
+  +
+  . Navigate to https://app.sendlane.com/integrations/custom[the Custom
+  integration page]
+  . Click the *events icon* next to the Wonderment integration
+  . Click *Create Event*
+  . In the *event name* field, copy and paste an event name exactly as
+  it appears in the first column of the table below
+  . Click *Create*
+  . Repeat steps 3-5 for each event
+  +
+  [cols=",",]
+  |===
+  |*Event* |*Description*
+
+  |`+Wonderment - Shipment Created+` |When a label has been created with
+  a shipping carrier
+
+  |`+Wonderment - Label Cancelled+` |When a label has been cancelled
+  with the shipping carrier
+
+  |`+Wonderment - Carrier Picked Up+` |When an order is first marked In
+  Transit by the carrier.
+
+  |`+Wonderment - In Transit+` |For each in-transit scan the package
+  has.
+
+  |`+Wonderment - Out For Delivery+` |When the carrier confirms the
+  package has been handed off for delivery
+
+  |`+Wonderment - Ready for Pickup+` |When an order has been marked
+  ready for customer pickup by the shipping carrier, such as at a local
+  office or postal facility.
+
+  |`+Wonderment - Shipment Delivered+` |When the delivery scan has
+  occurred for a package
+
+  |`+Wonderment - Returned to Sender+` |When a package has been sent
+  back to the origin facility because it was undeliverable, damaged, or
+  otherwise can't be completed.
+
+  |`+Wonderment - Attempted Delivery+` |If a package couldn't be
+  delivered and was held by the carrier for re-delivery.
+
+  |`+Wonderment - Delivery Error+` |In case of a permanent delivery
+  error, such as a non-existent address, or a package is lost or damaged
+  at the carrier.
+
+  |`+Wonderment - Shipment Stalled+` |When a package hasn't made
+  progress in the carrier network for a certain period of time, and is
+  likely to be delayed.
+
+  |`+Wonderment - Survey - Delivery Feedback Response+` |Feedback
+  responses from Delivery Surveys.
+
+  |`+Wonderment - Tracking Page View+` |Individual pageviews of a
+  tracking page.
+
+  |`+Wonderment - ETA Changed+` |When a package's ETA changes beyond the
+  Change Sensitivity for a given shipping service level.
+  |===
+4::
+  An API token provides Wonderment access to Sendlane's v2 API. To
+  create a Sendlane API token and apply it to your Wonderment account:
+  +
+  . Click the *Account icon*
+  . Click *API*
+  . Under Sendlane API V2, click *+ API Token*
+  . Enter Wonderment as your *token name*
+  . Click *Create*
+  . Click *Copy API Token**
+  . Navigate to the Sendlane integration in your Wonderment account
+  . Paste the integration token in the *Sendlane API Token* field
+  . Click *Save*
+
+*The API token must be copied at this stage and cannot be retrieved
+later. If you close the API token window without copying the API token,
+delete the API token and create a new one.
+
+===== ⏭️ Next Steps
+
+Check out
+https://help.sendlane.com/article/603-wonderment-automation[How to Send
+Tracking Information with Wonderment] to learn about using the events
+you just created as Automation triggers and templates for setting up
+shipping information for customers!

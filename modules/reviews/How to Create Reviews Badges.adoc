@@ -1,0 +1,71 @@
+[[top]]
+==== Overview
+
+Sendlane Reviews offers multiple styles of badges to display on your
+website and hyperlink to your full page of reviews. These badges can be
+placed anywhere images are accepted on your website and are a great way
+to promote your products' reviews! Read on to learn how to add a reviews
+badge to your store.
+
+==== In This Guide
+
+. link:#download[Download reviews file]
+. link:#reviews-page[Add badge to all reviews page]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+https://help.sendlane.com/article/534-reviews-quick-start-guide[Install
+Sendlane Reviews]
+
+https://help.sendlane.com/article/524-how-to-set-up-seo-full-page-for-reviews[Create
+your full page of reviews]
+
+'''''
+
+[[download]]
+=== Download Review Badge Images
+
+https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/attachments/65664e063eee1a5f78d0917f/Sendlane-Reviews-Badges.zip[Click
+here] to download a zip file containing each of the badges below as
+individual .PNG files:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65664cc5a3977f5849f38916/file-uXd2cwZIjt.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65664cc5a3977f5849f38916/file-uXd2cwZIjt]
+
+[[reviews-page]]
+=== Add a Reviews Badge to Your Store
+
+After you've selected a badge image, use your eCommerce store's theme
+editor to upload your badge image and hyperlink it to your full page of
+reviews. Since the reviews badge is a static image, styling is entirely
+up to you and can be coordinated with your existing theme! Here's an
+example of one way to display your reviews badge:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656656349b52a9383d380c19/file-Mx65RT0RYS.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656656349b52a9383d380c19/file-Mx65RT0RYS]
+
+Use the following guides to upload and place your reviews badge, and
+reach out to your eCommerce provider if you need more assistance:
+
+*Shopify*
+
+* https://help.shopify.com/en/manual/online-store/images/theme-images[Uploading
+images]
+* https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor[Using
+the image editor]
+* https://help.shopify.com/en/manual/online-store/themes/theme-structure/extend#add-custom-html-or-liquid[Add
+custom HTML or Liquid]
+
+*BigCommerce*
+
+* https://support.bigcommerce.com/s/article/Using-the-Image-Manager?language=en_US[Using
+the Image Manager]
+* https://support.bigcommerce.com/s/article/Optimizing-Your-Images?language=en_US[Optimizing
+Your Images]
+* https://support.bigcommerce.com/s/article/Page-Builder?language=en_US#image-widget[Page
+Builder - Image Widget]
+
+=== Troubleshooting
+
+====== How do I add a reviews tab to the side of my website?
+
+Sendlane Reviews does not support a reviews tab.

@@ -1,0 +1,83 @@
+https://www.optinopoli.com/[optinopoli] is a customer acquisition
+platform that enables you to capture leads through your website and
+multiple content channels.
+
+By integrating your optinopoli account with Sendlane, you can
+effectively grow your email list by adding the contacts you capture
+straight to a list in Sendlane.
+
+'''''
+
+==== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://www.optinopoli.com/[optinopoli] account with your first lead
+magnet created.
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_ → **_API._*
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so optinopoli knows where to place your
+new leads and contacts!
+
+'''''
+
+==== Connecting optinopoli and Sendlane
+
+. From your optinopoli account, click on the name of the lead magnet you
+wish to connect +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd4e1af2c7d3a177d6e9bbf/file-PwFDoRr2HF.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd4e1af2c7d3a177d6e9bbf/file-PwFDoRr2HF]
+. Click the *_Integrations_* tab and select *_Sendlane_* from the list
+of available integrations
+. Toggle the switch next to **_Automatically add new leads to selected
+integrations _**to on +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd4e1d904286306738ef409/file-r3aKH6dOYZ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd4e1d904286306738ef409/file-r3aKH6dOYZ] +
+. Enter your API key, Hash key and Sendlane subdomain in the respective
+field
+. Click **_Authorize _**from the dropdown menu, choose the list you want
+new contacts added to and then click *_Activate +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd4e1ed2c7d3a177d6e9bc2/file-GZu8iGAV3Q.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd4e1ed2c7d3a177d6e9bc2/file-GZu8iGAV3Q]_*
+. The popup will close and the integration button should now show
+Sendlane as *_Active_* 
+
+Your integration is now complete!
+
+Captured contacts will now be automatically added to your chosen
+Sendlane list.
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to optinopoli, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+optinopoli team is just a few clicks away!
+
+* Connect with the team via mailto:support@optinopoli.com[email]
+
+'''''
+
+==== Additional optinopoli Resources
+
+==== 
+
+Sign up for https://www.optinopoli.com/[optinopoli] |
+https://www.optinopoli.com/start[Quick Start Tutorial] |
+https://www.optinopoli.com/contact[Contact]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/converting-landing-pages[4 Design
+Elements of Converting Landing Pages]
+
+'''''
+
+==== TL;DR
+
+optinopoli → Lead Magnets → _Integrations_ → Select Sendlane → Enter
+Sendlane API Key, Hash Key, Subdomain → Authorize → Select List  →
+Activate

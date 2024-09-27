@@ -1,0 +1,35 @@
+==== Overview
+
+Reviews exported from BigCommerce are compatible with Sendlane Reviews!
+Read on to learn how to export reviews from BigCommerce.
+
+'''''
+
+=== Install the Product Review Importer & Exporter
+
+. Log in to your BigCommerce account
+. Click https://www.bigcommerce.com/apps/product-review-importer/[here]
+to view the Product Review Importer & Exporter app
+. Click *Get This App*
+. Click *Log In*
+. Click *Continue*
+. Click *Install*
+. Click *Confirm*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64ad963fc2f5ed048130bf34/file-z9bsKHjGP2.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64ad963fc2f5ed048130bf34/file-z9bsKHjGP2]
+
+=== Export Reviews From BigCommerce
+
+. Scroll to the bottom of the page
+. Click *Export to CSV*
+. Click the link that appears in the Last import results bar to download
+your .CSV file
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64ad972bc2f5ed048130bf36/file-pnfFE0UvF3.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64ad972bc2f5ed048130bf36/file-pnfFE0UvF3]
+
+[[next]]
+===== ⏭️ Next Steps
+
+Check out our guide to
+https://help.sendlane.com/article/525-how-to-import-reviews[importing
+your existing reviews!]!

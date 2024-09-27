@@ -1,0 +1,91 @@
+Custom templates are a quick and easy way to re-use email designs
+throughout your marketing!
+
+In this short step-by-step, we'll explain exactly how to save an email
+design as a custom template inside of your Sendlane account.
+
+[[beta-2]]
+===== 🚧 Sendlane's new email builder is currently in beta!
+
+Check out
+https://help.sendlane.com/article/499-sendlanes-new-email-builder[Sendlane's
+new email builder] or
+https://help.sendlane.com/article/499-sendlanes-new-email-builder#save[click
+here] for instructions for saving an email as a custom template in the
+new builder
+
+'''''
+
+=== Before Getting Started
+
+Please be sure you already have a
+https://help.sendlane.com/article/153-campaigns[Campaign] created!
+
+====== Please Note
+
+If you've already _sent_ the campaign, you'll need to
+https://help.sendlane.com/article/153-campaigns#actions[duplicate] it
+before you're able to use the design as a custom template.
+
+'''''
+
+=== Saving an Email Design as a Custom Template
+
+. Open up the Campaign and navigate to the email builder page 
+. Click on the ellipsis (*_..._*) and then select *_Save as custom
+template image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea87918042863474d19c834/file-VJJAUzkyYc.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea87918042863474d19c834/file-VJJAUzkyYc]_*
+. Choose a name for your template and click
+*_Save image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea879492c7d3a5ea54a14ae/file-TZAMFJOmy0.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea879492c7d3a5ea54a14ae/file-TZAMFJOmy0]_*
+
+And that's it!
+
+Once you click save, your custom template will be available for use in
+the _Custom_ tab anytime you want to use it to create new emails! 
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8201f504286364bc977fbb/file-sAURWNRVa5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8201f504286364bc977fbb/file-sAURWNRVa5]
+
+'''''
+
+[[html]]
+=== Saving an Email Design Created with the HTML Builder
+
+If you are familiar with HTML design, or have a template you'd like to
+use, you can utilize our HTML Builder and save your design as a custom
+template.
+
+From the *Designed* section of the campaign creator, choose the HTML
+Builder 
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8202642c7d3a7e9aea0943/file-ihQnQ9mDLe.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8202642c7d3a7e9aea0943/file-ihQnQ9mDLe]
+
+Once you have designed your email, click on the ellipsis ( _..._) and
+then select _*Save as custom template*  _
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e82058e04286364bc97801a/file-Gal0FVT7xn.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e82058e04286364bc97801a/file-Gal0FVT7xn]
+
+And that's it!
+
+Your template will now be available for use in the _Custom_ tab anytime
+you want to use it to create new emails. 
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8201f504286364bc977fbb/file-sAURWNRVa5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8201f504286364bc977fbb/file-sAURWNRVa5]
+
+'''''
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog/great-email-branding[The 4 Step
+Checklist for Great Email Branding]
+* https://www.sendlane.com/blog/how-to-create-eye-catching-emails-with-sendlanes-email-builder[How
+to Create Eye-Catching Emails With Sendlane's Email Builder ]
+
+'''''
+
+=== TL;DR
+
+Email Design: Save An Open Campaign → Email builder page → Ellipsis
+(...) → Save as custom template → Choose a name → Save
+
+Email Design (HTML Builder): "Designed" Section → HTML
+Builder → Ellipsis (...) → Save as custom template → Choose a name
+→ Save

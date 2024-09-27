@@ -1,0 +1,34 @@
+==== Overview
+
+Google appends warnings to emails in Gmail that its spam and safety
+filters believe pose a risk to Gmail users. Read on to learn why this
+may happen to an email sent from your Sendlane account.
+
+==== In this guide
+
+* link:#why[Why contacts may see a message warning them to be careful
+with messages from you]
+* link:#prevent[How you can prevent this message in the future]
+
+'''''
+
+[[why]]
+=== Why contacts may see a message warning them to be careful with messages from you
+
+Contacts may see a yellow banner advising them to "be careful with this
+message" when Google believes the sender has maliciously spoofed a
+legitimate sender. Spoofing means sending a message while disguised as a
+legitimate sender.
+
+This warning will only appear when accessing Gmail on desktop or via the
+iOS or Android Gmail apps.
+
+[[prevent]]
+=== How you can prevent this message in the future
+
+The good news is that the "be careful with this message" warning
+overwhelmingly appears on emails sent to and from the same domain, which
+indicates spoofing. This means that it is highly likely the only people
+who will ever see this message on an email sent from your Sendlane
+account are internal staff with email addresses that use the same domain
+as your sender profile.

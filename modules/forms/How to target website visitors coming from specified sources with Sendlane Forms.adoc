@@ -1,0 +1,60 @@
+==== Overview
+
+You can use UTM codes to display Sendlane Forms when website visitors
+reach your site from a specified source, such as your brand’s social
+media accounts. Read on to learn how to display forms based on visitors’
+origin!
+
+==== In this guide
+
+. link:#create[Create UTM]
+. link:#target[Target forms]
+
+'''''
+
+[[create]]
+=== Create UTM
+
+Sendlane Forms requires a UTM for the source you want to target. Use a
+URL builder, like
+https://ga-dev-tools.google/ga4/campaign-url-builder/[Google’s], to
+create a link with your chosen UTM codes appended.
+
+Let’s say you want to show your form to website visitors who click a
+link you’ve included in your brand’s Instagram story.
+
+To build a URL, you must specify a source and medium, and can optionally
+specify a campaign name, term/keywords, and content. For our example we
+will specify a source and a medium.
+
+💡 Using fewer specifications means your link is more general purpose
+and can be reused several times, but the data you collect will be broad.
+Using more specifications means your link will generate more granular
+data, but you’ll need to create more links to meet your marketing
+strategy’s needs.
+
+A URL that identifies website visitors as coming from an Instagram looks
+like this:
+
+....
+https://www.example.com/?utm_source=instagram&utm_medium=story>
+....
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1f4593e735297b4ecc04/file-ojyVgbT2K6.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1f4593e735297b4ecc04/file-ojyVgbT2K6]
+
+[[target]]
+=== Target forms
+
+To add your UTM to your form’s targeting settings:
+
+. Open a form
+. In the
+https://help.sendlane.com/article/624-understanding-sendlane-forms-audience-opt-in-and-display-logic-settings#display-targeting[Display
+Targeting settings of the form builder], click the *Show on specific
+URLs* checkbox
+. Click *Add URL*
+. Set the dropdown to *Containing*
+. Paste a UTM code in the text box
+. Repeat steps 3-5 to add more UTM codes
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1f5b1c2f8d3d7ebfd570/file-UgvuM0psr9.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1f5b1c2f8d3d7ebfd570/file-UgvuM0psr9]

@@ -1,0 +1,86 @@
+https://app.convertri.com/a/58aa354a-a2d3-11e9-99fe-0697e5ca793e[Convertri]
+is a platform where you can create unique funnels and landing pages to
+gather contacts and grow your business.
+
+Integrating Convertri and Sendlane enables you to funnel contacts
+captured by Convertri directly to your Lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Make sure you're using Chrome, since that's the only browser that's
+compatible with Convertri!
+
+Prior to connecting with Sendlane, you'll need an
+https://app.convertri.com/a/58aa354a-a2d3-11e9-99fe-0697e5ca793e[active
+Convertri account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Convertri knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting Convertri with Sendane
+
+. Once logged into Convertri, click on *_Account_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d41b8f1042863478675ace1/file-IkybKT8rNY.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d41b8f1042863478675ace1/file-IkybKT8rNY]
+. Click _Integrations_ and scroll until you find Sendlane. Click _Setup_
+after hovering your cursor over the Sendlane
+logo.*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d41ba8f2c7d3a2ec4bfac97/file-y3jgsSbmgt.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d41ba8f2c7d3a2ec4bfac97/file-y3jgsSbmgt]*
+. Enter your Subdomain as the site address, API, and Hash keys, and
+select the list in Sendlane with which you want to integrate.
+. Scroll to the bottom of the page and click *_Save_*.
+. Once you have completed the integration, you will be able to select
+the list contacts populate into directly on your
+https://help.convertri.com/article/141-forms-setup-and-troubleshooting[Convertri
+form].
+
+Your Integration is now complete!
+
+Captured contacts from your Convertri campaigns can now be synced with
+your selected List in Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Convertri, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Convertri team is just a few clicks away!
+
+Connect with the mailto:support@convertri.com[Convertri team]
+
+Visit the https://help.convertri.com/[Convertri Docs]
+
+'''''
+
+==== Additional Convertri Resources
+
+https://app.convertri.com/a/58aa354a-a2d3-11e9-99fe-0697e5ca793e[Sign up
+for Convertri] | https://blog.convertri.com/[Convertri Blog] |
+https://help.convertri.com/[Guides]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/convertri-integration-spotlight[Sendlane
++ Convertri - Build Faster Funnels With Higher Conversions]
+* https://www.sendlane.com/blog-posts/converting-landing-pages[4 Design
+Elements of Converting Landing Pages]
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage and Capture Leads]
+
+'''''
+
+=== TL;DR
+
+Login to Convertri → Account → Integrations → Setup → Enter Subdomain /
+API / Hash → Select List → Save

@@ -1,0 +1,772 @@
+[[top]]
+==== Overview
+
+Create automtions triggered by contacts' behavior and activity in your
+Shopify store.
+
+[[cooked]]
+===== ⚠️ Some triggers require website visitors to be cookied before the Automation will fire
+
+Triggers marked with an asterisk * in the table below require website
+visitors to be cookied before they can trigger the automation. Contacts
+are cookied when:
+
+. You have installed
+https://help.sendlane.com/article/417-how-to-use-beacon-with-shopify[Beacon
+general tracking] in your Shopify store, AND
+. They receive an email from you, AND
+. They click on a link in an email from you
+
+This process allows Sendlane to identify the Contact and track their
+activity on your website. Website visitors using incognito windows or
+other anonymous browsing options will not be tracked.
+
+==== In this guide
+
+The table below provides a brief description and suggested use case for
+each Shopify automation trigger. Click the trigger name to learn more
+about it.
+
+[width="100%",cols="34%,33%,33%",]
+|===
+|*Trigger* |*Contacts enter an automation with this trigger when:* |*Use
+this trigger to:*
+
+|link:#product-viewed[Product Viewed]* + |They are cookied and view a
+product on your website. |Follow up with Contacts who have viewed a
+product on your website
+
+|link:#abandoned-product-viewed[Abandoned Product Viewed]* |They are
+cookied, view a product on your website, and do not complete a purchase
+within the specified time frame |Follow up with Contacts who have viewed
+a product specified in the trigger's settings and did not make a
+purchase in a specified time frame
+
+|link:#added-to-cart[Added to Cart]* + |They are cookied and click the
+add to cart button |Follow up with Contacts who have added products
+specified in the trigger's settings to their cart
+
+|link:#abandoned-cart[Abandoned Cart]* + |They are cookied, click the
+add to cart button, and do not complete a purchase within the specified
+time frame |Notify Contacts that they have products in their cart; if
+using the abandoned cart email block only the product that was first
+added to the cart within the specified time frame will be displayed
+
+|link:#abandoned-checkout[Abandoned Checkout] + |They are cookied OR
+logged in to your store OR have entered their email or phone on the
+checkout page and do not complete a purchase within the specified time
+frame |Notify Contacts that they did not finish completing the checkout
+they started; if using the abandoned cart email block all products in
+the abandoned checkout will be displayed (Abandoned Checkout is the only
+trigger that enables all products in a cart to be displayed in one
+email)
+
+|link:#checkout-complete[Checkout Complete] |They complete checkout and
+have checked the marketing opt-in box |Notify Contacts that their
+checkout is complete
+
+|link:#product-purchase[Product Purchase] |They purchase a product
+specified in the trigger's settings |Follow up with Contacts who have
+purchased the products specified in the trigger's settings
+
+|link:#product-variant-purchased[Product Variant Purchase] |They
+purchase a product variant specified in the trigger's settings |Follow
+up with Contacts who have purchased product variants specified in the
+trigger's settings
+
+|link:#price-drop[Product Price Drop] |They interacted with a specified
+product in a specified period, and the price of the product was reduced
+during the specified time |Let Contacts know that a product they
+expressed interest in has been reduced in price
+
+|link:#order-placed[Order Placed] |They place an order and, optionally,
+when their order reaches a status specified in the trigger's settings
+|Follow up with Contacts who have placed an order or whose order has
+reached a specified status
+
+|link:#subscribed-to-back-in-stock[Subscribed to Back in Stock] |They
+sign up for back in stock notifications |Notify Contacts that they have
+subscribed to back in stock notifications for products specified in the
+trigger's settings
+
+|link:#product-back-in-stock[Product Back in Stock] |The product they've
+signed up to receive back in stock notifications for has been listed as
+back in stock in your store |Notify Contacts that the product they've
+subscribed to back in stock notifications for is back in stock
+
+|link:#review-submitted[Review Submitted] |They submit a product review
+|Thank Contacts for submitting a review
+
+|link:#review-reply[Review Reply] |You reply to their review |Notify
+Contacts that you've replied to their review
+
+|link:#product-viewed[Customer Created] |They create an account for your
+store (by manually creating their own account or placing an order and
+having an account automatically created for them) |Notify Contacts that
+their account has been created
+
+|link:#customer-deleted[Customer Deleted] |Their account for your store
+is deleted |Notify Contacts that their account has been deleted
+
+|link:#tag-applied[Shopify Customer Tag Applied] |A Shopify customer tag
+is added to their account in your store |Trigger flows based on Shopify
+customer tags 
+
+| | |
+|===
+
+'''''
+
+=== Product Viewed
+
+You can use the Product Viewed trigger to follow up with Contacts who
+have viewed a product on your website.
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+* Products - search for products to trigger when viewed. The default
+selection is `+Any+`, which will trigger the automation whenever any
+product is viewed in your store by a cookied website visitor
+
+Use caution with this trigger, particularly if selecting `+Any+` as the
+specified products, which means that any product in your store can
+trigger the automation, and/or `+No limit+` as the Limit Per Contact.
+
+No block in the email builder will automatically pull product
+information for this trigger. Use
+https://help.sendlane.com/article/79-what-are-personalization-tags#templating[advanced
+templating syntax] to pull product information into an automation using
+the Product Viewed trigger.
+
+link:#top[Back to top]
+
+'''''
+
+=== Abandoned Product Viewed
+
+Sometimes referred to as "browse abandon flows," you can use the
+Abandoned Product Viewed trigger to follow up with Contacts who have
+viewed a product specified in the trigger's settings and did not make a
+purchase in a specified time frame.
+
+When setting up a browse abandon or abandoned product viewed automation,
+do not add another trigger to the automation.
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+* Consider abandoned after - select a period of time to check for
+completed checkouts before triggering the automation; for example, if
+you select 1 hour, a website visitor will trigger the automation if they
+view the specified product(s) and do not complete a checkout in the hour
+after they view the product.
+* Products - search for products to trigger when viewed. The default
+selection is `+Any+`, which will trigger the automation whenever any
+product is viewed in your store by a cookied website visitor who does
+not complete checkout within the selected Consider abandoned after time
+frame.
+
+Use caution with this trigger and its options, particularly when:
+
+* Selecting `+Any+` as the specified products, which means that any
+product in your store can trigger the automation, 
+* Selecting `+No limit+` as the Limit Per Contact, which means the
+contact will be sent through the automation every single time they view
+a product without completing a purchase
+* Selecting a Consider abandoned after setting of 5 minute and 30
+minutes, which does not leave much time for contacts to complete a
+purchase after viewing a specified product. We highly recommend using
+the 1 hour, 3 hours, 6 hours, and 24 hours options for live automations.
+Use the the 5 minute and 30 minute settings for internal testing
+purposes.
+
+You can use the Shopify Abandoned Cart block in the email builder to
+insert an abandoned product's image, name, average reviews (if using
+Sendlane Reviews), price, and link to the product's page.
+
+link:#top[Back to top]
+
+'''''
+
+=== Added to Cart
+
+You can use the Added to Cart trigger to follow up with Contacts who
+have added a specified product to their cart. This trigger starts an
+automation when contacts click the "add to cart" button.
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+* Products - search for products to trigger when viewed. The default
+selection is `+Any+`, which will trigger the automation whenever any
+product is added to a cookied contact's cart
+
+Use caution with this trigger and its options, particularly when:
+
+* Selecting `+Any+` as the specified products, which means that any
+product in your store can trigger the automation, 
+* Selecting `+No limit+` as the Limit Per Contact, which means the
+contact will be sent through the automation every single time they add a
+product to their cart
+
+No block in the email builder will automatically pull product
+information for this trigger. Use
+https://help.sendlane.com/article/79-what-are-personalization-tags#templating[advanced
+templating syntax] to pull product information into an automation using
+the Added to Cart trigger.
+
+link:#top[Back to top]
+
+'''''
+
+=== Abandoned Cart
+
+You can use the Abandoned Cart trigger to follow up with Contacts who
+have added a product specified in the trigger's settings to their cart
+and did not make a purchase in a specified time frame.
+
+When setting up an abandoned cart automation, do not add another trigger
+to the automation.
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+* Consider abandoned after - select a period of time to check for
+completed checkouts before triggering the automation; for example, if
+you select 1 hour, a website visitor will trigger the automation if they
+view the specified product(s) and do not complete a checkout in the hour
+after they view the product.
+* Products - search for products to trigger when viewed. The default
+selection is `+Any+`, which will trigger the automation whenever any
+product is added to cart and not checked out within the specified
+Consider abandoned after time frame
+
+Use caution with this trigger and its options, particularly when:
+
+* Selecting `+Any+` as the specified products, which means that any
+product in your store can trigger the automation, 
+* Selecting `+No limit+` as the Limit Per Contact, which means the
+contact will be sent through the automation every single time they add a
+specified product to their cart without completing a purchase in the
+specified time frame.
+* Selecting a Consider abandoned after setting of 5 minute and 30
+minutes, which does not leave much time for contacts to complete a
+purchase after viewing a specified product. We highly recommend using
+the 1 hour, 3 hours, 6 hours, and 24 hours options for live automations.
+Use the the 5 minute and 30 minute settings for internal testing
+purposes.
+
+You can use the Shopify Abandoned Cart block in the email builder to
+insert products' image, name, average reviews (if using Sendlane
+Reviews), price, and link to the product's page.
+
+link:#top[Back to top]
+
+'''''
+
+=== Abandoned Checkout
+
+You can use the Abandoned Checkout trigger to follow up with Contacts
+who have added a product specified in the trigger's settings to their
+cart, started the checkout process, and did not make a purchase in a
+specified time frame.
+
+When setting up an abandoned checkout automation, do not add another
+trigger to the automation.
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+* Consider abandoned after - select a period of time to check for
+completed checkouts before triggering the automation; for example, if
+you select 1 hour, a website visitor will trigger the automation 1 hour
+after they started the checkout process if checkout was not completed in
+that hour.
+* Products - search for products to trigger when viewed. The default
+selection is `+Any+`, which will trigger the automation whenever any
+product is viewed in your store by a cookied website visitor
+
+Use caution with this trigger and its options, particularly when:
+
+* Selecting `+Any+` as the specified products, which means that any
+product in your store can trigger the automation, 
+* Selecting `+No limit+` as the Limit Per Contact, which means the
+contact will be sent through the automation every single time they view
+a product without completing a purchase
+* Selecting a Consider abandoned after setting of 5 minute and 30
+minutes, which does not leave much time for contacts to complete a
+purchase after viewing a specified product. We highly recommend using
+the 1 hour, 3 hours, 6 hours, and 24 hours options for live automations.
+Use the the 5 minute and 30 minute settings for internal testing
+purposes.
+
+You can use the Shopify Abandoned Cart block in the email builder to
+insert an abandoned product's image, name, average reviews (if using
+Sendlane Reviews), price, and link to the product's page.
+
+link:#top[Back to top]
+
+'''''
+
+=== Checkout Complete
+
+You can use the Checkout Complete trigger to follow up with Contacts who
+have completed checkout on your website.
+
+This trigger does not provide the ability to specify products that must
+be included in the checkout. To follow up with Contacts who have
+completed checkout for specified products, use the Product Purchase
+trigger.
+
+This trigger does not provide the ability to re-trigger based on order
+status. To follow up with Contacts whose order is at a specified status
+and contains specified products, use the Product Purchase trigger. To
+follow up with Contacts whose order is at a specified status regardless
+of which products were included in the order, use the Order Placed
+trigger.
+
+When using this trigger, the first action(s) in the automation should be
+an Update Automation action set to End Other for any automations using
+the following triggers:
+
+* Product Viewed
+* Abandoned Product Viewed
+* Added to Cart
+* Abandoned Cart
+* Abandoned Checkout
+* Checkout Started
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+
+link:#top[Back to top]
+
+'''''
+
+=== Product Purchase
+
+You can use the Product Purchase trigger to follow up with Contacts who
+have purchased specified products and when orders reach specified
+statuses.
+
+When using this trigger, the first action in the automation should be an
+Update Automation action set to End Other for any automations using the
+following triggers (create as many Update Automation actions as needed
+at the beginning of your Product Purchase automation to specify all
+automations using the following triggers):
+
+* Product Viewed
+* Abandoned Product Viewed
+* Added to Cart
+* Abandoned Cart
+* Abandoned Checkout
+* Checkout Started
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+* Order Status - select an order status that the order must reach before
+the automation is triggered; select `+Any+` to retrigger the automation
+each time the order status is updated
+* Products - search for products to trigger when viewed. The default
+selection is `+Any+`, which will trigger the automation whenever any
+product is viewed in your store by a cookied website visitor
+
+link:#top[Back to top]
+
+'''''
+
+=== Product Variant Purchase
+
+You can use the Product Purchase trigger to follow up with Contacts who
+have purchased specified product variants and when orders reach
+specified statuses.
+
+When using this trigger, the first action in the automation should be an
+Update Automation action set to End Other for any automations using the
+following triggers (create as many Update Automation actions as needed
+at the beginning of your Product Variant Purchase automation to specify
+all automations using the following triggers):
+
+* Product Viewed
+* Abandoned Product Viewed
+* Added to Cart
+* Abandoned Cart
+* Abandoned Checkout
+* Checkout Started
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+* Order Status - select an order status that the order must reach before
+the automation is triggered; select `+Any+` to retrigger the automation
+each time the order status is updated
+* Product variants - search for variants to trigger when included in an
+order. The default selection is `+Any+`, which will trigger the
+automation whenever any variant is purchased in your store.
+
+link:#top[Back to top]
+
+'''''
+
+[[price-drop]]
+=== Product Price Drop
+
+You can use the Product Price Drop trigger to follow up with contacts
+who have expressed interest in a specific product when that product's
+price is reduced.
+
+The price for the product must be
+https://help.shopify.com/en/manual/products/details/product-pricing/sale-pricing[reduced
+in your Shopify] store to trigger an automation. Discounts and
+store-wide sales will not trigger the automation. The trigger only fires
+when individual products are reduced in price at or below the Minimum
+Price Drop Amount.
+
+Each reduced product price will trigger the automation; it is not
+possible to group products together for a coordinated sale using the
+Product Price Drop trigger.
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only enter
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts enter the automation only once per day for
+the first price drop they meet the trigger's Contact Requirements for
+** One Time Only - Contacts can only enter the automation once
+** Not in the last - Contacts can only enter the automation if they have
+not entered it in the last X days or months.
+* Minimum Price Drop Amount - Enter the minimum flat dollar amount or
+percentage of the product's price the product should be discounted by to
+trigger the automation
+* Contact Requirements - Select methods of product interaction that
+should qualify contacts for receiving price drop notifications. If more
+than one method is selected, contacts who used any selected method to
+interact with the product will qualify.
+** Product viewed - Contact landed on the product's page
+** Added to cart - Contact clicked "added to cart" for the product
+** Started checkout - Contact had the product in their cart and started
+but did not complete checkout
+* Time period - Enter the number of days (90 max) to look back for
+qualifying Contact Requirements. If contacts purchase the specified
+product within the set time period, they will not trigger the
+automation.
+
+link:#top[Back to top]
+
+'''''
+
+=== Order Placed
+
+You can use the Order Placed trigger to follow up with Contacts who have
+placed an order and when orders reach specified statuses.
+
+When using this trigger, the first action in the automation should be an
+Update Automation action set to End Other for any automations using the
+following triggers (create as many Update Automation actions as needed
+at the beginning of your Product Variant Purchase automation to specify
+all automations using the following triggers):
+
+* Product Viewed
+* Abandoned Product Viewed
+* Added to Cart
+* Abandoned Cart
+* Abandoned Checkout
+* Checkout Started
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+* Order Status - select an order status that the order must reach before
+the automation is triggered; select `+Any+` to retrigger the automation
+each time the order status is updated
+* Product variants - search for variants to trigger when included in an
+order. The default selection is `+Any+`, which will trigger the
+automation whenever any variant is purchased in your store.
+
+link:#top[Back to top]
+
+'''''
+
+=== Subscribed to Back in Stock
+
+You can use the Subscribed to Back in Stock trigger to follow up with
+Contacts who subscribed to back in stock notifications via the Sendlane
+specific back in stock button you've installed in your Shopify store.
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+
+Use caution with this trigger and its options, particularly when:
+
+* Selecting `+No limit+` as the Limit Per Contact, which means the
+contact will be sent through the automation every single time they sign
+up for a back in stock notification via the Sendlane specific back in
+stock button you've installed in your Shopify store.
+
+link:#top[Back to top]
+
+'''''
+
+=== Product Back in Stock
+
+You can use the Subscribed to Back in Stock trigger to follow up with
+Contacts who subscribed to back in stock notifications via the Sendlane
+specific back in stock button you've installed in your Shopify store and
+the product is back in stock.
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+
+Use caution with this trigger and its options, particularly when:
+
+* Selecting `+No limit+` as the Limit Per Contact, which means the
+contact will be sent through the automation every single time a product
+they've signed up for back in stock notifications for is back in stock
+* Setting the Units restocked to notify too low, which risks the product
+being sold out when contacts click on your email
+
+link:#top[Back to top]
+
+'''''
+
+=== Review Submitted
+
+You can use the Review Submitted trigger to thank customers for leaving
+a review in your store. This trigger only works if Sendlane Reviews is
+installed for your Shopify store.
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+
+link:#top[Back to top]
+
+'''''
+
+=== Review Reply
+
+You can use the Review Reply trigger to notify customers that you've
+replied to the review they left on a product in your store. This trigger
+only works if Sendlane Reviews is installed for your Shopify store.
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+
+link:#top[Back to top]
+
+'''''
+
+=== Customer Created
+
+You can use the Customer Created trigger to create automations when a
+new customer has been created in your Shopify store.
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+
+link:#top[Back to top]
+
+'''''
+
+=== Customer Deleted
+
+You can use the Customer Created trigger to create automations when a
+customer has been deleted from your Shopify store.
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+
+link:#top[Back to top]
+
+'''''
+
+[[tag-applied]]
+=== Shopify Customer Tag Applied
+
+You can use the Tag Applied trigger to trigger an automation when a
+Shopify customer tag is added to a customer profile in your Shopify
+store.
+
+Available options:
+
+* Store - select a Shopify store
+* Limit Per Contact - select a limitation on the number of times a
+Contact can trigger the automation
+** No limit - Contacts will not be prevented from entering the
+automation
+** Do not trigger when already in Automation - Contacts can only trigger
+the automation if they aren't currently flowing through the automation
+** Once Per Day - Contacts can only trigger the automation once per day
+** One Time Only - Contacts can only trigger the automation once
+** Not in the last - Contacts can only trigger the automation if they
+have not triggered it in the last X days or months.
+* Order Status - select an order status that the order must reach before
+the automation is triggered; select `+Any+` to retrigger the automation
+each time the order status is updated
+* Tags - select the Shopify customer tags you want to trigger the
+automation
+
+link:#top[Back to top]

@@ -1,0 +1,53 @@
+[[top]]
+==== Overview
+
+If you’re migrating to Sendlane Reviews from Yotpo, you can bring your
+hard earned reviews with you! Read on to learn how to import your Yotpo
+reviews to Sendlane.
+
+==== In this guide
+
+* link:#export[Export reviews from Yotpo Product Reviews]
+* link:#import[Import reviews file to Sendlane]
+
+'''''
+
+[[export]]
+=== 1. Export reviews from Yotpo
+
+Follow
+https://support.yotpo.com/docs/exporting-reviews-from-yotpo[Yotpo's
+instructions] for exporting your product reviews. When your file is
+ready for download, save it somewhere easily accessible, like your
+desktop, and make sure it is saved as a .CSV file. Do not edit the file
+in any way.
+
+[[import]]
+=== 2. Import reviews file to Sendlane
+
+To import your review file:
+
+. Click the *Reviews* icon
+. Click *Content* 
+. Click *Import & Export*
+. Click *Import Reviews*
+. Select *Yotpo* from the Product Review Source dropdown
+. Drag and drop your .CSV file or click to browse for your file
+. Check the checkbox confirming that your reviews are genuine
+. Click *Import*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667b4421dd0f8c60bb3fd8cd/file-N7ZhhHARC3.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667b4421dd0f8c60bb3fd8cd/file-N7ZhhHARC3]
+
+'''''
+
+=== Troubleshooting
+
+[[row]]
+====== My review file contains errors!
+
+If some reviews were not imported due to an error, the Results column
+will show how many reviews were not imported. Click the download icon in
+the Actions column to download a file of reviews that were not imported.
+See
+https://help.sendlane.com/article/647-troubleshooting-sendlane-reviews-imports[Troubleshooting
+Sendlane Reviews] for next steps.

@@ -1,0 +1,91 @@
+==== Overview
+
+You can add links to calendar events in SMS messages and emails,
+allowing contacts to add your events to their calendar. Read on to learn
+how to create calendar event links and add them to emails and SMS
+messages.
+
+==== In this guide
+
+[[bgs]]
+===== 🚦 Before getting started
+
+Ensure the calendar you create events on to share with customers is set
+to public
+
+Ensure the calendar event you create contains the following information:
+
+* A descriptive event name
+* A specified time if the event is not considered all day
+* A link to the virtual meeting or the address of a physical meeting
+* An informative description containing all other information contacts
+need about the event
+
+* link:#create[Create a link to a calendar event]
+** link:#google[Create a link to a Google calendar event]
+** link:#apple[Create a link to an Apple calendar event]
+** link:#outlook[Create a link to an Outlook calendar event]
+* link:#email[Add a calendar event link to an email]
+* link:#sms[Add a calendar event link to an SMS message]
+
+[[create]]
+=== Create a link to a calendar event
+
+Once you've created the event you want to share on your calendar, you'll
+need to access the event's URL or file to share it. Use the instructions
+linked below for your preferred calendar app to learn how to find the
+URL or file:
+
+* https://support.google.com/calendar/answer/13839531?hl=en&co=GENIE.Platform%3DDesktop[Google
+Calendar]
+* https://support.apple.com/guide/calendar/import-or-export-calendars-icl1023/mac[Apple
+Calendar]
+* https://support.microsoft.com/en-us/office/create-an-add-to-calendar-link-in-an-email-message-34f8ea28-322a-4867-b423-2998f9634e59[Outlook]
+
+Google Calendar provides a URL for events, while Apple, Outlook, and
+many other calendar apps provide .ICS files. If your preferred calendar
+provides an .ICS file instead of a URL for the event, you will need to
+host the .ICS file on your website or in your preferred file sharing
+service so you can access a link to the file to insert in your email or
+SMS message.
+
+[[email]]
+=== Add a calendar event link to an email
+
+You can link to a calendar event in an email with a text hyperlink,
+button, or linked image.
+
+To link to a calendar event with a text hyperlink:
+
+. Drag a text element into your email
+. Enter the text you want to hyperlink
+. Highlight your text
+. Click the link icon
+. In the Link field, paste your event or .ICS file's URL
+. Optionally, select a tag to add to the contact profiles of contacts
+who click the link
+
+To link to a calendar event with a button:
+
+. Drag a button element into your email
+. In the Link field, paste your event or .ICS file's URL
+. Optionally, select a tag to add to the contact profiles of contacts
+who click the link
+
+To link to a calendar event with an image:
+
+. Drag an image element into your email
+. In the Link field, paste your event or .ICS file's URL
+. Optionally, select a tag to add to the contact profiles of contacts
+who click the link
+
+[[sms]]
+=== Add a calendar event link to an SMS message
+
+To link to a calendar event in an SMS message:
+
+. Click the link icon
+. In the Link field, paste your event or .ICS file's URL
+. Optionally, select a tag to add to the contact profiles of contacts
+who click the link
+. Click Create

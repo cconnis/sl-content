@@ -1,0 +1,74 @@
+[[top]]
+==== Overview
+
+You can use an Update Automation action to end the current automation
+and start a new one, or end another automation. Read on to learn how to
+update automations with other automations.
+
+==== In this guide
+
+* link:#end-new[End & Start New]
+* link:#end-other[End Other]
+
+'''''
+
+[[end-new]]
+=== End & Start New
+
+You can use the End & Start New action to end the current automation at
+a specified point and start another automation.
+
+One common use for the End & Start New action is to end a welcome
+automation and start another automation based on the information and
+behavior recorded by the welcome automation. For example, if you've
+tagged links in your welcome automation's emails, you could start a new
+automation related to the links contacts clicked on using the tags added
+to their profiles.
+
+The End & Start New action is intended to be the last action in an
+automation. If you add an End & Start New action between existing nodes,
+the automation builder will ask if you want to continue because if the
+action is saved, all existing nodes below it will be deleted.
+
+To end the current automation and start a new one:
+
+. Click the *+ button* at bottom of your automation
+. Select an existing automation from the *Select Automation dropdown*,
+or create a new automation
+. Click *Done*
+
+link:#top[Back to top]
+
+'''''
+
+=== End Other
+
+You can use the End Other action to end another automation when contacts
+trigger the current automation.
+
+The most common use for the End Other action is in purchase cycle
+automations to ensure contacts don't receive duplicate or contradictory
+messages from your brand during the buying cycle. See the articles below
+for more information:
+
+* https://help.sendlane.com/article/662-how-to-set-up-an-abandoned-checkout-automation[How
+to set up an abandoned checkout automation]
+* https://help.sendlane.com/article/666-how-to-set-up-a-post-purchase-automatio[How
+to set up a post purchase automation]
+* https://help.sendlane.com/article/664-how-to-set-up-an-abandoned-cart-automation[How
+to set up an abandoned cart automation]
+* https://help.sendlane.com/article/663-how-to-set-up-an-abandoned-browse-automation[How
+to set up an abandoned browse automation]
+
+To end another automation:
+
+. Click the *+ button* at the point in your automation you want to end
+another automation
+. Select an automation to end from the *Automation dropdown*
+. Set a minimum number of *days or months to wait* before allowing
+contacts back into the ended automation if they trigger it again
+. Click *Done*
+
+link:#top[Back to top]
+
+'''''

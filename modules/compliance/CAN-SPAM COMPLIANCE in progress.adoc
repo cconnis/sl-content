@@ -1,0 +1,106 @@
+Subject Lines, Content, Sender profiles and the CAN-SPAM Act - How do I
+stay compliant? 
+
+Before the CAN-SPAM Act, many marketers resorted to "clickbait" subject
+lines (e.g., "Your Account Needs Attention", "Payment Completed!",
+etc.). Now, it is critical that your subject line accurately reflects
+the content of the email. Misleading or deceptive subject lines is,
+quite literally, against the law. We have taken many steps to help
+ensure that we are protecting _you_ (as well as our shared servers) from
+CAN-SPAM Act violations. 
+
+The CAN-SPAM Act states:
+
+_“It is unlawful for any person to initiate the transmission to a
+protected computer of a commercial electronic mail message if such
+person has actual knowledge, or knowledge fairly implied on the basis of
+objective circumstances, that a subject heading of the message would be
+likely to mislead a recipient, acting reasonably under the
+circumstances, about a material fact regarding the contents or subject
+matter of the message.”_
+
+So what is considered deceptive/misleading?:
+
+*Deceptive about who the email is from:*
+
+-sender profiles - "me, Bob (2)" trick the recipient into believing this
+is an ongoing conversation thread btwn you and Bob ***create and insert
+screenshot***
+
+-subject line "Did I leave my phone at your house?" - trick into
+thinking that this is a friend 
+
+addressing messages from fake senders is not permitted under CAN-SPAM
+requirements.
+
+==== Deceptive About Previous Email Exchanges or Missing Notifications
+
+Fake support ticket subject lines - "did I open a support ticket with
+this business?" 
+
+RE:
+
+FWD:
+
+(1):
+
+==== Deceptive about Urgency of the Message
+
+Giving your subscribers a false sense of urgency builds on a feeling of
+discomfort by trying to trick subscribers into opening.
+
+URGENT - Account Activation
+
+Action Required: Confirm ___
+
+==== Deceptive about Action Taken by the Subscriber
+
+Transactional/order confirmation emails have higher open rates than bulk
+emails.
+
+Receive confirmation for a transaction they haven't initiated?? A
+mistake, accident, fraud.
+
+They are NOT opening because they are interested - opening because they
+are alarmed. 
+
+Might generate higher than average open rates but also higher than
+average unsubscribe/spam complaints. *damages customer relationships.*
+
+stay away from anything transactional in nature (Application Approved,
+Payment Completed, etc.), do not use "Re:", "FWD:" or VAR_EMAIL (these
+all trigger spam filters across all ISPs and are considered
+misleading/deceptive). Please be sure that the content of the subject
+line and message gives a clear indication of what the email is about,
+and what they may get if they click on your link. Also please be sure
+that the content of the message is true for the subscriber - meaning if
+you send a campaign that says something along the lines of "I saw you
+did not open my last email", you should only be sending this to a
+segment that really did not open the previous email.
+
+=== Setting the Right Expectations
+
+Brands that use deceptive subject lines to trick subscribers into an
+open often forget that a subject line is much more than just a tool that
+gets your message opened. An effective subject line also serves as a
+teaser, giving your subscribers a snapshot of what to expect when
+opening the message. It not only makes your subscribers open the email,
+but also helps to set the direction for your subscriber’s journey toward
+your call-to-action.
+
+Building campaigns only around the goal of increasing open rates comes
+at the expense of other, much more important metrics: Will subscribers
+engage with a message if they feel cheated? Will they click through and
+buy from a brand that tricks them into the open? Most likely, they
+won’t.
+
+Tricking your subscribers into opening your email causes a mismatch of
+expectation and actual experience, and this won’t pay off in the
+long-term. Deceptive subject lines might help increase open rates, but
+they’ll also leave subscribers frustrated and disappointed. This, in
+turn, can cause higher unsubscribe rates, higher spam reporting, and
+lower click-through rates—and most importantly, might destroy
+subscribers’ trust in your brand.
+
+Instead, _earn_ the open—with respectful and relevant messages that are
+worthy of your subscribers’ time.

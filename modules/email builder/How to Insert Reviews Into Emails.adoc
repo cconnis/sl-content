@@ -1,0 +1,69 @@
+==== Overview
+
+Inserting customer reviews into Campaign and Automation emails to show
+your audience how much your customers love your products is a great way
+to promote your products! Read on to learn how to add testimonials to
+emails and style them to match your brand.
+
+==== In This Guide
+
+* link:#insert[Insert Review Testimonials into Emails]
+** link:#display[Testimonial Block Display Options]
+** link:#content[Testimonial Block Content Options]
+** link:#style[Testimonial Block Style Options]
+
+'''''
+
+[[insert]]
+=== Insert Review Testimonials into Emails
+
+The Testimonials block in the
+https://help.sendlane.com/article/499-sendlanes-new-email-builder[email
+builder] dynamically populates the most recent reviews that fit the
+criteria you set.
+
+To insert a review into an email:
+
+. Scroll to the Shopify or BigCommerce section of the email builder
+Content tab
+. Click or drag and drop the *Reviews block* into your email
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64b1cb8c452d013653efbff6/file-g6SCi7AncI.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64b1cb8c452d013653efbff6/file-g6SCi7AncI]
+
+[[display]]
+==== Testimonial Block Display Options
+
+* *Layout* - Left, center, or right justify the review
+* *Vertical spacing* - Adjust the spacing below and above the reviews in
+the block
+* *Horizontal spacing* - Adjust the spacing to either side of the
+reviews in the block
+
+[[content]]
+==== Testimonial Block Content Options
+
+Reviews inserted into emails are selected dynamically based on the
+conditions you select in the Display Options tab:
+
+* *Store* - Select the store you want to pull reviews from
+* *Minimum stars* - Select a minimum number of stars to qualify reviews
+to populate in the email
+* *Product* - Select Any to display the latest review that meets the
+minimum star requirements, or specific products to display reviews for
+* *Number of Reviews* - Select a number of reviews to display in the
+block
+* *Content Order* - Drag and drop stars, title, comment, and author
+within the block
+* *Max Character Count* - Select a maximum number of characters in the
+body of a review
+
+[[style]]
+==== Testimonial Block Style Options
+
+Adjust the following style options for your testimonial block:
+
+* Star Color
+* Star Size
+* Title font color, family, weight, and size
+* Description font color, family, weight, and size
+* Author font color, family, weight, and size

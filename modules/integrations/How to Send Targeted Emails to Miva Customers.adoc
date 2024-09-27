@@ -1,0 +1,91 @@
+Once your Miva integration is complete, you can send targeted email
+campaigns to your customers by creating segments, or triggering an
+automation! 
+
+* link:#automation[Using an Automation]: Trigger an automated series of
+emails based on product purchased, abandoned checkout, order fulfilled
+or order frequency
+* link:#segment[Creating a Segment]: Segment based on order details or
+customer value
+
+'''''
+
+=== Before Getting Started
+
+If you haven't yet, please
+https://help.sendlane.com/article/346-how-to-integrate-miva-and-sendlane[follow
+the instructions here] to complete your Miva integration.
+
+'''''
+
+[[automation]]
+=== Using Miva to Trigger an Automation
+
+. When creating an automation, click the node at the top that
+says *_Click Here to Add a Trigger_*
+. Within the menu that populates on the right, select *_Miva_* from the
+Integrations dropdown menu
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6002ff691c64ad47e4b6fe96/file-EbOdfiVtJu.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6002ff691c64ad47e4b6fe96/file-EbOdfiVtJu]
+* *Product Purchased*
+** Create an automation triggered off of the purchase of a specific (or
+any) product
+* *Customer Abandoned Checkout*
+** Begin an automation when a contact abandons their shopping cart
+* *Order Fulfilled*
+** Begin an automation when a customer's order is fulfilled
+* *Order Placed Frequency*
+** Trigger an automation the first, second or third time an order is
+placed
+
+Once you have selected the appropriate trigger, continue
+https://help.sendlane.com/article/73-automations[building your
+automation]!
+
+'''''
+
+[[segment]]
+=== Using Miva to Segment Your List
+
+. Navigate to *_Audience_ → _Segments_*
+. Name your Segment and choose whether you'd like to identify contacts
+on one specific list, or across all lists (All contacts)
+. From the dropdown menu choose *_Miva_* and select the type of segment
+you'd like to create
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f55f6bc46e0fb00179ed978/file-31PM4GY6l5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f55f6bc46e0fb00179ed978/file-31PM4GY6l5]
+* *Customer*
+** Average Order Value
+** Lifetime Value
+** Purchased (has/has not purchased since a specific date)
+** Total Orders Placed
+* *Checkout*
+** Date Created (on/before/after)
+* *Order*
+** Fulfilled (all orders fulfilled or only orders for a specific product
+ID)
+
+You can now send targeted campaigns to your contacts based on their Miva
+activity.
+
+'''''
+
+=== Additional Resources
+
+For helpful content on anything and everything relating to email
+marketing and marketing automations (best practices, tips & tricks and
+even case studies), check out the http://blog.sendlane.com/[Sendlane
+Blog] and https://sendlane.com/resources[Resource Library]!
+
+Other articles you may find helpful:
+
+* https://www.sendlane.com/blog-posts/sendlane-miva-the-ultimate-ecommerce-duo[Sendlane
++ Miva: The Ultimate eCommerce Duo]
+* https://help.sendlane.com/article/320-building-the-perfect-abandoned-cart-email[Building
+the Perfect Abandoned Cart Email]
+* https://help.sendlane.com/article/341-advanced-segmentation[How to
+Improve Targeting with Advanced Segmentation]
+
+Additionally, if you hit any roadblocks you can always get in touch with
+our team of email marketing automation experts
+mailto:mailto:support@sendlane.com[right here].

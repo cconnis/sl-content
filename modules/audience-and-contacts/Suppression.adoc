@@ -1,0 +1,147 @@
+[[top]]
+==== Overview
+
+Ensuring that you do not email Contacts who explicitly do not want your
+content is crucial for maintaining a good sending reputation and
+deliverability, and Sendlane's platform provides ways to automatically
+and manually add Contacts to Suppression. Read on to learn more about
+when Sendlane automatically suppresses email addresses and how you can
+suppress email addresses and domains!
+
+[[guide]]
+=== In this guide
+
+* link:#accessing-suppression[Access Your Account's Suppression List]
+* link:#adding-contacts-suppression[Methods of Email Address
+Suppression]
+* link:#adding-contacts-suppression[Methods of Email Address Domain
+Suppression]
+
+[[permanence]]
+===== ⚠️ Once a contact has been suppressed, it cannot be un-suppressed
+
+'''''
+
+[[accessing-suppression]]
+=== Access Your Account's Suppression List
+
+. Click the *Audience* icon
+. Click *Lists* tab
+. Below your Lists, find the Suppression infobox and click on the pink
+*Suppression* link
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b7e8fe020fe4b2fcaf005/file-MOjVhRMN85.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b7e8fe020fe4b2fcaf005/file-MOjVhRMN85]
+
+[[search]]
+==== Search for Suppressed Email Addresses or Domains
+
+Search for specific email addresses or domains on your Suppression list
+with the search bar in the Suppressed List window:
+
+. Select Email or Domain
+. Search for an email address or domain
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b81aea126ca3c882e2c56/file-kOuVGnrpjn.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b81aea126ca3c882e2c56/file-kOuVGnrpjn]
+
+[[export]]
+==== Export Suppressed Email Addresses or Domains
+
+Export a list of your suppressed Contacts' email addresses or domains:
+
+. Select Email or Domain
+. Click Export
+. Select to export your list as a .csv or .txt file, and you'll receive
+an email when your file is ready to download! You can also check the
+status of your export and download your completed file in the Exports
+tab.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b817be020fe4b2fcaf00a/file-8nSB6lWuMa.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b817be020fe4b2fcaf00a/file-8nSB6lWuMa]
+
+link:#top[Back to top]
+
+'''''
+
+[[emails]]
+=== Methods of Email Address Suppression
+
+Contacts are automatically suppressed by Sendlane if they meet certain
+criteria, but they can also be manually suppressed.
+
+[[automatic-contact]]
+==== Automatic Contact Suppression
+
+Contacts are suppressed automatically by Sendlane when:
+
+* An email cannot be delivered and results in a
+https://help.sendlane.com/article/355-bounced-emails[hard bounce], that
+email address is automatically suppressed
+* A Contact clicks the spam/junk button in an email, it is registered as
+a “complaint” against the sender to the Contact's Internet Service
+Provider. Sendlane participates in all known feedback loop programs for
+receiving notifications of spam complaints, and our system adds email
+addresses to Suppression when we are notified that the email address
+registered spam complaints on an email sent from Sendlane.
+
+[[manual-suppression]]
+==== Manual Contact Suppression
+
+Use the following processes to suppress individual email addresses:
+
+[[importing-suppression]]
+===== Importing Email Addresses to Suppression
+
+. Make sure the View by menu is toggled to *Email*
+. Click the *Import Contacts*
+buttonimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b8284a55b5524fb50d72c/file-epj4SvApQB.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b8284a55b5524fb50d72c/file-epj4SvApQB]
+. In the Tools menu, choose Import from a file if you have a .CSV or
+.TXT file to upload or Copy + Paste if you have a short list to enter
+. Click the pink *Import Contacts* button
+
+[[manual-suppression]]
+===== Manually Adding Email Addresses to Suppression
+
+. Open the Suppression window
+. Make sure the View by menu is toggled to *Email*
+. Click the *Add Contacts*
+buttonimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b829275eb4a5f70498bb4/file-sqisMZqZEG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b829275eb4a5f70498bb4/file-sqisMZqZEG]
+. Enter the email address you want to suppress
+. Click the pink *Add* button
+
+link:#top[Back to top]
+
+'''''
+
+[[domain-suppression]]
+=== Methods of Email Address Domain Suppression
+
+Use the following processes to add entire domains to your Suppression
+List.
+
+[[domain-warning]]
+===== ⚠️ Adding domains to your Suppression List means that no email address containing these domain names will ever receive emails from you
+
+For example, if you suppress the domain gmail.com, your content will not
+be delivered to any email address using the gmail.com domain. Use
+caution when suppressing entire domains
+
+[[importing-domains]]
+==== Importing Domains to Suppression
+
+. Ensure the View by menu is toggled to *Domain*
+. Click the *Import
+Domains* buttonimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b801fe020fe4b2fcaf008/file-YPIvp8BVmw.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b801fe020fe4b2fcaf008/file-YPIvp8BVmw]
+. In the Contact Import menu, choose *Import from a File* if you have a
+.CSV or .TXT file to upload or *Copy + Paste* if you have a short list
+to enter
+. Click the pink *Import Domains* button
+
+[[manual-domains]]
+==== Manually Add Domains to Suppression
+
+. Ensure the View by menu is toggled to *Domain*
+. Click the *Add
+Domain* buttonimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b80414773693a6d83e112/file-Fz09H8WsWc.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b80414773693a6d83e112/file-Fz09H8WsWc]
+. Enter the domains you want to suppress
+. Click *Add* 
+
+link:#top[Back to top]

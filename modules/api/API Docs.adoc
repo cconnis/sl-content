@@ -1,0 +1,21 @@
+https://documenter.getpostman.com/view/7477734/SzYYyxxv[Click here] to
+access Sendlane’s API Documentation, which contains a full index of
+Sendlane’s API calls and how to implement them!
+
+=== Before Getting Started
+
+In order to use the Sendlane API, you'll need to have your your Sendlane
+API Key, Hash Key and Subdomain ready. These can be found in your
+Sendlane account under https://app.sendlane.com/api[_*Account* →
+*API*_].
+
+====== Please Note
+
+If you are located _outside_ of the US and have a proxy set up, you may
+experience issues making successful API calls.
+
+Turning off your proxy is the best option for troubleshooting an error
+where the system “Could not get any response.”
+
+Interested in testing Sendlane's beta API v2? Check out our
+https://help.sendlane.com/article/432-api-v2[API v2 doc]!

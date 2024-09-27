@@ -1,0 +1,291 @@
+[[top]]
+==== Overview
+
+An Automation is a series of actions and communications triggered by a
+Contact's behavior and preferences. Use an Automation when you want to
+send evergreen content based on Contacts' interactions with your brand!
+
+With Automations, you can create the perfect email and SMS marketing
+funnel to welcome new Contacts, nurture leads and customers, or even
+update Contact Profiles—automatically!
+
+If you want to send sale/special offer, date, or event-specific content
+to your Contacts, check out our guide to
+https://help.sendlane.com/article/153-campaigns[Campaigns].
+
+==== In This Guide
+
+This guide will cover each part of an Automation, how to edit or
+duplicate an Automation, and review troubleshooting solutions.
+
+* link:#components[Automation Components]
+* link:#create[Create an Automation]
+* link:#edit[Edit an Automation]
+* link:#deactivate[Deactivate an Automation]
+* link:#duplicate[Duplicate an Automation]
+* link:#troubleshooting[Troubleshooting]
+* link:#resources[Additional Resources]
+
+'''''
+
+[[components]]
+=== Automation Components
+
+Automations are made of four components or types of nodes: triggers,
+actions, and logic and timing. Click on the name of each component below
+to read our guides for each component type.
+
+[width="100%",cols="50%,50%",]
+|===
+|*Component* |*Description*
+
+|https://help.sendlane.com/article/448-automation-triggers[Triggers]
+|Triggers are user-based actions that start your Automation. Every
+Automation needs at least one trigger to begin the next steps of
+Automation.
+
+|https://help.sendlane.com/article/449-automation-actions[Actions]
+|Actions happen due to a trigger's conditions being met, such as sending
+an SMS or email message, updating a Contact's profile, updating an
+Automation, or passing information with a Webhook.
+
+|https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation[Logic
+and Timing] + |Wait times, Goals, Conditional Splits, and Audience
+Splits allow you to use advanced targeting to send your Contacts highly
+relevant content at the right time.
+|===
+
+[[welcome]]
+===== 💡 Pro Tip
+
+Ready to get started with your first Automation? Check out our guide to
+https://help.sendlane.com/article/373-welcome-new-contacts[welcoming new
+Contacts with Email and SMS]!
+
+link:#top[Back to top]
+
+'''''
+
+[[create]]
+=== Create an Automation
+
+Build your own Automation entirely from scratch or get started with an
+Automation Template!
+
+[[template]]
+==== Use an Automation Template
+
+To create an Automation using a template:
+
+. Click the *Automation icon* 
+. Select Email, SMS, or Email + SMS 
+. Look through the available template options and click *Get Started* to
+start customizing 
+. Enter a *Name* for your Automation 
+. Click *Start*
+
+Review each node of your Automation and add your content to email and
+SMS nodes and test your Automation thoroughly before activating it!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6336145d9f7c1931ee005198/file-FjcMAd3cfT.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6336145d9f7c1931ee005198/file-FjcMAd3cfT]
+
+[[scratch]]
+==== Build an Automation From Scratch
+
+To create an Automation from scratch:
+
+. Click the Automation icon 
+. Click *New Automation* 
+. Click *Start from Scratch* 
+. Click *Start*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633615b405ba014734a36270/file-FXRgJWOxub.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633615b405ba014734a36270/file-FXRgJWOxub]
+
+link:#top[Back to top]
+
+'''''
+
+[[edit]]
+=== Edit an Automation
+
+You can edit any node, setting, or content in your Automation at any
+time!
+
+[[edits]]
+===== 🚨  Important Note
+
+Edits made to email content or existing
+https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation#audience-split[audience
+splits] in active Automations that Contacts are currently traveling
+through will be made in real-time and seen by all Contacts. All other
+edits to the Automation, including any new nodes, will apply only to
+Contacts who start the Automation after the edits are made.
+
+==== Editing Nodes
+
+To edit an Automation node:
+
+. Click a *node* 
+. Make desired edits
+. Click *Done*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61fad8748200bc052eb8518d/file-iq0M6Jt6zc.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61fad8748200bc052eb8518d/file-iq0M6Jt6zc]
+
+[[add-node]]
+==== Add a Node
+
+To add a node to an Automation:
+
+. Click the *+ button* 
+. Select the new *Action*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61fad8eb2130e516946833c2/file-ZXW6DqBVqp.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61fad8eb2130e516946833c2/file-ZXW6DqBVqp]
+
+[[delete-note]]
+==== Delete a Node
+
+Deleted nodes cannot be restored, so use caution when deleting
+Automation nodes.
+
+To delete a node:
+
+. Click a *node* 
+. Click the *Trash can* icon
+. Click *OK*
+
+*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61fad9b32130e516946833c8/file-jLVvdpg5TP.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61fad9b32130e516946833c8/file-jLVvdpg5TP]*
+
+link:#top[Back to top]
+
+'''''
+
+[[deactivate]]
+=== Deactivate and Reactivate Automations
+
+If Automations are deleted, they are gone forever, including content and
+logic. To avoid losing the hard work you put into your Automations,
+Deactivate them instead!
+
+* *Deactivating* an active Automation freezes Contacts exactly where
+they are in the Automation
+* *Reactivating* an Automation causes Contacts to pick up exactly where
+they were when the Automation was deactivated
+
+To deactivate an Automation:
+
+. Click the *Stop icon* next to the Automation's name 
+. Click *Deactivate*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61faddeb39e5d05141b65aae/file-Mnxp9WbOLe.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61faddeb39e5d05141b65aae/file-Mnxp9WbOLe]To
+reactivate an Automation:
+
+. Click the *Play* icon next to the Automation's name 
+. Click *Activate*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61fade238200bc052eb851b5/file-adea7WfLUU.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61fade238200bc052eb851b5/file-adea7WfLUU]
+
+link:#top[Back to top]
+
+'''''
+
+[[duplicate]]
+=== Duplicate an Automation
+
+Duplicating an Automation is a great way to save time by using your
+existing Automations to target different groups of your Contacts for
+hyper-targeted content flows.
+
+To duplicate an Automation:
+
+. Click the *Duplicate Automation* icon 
+. Enter a *Name* for your new Automation 
+. Click *Duplicate*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61fae9b939e5d05141b65b0c/file-qyBHCCzaPy.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61fae9b939e5d05141b65b0c/file-qyBHCCzaPy]
+
+link:#top[Back to top]
+
+'''''
+
+=== Delete an Automation
+
+Deleting an Automation is permanent; there is no way to restore an
+Automation once it is deleted. We recommend deactivating Automations
+that you no longer need instead of deleting them.
+
+If you decide to delete an Automation, click the trash can icon next to
+the Automation you want to delete.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64df907a23f94575804bc086/file-itECCeBTXh.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64df907a23f94575804bc086/file-itECCeBTXh]
+
+===== ⏭  Next Steps
+
+Check out our pre-built Automation templates by selecting an Automation
+category in the Create New Automation window!
+
+Review the
+https://help.sendlane.com/article/329-dashboard-overview#Automations[Automations
+section of your dashboard] for an overview of your Automations'
+performance, or
+https://help.sendlane.com/article/443-export-automation-email-report-data[download
+Automation performance data] to closely look at any Automation's
+performance!
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+[[nodes]]
+====== The add node button isn't working!
+
+Automations have a limit of 50 nodes. If your Automation has less than
+50 nodes and you can't add a new node, please contact your CSM or our
+24/7 product support team!
+
+[[not-starting]]
+====== My Automation isn't starting!
+
+Make sure your Automation is set to Active if it seems like your
+Automation isn't starting when it should:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fac8bb14cedfd00165af7b6/file-PokYXSCrhe.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fac8bb14cedfd00165af7b6/file-PokYXSCrhe]
+
+[[not-sending]]
+====== My Automation email isn't sending!
+
+Make sure your Automation email is set to Active if Contacts are not
+receiving emails from nodes they meet the conditions for:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61faea8ed86136157d9a0314/file-wOtgqilxin.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61faea8ed86136157d9a0314/file-wOtgqilxin]
+
+[[conditional-split]]
+====== My Conditional Split isn't flowing!
+
+Some Conditional Split actions have built-in required wait times between
+actions. Review our
+https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation#split[Conditional
+Split guide] for detailed information!
+
+[[infinite-loop]]
+====== I'm getting an infinite loop error message!
+
+Our Automation builder will prevent your Contacts from getting stuck in
+"infinite loops," where one or more Automation sends a Contact back and
+forth through a flow. Avoid this issue by creating new Automations with
+fresh content for your audience to flow through to boost engagement and
+avoid spam complaints!
+
+[[resources]]
+=== Additional Resources
+
+* https://www.sendlane.com/ebooks/the-big-book-of-ecommerce-email-funnels[The
+Big Book of eCommerce Email Funnels]
+* https://www.sendlane.com/blog/customer-education-is-the-lead-nurturing-tactic-your-emails-are-probably-missing[Customer
+Education Is The Lead Nurturing Tactic Your Emails Are (Probably)
+Missing] +
+* https://www.sendlane.com/blog/5-automated-email-workflows-for-ecommerce-to-boost-roi[5
+Automated Email Workflows for eCommerce To Boost ROI]
+* https://www.sendlane.com/blog/5-post-purchase-emails-you-should-be-sending-to-increase-your-customer-ltv[5
+Emails for Your Post-Purchase Automation (+ Examples]

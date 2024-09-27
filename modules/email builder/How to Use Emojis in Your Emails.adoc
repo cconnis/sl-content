@@ -1,0 +1,70 @@
+Emojis add an extra spark of personality to the way we communicate with
+our friends, family and even with leads and customers! In today’s world,
+marketers are embracing emojis as a way to not only liven up the inbox
+but to connect and engage with recipients.
+
+Here's how to add emojis to your emails in your
+http://sendlane.com/login[Sendlane account!]
+
+'''''
+
+=== Adding an Emoji to Your Email
+
+When building out campaigns within Sendlane, you can add emojis to the
+subject line, preheader and the content of your messages.
+
+. Place your cursor where you'd like to add an emoji (either within the
+email**_ Subject_** field, *_Preheader_* field, or a content block
+inside of the email editor)
+. Open up the emoji panel by using the keyboard shortcut that works for
+your device
+*  +
+* *Keyboard Shortcut for Mac:*
++
+Control + Command + Space Bar
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd32fde2c7d3a177d6e8554/img-23477-1557344128-223624379.jpg[Sendlane-knowledge-base-using-emojis-in-your-emails-mac-keyboard-shortcut.jpeg,width=631,height=172]
+* *Keyboard Shortcut for Windows:*
++
+Windows button + Semicolon (or Period)*  
+_image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd32fde2c7d3a177d6e8555/img-23477-1557344165-586626522.jpg[Sendlane-knowledge-base-using-emojis-in-your-emails-PC-keyboard-shortcut.jpeg,width=622,height=169]_
++
+====== Please Note
+
+Whether the Semicolon or the Period works with the Windows button
+depends on your software version. Try one combination, then the other to
+figure out which one works for your device.
+. Select the emoji you'd like to use from the emoji
+panel image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6e9322c7d3a5b7643196d/file-VPfEKBFasF.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6e9322c7d3a5b7643196d/file-VPfEKBFasF]
+
+And that's it - you'll now be able to display emojis within your email
+subject line, preheader and content!
+
+====== Please Note
+
+Emojis render differently across different email clients and devices, so
+you'll always want to test your messages before sending to be sure
+everything looks exactly how you want.
+
+'''''
+
+=== Troubleshooting and Additional Resources
+
+* https://gizmodo.com/why-other-people-cant-see-your-emojis-and-how-to-fix-it-1820037259[Why
+Other People Can't See Your Emojis and How to Fix It]
+* To learn more about different emojis and what they mean, check
+https://emojipedia.org/[Emojipedia]
+
+=== Additional Sendlane Resources
+
+* https://blog.sendlane.com/introducing-emojis/[Introducing - Emojis!
+Add An Extra Dose of Personality to Your Communications]
+* https://www.sendlane.com/blog-posts/text-based-vs-image-based-emails[Text-Based
+Vs Image-Based Emails: Which is Best For Your Business?]
+
+'''''
+
+=== TL;DR
+
+Place cursor → Keyboard Shortcut (Mac: Control + Command + Space
+Bar, PC: Windows + Semicolon OR Period)  → Select emoji.

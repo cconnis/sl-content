@@ -1,0 +1,280 @@
+==== Overview
+
+Sendlane’s Beacon tracking pixel allows you to follow your Contacts
+through their entire customer journey, from pages viewed to purchases
+made, even if you don't use a deep data eCommerce integration!
+
+Using Beacon event tracking or conversion rules, you can target your
+audience to the right message at the right time. Read on to learn how to
+install Beacon and use its tracking data!
+
+==== In This Guide
+
+* link:#what-is-beacon[How Does the Beacon Pixel Work?]
+* link:#tracked[Types of Tracking]
+* link:#general[Set Up General Tracking]
+* link:#event-tracking[Set Up Event Tracking]
+* link:#test[Test General and Event Tracking Installation]
+* link:#conversion-rule[Set Up Conversion Rules]
+* link:#google[Use Google Analytics and Google Tag Manager with Beacon]
+* link:#automations[Use Beacon to Trigger Automations]
+* link:#segments[Use Events to Create Segments]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Make sure you have access to your website's source code to install
+Beacon
+
+[[shopify-install]]
+===== ⚠️ Shopify users, see https://help.sendlane.com/article/417-how-to-use-beacon-with-shopify[How to use Beacon with Shopify] for installation guidance
+
+'''''
+
+[[what-is-beacon]]
+=== How Does the Beacon Pixel Work?
+
+Sendlane’s Beacon tracking pixel collects information about your
+Contacts' pageview and purchase activity by cookie-ing them.
+
+For the pixel to begin tracking, Contacts must be cookied. Contacts are
+cookied when they:
+
+. Opt into your emails, and
+. Open an email from you, and
+. Click a link in an email from you
+
+OR subscribe to your account via a
+https://help.sendlane.com/article/634-getting-started-with-sendlane-forms[Sendlane
+Form].
+
+[[notes]]
+===== ⚠️ The Beacon tracking pixel cannot track visits from anonymous visitors or incognito browsers
+
+If the Beacon tracking pixel is blocked, Contacts will not be tracked in
+Beacon reporting or be sent through Automations such as browse and
+checkout abandonment. Contacts browsing using the following or other
+private browsing methods will not be tracked:
+
+* Safari private browsing on
+https://support.apple.com/guide/iphone/browse-the-web-privately-iphb01fc3c85[iOS]
+and
+https://support.apple.com/guide/safari/prevent-cross-site-tracking-sfri40732/mac[macOS]
+* Chrome Incognito browsing on
+https://support.google.com/chrome/answer/95464?hl=en&co=GENIE.Platform%3DDesktop[iOS&#44;
+Android&#44; and desktop]
+* Firefox private browsing on
+https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history[iOS&#44;
+Android&#44; and desktop]
+
+[[reporting-24-hours]]
+===== ⚠️ Beacon reporting can take up to 24 hours to populate accurately
+
+Once tracking begins, please allow up to 24 hours for reporting to
+populate accurately
+
+[[tracked]]
+=== Types of Tracking
+
+[width="100%",cols="25%,25%,25%,25%",]
+|===
+|*Type of Tracking* | |*Description* |*When to Use*
+
+|link:#general[General Tracking] + | |Tracks site visits as soon as the
+code is installed with no event or rule setup needed |To monitor website
+views and overall engagement
+
+|link:#event-tracking[Event Tracking] + | |Tracks visits to a specified
+URL |To send suggested product Automations or promo codes
+
+|link:#conversion-rule[Conversion Rule] + | |Assigns a specified dollar
+value to visits to specified pages, most often used to track purchases
+via checkout landing page |To send post-purchase followups and
+information about similar products
+
+| | | |
+|===
+
+[[general]]
+=== Set Up General Tracking
+
+. Click Account 
+. Click Beacon to Head to the https://app.sendlane.com/beacon[Beacon tab
+of your Account page]
+. https://app.sendlane.com/beacon[]Click *Get Beacon Code* 
+. Click *Copy code*
+. Paste the script in your website's header
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62a22562e1d2cf0eac00f976/file-DgrxZIglIh.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62a22562e1d2cf0eac00f976/file-DgrxZIglIh]
+
+link:#top[Back to top]
+
+'''''
+
+[[event-tracking]]
+=== Set Up Event Tracking
+
+. Click Account 
+. Click Beacon to Head to the https://app.sendlane.com/beacon[Beacon tab
+of your Account page]
+. https://app.sendlane.com/beacon[]Click *Create Event* 
+. Enter a *Name* and *Description*
+. Click *Save* 
+. Click the *code icon* 
+. Click *Copy Code*
+. Paste the script in the header tag of any page (or page template) you
+want to track visits to
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62a2299ba2c316231c20488d/file-M8R4vfuA8e.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62a2299ba2c316231c20488d/file-M8R4vfuA8e]
+
+link:#top[Back to top]
+
+'''''
+
+[[test]]
+=== Test General and Event Tracking Installation and Trigger
+
+==== Installation
+
+Determine whether Beacon was installed correctly by inspecting your
+website! This process assumes you are using Chrome, which is the most
+compatible browser for Sendlane:
+
+. Copy the event ID from your https://app.sendlane.com/beacon[Beacon
+installation
+code]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6449ae92d50b2033bd2417bb/file-jteNIYEo9J.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6449ae92d50b2033bd2417bb/file-jteNIYEo9J]
+. Open your website
+. **Right click **anywhere on the page
+. Click *Inspect*
+. Click into the Elements tab
+. Type *Command/Control + F* to open the finder
+. *Paste the event ID* from your Beacon code
+
+If your event ID is highlighted, Beacon is installed correctly! If your
+event ID was not found, try installing Beacon again and reach out to
+your Customer Success Manager or Sendlane's 24/7 Product Support team
+for next steps.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6449b68040ac037159fb1a0c/file-B64X0robP1.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6449b68040ac037159fb1a0c/file-B64X0robP1]
+
+==== Trigger
+
+Use the activity feed on Contact profiles to confirm that Beacon has
+triggered correctly when testing Automations using Beacon events
+
+link:#top[Back to top]
+
+'''''
+
+[[conversion-rule]]
+=== Set Up Conversion Rules
+
+[[conversion-rule-warning]]
+===== ⚠️ Do not create conversion rules unless you have a reason to do so
+
+Conversion rules assign a dollar amount to identified Contacts for every
+click on the URL you enter for the rule. This feature is commonly used
+for landing pages only accessible after purchasing a certain product. Do
+not use conversion rules if you do not have a URL associated with a
+known dollar amount, or you may falsely inflate your
+https://help.sendlane.com/article/572-how-to-adjust-attribution-settings[attributed
+revenue].
+
+. Click Account 
+. Click Beacon
+. Click *Create Rule* 
+. Enter a *Name*, *Value*, and *URL* 
+. Click *Create*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62a22cd9a2c316231c2048ba/file-qobDQS6exb.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62a22cd9a2c316231c2048ba/file-qobDQS6exb]
+
+link:#top[Back to top]
+
+'''''
+
+[[google]]
+=== Use Google Analytics and Google Tag Manager with Beacon 
+
+Google Analytics and
+https://support.google.com/tagmanager/answer/6102821?hl=en[Google Tag
+Manager] can be used for deeper insight and organization in managing
+customer metrics. 
+
+. Using Google Tag Manager, select Triggers** **>** New**
+. Then click trigger *Configuration* and choose *Custom Event Trigger*
+. Name your trigger and paste the Beacon event code!
+
+link:#top[Back to top]
+
+'''''
+
+[[automations]]
+=== Use Beacon to Trigger Automations
+
+Using Event Tracking as a trigger when building a
+https://help.sendlane.com/article/393-how-to-retarget-browse-abandoners-with-product-recommendations[browse
+abandonment] or
+https://help.sendlane.com/article/320-building-the-perfect-abandoned-cart-email[cart
+abandonment] Automation creates an extra touchpoint to help Contacts
+complete a purchase!
+
+Select *Event Tracking* as a trigger, then add the *Events* you'd like
+to use as triggers.
+
+You can use Event Tracking Automations to send targeted content, or add
+a tag to record your customers' interests!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62a23a42e1d2cf0eac00fa27/file-2qMxyZGWlR.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62a23a42e1d2cf0eac00fa27/file-2qMxyZGWlR]
+
+link:#top[Back to top]
+
+'''''
+
+[[segments]]
+=== Use Events to Create Segments
+
+https://help.sendlane.com/article/137-segments[Segmenting] contacts
+based on their behavior is a great way to send highly targeted content
+to your Contacts. To create a Segment based on Event Tracking, use the
+*Triggered Event* characteristic.
+
+If you have set up General tracking, you can use your website pages'
+slug text to create Segments for specific page(s) visited!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62a23bbde1d2cf0eac00fa33/file-v12NvUz6Cn.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62a23bbde1d2cf0eac00fa33/file-v12NvUz6Cn]
+
+link:#top[Back to top]
+
+'''''
+
+[[slug]]
+=== Use General Tracking to Create Segments
+
+General Beacon tracking allows you to create
+https://help.sendlane.com/article/137-segments[segments] based on
+Contacts' site browsing using a target page's URL slug.
+
+To create a Segment based on Event Tracking, use  *Visited Site*
+*contains*. Enter the slug text of the URL(s) you want to track visits
+to.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6488e3ee7f8c2575e3544d57/file-N0oLMkThIc.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6488e3ee7f8c2575e3544d57/file-N0oLMkThIc]
+
+link:#top[Back to top]
+
+'''''
+
+[[troubleshooting]]
+=== Additional Resources
+
+* Learn advanced segmentation strategies for Contact activity at
+https://www.ecommerceacademy.com/courses/email-marketing[eCommerce
+Academy]!
+* https://www.sendlane.com/blog/sendlane-beacon-website-tracking[Sendlane
+Beacon: 5 Best Practices for Website Tracking]
+* https://www.sendlane.com/blog/5-post-purchase-emails-you-should-be-sending-to-increase-your-customer-ltv[5
+Post Purchase Emails You Should Be Sending to Increase Your Customer
+LTV]
+* https://www.sendlane.com/blog/browse-abandonment-emails[Ultimate Guide
+to Browse Abandonment Emails: Definitions&#44; Tactics&#44; and
+Examples]

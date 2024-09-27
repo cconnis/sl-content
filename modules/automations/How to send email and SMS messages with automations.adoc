@@ -1,0 +1,87 @@
+==== Overview
+
+You can send full emails, email notifications, and SMS messages with
+automations. Read on to learn about sending messages in automations.
+
+==== In this guide
+
+* link:#email[Email nodes]
+* link:#sms[SMS nodes]
+* link:#email-notification[Email notification nodes]
+
+'''''
+
+[[add-node]]
+=== Add a message node to an automation
+
+Use Send Message actions to send email or SMS messages to your Contacts,
+or to send simple notification emails.
+
+To add a Send Message action to an automation:
+
+. Click the *+ icon* to add a new node to your automation.
+. Under Actions, click *Send Message*
+. Select a message node to add to your automation
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66c79f12067e9c553dc83315/file-cbmKZ8oVOU.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66c79f12067e9c553dc83315/file-cbmKZ8oVOU]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66c79f1965e01777a93343b8/file-eFr0NuZbZy.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66c79f1965e01777a93343b8/file-eFr0NuZbZy]
+
+link:#top[Back to top]
+
+'''''
+
+[[email]]
+=== Email nodes
+
+Click *Email* under Send Message to add an email node to your
+automation. You can create a new email by clicking *Create New Email* or
+duplicate an existing email within the automation by clicking the
+*Select Email* dropdown.
+
+Enter or edit a name to identify your email. Select any
+https://help.sendlane.com/article/153-campaigns#settings[advanced
+features] you'd like to use, then select a
+https://help.sendlane.com/article/107-senders[Sender Profile]. Click
+*Next: Content* to build your email. Check out our guide to
+https://help.sendlane.com/article/499-sendlanes-new-email-builder[Sendlane's
+email builder]!
+
+Click *Activate* at the bottom of the left-hand sidebar when you're
+ready to start sending. Emails will not send until you click Activate.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/615faa540332cb5b9e9b1e31/file-er8Q06QvlG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/615faa540332cb5b9e9b1e31/file-er8Q06QvlG]
+
+link:#top[Back to top]
+
+'''''
+
+[[sms]]
+=== SMS nodes
+
+Click *Send* *SMS* under Send Message.
+
+Review the SMS Content section of the
+https://help.sendlane.com/article/462-how-to-send-an-sms-campaign#content[How
+to Send an SMS Campaign guide] for detailed instructions on creating
+effective marketing SMS messages.
+
+link:#top[Back to top]
+
+'''''
+
+[[email-notification]]
+=== Email notification nodes
+
+Notifications can send simple email messages when contacts reach certain
+nodes of an Automation. They are most commonly used for internal
+purposes. For example, use a Beacon event to trigger an Automation with
+a notification node to alert your sales team that someone has viewed
+your pricing page!
+
+Click *Send Email Notification* under Send Message. Fill out *From name*
+and *From email* with the sender information that should appear in
+recipients' inboxes. Fill out the *Send to* field with the email address
+that should receive the notification (separate multiple email addresses
+with commas.) Enter a *Subject* and *Message* for your notification,
+then click *Done* to save!
+
+link:#top[Back to top]

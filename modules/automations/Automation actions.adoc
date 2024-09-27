@@ -1,0 +1,23 @@
+[[top]]
+==== Overview
+
+An automation action is the action that takes place as a result of
+triggers in an automation. Once a
+https://help.sendlane.com/article/448-automation-triggers[trigger]
+starts an automation, actions can send messages to Contacts, update
+Contact Profiles, update automations, or pass information using a
+webhook.
+
+Check out the guides below to learn about each logic and timing control
+in Sendlane automations.
+
+==== Automation actions
+
+* https://help.sendlane.com/article/703-how-to-send-email-and-sms-messages-with-automations[Send
+message]: Send a marketing email, SMS, or email notification
+* https://help.sendlane.com/article/704-how-to-update-a-contacts-profile-with-automations[Update
+contact property]: Add or remove lists and tags from contacts' profiles
+* https://help.sendlane.com/article/705-how-to-update-automations-with-other-automations[Update
+automation]: End the current automation and, optionally, start a new one
+* https://help.sendlane.com/article/391-webhooks%22[Webhooks]: Pass
+information to Sendlane

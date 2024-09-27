@@ -1,0 +1,113 @@
+Browse abandonment, also known as "product viewed" or "product
+abandoned," allows you to send messages to Contacts who have viewed
+specified products on your store's website and left without completing a
+purchase.
+
+Read on to learn how to set up the perfect browse abandonment Automation
+for your Shopify store!
+
+===== 🚦 Before Getting Started
+
+Install
+https://help.sendlane.com/article/417-how-to-use-beacon-with-shopify[Beacon
+general tracking]. Your browse abandon Automation will not trigger if
+Beacon general tracking is not installed.
+
+[[how]]
+===== 🙋 How Does the Beacon Pixel Work?
+
+Sendlane’s Beacon tracking pixel collects information about your
+Contacts' pageview and purchase activity. For the pixel to begin
+tracking, the viewer must opt into your marketing emails, open an email
+from you, and click a link in an email from you. The Beacon tracking
+pixel cannot identify anonymous viewers.
+
+Once tracking begins, please allow up to 24 hours for reporting to
+populate accurately.
+
+Follow the instructions below to set up a browse abandonment Automation
+and start winning back revenue from products viewed!
+
+1::
+  Create a new Automation, then click  *Add Trigger* > *Shopify*
+  > *Abandoned Product Viewed*, then configure your trigger options:
+  +
+  * *Store* Select the applicable Shopify store
+  * *Limit Per Subscriber* Select a limit for the Automation
+  ** *No Limit* The Automation will trigger for all Contacts who meet
+  the trigger criteria
+  ** *Do not trigger when already in Automation* The Automation will
+  trigger only for Contacts who meet the trigger criteria and are not
+  already being sent through the Automation
+  ** *Once Per Day The Automation* will trigger for all Contacts who
+  meet the criteria one time in a 24 hour period, even if Contacts meet
+  the trigger criteria more than once during the 24 hour period.
+  ** *One Time Only The Automation* will trigger one time for Contacts
+  who meet the trigger criteria and will not trigger again, even if
+  Contacts meet the trigger criteria again.
+  * *Consider Abandoned After* Select a length of time the Automation
+  should wait to send an email after the Contact has viewed a product.
+  * *For Products* All products are selected by default. To only include
+  specified products, move products from the Available box to the
+  Selected box.
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63fd55003c396c395ec0f30f/file-P7JHL7SPpT.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63fd55003c396c395ec0f30f/file-P7JHL7SPpT]
+
+2::
+  Yes, you read that right! The Shopify Abandoned Cart element also
+  pulls abandoned products viewed when used with a browse abandonment
+  Automation trigger.
+  +
+  Contacts will see links to the products they browsed that caused them
+  to trigger the Automation.
+  +
+  Add an email node by clicking the  *+ button* > *Send
+  Message* > *Email*
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63fd557d3c396c395ec0f311/file-dpOUATaCIE.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63fd557d3c396c395ec0f311/file-dpOUATaCIE]
+  +
+  Include a Shopify Abandoned Cart element in your email by dragging the
+  element into the email body (only one abandoned cart block is allowed
+  per email):
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63fd56673c396c395ec0f313/file-l8NS1kSqdR.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63fd56673c396c395ec0f313/file-l8NS1kSqdR]
+
+3::
+  When you're satisfied with your browse abandonment email, activate
+  your Automation by clicking  *Active* in the top right corner of the
+  Automation builder!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63fd56fe0064af3c7159e6b8/file-FnPqGHles2.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63fd56fe0064af3c7159e6b8/file-FnPqGHles2]
+
+=== Additional Resources
+
+* https://www.sendlane.com/blog/sendlane-beacon-website-tracking[Sendlane
+Beacon: 5 Best Practices for Website Tracking]
+* https://www.sendlane.com/blog/abandoned-cart-subject-lines[Best
+Subject Lines for Abandoned Cart Emails]
+* https://www.sendlane.com/ebooks/the-definitive-guide-to-abandoned-cart-emails-for-ecommerce[The
+Definitive Guide to Abandoned Cart Emails for eCommerce]
+* https://www.sendlane.com/new-ebooks/the-digital-retailers-email-copywriting-handbook[The
+Essential Email Copywriting Handbook]
+
+=== Troubleshooting
+
+====== The abandoned cart block isn't available!
+
+The abandoned cart block may not appear in your elements sidebar for two
+common reasons:
+
+. Your eCommerce integration is not set up correctly. Review your
+eCommerce store's integration with Sendlane for possible connection
+issues.
+. You already added an abandoned cart block to your email. Only one
+abandoned cart block is allowed per email.
+
+[[not-firing]]
+====== A Contact abandoned a product view and didn't move through the Automation!
+
+The most common reason Contacts who abandon a checkout and do not move
+through your browse abandonment Automation is that they are
+https://help.sendlane.com/article/72-beacon#notes[browsing anonymously].
+The Beacon tracking pixel that enables the browse abandon trigger
+requires non-anonymous browsing in order to trigger the Automation.

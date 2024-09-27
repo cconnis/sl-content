@@ -1,0 +1,74 @@
+==== Overview
+
+You can pull contacts to certain steps in an automation with a goal
+node. Read on to learn how to use goals in automations.
+
+==== In this guide
+
+* link:#goal[What is a goal?]
+* link:#add-goal[Add a goal]
+
+'''''
+
+[[goal]]
+=== What is a goal?
+
+When you add a goal to your automation, your contact will jump to that
+step once they meet the condition (or conditions) specified in the goal.
+
+Goals check whether contacts have met the condition specified every six
+hours, until the default of one week has passed or the amount of time
+specified in the "Max time to check for conditions" setting. To prevent
+contacts from being pulled out of the automation too soon, goals should
+always have a "Max time to check for conditions" setting that matches
+the length of the automation.
+
+Once a goal is reached, contacts will skip any action not yet executed
+and proceed immediately to the following action or action you assign
+below the goal.
+
+[[branches]]
+===== ⚠️ Goals are only aware of the branch they are nested in
+
+If you use a conditional split in your automation and add a goal under
+one side of the automation, the goal can only pull contacts out of the
+automation once they reach the side of the conditional split that
+contains the goal. You may need to create multiple goals for a single
+automation to cover all branches.
+
+link:#top[Back to top]
+
+'''''
+
+[[add-goal]]
+=== Add a goal
+
+To add a goal to your automation:
+
+. Click the *+ button*
+. ****Click *goal* 
+. Set your conditions
+. Click *Done*
+
+==== Goal options
+
+* *Goal Name* Enter a descriptive name for your goal
+* *Conditions* Select conditions to trigger your goal
+* *Go to this action if goal is reached* Select a step in your
+automation to send contacts to when they meet your goal's conditions
+* *If goal is not met* Select an option for contacts who have not met
+your goal
+** Continue means the contact will proceed to the next node in the
+automation
+** Wait means the contact will wait at this step indefinitely until the
+goal is reached
+** End means the goal will keep checking for met conditions until the
+max time has passed
+* *Max time to check for conditions* Select a length of time to check
+for conditions
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5d2bd593d719515ca892/file-3qS2qXMgem.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5d2bd593d719515ca892/file-3qS2qXMgem]
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5d345940934e140f4bb4/file-Uv1vbhQvQ7.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5d345940934e140f4bb4/file-Uv1vbhQvQ7]
+
+link:#top[Back to top]

@@ -1,0 +1,327 @@
+[[top]]
+==== Overview
+
+Growing an engaged audience is the foundation of any successful
+marketing strategy! Read this guide for information on importing
+contacts and how sending is affected after imports.
+
+==== In this guide
+
+* link:#import-file-format[How to format a file of contacts for import]
+* link:#understanding-import[How imports affect contacts' subscription
+status]
+* link:#sending[How sending is affected for imported contacts]
+* link:#import[How to import contacts]
+* link:#integrations[Add new contacts With integrations]
+* link:#pop-ups[Add new contacts with Pop-Ups]
+* link:#api[Add new contacts with the Sendlane API]
+
+[[contacts=bgs]]
+===== 🚦 Before Getting Started
+
+ Create at least one https://help.sendlane.com/article/125-lists[List]
+for new contacts to be added to
+
+ Ensure that all contacts' opt-in details (date, IP Address, and source)
+are recorded
+
+'''''
+
+[[import-file-format]]
+=== How to format a file of contacts for import
+
+ *Size*: Ensure your file is 250MB or smaller.
+
+ *Headers*: All columns must have descriptive headers with no special
+characters.
+
+ *Required data*: Email address, sign-up source, subscribed date, and
+sign-up IP are required for all rows. Proof of sending through another
+ESP is acceptable if you do not have the sign-up IP for all rows.
+
+*Email and SMS Consent*: The Email and SMS Consent columns determine
+whether or not the contact has given you consent to receive marketing
+emails or SMS messages. The following values (case insensitive) will be
+accepted:
+
+* `+Subscribed+` / `+Unsubscribed+`
+* `+True+` / `+False+`
+* `+Yes+` / `+No+`
+* `+1+` / `+0+`
+* `+On+` / `+Off+`
+
+ *Phone Numbers*:
+
+* Do not include a `+++` symbol without a country code in the phone
+number column
+* Rows with an affirmative indicator for SMS consent must contain a
+valid phone number.
+
+'''''
+
+[[understanding-import]]
+=== How imports affect contacts' subscription status
+
+Contacts' subscription status in your Sendlane account can change
+depending on whether the contact already exists in your account, the
+values used in the email and SMS consent columns, and whether the fields
+are mapped before import. Read the sections below to learn how the email
+and SMS consent columns affect contacts' subscription status.
+
+[[email-consent-column]]
+===== Email Consent
+
+Review the following table to learn how mapping the Email Consent column
+will affect contacts with different statuses in your account during
+import:
+
+[cols=",,",]
+|===
+|*New contact?* |*Subscription Status Before Import* |*Email Consent
+(EC) Column Value and Mapping*
+
+|Yes |N/A |Yes, with EC column mapped
+
+|Yes |N/A |Blank, No, or unsupported value with EC column mapped
+
+|Yes |N/A |EC column not mapped
+
+|Yes |Unsubscribed (from previous ESP) |No, with EC column mapped
+
+|Yes |Unsubscribed (from previous ESP) + |EC column NOT mapped
+
+|No |Subscribed to Email |Yes, with EC column mapped
+
+|No |Subscribed to Email |Blank, No, or unsupported value with EC column
+mapped
+
+|No |Subscribed to Email |EC column not mapped
+
+|No |Unsubscribed from Email |Yes, with EC column mapped
+
+|No |Unsubscribed from Email |Blank, No, or unsupported value with EC
+column mapped
+
+|No |Unsubscribed from Email |EC column not mapped
+|===
+
+[[ec-yes]]
+===== ⚠️ *If you do not map the Email Consent column, all NEW contacts will be imported with email consent = yes
+
+If you are uploading a list of contacts who are new to your Sendlane
+account and the Email Consent column is not mapped, they will be
+imported with email consent automatically set to yes. Doing this may
+mean you send to contacts who have not consented to receive your
+marketing emails and may result in increased spam complaints from these
+contacts.
+
+[[sms-consent-column]]
+===== SMS Consent
+
+If the SMS consent column is mapped during import, the consent value in
+the import file will overwrite the consent value in the contact's
+profile as long as the contact was originally subscribed via import.
+
+If contacts unsubscribe from SMS by texting STOP, the SMS consent value
+will not be overwritten by future imports.
+
+'''''
+
+[[sending]]
+=== How sending is affected for imported contacts
+
+All imported contacts will be reviewed by our Compliance team before
+they can be sent to and the first 3-5 Campaigns sent to newly imported
+contacts will also be reviewed by Sendlane's compliance team.
+
+The initial List Review generally takes 24 business hours. Sendlane's
+compliance team reviews imports from 9AM to 5 PM PST, Monday through
+Friday.
+
+During List Review, you may see the following statuses next to your
+Import:
+
+[width="100%",cols="50%,50%",]
+|===
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63b4a271bfe3f971fb093a06/file-Rys1kX4a3g.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63b4a271bfe3f971fb093a06/file-Rys1kX4a3g]
+a|
+* *Processing* - The List is being processed and is in queue to be
+reviewed by the Compliance team
+* *Active* - The List has been processed, reviewed by our Compliance
+team, and is now being activated in your account
+* *Completed* - The List is finished activating and is now ready to send
+to!
+
+|===
+
+During List Review, the Sendlane compliance team will review 3-5
+Campaigns before they are sent to confirm the health of your list.
+You'll see a red flag next to a Campaign that is currently being
+reviewed, and you'll receive an email to the account holder's email
+address about the status of your Campaign.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64da7488422535774ad18e8a/file-QGHJx26ZCf.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64da7488422535774ad18e8a/file-QGHJx26ZCf]
+
+Read List https://help.sendlane.com/article/207-list-review[Sending
+Campaigns While on List Review] for more information.
+
+'''''
+
+[[import]]
+=== How to import contacts
+
+You can import contacts in both the Contacts and List tabs of the
+https://app.sendlane.com/audience/overview[Audience page]. Use the Lists
+tab to import whole lists. Use the Contacts tab to import contacts to
+existing Lists. Both methods use the same import tool.
+
+==== Import whole lists
+
+To import whole lists:
+
+. Click *Audience* 
+. Click *Lists* 
+. Click
+*+List*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6632a4e4e66450147a8e615d/file-2pNacP3pH5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6632a4e4e66450147a8e615d/file-2pNacP3pH5]
+. Enter a *name* for your new list
+. Select or create a *sender profile* for your list
+. Click
+*Confirm*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6632a581e7511e33f36eab06/file-zqsAfaVq16.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6632a581e7511e33f36eab06/file-zqsAfaVq16]
+. Click *Import*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6632a6225027f87fcc6be074/file-POpPwiDfGp.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6632a6225027f87fcc6be074/file-POpPwiDfGp]
+. Drag your file into the file upload area, or click to select your file
+. See the link:#contact-import-tool[Contact import tool] section below
+for next steps
+
+==== Import contacts to existing lists
+
+To import new contacts to existing lists:
+
+. Click *Audience* 
+. Click *Contacts* 
+. Click *+Contactimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6632ab075ae8353469c6b21e/file-ocRDmd77KY.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6632ab075ae8353469c6b21e/file-ocRDmd77KY]*
+. Select a *List* from the List dropdown to import contacts to
+. Click *Importimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6632ab6c7303ea4a739d3ca9/file-mxK0jDQIvJ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6632ab6c7303ea4a739d3ca9/file-mxK0jDQIvJ]*
+. Drag your file into the file upload area, or click to select your file
+. See the link:#contact-import-tool[Contact import tool] section below
+for next steps
+
+==== Contact import tool
+
+Once your file loads, you'll see options to map your file's fields to
+standard or custom fields. Columns for standard fields (email, first
+name, last name, phone number, email consent*, and SMS consent) should
+map automatically. Email and SMS consent fields may not map
+automatically, ensure consent fields are mapped appropriately using the
+guidance above.
+
+Opt-in details, like subscribed date, sign-up IP, and sign-up source,
+are usually automatically set to "Ignore this field," but our import
+tool may detect the column header. Select the correct field from the
+dropdown if it is not set automatically.
+
+To add a Tag to every contact in your file, enter the Tag in the Tags
+field.
+
+Check the permission checkbox to confirm that you have
+https://help.sendlane.com/article/402-what-is-permission-based-marketing[explicit
+permission] to send marketing content to these contacts and
+click *Next* to head to the SMS import questionnaire!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65bd164ea7493b27a932fa9c/file-SnTayxkn58.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65bd164ea7493b27a932fa9c/file-SnTayxkn58]
+
+If you do not plan to send SMS marketing content to the contacts you're
+uploading, answer No and click  *Finish* to complete your upload! 
+
+If you do plan to send SMS marketing content to the contacts you're
+uploading, answer Yes and complete the questionnaire. Include as much
+detail as possible about your SMS marketing program, then click 
+*Finish* to complete your upload!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65bd16db0b2b8f0dacd7fc6d/file-QNgPbRw0wc.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65bd16db0b2b8f0dacd7fc6d/file-QNgPbRw0wc]
+
+[[next-steps]]
+===== ⚠️ Imported contacts will be reviewed by Sendlane's compliance team before they can be sent to
+
+Congratulations on adding your first contacts to your account! Check out
+our guide to https://help.sendlane.com/article/207-list-review[List
+Review] to learn more about what to expect next!
+
+'''''
+
+[[manual]]
+=== Manually create a contact
+
+To manually add one contact at a time:
+
+. Click *+contact* 
+. Enter the contact's information 
+. Click *Create*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62c89efd03382e4311cf2bb1/file-pULVlNVgBV.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62c89efd03382e4311cf2bb1/file-pULVlNVgBV]
+
+'''''
+
+[[pop-ups]]
+=== Add new contacts with Pop-ups
+
+Use a Pop-Up form to collect leads from your business' website! Check
+out our https://help.sendlane.com/article/308-pop-ups[guide to setting
+up a Pop-Up] to learn more.
+
+Want to create even more intelligent forms with advanced segmentation
+options, A/B testing, and more? Check out Sendlane's premiere partner
+for lead capture:
+https://www.sendlane.com/blog/sendlane-justuno-integration[Justuno]!
+
+'''''
+
+[[integrations]]
+=== Add new contacts with integrations
+
+Sendlane offers hundreds of integration options with marketing tools you
+use every day. Head to the
+* *https://app.sendlane.com/integrations[*Integrations* page] for a full
+list of platforms we integrate with.
+
+'''''
+
+[[api]]
+=== Add new contacts with the Sendlane API
+
+For advanced users, we have created an index of
+https://sendlane.stoplight.io/docs/api-documentation/4da9355124251-list-contact-add[API
+calls] to add individual contacts or lists of contacts to your audience.
+
+'''''
+
+=== Troubleshooting
+
+[[email-issue]]
+====== After importing I received an email saying "Uh-oh... There's an issue with your import!"
+
+Import issues could be related to:
+
+* File formatting: Review the file formatting note above and make sure
+your import file is formatted correctly. If you've included columns for
+non-required data, try removing those columns and attempting to upload
+again.
+* Plan issue: If you are on a free trial, you cannot import more than
+100 contacts. If your import file contained more than 100 contacts, your
+import will not be accepted. 
+
+'''''
+
+[[addl]]
+=== Additional Resources
+
+* Learn how to grow and sustain your audience at
+https://www.ecommerceacademy.com/[eCommerce Academy]
+* https://www.sendlane.com/blog-posts/convert-new-subscribers-into-paying-customers-using-sendlanes-pop-ups[Convert
+New Subscribers into Paying Customers Using Sendlane's Intelligent
+Pop-ups]
+* https://www.sendlane.com/blog-posts/10-surefire-ways-to-get-more-opt-ins-grow-your-ecommerce-email-list[10
+Surefire Ways to Get More Opt-Ins & Grow Your eCommerce Email List]
+* https://www.sendlane.com/blog/10-ways-to-get-more-opt-ins-grow-your-ecommerce-email-list[10
+Ways to Boost Email Opt-Ins & Grow Your Email List]
+
+https://help.sendlane.com/knowledgebase/api-docs/[]

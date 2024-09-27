@@ -1,0 +1,257 @@
+==== Overview
+
+No one wants their email to hit the spam folder, and while many
+mechanisms that determine when an email ends up in spam are opaque to
+marketers, Sendlane is here to help you avoid the spam folder! Read on
+to learn about the most common reasons emails end up in spam, how
+Sendlane protects you, and what you can do to avoid the spam folder.
+
+==== In This Guide
+
+There are 4 main factors in determining whether an email hits the inbox
+or the spam folder:
+
+. link:#content[Content]
+. link:#subject[Subject Lines]
+. link:#links[Links]
+. link:#email[Email Address Issues]
+
+'''''
+
+=== Content
+
+===== Pre-Written Templates
+
+When email service providers (ESPs) see many different senders trying to
+deliver the exact same content, their algorithms detect the copied
+content and will stop inboxing emails that use it. 
+
+Whenever you use pre-existing content, you need to rework it before
+sending it so that you can be sure it is unique. You can use
+pre-existing content as a guide, but make the emails your own to help
+increase your deliverability.
+
+===== Email "Curse Words"
+
+In addition to crawling for duplicate content, email providers also have
+filters on specific words that are frequently seen in spam emails.
+
+For a more detailed (but not exhaustive) list of words you should avoid
+in your emails, check out the
+https://blog.sendlane.com/email-curse-words/?s=curse[Email Curse Word
+Database]. While you are following this list, remember: your goal is to
+always stand out!
+
+====== Please Note
+
+While it’s true that spam filters look specifically for these words, the
+chances of your messages being marked as spam will differ based on your
+own link:#email[sending reputation]. Maintaining your sender reputation
+with a hygienic and engaged list is key to being able to use these words
+more freely!
+
+===== Imagery, Formatting, and Special Characters
+
+Adding excessive text formatting (like bold, italics, different font
+sizes or colors) and special characters or punctuation (like !!, $$, ...
+or ==>) is a huge red flag for spam filters.
+
+Stock images that are available online for anyone to use are another
+great way to get flagged for duplicate content. 
+
+Start off sending simple messages with fewer images and text
+modifications. And be sure to use _original_ images (like your own logo
+and product photos) for best results.
+
+====== Please Note
+
+Once you've built up your link:#email[sender reputation] with a few
+sends that engage well, your content will start to inbox more
+consistently and you can start sending more "fancy" messages.
+
+'''''
+
+[[subject]]
+=== Subject Lines
+
+Subject lines can actually be more important than the body of your
+messages!
+
+When you think about grabbing your audience’s attention, you should
+always go for shorter and more compelling sentences. Be clever and grab
+attention with just 5 words or so.
+
+Also, it's important to be honest. Your subject line must  *_directly_*
+relate to the content that you're sending within the body of your
+message, and avoid using anything that could potentially be deceptive
+(especially like "RE:" or referencing order numbers since marketing
+emails aren't transactional).
+
+Avoiding words in the
+https://blog.sendlane.com/email-curse-words/?s=curse[Email Curse Word
+Database] is important when crafting subject lines as well.
+
+'''''
+
+=== Links
+
+===== Masking Links
+
+You should always avoid displaying a raw link. More people click on
+masked links than raw links, so be sure to mask your links in text or in
+a button! 
+
+https://help.sendlane.com/article/150-email-builder#link[Follow our
+guide here] to learn more about how to mask your links.
+
+'''''
+
+===== 
+
+[[email]]
+=== Email Address Issues
+
+As an email marketer, you need to establish where you're sending from. 
+_Building up a healthy sender reputation is very important!_
+
+According to DMARC’s most recent legislation, in order to send marketing
+emails, you are required to have your own
+https://help.sendlane.com/article/108-custom-domains-email-addresses[domain-based
+email address], backed by a corporate website. DMARC is the email
+validation system that helps prevent email abuse including spam,
+phishing, fraud and other email-based scams. 
+
+If your business domain is brand new, your domain is essentially a blank
+slate. Similar to how a credit score starts off very low before you've
+built up credit, you improve your rating by showcasing responsible
+spending. You also need to build up your domain/sender reputation with
+responsible  _sending!_
+
+When your
+https://help.sendlane.com/article/107-how-to-create-a-sender-profile["from"
+email address] is unknown to Gmail and other providers, algorithms set
+up to detect spam will be monitoring the address, subject line, and
+content of your emails very closely. 
+
+====== Please Note
+
+If you have multiple Spam complaints against your domain or a poor
+sender reputation, you will have a hard time inboxing any of your
+campaigns - regardless of the content. 
+
+'''''
+
+[[testing]]
+=== Testing Your Emails
+
+Testing is one of the most important parts of the email marketing
+process. It helps ensure that the messages you send will actually be
+delivered to your recipients - and that everything looks the way you
+want it to.
+
+If you _don’t_ test, your emails may end up in your contacts' spam
+folders without you ever knowing it!
+
+==== How to Test
+
+. Start by making sure that your “from” email address is not in your
+address book or allowed/approved list (this will skew your test)
+. Create new "test email" accounts in Gmail and Yahoo (these are widely
+used services) to send test emails to
+. https://help.sendlane.com/article/318-building-the-perfect-email[Build
+your email] (subject line, content, links, etc.)
+. Once your email is ready, click the "*...*" and then select *Send
+Test* to send yourself a
+copyimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6556ad259b9e4a1529900509/file-ruV98Es4UI.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6556ad259b9e4a1529900509/file-ruV98Es4UI]
+. Check to see where your test email lands
+* If you find it in your inbox - great! You can stop testing and send
+away!
+* If you find it in your spam folder or it never arrives, it's time to
+revisit the list of Spam factors one-by-one
+. Revisit your content
+* If you started from a template, rework the text so it feels more
+unique
+* Check to be sure you're not using anything listed in the curse word
+database
+* Simplify your formatting and remove special characters or images
+. Once you've made changes, repeat Step 4. 
+* If your new version _still_ lands in spam or never arrives, keep
+testing:
+. Tweak your subject line, then send another test
+. Check your links and send a new test
+. Swap out the email address in your sender profile and send another
+test
+
+'''''
+
+=== Testing Outside of Sendlane
+
+The testing functionality inside Sendlane works like a charm, but it'll
+never hurt to implement a bit more testing! Luckily, there are other
+services out there whose purpose is to ensure your Email Marketing is
+efficient and problem-free before you send. 
+
+Here are a few platforms that offer Inbox Placement Testing:
+
+* https://glockapps.com/[GlockApps]
+* https://www.mailgun.com/inbox-placement/[MailGun]
+* https://www.zerobounce.net/inbox-placement-tester.html[ZeroBounce]
+
+'''''
+
+=== Notes 
+
+Moving forward, keep in mind that deliverability depends on 
+_many_ different factors including everything listed above, as well as
+your contact's email service provider. Each ESP ultimately has their own
+unique spam filters and algorithms to parse the content of incoming
+emails. Because of that, delivering consistently to some email domains
+can bit more difficult. ESPs, like Microsoft and Gmail, have harsher
+spam filters and can send emails to other inbox folders.
+
+That said, Sendlane offers world-class deliverability, especially to
+Gmail-based accounts which is what the majority of people use today! 
+
+'''''
+
+==== 
+
+=== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog/how-to-create-eye-catching-emails-with-sendlanes-email-builder[How
+to Create Eye-Catching Emails with Sendlane’s Email Builder]
+* https://www.youtube.com/watch?v=ReVM2iM8TaY&t[The Email Marketing
+Hustle Podcast: Email Marketing Isn't Dead... You're Just Doing It
+Wrong]
+* https://www.youtube.com/watch?v=c5mJJIVtJ7Y&t[The Email Marketing
+Hustle Podcast: Inboxing Not Spam Boxing]
+* https://www.sendlane.com/blog-posts/major-email-marketing-meltdown[How
+to Identify and Avoid a Major Email Marketing Meltdown]
+
+'''''
+
+=== TL;DR
+
+[.underline]#Content Focus:# Pre-Written Templates, Email "Curse Words",
+Imagery, Formatting and Special Characters
+
+{empty}[.underline]#Subject Lines:# Avoid words listed in
+the__ __https://blog.sendlane.com/email-curse-words/?s=curse[Email Curse
+Word Database]
+
+{empty}[.underline]#Masking Links:#
+https://help.sendlane.com/article/150-email-builder#link[Follow our
+guide here]
+
+{empty}[.underline]#Email Address Issues:# Build a healthy sender
+reputation with your own
+https://help.sendlane.com/article/108-custom-domains-email-addresses[domain-based
+email
+address]https://help.sendlane.com/article/108-custom-domains-email-addresses[]
+
+[.underline]#Testing Your Emails:# Unique "From" Email Address __→
+Create New "Test Email" Accounts __→ Build Email → Click (...) → Send A
+Test Email → Check to see where your Test Email lands (If it lands in
+_Inbox_, stop - If it lands in _Spam_, keep going) →  Revisit Content
+and Revise (Make tweaks to Subject Line, Links, Sender Profile) → Send
+Another Test Email → Repeat these steps until Email lands properly

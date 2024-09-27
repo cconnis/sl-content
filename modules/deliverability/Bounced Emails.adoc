@@ -1,0 +1,90 @@
+When viewing your
+https://help.sendlane.com/article/321-email-reporting-breakdown[reporting
+data] for campaigns or automations, at some point, you'll see a
+percentage of Bounced emails. Anytime an email bounces, that means that
+the receiving server rejected the email. But that could be caused by a
+few different things!
+
+There are two types of bounced emails:
+
+* link:#hard[Hard Bounces]
+* link:#soft[Soft Bounces]
+
+Your bounce rate is a big part of overall deliverability. Continuously
+sending to email addresses that bounce can negatively affect your sender
+reputation, so your goal should be to keep this number as low as
+possible.
+
+'''''
+
+[[hard]]
+=== Hard Bounces
+
+A hard bounce means that the email cannot be delivered for a
+_permanent_ reason, for example: 
+
+* the email address is fake or invalid (misspellings happen more often
+than you'd think!)
+* the domain does not exist
+* the contact is not accepting emails
+* the account has been closed 
+
+Contacts within your account that have registered as a hard bounce will
+immediately be added to your suppression list so they cannot be sent
+another email.
+
+'''''
+
+[[soft]]
+=== Soft Bounces
+
+A soft bounce means that the email cannot be delivered for a _temporary_
+reason, for example:
+
+* the contact's inbox is full
+* the email is too large
+* the contact's email server is overloaded, experiencing delays or is
+offline 
+
+We will continue trying to deliver to a soft-bounced contact a few times
+before it is considered a hard-bounce and added to
+https://help.sendlane.com/article/135-suppression[suppression]. 
+
+'''''
+
+=== Viewing Your Bounced Emails
+
+To view the bounced emails, locate your campaign or automation
+https://help.sendlane.com/article/321-email-reporting-breakdown[reporting
+data]. Go to *_Domain Breakdown_* to see the number of bounced emails,
+by domain.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f49186e2c7d3a352e917fc0/file-mPBzn2SNUV.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f49186e2c7d3a352e917fc0/file-mPBzn2SNUV]
+
+You are also able to view the specific emails that bounced. 
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f49187e042863444aa0f615/file-qpyp6JetVH.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f49187e042863444aa0f615/file-qpyp6JetVH]
+
+'''''
+
+=== Troubleshooting
+
+While there's no way to specifically tell what the bounce reason is (and
+most of them are outside of your control as a sender) the most common
+kind of soft bounce is actually __Blocked Due to Content __which means
+the email itself was caught by a junk filter for spammy content.
+
+'''''
+
+==== Additional Resources
+
+* https://youtu.be/n3QabdZYS-w[The Marketing Automation Hustle Podcast:
+An Insiders Tour on Email Deliverability (and Delivery)]
+* https://help.sendlane.com/article/356-spam-folder[3 Reasons Your
+Emails Are Going to Spam (& What You Can Do About it) ]
+* https://www.sendlane.com/blog-posts/your-guide-to-sendlane-deliverability[Your
+Guide to Sendlane Deliverability]
+
+Additionally, if you hit any roadblocks you can always get in touch with
+our team of email marketing automation experts
+mailto:mailto:support@sendlane.com[right here].

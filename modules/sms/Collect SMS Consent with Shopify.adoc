@@ -1,0 +1,28 @@
+Grow your Audience and drive engagement with customers who love your
+products by gathering their consent to receive SMS messages during
+account creation for your Shopify store!
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Integrate
+your Shopify store] with your Sendlane account
+
+https://help.sendlane.com/article/466-how-to-activate-sms[Activate] an
+SMS plan
+
+Collect consent to send SMS marketing messages from your Shopify
+customers by adding an SMS option to your checkout page:
+
+. Log in to your Shopify portal
+. Click *Settings*
+. Click *Checkout*
+. Scroll to the *Marketing options* section
+. Click the *SMS* checkbox
+. Click *Save*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/651f085642d97d1c045915ae/file-CzmlglUZSI.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/651f085642d97d1c045915ae/file-CzmlglUZSI]
+
+For more information, check out
+https://help.shopify.com/en/manual/promoting-marketing/create-marketing/customer-contact-information#collect-customer-phone-numbers-from-the-checkout[Shopify's
+documentation]!

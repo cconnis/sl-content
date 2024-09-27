@@ -1,0 +1,197 @@
+[[top]]
+==== Overview
+
+Sendlane Reviews allows you to create a hand curated carousel or other
+testimonial layout for your BigCommerce store. Read on to learn how to
+highlight reviews in your BigCommerce store with layouts that perfectly
+match your store's branding!
+
+==== In This Guide
+
+* link:#save[Save Images and Copy From Reviews]
+* link:#layout[Determine a Layout For Your Displayed Reviews]
+* link:#create[Create Your Layout]
+** link:#slide[Create a Carousel]
+** link:#image[Create a Horizontal Layout]
+** link:#multi[Create a Column Layout]
+
+'''''
+
+1::
+  Use the Reviews Moderation page to search for review copy and images
+  to promote on your hand curated layout. To find high quality reviews:
+  +
+  . Click the *Reviews* icon
+  . Click *Moderation*
+  . Click the *filter icon*
+  . Select *With Images*
+  . Select *5 stars*
+  . Select a review with images and copy that best represents your brand
+  . Click on the *image preview*
+  . Right click on the image to save it to your desktop
+  +
+  Copy your selected reviews' text and the name of the reviewer to a
+  document for easy reference and have that document plus your saved
+  images handy before moving on to create your layout.
+  +
+  If you want to match the color of the stars in your reviews widget on
+  your displayed reviews, navigate to the
+  https://app.sendlane.com/product-review/1/main-widget/styling[main
+  widget styling page] and copy the hex code of the star color:
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65496c21cd50485c299710e9/file-rl6YNPZqAv.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65496c21cd50485c299710e9/file-rl6YNPZqAv]
+2::
+  Because we're using BigCommerce's existing theme blocks instead of a
+  Sendlane-created carousel widget, you have multiple options for the
+  layout of your carousel or other reviews display.
+  +
+  Click on the images in the table below to view examples of each layout
+  type, then click on the layout type to see instructions on creating
+  the layout in your BigCommerce store:
+  +
+  [width="100%",cols="50%,50%",]
+  |===
+  |*Layout* |*Preview*
+
+  |Carousel +
+  |image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654d5236687c016dc15b74aa/file-YdqquBOz2a.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654d5236687c016dc15b74aa/file-YdqquBOz2a]
+
+  |Horizontal Layout
+  |image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654d51ce2d28585006d015fb/file-dhgMhyk2YA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654d51ce2d28585006d015fb/file-dhgMhyk2YA] +
+
+  |Column Layout
+  |image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654d531e687c016dc15b74ab/file-GRp2lGE2HU.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654d531e687c016dc15b74ab/file-GRp2lGE2HU]
+  |===
+3::
+  [[slide]]
+  ==== Create a Carousel
+  +
+  BigCommerce's carousel block is a great way to create a traditional
+  carousel that can be set to auto-scroll or click to rotate the slides.
+  https://support.bigcommerce.com/s/article/Page-Builder?language=en_US#carousel-widget[Read
+  about BigCommerce's carousel block] for detailed information about the
+  available customization options!
+  +
+  To create a carousel block like the one shown in the
+  link:#slideshow-example[preview above]:
+  +
+  . Click *Storefront*
+  . Click *Themes*
+  . Next to your active theme's name, click *Customize*
+  . Drag a *Carousel widget* into your theme where you want your reviews
+  showcase to appear
+  . Click the *edit icon* next to Background
+  . Click the *image* to add an image from your BigCommerce library (My
+  Images tab), upload a file from your desktop (Upload tab), or paste an
+  image URL (Image URL tab)
+  . Click the *eye icon* next to Button and Box to hide these elements
+  if desired
+  . Adjust the text color
+  . Copy the following text based star symbols and paste them into the
+  larger text block: `+★★★★★+`
+  . Copy the text of the review and paste it into the smaller text box
+  . Repeat steps 1-10 for each slide
+  +
+  Check out the video below for a demonstration of creating the carousel
+  widget and editing the first slide:
+  +
+  image:https://fast.wistia.com/embed/medias/gdg3k9su6q/swatch[https://fast.wistia.com/embed/medias/gdg3k9su6q/swatch]
+  +
+  [[image]]
+  ==== Create a Horizontal Layout
+  +
+  BigCommerce's layout widget is a great way to horizontally display
+  multiple hand picked reviews with images.
+  https://support.bigcommerce.com/s/article/Page-Builder?language=en_US#layout-widget[Read
+  about BigCommerce's layout block] for detailed information about the
+  available customization options!
+  +
+  To create an image with text block like the link:#iwt-example[example
+  above]:
+  +
+  . Click *Storefront*
+  . Click *Themes*
+  . Next to your active theme's name, click *Customize*
+  . Drag a *Layout block* into your theme where you want your reviews
+  showcase to appear
+  . Drag the *column layout bar* to the fourth divider from the left
+  . Click the *back arrow* icon to return to the Page Builder
+  . Drag an *image widget* into the layout's smaller lefthand container
+  (Column 1)
+  . Click the *placeholder image*
+  . Add an image from your BigCommerce library (My Images tab), upload a
+  file from your desktop (Upload tab), or paste an image URL (Image URL
+  tab)
+  . To set a static size for your image, click the *Image dimensions
+  dropdown* and select Custom
+  . Click into *Column 1*
+  . Click the *Column background* dropdown
+  . Select Color
+  . Click the *back arrow* twice to return to the Page Builder
+  . Drag a *text widget* into the layout's larger righthand container
+  (Column 2)
+  . Select the *placeholder text* and paste your review's text
+  . Adjust the font size, color, and alignment
+  . Click the *back arrow* to return to the Page Builder
+  . Drag another *text widget* into Column 2
+  . Select the *placeholder text* and paste the following text based
+  star symbols: `+★★★★★+`
+  . Adjust the color of the stars
+  . Click the *back arrow* to return to the Page Builder
+  . Drag a *spacer* widget into Column 2 between the review and star
+  text widgets
+  . Click into *Column 2*
+  . Click the *Column background dropdown*
+  . Select Color
+  . Repeat steps 1-26 for each review
+  +
+  Check out the video below for a demonstration of creating an image
+  with text block:
+  +
+  image:https://fast.wistia.com/embed/medias/j7ywafgudt/swatch[https://fast.wistia.com/embed/medias/j7ywafgudt/swatch]
+  +
+  [[multi]]
+  ==== Create a Column Layout
+  +
+  Shopify's multicolumn block is a great way to display multiple hand
+  picked reviews with images.
+  https://support.bigcommerce.com/s/article/Page-Builder?language=en_US#layout-widget[Read
+  about BigCommerce's column layout] for detailed information about the
+  available customization options!
+  +
+  To create a multicolumn block like the link:#multi-example[example
+  above]:
+  +
+  . Click *Storefront*
+  . Click *Themes*
+  . Next to your active theme's name, click *Customize*
+  . Drag *two Layout blocks* into your theme where you want your reviews
+  showcase to appear and set the columns to 3
+  . Drag an *image widget* into the top left layout section
+  . Click the *placeholder* image
+  . Add an image from your BigCommerce library (My Images tab), upload a
+  file from your desktop (Upload tab), or paste an image URL (Image URL
+  tab)
+  . To set a static size for your image, click the *Image dimensions
+  dropdown* and select Custom
+  . Click into the *column*
+  . Click *column background* to adjust the background color
+  . Click the *back arrow icon* twice to return to the Page Builder
+  . Drag two *text widgets* into the bottom left layout section
+  . Click into the *column*
+  . Click *column background* to adjust the background color
+  . Select the *placeholder* *text* in the top text widget and paste the
+  following text based star symbols: `+★★★★★+`
+  . Adjust the text color for the stars
+  . Select the *placeholder text* in the bottom text widget and paste
+  the review text
+  . Adjust the review text's size, color, and alignment
+  . Add *spacers* above and below the stars
+  . Repeat steps 1-19 for each review
+  . Adjust padding and spacing options when all of your content is
+  completed
+  +
+  Check out the video below for a demonstration of creating a
+  multicolumn layout:
+  +
+  image:https://fast.wistia.com/embed/medias/c2lbgj1rd3/swatch[https://fast.wistia.com/embed/medias/c2lbgj1rd3/swatch]

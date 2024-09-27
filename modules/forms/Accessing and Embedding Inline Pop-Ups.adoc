@@ -1,0 +1,49 @@
+Sendlane's inline Pop-Up forms can be embedded in custom coded websites
+(not landing pages) or in eCommerce marketing integrations to collect
+Contacts' information.
+
+Use this guide to copy your inline Pop-Up forms' HTML code for further
+editing and embedding!
+
+* link:#find[Get Your Pop-Up Form's Raw HTML Code]
+* link:#install[Installing the code]
+* link:#additional[Additional Resources]
+
+=== Get Your Pop-Up Form's Raw HTML Code
+
+. Click the *three dot menu (...)* next to your inline Pop-Up
+. Click *GET CODE*
+. Click the *Show HTML <form> embed* checkbox
+. Click *Copy Code* to copy your form's code to your clipboard
+
+=== image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61b7d807372a8f501c4a1a59/file-IDNZQZpy2U.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61b7d807372a8f501c4a1a59/file-IDNZQZpy2U]Embed the HTML Code
+
+Paste the code inside the parent tags in the desired location of your
+website.
+
+You can also install Pop-Ups using WordPress and Shopify by checking out
+these guides:
+
+. https://help.sendlane.com/article/360-how-to-use-pop-ups-with-wordpress[Install
+with WordPress]
+. https://help.sendlane.com/article/319-how-to-use-pop-ups-with-shopify[Install
+with Shopify]
+
+=== Next Steps
+
+Make sure to test your new Pop-Up form, especially if you've edited the
+HTML in any way.
+
+Fill out your inline Pop-Up form exactly as your Contacts would to
+ensure that information is passed to Sendlane correctly.
+
+[[additional]]
+=== Additional Resources
+
+* https://www.sendlane.com/blog-posts/convert-new-subscribers-into-paying-customers-using-sendlanes-pop-ups[Convert
+New Subscribers Into Paying Customers Using Sendlane's Intelligent
+Pop-ups]
+* https://www.sendlane.com/blog-posts/how-to-use-custom-fields-to-create-hyper-personalized-emails[How
+to use Custom Fields to Create Hyper-Personalized Emails]
+* https://www.sendlane.com/blog-posts/10-surefire-ways-to-get-more-opt-ins-grow-your-ecommerce-email-list[10
+Surefire Ways to Get More Opt-ins & Grow Your Lis]

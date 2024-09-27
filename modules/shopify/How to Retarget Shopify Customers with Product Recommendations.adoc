@@ -1,0 +1,131 @@
+Sendlane's deep data integration with Shopify allows you to send
+targeted emails to existing customers with product recommendations based
+on their previous purchases. 
+
+With this automation, you can send personalized product recommendations
+to your Shopify customers, so they can click through and quickly make a
+purchase, resulting in a seamless user experience for them, and more
+sales for you!
+
+In this article, we will cover:
+
+* link:#creating[Creating a Recommend Similar Products Automation]
+* link:#troubleshooting[Troubleshooting]
+* link:#additional[Additional Resources]
+
+'''''
+
+=== Before Getting Started
+
+Prior to creating a recommended products automation, you'll need to have
+your
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify
+integration] completed.
+
+'''''
+
+[[creating]]
+=== Creating a _Recommend Similar Products_ Automation
+
+. Begin by clicking *_Automations_* on the left of your dashboard and
+clicking *_New Automation_* on the top right
+. Choose the *_eCommerce_* tab within the template options and
+select _*Recommend similar
+products*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ec78b0c2c7d3a5ea54b916f/file-CavjxS6HKp.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ec78b0c2c7d3a5ea54b916f/file-CavjxS6HKp]_
++
+. Once the pre-designed automation loads, click to configure
+the __*Product Purchased* __trigger details:    
+* _*Choose shop*:_ Choose your Shopify store from the drop down menu
+* **_Checkout is complete:_ **You can choose if you wish to send this
+only after checkout is completed or not
+* **_Order status:_ **You have a few options to choose from, depending
+on when you wish to send this email to your customers (e.g. when the
+order is fulfilled, partial, restocked, etc.)
+* *_Selected_:* You can choose the products that you want to trigger
+this automation +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ec78c8f042863474d1b2d5b/file-29dsvE7jjD.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ec78c8f042863474d1b2d5b/file-29dsvE7jjD]
+. Next, click on the *_Email_* action to edit/create the content that
+you'd like to send to your customer. Follow the prompts to complete all
+of the basic details, then continue along to the email design
+. Inside of the _Email Builder_, if you go to _Content_, you'll see an
+_Integrations_ section with a _Product_ icon 
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60c901d1b899954cddd47a3b/file-mY9DuyIgPh.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60c901d1b899954cddd47a3b/file-mY9DuyIgPh] +
+. In order for the recommended products to be added to the content of
+your email, you will need to drag and drop the _Product_ icon into the
+body of your email. Once you do that, a pop-up window will come up that
+will allow you to edit some of the options: _the store_, _the number of
+products (up to 3)_ and also if you want _Title, Price_ and _Button_ to
+show up inside your email
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ec78f1a042863474d1b2d7b/file-gZxWvGTEFY.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ec78f1a042863474d1b2d7b/file-gZxWvGTEFY]
+. Once you click on *_Select Products_*, you will be prompted to
+actually choose the products you wish to recommend. Once you are done,
+simply click on *_Insert Products_* and that will add them to the body
+of your email
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ec79182042863474d1b2db0/file-cwQx7hXt1E.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ec79182042863474d1b2db0/file-cwQx7hXt1E]
+. Once you have completed the content for this email, click __*Save and
+Continue*. __Don't forget to hit *_Publish Email_* in the sidebar menu
+once you're
+finished!image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e9dff5b04286364bc98ace5/file-UoHBuq7hro.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e9dff5b04286364bc98ace5/file-UoHBuq7hro]
+. Continue building your automation by adding any other
+https://help.sendlane.com/article/73-automations#communications[actions
+and communications] you'd like to use. Depending on what your goals and
+objectives are, we recommend sending three emails over the next few days
+to encourage contacts to come back and complete a purchase.
+. Last but not least, don't forget to set the automation
+to _Active_ once you're done building out your
+funnel!image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee258aa2c7d3a10cba8c537/file-NNSNQ7H5f4.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee258aa2c7d3a10cba8c537/file-NNSNQ7H5f4]
+
+And that's it! Anytime someone purchases these specific products, they
+will trigger this automation and start receiving emails with more
+product recommendations!
+
+=== Troubleshooting
+
+*Why are Contacts showing as unsubscribed immediately after completing a
+purchase?*
+
+****If your Shopify checkout page
+https://help.shopify.com/en/manual/promoting-marketing/create-marketing/customer-emails#collect-customer-emails-from-the-checkout[pre-selects
+the marketing email opt-in checkbox], Contacts who uncheck the marketing
+email opt-in box during checkout will be unsubscribed from the
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane#connecting[List
+attached to your Shopify integration] as soon as checkout is complete.
+
+[[additional]]
+=== Additional Resources
+
+https://www.sendlane.com/blog-posts/shopify-meet-sendlane[Hey Shopify…
+Meet Sendlane!]
+
+https://www.sendlane.com/blog-posts/introducing-deep-data-for-shopify[Introducing
+Deep Data For Shopify!]
+
+https://www.sendlane.com/blog-posts/case-study-shopify[Case Study: How
+Shopify Builds Credibility With Customers Using Email]
+
+https://www.sendlane.com/blog-posts/shopify-mailchimp-news[We Saw It
+Coming - Why Shopify No Longer Works With Mailchimp]
+
+https://www.sendlane.com/blog-posts/tip-of-the-week-retarget-your-shopify-abandoned-cart-customers[Automatically
+Retarget Your Shopify Abandoned Cart Customers in Sendlane]
+
+https://www.sendlane.com/blog-posts/integration-spotlight-oneclickupsell[Sendlane
++ OneClickUpsell - The Shopify App You Need to Boost Your eCommerce
+Sales]
+
+https://www.sendlane.com/blog-posts/shopify-diverse-content-newsletters[How
+Shopify Uses Diverse Content To Keep Their Newsletters Feeling Fresh]
+
+https://www.youtube.com/watch?v=xr6xFnoQyYY[The Art of Upselling in
+Shopify: Boosting AOV with Carthook]
+
+'''''
+
+=== TL;DR
+
+Automations → New Automation → eCommerce → Recommend similar products →
+Configure settings → Customize email → Save and continue → Publish Email
+→  Build automation with actions & communications → Active

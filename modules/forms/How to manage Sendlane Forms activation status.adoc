@@ -1,0 +1,130 @@
+[[top]]
+==== Overview
+
+Sendlane Forms can be published as soon as you’re finished creating
+them, saved as drafts to be activated later, or scheduled to activate
+for a specified period of time. Read on to learn how to activate, draft,
+schedule, and pause Sendlane Forms.
+
+==== In this guide
+
+* link:#activate[Activate a form]
+* link:#draft[Set a form to draft status]
+* link:#schedule[Set a schedule for a Sendlane Form]
+* link:#edit-schedule[Edit a Sendlane Form’s schedule]
+
+'''''
+
+[[activate]]
+=== Activate a form
+
+When you set a form to “live,” it is activated and visible on your
+website if the code has already been installed.
+
+Live forms will remain visible on your website unless you deactivate the
+form by setting it to draft status or scheduling an end date, or remove
+the form’s code from your website.
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd128b53788e77b07d458a/file-Oxr6KrCCAE.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd128b53788e77b07d458a/file-Oxr6KrCCAE]
+
+To activate a new form:
+
+. On the Summary page, under Activation Options, select the *Live* radio
+button
+. Click *Done*
+
+To activate an existing form:
+
+. Click the Forms icon
+. In the Actions column, click the edit icon
+. Click *Design*
+. Click *Summary*
+. Under Activation Options, select the *Live* radio button
+. Click *Done*
+
+link:#top[Back to top]
+
+'''''
+
+[[draft]]
+=== Set a form to draft status
+
+When you save a form as a draft, it is not activated and is not visible
+on your website if the code has already been installed.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd12a31c2f8d3d7ebfd561/file-X79FmCUSzh.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd12a31c2f8d3d7ebfd561/file-X79FmCUSzh]
+
+To save a new form as a draft:
+
+. On the Summary page, under Activation Options, select the *Save as
+Draft* radio button
+. Click *Done*
+
+To activate an existing form:
+
+. Click the Forms icon
+. In the Actions column, click the edit icon
+. Click *Design*
+. Click *Summary*
+. Under Activation Options, select the *Live* radio button
+. Click *Done*
+
+link:#top[Back to top]
+
+'''''
+
+[[schedule]]
+=== Set a schedule for a Sendlane Form
+
+When you set a schedule for a form, it is activated and will be visible
+on your website for the duration of the scheduled period if the code has
+already been installed.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd12b81c2f8d3d7ebfd562/file-MpTM10DKyl.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd12b81c2f8d3d7ebfd562/file-MpTM10DKyl]
+
+To set a schedule for a new Sendlane Form:
+
+. On the Summary page, under Activation Options, select the *Schedule*
+radio button
+. Select a time zone for your schedule
+. Under *Start showing*, set the date and time you want your form to
+start being visible on your website
+. If you’d like to set an end date for your form’s visibility schedule,
+click the *Stop showing* checkbox and set the date and time you want
+your form to stop being visible on your website
+. Click *Schedule*
+
+To set a schedule for an existing Sendlane Form:
+
+. Click the Forms icon
+. In the Actions column, click the edit icon
+. Click *Design*
+. Click *Summary*
+. Under Activation Options, select the *Save as Draft* radio button
+. Select a time zone for your schedule
+. Under *Start showing*, set the date and time you want your form to
+start being visible on your website
+. If you’d like to set an end date for your form’s visibility schedule,
+click the *Stop showing* checkbox and set the date and time you want
+your form to stop being visible on your website
+. Click *Schedule*
+
+link:#top[Back to top]
+
+'''''
+
+[[edit-schedule]]
+=== Edit a Sendlane Form’s schedule
+
+To edit a form’s existing schedule:
+
+. Click the Forms icon
+. In the Actions column, click the edit icon
+. Click *Design*
+. Click *Summary*
+. Make your desired changes to your form’s time zone, start showing date
+and time, or stop showing date and time
+. Click *Schedule*
+
+link:#top[Back to top]
+
+'''''

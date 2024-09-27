@@ -1,0 +1,92 @@
+LeadsTunnel is a Facebook advertising automation platform that allows
+you to connect and sync leads collected in Facebook Ads Manager to
+Sendlane.
+
+With this integration, you can sync contacts from Facebook leads ads
+into specific lists in Sendlane, and then send those leads through an
+automated marketing funnel! 
+
+'''''
+
+=== 
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://leadstunnel.com/[LeadsTunnel] account connected to Facebook
+Business Manager. 
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account → API._*
+
+Next, be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account so LeadsTunnel knows where to place your
+new leads and contacts!
+
+Finally, make sure you are currently on single-opt in for this
+integration (contact our https://www.sendlane.com/contact-us[24/7
+support team] to set this up!)
+
+'''''
+
+=== Integrating LeadsTunnel and Sendlane 
+
+. Log in to your LeadsTunnel account, then find the *_My Account_*
+button image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63c5bccff47e00168f7fd8/file-oGtns9fS4A.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63c5bccff47e00168f7fd8/file-oGtns9fS4A] +
+. Under *_Settings_*, click *_+ Add New Autoresponder_* and choose the
+*Sendlane* from the dropdown menu 
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63c6f6cff47e00168f7fe3/file-IASHwj1799.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63c6f6cff47e00168f7fe3/file-IASHwj1799]Next,
+choose the list you want to sync leads to inside of ** *Sendlane*
+. Enter your *_API Key_* and *_Hash Key_* information into your
+*LeadsTunnel* settings page 
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63c9994cedfd0017635d49/file-wgcYVp3znS.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63c9994cedfd0017635d49/file-wgcYVp3znS]
+. Next, name your _CRM Automation_ (this name will be for internal use
+only, your contacts will not see it) 
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63c9d252faff00174f0d6e/file-cBh1xP0Cv5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63c9d252faff00174f0d6e/file-cBh1xP0Cv5]
+. For the final step in the integration, click the **_Connect _**button
+shown in your LeadsTunnel S__ettings__
+page  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63ca31cff47e00168f7ff9/file-F7fWBrAHyX.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63ca31cff47e00168f7ff9/file-F7fWBrAHyX]Your
+integration is now complete! Leads collected by Facebook lead ads will
+now be funneled through LeadsTunnel and added to your Sendlane account!
+
+'''''
+
+=== *Troubleshooting*
+
+This integration is native to LeadsTunnel, so we're only able to provide
+limited troubleshooting support. However, if you do need help, the
+LeadsTunnel team is just a few clicks away!
+
+* View the
+https://help.leadstunnel.com/en/articles/3333457-sendlane-integration[LeadsTunnel
+Integration Page]
+* Connect with the mailto:support@leadstunnel.com[LeadsTunnel team]
+
+==== Additional LeadsTunnel Resources
+
+https://leadstunnel.com/pricing/[Sign up for LeadsTunnel]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/cross-channel-marketing-for-ecommerce[How
+to Develop a Winning Cross-Channel Marketing Strategy for Your eCommerce
+Business]
+* https://www.sendlane.com/blog-posts/social-media-vs-email-marketing-5-reasons-why-email-wins[Social
+Media vs Email Marketing: 5 Reasons Why Email Wins ]
+* https://www.sendlane.com/blog-posts/6-powerful-automations[6 Powerful
+Automations to Engage Your List]
+
+'''''
+
+== *TL;DR*
+
+Login to LeadsTunnel → Account Settings →   Add Autoresponder → Choose
+Sendlane from dropdown menu → Log in to Sendlane → Locate API → Copy
+API, API Hash Key →  Enter API and API Hash Key into to LeadsTunnel →
+Name your CRM → Connect

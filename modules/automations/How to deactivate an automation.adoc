@@ -1,0 +1,42 @@
+==== Overview
+
+Deactivated automations do not allow contacts to begin an automation or
+finish one they are already in, and deactivated email nodes are skipped
+in active automations. Read on to learn how to deactivate an automation!
+
+==== In this guide
+
+* link:#nodes[Deactivate email nodes]
+* link:#automations[Deactivate automations]
+
+'''''
+
+[[nodes]]
+=== Deactivate email nodes
+
+Deactivated email nodes are skipped in active automations. If an email
+node is deactivated and later reactivated, there is no way to reroute
+contacts who passed the node when it was deactivated back to the node
+after it is reactivated.
+
+To deactivate an email node:
+
+. Click the email node
+. Click Inactive
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666a1047d593d719515ca7b1/file-vs2frC1Xb0.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666a1047d593d719515ca7b1/file-vs2frC1Xb0]
+
+[[automation]]
+=== Deactivate automations
+
+Deactivated automations do not allow contacts to begin an automation or
+finish one they are already in. If an automation is deactivated and
+later reactivated, there is no way to see information about contacts who
+may have triggered the automation while it was deactivated.
+
+To deactivate an automation:
+
+. In the upper right corner, click *Inactive*
+. Click *Deactivate*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666a10e5d593d719515ca7b2/file-kiX1QQdThD.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666a10e5d593d719515ca7b2/file-kiX1QQdThD]

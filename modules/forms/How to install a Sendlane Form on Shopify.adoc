@@ -1,0 +1,890 @@
+==== Overview
+
+Sendlane Forms can be installed in your Shopify store with the form’s
+lightweight script. Read on to learn how to find a form’s installation
+code and guidance on where to install forms on your Shopify store.
+
+==== In this guide
+
+* link:#beacon[Ensure Beacon is installed]
+* link:#access-code[Access the Sendlane Form installation code]
+* link:#pop-up[Install a pop up style Sendlane form on Shopify]
+* link:#inline[Install an inline style Sendlane form on Shopify]
+
+[[beacon]]
+===== ⚠️ Ensure Beacon is installed
+
+Sendlane Forms requires
+https://help.sendlane.com/article/417-how-to-use-beacon-with-shopify[Beacon]
+to be installed on your website before any site tracking data can be
+collected for your forms. Ensure Beacon is installed before proceeding
+with form installation.
+
+'''''
+
+[[access-code]]
+=== Access the Sendlane Form installation code
+
+To access a form’s installation code and copy the script to your
+clipboard:
+
+. Click the Forms icon
+. In the Actions column, click the edit icon
+. Click *Design*
+. Click *Summary*
+. Under Form Installation Code, click *Copy Code*
+
+'''''
+
+[[pop-up]]
+=== Install a pop up style Sendlane form on Shopify
+
+You can paste a pop up form’s installation code in your Shopify store’s
+`+header.liquid+` file.
+
+The form’s installation code is the only code required to make your form
+appear on your website. See
+https://help.sendlane.com/article/627-how-to-manage-sendlane-forms-activation-status[How
+to manage Sendlane Forms’ activation status] for information on form
+publication/activation statuses.
+
+===== ⚠️ All forms require their own unique installation codes to be added to your website.
+
+To install a pop up style form in your Shopify store:
+
+. Ensure Beacon is installed in your Shopify store before continuing
+(see steps to test Beacon installation
+https://help.sendlane.com/article/72-beacon#test[here])
+. Log in to Shopify
+. Click *Online Store*
+. Click *Themes*
+. Click the *three dot menu*
+. Click *Edit Code*
+. Search for `+header.liquid+`
+. Click the `+header.liquid+` file
+. Paste your form's installation code right after the
+https://help.sendlane.com/article/417-how-to-use-beacon-with-shopify#add-to-shopify[Beacon
+scriptimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/662bd4405027f87fcc6bdcec/file-YWnw4FpsxY.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/662bd4405027f87fcc6bdcec/file-YWnw4FpsxY]]
+. Click *Save*
+. Click *Preview Store* in the top right corner to view a preview of
+your form on your store's website
+
+Check out the video below to see how to install a pop up style form in
+your Shopify store from start to finish!
+
+[[wistia-8obdesw9yw-1]]
+[[wistia_chrome_23]]
+[[wistia_grid_56_wrapper]]
+[[wistia_grid_56_above]]
+
+[[wistia_grid_56_main]]
+[[wistia_grid_56_behind]]
+
+[[wistia_grid_56_center]]
+
+[[w-vulcan-v2-55]]
+
+image:https://fast.wistia.com/embed/medias/8obdesw9yw/swatch[Video
+Thumbnail]
+
+image:https://embed-ssl.wistia.com/deliveries/06378ec750be6c9a04950e79289a9c3b713669bd.webp?image_crop_resized=960x813[Video
+Thumbnail]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEyNSA4MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTI1IDgwIiBhcmlhLWhpZGRlbj0idHJ1ZSIgYWx0IHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogODYuNDgxN3B4OyBsZWZ0OiAwcHg7IHN0cm9rZS13aWR0aDogMHB4OyB0b3A6IDBweDsgd2lkdGg6IDEwMCU7IHBvc2l0aW9uOiBhYnNvbHV0ZTsiPjxyZWN0IGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSJub25lIiB3aWR0aD0iMTI1IiBoZWlnaHQ9IjgwIiAvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEyNSA4MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTI1IDgwIiBhcmlhLWhpZGRlbj0idHJ1ZSIgYWx0IHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogODYuNDgxN3B4OyBsZWZ0OiAwcHg7IHN0cm9rZS13aWR0aDogMHB4OyB0b3A6IDBweDsgd2lkdGg6IDEwMCU7IHBvc2l0aW9uOiBhYnNvbHV0ZTsiPjxyZWN0IGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSJub25lIiB3aWR0aD0iMTI1IiBoZWlnaHQ9IjgwIiAvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=]
+
+Click for sound
+
+image:data:image/svg+xml;base64,PHN2ZyB2aWV3Ym94PSIwIDAgMjM3IDIzNyIgd2lkdGg9IjU2Ljc1MzU5Mzc0OTk5OTk5IiBoZWlnaHQ9IjU2Ljc1MzU5Mzc0OTk5OTk5Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGtleWZyYW1lcyBWT0xVTUVfU01BTExfV0FWRV9GTEFTSCB7CiAgICAwJSB7IG9wYWNpdHk6IDA7IH0KICAgIDMzJSB7IG9wYWNpdHk6IDE7IH0KICAgIDY2JSB7IG9wYWNpdHk6IDE7IH0KICAgIDEwMCUgeyBvcGFjaXR5OiAwOyB9CiAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB2aWV3Ym94PSIwIDAgMjM3IDIzNyIgd2lkdGg9IjU2Ljc1MzU5Mzc0OTk5OTk5IiBoZWlnaHQ9IjU2Ljc1MzU5Mzc0OTk5OTk5Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGtleWZyYW1lcyBWT0xVTUVfU01BTExfV0FWRV9GTEFTSCB7CiAgICAwJSB7IG9wYWNpdHk6IDA7IH0KICAgIDMzJSB7IG9wYWNpdHk6IDE7IH0KICAgIDY2JSB7IG9wYWNpdHk6IDE7IH0KICAgIDEwMCUgeyBvcGFjaXR5OiAwOyB9CiAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=]
+
+@keyframes VOLUME_LARGE_WAVE_FLASH \{ 0% \{ opacity: 0; } 33% \{
+opacity: 1; } 66% \{ opacity: 1; } 100% \{ opacity: 0; } }
+
+.volume__small-wave \{ animation: VOLUME_SMALL_WAVE_FLASH 2s infinite;
+opacity: 0; }
+
+.volume__large-wave \{ animation: VOLUME_LARGE_WAVE_FLASH 2s infinite
+.3s; opacity: 0; }
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PHJlY3QgeD0iNi41IiB5PSIwIiB3aWR0aD0iMy41IiBoZWlnaHQ9IjEyIiAvPjwvZz48L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PHJlY3QgeD0iNi41IiB5PSIwIiB3aWR0aD0iMy41IiBoZWlnaHQ9IjEyIiAvPjwvZz48L3N2Zz4=]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxwb2x5Z29uIHBvaW50cz0iMTEuNTU2LDcuNSAwLDE1IDAsMCI+PC9wb2x5Z29uPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxwb2x5Z29uIHBvaW50cz0iMTEuNTU2LDcuNSAwLDE1IDAsMCI+PC9wb2x5Z29uPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+]
+
+0:46
+
+image:https://embed-ssl.wistia.com/deliveries/58272a0001354fce4394425f172e3f7f7b695daa.bin[https://embed-ssl.wistia.com/deliveries/58272a0001354fce4394425f172e3f7f7b695daa]
+
+0:00
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGcgc3R5bGU9InRyYW5zZm9ybTogdHJhbnNsYXRlWCgxLjI1cHgpOyB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMTAwbXMgZWFzZSAwczsiPjxnPjxwYXRoIGQ9Ik0xMy44LDE0LjJjLTAuNSwwLjUtMS40LDAuOC0yLDAuOGgtMS42QzkuNSwxNSw5LDE1LjUsOSwxNi4ydjEuNmMwLDAuNywwLjUsMS4yLDEuMiwxLjJoMS42YzAuNywwLDEuNiwwLjQsMiwwLjhsMi4zLDIuM2MwLjUsMC41LDAuOCwwLjMsMC44LTAuNHYtOS42YzAtMC43LTAuNC0wLjgtMC44LTAuNEwxMy44LDE0LjJ6IiAvPjwvZz48Zz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMjIsMTEuN2MwLDAsMS4xLDIuNSwxLjEsNXMtMS4xLDUtMS4xLDUiIHN0eWxlPSJvcGFjaXR5OiAxOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7IiAvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmUtY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yNS44LDkuMmMwLDAsMS43LDMuOCwxLjcsNy41YzAsMy43LTEuNyw3LjUtMS43LDcuNSIgc3R5bGU9Im9wYWNpdHk6IDE7IHRyYW5zaXRpb246IG9wYWNpdHkgMTAwbXMgZWFzZSAwczsiIC8+PC9nPjxnIHN0eWxlPSJvcGFjaXR5OiAwOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7Ij48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTUiIHgyPSIyMy4yIiB5Mj0iMTkiPjwvbGluZT48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTkiIHgyPSIyMy4yIiB5Mj0iMTUiPjwvbGluZT48L2c+PC9nPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGcgc3R5bGU9InRyYW5zZm9ybTogdHJhbnNsYXRlWCgxLjI1cHgpOyB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMTAwbXMgZWFzZSAwczsiPjxnPjxwYXRoIGQ9Ik0xMy44LDE0LjJjLTAuNSwwLjUtMS40LDAuOC0yLDAuOGgtMS42QzkuNSwxNSw5LDE1LjUsOSwxNi4ydjEuNmMwLDAuNywwLjUsMS4yLDEuMiwxLjJoMS42YzAuNywwLDEuNiwwLjQsMiwwLjhsMi4zLDIuM2MwLjUsMC41LDAuOCwwLjMsMC44LTAuNHYtOS42YzAtMC43LTAuNC0wLjgtMC44LTAuNEwxMy44LDE0LjJ6IiAvPjwvZz48Zz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMjIsMTEuN2MwLDAsMS4xLDIuNSwxLjEsNXMtMS4xLDUtMS4xLDUiIHN0eWxlPSJvcGFjaXR5OiAxOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7IiAvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmUtY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yNS44LDkuMmMwLDAsMS43LDMuOCwxLjcsNy41YzAsMy43LTEuNyw3LjUtMS43LDcuNSIgc3R5bGU9Im9wYWNpdHk6IDE7IHRyYW5zaXRpb246IG9wYWNpdHkgMTAwbXMgZWFzZSAwczsiIC8+PC9nPjxnIHN0eWxlPSJvcGFjaXR5OiAwOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7Ij48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTUiIHgyPSIyMy4yIiB5Mj0iMTkiPjwvbGluZT48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTkiIHgyPSIyMy4yIiB5Mj0iMTUiPjwvbGluZT48L2c+PC9nPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBhdGggZD0iTTI4LjMsMTYuNGgtMS45Yy0wLjQsMC0wLjgtMC4zLTAuOS0wLjdsLTAuNC0xLjFjLTAuMi0wLjMtMC4xLTAuOCwwLjItMS4xbDEuMy0xLjNjMC4zLTAuMywwLjMtMC43LDAtMWwtMC40LTAuNGMtMC4zLTAuMy0wLjctMC4zLTEsMGwtMS4zLDEuM2MtMC4zLDAuMy0wLjgsMC4zLTEuMSwwLjFsLTEuMS0wLjVjLTAuNC0wLjEtMC43LTAuNS0wLjctMC45VjkuMWMwLTAuNC0wLjMtMC43LTAuNy0wLjdoLTAuNmMtMC40LDAtMC43LDAuMy0wLjcsMC43djEuN2MwLDAuNC0wLjMsMC44LTAuNywwLjlsLTEuMiwwLjVjLTAuMywwLjItMC44LDAuMS0xLjEtMC4ybC0xLjItMS4yYy0wLjMtMC4zLTAuNy0wLjMtMSwwbC0wLjQsMC40Yy0wLjMsMC4zLTAuMywwLjcsMCwxbDEuMiwxLjJjMC4zLDAuMywwLjMsMC44LDAuMSwxLjFsLTAuNSwxLjJjLTAuMSwwLjQtMC41LDAuNy0wLjksMC43aC0xLjZjLTAuNCwwLTAuNywwLjMtMC43LDAuN3YwLjZjMCwwLjQsMC4zLDAuNywwLjcsMC43aDEuNmMwLjQsMCwwLjgsMC4zLDAuOSwwLjdsMC41LDEuMmMwLjIsMC4zLDAuMSwwLjgtMC4xLDEuMWwtMS4yLDEuMmMtMC4zLDAuMy0wLjMsMC43LDAsMWwwLjQsMC40YzAuMywwLjMsMC43LDAuMywxLDBsMS4yLTEuMmMwLjMtMC4zLDAuOC0wLjMsMS4xLTAuMmwxLjIsMC41YzAuNCwwLjEsMC43LDAuNSwwLjcsMC45djEuN2MwLDAuNCwwLjMsMC43LDAuNywwLjdoMC42YzAuNCwwLDAuNy0wLjMsMC43LTAuN1YyNGMwLTAuNCwwLjMtMC44LDAuNy0wLjlsMS4xLTAuNWMwLjMtMC4yLDAuOC0wLjEsMS4xLDAuMWwxLjMsMS4zYzAuMywwLjMsMC43LDAuMywxLDBsMC40LTAuNGMwLjMtMC4zLDAuMy0wLjcsMC0xbC0xLjMtMS4zQzI1LDIxLDI1LDIwLjUsMjUuMSwyMC4ybDAuNC0xLjFjMC4xLTAuNCwwLjUtMC43LDAuOS0wLjdoMS45YzAuNCwwLDAuNy0wLjMsMC43LTAuN3YtMC42QzI5LDE2LjcsMjguNywxNi40LDI4LjMsMTYuNHogTTIzLjgsMTcuNWMwLDIuMi0xLjgsMy45LTMuOSwzLjljLTIuMiwwLTMuOS0xLjgtMy45LTMuOXMxLjctMy45LDMuOS0zLjlDMjIuMSwxMy42LDIzLjgsMTUuMywyMy44LDE3LjV6IiAvPjwvZz48L2c+PC9zdmc+[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBhdGggZD0iTTI4LjMsMTYuNGgtMS45Yy0wLjQsMC0wLjgtMC4zLTAuOS0wLjdsLTAuNC0xLjFjLTAuMi0wLjMtMC4xLTAuOCwwLjItMS4xbDEuMy0xLjNjMC4zLTAuMywwLjMtMC43LDAtMWwtMC40LTAuNGMtMC4zLTAuMy0wLjctMC4zLTEsMGwtMS4zLDEuM2MtMC4zLDAuMy0wLjgsMC4zLTEuMSwwLjFsLTEuMS0wLjVjLTAuNC0wLjEtMC43LTAuNS0wLjctMC45VjkuMWMwLTAuNC0wLjMtMC43LTAuNy0wLjdoLTAuNmMtMC40LDAtMC43LDAuMy0wLjcsMC43djEuN2MwLDAuNC0wLjMsMC44LTAuNywwLjlsLTEuMiwwLjVjLTAuMywwLjItMC44LDAuMS0xLjEtMC4ybC0xLjItMS4yYy0wLjMtMC4zLTAuNy0wLjMtMSwwbC0wLjQsMC40Yy0wLjMsMC4zLTAuMywwLjcsMCwxbDEuMiwxLjJjMC4zLDAuMywwLjMsMC44LDAuMSwxLjFsLTAuNSwxLjJjLTAuMSwwLjQtMC41LDAuNy0wLjksMC43aC0xLjZjLTAuNCwwLTAuNywwLjMtMC43LDAuN3YwLjZjMCwwLjQsMC4zLDAuNywwLjcsMC43aDEuNmMwLjQsMCwwLjgsMC4zLDAuOSwwLjdsMC41LDEuMmMwLjIsMC4zLDAuMSwwLjgtMC4xLDEuMWwtMS4yLDEuMmMtMC4zLDAuMy0wLjMsMC43LDAsMWwwLjQsMC40YzAuMywwLjMsMC43LDAuMywxLDBsMS4yLTEuMmMwLjMtMC4zLDAuOC0wLjMsMS4xLTAuMmwxLjIsMC41YzAuNCwwLjEsMC43LDAuNSwwLjcsMC45djEuN2MwLDAuNCwwLjMsMC43LDAuNywwLjdoMC42YzAuNCwwLDAuNy0wLjMsMC43LTAuN1YyNGMwLTAuNCwwLjMtMC44LDAuNy0wLjlsMS4xLTAuNWMwLjMtMC4yLDAuOC0wLjEsMS4xLDAuMWwxLjMsMS4zYzAuMywwLjMsMC43LDAuMywxLDBsMC40LTAuNGMwLjMtMC4zLDAuMy0wLjcsMC0xbC0xLjMtMS4zQzI1LDIxLDI1LDIwLjUsMjUuMSwyMC4ybDAuNC0xLjFjMC4xLTAuNCwwLjUtMC43LDAuOS0wLjdoMS45YzAuNCwwLDAuNy0wLjMsMC43LTAuN3YtMC42QzI5LDE2LjcsMjguNywxNi40LDI4LjMsMTYuNHogTTIzLjgsMTcuNWMwLDIuMi0xLjgsMy45LTMuOSwzLjljLTIuMiwwLTMuOS0xLjgtMy45LTMuOXMxLjctMy45LDMuOS0zLjlDMjIuMSwxMy42LDIzLjgsMTUuMywyMy44LDE3LjV6IiAvPjwvZz48L2c+PC9zdmc+]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIzMS40LDEyLjYgMzEuNCw4LjcgMjUuOCw4LjciPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNC43LDguNyA5LjEsOC43IDkuMSwxMi42Ij48L3BvbHlsaW5lPjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMjUuOCwyNC44IDMxLjQsMjQuOCAzMS40LDIwLjkiPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSI5LjEsMjAuOSA5LjEsMjQuOCAxNC43LDI0LjgiPjwvcG9seWxpbmU+PC9nPjxyZWN0IHg9IjEzLjciIHk9IjEyLjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyIgd2lkdGg9IjEzLjMiIGhlaWdodD0iOC45IiAvPjwvZz48L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIzMS40LDEyLjYgMzEuNCw4LjcgMjUuOCw4LjciPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNC43LDguNyA5LjEsOC43IDkuMSwxMi42Ij48L3BvbHlsaW5lPjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMjUuOCwyNC44IDMxLjQsMjQuOCAzMS40LDIwLjkiPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSI5LjEsMjAuOSA5LjEsMjQuOCAxNC43LDI0LjgiPjwvcG9seWxpbmU+PC9nPjxyZWN0IHg9IjEzLjciIHk9IjEyLjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyIgd2lkdGg9IjEzLjMiIGhlaWdodD0iOC45IiAvPjwvZz48L3N2Zz4=]
+
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset\{font-size:14px;}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+div.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+span.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+ul.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+li.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+label.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+fieldset.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+button.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+img.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+a.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+svg.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+p.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper a.w-css-reset\{border:0;}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+h1.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:2em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+h2.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.5em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+h3.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.17em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper p.w-css-reset\{margin:1.4em
+0;} #wistia_chrome_23 #wistia_grid_56_wrapper
+a.w-css-reset\{display:inline;} #wistia_chrome_23
+#wistia_grid_56_wrapper span.w-css-reset\{display:inline;}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+svg.w-css-reset\{display:inline;} #wistia_chrome_23
+#wistia_grid_56_wrapper
+ul.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+ol.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+li.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+ul:before.w-css-reset\{display:none} #wistia_chrome_23
+#wistia_grid_56_wrapper ol:before.w-css-reset\{display:none}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+li:before.w-css-reset\{display:none} #wistia_chrome_23
+#wistia_grid_56_wrapper ul:after.w-css-reset\{display:none}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+ol:after.w-css-reset\{display:none} #wistia_chrome_23
+#wistia_grid_56_wrapper li:after.w-css-reset\{display:none}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+label.w-css-reset\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;float:none;outline:none} #wistia_chrome_23 #wistia_grid_56_wrapper
+button.w-css-reset\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;border:0;border-radius:0;outline:none;position:static}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+img.w-css-reset\{border:0;display:inline-block;vertical-align:top;border-radius:0;outline:none;position:static}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset
+button::-moz-focus-inner\{border: 0;} #wistia_chrome_23
+#wistia_grid_56_wrapper .w-css-reset-tree \{font-size:14px;}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+div\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+span\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+ul\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+li\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+label\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+fieldset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+button\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+img\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+a\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+svg\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+p\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+a\{border:0;} #wistia_chrome_23 #wistia_grid_56_wrapper
+.w-css-reset-tree
+h1\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:2em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+h2\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.5em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+h3\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.17em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+p\{margin:1.4em 0;} #wistia_chrome_23 #wistia_grid_56_wrapper
+.w-css-reset-tree a\{display:inline;} #wistia_chrome_23
+#wistia_grid_56_wrapper .w-css-reset-tree span\{display:inline;}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+svg\{display:inline;} #wistia_chrome_23 #wistia_grid_56_wrapper
+.w-css-reset-tree
+ul\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+ol\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+li\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+ul:before\{display:none} #wistia_chrome_23 #wistia_grid_56_wrapper
+.w-css-reset-tree ol:before\{display:none} #wistia_chrome_23
+#wistia_grid_56_wrapper .w-css-reset-tree li:before\{display:none}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+ul:after\{display:none} #wistia_chrome_23 #wistia_grid_56_wrapper
+.w-css-reset-tree ol:after\{display:none} #wistia_chrome_23
+#wistia_grid_56_wrapper .w-css-reset-tree li:after\{display:none}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+label\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;float:none;outline:none} #wistia_chrome_23 #wistia_grid_56_wrapper
+.w-css-reset-tree
+button\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;border:0;border-radius:0;outline:none;position:static}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+img\{border:0;display:inline-block;vertical-align:top;border-radius:0;outline:none;position:static}
+#wistia_chrome_23 #wistia_grid_56_wrapper .w-css-reset-tree
+button::-moz-focus-inner\{border: 0;} #wistia_chrome_23
+#wistia_grid_56_wrapper
+.w-css-reset-max-width-none-important\{max-width:none!important}
+#wistia_chrome_23 #wistia_grid_56_wrapper
+.w-css-reset-button-important\{border-radius:0!important;color:#fff!important;}
+
+[[wistia_grid_56_front]]
+
+[[wistia_grid_56_top_inside]]
+[[wistia_grid_56_top]]
+
+[[wistia_grid_56_bottom_inside]]
+[[wistia_grid_56_bottom]]
+
+[[wistia_grid_56_left_inside]]
+[[wistia_grid_56_left]]
+
+[[wistia_grid_56_right_inside]]
+[[wistia_grid_56_right]]
+
+[[wistia_grid_56_below]]
+
+#wistia_grid_56_wrapper\{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;font-family:Arial,sans-serif;font-size:14px;height:100%;position:relative;text-align:left;width:100%;}
+#wistia_grid_56_wrapper
+*\{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+#wistia_grid_56_above\{position:relative;}
+#wistia_grid_56_main\{display:block;height:100%;position:relative;}
+#wistia_grid_56_behind\{height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_grid_56_center\{height:100%;overflow:hidden;position:relative;width:100%;}
+#wistia_grid_56_front\{display:none;height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_grid_56_top_inside\{position:absolute;left:0;top:0;width:100%;}
+#wistia_grid_56_top\{width:100%;position:absolute;bottom:0;left:0;}
+#wistia_grid_56_bottom_inside\{position:absolute;left:0;bottom:0;width:100%;}
+#wistia_grid_56_bottom\{width:100%;position:absolute;top:0;left:0;}
+#wistia_grid_56_left_inside\{height:100%;position:absolute;left:0;top:0;}
+#wistia_grid_56_left\{height:100%;position:absolute;right:0;top:0;}
+#wistia_grid_56_right_inside\{height:100%;right:0;position:absolute;top:0;}
+#wistia_grid_56_right\{height:100%;left:0;position:absolute;top:0;}
+#wistia_grid_56_below\{position:relative;}
+
+'''''
+
+[[inline]]
+=== Install an inline style Sendlane form on Shopify
+
+You can paste an inline form’s installation code anywhere you’d like it
+to appear in your Shopify store’s source code, create a page to embed
+your form on, or
+https://help.sendlane.com/article/578-how-to-create-a-custom-liquid-block-option-for-your-shopify-theme[use
+a custom.liquid block] to place the form in your store’s theme using the
+visual theme editor.
+
+The form’s installation code is the only code required to make your form
+appear on your website. See
+https://help.sendlane.com/article/627-how-to-manage-sendlane-forms-activation-status[How
+to manage Sendlane Forms’ activation status] for information on form
+publication/activation statuses.
+
+===== ⚠️ All forms require their own unique installation codes to be added to your website.
+
+[[page]]
+==== Install an inline form on a dedicated page in your Shopify store
+
+You can create a dedicated page for your form in your Shopify store, for
+example, to display information about your newsletter or VIP program
+along with a sign up form.
+
+To create a dedicated page for a Sendlane form:
+
+. Copy your form's installation code from the Summary page of the form
+builder
+. Log in to Shopify
+. Click *Online Store*
+. Click *Pages*
+. Click *Add Page*
+. Enter a *title* for your page
+. Click the *HTML <> icon*
+. Paste your form's installation code
+. Add other content to your page
+. Click *Save*
+
+Check out the video below to see how to install an inline form on a
+dedicated page in your Shopify store from start to finish!
+
+[[wistia-kyj6yhdg0c-1]]
+[[wistia_chrome_26]]
+[[wistia_grid_77_wrapper]]
+[[wistia_grid_77_above]]
+
+[[wistia_grid_77_main]]
+[[wistia_grid_77_behind]]
+
+[[wistia_grid_77_center]]
+
+[[w-vulcan-v2-76]]
+
+image:https://fast.wistia.com/embed/medias/kyj6yhdg0c/swatch[Video
+Thumbnail]
+
+image:https://embed-ssl.wistia.com/deliveries/f0b79467c5187156ed9a119a80290d1d1d3aaee2.webp?image_crop_resized=960x813[Video
+Thumbnail]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEyNSA4MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTI1IDgwIiBhcmlhLWhpZGRlbj0idHJ1ZSIgYWx0IHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogODYuNDgxN3B4OyBsZWZ0OiAwcHg7IHN0cm9rZS13aWR0aDogMHB4OyB0b3A6IDBweDsgd2lkdGg6IDEwMCU7IHBvc2l0aW9uOiBhYnNvbHV0ZTsiPjxyZWN0IGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSJub25lIiB3aWR0aD0iMTI1IiBoZWlnaHQ9IjgwIiAvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEyNSA4MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTI1IDgwIiBhcmlhLWhpZGRlbj0idHJ1ZSIgYWx0IHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogODYuNDgxN3B4OyBsZWZ0OiAwcHg7IHN0cm9rZS13aWR0aDogMHB4OyB0b3A6IDBweDsgd2lkdGg6IDEwMCU7IHBvc2l0aW9uOiBhYnNvbHV0ZTsiPjxyZWN0IGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSJub25lIiB3aWR0aD0iMTI1IiBoZWlnaHQ9IjgwIiAvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=]
+
+Click for sound
+
+image:data:image/svg+xml;base64,PHN2ZyB2aWV3Ym94PSIwIDAgMjM3IDIzNyIgd2lkdGg9IjU2Ljc1MzU5Mzc0OTk5OTk5IiBoZWlnaHQ9IjU2Ljc1MzU5Mzc0OTk5OTk5Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGtleWZyYW1lcyBWT0xVTUVfU01BTExfV0FWRV9GTEFTSCB7CiAgICAwJSB7IG9wYWNpdHk6IDA7IH0KICAgIDMzJSB7IG9wYWNpdHk6IDE7IH0KICAgIDY2JSB7IG9wYWNpdHk6IDE7IH0KICAgIDEwMCUgeyBvcGFjaXR5OiAwOyB9CiAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB2aWV3Ym94PSIwIDAgMjM3IDIzNyIgd2lkdGg9IjU2Ljc1MzU5Mzc0OTk5OTk5IiBoZWlnaHQ9IjU2Ljc1MzU5Mzc0OTk5OTk5Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGtleWZyYW1lcyBWT0xVTUVfU01BTExfV0FWRV9GTEFTSCB7CiAgICAwJSB7IG9wYWNpdHk6IDA7IH0KICAgIDMzJSB7IG9wYWNpdHk6IDE7IH0KICAgIDY2JSB7IG9wYWNpdHk6IDE7IH0KICAgIDEwMCUgeyBvcGFjaXR5OiAwOyB9CiAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=]
+
+@keyframes VOLUME_LARGE_WAVE_FLASH \{ 0% \{ opacity: 0; } 33% \{
+opacity: 1; } 66% \{ opacity: 1; } 100% \{ opacity: 0; } }
+
+.volume__small-wave \{ animation: VOLUME_SMALL_WAVE_FLASH 2s infinite;
+opacity: 0; }
+
+.volume__large-wave \{ animation: VOLUME_LARGE_WAVE_FLASH 2s infinite
+.3s; opacity: 0; }
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PHJlY3QgeD0iNi41IiB5PSIwIiB3aWR0aD0iMy41IiBoZWlnaHQ9IjEyIiAvPjwvZz48L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PHJlY3QgeD0iNi41IiB5PSIwIiB3aWR0aD0iMy41IiBoZWlnaHQ9IjEyIiAvPjwvZz48L3N2Zz4=]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxwb2x5Z29uIHBvaW50cz0iMTEuNTU2LDcuNSAwLDE1IDAsMCI+PC9wb2x5Z29uPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxwb2x5Z29uIHBvaW50cz0iMTEuNTU2LDcuNSAwLDE1IDAsMCI+PC9wb2x5Z29uPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+]
+
+0:49
+
+image:https://embed-ssl.wistia.com/deliveries/dc5736343e648ae7ddc5f9d4308827e024d3082f.bin[https://embed-ssl.wistia.com/deliveries/dc5736343e648ae7ddc5f9d4308827e024d3082f]
+
+0:00
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGcgc3R5bGU9InRyYW5zZm9ybTogdHJhbnNsYXRlWCgxLjI1cHgpOyB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMTAwbXMgZWFzZSAwczsiPjxnPjxwYXRoIGQ9Ik0xMy44LDE0LjJjLTAuNSwwLjUtMS40LDAuOC0yLDAuOGgtMS42QzkuNSwxNSw5LDE1LjUsOSwxNi4ydjEuNmMwLDAuNywwLjUsMS4yLDEuMiwxLjJoMS42YzAuNywwLDEuNiwwLjQsMiwwLjhsMi4zLDIuM2MwLjUsMC41LDAuOCwwLjMsMC44LTAuNHYtOS42YzAtMC43LTAuNC0wLjgtMC44LTAuNEwxMy44LDE0LjJ6IiAvPjwvZz48Zz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMjIsMTEuN2MwLDAsMS4xLDIuNSwxLjEsNXMtMS4xLDUtMS4xLDUiIHN0eWxlPSJvcGFjaXR5OiAxOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7IiAvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmUtY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yNS44LDkuMmMwLDAsMS43LDMuOCwxLjcsNy41YzAsMy43LTEuNyw3LjUtMS43LDcuNSIgc3R5bGU9Im9wYWNpdHk6IDE7IHRyYW5zaXRpb246IG9wYWNpdHkgMTAwbXMgZWFzZSAwczsiIC8+PC9nPjxnIHN0eWxlPSJvcGFjaXR5OiAwOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7Ij48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTUiIHgyPSIyMy4yIiB5Mj0iMTkiPjwvbGluZT48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTkiIHgyPSIyMy4yIiB5Mj0iMTUiPjwvbGluZT48L2c+PC9nPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGcgc3R5bGU9InRyYW5zZm9ybTogdHJhbnNsYXRlWCgxLjI1cHgpOyB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMTAwbXMgZWFzZSAwczsiPjxnPjxwYXRoIGQ9Ik0xMy44LDE0LjJjLTAuNSwwLjUtMS40LDAuOC0yLDAuOGgtMS42QzkuNSwxNSw5LDE1LjUsOSwxNi4ydjEuNmMwLDAuNywwLjUsMS4yLDEuMiwxLjJoMS42YzAuNywwLDEuNiwwLjQsMiwwLjhsMi4zLDIuM2MwLjUsMC41LDAuOCwwLjMsMC44LTAuNHYtOS42YzAtMC43LTAuNC0wLjgtMC44LTAuNEwxMy44LDE0LjJ6IiAvPjwvZz48Zz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMjIsMTEuN2MwLDAsMS4xLDIuNSwxLjEsNXMtMS4xLDUtMS4xLDUiIHN0eWxlPSJvcGFjaXR5OiAxOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7IiAvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmUtY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yNS44LDkuMmMwLDAsMS43LDMuOCwxLjcsNy41YzAsMy43LTEuNyw3LjUtMS43LDcuNSIgc3R5bGU9Im9wYWNpdHk6IDE7IHRyYW5zaXRpb246IG9wYWNpdHkgMTAwbXMgZWFzZSAwczsiIC8+PC9nPjxnIHN0eWxlPSJvcGFjaXR5OiAwOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7Ij48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTUiIHgyPSIyMy4yIiB5Mj0iMTkiPjwvbGluZT48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTkiIHgyPSIyMy4yIiB5Mj0iMTUiPjwvbGluZT48L2c+PC9nPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBhdGggZD0iTTI4LjMsMTYuNGgtMS45Yy0wLjQsMC0wLjgtMC4zLTAuOS0wLjdsLTAuNC0xLjFjLTAuMi0wLjMtMC4xLTAuOCwwLjItMS4xbDEuMy0xLjNjMC4zLTAuMywwLjMtMC43LDAtMWwtMC40LTAuNGMtMC4zLTAuMy0wLjctMC4zLTEsMGwtMS4zLDEuM2MtMC4zLDAuMy0wLjgsMC4zLTEuMSwwLjFsLTEuMS0wLjVjLTAuNC0wLjEtMC43LTAuNS0wLjctMC45VjkuMWMwLTAuNC0wLjMtMC43LTAuNy0wLjdoLTAuNmMtMC40LDAtMC43LDAuMy0wLjcsMC43djEuN2MwLDAuNC0wLjMsMC44LTAuNywwLjlsLTEuMiwwLjVjLTAuMywwLjItMC44LDAuMS0xLjEtMC4ybC0xLjItMS4yYy0wLjMtMC4zLTAuNy0wLjMtMSwwbC0wLjQsMC40Yy0wLjMsMC4zLTAuMywwLjcsMCwxbDEuMiwxLjJjMC4zLDAuMywwLjMsMC44LDAuMSwxLjFsLTAuNSwxLjJjLTAuMSwwLjQtMC41LDAuNy0wLjksMC43aC0xLjZjLTAuNCwwLTAuNywwLjMtMC43LDAuN3YwLjZjMCwwLjQsMC4zLDAuNywwLjcsMC43aDEuNmMwLjQsMCwwLjgsMC4zLDAuOSwwLjdsMC41LDEuMmMwLjIsMC4zLDAuMSwwLjgtMC4xLDEuMWwtMS4yLDEuMmMtMC4zLDAuMy0wLjMsMC43LDAsMWwwLjQsMC40YzAuMywwLjMsMC43LDAuMywxLDBsMS4yLTEuMmMwLjMtMC4zLDAuOC0wLjMsMS4xLTAuMmwxLjIsMC41YzAuNCwwLjEsMC43LDAuNSwwLjcsMC45djEuN2MwLDAuNCwwLjMsMC43LDAuNywwLjdoMC42YzAuNCwwLDAuNy0wLjMsMC43LTAuN1YyNGMwLTAuNCwwLjMtMC44LDAuNy0wLjlsMS4xLTAuNWMwLjMtMC4yLDAuOC0wLjEsMS4xLDAuMWwxLjMsMS4zYzAuMywwLjMsMC43LDAuMywxLDBsMC40LTAuNGMwLjMtMC4zLDAuMy0wLjcsMC0xbC0xLjMtMS4zQzI1LDIxLDI1LDIwLjUsMjUuMSwyMC4ybDAuNC0xLjFjMC4xLTAuNCwwLjUtMC43LDAuOS0wLjdoMS45YzAuNCwwLDAuNy0wLjMsMC43LTAuN3YtMC42QzI5LDE2LjcsMjguNywxNi40LDI4LjMsMTYuNHogTTIzLjgsMTcuNWMwLDIuMi0xLjgsMy45LTMuOSwzLjljLTIuMiwwLTMuOS0xLjgtMy45LTMuOXMxLjctMy45LDMuOS0zLjlDMjIuMSwxMy42LDIzLjgsMTUuMywyMy44LDE3LjV6IiAvPjwvZz48L2c+PC9zdmc+[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBhdGggZD0iTTI4LjMsMTYuNGgtMS45Yy0wLjQsMC0wLjgtMC4zLTAuOS0wLjdsLTAuNC0xLjFjLTAuMi0wLjMtMC4xLTAuOCwwLjItMS4xbDEuMy0xLjNjMC4zLTAuMywwLjMtMC43LDAtMWwtMC40LTAuNGMtMC4zLTAuMy0wLjctMC4zLTEsMGwtMS4zLDEuM2MtMC4zLDAuMy0wLjgsMC4zLTEuMSwwLjFsLTEuMS0wLjVjLTAuNC0wLjEtMC43LTAuNS0wLjctMC45VjkuMWMwLTAuNC0wLjMtMC43LTAuNy0wLjdoLTAuNmMtMC40LDAtMC43LDAuMy0wLjcsMC43djEuN2MwLDAuNC0wLjMsMC44LTAuNywwLjlsLTEuMiwwLjVjLTAuMywwLjItMC44LDAuMS0xLjEtMC4ybC0xLjItMS4yYy0wLjMtMC4zLTAuNy0wLjMtMSwwbC0wLjQsMC40Yy0wLjMsMC4zLTAuMywwLjcsMCwxbDEuMiwxLjJjMC4zLDAuMywwLjMsMC44LDAuMSwxLjFsLTAuNSwxLjJjLTAuMSwwLjQtMC41LDAuNy0wLjksMC43aC0xLjZjLTAuNCwwLTAuNywwLjMtMC43LDAuN3YwLjZjMCwwLjQsMC4zLDAuNywwLjcsMC43aDEuNmMwLjQsMCwwLjgsMC4zLDAuOSwwLjdsMC41LDEuMmMwLjIsMC4zLDAuMSwwLjgtMC4xLDEuMWwtMS4yLDEuMmMtMC4zLDAuMy0wLjMsMC43LDAsMWwwLjQsMC40YzAuMywwLjMsMC43LDAuMywxLDBsMS4yLTEuMmMwLjMtMC4zLDAuOC0wLjMsMS4xLTAuMmwxLjIsMC41YzAuNCwwLjEsMC43LDAuNSwwLjcsMC45djEuN2MwLDAuNCwwLjMsMC43LDAuNywwLjdoMC42YzAuNCwwLDAuNy0wLjMsMC43LTAuN1YyNGMwLTAuNCwwLjMtMC44LDAuNy0wLjlsMS4xLTAuNWMwLjMtMC4yLDAuOC0wLjEsMS4xLDAuMWwxLjMsMS4zYzAuMywwLjMsMC43LDAuMywxLDBsMC40LTAuNGMwLjMtMC4zLDAuMy0wLjcsMC0xbC0xLjMtMS4zQzI1LDIxLDI1LDIwLjUsMjUuMSwyMC4ybDAuNC0xLjFjMC4xLTAuNCwwLjUtMC43LDAuOS0wLjdoMS45YzAuNCwwLDAuNy0wLjMsMC43LTAuN3YtMC42QzI5LDE2LjcsMjguNywxNi40LDI4LjMsMTYuNHogTTIzLjgsMTcuNWMwLDIuMi0xLjgsMy45LTMuOSwzLjljLTIuMiwwLTMuOS0xLjgtMy45LTMuOXMxLjctMy45LDMuOS0zLjlDMjIuMSwxMy42LDIzLjgsMTUuMywyMy44LDE3LjV6IiAvPjwvZz48L2c+PC9zdmc+]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIzMS40LDEyLjYgMzEuNCw4LjcgMjUuOCw4LjciPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNC43LDguNyA5LjEsOC43IDkuMSwxMi42Ij48L3BvbHlsaW5lPjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMjUuOCwyNC44IDMxLjQsMjQuOCAzMS40LDIwLjkiPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSI5LjEsMjAuOSA5LjEsMjQuOCAxNC43LDI0LjgiPjwvcG9seWxpbmU+PC9nPjxyZWN0IHg9IjEzLjciIHk9IjEyLjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyIgd2lkdGg9IjEzLjMiIGhlaWdodD0iOC45IiAvPjwvZz48L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIzMS40LDEyLjYgMzEuNCw4LjcgMjUuOCw4LjciPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNC43LDguNyA5LjEsOC43IDkuMSwxMi42Ij48L3BvbHlsaW5lPjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMjUuOCwyNC44IDMxLjQsMjQuOCAzMS40LDIwLjkiPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSI5LjEsMjAuOSA5LjEsMjQuOCAxNC43LDI0LjgiPjwvcG9seWxpbmU+PC9nPjxyZWN0IHg9IjEzLjciIHk9IjEyLjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyIgd2lkdGg9IjEzLjMiIGhlaWdodD0iOC45IiAvPjwvZz48L3N2Zz4=]
+
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset\{font-size:14px;}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+div.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+span.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+ul.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+li.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+label.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+fieldset.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+button.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+img.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+a.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+svg.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+p.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper a.w-css-reset\{border:0;}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+h1.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:2em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+h2.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.5em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+h3.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.17em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper p.w-css-reset\{margin:1.4em
+0;} #wistia_chrome_26 #wistia_grid_77_wrapper
+a.w-css-reset\{display:inline;} #wistia_chrome_26
+#wistia_grid_77_wrapper span.w-css-reset\{display:inline;}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+svg.w-css-reset\{display:inline;} #wistia_chrome_26
+#wistia_grid_77_wrapper
+ul.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+ol.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+li.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+ul:before.w-css-reset\{display:none} #wistia_chrome_26
+#wistia_grid_77_wrapper ol:before.w-css-reset\{display:none}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+li:before.w-css-reset\{display:none} #wistia_chrome_26
+#wistia_grid_77_wrapper ul:after.w-css-reset\{display:none}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+ol:after.w-css-reset\{display:none} #wistia_chrome_26
+#wistia_grid_77_wrapper li:after.w-css-reset\{display:none}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+label.w-css-reset\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;float:none;outline:none} #wistia_chrome_26 #wistia_grid_77_wrapper
+button.w-css-reset\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;border:0;border-radius:0;outline:none;position:static}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+img.w-css-reset\{border:0;display:inline-block;vertical-align:top;border-radius:0;outline:none;position:static}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset
+button::-moz-focus-inner\{border: 0;} #wistia_chrome_26
+#wistia_grid_77_wrapper .w-css-reset-tree \{font-size:14px;}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+div\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+span\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+ul\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+li\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+label\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+fieldset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+button\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+img\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+a\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+svg\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+p\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+a\{border:0;} #wistia_chrome_26 #wistia_grid_77_wrapper
+.w-css-reset-tree
+h1\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:2em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+h2\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.5em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+h3\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.17em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+p\{margin:1.4em 0;} #wistia_chrome_26 #wistia_grid_77_wrapper
+.w-css-reset-tree a\{display:inline;} #wistia_chrome_26
+#wistia_grid_77_wrapper .w-css-reset-tree span\{display:inline;}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+svg\{display:inline;} #wistia_chrome_26 #wistia_grid_77_wrapper
+.w-css-reset-tree
+ul\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+ol\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+li\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+ul:before\{display:none} #wistia_chrome_26 #wistia_grid_77_wrapper
+.w-css-reset-tree ol:before\{display:none} #wistia_chrome_26
+#wistia_grid_77_wrapper .w-css-reset-tree li:before\{display:none}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+ul:after\{display:none} #wistia_chrome_26 #wistia_grid_77_wrapper
+.w-css-reset-tree ol:after\{display:none} #wistia_chrome_26
+#wistia_grid_77_wrapper .w-css-reset-tree li:after\{display:none}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+label\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;float:none;outline:none} #wistia_chrome_26 #wistia_grid_77_wrapper
+.w-css-reset-tree
+button\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;border:0;border-radius:0;outline:none;position:static}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+img\{border:0;display:inline-block;vertical-align:top;border-radius:0;outline:none;position:static}
+#wistia_chrome_26 #wistia_grid_77_wrapper .w-css-reset-tree
+button::-moz-focus-inner\{border: 0;} #wistia_chrome_26
+#wistia_grid_77_wrapper
+.w-css-reset-max-width-none-important\{max-width:none!important}
+#wistia_chrome_26 #wistia_grid_77_wrapper
+.w-css-reset-button-important\{border-radius:0!important;color:#fff!important;}
+
+[[wistia_grid_77_front]]
+
+[[wistia_grid_77_top_inside]]
+[[wistia_grid_77_top]]
+
+[[wistia_grid_77_bottom_inside]]
+[[wistia_grid_77_bottom]]
+
+[[wistia_grid_77_left_inside]]
+[[wistia_grid_77_left]]
+
+[[wistia_grid_77_right_inside]]
+[[wistia_grid_77_right]]
+
+[[wistia_grid_77_below]]
+
+#wistia_grid_77_wrapper\{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;font-family:Arial,sans-serif;font-size:14px;height:100%;position:relative;text-align:left;width:100%;}
+#wistia_grid_77_wrapper
+*\{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+#wistia_grid_77_above\{position:relative;}
+#wistia_grid_77_main\{display:block;height:100%;position:relative;}
+#wistia_grid_77_behind\{height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_grid_77_center\{height:100%;overflow:hidden;position:relative;width:100%;}
+#wistia_grid_77_front\{display:none;height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_grid_77_top_inside\{position:absolute;left:0;top:0;width:100%;}
+#wistia_grid_77_top\{width:100%;position:absolute;bottom:0;left:0;}
+#wistia_grid_77_bottom_inside\{position:absolute;left:0;bottom:0;width:100%;}
+#wistia_grid_77_bottom\{width:100%;position:absolute;top:0;left:0;}
+#wistia_grid_77_left_inside\{height:100%;position:absolute;left:0;top:0;}
+#wistia_grid_77_left\{height:100%;position:absolute;right:0;top:0;}
+#wistia_grid_77_right_inside\{height:100%;right:0;position:absolute;top:0;}
+#wistia_grid_77_right\{height:100%;left:0;position:absolute;top:0;}
+#wistia_grid_77_below\{position:relative;}
+
+[[custom-liquid]]
+==== Install an inline form in your Shopify store using a Custom Liquid block
+
+You can install an inline form anywhere you'd like on your Shopify theme
+by using the visual theme editor and a Custom Liquid block. If your
+Shopify theme doesn't natively support custom.liquid blocks, check out
+https://help.sendlane.com/article/578-how-to-create-a-custom-liquid-block-option-for-your-shopify-theme[How
+to Create a Custom Liquid Block Option For Your Shopify Theme].
+
+To install an inline Sendlane form on your Shopify theme:
+
+. Copy your form's installation code from the Summary page of the form
+builder
+. Log in to Shopify
+. Click *Online Store*
+. Click *Customize*
+. Hover over the area of your theme where you'd like your form to appear
+. Click *Add Section*
+. Select *Custom Liquid* from the list of sections
+. Click into the Custom Liquid block you just added
+. Paste your form's installation code in the Liquid code text box
+. Click *Save*
+
+Check out the video below to see how to install an inline form in your
+Shopify store using a custom.liquid block from start to finish!
+
+[[wistia-rttfatppxk-1]]
+[[wistia_chrome_29]]
+[[wistia_grid_35_wrapper]]
+[[wistia_grid_35_above]]
+
+[[wistia_grid_35_main]]
+[[wistia_grid_35_behind]]
+
+[[wistia_grid_35_center]]
+
+[[w-vulcan-v2-34]]
+
+image:https://fast.wistia.com/embed/medias/rttfatppxk/swatch[Video
+Thumbnail]
+
+image:https://embed-ssl.wistia.com/deliveries/b2281d32ad233dcb59792040e07a5fe3cb1d9579.webp?image_crop_resized=960x813[Video
+Thumbnail]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEyNSA4MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTI1IDgwIiBhcmlhLWhpZGRlbj0idHJ1ZSIgYWx0IHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogODYuNDgxN3B4OyBsZWZ0OiAwcHg7IHN0cm9rZS13aWR0aDogMHB4OyB0b3A6IDBweDsgd2lkdGg6IDEwMCU7IHBvc2l0aW9uOiBhYnNvbHV0ZTsiPjxyZWN0IGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSJub25lIiB3aWR0aD0iMTI1IiBoZWlnaHQ9IjgwIiAvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEyNSA4MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTI1IDgwIiBhcmlhLWhpZGRlbj0idHJ1ZSIgYWx0IHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogODYuNDgxN3B4OyBsZWZ0OiAwcHg7IHN0cm9rZS13aWR0aDogMHB4OyB0b3A6IDBweDsgd2lkdGg6IDEwMCU7IHBvc2l0aW9uOiBhYnNvbHV0ZTsiPjxyZWN0IGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSJub25lIiB3aWR0aD0iMTI1IiBoZWlnaHQ9IjgwIiAvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=]
+
+Click for sound
+
+image:data:image/svg+xml;base64,PHN2ZyB2aWV3Ym94PSIwIDAgMjM3IDIzNyIgd2lkdGg9IjU2Ljc1MzU5Mzc0OTk5OTk5IiBoZWlnaHQ9IjU2Ljc1MzU5Mzc0OTk5OTk5Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGtleWZyYW1lcyBWT0xVTUVfU01BTExfV0FWRV9GTEFTSCB7CiAgICAwJSB7IG9wYWNpdHk6IDA7IH0KICAgIDMzJSB7IG9wYWNpdHk6IDE7IH0KICAgIDY2JSB7IG9wYWNpdHk6IDE7IH0KICAgIDEwMCUgeyBvcGFjaXR5OiAwOyB9CiAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB2aWV3Ym94PSIwIDAgMjM3IDIzNyIgd2lkdGg9IjU2Ljc1MzU5Mzc0OTk5OTk5IiBoZWlnaHQ9IjU2Ljc1MzU5Mzc0OTk5OTk5Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGtleWZyYW1lcyBWT0xVTUVfU01BTExfV0FWRV9GTEFTSCB7CiAgICAwJSB7IG9wYWNpdHk6IDA7IH0KICAgIDMzJSB7IG9wYWNpdHk6IDE7IH0KICAgIDY2JSB7IG9wYWNpdHk6IDE7IH0KICAgIDEwMCUgeyBvcGFjaXR5OiAwOyB9CiAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=]
+
+@keyframes VOLUME_LARGE_WAVE_FLASH \{ 0% \{ opacity: 0; } 33% \{
+opacity: 1; } 66% \{ opacity: 1; } 100% \{ opacity: 0; } }
+
+.volume__small-wave \{ animation: VOLUME_SMALL_WAVE_FLASH 2s infinite;
+opacity: 0; }
+
+.volume__large-wave \{ animation: VOLUME_LARGE_WAVE_FLASH 2s infinite
+.3s; opacity: 0; }
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PHJlY3QgeD0iNi41IiB5PSIwIiB3aWR0aD0iMy41IiBoZWlnaHQ9IjEyIiAvPjwvZz48L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PHJlY3QgeD0iNi41IiB5PSIwIiB3aWR0aD0iMy41IiBoZWlnaHQ9IjEyIiAvPjwvZz48L3N2Zz4=]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxwb2x5Z29uIHBvaW50cz0iMTEuNTU2LDcuNSAwLDE1IDAsMCI+PC9wb2x5Z29uPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxwb2x5Z29uIHBvaW50cz0iMTEuNTU2LDcuNSAwLDE1IDAsMCI+PC9wb2x5Z29uPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+]
+
+0:43
+
+image:https://embed-ssl.wistia.com/deliveries/12494f763449decd7b51072c9c876ac37c6078dd.bin[https://embed-ssl.wistia.com/deliveries/12494f763449decd7b51072c9c876ac37c6078dd]
+
+0:07
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGcgc3R5bGU9InRyYW5zZm9ybTogdHJhbnNsYXRlWCgxLjI1cHgpOyB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMTAwbXMgZWFzZSAwczsiPjxnPjxwYXRoIGQ9Ik0xMy44LDE0LjJjLTAuNSwwLjUtMS40LDAuOC0yLDAuOGgtMS42QzkuNSwxNSw5LDE1LjUsOSwxNi4ydjEuNmMwLDAuNywwLjUsMS4yLDEuMiwxLjJoMS42YzAuNywwLDEuNiwwLjQsMiwwLjhsMi4zLDIuM2MwLjUsMC41LDAuOCwwLjMsMC44LTAuNHYtOS42YzAtMC43LTAuNC0wLjgtMC44LTAuNEwxMy44LDE0LjJ6IiAvPjwvZz48Zz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMjIsMTEuN2MwLDAsMS4xLDIuNSwxLjEsNXMtMS4xLDUtMS4xLDUiIHN0eWxlPSJvcGFjaXR5OiAxOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7IiAvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmUtY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yNS44LDkuMmMwLDAsMS43LDMuOCwxLjcsNy41YzAsMy43LTEuNyw3LjUtMS43LDcuNSIgc3R5bGU9Im9wYWNpdHk6IDE7IHRyYW5zaXRpb246IG9wYWNpdHkgMTAwbXMgZWFzZSAwczsiIC8+PC9nPjxnIHN0eWxlPSJvcGFjaXR5OiAwOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7Ij48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTUiIHgyPSIyMy4yIiB5Mj0iMTkiPjwvbGluZT48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTkiIHgyPSIyMy4yIiB5Mj0iMTUiPjwvbGluZT48L2c+PC9nPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGcgc3R5bGU9InRyYW5zZm9ybTogdHJhbnNsYXRlWCgxLjI1cHgpOyB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMTAwbXMgZWFzZSAwczsiPjxnPjxwYXRoIGQ9Ik0xMy44LDE0LjJjLTAuNSwwLjUtMS40LDAuOC0yLDAuOGgtMS42QzkuNSwxNSw5LDE1LjUsOSwxNi4ydjEuNmMwLDAuNywwLjUsMS4yLDEuMiwxLjJoMS42YzAuNywwLDEuNiwwLjQsMiwwLjhsMi4zLDIuM2MwLjUsMC41LDAuOCwwLjMsMC44LTAuNHYtOS42YzAtMC43LTAuNC0wLjgtMC44LTAuNEwxMy44LDE0LjJ6IiAvPjwvZz48Zz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMjIsMTEuN2MwLDAsMS4xLDIuNSwxLjEsNXMtMS4xLDUtMS4xLDUiIHN0eWxlPSJvcGFjaXR5OiAxOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7IiAvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmUtY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yNS44LDkuMmMwLDAsMS43LDMuOCwxLjcsNy41YzAsMy43LTEuNyw3LjUtMS43LDcuNSIgc3R5bGU9Im9wYWNpdHk6IDE7IHRyYW5zaXRpb246IG9wYWNpdHkgMTAwbXMgZWFzZSAwczsiIC8+PC9nPjxnIHN0eWxlPSJvcGFjaXR5OiAwOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7Ij48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTUiIHgyPSIyMy4yIiB5Mj0iMTkiPjwvbGluZT48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTkiIHgyPSIyMy4yIiB5Mj0iMTUiPjwvbGluZT48L2c+PC9nPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBhdGggZD0iTTI4LjMsMTYuNGgtMS45Yy0wLjQsMC0wLjgtMC4zLTAuOS0wLjdsLTAuNC0xLjFjLTAuMi0wLjMtMC4xLTAuOCwwLjItMS4xbDEuMy0xLjNjMC4zLTAuMywwLjMtMC43LDAtMWwtMC40LTAuNGMtMC4zLTAuMy0wLjctMC4zLTEsMGwtMS4zLDEuM2MtMC4zLDAuMy0wLjgsMC4zLTEuMSwwLjFsLTEuMS0wLjVjLTAuNC0wLjEtMC43LTAuNS0wLjctMC45VjkuMWMwLTAuNC0wLjMtMC43LTAuNy0wLjdoLTAuNmMtMC40LDAtMC43LDAuMy0wLjcsMC43djEuN2MwLDAuNC0wLjMsMC44LTAuNywwLjlsLTEuMiwwLjVjLTAuMywwLjItMC44LDAuMS0xLjEtMC4ybC0xLjItMS4yYy0wLjMtMC4zLTAuNy0wLjMtMSwwbC0wLjQsMC40Yy0wLjMsMC4zLTAuMywwLjcsMCwxbDEuMiwxLjJjMC4zLDAuMywwLjMsMC44LDAuMSwxLjFsLTAuNSwxLjJjLTAuMSwwLjQtMC41LDAuNy0wLjksMC43aC0xLjZjLTAuNCwwLTAuNywwLjMtMC43LDAuN3YwLjZjMCwwLjQsMC4zLDAuNywwLjcsMC43aDEuNmMwLjQsMCwwLjgsMC4zLDAuOSwwLjdsMC41LDEuMmMwLjIsMC4zLDAuMSwwLjgtMC4xLDEuMWwtMS4yLDEuMmMtMC4zLDAuMy0wLjMsMC43LDAsMWwwLjQsMC40YzAuMywwLjMsMC43LDAuMywxLDBsMS4yLTEuMmMwLjMtMC4zLDAuOC0wLjMsMS4xLTAuMmwxLjIsMC41YzAuNCwwLjEsMC43LDAuNSwwLjcsMC45djEuN2MwLDAuNCwwLjMsMC43LDAuNywwLjdoMC42YzAuNCwwLDAuNy0wLjMsMC43LTAuN1YyNGMwLTAuNCwwLjMtMC44LDAuNy0wLjlsMS4xLTAuNWMwLjMtMC4yLDAuOC0wLjEsMS4xLDAuMWwxLjMsMS4zYzAuMywwLjMsMC43LDAuMywxLDBsMC40LTAuNGMwLjMtMC4zLDAuMy0wLjcsMC0xbC0xLjMtMS4zQzI1LDIxLDI1LDIwLjUsMjUuMSwyMC4ybDAuNC0xLjFjMC4xLTAuNCwwLjUtMC43LDAuOS0wLjdoMS45YzAuNCwwLDAuNy0wLjMsMC43LTAuN3YtMC42QzI5LDE2LjcsMjguNywxNi40LDI4LjMsMTYuNHogTTIzLjgsMTcuNWMwLDIuMi0xLjgsMy45LTMuOSwzLjljLTIuMiwwLTMuOS0xLjgtMy45LTMuOXMxLjctMy45LDMuOS0zLjlDMjIuMSwxMy42LDIzLjgsMTUuMywyMy44LDE3LjV6IiAvPjwvZz48L2c+PC9zdmc+[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBhdGggZD0iTTI4LjMsMTYuNGgtMS45Yy0wLjQsMC0wLjgtMC4zLTAuOS0wLjdsLTAuNC0xLjFjLTAuMi0wLjMtMC4xLTAuOCwwLjItMS4xbDEuMy0xLjNjMC4zLTAuMywwLjMtMC43LDAtMWwtMC40LTAuNGMtMC4zLTAuMy0wLjctMC4zLTEsMGwtMS4zLDEuM2MtMC4zLDAuMy0wLjgsMC4zLTEuMSwwLjFsLTEuMS0wLjVjLTAuNC0wLjEtMC43LTAuNS0wLjctMC45VjkuMWMwLTAuNC0wLjMtMC43LTAuNy0wLjdoLTAuNmMtMC40LDAtMC43LDAuMy0wLjcsMC43djEuN2MwLDAuNC0wLjMsMC44LTAuNywwLjlsLTEuMiwwLjVjLTAuMywwLjItMC44LDAuMS0xLjEtMC4ybC0xLjItMS4yYy0wLjMtMC4zLTAuNy0wLjMtMSwwbC0wLjQsMC40Yy0wLjMsMC4zLTAuMywwLjcsMCwxbDEuMiwxLjJjMC4zLDAuMywwLjMsMC44LDAuMSwxLjFsLTAuNSwxLjJjLTAuMSwwLjQtMC41LDAuNy0wLjksMC43aC0xLjZjLTAuNCwwLTAuNywwLjMtMC43LDAuN3YwLjZjMCwwLjQsMC4zLDAuNywwLjcsMC43aDEuNmMwLjQsMCwwLjgsMC4zLDAuOSwwLjdsMC41LDEuMmMwLjIsMC4zLDAuMSwwLjgtMC4xLDEuMWwtMS4yLDEuMmMtMC4zLDAuMy0wLjMsMC43LDAsMWwwLjQsMC40YzAuMywwLjMsMC43LDAuMywxLDBsMS4yLTEuMmMwLjMtMC4zLDAuOC0wLjMsMS4xLTAuMmwxLjIsMC41YzAuNCwwLjEsMC43LDAuNSwwLjcsMC45djEuN2MwLDAuNCwwLjMsMC43LDAuNywwLjdoMC42YzAuNCwwLDAuNy0wLjMsMC43LTAuN1YyNGMwLTAuNCwwLjMtMC44LDAuNy0wLjlsMS4xLTAuNWMwLjMtMC4yLDAuOC0wLjEsMS4xLDAuMWwxLjMsMS4zYzAuMywwLjMsMC43LDAuMywxLDBsMC40LTAuNGMwLjMtMC4zLDAuMy0wLjcsMC0xbC0xLjMtMS4zQzI1LDIxLDI1LDIwLjUsMjUuMSwyMC4ybDAuNC0xLjFjMC4xLTAuNCwwLjUtMC43LDAuOS0wLjdoMS45YzAuNCwwLDAuNy0wLjMsMC43LTAuN3YtMC42QzI5LDE2LjcsMjguNywxNi40LDI4LjMsMTYuNHogTTIzLjgsMTcuNWMwLDIuMi0xLjgsMy45LTMuOSwzLjljLTIuMiwwLTMuOS0xLjgtMy45LTMuOXMxLjctMy45LDMuOS0zLjlDMjIuMSwxMy42LDIzLjgsMTUuMywyMy44LDE3LjV6IiAvPjwvZz48L2c+PC9zdmc+]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIzMS40LDEyLjYgMzEuNCw4LjcgMjUuOCw4LjciPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNC43LDguNyA5LjEsOC43IDkuMSwxMi42Ij48L3BvbHlsaW5lPjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMjUuOCwyNC44IDMxLjQsMjQuOCAzMS40LDIwLjkiPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSI5LjEsMjAuOSA5LjEsMjQuOCAxNC43LDI0LjgiPjwvcG9seWxpbmU+PC9nPjxyZWN0IHg9IjEzLjciIHk9IjEyLjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyIgd2lkdGg9IjEzLjMiIGhlaWdodD0iOC45IiAvPjwvZz48L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIzMS40LDEyLjYgMzEuNCw4LjcgMjUuOCw4LjciPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNC43LDguNyA5LjEsOC43IDkuMSwxMi42Ij48L3BvbHlsaW5lPjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMjUuOCwyNC44IDMxLjQsMjQuOCAzMS40LDIwLjkiPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSI5LjEsMjAuOSA5LjEsMjQuOCAxNC43LDI0LjgiPjwvcG9seWxpbmU+PC9nPjxyZWN0IHg9IjEzLjciIHk9IjEyLjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyIgd2lkdGg9IjEzLjMiIGhlaWdodD0iOC45IiAvPjwvZz48L3N2Zz4=]
+
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset\{font-size:14px;}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+div.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+span.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+ul.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+li.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+label.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+fieldset.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+button.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+img.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+a.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+svg.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+p.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper a.w-css-reset\{border:0;}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+h1.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:2em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+h2.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.5em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+h3.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.17em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper p.w-css-reset\{margin:1.4em
+0;} #wistia_chrome_29 #wistia_grid_35_wrapper
+a.w-css-reset\{display:inline;} #wistia_chrome_29
+#wistia_grid_35_wrapper span.w-css-reset\{display:inline;}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+svg.w-css-reset\{display:inline;} #wistia_chrome_29
+#wistia_grid_35_wrapper
+ul.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+ol.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+li.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+ul:before.w-css-reset\{display:none} #wistia_chrome_29
+#wistia_grid_35_wrapper ol:before.w-css-reset\{display:none}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+li:before.w-css-reset\{display:none} #wistia_chrome_29
+#wistia_grid_35_wrapper ul:after.w-css-reset\{display:none}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+ol:after.w-css-reset\{display:none} #wistia_chrome_29
+#wistia_grid_35_wrapper li:after.w-css-reset\{display:none}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+label.w-css-reset\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;float:none;outline:none} #wistia_chrome_29 #wistia_grid_35_wrapper
+button.w-css-reset\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;border:0;border-radius:0;outline:none;position:static}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+img.w-css-reset\{border:0;display:inline-block;vertical-align:top;border-radius:0;outline:none;position:static}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset
+button::-moz-focus-inner\{border: 0;} #wistia_chrome_29
+#wistia_grid_35_wrapper .w-css-reset-tree \{font-size:14px;}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+div\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+span\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+ul\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+li\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+label\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+fieldset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+button\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+img\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+a\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+svg\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+p\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+a\{border:0;} #wistia_chrome_29 #wistia_grid_35_wrapper
+.w-css-reset-tree
+h1\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:2em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+h2\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.5em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+h3\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.17em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+p\{margin:1.4em 0;} #wistia_chrome_29 #wistia_grid_35_wrapper
+.w-css-reset-tree a\{display:inline;} #wistia_chrome_29
+#wistia_grid_35_wrapper .w-css-reset-tree span\{display:inline;}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+svg\{display:inline;} #wistia_chrome_29 #wistia_grid_35_wrapper
+.w-css-reset-tree
+ul\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+ol\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+li\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+ul:before\{display:none} #wistia_chrome_29 #wistia_grid_35_wrapper
+.w-css-reset-tree ol:before\{display:none} #wistia_chrome_29
+#wistia_grid_35_wrapper .w-css-reset-tree li:before\{display:none}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+ul:after\{display:none} #wistia_chrome_29 #wistia_grid_35_wrapper
+.w-css-reset-tree ol:after\{display:none} #wistia_chrome_29
+#wistia_grid_35_wrapper .w-css-reset-tree li:after\{display:none}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+label\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;float:none;outline:none} #wistia_chrome_29 #wistia_grid_35_wrapper
+.w-css-reset-tree
+button\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;border:0;border-radius:0;outline:none;position:static}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+img\{border:0;display:inline-block;vertical-align:top;border-radius:0;outline:none;position:static}
+#wistia_chrome_29 #wistia_grid_35_wrapper .w-css-reset-tree
+button::-moz-focus-inner\{border: 0;} #wistia_chrome_29
+#wistia_grid_35_wrapper
+.w-css-reset-max-width-none-important\{max-width:none!important}
+#wistia_chrome_29 #wistia_grid_35_wrapper
+.w-css-reset-button-important\{border-radius:0!important;color:#fff!important;}
+
+[[wistia_grid_35_front]]
+
+[[wistia_grid_35_top_inside]]
+[[wistia_grid_35_top]]
+
+[[wistia_grid_35_bottom_inside]]
+[[wistia_grid_35_bottom]]
+
+[[wistia_grid_35_left_inside]]
+[[wistia_grid_35_left]]
+
+[[wistia_grid_35_right_inside]]
+[[wistia_grid_35_right]]
+
+[[wistia_grid_35_below]]
+
+#wistia_grid_35_wrapper\{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;font-family:Arial,sans-serif;font-size:14px;height:100%;position:relative;text-align:left;width:100%;}
+#wistia_grid_35_wrapper
+*\{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+#wistia_grid_35_above\{position:relative;}
+#wistia_grid_35_main\{display:block;height:100%;position:relative;}
+#wistia_grid_35_behind\{height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_grid_35_center\{height:100%;overflow:hidden;position:relative;width:100%;}
+#wistia_grid_35_front\{display:none;height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_grid_35_top_inside\{position:absolute;left:0;top:0;width:100%;}
+#wistia_grid_35_top\{width:100%;position:absolute;bottom:0;left:0;}
+#wistia_grid_35_bottom_inside\{position:absolute;left:0;bottom:0;width:100%;}
+#wistia_grid_35_bottom\{width:100%;position:absolute;top:0;left:0;}
+#wistia_grid_35_left_inside\{height:100%;position:absolute;left:0;top:0;}
+#wistia_grid_35_left\{height:100%;position:absolute;right:0;top:0;}
+#wistia_grid_35_right_inside\{height:100%;right:0;position:absolute;top:0;}
+#wistia_grid_35_right\{height:100%;left:0;position:absolute;top:0;}
+#wistia_grid_35_below\{position:relative;}
+
+'''''
+
+=== Troubleshooting
+
+[[inline-not-appearing]]
+====== My inline form appears sporadically or not at all on my Shopify storefront!
+
+If you are unable to see your installed inline form, it is likely that
+another script on your storefront is competing with Sendlane's
+https://help.sendlane.com/article/639-how-to-open-a-sendlane-form-programmatically-and-listen-to-sendlane-form-activity-events[pusher.js
+script], which powers
+https://help.sendlane.com/article/417-how-to-use-beacon-with-shopify[Beacon]
+and Sendlane forms. If you installed Beacon before May 2024, you may
+also have multiple instances of the `+pusher.js+` script installed on
+your website, which can cause issues such as inline forms not appearing.
+
+First, check to ensure your store only has one instance of the
+`+pusher.js+` script:
+
+. Open a Chrome window
+. Copy `+pusher.js+` to your clipboard
+. Visit your store
+. Right click anywhere on the page
+. Click *Inspect*
+. Press CMD + F on macOS or CTRL + F on Windows
+. Paste `+pusher.js+` into the search box
+. If you find more than one instance of the `+pusher.js+` script
+(`+<script src="https://sendlane.com/scripts/pusher.js" async></script>+`)
+remove all but one
+
+Next, if you still can't see your form and are sure your store only has
+one pusher.js script installed, you can try moving the pusher.js script
+source line of Beacon to the bottom of the page:
+
+. Login to Shopify
+. Click *Online Store*
+. Click *Themes*
+. Click the *three dot menu*
+. Click *Edit Code*
+. Search for `+header.liquid+`
+. Click into the file and locate your Beacon script, which should be at
+the very top of your
+fileimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667b2129e1989867dcefe60e/file-ppJaBqrbEa.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667b2129e1989867dcefe60e/file-ppJaBqrbEa]
+. Highlight the script source line, which is line 4 in the example
+belowimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667b21485173914f806c2360/file-zlmXX6uB9f.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667b21485173914f806c2360/file-zlmXX6uB9f]
+. Press CMD + X on macOS or CTRL + X on Windows to cut the script source
+line
+. Search for your theme.liquid file
+. Click into the `+theme.liquid+` file
+. Press CMD + F on macOS or CTRL + F on Windows to open the search pane
+. Search for `+</body>+`
+. Paste the line you cut in step 9 just before the `+</body>+`
+tagimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667b22151f3fa9421e288651/file-CZcNQt3sZk.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667b22151f3fa9421e288651/file-CZcNQt3sZk]
+
+If you've followed both troubleshooting efforts described above and are
+still experiencing issues with your inline form, please contact
+Sendlane's 24/7 product support or your customer success manager.
+
+'''''
+
+*I don't see my Pop-Up style form on my Shopify storefront!*
+
+There are a few common issues that can cause your Pop-Up to not appear:
+
+. *Other form snippets.* If you've installed other forms in your Shopify
+store in the past, make sure all snippets are removed. Competing
+installation codes may be causing your Sendlane form to not appear.
+. *Your form is set to Draft.* Make sure your form is set to Live and
+any pending changes have been published
+. *Your form was installed in a different store*. To confirm that your
+form is installed in the intended store:
+.. Copy the form key from the installation code on the summary page
+.. Navigate to the public view of your store
+.. Right click anywhere on the page
+.. Click Inspect
+.. Paste the form key in the search bar
+.. If the form key appears, the form has been installed on the correct
+site. Proceed with other troubleshooting measures. If the form key does
+NOT appear, follow the instructions above to install your form in the
+correct store.
+
+If you still don't see your form, reach out to your Customer Success
+Manager or our 24/7 product support team!

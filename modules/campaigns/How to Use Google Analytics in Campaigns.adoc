@@ -1,0 +1,106 @@
+Google Analytics gives you a simple way to measure the effectiveness of
+your email marketing campaigns through a full picture of your contact's
+activity. 
+
+If you are already using Google Analytics on your website, you have the
+ability to enable Google Analytics tracking links automatically in your
+Sendlane campaigns!
+
+'''''
+
+=== Before Getting Started
+
+Please be sure that you already have Google Analytics setup with your
+website.
+
+If you don't already have Google Analytics in place, or you would like
+to start using Google Analytics for your website, you can get more
+information and sign up for a free account
+https://marketingplatform.google.com/about/analytics/[here]. 
+
+'''''
+
+=== Enabling Google Analytics 
+
+Google Analytics tracking is super easy to add to each Campaign in
+Sendlane!
+
+. From the _Campaign Settings_ page, toggle the *_Google Analytics_*
+setting
+onimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e90abc004286364bc982eb5/file-KAxaRDPz3k.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e90abc004286364bc982eb5/file-KAxaRDPz3k]
+. Enter the campaign name for your email (in Google Analytics, this
+is utm_campaign=)
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e90acba2c7d3a7e9aeac323/file-0ddZmCnEfV.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e90acba2c7d3a7e9aeac323/file-0ddZmCnEfV]
+. Click *_Next_* to continue designing the rest of your campaign's
+message then *Save and Continue* to move on
+. Once you schedule your campaign, any links that you add in your
+campaign will be tracked by Google Analytics
++
+====== Please Note
+
+Only links that direct to pages on your website that have the Google
+Analytics script installed will be tracked by Google Analytics
++
+When you view your campaign in Google Analytics, the Source will be
+'newsletter', the Medium will be 'email', and the Campaign will be the
+title you entered
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d79740904286364bc8f0256/file-WQBH4GWBaL.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d79740904286364bc8f0256/file-WQBH4GWBaL]
+
+'''''
+
+=== Advanced Google Analytics Tracking
+
+If you want to fully customize the campaign parameters in your links,
+you will need to use custom UTM (Urchin Tracking Module) tracking. 
+
+You can learn more about UTMs and custom URLs from the Google Analytics
+link:%20https://support.google.com/analytics/answer/1033863?hl=en[Help
+Center].
+
+Once you are ready to set up your custom UTM tracking link, you can use
+https://ga-dev-tools.appspot.com/campaign-url-builder/[Google's URL
+Builder] which will generate a custom campaign URL that you can add to
+the links in your campaigns. 
+
+====== Please Note
+
+If you are using a custom URL you need to toggle the Sendlane Google
+Analytics off - the custom URL will be used instead. If you combine
+Sendlane's Google Analytics with custom UTM tracking, the reporting may
+be incorrect. We highly recommend only using *one* type of Google
+Analytics tracking.
+
+'''''
+
+=== Troubleshooting
+
+* Make sure you have the Google Analytics script installed in your
+website where you are linking your URLs to
+* New Google Analytics accounts may take a few days to start populating
+data
+* Your Google Analytics account has to be set up and configured
+*_before_* you send out your campaign; Google Analytics doesn't work
+retroactively
+
+===== Custom URLs
+
+* You can test your Custom UTM link by copying and pasting the URL you
+created into your web browser's address bar and pressing enter. If your
+link is set up properly you should see a record of this visit in your
+Google Analytics account
+* Any link you create cannot contain spaces
+* The server of your website has to be able to process the parameters in
+the link, if not you will receive a 404 error
+
+'''''
+
+=== TL;DR
+
+[.underline]#Sendlane Google Analytics#: New Campaign → Toggle Google
+Analytics On → Fill in Campaign Title → Next → Save and Continue → 
+Schedule
+
+[.underline]#Advanced Google Analytics#: New Campaign → Next → Insert
+Custom URL into links in campaign → Save and Continue → Schedule

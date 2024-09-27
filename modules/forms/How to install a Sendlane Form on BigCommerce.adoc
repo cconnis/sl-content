@@ -1,0 +1,92 @@
+==== Overview
+
+Sendlane Forms can be installed in your BigCommerce store with the
+form’s lightweight script. Read on to learn how to find a form’s
+installation code and guidance on where to install forms on your
+BigCommerce store.
+
+==== In this guide
+
+* link:#access-code[Access the Sendlane Form installation code]
+* link:#pop-up[Install a pop up style form]
+* link:#inline[Install an inline form]
+
+'''''
+
+[[access-code]]
+=== Access the Sendlane Form installation code
+
+To access a form’s installation code and copy the script to your
+clipboard:
+
+. Click the Forms icon
+. In the Actions column, click the edit icon
+. Click *Design*
+. Click *Summary*
+. Under Form Installation Code, click *Copy Code*
+
+[[pop-up]]
+=== Install a pop up style Sendlane form on BigCommerce
+
+You can paste a pop up form’s installation code in an HTML block in your
+BigCommerce theme’s global region.
+
+The form’s installation code is the only code required to make your form
+appear on your website. See
+https://help.sendlane.com/article/627-how-to-manage-sendlane-forms-activation-status[How
+to manage Sendlane Forms’ activation status] for information on form
+publication/activation statuses.
+
+===== 🚨 All forms require their own unique installation codes to be added to your website.
+
+To install a pop up style form in your BigCommerce store:
+
+. Log in to BigCommerce
+. Click *Storefront*
+. Click *Customize*
+. Click and drag an *HTML Block* into the *Global Region* in your theme
+preview
+. Paste your form installation code
+. Click *Save HTML*
+. Click *Publish*
+
+[[inline]]
+=== Install an inline style Sendlane form on BigCommerce
+
+You can paste an inline form’s installation code an HTML block anywhere
+you’d like the inline form to appear in your BigCommerce theme.
+
+The form’s installation code is the only code required to make your form
+appear on your website. See
+https://help.sendlane.com/article/627-how-to-manage-sendlane-forms-activation-status[How
+to manage Sendlane Forms’ activation status] for information on form
+publication/activation statuses.
+
+===== 🚨 All forms require their own unique installation codes to be added to your website.
+
+To install an inline style form in your BigCommerce store:
+
+. Log in to BigCommerce
+. Click *Storefront*
+. Click *Customize*
+. Click and drag an *HTML Block* wherever you’d like your inline form to
+appear
+. Paste your form installation code
+. Click *Save HTML*
+. Click *Publish*
+
+== *Troubleshooting*
+
+*I don't see my Pop-Up on my BigCommerce storefront!*
+
+There are a few common issues that can cause your Pop-Up to not appear:
+
+. *Remove all other form snippets* If you've installed other forms on
+your BigCommerce storefront in the past, make sure all snippets are
+removed. Competing installation codes may be causing your Sendlane form
+to not appear.
+. *Your form is set to Draft* Make sure your form is set to Live and any
+pending changes have been publish
+
+If you still don't see your form, reach out to your Customer Success
+Manager or our 24/7 product support team!

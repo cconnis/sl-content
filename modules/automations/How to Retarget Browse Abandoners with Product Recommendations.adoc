@@ -1,0 +1,121 @@
+Website tracking is one of the very best ways to gather data about the
+behavior of your audience. By tracking the behavior of site visitors,
+you can easily trigger an
+https://help.sendlane.com/article/73-automations[Automation] to follow
+up with every contact via email, and encourage them to convert!
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+https://help.sendlane.com/article/72-beacon[Install Beacon] on your
+store's website
+
+https://help.sendlane.com/article/72-beacon#event-tracking[Create Beacon
+events] for each product you'd like to use as a browse retarget
+
+[[what-is-beacon]]
+=== 
+
+[[how]]
+===== 🙋 How Does the Beacon Pixel Work?
+
+Sendlane’s Beacon tracking pixel collects information about your
+Contacts' pageview and purchase activity. For the pixel to begin
+tracking, the viewer must opt into your marketing emails and then open
+an email from you. The Beacon tracking pixel cannot identify anonymous
+viewers.
+
+Once tracking begins, please allow up to 24 hours for reporting to
+populate accurately
+
+1::
+  Head to the https://app.sendlane.com/beacon[Beacon tab of your Account
+  page], click *Create Event* > Enter
+  a *Name* and *Description* > *Save* > *Code icon* > *Copy Code*. Paste
+  the script into the header of any page you want to use to trigger your
+  Automation
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62a2299ba2c316231c20488d/file-M8R4vfuA8e.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62a2299ba2c316231c20488d/file-M8R4vfuA8e]
+
+2::
+  https://help.sendlane.com/article/73-automations#create[Create an
+  Automation] using an
+  https://help.sendlane.com/article/448-automation-triggers#standard[Event
+  Triggered trigger] and select the event(s) you've created for your
+  product page(s)
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6387bcb9f4bebb295ed7b8b9/file-xQBA3dRRWt.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6387bcb9f4bebb295ed7b8b9/file-xQBA3dRRWt]
+  +
+  Add an email node to your Automation, then in the Content tab of the
+  email builder, click or drag an abandoned cart block where you'd like
+  your product information to appear. Only one abandoned cart block is
+  allowed per email.
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6393a51fd157d3747b2d86c5/file-99LGeO0C6O.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6393a51fd157d3747b2d86c5/file-99LGeO0C6O]
+  +
+  Continue building your Automation by adding other
+  https://help.sendlane.com/article/73-automations#communications[actions
+  and communications]. Depending on your marketing goals and objectives
+  are, we recommend sending three emails over the next three days to
+  encourage contacts to come back and visit your website!
+
+3::
+  Add a Goal node at the end of your Automation to check whether
+  Contacts made a purchase in your store:
+  +
+  . *Goal Name* Enter a descriptive name for your Goal
+  . *Conditions* Select conditions to trigger your Goal
+  . *Go to this action if goal is reached* Select a step in your
+  Automation to send Contacts to when they meet your Goal's conditions
+  . *If goal is not met* Select an option for Contacts who have not met
+  your Goal
+  .. *Continue* means the Contact will proceed to the next node in the
+  Automation
+  .. *Wait* means the Contact will wait at this step indefinitely until
+  the goal is reached
+  .. End means the Goal will keep checking for met conditions until the
+  max time has passed
+  . *Max time to check for conditions* Select a length of time to check
+  for conditions 
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6387bfa3f4bebb295ed7b8c1/file-3RzqnMtYUw.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6387bfa3f4bebb295ed7b8c1/file-3RzqnMtYUw]
+  +
+  Once you have completed your Automation, be sure to activate it!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6387c0845ccf77301bc55748/file-pdyOzkMQhL.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6387c0845ccf77301bc55748/file-pdyOzkMQhL]
+
+=== Troubleshooting
+
+[[not-sending]]
+====== My Automation is not sending to customers who have viewed my product!
+
+Customers will only receive browse abandonment emails from your store
+after:
+
+. They have opted into marketing emails from you, AND
+. They have clicked on a link in a marketing email from you
+
+If your customer has opted in and clicked on at least one link, and
+there is a Beacon event set up for the product that was viewed, please
+reach out to your Customer Success Manager or our 24/7 Product Support
+team for further troubleshooting assistance.
+
+====== The abandoned cart block isn't available!
+
+The abandoned cart block may not appear in your elements sidebar for two
+common reasons:
+
+. Your eCommerce integration is not set up correctly. Review your
+eCommerce store's integration with Sendlane for possible connection
+issues.
+. You already added an abandoned cart block to your email. Only one
+abandoned cart block is allowed per email.
+
+[[not-firing]]
+====== A Contact abandoned a product view and move through the Automation!
+
+The most common reason Contacts who browse and do not move through your
+browse abandonment Automation is that they are
+https://help.sendlane.com/article/72-beacon#notes[browsing anonymously].
+Tracking requires non-anonymous browsing in order to trigger the
+Automation.

@@ -1,6 +1,6 @@
 name: content
 title: Content
-version: 1
+version: "1.0"
 start_page: custom-integration:start.adoc
 asciidoc:
   attributes:

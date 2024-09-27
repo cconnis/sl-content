@@ -1,0 +1,80 @@
+https://createform.com/[CreateForm] is an online form builder that
+allows you to create beautiful forms with no coding required.
+
+By integrating CreateForm with Sendlane, leads collected by your forms
+can be funneled directly to your Lists in Sendlane.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://createform.com/[CreateForm account] with a form created.
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so CreateForm knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Integrating CreateForm and Sendlane
+
+. Login to CreateForm and navigate to the form you want to integrate
+. Click
+*_Connections_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1f01e04286333a2640c48/file-nTyut9VYFc.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1f01e04286333a2640c48/file-nTyut9VYFc]
+. Click *_Let's change
+that..._*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1f0242c7d3a383712faf8/file-6Ywb9AeUlc.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1f0242c7d3a383712faf8/file-6Ywb9AeUlc]
+. Click *_Yes! Let's do
+it!_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1f02b2c7d3a383712faf9/file-5N4gbDUnhA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1f02b2c7d3a383712faf9/file-5N4gbDUnhA]
+. Search for Sendlane in the list of integrations, then click
+*_Connect_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1f0342c7d3a383712fafa/file-HG3qVekMBz.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1f0342c7d3a383712fafa/file-HG3qVekMBz]
+. Name your account, then enter your Sendlane username/email, password,
+and
+Subdomainimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1f03a2c7d3a383712fafb/file-dN3EC2zpby.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1f03a2c7d3a383712fafb/file-dN3EC2zpby]
+. From the dropdown box, select the List in Sendlane with which you want
+this form to integrate, and click
+*_Save_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1f04004286333a2640c49/file-mwADEEYetD.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1f04004286333a2640c49/file-mwADEEYetD]
+
+Your integration is now complete! Leads captured through your CreateForm
+form will now appear in your desired Sendlane List!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to CreateForm, so we're only able to provide
+limited troubleshooting support. However, if you  _do_ need help,
+the CreateForm team is just a few clicks away!
+
+* https://createform.com/support/email[Connect] with the CreateForm team
+*  Visit the CreateForm https://createform.com/support[Help Center]
+
+'''''
+
+==== Additional CreateForm Resources
+
+https://createform.com/[Sign up for CreateForm] |
+https://createform.com/tour[Tour] | https://createform.com/signup[Get
+Started]
+
+==== Additional Sendlane Resources
+
+* https://secure.helpscout.net/mailbox/234431f7d3885ede/2920793/[6
+Powerful Lead Magnets Proven to Engage and Capture Leads]
+* https://www.sendlane.com/blog-posts/10-surefire-ways-to-get-more-opt-ins-grow-your-ecommerce-email-list[10
+Surefire Ways to Get More Opt-ins & Grow Your eCommerce Email List]
+
+'''''
+
+=== TL;DR
+
+Login to CreateForm → Go to form →  _Connections_ → _Let's Change
+That_ →__Yes! Let's do it!__ → Search for Sendlane, click ** _Connect_ →
+Enter Sendlane username/email, password, and Subdomain → Select
+List__ __→ _Save_

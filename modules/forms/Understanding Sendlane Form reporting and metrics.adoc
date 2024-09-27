@@ -1,0 +1,77 @@
+==== Overview
+
+The Sendlane Forms page displays each form’s number of impressions,
+click through rate, email conversion rate, SMS conversion rate, and the
+total amount of lifetime value for Contacts who signed up for your
+content via the form. Read on to learn more about how Sendlane
+calculates each metric!
+
+==== In this guide
+
+* link:#impressions[Impressions]
+* link:#impressions[Click through rate]
+* link:#impressions[Email conversion rate]
+* link:#impressions[SMS conversion rate]
+* link:#impressions[Lifetime value]
+
+'''''
+
+===== Impressions
+
+The Impressions metric represents the number of times your form has
+loaded on the page. Impression metrics are not recorded for inline
+forms, and
+https://help.sendlane.com/article/696-how-to-create-a-form-teaser[teaser
+pages] do not record impressions.
+
+===== Click through rate (CTR)
+
+Clicks are counted when a user clicks on a form field, a form button, or
+when copying and pasting text from a form. Clicks are not unique;
+multiple clicks per website visitor will be recorded. A form’s click
+through rate (CTR) is calculated as total clicks divided by total
+impressions.
+
+===== Email conversion rate (Email CVR)
+
+A form’s email conversion rate (Email CVR, sometimes also called “email
+submit rate”) is calculated as total email addresses collected divided
+by total impressions.
+
+===== SMS conversion rate (SMS CVR)
+
+A form’s SMS conversion rate (SMS CVR, sometimes also called “SMS submit
+rate”) is calculated as total phone numbers collected divided by total
+impressions.
+
+===== Lifetime value (LTV)
+
+A form’s lifetime value (LTV) is the total amount of lifetime value for
+Contacts who subscribed to your account via each form.
+
+A Contact’s LTV is counted in the LTV column of every form they have
+submitted. Let’s look at an example of how Contacts signing up for
+multiple forms affects forms’ LTV calculation.
+
+This table represents the LTV of a Sendlane user’s forms before Contact
+A, who has an LTV of $200, submits any forms:
+
+[cols=",",options="header",]
+|===
+|Form |LTV
+|Form A |$1,000
+|Form B |$1,500
+|Form C |$750
+|===
+
+This table represents the LTV of the same Sendlane user’s forms after
+Contact A has submitted forms A and C, adding $200 to the attributed LTV
+for both Form A and Form C:
+
+[cols=",",options="header",]
+|===
+|Form |LTV
+|Form A |$1,200
+|Form B |$1,500
+|Form C |$950
+|===

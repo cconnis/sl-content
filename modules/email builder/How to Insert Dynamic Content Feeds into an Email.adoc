@@ -1,0 +1,166 @@
+An RSS (aka Really Simple Syndication) Feed is an easy way to share the
+most up-to-date content you've published on your blog or website.
+
+With Sendlane, you have access to a built-in email feed that you can use
+to send newsletter updates to your audience -- automatically!
+
+In this article we'll cover:
+
+* link:#link[linking your feed to a campaign]
+* link:#build[building an RSS-based campaign]
+
+'''''
+
+=== Before Getting Started
+
+Please be sure you have an active
+https://rss.com/blog/how-to-create-an-rss-feed/[RSS feed set up], and
+know the URL for that feed.
+
+'''''
+
+[[link]]
+=== Linking an RSS Feed to a Campaign
+
+. Click *_New Campaign_* inside of the _Campaigns_ tab
+. Enter a name for your campaign and check the *RSS Feed*
+boximage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f470c95c9e77c0016eb1f0a/file-NLZNcMRCvj.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f470c95c9e77c0016eb1f0a/file-NLZNcMRCvj]
+. Choose the format of your feed (either RSS or JSON) and enter the
+URLimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e7d14992c7d3a7e9ae9dd57/file-cCQ4xb5529.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e7d14992c7d3a7e9ae9dd57/file-cCQ4xb5529]
+. Click *_Next: Audience_* to continue the process of building your
+campaign, and move on to the next section!
+
+'''''
+
+[[build]]
+=== Building an RSS-Based Campaign
+
+With the Sendlane RSS feed reader, you can display the following
+properties for each post: +
+
+* title
+* description
+* content
+* image - html <img> tag
+* image_url
+* author
+* link
+* date
+
+RSS works in both of our email builder formats (drag-and-drop or HTML)
+and uses the same syntax. To implement this, when inside of the Email
+Builder drag an HTML block into your email:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f90b23746e0fb001798f5be/file-zLQLvxGpNt.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f90b23746e0fb001798f5be/file-zLQLvxGpNt]
+
+Next, place the code necessary for printing the proper attributes you
+want to display inside the HTML content block. Below we have listed all
+of the available attributes to choose from.
+
+===== Printing Details of a Single Post
+
+_Use ‘.0’ for the first post, ‘.1’ for the second post, etc. in the
+following syntax (keeping only the items you need):_
+
+\{\{ RSS.items.0.title }}
+
+\{\{ RSS.items.0.description }}
+
+\{\{ RSS.items.0.content }}
+
+\{\{ RSS.items.0.image }}
+
+\{\{ RSS.items.0.image_url }}
+
+\{\{ RSS.items.0.author }}
+
+\{\{ RSS.items.0.link }}
+
+\{\{ RSS.items.0.date }}
+
+===== Printing a Loop of Posts
+
+_Use the following syntax (keeping only the items you need):_
+
+\{% for item in RSS.items %}
+
+    \{\{ item.title }}
+
+    \{\{ item.description }}
+
+    \{\{ item.content }}
+
+    \{\{ item.image }}
+
+    \{\{ item.image_url }}
+
+    \{\{ item.author }}
+
+    \{\{ item.link }}
+
+    \{\{ item.date }}
+
+\{% endfor %}
+
+====== Please Note
+
+By default, the feed grabs up to 20 items, but this limit can be
+increased if needed.
+
+===== Slicing Your Content
+
+To only print 3 items instead of 5, use the ‘slice’ command:
+
+\{% for post in JSON|slice(0,3) %}
+
+===== Randomizing Your Content
+
+To pick a few "random" posts from your feed:
+
+\{% set post1, post2 = random(9), random(9) %}
+
+\{\{ RSS.items[post1].title }}
+
+\{\{ RSS.items[post1].image }}
+
+\{\{ RSS.items[post2].title }}
+
+\{\{ RSS.items[post2].image }}
+
+'''''
+
+=== Troubleshooting
+
+* *Email Builder Errors* - Check your HTML code! It could be that
+there's a typo, a formatting error, or something as simple as a tag that
+wasn't closed!
+* *Content isn't displaying as expected* - Are you reviewing
+a _Completed_ campaign? RSS feed content displays in the Preview (before
+sending) as well as once the email lands in your inbox, but you'll see
+the HTML code when viewing a _Completed_ campaign from inside of your
+Sendlane account.
+* *Images appearing as links* - It's possible that when you use
+enclosure tags to display images, you will see a link to where the image
+is hosted instead. Please make sure your web developer sets up your feed
+to show each item's image using <media:content> RSS tags. Please
+https://www.rssboard.org/media-rss[click here] to see how to set up your
+feed.
+
+If you hit any other roadblocks, you can get in touch with our team of
+email marketing automation experts mailto:support@sendlane.com[right
+here]!
+
+'''''
+
+=== TL;DR
+
+Before You Get Started →
+https://rss.com/blog/how-to-create-an-rss-feed/[RSS Feed Set Up]
+
+[.underline]#Linking Your Feed To A Campaign:# → Go to New Campaign
+inside Campaigns Tab → Enter name for Campaign and check the RSS Feed
+box → Choose the format of your Feed (RSS or JSON) → Enter URL → Click
+Next: Audience & Continue
+
+[.underline]#Building An RSS-Based Campaign:# → Choose the Properties
+you want to Display and Choose how you want to Display them

@@ -1,0 +1,94 @@
+With https://www.responsesuite.com/a/685776413669413d[ResponseSuite],
+you can use the intelligence of surveys to get more of your customers
+buying more of your products, more often.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+https://www.responsesuite.com/a/685776413669413d[active account with
+ResponseSuite].
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_* → *_API_*.
+
+You'll also want to be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so ResponseSuite knows where to place
+your new leads and contacts!
+
+'''''
+
+=== Connecting ResponseSuite and Sendlane
+
+. From your ResponseSuite dashboard, select *_Integration Setup_* on the
+left hand side and choose *_Sendlane_* from the list of Marketing
+Integrations
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9cd4fc2c7d3a7e9ae23e37/file-SB17QUQIje.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9cd4fc2c7d3a7e9ae23e37/file-SB17QUQIje]
+. Enter your Sendlane API Key, Hash Key and
+Subdomainimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9e62422c7d3a7e9ae251b0/file-pABVobx1if.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9e62422c7d3a7e9ae251b0/file-pABVobx1if]
+.  Click _Authorise_ and__ __you're all set! The integration between
+ResponseSuite and Sendlane is fully connected!
+
+'''''
+
+=== 
+
+=== Connecting a ResponseSuite Survey to a Sendlane List
+
+Now that the integration is connected, be sure you activate it for each
+survey you want to use!
+
+. When creating a survey, in the *_Settings_* step choose
+*_Integrations_* from the left side and choose your Sendlane integration
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9cd55304286364bc902472/file-MzirJQHPWP.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9cd55304286364bc902472/file-MzirJQHPWP]
+. Then, under _Trigger lists and tags in Sendlane_ choose the Sendlane
+list that you'd like your contacts subscribed to. You can also choose to
+add a tag to that contact to identify a specific survey or answer to a
+question on a survey!
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9cd5602c7d3a7e9ae23e3f/file-Kbyp4mQ80w.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9cd5602c7d3a7e9ae23e3f/file-Kbyp4mQ80w]
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to ResponseSuite, so we're only able to
+provide limited troubleshooting support. However, if you  _do_ need
+help, the ResponseSuite team is just a few clicks away!
+
+* Visit
+https://blog.responsesuite.com/responsesuite-user-training-academy/[ResponseSuite's
+tutorials page]
+* Visit https://tiapos.freshdesk.com/support/solutions[ResponseSuite's
+support page]
+
+'''''
+
+=== Additional ResponseSuite Resources
+
+https://www.responsesuite.com/a/685776413669413d[Sign up for
+ResponseSuite]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/ask-for-feedback-get-a-response[How
+to Ask For Feedback In Your Emails...and Actually Get A Response!]
+* https://www.sendlane.com/blog-posts/product-recommendations-emails-the-key-to-unlocking-369-boost-in-revenue-when-done-right[Product
+Recommendation Emails: The Key to Unlocking a 369% Boost In Revenue When
+Done Right]
+
+'''''
+
+=== TL;DR
+
+[.underline]#Integrating:# _Integration Setup_ → __Sendlane __→ Enter
+Subdomain, API Key and Hash Key → _Authorise_
+
+[.underline]#Connecting Survey:#_ Settings_ → _Integrations_ → Sendlane
+integration → __Trigger lists and tags in Sendlane __→ Choose list

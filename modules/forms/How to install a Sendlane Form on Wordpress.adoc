@@ -1,0 +1,107 @@
+==== Overview
+
+Sendlane Forms can be installed in your Wordpress site with the form’s
+lightweight script. Read on to learn how to find a form’s installation
+code and guidance on where to install forms on your Wordpress site.
+
+==== In this guide
+
+* link:#plugin[Install the Insert Headers and Footers Wordpress plugin]
+* link:#access-code[Access the Sendlane Form installation code]
+* link:#pop-up[Install a pop up style Sendlane form on Wordpress]
+* link:#inline[Install an inline style Sendlane form on Wordpress]
+
+'''''
+
+[[beacon]]
+=== Ensure Beacon is installed
+
+Sendlane Forms requires
+https://help.sendlane.com/article/385-how-to-use-beacon-with-wordpress[Beacon]
+to be installed on your website before any site tracking data can be
+collected for your forms. Ensure Beacon is installed before proceeding
+with form installation.
+
+[[plugin]]
+=== Install the Insert Headers and Footers Wordpress plugin
+
+A Wordpress plugin called Insert Headers and Footers is required to
+install pop up style forms on a Wordpress website. To install the
+plugin:
+
+. Download the
+https://wordpress.org/plugins/insert-headers-and-footers/[Insert Headers
+and Footers plugin]
+. Log in to your Wordpress site
+. In the left sidebar, hover over Plugins and click *Add New*
+. In the .zip format section, click Choose File
+. Select the Insert Headers and Footers plugin file you downloaded in
+step one
+. When the plugin has finished loading, click *Activate Plugin*
+
+[[access-code]]
+=== Access the Sendlane Form installation code
+
+To access a form’s installation code and copy the script to your
+clipboard:
+
+. Click the Forms icon
+. In the Actions column, click the edit icon
+. Click *Design*
+. Click *Summary*
+. Under Form Installation Code, click *Copy Code*
+
+[[pop-up]]
+=== Install a pop up style Sendlane form on Wordpress
+
+You can paste a pop up style form’s installation code into your
+Wordpress website’s header using the Insert Headers and Footers plugin.
+
+The form’s installation code is the only code required to make your form
+appear on your website. See
+https://help.sendlane.com/article/627-how-to-manage-sendlane-forms-activation-status[How
+to manage Sendlane Forms’ activation status] for information on form
+publication/activation statuses.
+
+===== 🚨 All forms require their own unique installation codes to be added to your website.
+
+To install a pop up style form in your Wordpress site:
+
+. Log in to Wordpress
+. In the left sidebar, hover over Settings and click Insert Headers and
+Footers
+. Paste your installation code in the Scripts in Header section
+. Click Save
+
+[[inline]]
+=== Install an inline style Sendlane form on Wordpress
+
+You can paste an inline form’s installation code anywhere you’d like it
+to appear on your Wordpress site.
+
+The form’s installation code is the only code required to make your form
+appear on your website. See
+https://help.sendlane.com/article/627-how-to-manage-sendlane-forms-activation-status[How
+to manage Sendlane Forms’ activation status] for information on form
+publication/activation statuses.
+
+===== 🚨 All forms require their own unique installation codes to be added to your website.
+
+To install an inline style form in your Wordpress site, paste the
+installation code on any page you’d like the form to appear on.
+
+== *Troubleshooting*
+
+*I don't see my Pop-Up on my Wordpress site!*
+
+There are a few common issues that can cause your Pop-Up to not appear:
+
+. *Remove all other form snippets* If you've installed other forms on
+your Wordpress storefront in the past, make sure all snippets are
+removed. Competing installation codes may be causing your Sendlane form
+to not appear.
+. *Your form is set to Draft* Make sure your form is set to Live and any
+pending changes have been publish
+
+If you still don't see your form, reach out to your Customer Success
+Manager or our 24/7 product support team!

@@ -1,0 +1,156 @@
+Recover potentially lost sales with Sendlane's abandoned checkout
+Automation trigger for BigCommerce! Follow the instructions below to set
+up an abandoned checkout Automation for your BigCommerce store.
+
+[[bc-ca-bgs]]
+===== 🚦 Before Getting Started
+
+Check out our guides to
+https://help.sendlane.com/article/454-integrate-bigcommerce-and-sendlane[integrating
+BigCommerce and Sendlane] and
+https://help.sendlane.com/article/471-how-to-collect-consent-for-sms-messaging-with-bigcommerce[collecting
+SMS consent with BigCommerce]! 
+
+https://support.bigcommerce.com/s/article/Using-the-Abandoned-Cart-Saver?language=en_US[Disable
+BigCommerce Abandoned Cart Saver] if it is turned on
+
+[[cart-links]]
+===== 🚨 BigCommerce abandoned checkouts will only be reconstructed once
+
+* BigCommerce will only reconstruct Contacts' abandoned checkouts the
+first time they click the link:#blocks[abandoned cart block]. If
+Contacts click the abandoned cart block a second time, they will see an
+empty cart.
+
+1::
+  Create a new Automation
+  +
+  . Click *Automations*
+  . ****Click *New Automation*
+  . ****Click *Start From Scratch*
+  . Enter an *Automation Name*
+  . ****Click *OK*!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62d1b268c74a080359c8a3b5/file-5KvBiru1FK.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62d1b268c74a080359c8a3b5/file-5KvBiru1FK]
+
+2::
+  Your Automation will trigger once a customer satisfies the conditions
+  you specify in the BigCommerce Abandoned Checkout trigger.
+  +
+  . Click *Add Trigger* 
+  . Click *Abandoned Checkout.*
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6205b1f639e5d05141b68931/file-Yk8Hxhjpm7.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6205b1f639e5d05141b68931/file-Yk8Hxhjpm7]
+  +
+  ==== Trigger Options
+  * *Store* Select your BigCommerce store
+  * *Limit Per Subscriber* Select an
+  https://help.sendlane.com/article/448-automation-triggers#limits[optional
+  limit] on the volume of abandoned cart content Contacts receive
+  * *Consider Abandoned After* Select an amount of time to wait after a
+  customer puts a product in their cart
+
+3::
+  . Click the  *+ button* 
+  . Click *Send Message* 
+  . Click *Email* 
+  . Click *Create New Email* (then check out our
+  https://help.sendlane.com/article/73-automations#email[introduction to
+  Automation email nodes] for more information on creating your email!)
+  +
+  Want to learn even more about what makes a great, engaging abandoned
+  cart Automation? Check out
+  https://www.ecommerceacademy.com/courses/email-marketing[eCommerce
+  Academy] for expert guidance on strategy and content!
+  +
+  ===== 🚨 Emails must contain an abandoned cart block and a button
+
+  You must add the following content blocks to your email:
+
+  . *BigCommerce Abandoned Cart* to display the product abandoned in the
+  Contact's cart (only one abandoned cart block is allowed per email).
+  . *Button* which will automatically fill in to link the Contact back
+  to their cart
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62d1b33fc74a080359c8a3ba/file-0ak6Mkr2Qz.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62d1b33fc74a080359c8a3ba/file-0ak6Mkr2Qz]
+  +
+  ===== 💡 Use the following snippet to add a direct link to Contacts' carts in hyperlinked text, images, or custom buttons!
+
+  To place a direct link to a Contact's abandoned checkout in
+  hyperlinked text and images or a button, paste the following snippet
+  in the URL field:
+
+  `+{% set data = trigger.getCheckout() %} {{ data.checkout_data.cart_url}} +`
+
+  If Contacts click this link on a device other than the one they built
+  their checkout on, they will be taken to your store's generic cart
+  page.
+
+4::
+  We recommend adding a wait node set to 24 hours after all email nodes
+  to prevent your Contacts from receiving emails too frequently.
+  +
+  Add a wait node to your Automation:
+  +
+  . Clicking the  *+ button*
+  . ****Click *Wait* 
+  . Select a *Duration* and optional time of day or day of week
+  . Click *Done.*
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6206f6a62130e51694686a98/file-2C7MxoKoB6.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6206f6a62130e51694686a98/file-2C7MxoKoB6]
+  +
+  Your BigCommerce abandoned cart Automation is now ready to go! Make
+  sure to
+  https://help.sendlane.com/article/73-automations#activate[activate
+  your Automation] to start it.
+
+[[split-checkout]]
+===== 💡 Use Conditional Splits to create nodes for specific products
+
+Conditional Splits allow you to target specific products for specialized
+content!
+
+Create a Conditional Split node and set the conditions for:
+
+. Condition: BigCommerce
+. Resource: Checkout
+. Filter: Product or Product Collection, depending on what you want to
+target
+. Operator: Select In to specify products or product groups present in
+the abandoned checkout
+. Select Items or Groups
+. Click Done
+. Create messages under each path:
+
+[cols=",",]
+|===
+|*Yes Path* |*No Path*
+
+|Customers who had the selected products or product groups in their
+abandoned checkout |Customers who DID NOT have the selected products or
+product groups in their abandoned checkout
+|===
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65285ce89362491a4094a095/file-qcus2NEBFj.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65285ce89362491a4094a095/file-qcus2NEBFj]
+
+=== Additional Resources
+
+* https://www.sendlane.com/blog/email-retargeting-win-more-sales[How
+Email Retargeting Works & 3 Strategies to Win More Sales]
+* https://www.sendlane.com/blog/abandoned-cart-email-examples[5
+Abandoned Cart Emails & How to Make Them Work]
+* https://www.sendlane.com/blog/abandoned-cart-subject-lines[Best
+Subject Lines for Abandoned Cart Emails]
+
+=== Troubleshooting
+
+====== The abandoned cart block isn't available!
+
+The abandoned cart block may not appear in your elements sidebar for two
+common reasons:
+
+. Your eCommerce integration is not set up correctly. Review your
+eCommerce store's integration with Sendlane for possible connection
+issues.
+. You already added an abandoned cart block to your email. Only one
+abandoned cart block is allowed per email.

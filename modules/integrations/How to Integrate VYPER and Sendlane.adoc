@@ -1,0 +1,90 @@
+https://vyper.io/?via=nathan63&fp_sid=sendlane[VYPER] allows you to
+leverage the power of viral marketing and increase the number of leads
+on your list by “gamifying” the email capturing experience.
+
+Using https://vyper.io/?via=nathan63&fp_sid=sendlane[VYPER] and
+Sendlane, you can create referral campaigns, sweepstakes, and rewards to
+incentivize your visitors to sign up for your
+https://help.sendlane.com/article/125-lists[List].
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://vyper.io/?via=nathan63&fp_sid=sendlane[VYPER account] with a
+https://vyper.zendesk.com/hc/en-us/categories/360000154512-Viral-Contests-Leaderboards-Giveaways[contest]
+created.
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account so VYPER knows where to place your new
+leads and contacts!
+
+'''''
+
+=== Connecting VYPER and Sendlane
+
+. Log in to your VYPER account and select the contest you'd like to
+connect.
+. Click on the *_Export_* button at the bottom of the *_Contest
+Settings_* page.image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd32fe904286306738edec8/img-23477-1557344054-1905670798.png[Sendlane-knowledge-base-integrate-vyper-and-sendlane-export.png,width=597,height=47]
+. Select Sendlane from the available list of mailing list providers.
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6eee30428635343993500/file-iIOEf9TWk3.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6eee30428635343993500/file-iIOEf9TWk3]
+. A new screen will appear requesting your API key, Hash key and
+Sendlane Subdomain (in “subdomain.sendlane.com” format.) Enter your
+security credentials into the respective fields and click on *_Add
+Sendlane_* to connect your account.
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6ef89042863534399350a/file-TXTLqFufUG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6ef89042863534399350a/file-TXTLqFufUG]
+. The next page will allow you to select the list that you wish to send
+your contacts to.
+. Don’t forget to click on *_Update Sendlane Settings_* once you have
+made your selection.
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6f0320428635343993515/file-6Y1PMXEWGF.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6f0320428635343993515/file-6Y1PMXEWGF]
++
+_(A message will appear stating that you can now close the window.)_
+
+You have successfully connected VYPER and Sendlane!
+
+Now, participants who enter your contest will be added to your Sendlane
+list automatically. These settings can be changed at any time.
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to VYPER, so we are only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+VYPER team is just a few clicks away!
+
+* Submit a https://vyper.zendesk.com/hc/en-us/requests/new[Request] or
+mailto:support@vyper.io[email] the team directly
+* Visit the https://vyper.zendesk.com/hc/en-us[VYPER FAQs]
+
+'''''
+
+Additional VYPER Resources
+
+https://vyper.io/?via=nathan63&fp_sid=sendlane[Sign up for VYPER] |
+https://vyper.io/blog/[VYPER Blog]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-vyper[Sendlane
++ VYPER - Gain a Competitive Edge with Viral Marketing and Gamification]
+
+'''''
+
+=== TL;DR
+
+Select Contest → Export → Select Sendlane → Enter Sendlane API Key, Hash
+Key, Subdomain → Add Sendlane → Select List
+[.Apple-converted-space]## ##→ Update Sendlane Settings

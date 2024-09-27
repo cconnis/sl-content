@@ -1,0 +1,129 @@
+[[top]]
+==== Overview
+
+Segments can be used to slice your Audience into targeted collections of
+Contacts based on dozens of attributes! Segments can be used to send
+Campaigns or start Automations.
+
+==== In this Guide
+
+* link:#logic[Understanding Segment Logic]
+* link:#creating-segment[Create a Segment]
+* link:#manage[Manage Segments]
+* link:#troubleshooting[Troubleshooting]
+* link:#additional[Additional Resources]
+
+[[before]]
+===== 🚦 Before Getting Started
+
+Prior to creating a segment, you need to have
+https://help.sendlane.com/article/125-creating-a-list[created a List]
+that contains Contact attribute data. Attribute data includes a
+Contact's profile properties, engagement history, purchase history, and
+more. Check out the complete list of available
+https://help.sendlane.com/article/452-segment-options-and-operators[Segment
+Options and Operators].
+
+'''''
+
+[[logic]]
+=== Understanding Segment Logic
+
+Check out the 
+https://help.sendlane.com/article/452-segment-options-and-operators[Segment
+Options and Operators] guide for a complete overview of all Segment
+logic.
+
+Use multiple options by including OR/AND conditions in your Segment:
+
+* OR condition – Adds Contacts to Segment if they meet *any* of the
+logic’s condition.
+* AND condition – Adds Contacts to Segment if they meet *all* of the
+logic’s conditions
+
+[[sizing]]
+===== ⚠️ More conditions result in smaller Segments, fewer conditions result in larger Segments
+
+Segments are essentially a way to filter your Contacts based on
+attributes or behaviors you select as conditions. More conditions lead
+to more filtering, which results in a smaller pool of Contacts because
+conditions are more specific. Fewer conditions lead to less filtering,
+which results in a larger pool of Contacts because conditions are more
+broad.
+
+link:#top[Back to top]
+
+'''''
+
+[[invert]]
+=== Inverting Segment Logic
+
+Each Segment condition can be inverted by selecting the *Inverse of this
+condition* checkbox. When this checkbox is selected, Contacts who _do
+not_ meet the condition will be pulled into the Segment.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/655ba6186ef2a0794e71bc52/file-NNZumLvMkj.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/655ba6186ef2a0794e71bc52/file-NNZumLvMkj]
+
+link:#top[Back to top]
+
+'''''
+
+[[creating-segment]]
+=== Create a Segment
+
+To create a new Segment:
+
+. Click the *Audience icon*
+. Click the *Segments tab*
+. Click *+Segment*
+. Enter a *name* for your Segment
+. Click *Confirm*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/650b33b39446233b93528079/file-093RWMAxOU.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/650b33b39446233b93528079/file-093RWMAxOU]
+
+link:#top[Back to top]
+
+'''''
+
+[[manage]]
+=== Manage Segments
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65aaa57751f0473afc686f10/file-wAecDaE6mH.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65aaa57751f0473afc686f10/file-wAecDaE6mH]
+
+* *Export* - Export a .CSV file of Contacts in the selected Segments
+* *Delete All Contacts* - Delete Contacts in the Segment from your
+Sendlane account
+* *Create List* - Create a List of the Contacts in the Segment as of the
+time the Segment was processed
+* *Delete Segment* - Delete the Segment from your Sendlane account (this
+will not delete Contacts)
+* *Duplicate* - Make a copy of the Segment
+* *Reprocess* - Process the Segment again
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+====== My Segment is showing 0 Contacts! 
+
+If a segment you've recently created is showing zero contacts, check the
+conditions you have in place. If you have multiple conditions, double
+check your AND/OR logic. If you have AND selected, both conditions must
+be met in order for a contact to appear within the segment. If OR is
+selected, meeting just one of the conditions will place a contact within
+the segment. 
+
+[[additional]]
+=== Additional Resources
+
+For more information about segmenting your contacts, check out these
+helpful articles:
+
+* https://help.sendlane.com/article/341-how-to-segment-your-contacts[How
+to Improve Targeting with Advanced Segmentation]
+* https://help.sendlane.com/article/341-how-to-segment-your-contacts[]https://help.sendlane.com/article/215-how-to-remove-unengaged-contacts-with-segmentation[How
+to Remove Unengaged Contacts with Segmentation]
+* https://www.sendlane.com/blog-posts/the-roi-segment-trifecta-3-segments-your-online-store-needs[]https://www.sendlane.com/blog-posts/ecommerce-segmentation[eCommerce
+Segmentation: Send the Right Email to the Right Customer]

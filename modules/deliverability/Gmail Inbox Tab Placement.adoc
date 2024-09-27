@@ -1,0 +1,94 @@
+Good news for email marketers: Gmail’s tabs are nothing to be afraid of,
+even the Promotions tab! Keep these two important facts about Gmail tab
+placement in mind:
+
+. Emails are considered delivered no matter which Gmail tab they land in
+. https://returnpath.com/wp-content/uploads/2015/02/Return_Path_-_The_Tabbed_Inbox.pdf#page=4[Studies
+have shown] that recipients actually read emails that end up in the
+Promotions tab!
+
+[[user]]
+==== Gmail User Behavior is the Primary Method of Tab Placement
+
+Google’s tab placement mechanisms are highly influenced by individual
+recipient behavior. This means that some of your Contacts might move
+your emails to their Primary tab, while others leave them in the
+Promotions tab. Google clarified the importance of Gmail users' own
+actions in 
+https://cloud.google.com/blog/products/gmail/how-gmail-sorts-your-email-based-on-your-preferences[this
+blog]:
+
+While Gmail takes [many factors] into account, the most important one is
+your direct input. Your actions teach Gmail how best to sort your email
+based on your preferences.
+
+[[read]]
+==== Gmail Users Read Emails the Promotions Tab
+
+"But, Sendlane! Marketing emails are now hidden from our Contacts, and
+they have to actively go and find them! They'll never be opened!!!" we
+know, it sounds scary and possibly detrimental to your business. But
+check out this finding from Return Path's _The Tabbed Inbox_ study,
+emphasis ours:
+
+Some commercial senders – especially marketers – worried that their
+messages would stop reaching users’ Primary tabs in the new Gmail inbox
+and wind up in a secondary tab where they’d be ignored. They were
+half-right: Almost no commercial mail is reaching the Primary tab, but
+instead of ignoring marketing messages Gmail users are actively
+searching for them and reading them at almost the same rates at which
+they did before tabs. *Gmail has essentially created a second inbox
+where users hunt for email offers.*
+
+The Gmail Promotions tab puts people in the mindset of being open to
+marketing offers! Rather than skimming over your email while also
+looking for emails from family, friends, and social media, Gmail users
+who use the Promotions tab open your email ready to learn about your
+offerings.
+
+[[tab]]
+==== How To Get Emails Into the Primary Tab
+
+Because Gmail's tab placement algorithm depends so heavily on individual
+user behavior, it's tricky to determine tab placement for your Contacts.
+However, there are a few best practices that can influence Gmail tab
+placement:
+
+[[ask]]
+===== Ask Contacts to Whitelist You
+
+Emails from addresses in a Contact's address book are more likely to
+land in the Primary tab. Try inserting a link to
+https://help.sendlane.com/article/431-how-to-whitelist-an-email-address[this
+article] with a request to your Contacts to add your business to their
+address books in your next Campaign.
+
+[[personalize]]
+===== Personalize Your Emails
+
+Emails in the Primary tab are generally from people or organizations the
+Contact knows personally. Insert
+https://help.sendlane.com/article/79-what-are-personalization-tags[personalization
+tags] in your emails' subject lines, preheader, or body to show a
+personal connection to your Contact.
+
+[[bp]]
+===== Follow General Email Marketing Best Practices
+
+It never hurts to revisit the basics and make sure your email marketing
+strategy is aligned with
+https://help.sendlane.com/article/453-email-deliverability-best-practices[email
+marketing best practices]!
+
+[[resources]]
+=== Additional Resources
+
+* https://returnpath.com/wp-content/uploads/2015/02/Return_Path_-_The_Tabbed_Inbox.pdf#page=4[The
+Tabbed Inbox: How Gmail Changed the Way Consumers Engage with
+Promotional Messages]
+* https://help.sendlane.com/article/453-email-deliverability-best-practices[Email
+Deliverability Best Practices]
+* https://www.sendlane.com/blog/brand-awareness-email-sms[5 Steps to
+Developing Brand Awareness in Email & SMS Marketing]
+* https://www.sendlane.com/new-ebooks/the-digital-retailers-email-copywriting-handbook[The
+Essential Email Copywriting Handbook]

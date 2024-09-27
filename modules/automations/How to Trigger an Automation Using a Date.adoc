@@ -1,0 +1,150 @@
+The Date Field Automation trigger lets you trigger an Automation based
+on a Custom Field with a date field type.
+
+Use the Date Field trigger to create Automations based on Contacts’
+birthday, anniversary, pregnancy due date, and more!
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Create a date based Custom Field
+
+Collect data for the Custom Field
+
+[[[ID TAG]]]
+===== 🚨 Date fields trigger Automations based on month and day only
+
+[[[ID TAG]]]
+===== 🚨 Data in date fields must be formatted correctly
+
+Wherever you collect data for date fields, include examples of accepted
+date formats:
+
+* `+January 1, 2023+`
+* `+Sun, Jan 1, 2023+`
+* `+Sun, Jan 1, 23+`
+* `+Sunday, January 1, 2023+`
+* `+1st Jan 2023+`
+* `+YYYY/MM/DD+`
+* `+YYYY-MM-DD+`
+* `+YYYYMMDD+`
+* `+MM/DD+`
+* `+MMDD +`
+
+1
+
+[[create]]
+===  Create an Automation
+
+. Click the *Automation* icon
+. Click *New Automation*
+. Click *Start From Scratch*
+. Enter a *name* for the Automation
+. Click *Start*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6490de45c5d2b53344e7266d/file-NduF8RHNhe.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6490de45c5d2b53344e7266d/file-NduF8RHNhe]
+
+2
+
+[[trigger]]
+===  Add a Date Field Trigger
+
+. Click *+ Add Trigger*
+. Click *Date Field*
+. Select a *Date Field*
+. Set options
+.. *Start Automation*
+... `+On the date+` will trigger the Automation on the date in the
+Custom Field
+... `+Before the date+` will trigger the Automation the specified number
+of days, weeks, or months before the date in the Custom Field
++
+===== 💡 Pro Tip
+
+Want to trigger an Automation leading up to _and_ on the same selected
+date? Check out the link:#advance-on[instructions below]!
+.. *Time* - Set the time (in the account’s timezone) for the Automation
+to be triggered on the specified date
+.. *Wait until the selected day(s) of the week* - Select this option to
+only trigger the Automation on specified days of the week. Contacts
+whose date field falls on a day that is not selected will trigger the
+Automation on the first selected day after the date stored in the Custom
+Field. +
+ +
+For example, if Contact A has 1/1/24 (a Monday) as the date in the
+Custom Field and you select Tuesday and Thursday to trigger the
+Automation, Contact A will trigger the Automation on Tuesday 1/2/24.
+.. *Repeat Automation*:
+... None - The Automation will not repeat
+... Monthly - The Automation will repeat every month on the day stored
+in the date field
+... Yearly - The Automation will repeat every year on the day and month
+stored in the date field
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6490de97e9352a3c57926a1e/file-TUCiZ64lGb.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6490de97e9352a3c57926a1e/file-TUCiZ64lGb]
+
+3
+
+[[node]]
+===  Add Additional Nodes
+
+Review our guide to Automation actions for detailed information on how
+to add email or SMS nodes.
+
+When you are satisfied with your date Automation, make sure to activate
+it!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6490deb25fc2fe6b6dc60430/file-7y1SCdLTKA.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6490deb25fc2fe6b6dc60430/file-7y1SCdLTKA]
+
+[[advance-on]]
+=== Send Messages In Advance of and on the Custom Field Date
+
+Two Automations are required if you’d like to send emails or SMS to
+Contacts in advance of and on the date in their Date Field.
+
+Let’s say you want to send your Contacts a coupon to use before their
+birthday, a reminder to use the coupon, and a message wishing them a
+happy birthday on their birthday:
+
+1::
+  The Automation containing nodes that lead up to the Date Field should
+  be set up first.
+  +
+  For our example, we’ll send our Contacts a coupon two weeks before
+  their birthday and a reminder to use the coupon one week before their
+  birthday.
+  +
+  To create this Automation:
+  +
+  . Select the *Date Field* trigger
+  . Under Start Automation, select *Before the date* and set the wait
+  time to *2 Weeks*
+  . Add an Email node and create an email that contains a coupon
+  . Add a
+  https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation#timing[Wait
+  node] set to 1 week
+  . Add another Email node and create an email that contains a reminder
+  to use the coupon
+  . Click Activate in the top right corner to activate your Automation!
+  +
+  The completed Automation should look like this:
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6490dece5fc2fe6b6dc60431/file-J0I60k0nDe.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6490dece5fc2fe6b6dc60431/file-J0I60k0nDe]
+2::
+  The Automation that sends out the happy birthday message will be
+  triggered on the date in the Contact’s Date Field.
+  +
+  To create this Automation:
+  +
+  . Select the *Date Field* trigger
+  . Under Start Automation, select *On the date* img
+  . Add an Email node and create an email that contains a happy birthday
+  message
+  . Click Activate in the top right corner to activate your Automation!
+  +
+  The completed Automation should look like this:
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6490ded9e9352a3c57926a1f/file-TZTcQckj8c.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6490ded9e9352a3c57926a1f/file-TZTcQckj8c]
+
+[[addl]]
+=== 

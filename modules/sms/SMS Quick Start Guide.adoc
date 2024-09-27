@@ -1,0 +1,162 @@
+With over 60% of all website visits in the US coming from mobile phones,
+it is more important than ever to reach your customers where they shop:
+on mobile! Sendlane's SMS functionality allows you to send SMS Campaigns
+and Automation messages to the right customers at the right time.
+
+Sendlane's monthly or annual SMS packages allow you to add SMS marketing
+to your existing email marketing strategy quickly and seamlessly! 
+
+Read on to learn how to set up and start using Sendlane's SMS services
+in three quick steps!
+
+. link:#privacy-policy[Update Your Privacy Policy]
+. link:#activate[Activate SMS]
+. link:#consent[Collect SMS Consent]
+
+[[us-canada]]
+===== ⚠️ SMS limitations
+
+* SMS messaging on shortcodes is only available to phone numbers located
+in the United States or Canada; SMS messaging on a toll free number is
+available to phone numbers located in the United States, Canada, and
+Puerto Rico
+* SMS is only available for businesses with addresses in the United
+States
+* SMS carriers are experiencing higher than normal wait times in
+approving phone number applications; the registration process currently
+takes up to 4 weeks
+
+1::
+  To send SMS marketing messages, your business' privacy policy must be
+  updated with information on the type and frequency of content you'll
+  send to Contacts. Use the following example as a guide and consult
+  with your legal team on your policy's final language:
+  +
+   
+  +
+  _By entering your phone number in our checkout SMS opt-in, subscribing
+  via our subscription form or via our text-to-join keyword, you agree
+  that By signing up via text, you agree to receive recurring automated
+  promotional and personalized marketing text messages (e.g. cart
+  reminders) from [Company Name] at the cell number used when signing
+  up. You also acknowledge that consent is not a condition for any
+  purchase made on our site. +
+   +
+  If you wish to unsubscribe from receiving text marketing messages and
+  notifications reply with STOP to any mobile message sent from us or
+  use the unsubscribe link we provided you within any of our messages.
+  You understand and agree that alternative methods of opting out, such
+  as using alternative words or requests will not be accounted as a
+  reasonable means of opting out. Message and data rates may apply. +
+   +
+  For any questions please text HELP to the number you received the
+  messages from. You can also contact us for more information. If you
+  wish to opt out please follow the procedures above._
+
+2::
+  Once your automatically generated phone number is registered, you can
+  try Sendlane's SMS functionality *risk-free with 50 free sending
+  credits!*
+  +
+  To get started with SMS, head to the Billing page by clicking *Account
+  Settings* > https://app.sendlane.com/billing[*Billing*]** **>** Set Up
+  SMS**
+  +
+  Check out our in-depth
+  https://help.sendlane.com/article/466-how-to-activate-sms[SMS
+  Activation guide for more details!]
+
+3::
+  ===== ⚠️ Do not turn on lead collection before paying for SMS
+
+  *Make sure your account
+  has *https://help.sendlane.com/article/468-how-to-change-your-sms-package[*SMS
+  credits available*]* before turning on Sendlane Pop-Ups for collecting
+  SMS consent.*
+
+  The confirmation text Contacts must reply to in order to have their
+  SMS consent recorded will not be sent if the account does not have
+  sufficient SMS credits.
+  +
+  Contacts must have affirmative consent to receive SMS marketing
+  messages recorded in their Contact Profiles. There are three main ways
+  to collect SMS marketing consent:
+  +
+  https://help.sendlane.com/article/466-how-to-activate-sms[]
+  +
+  . https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account#file-import[Indicate
+  Contacts' consent when uploading Contacts to your account]
+  . https://help.sendlane.com/article/466-how-to-activate-sms[]https://help.sendlane.com/article/472-how-to-collect-sms-consent-via-email[Send
+  an email with an SMS consent collection opportunity to your Contacts]
+  . https://help.sendlane.com/article/308-pop-ups#SMS[Use a Sendlane
+  Pop-Up]*
+  +
+  *Contacts must reply "Y" to the confirmation text that is
+  automatically sent after any phone number submission to Sendlane
+  Pop-Ups.
+
+4::
+  If you have Contacts to import, read our guide
+  https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account[How
+  to Add Contacts to Your Audience] for important information on import
+  file formatting and consent data.
+  +
+   +
+  +
+   +
+
+===== ⏭  Next Steps
+
+[[campaign]]
+====== Send an SMS Campaign
+
+To create an SMS campaign, click the Campaigns icon > New Campaign > SMS
+Campaign. Select Lists, Tags, or Segments for your Audience, then
+click Next: Content.
+
+Check out our guide to
+https://help.sendlane.com/article/462-how-to-send-an-sms-campaign[Sending
+SMS Campaigns] for more details!
+
+[[automation]]
+====== Add SMS Messages to Automations
+
+To https://help.sendlane.com/article/449-automation-actions#sms[add an
+SMS message to an Automation], open an existing Automation or create a
+new Automation. Click the *+ button* > *Send Message* > *SMS* > *Send
+SMS*
+
+Check out our guide to
+https://help.sendlane.com/article/462-how-to-send-an-sms-campaign[Sending
+SMS Campaigns] for details on creating your SMS message within an
+Automation!
+
+[[reply-center]]
+====== Reply to SMS Messages
+
+Click the Reply Center icon to start communicating directly with your
+Contacts! You can use text, emojis, and MMS to reply to messages from
+your Contacts. Tracking links and tagged links are not available in the
+Reply Center.
+
+Check out our https://help.sendlane.com/article/464-sms-reply-center[SMS
+Reply Center guide] for more details!
+
+[[additional]]
+=== Additional SMS Resources
+
+Check out the Sendlane Marketing Journal for tips, tricks, and best
+practices for SMS Marketing:
+
+* https://www.sendlane.com/blog/sms-marketing-business-thrive[How SMS
+Marketing Can Help Your Business Thrive]
+* https://www.sendlane.com/blog/sms-mms-marketing[The New Sendlane
+SMS/MMS Marketing (+ 8 Best Practices)]
+* https://www.sendlane.com/blog/sms-marketing-benefits[8 SMS Marketing
+Benefits & Tips]
+* https://www.sendlane.com/blog/grow-sms-marketing-list[Six Effortless
+Ways to Grow Your SMS Marketing List]
+* https://www.sendlane.com/blog/sms-marketing-campaigns[9 Best Practices
+for Writing Effective SMS Campaigns]
+* https://www.sendlane.com/blog/easy-sms-marketing[11 Easy Ways to Make
+Your SMS Marketing More Powerful]

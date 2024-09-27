@@ -1,0 +1,37 @@
+==== Overview
+
+New automations and automation nodes are inactive by default. Read on to
+learn how to activate your automation nodes and automation.
+
+==== In this guide
+
+* link:#node[Activate email nodes]
+* link:#automation[Activate an automation]
+
+[[node]]
+=== Activate email nodes
+
+Inactive email nodes will be skipped in activated automations.
+
+To activate email nodes:
+
+. Click the *email node*
+. Click *Activate*
+
+image:https://lh7-us.googleusercontent.com/cZbiZnH3Nh9I1tba_zZ9wnsnIrUwiD2QvVD6_fZw9uZIKzlFQLJ0w6--VWTZ9GR-mC1vex_YIZ0H1cv5B4oh00Ui1H77xFVEJq66Buj6Yd_VDjNNH1u5q2rKAYGrRuxDW7oxio2HItum2alQasIrbUk[https://lh7-us.googleusercontent.com/cZbiZnH3Nh9I1tba_zZ9wnsnIrUwiD2QvVD6_fZw9uZIKzlFQLJ0w6--VWTZ9GR-mC1vex_YIZ0H1cv5B4oh00Ui1H77xFVEJq66Buj6Yd_VDjNNH1u5q2rKAYGrRuxDW7oxio2HItum2alQasIrbUk,width=1680,height=1050]
+
+[[automation]]
+=== Activate an automation
+
+Inactive automations will not let new contacts trigger the automation.
+To prevent new contacts from triggering an automation while allowing
+existing contacts to finish flowing through the automation,
+https://help.sendlane.com/article/665-how-to-pause-an-automation[pause
+your automation].
+
+To activate the automation:
+
+. In the upper right corner, click *Active*
+. Click *Activate*
+
+image:https://lh7-us.googleusercontent.com/ajZZvlnqx-E6-rMC3NrUBawQJqTSaV18UfAsBUo_8b5UlRL7QaXm0CKzj337sRft7bf0ownDCtfvekg0yTmPH7BE2SM-EQJBc5aVBy4Qp-ENf6iT8TUXes1Pk8WcVg4xFw13nSkhQj10svcCSQY5VwA[https://lh7-us.googleusercontent.com/ajZZvlnqx-E6-rMC3NrUBawQJqTSaV18UfAsBUo_8b5UlRL7QaXm0CKzj337sRft7bf0ownDCtfvekg0yTmPH7BE2SM-EQJBc5aVBy4Qp-ENf6iT8TUXes1Pk8WcVg4xFw13nSkhQj10svcCSQY5VwA,width=1680,height=1050]

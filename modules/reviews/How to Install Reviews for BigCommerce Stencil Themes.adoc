@@ -1,0 +1,193 @@
+==== Overview
+
+Sendlane Reviews is the perfect complement to any BigCommerce store and
+provides plenty of widget customization options to seamlessly blend with
+your website's branding! Read on to learn how to install Sendlane
+Reviews in your BigCommerce store's Blueprint theme. If you use a
+Blueprint theme in your BigCommerce store, follow
+https://help.sendlane.com/article/560-how-to-install-reviews-bigcommerce[this
+installation guide].
+
+==== In This Guide
+
+. link:#script[Install the Product Review Widget Script]
+. link:#main[Install the Product Review Widget Element]
+. link:#star[Install the Star Widget Element]
+. link:#uninstall[Uninstall Existing Reviews Widget]
+
+* link:#next[Next Steps]
+* link:#troubleshooting[Troubleshooting]
+
+'''''
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Have admin access to your BigCommerce store
+
+Create a https://app.sendlane.com/audience/lists[List] named `+Reviews+`
+
+On your https://app.sendlane.com/integrations/bigcommerce[BigCommerce
+integration page], click the Settings icon and select your new Reviews
+List under the Reviews
+dropdownimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64ad97f278d5c33f4924098e/file-5f9HHMNMGC.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64ad97f278d5c33f4924098e/file-5f9HHMNMGC]
+
+[[bgs]]
+===== ⚠️ If you use a Blueprint theme in your BigCommerce store, follow https://help.sendlane.com/article/560-how-to-install-reviews-bigcommerce[this installation guide]
+
+Not sure if your BigCommerce theme is Stencil or Blueprint? Check out
+https://support.bigcommerce.com/s/article/Which-Theme-Platform-do-I-have?language=en_US[BigCommerce's
+guide to determining your theme type].
+
+[[loyalty]]
+===== ⚠️ Sendlane Reviews does not include loyalty functionality
+
+If your existing reviews platform includes loyalty points or other
+rewards functionality, you will need to maintain access to it.
+
+1::
+  The product review widget script connects your BigCommerce store to
+  your Sendlane account.
+  +
+  ==== Copy the Product Review Widget Script
+  +
+  . Login to Sendlane
+  . Click the *Reviews* icon
+  . Click *Product Review*
+  . Click *Get Widget Code*
+  . Under Widget Script, click *Copy Code*
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/649c59cfcfd7fe604a7fe29c/file-8Yv239Ge9q.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/649c59cfcfd7fe604a7fe29c/file-8Yv239Ge9q]
+  +
+  ==== Paste the Review Widget Script
+  +
+  . Login to *BigCommerce*
+  . Click *Storefront*
+  . Click *Script Manager*
+  . Click *Create new script*
+  .. Script Name: Sendlane Reviews
+  .. Location on Page: Footer
+  .. Select pages to add script: Storefront pages
+  .. Script Category: Essential
+  .. Script type: Script
+  .. Script: Paste the copied product review widget script
+  . Click *Save*
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64b04872c2f5ed048130c3c5/file-zTgJEjvXzI.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64b04872c2f5ed048130c3c5/file-zTgJEjvXzI]
+2::
+  The reviews widget element tells your BigCommerce store where to
+  display product reviews for individual products on your product pages.
+  You can install the widget element in the default product page
+  template file, and Sendlane Reviews will automatically only display
+  reviews for the product that appears on the page.
+  +
+  ==== Copy the Product Review Widget Element Code
+  +
+  . Login to Sendlane
+  . Click the *Reviews icon*
+  . Click *Product Review*
+  . Click *Get Widget Code*
+  . Under Widget Element, click *Copy Code*
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/649c59e1f39eb10e8e84b7ef/file-KKbt0axdGO.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/649c59e1f39eb10e8e84b7ef/file-KKbt0axdGO]
+  +
+  ==== Paste the Product Review Widget Element Code
+  +
+  . Login to BigCommerce
+  . Click *Storefront Design*
+  . Click *My* *Themes*
+  . Click *Edit HTML/CSS*
+  . Click *Other Template Files*
+  . Scroll to *Panels*
+  . Click `+ProductDetails.html+` (if you do not see a
+  `+ProductDetails.html+` file, look for a file with the word
+  `+product+` in the name)
+  . Paste the product review widget element code directly after the last
+  line in the file
+  . Click *Save*
+  +
+  To check that the review script and widget were installed correctly,
+  click Preview Store, then click on a product and scroll down.
+  +
+  If you’ve imported reviews, you should see any existing reviews for
+  the product you clicked on.
+  +
+  If you have not imported reviews, you should see a section to write
+  the first review for the product you clicked on.
+3::
+  The star widget element displays a product’s average star rating on
+  individual product pages and on product category pages.
+  +
+  Because BigCommerce themes vary, you may need to try more than one
+  location when installing the star rating widget.
+  +
+  . Login to BigCommerce
+  . Install the star rating widget on individual product pages
+  .. Click *Storefront Design*
+  .. Click *My* *Themes*
+  .. Click *Edit HTML/CSS*
+  .. Click *Other Template Files*
+  .. Scroll to *Panels*
+  .. ****Click `+ProductDetails.html+`
+  .. Paste the following snippet where you want the product’s average
+  star rating to appear on the
+  page: `+<div sl-product-id="{{product.id}}" sl-type="mini"></div>+`.
+  ... The two most common places for the star widget are under the
+  product’s price or title. Click into the code, press CTRL + F or
+  Command + F, and search for `+product__price div+` for the product's
+  price or
+  `+<h1 {{#if schema}}itemprop="name"{{/if}}>{{product.title}}</h1>+`
+  for the product’s title.
+  . Install the star rating widget on product category pages
+  .. Click *Products*
+  .. Click *Category*
+  .. Click `+product-listing.html+`
+  .. Paste the following snippet where you want the product’s average
+  star rating to appear on the page.
+  `+<div sl-product-id="{{product.id}}" sl-type="mini"></div>+`.
+  . Click *Save*
+  +
+  To check that the star widget was installed correctly, click *Preview
+  Store*, then click on a product.
+4::
+  If you are using BigCommerce's native reviews platform, uncheck the
+  Product Reviews checkbox in your comments' settings. See
+  https://support.bigcommerce.com/s/article/Managing-Reviews?language=en_US#enable[BigCommerce's
+  guide] for more information.
+  +
+  If you are using another reviews platform, follow the instructions
+  provided by your platform to uninstall. Check out the uninstallation
+  guides for common reviews platforms here:
+  +
+  * https://support.yotpo.com/v1/docs/bigcommerce-uninstalling-yotpo[Yotpo]
+  * https://stampedsupport.stamped.io/hc/en-us/articles/8813718754843-Uninstalling-Stamped#bigcommerce[Stamped]
+  * https://support.judge.me/en/support/solutions/articles/44001699623-install-judge-me-widgets-in-bigcommerce[Judge.me]*
+  * https://support.okendo.io/en/collections/2587980-display-your-reviews-on-your-site[Okendo]*
+  +
+  *Uninstall the widgets from locations noted in the installation guide
+
+[[next]]
+===== ⏭️ Next Steps
+
+* Install
+https://help.sendlane.com/article/654-how-to-manage-multiple-stores-with-sendlane-reviews[multiple
+instances of Sendlane Reviews] for multiple Shopify stores!
+* Check out our guide to
+https://help.sendlane.com/article/547-how-to-customize-review-widget-styling[customizing
+your Sendlane Reviews widgets]!
+
+=== Troubleshooting
+
+[[product-details]]
+====== My theme doesn't have a `+ProductDetails.html+` file!
+
+BigCommerce theme file names can vary across themes. Look for files with
+the word "product" in the name.
+
+[[theme-variation]]
+====== My theme doesn't have any of the recommended files or tags to place a widget!
+
+Because themes vary widely, you may have to experiment with widget
+placement. If you already use another reviews product, try placing your
+widget scripts in the exact same spot your existing widgets were
+installed in.

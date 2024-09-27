@@ -1,0 +1,211 @@
+Our goal is to see you get results as quickly (and easily) as possible
+with our platform.
+
+Now that you've
+https://help.sendlane.com/article/208-welcome-to-sendlane[activated/verified
+your new Sendlane account and completed the Onboarding Survey], this
+Quick Start Guide will walk you through exactly how to finish setting up
+your account, and begin leveraging our powerful email marketing
+automation features to maximize your results!
+
+Specifically, we'll go over the basics of how to:
+
+* link:#import[Add]link:#import[ Contacts]
+* link:#popup[Create a Pop-up Form]
+* link:#automation[Create an Automation]
+* link:#campaign[Create and Send a Campaign Email]
+
+Plus, we'll also share some link:#additional[additional resources] that
+might be helpful along the way. Be sure to check out our
+https://sendlane.net/webinar[webinar] every Tuesday and Thursday to get
+a live look at all of Sendlane's features!
+
+'''''
+
+[[import]]
+=== Adding Contacts
+
+If you've already collected contacts on another platform, you can add or
+https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account[import]
+those contacts right into your Sendlane account. _If you don't have any
+contacts to add, skip this step!_
+
+. Head to *_Audience → __List_* and select the list that you want to add
+contacts to
+. Next, choose the option that works best for your situation: 
+* If you only have a few contacts to add, click _Add Contact_ to
+manually enter the contact's information. 
+* If you have an entire list you'd like to add, click _Import_ and
+follow the steps!
++
+====== Please Note
+
+Sendlane is a
+https://help.sendlane.com/article/402-what-is-permission-based-marketing[permission-based]
+platform. Each contact you add to your list must have provided consent
+prior to being added and receiving emails from you.
+
+If you'd like more information about
+https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account[adding
+or importing] contacts, please click through to visit our full-length
+article! 
+
+'''''
+
+[[popup]]
+=== Creating a Pop-up
+
+https://help.sendlane.com/article/308-pop-ups[Pop-ups] are a great,
+interactive tool that Sendlane offers to turn users who visit your
+website into contacts. _If you plan on collecting contacts with a
+different method, skip this step!_
+
+. Navigate to the *_Pop-ups_* menu and click on *New pop-up*
+. ****Select the type of pop-up you'd like to use and click *_Next_*
+. Name your new pop-up (this is just for your own records, visitors
+will not see the name you enter here) and choose either single or double
+opt-in settings
++
+====== Please Note
+
+Single opt-in will add contacts directly to your Sendlane account.
+Double opt-in will first send a confirmation email that contacts will
+need to open and click-through before they are added to your Sendlane
+account.
+. Use the _Content_ and _Style_ sidebar options to customize your
+pop-up, and then click *_Next_*
+. Enter the URL for your Thank you page, or use our built-in creator to
+design one, then click *_Next_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f4851bc042863444aa0ef45/file-hI00CDuHpp.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f4851bc042863444aa0ef45/file-hI00CDuHpp]
+. Use the _Subscription List_ dropdown to select the list for your
+contacts to be added to once they subscribe
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f48524f2c7d3a352e9178b3/file-n52r9B0HTq.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f48524f2c7d3a352e9178b3/file-n52r9B0HTq]
+. Click *_Publish_* and you're all set!
+
+Your completed pop-up is ready to be installed on your website!
+
+If you're interested in learning more about
+https://help.sendlane.com/article/308-pop-ups[pop-ups] (including
+details about working with each feature, adding the pop-up to your
+website along with settings and troubleshooting) please click through to
+visit the full-length article! 
+
+'''''
+
+[[automation]]
+=== Creating Your First Automation
+
+An https://help.sendlane.com/article/73-automations[Automation] is a
+series of actions that are triggered by a contact's behavior.
+
+Here we will go over how to create a "Welcome Series" or on-boarding
+automation that will send out emails to your contacts automatically once
+they subscribe to your list.
+
+. Head to __*Automations* __and click on *_New Automation_*
+. Since this is your first automation, we recommend selecting
+the __*Welcome new contacts* __template (which is a pre-built automation
+funnel)image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d3631b204286347867546bb/file-OcKTQEBt6b.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d3631b204286347867546bb/file-OcKTQEBt6b]
+. Click on the name of your automation at the top to change the name if
+you'd like 
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f485942042863444aa0ef68/file-pI0yzLjKSA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f485942042863444aa0ef68/file-pI0yzLjKSA]
+. Click on the __*Subscribes to a list* __box to specify which list will
+trigger this automation when a contact is added to it
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f485b40042863444aa0ef79/file-3ekNMdqN3u.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f485b40042863444aa0ef79/file-3ekNMdqN3u]
+. Click on the email box underneath the trigger to create your first
+"Welcome" email which will be sent immediately after subscription. From
+the window that appears on the right, click *_Create New Email_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f4834142c7d3a352e9177e2/file-rzv8bdKuPh.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f4834142c7d3a352e9177e2/file-rzv8bdKuPh]
+. Click the plus (+) sign below any box to add more emails or actions 
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f485c712c7d3a352e9178ed/file-wrp74oFejl.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f485c712c7d3a352e9178ed/file-wrp74oFejl]
+. Once your automation is complete, be sure to switch to *_Active_* in
+the upper right-hand corner
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f485c8c042863444aa0ef8a/file-PLbF0zgLAz.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f485c8c042863444aa0ef8a/file-PLbF0zgLAz]
+
+**
+
+For more information about
+https://help.sendlane.com/article/73-automations[Automations] (including
+details about working with each feature, as well as settings and
+troubleshooting) please click through to visit our full-length article!
+
+'''''
+
+[[campaign]]
+=== Creating and Sending a Campaign
+
+https://help.sendlane.com/article/153-campaigns[Campaigns] are a
+marketing tool used to send out one-time (broadcast-style) emails to
+your audience.
+
+Here's how to create a campaign: 
+
+. Head over to the *_Campaigns_* tab and click *_New Campaign_*
+. Enter your Campaign Settings
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f4992032c7d3a352e9186c1/file-xDCHgagnLh.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f4992032c7d3a352e9186c1/file-xDCHgagnLh]
+. On the *_Audience_* page, choose who you'd like to send this
+message _to_, using the drag and drop selector to include or
+exclude lists/segments or tags. Also, select who you'd like to
+send _from_ by choosing (or creating) a __Sender Profile __from the
+dropdown menu
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f499786042863444aa0fce5/file-t3UBYvhxD5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f499786042863444aa0fce5/file-t3UBYvhxD5]
+. On the *_Content_* page, enter the Subject Line and Preheader Text of
+your message, then click *_Create Email_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f49992e042863444aa0fcee/file-EFu9iUuRtT.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f49992e042863444aa0fcee/file-EFu9iUuRtT]
+. Next, choose from Sendlane's pre-designed templates, create your own
+custom template or start from scratch to build and design your campaign 
+. Click *_Save and Continue_* once you've finished building out your
+campaign
+. Click *_Schedule_* and choose whether to save the campaign as a draft
+to send later, send the campaign immediately, or schedule to send at a
+later date or time
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f49999d2c7d3a352e9186e9/file-xrKBpYSQsp.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f49999d2c7d3a352e9186e9/file-xrKBpYSQsp]
+
+If you're interested in learning more about
+https://help.sendlane.com/article/153-campaigns[campaigns] (including
+scheduling and rescheduling, viewing previously sent campaigns,
+deleting, and duplicating campaigns along with information about
+statuses and troubleshooting) please click through to visit the
+full-length article! 
+
+'''''
+
+[[additional]]
+=== Additional Sendlane Resources
+
+* Sendlane's searchable https://help.sendlane.com/[Knowledge Base]
+* Sendlane https://www.sendlane.com/blog[blog]
+* the
+link:++https://www.youtube.com/channel/UCCNc--p7AN9ULMwOwP2AcZQ++[Sendlane
+Training Youtube Channel ]
+* Sendlane's
+https://partners.sendlane.com/integrations/#directoryApp[Integration
+Marketplace]
+* https://www.sendlane.com/blog-posts/email-marketing-dos-donts[Email
+Marketing Do's and Don'ts]
+* https://www.sendlane.com/blog-posts/automation-101[Automation 101: How
+to Create a Basic Email Sales Funnel]
+* https://www.sendlane.com/blog-posts/set-achieve-email-marketing-goals-2[3
+Easy Ways to Set and Achieve Your Email Marketing Goals]
+
+Last, but not least, if you hit any roadblocks you can always get in
+touch with our team of email marketing automation experts
+mailto:mailto:support@sendlane.com[right here]!
+
+'''''
+
+=== TL;DR
+
+Adding Contacts → Create a Pop-Up → Create an Automation → Create and
+Send a Campaign Email

@@ -1,0 +1,3 @@
+For real-time updates on Sendlane system maintenance, uptime, metrics
+and more, http://status.sendlane.com[please click through to visit our
+Status Page]!

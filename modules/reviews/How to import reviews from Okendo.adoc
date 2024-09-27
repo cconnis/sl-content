@@ -1,0 +1,62 @@
+[[top]]
+==== Overview
+
+If you’re migrating to Sendlane Reviews from Okendo, you can bring your
+hard earned reviews with you! Read on to learn how to import your Okendo
+reviews to Sendlane.
+
+==== In This Guide
+
+* link:#export[Export reviews from Okendo Product Reviews]
+* link:#import[Import reviews file to Sendlane]
+
+'''''
+
+[[export]]
+=== 1. Export reviews from Okendo
+
+Follow
+https://help.sendlane.com/article/562-how-to-export-reviews-from-okendo[these
+instructions] for exporting your product reviews. When your file is
+ready for download, save it somewhere easily accessible, like your
+desktop, and make sure it is saved as a .CSV file. Do not edit the file
+in any way.
+
+[[import]]
+=== 2. Import reviews file to Sendlane
+
+To import your review file:
+
+. Click the *Reviews* icon
+. Click *Content* 
+. Click *Import & Export*
+. Click *Import Reviews*
+. Select *Okendo* from the Product Review Source dropdown
+. Drag and drop your .CSV file or click to browse for your file
+. Check the checkbox confirming that your reviews are genuine
+. Click *Importimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e8c92c2411c5087b68412b/file-tbOHKXbNjq.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e8c92c2411c5087b68412b/file-tbOHKXbNjq]*
+
+'''''
+
+=== Troubleshooting
+
+[[row]]
+====== My review file wasn't accepted!
+
+Sometimes, Okendo reviews are exported with an extra row at the top of
+the file that says Okendo in cell A1. If your file wasn't accepted, open
+the .CVS file you exported from Okendo and check for this extra line. If
+it's there, delete the entire row , save the file as .CSV, and try
+uploading again. If you are still unable to get your file accepted, see
+https://help.sendlane.com/article/647-troubleshooting-sendlane-reviews-imports[Troubleshooting
+Sendlane Reviews] for next steps.
+
+[[other-errors]]
+====== My review file contains errors!
+
+If some reviews were not imported due to an error, the Results column
+will show how many reviews were not imported. Click the download icon in
+the Actions column to download a file of reviews that were not imported.
+See
+https://help.sendlane.com/article/647-troubleshooting-sendlane-reviews-imports[Troubleshooting
+Sendlane Reviews] for next steps.

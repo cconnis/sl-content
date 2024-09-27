@@ -1,0 +1,108 @@
+Sendlane's Beacon is a great tool to use directly on your WordPress
+website! 
+
+In this article we'll go over:
+
+* link:#install[Installing the plugin]
+* link:#locate[Locating your Beacon code]
+* link:#code[Adding your Beacon code]
+* link:#additional[Additional Resources]
+
+'''''
+
+=== Before Getting Started 
+
+You will first need to
+https://help.sendlane.com/article/72-beacon#event-tracking[create an
+event] in your Sendlane account. 
+
+Also, be sure that you have admin access for your self-hosted WordPress
+site.
+
+'''''
+
+[[install]]
+=== Installing the Plugin into WordPress
+
+First, we are going to install a plugin called _Insert Headers and
+Footers_ into your WordPress account. This plugin allows you to easily
+paste the Beacon tracking code into your website's header. 
+
+. Go to the
+https://wordpress.org/plugins/insert-headers-and-footers/[Insert Headers
+and Footers plugin page] and download the plugin's zip file by clicking
+the download button on the right.  +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df717592c7d3a7e9ae5257d/file-Mw23XsnL2e.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df717592c7d3a7e9ae5257d/file-Mw23XsnL2e]
+. Login to your WordPress website and hover over Plugins and click _*Add
+New*. +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df718a004286364bc92e290/file-bKFg7hFHlL.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df718a004286364bc92e290/file-bKFg7hFHlL]_
+. Click *_Upload Plugin_* at the top +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df7190e2c7d3a7e9ae5257f/file-z9DuPBwrEd.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df7190e2c7d3a7e9ae5257f/file-z9DuPBwrEd]
+. Click *_Choose File_* and select the Zip file you downloaded in step 1
+and click *_Install
+Now_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df7197504286364bc92e291/file-TZDo41SKxa.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df7197504286364bc92e291/file-TZDo41SKxa]
+. You will be notified that the Plugin has been installed successfully.
+Make sure to click **_Activate Plugin_ **and your plugin will be ready
+to use! +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df719e22c7d3a7e9ae52582/file-0YQTKxzDnM.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df719e22c7d3a7e9ae52582/file-0YQTKxzDnM]
+
+'''''
+
+[[locate]]
+=== Locating the Code for your Beacon
+
+Once your plugin is activated, it's time to grab your Beacon code from
+inside of Sendlane!
+
+. From the _Beacon_ menu navigate to the *Events* tab
+. Click *_Get Code_* next to the event you'd like to
+trackimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5eac5d71042863474d19ff1f/file-S1AvN8uEb9.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5eac5d71042863474d19ff1f/file-S1AvN8uEb9]
+. On the next screen, copy the event code you see because we're going to
+paste that into your WordPress
+websiteimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5eac5d68042863474d19ff1d/file-UHROahhQrh.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5eac5d68042863474d19ff1d/file-UHROahhQrh]
+
+'''''
+
+[[code]]
+=== Adding your Beacon Code to WordPress
+
+Once you've copied the Beacon code, jump back into your Wordpress admin
+panel.
+
+. Hover over Settings and click _*Insert Headers and Footers* +
+_image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df71aa12c7d3a7e9ae52583/file-68C9zdAVLy.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df71aa12c7d3a7e9ae52583/file-68C9zdAVLy]
+. Paste your Beacon code into the _Scripts in Header_ section, click
+*_Save_* and you are all
+set!image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5eac5c73042863474d19ff15/file-8JuZmqlD1U.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5eac5c73042863474d19ff15/file-8JuZmqlD1U]
+
+Beacon is now equipped to track site visits, conversions, and events on
+your WordPress website and the information will be available inside of
+your Sendlane account, within each contact profile!
+
+'''''
+
+[[additional]]
+=== Additional Resources
+
+=== 
+
+* https://www.sendlane.com/blog-posts/track-your-customer-journey-send-laser-targeted-emails-with-sendlane-beacon[Track
+Your Customer Journey and Send Laser-Targeted Emails with Sendlane
+Beacon]
+* https://www.sendlane.com/blog-posts/tip-send-personalized-product-recommendations[Drive
+Revenue by Targeting Website Visitors With Personalized Product
+Recommendations]
+* https://www.sendlane.com/blog-posts/3-email-retargeting-strategies-guaranteed-to-win-you-more-sales[3
+Email Retargeting Strategies Guaranteed to Win You More Sales]
+
+'''''
+
+=== TL;DR
+
+_Installing WordPress Plugin_: Download Plugin → Login to WordPress →
+Plugins → Add new → Install → Activate
+
+_Locating code:_ Beacon → Events → Get Code → Copy
+
+_Adding Code to WordPress_: Login to WordPress → Settings → Insert
+Headers and Footers → Paste code into Headers → Save

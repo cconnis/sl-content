@@ -1,0 +1,105 @@
+Welcome, Lurn students!
+
+Connecting your Sendlane account to your Launchpad funnel is quick and
+easy. 
+
+'''''
+
+==== Before Getting Started
+
+As mentioned in your Inbox BluePrint course, you do not need to sign up
+for a Sendlane account right away. Once you go through the training,
+you'll discover the right time to sign up. You'll also need to make sure
+that your Sendlane account is set up with single-opt in access (contact
+our https://www.sendlane.com/contact-us[24/7 support team] to set this
+up!)
+
+For more information about when you should sign up with Sendlane, please
+refer to your _Inbox BluePrint Onboarding Guide_ or contact the
+https://lurn.com/support[Inbox BluePrint support team].
+
+====== Please Note
+
+Please Note If you are asked to set up “allowed domains” within your
+account, that step is no longer necessary and can be ignored!
+
+The autoresponder emails that you select in your Launchpad funnel
+will not display within your Sendlane account. You will have to recreate
+them within Sendlane.
+
+You can create and add emails to an
+https://help.sendlane.com/article/73-automations[automation] within
+Sendlane, but be sure to disable/turn off the autoresponder in Launchpad
+so that your contacts don't receive duplicate emails.
+
+'''''
+
+=== 
+
+==== Connecting Launchpad to Sendlane
+
+.  From your https://lurn.com/tools/launchpad?access=true[Launchpad
+Dashboard], click *_Create New
+Funnel_* image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d2e39352c7d3a2ec4bef221/file-jKGPOCAr7Q.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d2e39352c7d3a2ec4bef221/file-jKGPOCAr7Q]
+. Choose your niche, name your funnel, and select your opt-in page URL,
+then click *_Save and Continue_*
+. Enter the email address & password that you use to log in to Sendlane
+and click _*Login* _
+* If you see a message that says your funnel is already linked to your
+Sendlane account, skip this
+step. image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d2e31bf2c7d3a2ec4bef1ac/file-tBKRMAIOza.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d2e31bf2c7d3a2ec4bef1ac/file-tBKRMAIOza]
+. To create a new Sendlane list for this funnel, fill out the details
+for your https://help.sendlane.com/article/125-lists[list] name and
+https://help.sendlane.com/article/107-how-to-create-a-sender-profile[sender
+profile] information (from name, reply email,
+etc.)image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d811f452c7d3a7e9ae142a5/file-oqqUKUtrm7.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d811f452c7d3a7e9ae142a5/file-oqqUKUtrm7]
+. If you would like to connect this funnel to a list you have already
+created within your Sendlane account, toggle on *_Use an Existing
+Sendlane List_* and choose your list
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f73ce854cedfd0017639717/file-TJ0sqP7rzv.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f73ce854cedfd0017639717/file-TJ0sqP7rzv]
+. Choose how often you want to be notified about new subscriptions and
+click *_Save & Continue_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f73dc7d4cedfd001763974f/file-S2PEhXqO2U.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f73dc7d4cedfd001763974f/file-S2PEhXqO2U]
+
+Your funnel is now connected to Sendlane!
+
+'''''
+
+==== Troubleshooting
+
+If you are not seeing contacts populate in Sendlane, you'll need to make
+sure that your Sendlane account is set up with single-opt in access
+(contact our https://www.sendlane.com/contact-us[24/7 support team] to
+set this up!)
+
+'''''
+
+==== Additional Lurn Resources
+
+Lurn offers information about re-creating your autoresponder in Sendlane
+as an automation in
+https://lurn.com/classroom/inbox-blueprint/ii-launchpad-tutorials/launchpad-tutorials-part-3[video
+tutorial #23].
+
+* Connect with the mailto:mailto:support@lurn.com[Lurn Support Team]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/copywriting-formulas-write-better-emails[3
+Copywriting Formulas to Help You Write Better Emails]
+* https://www.sendlane.com/blog-posts/converting-landing-pages[4 Design
+Elements of Converting Landing Pages]
+* https://youtu.be/Uc5dQZZ-IfY[Email Marketing Insider Youtube Series: 4
+Tips for Writing Emails People Actually Want to Read]
+* https://www.sendlane.com/blog-posts/your-guide-to-sendlane-deliverability[Your
+Guide to Sendlane Deliverability]
+
+'''''
+
+=== TL;DR
+
+Create New Funnel → Select funnel type & Name your funnel → Connect your
+Sendlane account to this funnel → Select List or Create a new one →
+Choose Launchpad or Sendlane for your autoresponders

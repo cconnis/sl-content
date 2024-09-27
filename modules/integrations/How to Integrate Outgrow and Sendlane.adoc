@@ -1,0 +1,90 @@
+Drive interest to your lead magnets with
+https://outgrow.grsm.io/alexpourtash6746[Outgrow]. Boost your marketing
+with highly interactive content such as calculators, quizzes, and more!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+https://outgrow.grsm.io/alexpourtash6746[active account with Outgrow].
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+subdomain] ready as well. This can be found in your Sendlane account
+under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Outgrow knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting Outgrow and Sendlane
+
+. https://app.outgrow.co/login[Login] to your Outgrow account (or
+https://outgrow.grsm.io/alexpourtash6746[click here] to create a new
+one)
+. Navigate to the *Builder → Configure* on your Outgrow calculator or
+quiz
+. Choose *_Integrations_* on the left hand side and click
+*_Configure_* next to Sendlane
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d533cd72c7d3a68825e9f71/file-ayElRc2AQz.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d533cd72c7d3a68825e9f71/file-ayElRc2AQz]
+. Under Account Name, choose a name for your integration (this is for
+your reference, and will not be seen by contacts)
+. Enter the email address and password that you use to log in to your
+Sendlane account
+. Enter your Sendlane subdomain _without_ .sendlane.com  
+. Click *_Authenticate with Sendlane_*
+. Click *_Proceed With_*
+. Choose the Sendlane List that you'd like to connect to
+. The next page will show you different fields available on your Outgrow
+calculator or quiz. You can transmit this information to Sendlane via a
+https://help.sendlane.com/article/331-custom-fields[custom field]. Enter
+the Sendlane field name you'd like to use next to the corresponding
+Outgrow field. 
+. Click *_Test Connection_*
+. Choose *_Set Double Optin_* or _Skip_
+
+Your Integration is now complete!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Outgrow, so we're only able to provide
+limited troubleshooting support. However, if you  _do_ need help, the
+Outgrow team is just a few clicks away!
+
+* Visit
+https://support.outgrow.co/docs/sendlane-and-outgrow-native-integration[Outgrow's
+documentation on Sendlane]
+* Connect with https://support.outgrow.co/discuss-new[Outgrow's support
+team]
+
+'''''
+
+Additional Outgrow Resources
+
+https://outgrow.grsm.io/alexpourtash6746[Sign up for Outgrow] |
+https://support.outgrow.co/docs[Knowledge Base]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-outgrow[Sendlane
++ Outgrow - Create Interactive Content to Help Boost
+Conversions&#44;Traffic&#44; and Sales]
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage and Capture Leads]
+
+'''''
+
+=== TL;DR
+
+Login → Builder → Configure → _Integrations_ → _Configure_ (next to
+Sendlane) → Name integration → Enter Sendlane email and password → Enter
+Sendlane subdomain → _Authenticate with Sendlane_ → _Proceed With_ →
+Choose Sendlane list → __Test Connection __→ Choose _Set Double
+Optin_ or _Skip_

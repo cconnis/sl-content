@@ -1,0 +1,146 @@
+Microsoft owns common email domains including, but not limited to:
+
+* @hotmail.com
+* @outlook.com
+* @live.com
+* @msn.com
+
+These domains are grouped together in your
+https://help.sendlane.com/article/329-dashboard-overview[Sendlane
+dashboard] under “Microsoft.”
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64399ae74b128526704530f8/file-aUHVSA0c1b.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64399ae74b128526704530f8/file-aUHVSA0c1b]
+
+Microsoft is known for its robust filters and security features that
+protect its users from unwanted email communication.
+
+You may have noticed that Microsoft email addresses tend to have lower
+open, click, and conversion rates than other email providers. You may
+have also noticed that your email content looks off when viewed in
+Microsoft accounts compared to other inbox providers.
+
+These content and deliverability quirks happen because Microsoft’s
+security features and the varied rendering process used by its apps
+(mobile and desktop) can end up blocking or not rendering certain
+content in marketing emails that users want to receive.
+
+Read on to learn how to optimize your infrastructure and content for
+Microsoft!
+
+[[deliverability]]
+=== Deliverability Tips
+
+[[auth]]
+==== Use an Authenticated Sending Domain
+
+Microsoft is unlikely to deliver your email without an authenticated
+sending domain or standalone SPF record set up. Authenticated sending
+domains provide DMARC authentication to your “from” email.
+
+Microsoft formerly quarantined non-authenticated domains in the
+junk/spam folder, but as of 3/22/23, “will now honor the DMARC record of
+https://mxtoolbox.com/dmarc/details/dmarc-tags/dmarc-policy-options[“p=reject”]
+by rejecting the message [entirely] if the domain fails DMARC.”
+
+Authenticated sending domains include SPF, DKIM, and DMARC
+authentication, in that order. DMARC is the last check before an email
+is ultimately rejected, accepted, or quarantined by an inbox provider
+like Microsoft.
+
+[[behalf]]
+===== 🙋  Why do my emails sent from an authenticated sender say "on behalf of" in the Contact's inbox?
+
+Microsoft’s mobile apps and Outlook 365 for desktop use a stricter
+method for displaying “from” addresses than other inbox providers.
+
+Microsoft ignores the newer https://www.rfc-editor.org/info/rfc5322[RFC
+5322] standard used by most other inbox providers, which tells inboxes
+how to interpret and display authenticated “from” email addresses, in
+favor of the older https://www.rfc-editor.org/info/rfc822[RFC 822]
+standard, which tells inboxes to display the actual sender without
+interpretation.
+
+Because the “on behalf of” originates with Microsoft, there is currently
+no way to change this in your Sendlane account. Sendlane's development
+team is considering possible solutions that may address how Microsoft
+displays authenticated sending domains in certain Microsoft apps.
+
+link:#top[Back to top]
+
+'''''
+
+[[content]]
+=== Content Issues
+
+Below is a list of adjustments Microsoft makes to how emails display,
+and tips for avoiding them.
+
+[[images]]
+==== Images are not downloaded by default
+
+Microsoft’s default settings do not download images automatically.
+
+This can result in Contacts seeing an email that looks blank or, worse,
+full of security warnings if it is too image heavy and they have not
+turned on automatic image downloading or
+https://help.sendlane.com/article/431-how-to-whitelist-an-email-address[added
+you to their always allow list].
+
+Tips:
+
+. Reduce the number of images in your email
+. Use ALT text for all images in your email
+. Make all crucial information and calls to action text based
+
+[[crop]]
+==== Large images are cropped
+
+Microsoft crops images that are taller than 1728px, leaving a cut off
+image in the Contact’s inbox.
+
+Tips:
+
+. Use small images
+. Do not use HTML to resize images; Microsoft will ignore it and render
+the original image size
+. Check your image’s dimensions in the email builder
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64399b0837fd073d73d6c8c5/file-Gk7rA7m6DS.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64399b0837fd073d73d6c8c5/file-Gk7rA7m6DS] This
+image will likely be cropped in Microsoft inboxes and should be resized
+to a maximum height of 1728px.
+
+[[gif]]
+====  .GIF images do not play
+
+Microsoft does not show a .GIF’s animation. Instead, it renders just the
+first frame of the .GIF.
+
+Tips:
+
+. Do not use .GIFs to communicate any crucial information
+. Review your .GIF’s first frame and make sure it fits in with the rest
+of your email content
+
+[[buttons]]
+==== Buttons do not match the preview shown in the email builder
+
+Microsoft does not render border radius options, meaning all buttons
+will be square in Microsoft inboxes.
+
+Tips:
+
+. Preview buttons as both square and rounded if using rounded corners
+
+[[colors]]
+==== Colors are not transparent
+
+Microsoft does not support transparent colors and will render them at
+full opacity.
+
+Tips:
+
+. Do not use transparency in your email design
+. If you must use transparency, preview your design at your desired
+transparency and at full opacity
+
+link:#top[Back to top]

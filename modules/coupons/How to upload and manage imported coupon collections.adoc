@@ -1,0 +1,117 @@
+[[top]]
+==== Overview
+
+Sendlane's coupon tool allows you to upload and insert unique coupon
+codes into campaign or automation emails or SMS messages. Create and
+upload as many coupon collections as your marketing strategy calls for.
+
+==== In this guide
+
+* link:#generate[Generate coupon codes]
+* link:#format[Format coupon collection file]
+* link:#upload[Upload coupon collection to Sendlane]
+* link:#replenish[Replenish existing coupon collections]
+
+[[shopify-generation]]
+====== 💡 Shopify users can generate coupons in Sendlane!
+
+Check out our guide to
+https://help.sendlane.com/article/507-how-to-generate-unique-coupons-for-shopify[coupons
+for Shopify]
+
+'''''
+
+[[generate]]
+===  Generate coupon codes
+
+Use the tool of your choice to generate unique coupon codes and save
+your file as a .CSV (maximum size 100 MB).
+
+We recommend generating enough codes for all contacts who will receive
+the campaign or automation message. For campaigns, generate slightly
+more coupons than the campaign builder's audience estimation. We
+recommend around 50k codes for high volume automations.
+
+We recommend the following coupon generation tools:
+
+* BigCommerce -
+https://springmerchant.com/bigcommerce/coupon-importer-buster/[BigCommerce
+Coupon Buster]
+* WooCommerce -
+https://woocommerce.com/document/smart-coupons/how-to-import-coupons-in-bulk-using-a-csv-file/[Smart
+Coupons]
+
+link:#top[Back to top]
+
+'''''
+
+[[format]]
+===  Format coupon code file
+
+Coupon collection .CSV files should:
+
+Be 100 MB or smaller (this generally translates to around 50,000 codes
+as long as the file has no other columns)
+
+Contain a single column with a header that does not contain spaces (for
+example: `+couponcode+` will import, `+coupon code+` will not)
+
+Contain a unique coupon code in every row
+
+Use the
+https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/attachments/64249f33a3236b1edbce8a0e/Sendlane-Coupon-Code-Upload-Template.csv[Sendlane
+Coupon Code Upload Template] for easy processing!
+
+link:#top[Back to top]
+
+'''''
+
+[[upload]]
+===  Upload coupon codes to Sendlane
+
+To upload your coupon code .CSV file:
+
+. Click the *Account* icon
+. Click *Unique Coupons* 
+. Click *Import Coupons* 
+. Set a name for your coupon collection
+. Select or drag the file into the uploader.
+. Choose a refill notification threshold to be notified via email when
+the supply of uploaded coupons reaches to the specified percentage of
+codes remaining
+. Click *Upload* to save your coupon codes
+
+link:#top[Back to top]
+
+'''''
+
+[[replenish]]
+=== Replenish existing coupon collections
+
+Add more unique codes to an existing coupon collection at any time, even
+before all codes have been used.
+
+To add more unique codes to a coupon collection:
+
+. Click the *View* icon next to the coupon collection
+. Click *Add Coupons* 
+. Select or drag in your new .CSV file
+. Click *Upload*
+
+[[run-out]]
+====== ⚠️ If coupons run out without being replenished, emails are stopped
+
+To restart a campaign that was stopped because there weren't enough
+coupon codes to send to each member of the audience
+
+. Replenish the coupon collection
+. Click the restart icon next to the Campaign on the
+https://app.sendlane.com/campaigns[Campaigns page]
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/644a9b49d50b2033bd24186d/file-WPGW8OaNRK.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/644a9b49d50b2033bd24186d/file-WPGW8OaNRK]To
+restart an Automation email:
+
+. Replenish the coupon collection
+. Click the activate button on the email node of any email using coupons
+
+link:#top[Back to top]

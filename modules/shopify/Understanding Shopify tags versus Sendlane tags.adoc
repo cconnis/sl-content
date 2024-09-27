@@ -1,0 +1,64 @@
+==== Overview
+
+Multiple places across the Sendlane app allow you to use data from
+Shopify customer tags, which are not the same as
+https://help.sendlane.com/article/82-tags[Sendlane's contact tags]. Read
+on to learn about the differences between Shopify and Sendlane tags and
+what you can do with each type!
+
+==== In this guide
+
+* link:#shopify-tags[Shopify tags in Sendlane]
+** link:#automations[Shopify tags in automations]
+** link:#segments[Shopify tags in segments]
+** link:#conditional-splits[Shopify tags in conditional splits]
+
+'''''
+
+[[shopify-tags]]
+=== Shopify tags in Sendlane
+
+The only tags available for segmentation in Sendlane are
+https://help.shopify.com/en/manual/shopify-admin/productivity-tools/using-tags#tag-types[Shopify
+customer tags]. These are tags applied to customers' profiles in your
+Shopify store. You cannot segment in Sendlane using product, transfer,
+blog post, order, or draft order Shopify tags.
+
+[[automations]]
+==== Shopify tags in automation triggers
+
+You can trigger an automation to start when a customer has a specified
+Shopify customer tag applied to their profile in your Shopify store with
+the
+https://help.sendlane.com/article/648-automation-triggers-for-shopify#tag-applied[Shopify
+Customer Tag Applied trigger].
+
+This trigger cannot be used to start automations when Sendlane tags are
+applied to contact profiles in Sendlane. To use a Sendlane tag to
+trigger an automation, use the
+https://help.sendlane.com/article/448-automation-triggers#standard[Tag
+Added or Tag Removed standard automation triggers].
+
+[[conditional-splits]]
+==== Shopify tags in conditional splits
+
+You can create a
+https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation#conditional-splits[conditional
+split] to send contacts down one of two paths in an automation based on
+whether or not their profile in your Shopify store has or doesn't have a
+specified tag.  When you select `+Shopify+` as your condition and
+`+Customer+` as your resource, the `+Tag+` option refers to Shopify
+customer tags:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5e851f3fa9421e287f6b/file-JOf3z1hYff.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5e851f3fa9421e287f6b/file-JOf3z1hYff]
+
+[[segments]]
+==== Shopify tags in segments
+
+You can create segments of Sendlane contacts based on whether or not the
+contact's profile in your Shopify store has or doesn't have a specified
+Shopify tag. When you select `+Shopify+` as your condition and
+`+Customer+` as your resource, the `+Tag+` option refers to Shopify
+customer tags:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5ef05173914f806c1c8a/file-995lAtbUlz.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5ef05173914f806c1c8a/file-995lAtbUlz]

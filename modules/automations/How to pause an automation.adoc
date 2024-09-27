@@ -1,0 +1,23 @@
+==== Overview
+
+You can pause an automation so that contacts moving through will still
+reach the end, but no new contacts will start the automation. Read on to
+learn how!
+
+=== Pause an automation
+
+When you deactivate an automation, no new contacts will start the
+automation, but contacts who have already started the automation will
+not be able to complete it.
+
+You can pause an automation by replacing the triggers being used with a
+trigger contacts cannot activate. Options include, but are not limited
+to:
+
+* A subscribe to list trigger where the selected list is not connected
+to any sign up source
+* A tag added trigger where the selected tag is not connected to any
+automation or other process that adds the selected tag to a contact's
+profile
+* A submits a form trigger where the selected form is not installed
+anywhere contacts can access

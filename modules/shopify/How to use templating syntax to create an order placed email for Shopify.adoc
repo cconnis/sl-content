@@ -1,0 +1,204 @@
+[[f232aa07-e9e4-4c8c-947a-17ecbb28acff]]
+==== Overview
+
+You can use templating syntax to insert dynamic data from your Shopify
+store’s order placed data. Read on to learn more about templating syntax
+in automation emails and see a plain text template you can use as the
+basis of your order placed email.
+
+[[da479621-ff7b-4b28-9446-b8a0496d7b2a]]
+==== In this guide
+
+* link:#prepare[Prepare your email for templating syntax with an
+assignment tag]
+* link:#context[Provide context for all templating syntax tags]
+* link:#template[Basic order placed template for Shopify]
+* link:#advanced[Advanced enhancements to the basic order placed
+template for Shopify]
+* link:#troubleshooting[Troubleshooting]
+
+'''''
+
+[[prepare]]
+=== Prepare your email for templating syntax with an assignment tag
+
+The assignment tag tells the email builder how to render the templating
+syntax into plain language.
+
+Without the assignment tag, your templating syntax will not render and
+will appear to contacts as raw templating syntax.
+
+Insert assignment tag `+{% set order = trigger.getOrder() %}+` in a text
+element at the very top of your email before adding one of the example
+snippets so that your syntax will populate. This tag will not be visible
+in emails contacts receive.
+
+All other elements in your email must be below the text element
+containing the assignment tag.
+
+The screenshots below show a draft email with an assignment tag
+correctly set, templating syntax that renders basic information about an
+order, and the results of previewing the draft:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66916f5c5908935e84818602/file-oCseOd1mI5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66916f5c5908935e84818602/file-oCseOd1mI5]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66916f625908935e84818603/file-0CuVaZNKz7.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66916f625908935e84818603/file-0CuVaZNKz7]
+
+[[preview-selection]]
+===== ⚠️ Previews of templating syntax pull from a randomly selected contact profile
+
+The email builder’s preview function displays the syntax rendered as the
+plain language using data from a randomly selected contact profile.
+
+You may see some pieces of syntax “disappear” when you click Preview.
+This means that the randomly selected contact did not have that data in
+their profile.
+
+For example, if you insert contacts’ billing address with templating
+syntax in your email and the randomly selected contact profile does not
+have a billing address, the billing address syntax will appear blank.
+
+To force a new randomly selected contact profile, log out of Sendlane
+and log in again.
+
+'''''
+
+[[context]]
+=== Provide context for all templating syntax tags
+
+Templating syntax returns raw data with no labels
+
+For example, the order number tag `+{{order.name}}+` returns a raw order
+number with no indication that it is an order number. If you do not
+include text in your email that provides context for your templating
+syntax, your email will be difficult to understand.
+
+The table below shows the results of templating syntax with and without
+manually added text to provide context:
+
+[cols=",",]
+|===
+|*Templating syntax* |*Renders as*
+|`+{{order.name}}+` |#1032
+|Order number: `+{{order.name}}+` |Order number: #1032
+|===
+
+'''''
+
+[[template]]
+=== Basic order placed template for Shopify
+
+You can copy and paste the entire text based template below into an
+email in an automation with a Shopify Order Placed trigger and click
+Preview to see dynamic data populated. When you paste the template into
+the email builder, press Ctrl + Shift + V on Windows or Cmd + Shift + V
+on macOS to paste without formatting.
+
+[source,code]
+----
+{% set order = trigger.getOrder() %}
+
+Order number: {{order.name}}
+Order date: {{order.processed_at }}
+
+Billing Address
+{{ order.billing_address.first_name }} {{ order.billing_address.last_name }}
+{{order.billing_address.address1}}
+{{order.billing_address.address2}}
+{{order.billing_address.city}}, {{order.billing_address.province_code}}, {{order.billing_address.zip}}
+{{order.billing_address.country_code}}
+
+Shipping Address
+{{ order.shipping_address.first_name }} {{ order.shipping_address.last_name }}
+{{order.shipping_address.address1}}
+{{order.shipping_address.address2}}
+{{order.shipping_address.city}}, {{order.shipping_address.province_code}}, {{order.shipping_address.zip}}
+{{order.shipping_address.country_code}}
+
+Order contents
+{% for product in order.line_items %}
+
+{{product.quantity}} x {{product.title}} {{product.variant_title}}
+
+{% endfor %}
+    
+----
+
+'''''
+
+[[advanced]]
+=== Advanced enhancements to the basic order placed template for Shopify
+
+[[preview-selection]]
+===== ⚠️ Product templating syntax in order or checkout automations requires a loop function to display all items in an order
+
+If you use product related templating syntax without a loop, only one
+product from the order or checkout will render in the email.
+
+To add a loop function:
+
+[arabic]
+. Copy the following loop tag `+{% for product in order.line_items %}+`
+
+[arabic, start=2]
+. Paste the loop tag directly above the beginning of your product
+related syntax
+
+[arabic, start=3]
+. Copy the following end loop tag `+{% endfor %}+`
+
+[arabic, start=4]
+. Paste the end loop tag directly below the end of your product related
+syntax
+
+For example, the syntax below will display a list containing the name of
+each product in the randomly selected order or checkout used by the
+email builder preview:
+
+*Order*
+
+....
+{% for product in order.line_items %}
+{{product.title}}
+{% endfor %}
+    
+....
+
+*Checkout*
+
+....
+{% for product in checkout.line_items %}
+{{product.title}}
+{% endfor %}
+    
+....
+
+'''''
+
+=== Troubleshooting
+
+[[preview-blank]]
+====== My email preview is blank!
+
+Check for the following issues if your email containing templating
+syntax is blank:
+
+[arabic]
+. Your email is missing the
+https://www.notion.so/How-to-use-templating-syntax-to-create-an-order-placed-email-for-Shopify-51c2e284d6da4245bac8983b140cc697?pvs=21[assignment
+tag]. Add the assignment tag to the very top of your email and click
+Preview again.
+
+[arabic, start=2]
+. The preview randomly selected a profile that does not contain the data
+pulled into your email. Log out of Sendlane and back in to force another
+profile to be selected, and ensure that at least one order has been
+placed in your Shopify store.
+
+[[preview-blank]]
+====== When I paste the sample template into the email builder, I get a `+Unexpected token "operator" of value "<"+` error
+
+The email builder can sometimes erroneously recognize pieces of
+templating syntax as URLs. If you see a
+`+Unexpected token "operator" of value "<"+` error and parts of the
+template appear to be links, remove the template and paste it in again
+by pressing Ctrl + Shift + V on Windows or Cmd + Shift + V on macOS to
+paste without formatting.

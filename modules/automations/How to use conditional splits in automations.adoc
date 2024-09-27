@@ -1,0 +1,133 @@
+[[top]]
+==== Overview
+
+You can create logic based paths in automations with conditional splits
+to send contacts on targeted journeys. Read on to learn more about
+conditional split logic and how to add them to your automations.
+
+==== In this guide
+
+* link:#understanding-logic[Understanding conditional split logic]
+* link:#add-split[Add a conditional split]
+* link:#flip[Flip a conditional split's YES and NO paths]
+* link:#delete[Delete a conditional split]
+
+'''''
+
+[[understanding-logic]]
+=== Understanding conditional splits
+
+Conditional splits are automation nodes that function like segments. You
+can use a conditional split to create logic based conditions that
+determine which of two automation paths contacts should experience.
+
+Conditional splits create divergent paths in automations based on
+conditions like "has a specified product in their order" or "has a tag
+for interested in X product."
+
+For example, let's say you want to create two paths for your order
+placed automation, depending on the products in the order. If contacts
+have a certain item in their order, they should receive a special email.
+Contacts who didn't order the specified item can proceed down the other
+path that doesn't contain information about the specified product.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66b632d148915f570c6a92f4/file-BqvyIgyLdY.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66b632d148915f570c6a92f4/file-BqvyIgyLdY]
+
+====== When do conditional splits check for the specified conditions?
+
+When a contact meets an automation trigger's criteria, each action is
+nearly instantly queued up. If there are no wait nodes before a
+conditional split node, the conditional split checks the contact's
+conditions as soon as they trigger the automation.
+
+This almost instant check means that if a conditional split's logic
+includes opened or clicked conditions, the split will immediately check
+for those engagement metrics after messages are sent without enough time
+for contacts to engage. Depending on the overall logic of your
+automation, it often makes sense to add a 24-hour wait node before a
+conditional split node that uses engagement-based conditions.
+
+[[integration-conditions]]
+====== A condition using an integration will only pull contacts who exist in the integration’s database into the YES side of a conditional split
+
+Using an integration based condition in a conditional split will only
+pull contacts who exist in the integration’s database into the YES side
+of a conditional split. All contacts who do not exist in the
+integration’s database will be sent down the NO side of a conditional
+split, regardless of the conditions set.
+
+Let’s say you want to create a conditional split that divides your
+audience into contacts who have placed at least 1 order and contacts who
+have placed 0 orders.
+
+Your condition would be Customer > Total Orders Places > is greater than
+> 0:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64dfd3b6b73292711b9801c1/file-piDGRhiyUs.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64dfd3b6b73292711b9801c1/file-piDGRhiyUs]
+
+The YES side of this conditional split will grab contacts who exist in
+your store’s database and have placed at least 1 order. The NO side will
+grab contacts who do not yet exist in your store’s database (because
+they haven’t made a purchase or an account on your store) AND contacts
+who exist in your store’s database but have not yet placed an order.
+
+link:#top[Back to top]
+
+'''''
+
+[[add-split]]
+=== Add a conditional split
+
+To add a conditional split to your automation:
+
+. Click the *+ button*
+. ****Click *conditional split*
+. Set your conditions
+. Click *Done*
+
+The conditions you select will funnel contacts who meet them down the
+YES branch. Contacts who do not meet the conditions specified will be
+sent down the NO branch.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5d6e5940934e140f4bb6/file-j8pxvo09bE.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5d6e5940934e140f4bb6/file-j8pxvo09bE]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5d765940934e140f4bb7/file-ybC0y10sgr.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5d765940934e140f4bb7/file-ybC0y10sgr]
+
+link:#top[Back to top]
+
+'''''
+
+[[flip]]
+=== Flip YES and NO paths for a conditional split
+
+You can flip the YES and NO paths for a conditional split to move
+existing nodes from one branch to another.
+
+Contacts who triggered the automation before you flipped the split will
+receive all actions they were originally scheduled to receive; contacts
+who triggered the automation after you flipped the split will be
+scheduled to receive the new paths.
+
+To flip a conditional split's branches:
+
+. Click the *conditional split node*
+. Click the *flip* icon
+. Click *Flip Conditional Split*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66b555336eb51e63b8f9e720/file-XMSKKJE1fq.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66b555336eb51e63b8f9e720/file-XMSKKJE1fq]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66b5553a493fd0116031ed9e/file-72l2qGXWrq.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66b5553a493fd0116031ed9e/file-72l2qGXWrq]
+
+link:#top[Back to top]
+
+'''''
+
+[[options]]
+=== Delete a conditional split
+
+To delete a conditional split:
+
+. Click the *conditional split*
+. Click the *trash can* icon
+. Select a path or both paths to delete
+. Click *Delete*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/646fec4406d1de0f8f3de8a4/file-VwnXPW9o1V.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/646fec4406d1de0f8f3de8a4/file-VwnXPW9o1V]
+
+link:#top[Back to top]

@@ -1,0 +1,33 @@
+==== Overview
+
+Sendlane Reviews includes the ability to comment on reviews to thank
+customers for their positive reviews or address issues for negative
+reviews! Read on to learn how to set your store name and avatar, and how
+to publicly reply to a review.
+
+==== In This Guide
+
+* link:#set[Set Store Name and Avatar]
+* link:#reply[Reply to a Review]
+
+'''''
+
+[[set]]
+=== Set Store Name and Avatar
+
+Update your store's profile name and avatar on the Store Profile tab.
+
+In the Avatar Name field, enter the name you want to display when
+replying to reviews. Click the Avatar Icon checkbox to enable an icon
+for your comments, then click the uploader to select an image. Preview
+your store's profile in the right hand sidebar.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6494c71f1c43322e9690df52/file-Bn72SeLbz0.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6494c71f1c43322e9690df52/file-Bn72SeLbz0]
+
+[[reply]]
+=== Reply to a Review
+
+Reply to reviews by clicking the Reviews tab, selecting a Review, and
+clicking Add Comment. Only one comment can be added per Review.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495e0bd046c1478e8c7724c/file-j8hwtrJQ56.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495e0bd046c1478e8c7724c/file-j8hwtrJQ56]

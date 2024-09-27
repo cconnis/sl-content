@@ -1,0 +1,58 @@
+Enterprise-level sales are often the biggest moneymakers for businesses.
+This is exactly why it's so important to have a retargeting strategy for
+enterprise sales page visitors - so you can nurture these leads with a
+personalized touch from your sales team!
+
+By tracking the behavior of site visitors, you can easily trigger an
+automation to notify your sales team anytime a contact visits your
+enterprise sales page, or any page you'd like!
+
+'''''
+
+=== Before Getting Started
+
+Before you begin, please be sure that you've
+https://help.sendlane.com/article/72-beacon[installed Beacon on your
+website]. During that process, you should also
+https://help.sendlane.com/article/72-beacon#event-tracking[set up
+an Event to track] using the URL of your enterprise sales page.
+
+====== Please Note
+
+In order for Beacon to begin tracking the behavior of your audience,
+contacts first need to opt-in to your account. Once they open a campaign
+that leads them back to your website, their behavior will be tracked
+accordingly and available within their customer profile!
+
+'''''
+
+=== Setting up your Automation
+
+. Begin by heading to *_Automations_ → **_New Automation_*
+. From here select *_Start From Scratch_* and name your automation
+. Select the **_Event Triggered _**action for retargeting 
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5faee7b84cedfd001610cbdf/file-dgnNN0gBua.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5faee7b84cedfd001610cbdf/file-dgnNN0gBua]
+. Select the event you previously created that is linked to a site visit
+. Next, add a *_Send Message_* action and choose
+*_Notification image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5faee7cecff47e00160b9cce/file-PBPyUxblBI.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5faee7cecff47e00160b9cce/file-PBPyUxblBI]_*
+. Fill in the details to send an internal notification to your sales
+team that a lead might be interested in your enterprise product, service
+or offer so they can reach out personally to nurture the lead, answer
+any questions they may have, make the sale! 
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5faee7e44cedfd00165b0376/file-xzO5k8oVPq.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5faee7e44cedfd00165b0376/file-xzO5k8oVPq]
+. From here, you may want to
+https://help.sendlane.com/article/82-tags#automation[add a tag] to
+enterprise sales leads, or
+https://help.sendlane.com/article/73-automations#communications[send an
+email] with calendar link to schedule a sales demo or meeting, while
+your sales team reaches out over the phone. You can add any other
+actions, communications or goals you'd like, based on your sales funnel
+and flow!
+. Once you've completed your automation be sure to set the funnel
+from _Inactive_ to *_Active_*
++
+*_image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee258aa2c7d3a10cba8c537/file-NNSNQ7H5f4.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee258aa2c7d3a10cba8c537/file-NNSNQ7H5f4]_*
+
+And that's it! Now your sales team will get notified anytime a potential
+lead visits your enterprise sales page

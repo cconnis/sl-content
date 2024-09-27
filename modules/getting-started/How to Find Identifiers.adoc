@@ -1,0 +1,162 @@
+When you request technical support or set up an API call, often you'll
+need the identifier of the part of the Sendlane platform you're working
+with.
+
+In Sendlane, the following functionalities create identifier numbers:
+
+* link:#contact[Contacts]
+* link:#list[Lists]
+* link:#tags[Tags]
+* link:#custom-field[Custom Fields]
+* link:#automation[Automations]
+* link:#automation-email[Automation Emails]
+* link:#e-campaign[Email Campaigns]
+* link:#e-template[Email Templates]
+* link:#sms[SMS Campaigns]
+* link:#popup[Pop-ups]
+
+This guide shows you how to find the identifier for each functionality!
+
+[[contact]]
+=== Contact Identifier
+
+. Click the *View* icon
+. Click *View more*
+. Copy the identifier from the end of the URL
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64653fe68f8b75133bc20986/file-ELLknPGkDo.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64653fe68f8b75133bc20986/file-ELLknPGkDo]
+
+link:#top[Back to top]
+
+'''''
+
+[[list]]
+=== List Identifier
+
+Copy a List's identifier from the ID column of the
+https://app.sendlane.com/audience/lists[Lists page].
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/646540b4c6234261f380e2d8/file-b3DAu6hcvz.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/646540b4c6234261f380e2d8/file-b3DAu6hcvz]
+
+link:#top[Back to top]
+
+'''''
+
+[[tags]]
+=== Tag Identifier
+
+Copy a Tag's identifier from the ID column of the
+https://app.sendlane.com/audience/tags[Tags page].
+
+link:#top[image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/646542388f8b75133bc2098c/file-PqoOyH6GY2.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/646542388f8b75133bc2098c/file-PqoOyH6GY2]Back
+to top]
+
+'''''
+
+[[custom-field]]
+=== Custom Field Identifier
+
+Copy a Custom Field's identifier from the ID column of the
+https://app.sendlane.com/audience/personalization[Personalization page].
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/646542905d778e52ac8f052b/file-cXU5Ac9FuS.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/646542905d778e52ac8f052b/file-cXU5Ac9FuS]
+
+link:#top[Back to top]
+
+'''''
+
+[[automation]]
+=== Automation Identifier
+
+Copy an Automation's identifier from the end of the Automation's URL.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/646543355d778e52ac8f052c/file-bD9mvX5N7X.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/646543355d778e52ac8f052c/file-bD9mvX5N7X]
+
+link:#top[Back to top]
+
+'''''
+
+[[automation-email]]
+=== Automation Email Identifier
+
+. Click the *email node*
+. Click *Edit Email*
+. Copy the identifier from the URL
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6465447e5d778e52ac8f0532/file-bJWh7PcDVw.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6465447e5d778e52ac8f0532/file-bJWh7PcDVw]
+
+link:#top[Back to top]
+
+'''''
+
+[[e-campaign]]
+=== Email Campaign Identifiers
+
+Email Campaign identifiers are in different locations depending on
+whether the Campaign has been sent.
+
+[[before-e]]
+==== Before Sending
+
+Copy the Campaign's identifier from the Campaign editor's URL.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64654d748f8b75133bc209a1/file-Igr75CSXFG.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64654d748f8b75133bc209a1/file-Igr75CSXFG]
+
+[[after-e]]
+==== After Sending
+
+Copy the Campaign's identifier from the Campaign report's URL.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64654da7c27c2c5c1df59e7b/file-Okat51TWsB.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64654da7c27c2c5c1df59e7b/file-Okat51TWsB]
+
+link:#top[Back to top]
+
+'''''
+
+[[e-template]]
+=== Email Template Identifier
+
+. Hover over the Template
+. Click *Edit Template*
+. Copy the template's identifier from the URL
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64654754c27c2c5c1df59e70/file-aYt7BVGGN9.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64654754c27c2c5c1df59e70/file-aYt7BVGGN9]
+
+link:#top[Back to top]
+
+'''''
+
+[[sms]]
+=== SMS Campaign Identifier
+
+SMS Campaign identifiers are in different locations depending on whether
+the Campaign has been sent.
+
+[[before-sms]]
+==== Before Sending
+
+Copy the Campaign's identifier from the Campaign editor's URL.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64654e1ec27c2c5c1df59e7c/file-TNbcJv6Wwn.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64654e1ec27c2c5c1df59e7c/file-TNbcJv6Wwn]
+
+[[after-sms]]
+==== After Sending
+
+Copy the Campaign's identifier from the Campaign report's URL.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64654e51c6234261f380e2f2/file-onKRtjiOUK.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64654e51c6234261f380e2f2/file-onKRtjiOUK]
+
+link:#top[Back to top]
+
+'''''
+
+[[popup]]
+=== Pop-up Identifier
+
+Copy the Pop-up's identifier from the Pop-up editor's URL.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64654eb78f8b75133bc209a3/file-cfbglE1Z5K.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64654eb78f8b75133bc209a3/file-cfbglE1Z5K]
+
+link:#top[Back to top]
+
+'''''

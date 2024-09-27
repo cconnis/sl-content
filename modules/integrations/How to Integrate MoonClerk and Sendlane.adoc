@@ -1,0 +1,92 @@
+https://www.moonclerk.com/?via=sendlane[MoonClerk] is a payment platform
+designed to facilitate recurring and one-time transactions without
+hassle.
+
+Integrating MoonClerk and Sendlane enables you to funnel customer emails
+collected at checkout directly to your lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need to have an active
+https://www.moonclerk.com/?via=sendlane[MoonClerk account] with a
+payment form created!
+
+====== Please Note
+
+All MoonClerk forms have a default email field built in on the second
+page for checkout, so you don't have to worry about adding one in.
+
+You should also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → _*API*._
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so MoonClerk knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting MoonClerk and Sendlane
+
+. Inside of your MoonClerk account, click *_Account_* →
+_*Integrations*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5dfa8afd04286364bc930659/file-x8Ue9iCNJz.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5dfa8afd04286364bc930659/file-x8Ue9iCNJz]_
+. On the _Account Integrations_ page, scroll until you find Sendlane and
+click *_Install_*. +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cef06cb2c7d3a1cb9b6f6ab/file-XC8RHscmgV.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cef06cb2c7d3a1cb9b6f6ab/file-XC8RHscmgV]
+. Enter your Subdomain (without “.sendlane.com”), API/Hash Keys, and
+click _*Save
+Credentials*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cef06db2c7d3a1cb9b6f6ad/file-A4LULHxxsl.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cef06db2c7d3a1cb9b6f6ad/file-A4LULHxxsl]_
+
+Now, MoonClerk and Sendlane are fully linked!
+
+'''''
+
+=== Connecting a MoonClerk Form to a Sendlane List
+
+Now that the integration is connected, be sure you activate it for each
+form you want to use!
+
+. From the MoonClerk homepage, click
+_*Forms*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5dfa89722c7d3a7e9ae54ad8/file-vuqjpqL2tu.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5dfa89722c7d3a7e9ae54ad8/file-vuqjpqL2tu]_
+. Click the *_settings icon_* next to the form you'd like to
+connectimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5dfa89282c7d3a7e9ae54ace/file-UO8Gn7SXyY.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5dfa89282c7d3a7e9ae54ace/file-UO8Gn7SXyY]
+. Then, click
+_*Integrate*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5dfa8c9e04286364bc930669/file-3N0UdAK56F.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5dfa8c9e04286364bc930669/file-3N0UdAK56F]**_
+. Next, click *_+ Add_* next to the Sendlane
+Integrationimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ceee29f2c7d3a1cb9b6f411/file-YFQQxH17T3.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ceee29f2c7d3a1cb9b6f411/file-YFQQxH17T3]
+. From the dropdown menu, choose the List you want this Form to send
+leads to, and click
+*_Saveimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ceee2a52c7d3a1cb9b6f412/file-zt71PCqkyt.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ceee2a52c7d3a1cb9b6f412/file-zt71PCqkyt]_*
+
+The connection is fully complete! Captured contacts from your MoonClerk
+forms will now be synced with your selected List in Sendlane!
+
+'''''
+
+=== *Troubleshooting*
+
+** This integration is native to MoonClerk, so we're only able to
+provide limited troubleshooting support. However, if you _do_ need help,
+the MoonClerk team is just a few clicks away!
+
+* Connect with the mailto:help@moonclerk.com[MoonClerk team]
+* Visit the http://help.moonclerk.com/[Help Center]
+
+==== Additional MoonClerk Resources
+
+https://www.moonclerk.com/?via=sendlane[Sign up for MoonClerk] |
+https://www.moonclerk.com/blog/[MoonClerk Blog]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-moonclerk[Sendlane
++ MoonClerk - Immediately Accept Recurring Payments with a Completely
+Branded Checkout Experience]
+* https://www.sendlane.com/blog-posts/10-simple-ways-to-optimize-your-checkout-process[10
+Simple Ways to Optimize Your Checkout Process]
+* https://www.sendlane.com/blog-posts/keep-them-buying[5 Emails You Can
+Send Current Customers to Keep Them Buying]

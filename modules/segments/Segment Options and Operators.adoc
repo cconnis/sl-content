@@ -1,0 +1,520 @@
+=== In this guide
+
+Use the table below to jump to categories of Segment options
+
+[width="100%",cols="50%,50%",]
+|===
+|*Category* |*Description*
+
+|link:#list-status[List] + |Whether a Contact is or is not on a
+specified List
+
+|link:#contact-properties[Contact Properties] |Contacts' standard
+properties like email address, name, and subscription information
+
+|link:#custom-fields[Custom Fields] |Contacts' custom field data
+
+|link:#engagement-activity[Engagement & Activity] |Contacts' email
+engagement and website activity
+
+|link:#forms[Forms] |See Contacts who did or did not sign up using
+specified forms
+
+|link:#contact-tag[Contact Tag] |Contacts' applied or not applied Tags
+
+|link:#in-automation[In Automation] |Whether a Contact is or is not
+currently in a specified Automation
+
+|link:#reviews[Reviews] |Contacts' review activity
+
+|link:#shopify[Shopify] |Contacts' attributes and activity in a Shopify
+store
+
+|link:#bigcommerce[BigCommerce] |Contacts' attributes and activity in a
+BigCommerce store +
+|===
+
+[[location-segmentation]]
+===== ⚠️ Use caution when selecting location based Segment options
+
+Segmenting by location depends heavily on your business operations. Make
+sure to read the descriptions of each location option carefully. If you
+ship products, your best bet is to use a line from your customers'
+shipping locations using your eCommerce integration's Segmentation
+options instead of the address data in the Contact Properties section.
+
+=== List Status
+
+[cols="",]
+|===
+|*Options*
+|Is on List 
+|Not on List
+|===
+
+link:#top[Back to top]
+
+'''''
+
+=== Contact Properties
+
+[cols="",]
+|===
+|*Options*
+|Email Address
+|First Name
+|Last Name
+|Phone
+|Geolocation
+|Zip/Postal
+|Device
+|Lifetime Value
+|Subscription Date
+|Signup Source
+|SMS Consent
+|===
+
+link:#top[Back to top]
+
+'''''
+
+=== Custom Fields
+
+[cols="",]
+|===
+|*Options*
+|Custom Field
+|===
+
+*Contacts with incorrectly formatted dates in their custom fields (i.e.,
+with timestamps) will not be included in segments using these
+conditions.
+
+link:#top[Back to top]
+
+'''''
+
+=== Engagement & Activity
+
+[cols="",]
+|===
+|*Options*
+|Opened
+|Clicked
+|Did Not Open
+|Did Not Click
+|Triggered Event
+|Did Not Trigger Event
+|Visited Site
+|===
+
+link:#top[Back to top]
+
+'''''
+
+=== Forms
+
+[cols="",]
+|===
+|*Options*
+|Signup By Form
+|Not Signup By Form
+|===
+
+link:#top[Back to top]
+
+'''''
+
+=== Contact Tag
+
+[cols="",]
+|===
+|*Options*
+|Contact Tag
+|Contact Tag
+|===
+
+link:#top[Back to top]
+
+'''''
+
+=== In Automation
+
+[cols="",]
+|===
+|*Options*
+|Is In Automation
+|Not In Automation
+|===
+
+link:#top[Back to top]
+
+'''''
+
+=== Reviews
+
+To see Reviews Segment options:
+
+. Select your eCommerce provider from the Options dropdown
+. Select your store
+. Select Reviews
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64cc10789d8cf153a015d672/file-KU7hQ34aBZ.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64cc10789d8cf153a015d672/file-KU7hQ34aBZ]
+
+[cols="",]
+|===
+|*Options*
+|Submitted Review
+|Submitted Review with Photo
+|Has Any
+|Does not have any
+|Number of Reviews
+|Rating
+|Submitted date
+|Product(s)
+|===
+
+link:#top[Back to top]
+
+'''''
+
+=== Shopify
+
+[[shopify-customer]]
+==== Customer Data
+
+[[shopify-data]]
+===== ⚠️ Contacts must have made a purchase to be counted in Shopify Customer Segments
+
+[width="100%",cols="50%,50%",]
+|===
+|*Filter* |*Notes*
+
+|Exists |Customer exists in your Shopify store's database
+
+|Total Spend |Customer's total amount spent in your Shopify store
+
+|Number of Orders |The number of orders the customer has placed in your
+Shopify store
+
+|Country |Country entered in your Shopify store
+
+|State/Province |State/province entered in your Shopify store +
+
+|City |City entered in your Shopify store +
+
+|Verified Email |Whether the customer's email has been verified or not
+for your Shopify store
+
+|Accepts Marketing |Whether the customer has given consent to receive
+marketing emails or not from your Shopify store (see
+https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account#email-consent-column[Email
+Consent] for more information)
+
+|Customer Since |Use date parameters to select a window in which the
+Contact became a customer by placing an order or creating an account
+with your Shopify store 
+
+|Tag |Use parameters to select
+https://help.shopify.com/en/manual/shopify-flow/reference/actions/add-customer-tags[Shopify
+tags] (for Tags applied to Contact profiles in Sendlane, see the
+link:#contact-tag[Contact Tag section])
+
+| |
+|===
+
+[[shopify-order]]
+==== Order Data
+
+===== ⚠️ When using relative date filters (in the last X days/months/years), order data is based on the Contact's most recent purchase only
+
+[[in-vs-is]]
+===== ⚠️ When using Product related filters to check for one of multiple possible items in an order, use the `+in+`/`+not in+` operators
+
+The `+is+` operator will pull orders containing each product specified
+and no other products. When you are looking to see orders that contains
+or does not contain at least one of multiple specified products, use the
+`+in+`/`+not in+` operators.
+
+Order data can be filtered by one of the following order statuses
+(review your Shopify store's :
+
+* Any
+* Fulfilled
+* Partially Fulfilled
+* Unfulfilled
+* Returned/Restocked
+
+[width="100%",cols="50%,50%",]
+|===
+|*Filter* |*Notes*
+
+|Exists |Order exists in your Shopify store's database
+
+|Does Not Exist |Order does not exist in your Shopify store's database
+
+|Product |Product associated with or not associated with order
+
+|Product Collection |Product Collection associated with or not
+associated with order
+
+|Product Tag |Product Tag associated with or not associated with order
+
+|Product Type |Product Type associated with or not associated with order
+
+|Product Price |Product price equals, is greater than, or is lesser than
+the specified value
+
+|Product Variant |Product Variant associated with or not associated with
+checkout
+
+|Total Price |Total amount spent on the order (including tax) equals, is
+greater than, or is lesser than the specified value
+
+|Order Date |Date order was placed
+
+|Canceled Reason |Reason order was canceled +
+
+|Discount Code |Order used or did not use specified discount code +
+
+|Landing Site |Landing site is or is not the specified URL
+
+|Note |Note associated with order does or does not contain
+
+|Processed Date |Date order was processed
+
+|Referring Site |Referring site is or is not the specified URL
+
+|Source Name |Order source is or is not Web, POS, iPhone, Android, or
+API
+
+|Order Tag |Specified tag is or is not associated with order
+|===
+
+link:#top[Back to top]
+
+[[shopify-checkout]]
+==== Checkout Data
+
+[[in-vs-is]]
+===== ⚠️ When using Product related filters to check for one of multiple possible items in an order, use the `+in+`/`+not in+` operators
+
+The `+is+` operator will pull orders containing each product specified
+and no other products. When you are looking to see orders that contains
+or does not contain at least one of multiple specified products, use the
+`+in+`/`+not in+` operators.
+
+[width="100%",cols="50%,50%",]
+|===
+|*Filter* |*Notes*
+
+|Exists |Checkout exists in your Shopify store's database
+
+|Does Not Exist |Checkout does not exist in your Shopify store's
+database
+
+|Complete |Checkout is or is not complete
+
+|Discount Code |Checkout used or did not use the specified discount code
+
+|Billing Address Country |Country associated with the checkout billing
+address
+
+|Billing Address State/Province |State/Province associated with the
+checkout billing address +
+
+|Billing Address City |City associated with the checkout billing
+address +
+
+|Billing Address Zip |Full or partial zip associated with the checkout
+billing address
+
+|Date Created |Date checkout was created
+
+|Email |Email associated with or not associated with checkout
+
+|Product |Product associated with or not associated with checkout
+
+|Product Collection |Product Collection associated with or not
+associated with checkout
+
+|Product Tag |Product Tag associated with or not associated with
+checkout
+
+|Product Type |Product Type associated with or not associated with
+checkout
+
+|Product Price |Product price (not including tax) equals, is greater
+than, or is lesser than the specified value
+
+|Product Variant |Product Variant associated with or not associated with
+checkout
+
+|Total Price |Total price of the checkout equals, is greater than, or is
+lesser than the specified value
+
+|Shipping Address Country |Country associated with the checkout shipping
+address
+
+|Shipping Address State/Province |State/Province associated with the
+checkout shipping address +
+
+|Shipping Address City |City associated with the checkout shipping
+address +
+
+|Shipping Address Zip |Zip associated with the checkout shipping address
+
+|Source Name |Checkout source is or is not Web, POS, iPhone, Android, or
+API
+
+|Subtotal Price |Checkout subtotal equals, is greater than, or is lesser
+than the specified value
+|===
+
+'''''
+
+=== BigCommerce
+
+[[bigcommerce-customer]]
+==== Customer Data
+
+[cols=",",]
+|===
+|*Filter* |*Notes*
+
+|Average Order Value |Customer's average order value
+
+|Accepts Marketing |Customer does or does not accept email marketing
+
+|Lifetime Value |Customer's lifetime value
+
+|Purchased |Customer has or has not purchased since specified date or
+range
+
+|Total Orders Placed |The number of orders the customer has placed in
+your BigCommerce store
+
+|Country |Country associated with the customer record in your
+BigCommerce store
+
+|State |State associated with the customer record in your BigCommerce
+store
+
+|City |City associated with the customer record in your BigCommerce
+store
+
+|Customer Since |Customer record has existed in your BigCommerce store
+since the specified date or range
+|===
+
+[[bigcommerce-checkout]]
+==== Checkout Data
+
+[width="100%",cols="50%,50%",]
+|===
+|*Filter* |*Notes*
+
+|Exists |Checkout exists in your BigCommerce store
+
+|Does Not Exist |Checkout does not in your BigCommerce store's database
+
+|Complete |Checkout is or is not complete
+
+|Total Price |Checkout total equals, is greater than, or is lesser than
+the specified value
+
+|Product Category |Product Category associated with or not associated
+with checkout
+
+|Product Price |Checkout's product price equals, is greater than, or is
+lesser than the specified value
+
+|Discount Code |Checkout used or did not use specified discount code
+
+|Date Created |Checkout was created on or before specified date or range
+
+|Product |Checkout contains or does not contain specified product(s)
+
+|Billing Address Country |Country of the checkout's billing address
+
+|Billing Address City + |City of the checkout's billing address
+
+|Billing Address State/Province |State/Province of the checkout's
+billing address
+
+|Billing Address Zip |Zip of the checkout's billing address
+
+|Shipping Address Country |Country of the checkout's shipping address
+
+|Shipping Address City |City of the checkout's shipping address
+
+|Shipping Address State/Province |State/Province of the checkout's
+shipping address
+
+|Shipping Address Zip |Zip of the checkout's shipping address
+|===
+
+[[bigcommerce-order]]
+==== Order Data
+
+===== ⚠️ When using relative date filters (in the last X days/months/years), order data is based on the Contact's most recent purchase only
+
+Order data can be filtered by one of the following order statuses:
+
+* Any
+* Fulfilled
+* Partially Fulfilled
+* Unfulfilled
+* Returned/Restocked
+
+[width="100%",cols="50%,50%",]
+|===
+|*Filter* |*Notes*
+
+|Exists |Order exists in your BigCommerce store's database
+
+|Does Not Exist |Order does not exist in your BigCommerce store's
+database
+
+|Total Price |Total price of the order equals, is greater than, or is
+lesser than the specified value
+
+|Product Category |Product category associated with or not associated
+with order
+
+|Product Price |Product price equals, is greater than, or is lesser than
+the specified value
+
+|Discount Code |Order used or did not use specified discount code
+
+|Order Date |Date order was placed
+
+|Product |Product associated with or not associated with order
+
+|Source + |Order source is or is not Web, POS, iPhone, Android, or API +
+
+|Updated Date |Order was or was not updated on the specified date or
+range
+
+|Billing Address Country |Country of the checkout's billing address
+
+|Billing Address City + |City of the checkout's billing address
+
+|Billing Address State/Province |State/Province of the checkout's
+billing address
+
+|Billing Address Zip |Zip of the checkout's billing address
+
+|Shipping Address Country |Country of the checkout's shipping address
+
+|Shipping Address City |City of the checkout's shipping address
+
+|Shipping Address State/Province |State/Province of the checkout's
+shipping address
+
+|Shipping Address Zip |Zip of the checkout's shipping address
+|===
+
+link:#top[Back to top]
+
+'''''

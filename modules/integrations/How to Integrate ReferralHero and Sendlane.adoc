@@ -1,0 +1,86 @@
+https://referralhero.com[ReferralHero] (formerly Maitre) is a referral
+marketing platform that allows you to create referral campaigns,
+sweepstakes, raffles, ambassador programs, and pre-launch campaigns.
+
+With ReferralHero and Sendlane, you can easily collect participant
+information (and their referrals too!). Then, you can add them to your
+lists within Sendlane and trigger automated emails.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://referralhero.com[ReferralHero account] with a referral campaign
+created.
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so ReferralHero knows where to place
+your new leads and contacts!
+
+'''''
+
+=== Connecting ReferralHero and Sendlane
+
+. Login to your ReferralHero account and select the campaign you wish to
+connect
+. Click on the *_Settings_* tab at the top right of the page
+. On the left navigation menu, click on *_Integrations_*
+. Find Sendlane from the list of available email integrations and click
+*_Connect your Sendlane
+account_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce703942c7d3a5b76431b1f/file-JIrIlmMM58.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce703942c7d3a5b76431b1f/file-JIrIlmMM58]
+. A window will pop-up requesting your API key, Hash key and Sendlane
+Subdomain (in subdomain.sendlane.com
+format)image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce70315042863534399364b/file-oV2UNyYxbd.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce70315042863534399364b/file-oV2UNyYxbd]
+. Enter your security credentials and click *_Connect_*
+. Once the connection is completed, you can select the list you wish to
+add contacts
+toimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce702960428635343993644/file-Qul6iwcEq7.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce702960428635343993644/file-Qul6iwcEq7]
+. Don’t forget to click *_Save_* at the top right to save your settings
+
+Your integration is now complete!
+
+Anyone who submits their email when entering your rewards campaign will
+be automatically added to the Sendlane list you specified.
+
+'''''
+
+=== Troubleshooting
+
+****This integration is native to ReferralHero, so we're only able to
+provide limited troubleshooting support. However, if you _do_ need help,
+the ReferralHero team is just a few clicks away!
+
+* Connect with https://maitreapp.co/[chat support] or
+mailto:support@referralhero.com[email] the team directly
+* Visit the https://support.referralhero.com/[ReferralHero Support
+Center]
+
+'''''
+
+==== Additional ReferralHero Resources
+
+https://referralhero.com[Sign up for ReferralHero] |
+https://referralhero.com/academy[ReferralHero Academy] |
+https://referralhero.com/blog[ReferralHero Blog]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-referralhero[Sendlane
++ ReferralHero - The Must-Have Tool That Makes Referral Marketing Easy]
+* https://www.sendlane.com/blog-posts/boost-referrals-with-email-marketing[Four
+Ways to Boost Referrals With Email Marketing]
+
+'''''
+
+=== TL;DR
+
+Select Campaign → _Settings_ → _Integrations_ → _Connect your Sendlane
+account_ → Enter Sendlane API Key, Hash Key, Subdomain → _Connect_ →
+Select List  → _Save_

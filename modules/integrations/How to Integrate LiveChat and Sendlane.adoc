@@ -1,0 +1,72 @@
+https://lc.chat/9rimU[LiveChat] is a premium live chat and help desk
+software, with an intuitive, easy-to-use interface.
+
+By integrating Sendlane and LiveChat, emails captured as leads that chat
+in for support will automatically be transferred to your desired List in
+Sendlane.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://lc.chat/9rimU[LiveChat] account with a keyword created.
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so LiveChat knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting LiveChat and Sendlane
+
+. From your dashboard in LiveChat, click *_Marketplace_*, then search
+for and select *_Sendlane_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d40a37d0428634786759f40/file-3VWPki5Uba.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d40a37d0428634786759f40/file-3VWPki5Uba]
+. Locate Sendlane under email marketing and click *_Install Now_*
+. Enter your Sendlane Subdomain, API and Hash Keys, and click *_Connect
+with Sendlane_*
+. A dropdown menu will appear with your Lists from Sendlane. Select the
+List with which you want LiveChat to share collected leads, and click
+*_Connect Sendlane with
+LiveChat image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d40a3d02c7d3a2ec4bf9fed/file-Qawd7iX8CE.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d40a3d02c7d3a2ec4bf9fed/file-Qawd7iX8CE]_*
+
+Your integration is now complete! Leads collected from LiveChat will be
+automatically added to your List of choice!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to LiveChat, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+LiveChat team is just a few clicks away!
+
+* https://www.livechatinc.com/help/[Connect] with the LiveChat team
+* Visit the https://www.livechatinc.com/help/[LiveChat Help Center]
+
+'''''
+
+Additional LiveChat Resources
+
+Sign up for https://lc.chat/9rimU[LiveChat] |
+https://www.livechatinc.com/blog/[Blog]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/livechat-integration-spotlight[Sendlane
++ LiveChat - Chat With Your Website Visitors to Generate More Leads]
+
+'''''
+
+TL;DR
+
+Integrating: LiveChat dashboard → _Marketplace_ → Sendlane → _Install
+Now_ → Enter Subdomain/API/hash keys → _Connect Sendlane with LiveChat_

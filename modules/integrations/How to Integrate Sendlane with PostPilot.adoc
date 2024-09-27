@@ -1,0 +1,114 @@
+==== Overview
+
+PostPilot provides an opportunity for Shopify marketers to increase the
+personal touch of their marketing strategy with personalized,
+handwritten cards! Integrating your Sendlane account with PostPilot
+allows you to use your valuable Contact data to send physical postcards
+using PostPilot.
+
+Read on to learn how to connect your Sendlane and PostPilot accounts and
+start sending physical mail to your Contacts! See PostPilot's
+documentation of their Sendlane integration
+https://help.postpilot.com/knowledge/integrating-sendlane-with-postpilot[here].
+
+==== In This Guide
+
+* link:#generate[Generate an API Key for PostPilot]
++
+link:#generate[]
+* link:#generate[]link:#connect[Connect Sendlane to PostPilot]
+* link:#sync[Sync Sendlane Data in PostPilot]
+* link:#send[Send Direct Mail to Contacts]
+
+[[bgs]]
+===== 🚦Before Getting Started
+
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Integrate
+your Sendlane account with a Shopify store]
+
+link:#generate[]https://www.postpilot.com/?utm_source=newsletter&utm_medium=email&utm_campaign=sendlane[Create
+a PostPilot account]
+
+link:#generate[]https://help.postpilot.com/knowledge/how-to-integrate-with-shopify[Integrate
+your PostPilot account with your Shopify store]
+
+'''''
+
+1::
+  Your Sendlane account is connected to PostPilot via an API token
+  generated in Sendlane.
+  +
+  To create an API token for PostPilot:
+  +
+  . Login to Sendlane
+  . Click the *Settings* icon
+  . Click *API*
+  . Under Sendlane API V2, click *+ API Token*
+  . Enter `+PostPilot+` as the name for your API token
+  . Click *Create*
+  . Click *Copy API Token*
+  +
+  ===== 🚨 API tokens cannot be retrieved again after they are created
+
+  Once you exit the Access Token Created window, you will not be able to
+  access this API token again. If you exit the Access Token Created
+  window without copying your API token, click the trash can icon next
+  to the API token to delete it and follow the steps above again.
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6543ef8c8b2e41385d8b0f01/file-oUW0qsEf49.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6543ef8c8b2e41385d8b0f01/file-oUW0qsEf49]
+2::
+  . Login to PostPilot
+  . In the left sidebar, click *Integrations*
+  . Next to Sendlane Lists/Segments, click *Connect*
+  . Paste your API token in the *Sendlane Private API token field*
+  . Click *Save*
+  +
+  Your Sendlane account is now connected to your PostPilot account!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65440cb06b35db050399e9f9/file-qTc3ED8Y0Y.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65440cb06b35db050399e9f9/file-qTc3ED8Y0Y]
+3::
+  Once your Sendlane account is connected to PostPilot, you need to
+  select Lists or Segments to use in PostPilot to send physical mail.
+  +
+  To tell PostPilot which Lists or Segments to connect to:
+  +
+  . In the left sidebar, click *Integrations*
+  . Next to Sendlane Lists/Segments, click *Manage*
+  . Next to the API token, click *Manage*
+  . Click *Connect A New List Or Segment From Sendlane*
+  . Select List or Segment from the radio button options
+  . Select a List or Segment from the dropdown below the radio buttons
+  . Click *Save*
+  +
+  To connect more Lists or Segments, repeat the above steps. Connect as
+  many Lists or Segments as needed!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65440e18c062684cb88d519a/file-CwVl3c9K2M.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65440e18c062684cb88d519a/file-CwVl3c9K2M]
+  +
+  ===== 🚨 PostPilot automatically re-syncs Lists and Segments once per day
+
+  To force a re-sync, click the Sync button next to the List or Segment
+  you want to force re-sync
+
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65440ed6c062684cb88d519d/file-ClSkDZjbxN.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65440ed6c062684cb88d519d/file-ClSkDZjbxN]
+4::
+  PostPilot provides two main paths to sending physical mail to Sendlane
+  Contacts:
+  +
+  . https://help.postpilot.com/knowledge/integrating-sendlane-with-postpilot#:~:text=to%20your%20customers!-,Use%20SendLane%20audience%20in%20a%20filter,-You%20can%20filter[Use
+  a Sendlane List or Segment as a filter when creating Shopify segments]
+  . https://help.postpilot.com/knowledge/setting-up-mailmatch-segments#:~:text=you%20normally%20would.-,Using%20CSV%20files,-If%20you%20do[Use
+  a .CSV export of Contacts to send physical mail to leads]
+  +
+  Click the links above to read PostPilot's documentation on sending
+  physical mail via PostPilot!
+
+=== Troubleshooting
+
+For questions or issues related to generating your Sendlane API token,
+please reach out to our 24/7 Product Support or your assigned customer
+success manager.
+
+For questions or issues related to PostPilot's connection with Sendlane
+or sending mail using PostPilot, please
+mailto:mailto:support@postpilot.com[contact PostPilot].

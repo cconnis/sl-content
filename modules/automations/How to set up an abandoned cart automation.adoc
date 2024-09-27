@@ -1,0 +1,317 @@
+[[top]]
+==== Overview
+
+Recover potentially lost sales with Sendlane's abandoned cart Automation
+trigger! Read on to learn about the triggers commonly associated with
+abandoned cart automations, and guidance on setting up your abandoned
+cart flow.
+
+==== In this guide
+
+* link:#background-triggers[Background on triggers]
+* link:#create[1. Create an abandoned cart automation]
+* link:#trigger-settings[2. Automation trigger settings]
+* link:#end[3. Prevent contacts from being sent through multiple
+pre-purchase automations]
+* link:#filter[4. Filter out contacts who purchased during the wait
+time]
+* link:#content[5. Abandoned cart automation content]
+* link:#goal[6. Add a goal node to pull purchasers out of the
+automation]
+* link:#test[7. Test and activate your automation]
+* link:#example[Example of a complete abandoned cart automation]
+* link:#troubleshooting[Troubleshooting]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+* Integrate your eCommerce store with Sendlane
+* If you use BigCommerce,
+https://support.bigcommerce.com/s/article/Using-the-Abandoned-Cart-Saver?language=en_US[disable
+BigCommerce Abandoned Cart Saver] if it is turned on
+* https://help.sendlane.com/article/417-how-to-use-beacon-with-shopify#check-installation[Confirm
+that Beacon general tracking is installed]
+
+[[beacon-warning]]
+===== ⚠️ Your abandoned cart automation WILL NOT WORK unless Beacon general tracking is installed
+
+Beacon identifies website visitors and tells Sendlane when your
+automation’s conditions have been met. If Beacon general tracking is not
+installed on your store’s website, your abandoned cart automation will
+never trigger.
+
+'''''
+
+[[background-triggers]]
+=== Background on triggers
+
+Customers generally see much higher revenue from
+https://help.sendlane.com/article/662-how-to-set-up-an-abandoned-checkout-automation[abandoned
+checkout automations] than abandoned cart automations. We recommend
+setting up an abandoned checkout automation in addition to an abandoned
+cart automation. 
+
+Let’s investigate why, starting with the following table describing each
+trigger associated with “abandoned cart” automations:
+
+[cols="",]
+|===
+|*Trigger name*
+|Added to cart
+|Abandoned cart
+|Abandoned checkout
+|===
+
+The Abandoned checkout trigger doesn’t fire until the contact starts the
+checkout process on your website (and the amount of time you select for
+“consider abandoned after” has passed), which means it has the context
+of your contact’s entire cart. This data is sent to Sendlane from
+Shopify and does not require the contact to be cookied via Beacon.
+
+Abandoned product email blocks in automations using the abandoned
+checkout trigger will populate with information on all the products in a
+contact’s cart when they begin checkout, meaning contacts will be
+reminded of each item in their cart when they receive the email.
+
+Unlike the abandoned checkout trigger, the added to cart and abandoned
+cart triggers do not capture or store data for the other products your
+contact may have added to their cart.
+
+These two triggers use site tracking data from Beacon to tell Sendlane
+that an identified contact clicked "add to cart." This means that when
+you add an abandoned product block to an email, only the first product
+the contact added to their cart will appear in the email they receive.
+
+'''''
+
+[[#create]]
+=== 1. Create an abandoned cart automation
+
+Start your abandoned cart automation setup by creating an automation and
+selecting the Abandoned Cart trigger:
+
+. Click the Automations icon
+. Click New Automation
+. Click Start From Scratch
+. Enter a name for your abandoned cart automation
+. Click Start
+. Click Add Trigger
+. In the lefthand sidebar, click the Shopify or BigCommerce tab
+. Click Abandoned Cart
+
+[[multiple-trigger-warning]]
+===== ⚠️ Do not select additional or alternative triggers
+
+The only trigger that is appropriate to use for an abandoned cart flow
+is the Abandoned Cart trigger. Do not select an alternative trigger or
+add additional triggers to your abandoned cart automation. Additional
+triggers can cause issues with your abandoned cart automation.
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXdSxIHm78WKHcBqkDwaK4HS5mQ1EdwY7hIuJVcNskLSnyXZ8axDXrEhZZ0xjSpVZibG86p_BOjo6aZSrMFWal8yZZGblpzHpAjA_Jhgj_qs36G86OKIMXhiV9QbNnK6V7gLepcFtjYz4rriB-pLyZ6eiSIQ?key=bu6MZ-sD4x248cujgnDXqA[https://lh7-us.googleusercontent.com/docsz/AD_4nXdSxIHm78WKHcBqkDwaK4HS5mQ1EdwY7hIuJVcNskLSnyXZ8axDXrEhZZ0xjSpVZibG86p_BOjo6aZSrMFWal8yZZGblpzHpAjA_Jhgj_qs36G86OKIMXhiV9QbNnK6V7gLepcFtjYz4rriB-pLyZ6eiSIQ?key=bu6MZ-sD4x248cujgnDXqA,width=1680,height=1050]
+
+[[#trigger-settings]]
+=== 2. Abandoned cart trigger settings
+
+When you select the Abandoned Cart trigger, you’ll see its settings in
+the left-hand sidebar. These settings are the criteria contacts need to
+meet to be sent through the automation.
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXcxTJPGjfocQU0pRUPm8S4CJY82e3TSjjminLiCfWEK9cVOPgliQ1Zi4Dpqx8s-dJruCeW9uUeuGr60hViNvmQrHKgN_FkembcABimHY7jmq7Ju2JLyJJvSPFBhqj0B8jJSUnNXZXkpnnski1ERUc6AsnO0?key=bu6MZ-sD4x248cujgnDXqA[https://lh7-us.googleusercontent.com/docsz/AD_4nXcxTJPGjfocQU0pRUPm8S4CJY82e3TSjjminLiCfWEK9cVOPgliQ1Zi4Dpqx8s-dJruCeW9uUeuGr60hViNvmQrHKgN_FkembcABimHY7jmq7Ju2JLyJJvSPFBhqj0B8jJSUnNXZXkpnnski1ERUc6AsnO0?key=bu6MZ-sD4x248cujgnDXqA,width=382,height=705]
+
+* Store - Select the store you’re creating an abandoned cart automation
+for
+* Limit Per Contact - Not in the last, Once per day, or Do not trigger
+when already in automation are recommended for abandoned cart
+automations.
+* Consider abandoned after - Select a time period of at least one hour.
+The 5 minute and 30 minute settings are intended for internal testing
+and may inundate contacts with messages if used in a live automation.
+
+You can specify individual products that should trigger the automation
+by searching for and selecting products in the For Products section of
+the trigger settings. If you do not select any specific products, all
+products will trigger the automation.
+
+Shopify, BigCommerce, and custom store users can apply a product tag of
+sl-exclude to any product that should not trigger the automation. This
+process removes the product from Sendlane entirely. Read more about
+excluding products
+https://help.sendlane.com/article/601-how-to-exclude-products-from-product-blocks[here].
+
+[[end]]
+=== 3. Prevent contacts from being sent through multiple pre-purchase automations
+
+The first node of your abandoned cart automation should be an update
+automation node that ends your abandoned browse automation when contacts
+trigger the abandoned cart automation. Since adding items to the cart is
+further in the purchasing process than browsing, you don’t want contacts
+to receive both browse and cart abandon content.
+
+To add an update automation node:
+
+. Click the + icon below the Abandoned Cart trigger
+. Click Update Automation
+. Click End Other
+. From the Automation dropdown, select your browse abandon automation
+. Select a time period wait before allowing contacts to re-enter the
+browse abandon automation once they've completed the abandoned cart
+automation
+. Click Done
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXfFHOH62x_LuA8mETQpp4nipcnOkPl4X0Tm2TAOYuTbXfVK5RPbvlOQxgFnOaD1nPCl2YdBQKN5a36reslp5_q6A9GY8wr86fx6vvBhsYIqPsiZqlBCpXg6lnDLlkl9Cp3EvEAkUnT6PsPXXugoC2yAC7NM?key=bu6MZ-sD4x248cujgnDXqA[https://lh7-us.googleusercontent.com/docsz/AD_4nXfFHOH62x_LuA8mETQpp4nipcnOkPl4X0Tm2TAOYuTbXfVK5RPbvlOQxgFnOaD1nPCl2YdBQKN5a36reslp5_q6A9GY8wr86fx6vvBhsYIqPsiZqlBCpXg6lnDLlkl9Cp3EvEAkUnT6PsPXXugoC2yAC7NM?key=bu6MZ-sD4x248cujgnDXqA,width=1680,height=962]
+
+[[#filter]]
+=== 4. Filter out contacts who purchased during the wait time
+
+The second node of your abandoned cart automation should be a
+Conditional Split that checks to see whether contacts who met the
+trigger settings’ criteria have made a purchase during the wait time
+selected for the Consider abandoned after setting. On some platforms,
+this check happens in the trigger settings and acts as a filter. The
+functionality is the same with a conditional split.
+
+To add a conditional split to your automation:
+
+. Click the + icon below the update automation node
+. Click Conditional Split
+. Set the conditional split's settings (see guidance below the
+screenshot)
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXf95oezluURP2EoOMXwLgTqawT7aiLoASmIteUId_ebdAuXkofgYaXUafx2RplQY8MI8YjkdirwTkMJg_KnOOBUhamZkrXWmlkGA9r-YUDrLRefBM-CaVpmBbCCVedPpMwFXCMgoFqsikA2tA_EujGT-UDo?key=bu6MZ-sD4x248cujgnDXqA[https://lh7-us.googleusercontent.com/docsz/AD_4nXf95oezluURP2EoOMXwLgTqawT7aiLoASmIteUId_ebdAuXkofgYaXUafx2RplQY8MI8YjkdirwTkMJg_KnOOBUhamZkrXWmlkGA9r-YUDrLRefBM-CaVpmBbCCVedPpMwFXCMgoFqsikA2tA_EujGT-UDo?key=bu6MZ-sD4x248cujgnDXqA,width=1680,height=1050]
+
+When you select the conditional split, its settings will appear in the
+left-hand sidebar:
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXcXiolCeMPYPJwaswCtXbjLQCp8XukzUvr0vcfZhTffPg5yabKfpl-xuoF4bZUlGcFFJv5GTaZVNSp6cyfaUenqRahqOgGfV4_Akb05VjXCXw7oSo2XEHEG6arSmtyW_jIS6B7srcDvhG1s0CLjOt4_HsAY?key=bu6MZ-sD4x248cujgnDXqA[https://lh7-us.googleusercontent.com/docsz/AD_4nXcXiolCeMPYPJwaswCtXbjLQCp8XukzUvr0vcfZhTffPg5yabKfpl-xuoF4bZUlGcFFJv5GTaZVNSp6cyfaUenqRahqOgGfV4_Akb05VjXCXw7oSo2XEHEG6arSmtyW_jIS6B7srcDvhG1s0CLjOt4_HsAY?key=bu6MZ-sD4x248cujgnDXqA,width=361,height=521]
+
+These settings will check for orders placed by the contact during the
+day before they met the automation trigger’s criteria:
+
+* Condition - Select Shopify or BigCommerce
+* Store - Select the store you’re creating an abandoned cart automation
+for
+* Resource - Order
+* Order Status - Any
+* Filter - Order Date
+* Operator - In the last
+* Relative date range - 1 day
+
+Add the rest of your automation’s nodes to the NO side so that you
+target contacts who have NOT placed an order in the last day.
+
+[[#content]]
+=== 5. Abandoned cart automation content
+
+Now that the logic for your abandoned cart automation is in place, you
+can add nodes for emails and SMS messages. For more information on
+optimizing your email and SMS nodes, check out our guide to
+https://help.sendlane.com/article/449-automation-actions#send-message[automation
+nodes].
+
+We highly recommend placing a wait node between messages to prevent
+contacts from receiving too many messages too quickly.
+
+===== ⚠️ Emails must include an abandoned cart block
+
+The Abandoned Cart email block displays the first product added to the
+cart and abandoned, with a link to the Contact's cart (Contacts will be
+taken to your website if they click this link on a different device than
+the device they created the abandoned checkout on). Only one abandoned
+cart block is allowed per email.
+
+[[#goal]]
+=== 6. Add a goal node to pull purchasers out of the automation
+
+Depending on the number of message nodes and the length of wait nodes in
+between, contacts may complete their purchase before being sent through
+the entire automation. To prevent contacts from continuing to receive
+abandoned cart content with a goal:
+
+. Click the + button under the last node of your automation
+. Click Goal
+. Add a name for your goal, like "Completed purchase"
+. In the Select condition dropdown, select your eCommerce integration
+. Select your store
+. Select Order
+. Select Unfulfilled
+. Select Order Date
+. Select in the last
+. Enter the number of days that it takes to complete your automation
+. Click Done
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXcWqE2WYUupnk3oePRp1OGsMOHScAlSIBiF_GabywZk7vGQkd6MTqZWqcVj3DnIa8dnQ2DK-FY5YqeTvMyi6vXRtbu5LofnGBeDpyVaVswOUL-9xDJK59aY0zMsYLAWAfJ_9UES_lp0CL6amcikSC5vtwk9?key=bu6MZ-sD4x248cujgnDXqA[https://lh7-us.googleusercontent.com/docsz/AD_4nXcWqE2WYUupnk3oePRp1OGsMOHScAlSIBiF_GabywZk7vGQkd6MTqZWqcVj3DnIa8dnQ2DK-FY5YqeTvMyi6vXRtbu5LofnGBeDpyVaVswOUL-9xDJK59aY0zMsYLAWAfJ_9UES_lp0CL6amcikSC5vtwk9?key=bu6MZ-sD4x248cujgnDXqA,width=1680,height=1050]
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXdyATH__ACS36PzZ6LVjPq9CegPpQlU_8Z95pYjppwKhmxyAbA0CxKrqGivNhuCSjaZr4Yq2aRbWc-0cgVGH6hi2r7CepdJLRxbEpxbcxzD6ax69kdPyMCbIldL40phaRaAk_G1bsGe3ZH40dwQh5DIOO8f?key=bu6MZ-sD4x248cujgnDXqA[https://lh7-us.googleusercontent.com/docsz/AD_4nXdyATH__ACS36PzZ6LVjPq9CegPpQlU_8Z95pYjppwKhmxyAbA0CxKrqGivNhuCSjaZr4Yq2aRbWc-0cgVGH6hi2r7CepdJLRxbEpxbcxzD6ax69kdPyMCbIldL40phaRaAk_G1bsGe3ZH40dwQh5DIOO8f?key=bu6MZ-sD4x248cujgnDXqA,width=1680,height=1050]
+
+[[#test]]
+=== 7. Test and activate your automation
+
+You can test your abandoned cart automation with an email address that
+is opted in to your account. To test your abandoned cart automation:
+
+. In your trigger's settings, set the "consider abandoned after" setting
+to 5 minutes
+. Activate your
+https://help.sendlane.com/article/668-how-to-activate-an-automation#node[email
+nodes]
+. Activate your
+https://help.sendlane.com/article/668-how-to-activate-an-automation#automation[automation]
+. Log out of your Shopify store in all tabs
+. Visit your website
+. Add a product to your cart
+. Wait at least five minutes
+. Check your inbox to ensure you received the first email in your
+abandoned cart automation
+
+If you successfully completed your automation, you're all set! If you
+didn't receive messages you expected to receive, or otherwise didn't
+experience your automation the way you want your contacts to,
+https://help.sendlane.com/article/669-how-to-deactivate-an-automatio#automations[deactivate
+your automation] while you troubleshoot.
+
+'''''
+
+[[#example]]
+=== Example of a complete abandoned cart automation
+
+Check out the example abandoned cart automation flow below:
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXc4tQONllaLbhemuFG11CAswcAWqQbOY9e7nEhhTaEs10-9N9XTahKGVJ-WzK47XZFspB7A3ugBX4-3hyW1mPD0gyg_541iaFOxgLlKyrbnGatt4fs5f3zvMXi2Hsa8GUyyNL_7b2Z_LtqVyVpNlCbTUC4t?key=bu6MZ-sD4x248cujgnDXqA[https://lh7-us.googleusercontent.com/docsz/AD_4nXc4tQONllaLbhemuFG11CAswcAWqQbOY9e7nEhhTaEs10-9N9XTahKGVJ-WzK47XZFspB7A3ugBX4-3hyW1mPD0gyg_541iaFOxgLlKyrbnGatt4fs5f3zvMXi2Hsa8GUyyNL_7b2Z_LtqVyVpNlCbTUC4t?key=bu6MZ-sD4x248cujgnDXqA,width=895,height=1953]
+
+'''''
+
+=== Troubleshooting
+
+====== Why are Contacts showing as unsubscribed immediately after completing a purchase?
+
+If your Shopify checkout page
+https://help.shopify.com/en/manual/promoting-marketing/create-marketing/customer-emails#collect-customer-emails-from-the-checkout[pre-selects
+the marketing email opt-in checkbox], Contacts who uncheck the marketing
+email opt-in box during checkout will be unsubscribed from the
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane#connecting[List
+attached to your Shopify integration] as soon as checkout is complete.
+
+====== The abandoned cart block isn't available!
+
+The abandoned cart block may not appear in your elements sidebar for two
+common reasons:
+
+. Your eCommerce integration is not set up correctly. Review your
+eCommerce store's integration with Sendlane for possible connection
+issues.
+. You already added an abandoned cart block to your email. Only one
+abandoned cart block is allowed per email.
+
+[[addl]]
+=== Additional Resources
+
+* https://www.sendlane.com/blog/email-retargeting-win-more-sales[How
+Email Retargeting Works & 3 Strategies to Win More Sales]
+* https://www.sendlane.com/blog/shopify-abandoned-cart-emails[7 Tips for
+Creating Dynamic Abandoned Cart Emails for Shopify]
+* https://www.sendlane.com/blog/abandoned-cart-email-examples[5
+Abandoned Cart Emails & How to Make Them Work]
+* https://www.sendlane.com/blog/abandoned-cart-subject-lines[Best
+Subject Lines for Abandoned Cart Emails]
+* https://www.sendlane.com/blog/increase-sales-on-shopify[5 Tried &
+Tested Ways to Increase Sales on Shopify]

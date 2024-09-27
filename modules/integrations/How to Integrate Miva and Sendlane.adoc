@@ -1,0 +1,361 @@
+https://www.miva.com/[Miva] is an eCommerce platform you can use to
+build your online store with a shopping cart and checkout process.
+
+Integrating Sendlane and Miva allows you to automatically sync customers
+to Sendlane so you can stay in touch via targeted email campaigns and
+automation funnels!
+
+In this article we'll cover:
+
+* link:#version[What Version of the Sendlane Miva Module Am I Using?]
+* link:#moduleupdate[Keeping Your Sendlane Module Up to Date in Miva]
+* link:#uninstall[Uninstalling/Disconnecting an Old Miva Integration]
+* link:#mivaaccount[Miva Account Information]
+* link:#mivaslmodule[Adding Miva's Sendlane Module]
+* link:#slmivaintegration[Configuring Sendlane's Miva Integration]
+
+Plus, we'll also cover some helpful link:#mivanextsteps[next steps] and
+ways to link:#mivatroubleshooting[troubleshoot] if you have any trouble
+during the process!
+
+[[version]]
+=== What Version of the Sendlane Miva Module Am I Using?
+
+Integrating Miva and Sendlane requires setup in both your Sendlane and
+Miva accounts. Sendlane maintains a module for Miva that is updated on a
+semi-regular basis to make sure your Sendlane and Miva accounts connect
+as smoothly as possible! You can always refer to this article for the
+latest Sendlane module version information:
+
+===== Current Sendlane Miva Module: Version 2.0015
+
+To see what version of the Sendlane module you have installed in your
+Miva account, navigate to *_Settings_* → *_Modules_* then find
+_Sendlane_ in the list by scrolling down the page or searching for
+Sendlane:
+
+image:https://lh5.googleusercontent.com/8uszoZHcn0w8aKpSQrMHM7qgdWyuPZBTybC7k1n3gSUI9CKo2NX9asY3TKiv8awrUdXpEwEj5_nxvOfHMf9kjwBUkDPp-_DaMb1tD45j2DG1hIlSwMI2DsbjEGD-RvQ-e99rW9D8[https://lh5.googleusercontent.com/8uszoZHcn0w8aKpSQrMHM7qgdWyuPZBTybC7k1n3gSUI9CKo2NX9asY3TKiv8awrUdXpEwEj5_nxvOfHMf9kjwBUkDPp-_DaMb1tD45j2DG1hIlSwMI2DsbjEGD-RvQ-e99rW9D8,width=355,height=329]
+
+[[moduleupdate]]
+=== Keeping Your Sendlane Module Up to Date in Miva
+
+To update an outdated Sendlane module in Miva, first
+https://sendlane.s3-us-west-1.amazonaws.com/miva/sendlane.mvc[download
+the Miva + Sendlane module] file and save it to an easily accessible
+folder on your computer.
+
+====== Please Note
+
+Be sure the module file is saved as sendlane.mvc and do not change the
+filename. Other filenames will cause installation failure!
+
+Navigate to *_Settings_* → *_Domain Settings_* → *_Modules_* tab, then
+search for or scroll down to click on *_Sendlane_*, then:
+
+. Click the *_Files_* tab
+. Click the *_Upload_* button
+. Click *_Choose File_* and select the sendlane.mvc file you downloaded
+earlier
+. Make sure the *_Overwrite checkbox_* is checked to overwrite your
+outdated module
+. Click *_Upload_* to upload the new module file
+. Click the *_Update_* button to complete the process
+
+image:https://lh4.googleusercontent.com/9fuDwzT1fhoZCKkw4GHmSy3GJtAepRGDDCCl3Wbch7bbxe8VTWJTIxKuaRFnf9l5YEBmIziMy1bQ8uko550Fj9G2X0aDF1vL3Cp7sqMOk3TYIj_Nkw2Imleafa92pfOwhPnwbQPL[https://lh4.googleusercontent.com/9fuDwzT1fhoZCKkw4GHmSy3GJtAepRGDDCCl3Wbch7bbxe8VTWJTIxKuaRFnf9l5YEBmIziMy1bQ8uko550Fj9G2X0aDF1vL3Cp7sqMOk3TYIj_Nkw2Imleafa92pfOwhPnwbQPL,width=720,height=505]
+
+This process should replace your outdated Sendlane module and install
+the new, up to date version. If you experience any errors or other
+issues during this process you’ll need to remove the outdated Sendlane
+module from your Miva account manually, then install the updated module
+file. Follow the steps outlined below in the
+link:#uninstall[Uninstalling/Disconnecting an Old Miva Integration] and
+link:#mivaaccount[Adding Miva’s Sendlane Module] sections to update your
+module manually!
+
+[[uninstall]]
+=== Uninstalling/Disconnecting an Old Miva Integration
+
+If you had a previous version of Miva connected to Sendlane, you'll want
+to wipe the slate clean by uninstalling the old module entirely and
+removing all of the old settings that were in place. If this is your
+first time integrating Miva and Sendlane, you can skip ahead to the
+link:#mivaaccount[Miva Account Information] section!
+
+Start by deleting the previous integration inside of Sendlane by
+clicking *_Integrations_* → *_Miva_* → *_Dot Menu_* → *_Delete_*:
+
+image:https://lh6.googleusercontent.com/XZwsrMY0Rgb81rlcEJKD1HjXrspxNx1oEpUC4XWO9lRx9biHzl7q6ad-9vhr1N57AxTQlixEesAZ3Y2zfUleRoJyncBb-irKJmBbZoxXwJngoDCYEylxlv9xDBSEocPe819jUZan[https://lh6.googleusercontent.com/XZwsrMY0Rgb81rlcEJKD1HjXrspxNx1oEpUC4XWO9lRx9biHzl7q6ad-9vhr1N57AxTQlixEesAZ3Y2zfUleRoJyncBb-irKJmBbZoxXwJngoDCYEylxlv9xDBSEocPe819jUZan,width=642,height=213]
+
+Next, log in to your Miva account to uninstall the previous module:
+
+. Click on *_Settings_* → *_Modules_* then find _Sendlane_ in the list
+. Click the *_Dot Menu_* → *_Uninstall_* (Check out the Troubleshooting
+section below if you run into an error that references Scheduled Tasks
+at this point!)
+
+image:https://lh3.googleusercontent.com/Iwuo4CK6pkYaGwE9dNj4dUFvuILYU91l7ehNNywkvgbDt2mGgwl2lj7bk9-UCqDWyqzWySgBr4l6rwBBD5PQ8vHnyQBmya5WjI8c4AHsLx9MtS5A8zBu9DclwO1eEUJK52nodze-[https://lh3.googleusercontent.com/Iwuo4CK6pkYaGwE9dNj4dUFvuILYU91l7ehNNywkvgbDt2mGgwl2lj7bk9-UCqDWyqzWySgBr4l6rwBBD5PQ8vHnyQBmya5WjI8c4AHsLx9MtS5A8zBu9DclwO1eEUJK52nodze-,width=261,height=380]Next,
+delete the associated _Group_:
+
+. *_Settings_* → *_User Management_* → *_Groups_* → Click the
+*_checkbox_* next to _Sendlane_
+. Click the *_Dot Menu_* → *_Delete Record(s)_* → red *_Delete_* button
+in pop-up window
+
+image:https://lh5.googleusercontent.com/UIBQN9fdz0928EP3zgeL-Hyb8CUDAGETJ-cbbYYTcN8Yy1DzmE-riN6hoWFrvjNSTZ7dCZ0b7wm5c4itTRMP7EoXwzPBJNr-ubF9-FcvYPQ-ismGd6b7fRDeoUyQE1YDP10EqbEe[https://lh5.googleusercontent.com/UIBQN9fdz0928EP3zgeL-Hyb8CUDAGETJ-cbbYYTcN8Yy1DzmE-riN6hoWFrvjNSTZ7dCZ0b7wm5c4itTRMP7EoXwzPBJNr-ubF9-FcvYPQ-ismGd6b7fRDeoUyQE1YDP10EqbEe,width=428,height=280]
+
+image:https://lh4.googleusercontent.com/FIuxclVBl5vrjdL3ttf3Xci9sQbdwLocfkZUR6WEXdOmU_iskpQB_yTwWXP_Pwp6wo_V0yPNsamrj5N9gpdQnMmNIjb3EhCA811Vyykw2ESJHklctL_ngvzt74QbMTh0MlJ4OWKI[https://lh4.googleusercontent.com/FIuxclVBl5vrjdL3ttf3Xci9sQbdwLocfkZUR6WEXdOmU_iskpQB_yTwWXP_Pwp6wo_V0yPNsamrj5N9gpdQnMmNIjb3EhCA811Vyykw2ESJHklctL_ngvzt74QbMTh0MlJ4OWKI,width=235,height=130]
+
+Finally, delete the old _API Token_:
+
+. Click the *_API Tokens_* tab and select *_Sendlane_*
+. Click the *_Dot Menu_* → *_Delete Record(s)_* → red *_Delete_* button
+in pop-up window
+
+image:https://lh3.googleusercontent.com/w2hq02qfWHJQGADxmAfrObTR9hfNOAUvj5cD14dGMHPNCsd_HzEFZbjzWbE1VZgNFBwcUg1nyj1kVqs4ZJqwGi5o4pMLnFhQKwB9xsh3pFAiZU-4ajTJL5DmsvzyzDpomdE8zYZt[https://lh3.googleusercontent.com/w2hq02qfWHJQGADxmAfrObTR9hfNOAUvj5cD14dGMHPNCsd_HzEFZbjzWbE1VZgNFBwcUg1nyj1kVqs4ZJqwGi5o4pMLnFhQKwB9xsh3pFAiZU-4ajTJL5DmsvzyzDpomdE8zYZt,width=333,height=251]image:https://lh4.googleusercontent.com/YcIaQ15ZfaYKZf4wTgacpaK1KGUa8oPBMeuCdggfJcGSrMn5pBcc5jMer8vc2PwM7BF4AXTA95L8HgNpj-pwg-Rm-y0oIFzOls0qoba3mQGSnY-g8QHL_iWCEkrnjbkfZQY_7gCI[https://lh4.googleusercontent.com/YcIaQ15ZfaYKZf4wTgacpaK1KGUa8oPBMeuCdggfJcGSrMn5pBcc5jMer8vc2PwM7BF4AXTA95L8HgNpj-pwg-Rm-y0oIFzOls0qoba3mQGSnY-g8QHL_iWCEkrnjbkfZQY_7gCI,width=235,height=130]
+
+=== 
+
+[[mivaaccount]]
+=== Miva Account Information
+
+To connect Miva to your Sendlane account you'll need to
+https://sendlane.s3-us-west-1.amazonaws.com/miva/sendlane.mvc[download
+the Miva + Sendlane module] file and save it to an easily accessible
+folder on your computer.
+
+====== Please Note
+
+Be sure the module file is saved as sendlane.mvc and do not change the
+filename. Other filenames will cause installation failure!
+
+You'll also need to have the following information from your Miva
+account accessible:  Miva _Store Code_, Miva _Store URL_, _Access
+Token_ & _Signature_, and _API Key_ (you have to install Miva’s Sendlane
+module before you can access your _API Key_, see the
+link:#mivaslmodule[Adding Miva’s Sendlane Module] below!). Each of these
+components can be found in your Miva _Settings_ menu. Check out the
+detailed instructions below on how to find each component.
+
+==== Miva Store Code:
+
+*_Store Settings_* → _Store Details_ tab → _Identification_ section →
+_Store Code_ field
+
+image:https://lh3.googleusercontent.com/w9Ko45hbxgsD8GJ-MiY_nMviTFRK7sZV96KeVZccOWC_orjwlGGLRMyixF-UwqoSFHzgKI5NqqDSQ0-zXKmOrVDGzRDNckTdXRE7vduVusteWtpEth0_ySq0LsLyXl1JXXF7CufJ[https://lh3.googleusercontent.com/w9Ko45hbxgsD8GJ-MiY_nMviTFRK7sZV96KeVZccOWC_orjwlGGLRMyixF-UwqoSFHzgKI5NqqDSQ0-zXKmOrVDGzRDNckTdXRE7vduVusteWtpEth0_ySq0LsLyXl1JXXF7CufJ,width=512,height=333]
+
+==== Miva Store URL: 
+
+*_Domain Settings_* → _Domain Details_ tab → _Site Configuration_
+section → _Secure_ _Base URL for Graphics_ field
+
+image:https://lh4.googleusercontent.com/sDjEgotNEoGk5UMdJ00RzDTLoStNKUDIsD6hBaelec9PBI3vjk-1KsI_p3A0rGQaymTebduBvI8K6TlmDuwZb3HWlvnuIcLraz3CHVo6tic_kZQLuonV-iAiDCPA4M5CThhHJ930[https://lh4.googleusercontent.com/sDjEgotNEoGk5UMdJ00RzDTLoStNKUDIsD6hBaelec9PBI3vjk-1KsI_p3A0rGQaymTebduBvI8K6TlmDuwZb3HWlvnuIcLraz3CHVo6tic_kZQLuonV-iAiDCPA4M5CThhHJ930,width=704,height=359]
+
+==== Access Token & Signature: 
+
+*User Management* → _Users_ page → _Groups_ tab → *_Add Group_*
+
+image:https://lh6.googleusercontent.com/sUWsPiIhIVgPqJY46TseRUHhJJPo0LLVPXDZc7Sfg77WivYtZvqLCfzn8ziNmRlfJzcnp-p79xQBg6ySuBUWt1adHdwx1Ol5V0miiWWM_0WMg7PE3rqVeKclHFbjhEQA6i5L4MJt[https://lh6.googleusercontent.com/sUWsPiIhIVgPqJY46TseRUHhJJPo0LLVPXDZc7Sfg77WivYtZvqLCfzn8ziNmRlfJzcnp-p79xQBg6ySuBUWt1adHdwx1Ol5V0miiWWM_0WMg7PE3rqVeKclHFbjhEQA6i5L4MJt,width=716,height=72]
+
+Fill in the __Name __field (we used Sendlane) and _Description_ field
+(we used API Token) and click *_Save_*
+
+image:https://lh6.googleusercontent.com/FtSFhGQqavNN8K_Y1Gl_CLwvwnD1VaVfubNWfQsWN6BaMRCMsH3wGnzDAc_DeufuH5iEQ1OET-LBYxgZqUYzYeLmB5q824qAUxex5Pc6xibf3cqT9M0S2Kl7wNIlWSxXOyhuRuKo[https://lh6.googleusercontent.com/FtSFhGQqavNN8K_Y1Gl_CLwvwnD1VaVfubNWfQsWN6BaMRCMsH3wGnzDAc_DeufuH5iEQ1OET-LBYxgZqUYzYeLmB5q824qAUxex5Pc6xibf3cqT9M0S2Kl7wNIlWSxXOyhuRuKo,width=720,height=47]
+
+Select your new _Group_ from the list and click *_Privileges_*
+
+image:https://lh4.googleusercontent.com/UdhRlOFUraQH-CZcFXDf94dGuEEJCvnW471fBe7-IjU1wlBb-JQYggUis6_NWiRD7aUdrYkVlktDCHjJTZ1Vbsj_CKiE3eXSGv3efP_Cs6EALRw019r6-xOR9GUMaFeCWPOF8s3S[https://lh4.googleusercontent.com/UdhRlOFUraQH-CZcFXDf94dGuEEJCvnW471fBe7-IjU1wlBb-JQYggUis6_NWiRD7aUdrYkVlktDCHjJTZ1Vbsj_CKiE3eXSGv3efP_Cs6EALRw019r6-xOR9GUMaFeCWPOF8s3S,width=363,height=283]
+
+Toggle on privileges for *_View_* in every row and click *_Close_*.
+Then, re-open the _Privileges_ window to ensure all privileges have been
+successfully checked (sometimes all privileges do not successfully load
+on the first attempt, better safe than sorry!)
+
+image:https://lh3.googleusercontent.com/22I6RWh9O1e8-hUzmni6w6BtkRgubhfrBruI4KNjsLAA11ufppCo6hz-WW6uDloR2cfwhuZAM2t8qeyjTpY1lbeQPMA_4801U3PSBiv5wDIr2CXRVNKycYnn3VJDu_W7v5RaXzTv[https://lh3.googleusercontent.com/22I6RWh9O1e8-hUzmni6w6BtkRgubhfrBruI4KNjsLAA11ufppCo6hz-WW6uDloR2cfwhuZAM2t8qeyjTpY1lbeQPMA_4801U3PSBiv5wDIr2CXRVNKycYnn3VJDu_W7v5RaXzTv,width=606,height=444]
+
+Uncheck the _Group_ you created then click on the *_API Tokens_* tab →
+*_Add API Token_* button
+
+image:https://lh6.googleusercontent.com/8EfwO4AM3Wb0xnyeX0KhrKRCZKkDJHMV6dzSzwElmNHDRT9-ofMh5RWWRZrRXrcSpAtGA1AZrFD3OmsSd0CgFcZwA-rSEGB_WfKcTNMIYM79gy4QWFroaYPQPJEzmW8gxLT3HOC0[https://lh6.googleusercontent.com/8EfwO4AM3Wb0xnyeX0KhrKRCZKkDJHMV6dzSzwElmNHDRT9-ofMh5RWWRZrRXrcSpAtGA1AZrFD3OmsSd0CgFcZwA-rSEGB_WfKcTNMIYM79gy4QWFroaYPQPJEzmW8gxLT3HOC0,width=714,height=113]
+
+* Enter a _Name_ for the token (we used Sendlane) and set the _Allowed
+IP Address_ field to *_0.0.0.0/0_*
+* Make sure _Signature_ and _Timestamp_ are both set to *_Required_*
+* Make a note of your _Access Token_ and click *_Generate_* to generate
+a _Signature_ (every time you leave this pop-up window you’ll need to
+generate a new signature, so make sure to copy the one you generated!)
+* Click *_Save_*
+
+image:https://lh6.googleusercontent.com/jSz-bRck7f_A5L-H4Y5f1HKLD_H2K4BTuVLYpIFLG6tIHnJCIpCE3jXOf2dGXlfZeaaMTCRL5aXrps208y9O7rsiZBBssAXUiZErEVfvbaej2s3MbaFPZ6aJj5ty0po2dsXKM7O9[https://lh6.googleusercontent.com/jSz-bRck7f_A5L-H4Y5f1HKLD_H2K4BTuVLYpIFLG6tIHnJCIpCE3jXOf2dGXlfZeaaMTCRL5aXrps208y9O7rsiZBBssAXUiZErEVfvbaej2s3MbaFPZ6aJj5ty0po2dsXKM7O9,width=443,height=532]
+
+On the _API Tokens_ page, select the *_Token_* you just created →  *_Dot
+Menu_* → *_Groups_*
+
+image:https://lh5.googleusercontent.com/Rd3V4_jCeYRWa0oirPqfx8NafGtsoh2aM_B8PanrJN8HAvlvdPLjdv2MtNNoDqMdG_UPYhBcoxzG_ntQQtndlehEao6_khsVqWOeBGJGNUpq5uNq2qHROCg_RGbzEB3RRIRCggT5[https://lh5.googleusercontent.com/Rd3V4_jCeYRWa0oirPqfx8NafGtsoh2aM_B8PanrJN8HAvlvdPLjdv2MtNNoDqMdG_UPYhBcoxzG_ntQQtndlehEao6_khsVqWOeBGJGNUpq5uNq2qHROCg_RGbzEB3RRIRCggT5,width=363,height=257]
+
+Toggle *_Assigned_* on for the _Group_ you created earlier, then click
+*_Close_*
+
+image:https://lh6.googleusercontent.com/8w370GbVfppu79X2RBS4p8EYFWPvETgxD-qqPhXAyj-llPeY9kGEvg1hKR2tGIC4ub-exeXUSI-WnqviIT5Jen1zDXtL5xn-7MvpmeChEN6M87PJWOBYythEvtiDED310AhHQZvj[https://lh6.googleusercontent.com/8w370GbVfppu79X2RBS4p8EYFWPvETgxD-qqPhXAyj-llPeY9kGEvg1hKR2tGIC4ub-exeXUSI-WnqviIT5Jen1zDXtL5xn-7MvpmeChEN6M87PJWOBYythEvtiDED310AhHQZvj,width=632,height=456]
+
+**
+
+[[mivaslmodule]]
+=== Adding Miva’s Sendlane Module
+
+Navigate to  *_Settings_* → *_Domain Settings_* → *_Modules_*
+
+image:https://lh6.googleusercontent.com/EeMrYxMlzowobMH5i91JRvm9xa8W7eysNwzhpJmzp-aNaJBMPSYuvMRxVbc82DXq8FMY8yrZCSQ0DvndSpCOLNf7mQEDd-km1rsWGGCNOc2VXok0A8aGYmU7d8w65JryBW_lgT9C[https://lh6.googleusercontent.com/EeMrYxMlzowobMH5i91JRvm9xa8W7eysNwzhpJmzp-aNaJBMPSYuvMRxVbc82DXq8FMY8yrZCSQ0DvndSpCOLNf7mQEDd-km1rsWGGCNOc2VXok0A8aGYmU7d8w65JryBW_lgT9C,width=331,height=539]
+
+Click *_Add Module_*
+
+image:https://lh5.googleusercontent.com/1o6oJE2in7ZhuxqsOOiOgsSMbCOUekU0papUedx8a-751FUBBcwzbhx7kFENPBOSWqoBwuYcnEO_dWd3v32f73qQ5zWHxBM0ZdKs6GEGQXEh5hBzVFaQsXo44jXSQh-oa3Eo84A5[https://lh5.googleusercontent.com/1o6oJE2in7ZhuxqsOOiOgsSMbCOUekU0papUedx8a-751FUBBcwzbhx7kFENPBOSWqoBwuYcnEO_dWd3v32f73qQ5zWHxBM0ZdKs6GEGQXEh5hBzVFaQsXo44jXSQh-oa3Eo84A5,width=719,height=109]
+
+Click *_Upload_* to find and choose the
+https://sendlane.s3-us-west-1.amazonaws.com/miva/sendlane.mvc[Miva +
+Sendlane module file] you downloaded and saved to your computer, then
+click *_Upload_* in the _Upload File_ window.
+
+image:https://lh3.googleusercontent.com/6lYi0ozEGyNy6qJxCWKxEkfM9httDbnQQvtCE5gGrc135GFQQDwNCpDWQNQbBOuWAa7WeElqwtGKYtCW6X4pQEvFIXIbso4WRG-lRArqp62eAvr-1_SdZBmOFWTSRtoKpvP7LgOm[https://lh3.googleusercontent.com/6lYi0ozEGyNy6qJxCWKxEkfM9httDbnQQvtCE5gGrc135GFQQDwNCpDWQNQbBOuWAa7WeElqwtGKYtCW6X4pQEvFIXIbso4WRG-lRArqp62eAvr-1_SdZBmOFWTSRtoKpvP7LgOm,width=628,height=616]
+
+Click *_Add_* to add the module file to your Miva account
+
+image:https://lh5.googleusercontent.com/O1tUnjnLAwwEXQ7KnXArFOyR7HqfnNIa9DFAisl3Dg5jiwcOmE_HNbp9LjD4jK1gf9AQdMZZiTdkt1L5sBcsuCRsiZ926GzWX03Ou7NFoJh8TNpeJp9-zpkr1hjvUgyH2gfiLOQ1[https://lh5.googleusercontent.com/O1tUnjnLAwwEXQ7KnXArFOyR7HqfnNIa9DFAisl3Dg5jiwcOmE_HNbp9LjD4jK1gf9AQdMZZiTdkt1L5sBcsuCRsiZ926GzWX03Ou7NFoJh8TNpeJp9-zpkr1hjvUgyH2gfiLOQ1,width=720,height=192]
+
+Finish installing the Sendlane module by going to *_Settings_* →
+*_Modules_*
+
+image:https://lh6.googleusercontent.com/-XXxGPz_gJS8gGOiEvZSw7ciS4_0Phmxi7X-7kroeJfI0tm6HbUpRMUZBMQkYken8rLG-r3EhpdFUpZeXS4AAE6qLRZlyCHEzpLBZSOvUsec6tVvI6qOBhLpa4I-u9YEVxb8sfbN[https://lh6.googleusercontent.com/-XXxGPz_gJS8gGOiEvZSw7ciS4_0Phmxi7X-7kroeJfI0tm6HbUpRMUZBMQkYken8rLG-r3EhpdFUpZeXS4AAE6qLRZlyCHEzpLBZSOvUsec6tVvI6qOBhLpa4I-u9YEVxb8sfbN,width=254,height=66]
+
+Search for “Sendlane” or scroll down to the Sendlane module, then
+confirm that you have the correct filename, version, and provider before
+moving on. [Filename: sendlane.mvc | Version: 2.0015 | Provider:
+http://www.emediasales.com/[www.emediasales.com]]. 
+
+If everything looks correct, click *_Install_*.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60ad6832dca0fd46b9359113/file-VYm4GxVV5Q.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60ad6832dca0fd46b9359113/file-VYm4GxVV5Q]
+
+When you click Install you should be automatically taken to the System
+Extension Settings page. Grab your API Key from this page.
+
+To reach this page again go to *_Settings → System Extensions_*
+
+image:https://lh3.googleusercontent.com/rSlkLdOIJ_7mnRYF2SmnAeTPKlzlU0Qa06D5dtfSUnzgvpRNZwPwkDRZgmepi9xSlEW5XZa8wB6Yy5mYjT_WyHMA88jte3fsBXUqb0qts732vIy12uIbD-lgyz6FGOIF0eRIHPST[https://lh3.googleusercontent.com/rSlkLdOIJ_7mnRYF2SmnAeTPKlzlU0Qa06D5dtfSUnzgvpRNZwPwkDRZgmepi9xSlEW5XZa8wB6Yy5mYjT_WyHMA88jte3fsBXUqb0qts732vIy12uIbD-lgyz6FGOIF0eRIHPST,width=301,height=149]
+
+Then click the *_More_* dropdown menu and select *_Sendlane_*.
+
+image:https://lh3.googleusercontent.com/D2oHnXh3EbRBPzgMZ1v-ADq-uqvKdfcpzsI-94dIeQzw08HAS8TXytaSCICpCHSbqFV-Oi2zw6G8iacl1UH3Q-_yTVMQ2RHKwkOaYGw0r9Lu_s01Vr_WtgW7sFclGDvqIZzSCq2l[https://lh3.googleusercontent.com/D2oHnXh3EbRBPzgMZ1v-ADq-uqvKdfcpzsI-94dIeQzw08HAS8TXytaSCICpCHSbqFV-Oi2zw6G8iacl1UH3Q-_yTVMQ2RHKwkOaYGw0r9Lu_s01Vr_WtgW7sFclGDvqIZzSCq2l,width=720,height=319]
+
+And copy your _API Key_!
+
+image:https://lh3.googleusercontent.com/8j3vnog2ZOifEAP4G22lO4cqgAiQhKBJXJ9MIDEfblcvF_8ySbLeII1pcoaVHQIUyPXaQ-q5qrh9GQPwbS-VjZBBs9DP6Dxl0i2NTELju28ov3PHUddTIL1DcOG61R7YlVObn-TF[https://lh3.googleusercontent.com/8j3vnog2ZOifEAP4G22lO4cqgAiQhKBJXJ9MIDEfblcvF_8ySbLeII1pcoaVHQIUyPXaQ-q5qrh9GQPwbS-VjZBBs9DP6Dxl0i2NTELju28ov3PHUddTIL1DcOG61R7YlVObn-TF,width=714,height=329]
+
+[[slmivaintegration]]
+=== Configuring Sendlane’s Miva Integration
+
+Log in to your Sendlane account and click *_Integrations_* →
+__*Miva* __→ *_Configure_*. This will open the _New Miva
+Integration_ window.
+
+image:https://lh3.googleusercontent.com/JwEotEdO-1-pNQtuyVteMzHvUaG92E1n4d5xAXlzyRMrrs0i63-XyrZ3Cv6g4NSgy1K5T0ija33zC-GGVczlaTkiSqc0zmvIUlajhrJixhCC5aktNTSrnnwsKS5diraMbUbxoQBi[https://lh3.googleusercontent.com/JwEotEdO-1-pNQtuyVteMzHvUaG92E1n4d5xAXlzyRMrrs0i63-XyrZ3Cv6g4NSgy1K5T0ija33zC-GGVczlaTkiSqc0zmvIUlajhrJixhCC5aktNTSrnnwsKS5diraMbUbxoQBi,width=689,height=785]
+
+Enter your Miva  _Store Code_, Miva _Store URL_, _API Key,_ _Access
+Token_ and _Signature._ Check out the link:#mivaaccount[Miva Account
+Information] and link:#mivaslmodule[Adding Miva’s Sendlane Module]
+sections of this article for detailed instructions on how to locate this
+information in Miva!
+
+Select the _List_ you'd like your Miva customers to be added to
+
+Choose to sync your customers' shipping addresses or billing addresses
+
+Click *_Continue_*
+
+You'll see the integration status as _Initializing_ at first, then
+_Syncing_ as the data starts to transfer - this process is not
+instantaneous. Once the status updates to _Installed_ you're all set!
+
+Your Miva integration setup is now complete!
+
+Miva customer data from the last 90 days will now be available in
+Sendlane, and any new leads or customers will be automatically synced
+over as well. Now you can develop targeted Campaigns and Automations for
+your Miva audience!
+
+[[mivanextsteps]]
+=== Next Steps
+
+Now that your store is connected with Sendlane, you can create
+https://help.sendlane.com/article/369-how-to-send-targeted-emails-to-miva-customers[segments
+and automations] to target your Miva customers more effectively!
+
+[[mivatroubleshooting]]
+=== Troubleshooting & Additional Miva Resources
+
+===== Troubleshooting:
+
+*I do not see my Miva customers within Sendlane*
+
+If you completed the integration process very recently the information
+sync will take some time. If you visit the Miva integration page within
+your Sendlane account and see that the status still shows _Initializing_
+or _Syncing_, some information or actions may not be available yet.
+Generally, this process should take no longer than an hour unless your
+contact List is long or you have a large number of products. Please
+https://www.sendlane.com/contact-us[get in touch with our support team]
+if your integration page is stuck on _Initializing_ or _Syncing_ for an
+inordinate amount of time!
+
+*I'm getting an error that says "Module 'Sendlane' is in use by one or
+more scheduled tasks"*
+
+To clear this error, delete any recurring tasks associated with the
+Sendlane module by going to *_Settings_* → *_Store Settings_* →
+*_Scheduled Tasks_*
+
+*The new Sendlane module file is not overwriting the outdated Sendlane
+module*
+
+Follow the steps outlined in the
+link:#uninstall[Uninstalling/Disconnecting an Old Miva Integration] and
+link:#mivaslmodule[Adding Miva’s Sendlane Module] sections to update
+your module manually!
+
+If you have any other issues connecting your Sendlane and Miva accounts,
+https://www.sendlane.com/contact-us[our support team] is available 24/7.
+Plus, the Miva team is just a few clicks away!
+
+* Visit the Miva https://support.miva.com/supportsuite/[Support Suite]
+* Visit the Miva https://docs.miva.com/[Documentation Site]
+
+https://www.miva.com/pricing[Sign up for a Miva Account] |
+https://www.miva.com/blog/[Miva Blog]
+
+==== Additional Sendlane Resources:
+
+https://www.sendlane.com/blog-posts/sendlane-miva-the-ultimate-ecommerce-duo[Sendlane
++ Miva: The Ultimate eCommerce Duo]
+
+'''''
+
+=== TL;DR
+
+*Uninstalling/Disconnecting an Old Integration (in Sendlane)*:
+Integrations → Miva → Dot Menu → Delete
+
+*Uninstall previous module (in Miva)*:Settings → Modules → find Sendlane
+→ Dot Menu → Uninstall
+
+*Delete group & API Token (in Miva)*: Settings → User Management →
+Groups → select Sendlane → Dot Menu → Delete Record(s) → Delete → API
+Tokens → select Sendlane → Dot Menu → Delete Record(s) → Delete
+
+*Integration (in Miva)*: Settings → Domain Settings → Modules →  Add
+Module → Upload (install the
+https://sendlane.s3-us-west-1.amazonaws.com/miva/sendlane.mvc[Miva +
+Sendlane module file]) → Add → Settings → Modules → find Sendlane →
+Install
+
+*Integration (in Sendlane)*:  Integrations → Miva → Enter _Miva Store
+Code_, _Miva Store URL, API Code, Access Token_ and _Signature_ → Select
+List → Continue → Confirm Initializing status → Complete

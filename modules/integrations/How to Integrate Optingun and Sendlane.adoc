@@ -1,0 +1,91 @@
+https://optingun.com/?affmid=1069[Optingun] is a lead generation
+platform that helps users create amazing forms to help convert website
+visitors into contacts using action-driven pop-ups and social opt-ins.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+https://optingun.com/?affmid=1069[active account with Optingun]. Be sure
+to have at least one form created with an *_email_* field.
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Optingun knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting Optingun and Sendlane
+
+. From your Optingun homepage, click on *_Connect your
+appsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d094ed404286318cac46930/file-hkHS0YR63P.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d094ed404286318cac46930/file-hkHS0YR63P]_*
+. Select *Sendlane*, enter your API/Hash Keys and Subdomain, and click
+*_Saveimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d28cab9042863478674d990/file-RTUV24l5re.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d28cab9042863478674d990/file-RTUV24l5re]_*
+
+Now you're done with the direct connection between Optingun and
+Sendlane, but remember that form you created before getting started?
+
+Let's take a look at how to connect it to a specific list in Sendlane!
+
+'''''
+
+=== Connecting Your Optingun Form with Sendlane
+
+. From within the Optingun form editor, navigate to *_Settings_* →
+*Integrations* and click on the *_Sendlane
+logo_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d094ef404286318cac46931/file-OJCicStRZ3.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d094ef404286318cac46931/file-OJCicStRZ3]
+. Select the list in Sendlane to which you want your contacts to go, and
+click *_Add
+Integration_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d094f0d04286318cac46934/file-uDLZrkueHY.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d094f0d04286318cac46934/file-uDLZrkueHY]
+
+Your integration is now complete!
+
+Captured contacts will now be automatically added to your desired list
+in Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Optingun, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Optingun team is just a few clicks away!
+
+* Visit the https://optingun.com/help/[Optingun Help Desk]
+* Connect with https://optingun.com/contact/[Optingun support]
+
+'''''
+
+=== Additional Optingun Resources
+
+https://optingun.com/?affmid=1069[Sign up for Optingun] |
+https://optingun.com/blog/[Blog] | https://optingun.com/demo/[Live Demo]
+
+=== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-optingun[Sendlane
++ Optingun - Create High Conversion Forms & Automate Your Growth]
+* https://www.sendlane.com/blog-posts/10-surefire-ways-to-get-more-opt-ins-grow-your-ecommerce-email-list[10
+Surefire Ways to Get More Opt-Ins and Grow Your eCommerce Email List]
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage & Capture Leads]
+
+'''''
+
+=== TL;DR
+
+[.underline]#Integrating:# Optingun homepage → _Connect your apps_ →
+Select Sendlane → Enter API/Hash Keys, Subdomain → _Save_ → Optingun
+form editor → _Settings_ → _Integrations_ → Sendlane logo → Select
+List → _Add Integration_
+
+[.underline]#Connecting Your Form:# Optingun form editor →
+_Settings_ → _**I**ntegrations_ → Sendlane logo → Sendlane list → _Add
+Integration_

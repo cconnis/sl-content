@@ -1,0 +1,192 @@
+[[top]]
+==== Overview
+
+Sendlane Reviews allows you to create a hand curated carousel or other
+testimonial layout for your Shopify store. Read on to learn how to
+highlight reviews in your Shopify store with layouts that perfectly
+match your store's branding!
+
+==== In This Guide
+
+* link:#save[Save Images and Copy From Reviews]
+* link:#layout[Determine a Layout For Your Displayed Reviews]
+* link:#create[Create Your Layout]
+** link:#slide[Create a Slide Block]
+** link:#image[Create an Image With Text Block]
+** link:#multi[Create a Multicolumn Block]
+
+'''''
+
+1::
+  Use the Reviews Moderation page to search for review copy and images
+  to promote on your hand curated layout. To find high quality reviews:
+  +
+  . Click the *Reviews* icon
+  . Click *Moderation*
+  . Click the *filter icon*
+  . Select *With Images*
+  . Select *5 stars*
+  . Select a review with images and copy that best represents your brand
+  . Click on the image preview
+  . Right click on the image to save it to your desktop
+  +
+  Copy your selected reviews' text and the name of the reviewer to a
+  document for easy reference and have that document plus your saved
+  images handy before moving on to create your layout.
+  +
+  If you want to match the color of the stars in your reviews widget on
+  your displayed reviews, navigate to the
+  https://app.sendlane.com/product-review/1/main-widget/styling[main
+  widget styling page] and copy the hex code of the star color:
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65496c21cd50485c299710e9/file-rl6YNPZqAv.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65496c21cd50485c299710e9/file-rl6YNPZqAv]
+2::
+  Because we're using Shopify's existing theme blocks instead of a
+  Sendlane-created carousel widget, you have multiple options for the
+  layout of your carousel or other reviews display.
+  +
+  Click on the images in the table below to view examples of each layout
+  type, then click on the layout type to see instructions on creating
+  the layout in your Shopify store:
+  +
+  [width="100%",cols="50%,50%",]
+  |===
+  |*Layout* |*Preview*
+
+  |Slideshow +
+  |image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65456972746c8e123bd015fa/file-NhQMgNvU01.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65456972746c8e123bd015fa/file-NhQMgNvU01]
+
+  |Image With Text
+  |image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654d2f3a8fd0677319115d94/file-F9sofiHycG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654d2f3a8fd0677319115d94/file-F9sofiHycG] +
+
+  |Multicolumn
+  |image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654d2f44687c016dc15b7464/file-obSq8bsCE1.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654d2f44687c016dc15b7464/file-obSq8bsCE1]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654d2f5300e96206bf000e6e/file-tpaRJTUndX.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654d2f5300e96206bf000e6e/file-tpaRJTUndX] +
+  |===
+3::
+  [[slide]]
+  ==== Create a Slideshow Block
+  +
+  Shopify's slideshow block is a great way to create a traditional
+  carousel that can be set to auto-scroll or click to rotate the slides.
+  https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-features#slideshow[Read
+  about Shopify's slideshow block] for detailed information about the
+  available customization options!
+  +
+  To create a slideshow block like the one shown in the
+  link:#slideshow-example[preview above]:
+  +
+  . Click *Sales Channels*
+  . Click *Online Store*
+  . Next to your active theme's name, click *Customize*
+  . On the theme preview page, hover between section where you want to
+  place your carousel and click *Add Section*
+  . Click *Slideshow*
+  . Click on the slideshow block to edit the first image slide
+  . Drag the image you saved from your review into the image window
+  . Copy the following text based star symbols and paste them into the
+  *Heading field*: `+★★★★★+`
+  . Copy the text of the review and paste it into the *Subheading field*
+  . To remove the optional button, clear the text from the *Button label
+  field*
+  . In the left sidebar, click the next Image slide and repeat steps 1-9
+  to set up your next
+  reviewimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654575f1746c8e123bd0160c/file-eSjFFG7km7.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654575f1746c8e123bd0160c/file-eSjFFG7km7]
+  . In the left sidebar, click Add Image slide to add another slide to
+  your carousel, then repeat steps 1-9 for each new
+  slideimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6545760ba91735705d855cec/file-4JTGHlJUgi.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6545760ba91735705d855cec/file-4JTGHlJUgi]
+  +
+  Check out the video below for a demonstration of creating the
+  slideshow block and editing the first slide:
+  +
+  image:https://fast.wistia.com/embed/medias/ejc7m58y69/swatch[https://fast.wistia.com/embed/medias/ejc7m58y69/swatch]
+  +
+  [[image]]
+  ==== Create an Image With Text Block
+  +
+  Shopify's image with text block is a great way to display multiple
+  hand picked reviews with images.
+  https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-features#image-with-text[Read
+  about Shopify's image with text block] for detailed information about
+  the available customization options!
+  +
+  To create an image with text block like the link:#iwt-example[example
+  above]:
+  +
+  . Click *Sales Channels*
+  . Click *Online Store*
+  . Next to your active theme's name, click *Customize*
+  . On the theme preview page, hover between section where you want to
+  place your carousel and click *Add Section*
+  . Click *Image with Text*
+  . Click into the Image with Text block
+  . Drag the image you saved from your review into the image window
+  . Copy the following text based star symbols: `+★★★★★+`
+  . Click into the heading of the image with text block
+  . Paste the stars in the *Heading field*
+  . Copy the review's text
+  . Click into the text area below the heading
+  . Paste the review text into the *Content field*
+  . To remove the optional button, click into the button and click the
+  trash can icon
+  . Scroll down the Image with Text block settings sidebar to Custom CSS
+  . Click Custom CSS
+  . Enter the following snippet into the custom CSS field +
+  +
+....
+h2 {
+  color: ;
+}
+        
+....
+  . Paste the color hex code you copied from the reviews widget styling
+  page (including #) between `+:+` and `+;+`
+  . Repeat steps 1-18 for each review
+  +
+  Check out the video below for a demonstration of creating an image
+  with text block:
+  +
+  image:https://fast.wistia.com/embed/medias/7wpc7izrg4/swatch[https://fast.wistia.com/embed/medias/7wpc7izrg4/swatch]
+  +
+   +
+   +
+  +
+  [[multi]]
+  ==== Create a Multicolumn Block
+  +
+  Shopify's multicolumn block is a great way to display multiple hand
+  picked reviews with images.
+  https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-features#multicolumn[Read
+  about Shopify's multicolumn block] for detailed information about the
+  available customization options!
+  +
+  To create a multicolumn block like the link:#multi-example[example
+  above]:
+  +
+  . Click *Sales Channels*
+  . Click *Online Store*
+  . Next to your active theme's name, click *Customize*
+  . On the theme preview page, hover between section where you want to
+  place your carousel and click *Add Section*
+  . Click *Multicolumn*
+  . Drag the image you saved from your review into the image window
+  . Copy the following text based star symbols and paste them into the
+  Heading field: `+★★★★★+`
+  . Copy the text of the review and paste it into the Subheading field
+  . Click out of the individual column and into the multicolumn block
+  . Click Custom CSS
+  . Enter the following snippet into the custom CSS field +
+  +
+....
+h3 {
+  color: ;
+}
+        
+....
+  . Paste the color hex code you copied from the reviews widget styling
+  page (including #) between `+:+` and `+;+`
+  . Repeat steps 1-8 for each review
+  +
+  Check out the video below for a demonstration of creating an image
+  with text block:
+  +
+  image:https://fast.wistia.com/embed/medias/2kdbbw17fx/swatch[https://fast.wistia.com/embed/medias/2kdbbw17fx/swatch]

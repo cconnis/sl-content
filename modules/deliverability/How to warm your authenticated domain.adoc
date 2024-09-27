@@ -1,0 +1,230 @@
+[[top]]
+==== Overview
+
+When you authenticate a new sending domain, you have no reputation as a
+marketing email sender. Inbox providers have developed various
+mechanisms to protect their users from spam, including carefully
+monitoring emails sent from new domains.
+
+When you warm your domain correctly, you show inbox providers that your
+emails are safe enough to reach the inboxes of their users.
+
+Warming your new domain means sending high-quality content to small
+groups of highly engaged contacts and exponentially increasing the size
+of your audiences when open and click metrics are good until you have
+successfully sent to all of your 90-day engaged contacts. This process
+is the basis of your new sending reputation.
+
+Read on to learn about Sendlane's approach to domain warming.
+
+==== In this guide
+
+* link:#process[Domain warming process]
+* link:#content[Step one: Prepare warming content]
+* link:#audiences[Step two: Prepare audiences]
+* link:#send[Step three: Prepare your first send]
+* link:#metrics[Step four: Review your first send's metrics]
+* link:#subsequent[Step five: Prepare subsequent sends]
+* link:#re-engagement-not-recommended[Optional and not recommended:
+Re-engage remaining contacts]
+
+'''''
+
+[[process]]
+=== Domain warming process
+
+Domain warming cannot be effectively accomplished by following
+prescriptive plans developed before sending begins. To correctly warm
+your domain, you must react to each send's metrics.
+
+Your warming may go perfectly for the first five sends only to see open
+and click metrics tank on send six. If you've developed a strict
+calendar of sends with pre-configured audiences and try to push through
+"just one" bad send, you might severely damage your sending reputation
+or, in extreme cases, burn your domain.
+
+It is not possible to know, with certainty, exactly how your domain
+warming journey will go before you get started. You may finish warming
+your engaged contacts a week earlier than you roughly expected, and you
+can just as easily finish a week or two later (or longer).
+
+[[content]]
+===== Step One: Prepare warming content
+
+You should use evergreen content for domain warming emails. Check out
+the Sendlane marketing team's
+https://www.sendlane.com/blog/evergreen-email-content[comprehensive
+guide to designing great evergreen content].
+
+While you can't pinpoint the exact date of each warming send in advance,
+preparing enough campaigns in Sendlane to cover the number of sends your
+warming process will likely take is a great idea. Having your campaign
+content ready to go before you start sending means you can focus on
+analyzing your sends' performance without worrying about creating a
+campaign for the next send.
+
+[[audiences]]
+===== Step Two: Choose an audience preparation method
+
+Domain warming means sending successfully to cohorts of contacts who
+have engaged with your brand at least once in the last 90 days. Contacts
+not engaged for more than 90 days should not be sent to during domain
+warming.
+
+Warming audiences (recipients of each warming campaign) should ideally
+be prepared using your existing email service provider's engagement
+segmentation mechanism to create up to date segments based on contact
+engagement.
+
+If you no longer have access to your ESP or expect to lose access to it
+during the warming process, you can also use a bulk exported list of
+your contacts that includes their last open and click dates to create
+warming audiences. This option poses risks to your sending reputation
+due to the scant and increasingly stale engagement data; you
+unequivocally should not use this method if you can create active
+segments in your previous ESP.
+
+Whichever method you choose, it should be the method you use for the
+entire warming process. Switching between methods is likely to harm your
+sending reputation.
+
+[[send]]
+===== Step Three: Prepare your first send
+
+Your first warming send should have an audience of 1,500 of your most
+engaged subscribers.
+
+Initial warming audiences of less than 1,500 subscribers might suggest
+to inbox providers that you are trying to bypass their bulk email
+analysis, and inbox providers generally consider sending to more than
+1,500 subscribers on a new sending domain to indicate future spam-like
+behavior.
+
+It's important to start at 1,500; no more, no less. While your domain
+won't be irretrievably burned if you send to 1,499 or 1,501 subscribers,
+we have seen consistent success with 1,500 and highly recommend staying
+as close to that number as possible.
+
+Follow the steps outlined in your chosen audience preparation method
+below. Remember to use your previous ESP's segmentation if you have
+access to it. You should NOT use the bulk export method if you will have
+access to your previous ESP for as long as your warming process takes.
+
+====== Using previous ESP's segmentation
+
+You will complete the following process before every send, ideally 24
+but no more than 48 hours before your next send. For your first send,
+complete the following 24 hours before you want to send (make sure to
+plan your first send's preparation around
+https://help.sendlane.com/article/207-list-review[list review] working
+hours):
+
+. Create a segment in your previous ESP of your most engaged contacts:
+generally, people who have clicked a link in an email in the past one to
+three days.
+. Export the segment to .CSV
+. Ensure your export meets Sendlane's
+https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account[contact
+import requirements]
+. Import your exported segment into Sendlane
+https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account#import[as
+a list]
+. Watch your inbox for an email from the Sendlane compliance team that
+will either inform you that your list has been approved or ask for
+additional information about your list
+. Set up an https://help.sendlane.com/article/153-campaigns[email
+campaign]
+. Send!
+
+====== Using bulk export of all contacts
+
+You will complete steps 1-9 before your first send, then repeat steps
+4-9 for each subsequent send using subsequent rows of contacts (mark the
+rows you've sent to on your spreadsheet to make future list building
+easier). 
+
+Make sure to plan your first send's preparation around
+https://help.sendlane.com/article/207-list-review[list review] working
+hours
+
+. Create a segment of contacts who have clicked or opened an email in
+the last 90 days
+. Export the segment to .CSV
+. Open the .CSV using Excel or Google Sheets and sort the last click
+column in descending order so that the row with the most recent click is
+at the top
+. Select and copy the first 1,500 rows
+. Paste the rows into a new sheet
+. Export the sheet as .CSV
+. Ensure your export meets Sendlane's
+https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account[contact
+import requirements]
+. Import your exported segment into Sendlane
+https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account#import[as
+a list]
+. Watch your inbox for an email from the Sendlane compliance team that
+will either inform you that your list has been approved or ask for
+additional information about your list
+. Set up an https://help.sendlane.com/article/153-campaigns[email
+campaign]
+. Send!
+
+[[metrics]]
+===== Step four: Review your first send's metrics
+
+24 hours after every send, review your campaign's report. Use the
+following guidelines for
+https://help.sendlane.com/article/321-email-reporting-breakdown#engagement[overall
+open and click rates] to guide subsequent sends.
+
+* *🟢 ≥ 30-50% open rate* or *≥10% click*: Strong. Barring other issues,
+you can increase your next send's audience size by 1.4x or 40%.
+* *🟡 20-29.9% open rate* or *5-10% click rate*: Relatively strong.
+Barring other issues, you can increase your next send's audience size by
+1.4x or 40%, but watch your next send's metrics closely to ensure opens
+don't decrease to below 20%.
+* *🟠 10-19.9% open rate* or *<5% click rate*: Showing signs of
+problems. For your next send, review your content and optimize, send to
+a similarly sized group, and watch your next send's metrics closely
+* *🔴 <10% open rate* or *<2% click rate*: Engagement is too low, and
+your sending reputation is in danger. On your next send, keep your
+audience size the same and only include contacts who have opened or
+clicked during warming.
+
+You should also monitor
+https://help.sendlane.com/article/321-email-reporting-breakdown#provider[inbox
+specific open and click rates]. If you notice one provider's metrics
+decreasing, reduce the amount of contacts using that provider for your
+next send until the metrics stabilize.
+
+[[subsequent]]
+===== Step five: Prepare subsequent sends
+
+If you're using your previous ESP to create segments for each new send,
+repeat the process in Using previous ESP's segmentation until you have
+successfully sent to all your 90 day engaged contacts.
+
+If you used a bulk export to create your warming send's audience, repeat
+steps 4-9 in Using bulk export of all contacts until you have
+successfully send to all your 90 day engaged contacts.
+
+link:#top[Back to top]
+
+'''''
+
+[[re-engagement-not-recommended]]
+=== Optional and not recommended: Re-engage remaining contacts
+
+Domain warming ends when you've sent to your 90 day engaged contacts
+because in the vast majority of cases, contacts who have not engaged
+with your emails in the past 90 days are unlikely to engage in the
+future.
+
+We highly recommend not attempting to re-engage older contacts.
+Resources and energy spent on re-engagement tactics are often better
+spent on optimizing for engaged contacts. If you must re-engage older
+contacts, follow
+https://help.sendlane.com/article/494-how-to-re-engage-unengaged-contacts[these
+guidelines].
+
+link:#top[Back to top]

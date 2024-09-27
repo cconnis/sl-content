@@ -1,0 +1,8 @@
+Check out our guides on exporting reporting data for
+https://help.sendlane.com/category/167-campaigns[Campaigns] and
+https://help.sendlane.com/category/4-automations[Automations]:
+
+* https://help.sendlane.com/article/442-export-campaign-report-data[Export
+Campaign Report Data]
+* https://help.sendlane.com/article/443-export-automation-email-report-data[Export
+Automation Email Report Data]

@@ -1,0 +1,383 @@
+[[top]]
+==== Overview
+
+If you’re migrating to Sendlane Reviews from another reviews provider,
+you can bring your hard earned reviews with you! Importing existing
+reviews is as easy as formatting a .CSV file and uploading it to your
+Sendlane account.
+
+==== In This Guide
+
+. link:#1[Export Reviews From Previous Provider]
+. link:#format[Format Reviews File]
+* link:#supported-providers-export[Uploading an Export From Shopify
+Reviews&#44; BigCommerce&#44; Loox&#44; Judge.me&#44; or Okendo]
+* link:#yotpo-export[Uploading an Export From Yotpo]
+* link:#stamped-export[Uploading an Export From Stamped]
+* link:#other-provider-export[Uploading an Export From Any Other
+Provider]
+. link:#upload-to-sendlane[Upload File to Sendlane]
+
+* link:#download[Download an Import Error File]
+* link:#troubleshooting[Troubleshooting]
+
+'''''
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Have access to Excel, Numbers, or Google Sheets, or another spreadsheet
+software
+
+Make sure that all products represented in your reviews import are in
+your eCommerce store
+
+Create a List for reviews Contacts and assign it in your eCommerce
+integration's settings
+
+1
+
+[[1]]
+===  Export Reviews From Previous Provider
+
+Check out the guides linked below for export instructions on common
+reviews platforms! If your platform isn’t listed here, please reach out
+to your former reviews provider for assistance.
+
+* https://help.shopify.com/en/manual/products/product-reviews/import-export-reviews[Shopify
+Reviews]
+* https://support.bigcommerce.com/s/article/Managing-Reviews?language=en_US#:~:text=How%20can%20I%20import%20or%20export%20product%20reviews%3F[BigCommerce]
+* https://help.loox.io/article/21-how-do-i-export-my-reviews[Loox]
+* https://support.yotpo.com/en/article/exporting-reviews-from-yotpo[Yotpo]
+* https://stampedsupport.zendesk.com/hc/en-us/articles/8839244356891-Exporting-Reviews-Checkout-Comments-or-NPS[Stamped]
+* https://support.judge.me/support/solutions/articles/44001815603-export-your-reviews-and-q-a-from-judge-me[Judge.me]
+* https://help.sendlane.com/article/562-how-to-export-reviews-from-okendo[Okendo]
+
+2
+
+[[format]]
+===  Format Reviews File
+
+For instructions on how to format your export from your previous reviews
+provider, click the link that corresponds with your circumstances:
+
+* link:#supported-providers-export[Upload an export from Shopify
+Reviews&#44; BigCommerce&#44; Loox&#44; Judge.me&#44; or Okendo]
+* link:#yotpo-export[Uploading an export from Yotpo]
+* link:#stamped-export[Uploading an export from Stamped]
+* link:#other-provider-export[Uploading an export from any other
+provider]
+
+[[supported-providers-export]]
+==== Uploading an Export From Shopify Reviews, BigCommerce, Loox, Judge.me, or Okendo
+
+Proceed with link:#upload-to-sendlane[uploading your .CSV into Sendlane
+Reviews]!
+
+[[yotpo-export]]
+==== Uploading an Export From Yotpo
+
+Yotpo sometimes provides different header columns based on the version
+of the app being used. If header columns do not exactly match Sendlane
+Reviews’ import tool, the import will fail.
+
+Open your Yotpo file using the spreadsheet software of your choice and
+compare your column headers to the table below.
+
+[cols="",]
+|===
+|*Accepted Yotpo Headers* ✅
+|`+Review ID+`
+|`+Review Status+`
+|`+Review Title+`
+|`+Review Content+`
+|`+Review Score+`
+|`+Review Creation Date+`
+|`+Product ID+`
+|`+Product Title+`
+|`+Reviewer Display Name+`
+|`+Reviewer Email+`
+|`+Comment Content+`
+|`+Comment Public+`
+|`+Comment Date+`
+|`+Published Image URLs+`
+|===
+
+[[yotpo-match]]
+===== The headers on my Yotpo export match the accepted Yotpo headers!
+
+If your headers exactly match the headers in the Accepted Yotpo Headers
+column of the table above, awesome! You’re almost ready to proceed with
+importing your reviews file. Save your file as .CSV, then proceed with
+uploading your file.
+
+[[yotpo-no-match]]
+===== The headers on my Yotpo export DO NOT match the accepted Yotpo headers!
+
+No worries! You’ll just need to replace your export’s headers before
+proceeding, and add an Order ID column:
+
+Replace any headers that do not exactly match the Accepted Yotpo Headers
+column in the table above
+
+Add a header labeled `+Order ID+` and leave the column blank
+
+Save your file as .CSV
+
+Once you’ve completed the steps above, proceed with uploading your file.
+
+[[stamped-export]]
+==== Uploading an Export From Stamped
+
+Stamped sometimes provides different header columns based on the version
+of the app being used. If header columns do not exactly match Sendlane
+Reviews’ import tool, the import will fail.
+
+If your export from Stamped fails, get Product Management support by
+contacting Sendlane’s 24/7 live Product Support or your Customer Success
+Manager for assistance.
+
+[[other-provider-export]]
+==== Uploading an Export From Any Other Provider
+
+If you are uploading an export from a provider not listed in any of the
+above sections, files must meet the following criteria for successful
+processing:
+
+* image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e8bf8dfac9297916a43be8/file-jnNOhWNRhO.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e8bf8dfac9297916a43be8/file-jnNOhWNRhO]Your
+file type is .CSV
+* Your file size must be no larger than 10 MB
+* Column headers exactly match the table below.
+* Your file must include all of the *required* column headers, noted in
+the table below with a green checkmark ✅.
+
+Use the
+https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/attachments/64b1c02878d5c33f49240f3f/Sendlane_Reviews_Template.csv[Sendlane
+Reviews import template] to avoid import hiccups!
+
+. Save the template to your desktop
+. Use your preferred spreadsheet editor (Excel, Google Sheets, or
+Numbers) to open the template
+. Paste your reviews into the template, making sure to adjust column
+order and header text to match the table below
+. Save your file as `+.CSV+`
+. Follow the instructions below to upload your reviews!
+
+[[headers]]
+===== 🚨 Column headers in your .CSV must exactly match the headers below
+
+If the column headers in your import file do not exactly match the
+column headers listed below, your import will fail
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Column Header |Required |Description |Example
+|`+product_id+` |✅ |Unique identifier for the product |195144121145
+
+|`+product_title+` | |Name of the product which will appear under the
+review to identify which product the review applies to |Black T-Shirt
+
+|`+title+` |  |Review's title |I love this shirt!
+
+|`+content+` | + |The main content of the review |I like the high
+quality, sleek design, and cool graphic.
+
+|`+rating+` |✅ |Number 1 to 5 |5
+
+|`+email+` |✅ |Email of the person submitting a review
+|sendy@sendlane.com
+
+|`+name+` | + |Name of the person submitting a review |Sendy L
+
+|`+created_at+` |✅ |Date and time review was created |Date format
+(e.g., YYYY-MM-DD)
+
+|`+published+` |✅ a|
+Determines whether the review is published or not published. This field
+accepts the following values to mark a review as published, all other
+values will result in the review not being published: +
+
+* `+Published+`
+* `+published+`
+* `+true+`
+* `+TRUE+`
+* `+True+`
+* `+Active+`
+* `+active+`
+
+|TRUE
+
+|`+reply+` |  |Text of response from store owner |Thanks for your
+review!
+
+|`+replied_at+` |  |Date and time comment was created |Date format
+(e.g., YYYY-MM-DD)
+
+|`+image_urls+` |  |Links to image URLs to display on the review. Use
+commas to separate multiple image URLs.
+|https://cdn.shopify.com/s/files/1/0304/4622/3493/products/T-Shirt-MockUp_DkGray-AutoSquad_1024x1024@2x.jpg?v=1617908104
+
+|`+verified_purchase+` | |Determines whether a review shows a Verified
+badge (TRUE) or not (FALSE) |TRUE
+
+| + | | |
+|===
+
+3
+
+[[upload-to-sendlane]]
+===  Upload File to Sendlane
+
+To import your review file:
+
+. Click the *Reviews* icon
+. Click *Content* 
+. Click *Import & Export*
+. Click *Import Reviews*
+. Select a *Product Review Source*
+.. If you are uploading an export from a supported reviews platform
+select your previous platform, otherwise select Other from the Product
+Review Source dropdown
+. Drag and drop your .CSV file or click to browse for your file
+. Check the checkbox confirming that your reviews are genuine
+. Click *Import*
+
+If some reviews were not imported due to an error, the Results column
+will show how many reviews were not imported. Click the download icon in
+the Actions column to download a file of reviews that were not imported.
+
+If your import was not successful:
+
+. Click the download icon in the Actions column to download a file of
+reviews that were not imported
+. Fix the errors by referencing the formatting guidelines above and
+adjusting headers as needed
+. Try importing again by selecting Other for Product Review Source
+
+link:#top[Back to top]
+
+'''''
+
+[[download]]
+=== Download an Import Error File
+
+To download an imported file containing errors, click the download icon
+in the Actions column. The .CSV file will display all applicable errors
+for a row in the last column.
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+* link:#button-gray[Why is the import reviews button grayed out?]
+* link:#video[How do I import videos attached to my reviews?]
+* link:#stuck-at-processing[My reviews import is stuck at Processing!]
+* link:#product-not-exist[How can I fix a The product doesn't exist in
+our database error?]
+* link:#imported-not-showing-up[I imported my reviews&#44; but they're
+not showing up!]
+* link:#reviews-submitted-not-appearing[Reviews have been submitted via
+the widget on my website&#44; but I don't see them in the Moderation
+tab!]
+
+'''''
+
+[[button-gray]]
+====== Why is the import reviews button grayed out?
+
+The import button is grayed out when there is no assigned List for
+Reviews in your eCommerce integration. To assign a List for Reviews:
+
+. Navigate to the https://app.sendlane.com/integrations[integrations
+page]
+. Click your *eCommerce integration*
+. Click the *settings* icon
+. Select a List from the *reviews dropdown*
+. Click *Continue*
+
+link:#troubleshooting[Back to troubleshooting]
+
+'''''
+
+[[video]]
+====== How do I import videos attached to my reviews?
+
+At this time, Sendlane Reviews supports photos only.
+
+link:#troubleshooting[Back to troubleshooting]
+
+'''''
+
+[[stuck-at-processing]]
+====== My reviews import is stuck at processing!
+
+If the character `+\+` appears anywhere in your reviews import file,
+your import may be stuck at the Processing stage. To fix this issue:
+
+. Open your reviews file
+. Press CMD/CTRL + F
+. Enter `+\+`
+. Delete any `+\+` symbols present in your file
+. Save your reviews file
+. Import your reviews file
+
+link:#troubleshooting[Back to troubleshooting]
+
+'''''
+
+[[product-not-exist]]
+====== How can I fix a `+The product doesn't exist in our database+` error?
+
+Ensure that:
+
+. Your eCommerce store's integration is synced, and
+. The product ID in the row returning this error exists in your
+eCommerce store
+
+If your eCommerce integration is synced and the product ID returning the
+error exists in your eCommerce store, incorrect number formatting (
+https://support.microsoft.com/en-us/office/display-numbers-in-scientific-exponential-notation-f85a96c0-18a1-4249-81c3-e934cd2aae25[scientific
+notation]) may have been applied to your .CVS file's product ID column.
+To fix this:
+
+. Export your reviews from your previous provider again
+. Do not alter the file in any way; applying a filter or cell formatting
+may cause incorrect number formatting to be applied to the product ID
+column
+. Import the unaltered file to Sendlane Reviews
+
+link:#troubleshooting[Back to troubleshooting]
+
+'''''
+
+[[imported-not-showing-up]]
+====== I imported my reviews, but they're not showing up!
+
+Ensure that your eCommerce integration has a List selected in its
+settings for Sendlane Reviews:
+
+[cols="^,^",]
+|===
+|*Shopify* |*BigCommerce*
+
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65b83af0120ae85aab8b71d3/file-YmC01HuvdI.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65b83af0120ae85aab8b71d3/file-YmC01HuvdI]
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65b83b9a7bcbce3e1307ccb7/file-GuJGp8HKPv.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65b83b9a7bcbce3e1307ccb7/file-GuJGp8HKPv]
+|===
+
+link:#troubleshooting[Back to troubleshooting]
+
+'''''
+
+[[reviews-submitted-not-appearing]]
+====== Reviews have been submitted via the widget on my website, but I don't see them in the Moderation tab!
+
+This issue is generally due to the wrong store being connected to
+Sendlane Reviews. Sendlane Reviews only supports one store per Sendlane
+account. Ensure that your Sendlane Reviews script and widgets are only
+installed in one store.
+
+link:#troubleshooting[Back to troubleshooting]
+
+'''''

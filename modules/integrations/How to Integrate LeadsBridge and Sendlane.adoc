@@ -1,0 +1,134 @@
+https://leadsbridge.com/[LeadsBridge] is a Facebook advertising
+automation platform that allows you to connect and sync your advertising
+and sales funnels in real-time, bridging the gap between Sendlane and
+Facebook Ads Manager.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://leadsbridge.com/pricing/[LeadsBridge account].
+
+You also need to have a Facebook ad account connected to Facebook
+Business Manager.
+
+Additionally, please make sure to
+https://help.sendlane.com/article/308-pop-ups[create a pop-up] inside of
+your Sendlane account.
+
+'''''
+
+=== Integrating LeadsBridge and Sendlane
+
+. Login to LeadsBridge and navigate
+to _*Integrations*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5b913104286364bc960d59/file-Cdvjlkn4qJ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5b913104286364bc960d59/file-Cdvjlkn4qJ]_
+. Next, click on the *_Add New_* button
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5b91a92c7d3a7e9ae87f53/file-13AwivwaKy.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5b91a92c7d3a7e9ae87f53/file-13AwivwaKy]
+. Name your integration and then click on *_Browse_* to search for
+Sendlane
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5b923904286364bc960d5a/file-zbfsqbmcXF.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5b923904286364bc960d5a/file-zbfsqbmcXF]
+. Add your HTML Form code (please make sure to use the _RAW code_ from
+your Sendlane pop-up and it should be similar to the one below)
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5b950604286364bc960d5f/file-iWBy0RmsYD.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5b950604286364bc960d5f/file-iWBy0RmsYD]
+. Click on _Finish_ and you're done!
+
+'''''
+
+=== Next Steps
+
+Moving forward, if you are looking into integrating Facebook Lead Ads to
+Sendlane, through LeadsBridge so data can pass in both directions,
+please follow the steps below:
+
+. Navigate to *_Bridges_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e0f612c7d3a7e9ae893c7/file-ni6KNKEdiG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e0f612c7d3a7e9ae893c7/file-ni6KNKEdiG]
+. Next, click on the  *_Add
+New_* buttonimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e0f9104286364bc962160/file-h56eAfC7OG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e0f9104286364bc962160/file-h56eAfC7OG]
+. Name your Bridge, browse for ** *_Facebook Lead Ads_* in the _Select
+Source_ field and for *_Sendlane_* in the _Select Destination_ one and
+the destination we created in the above steps will come up by default
+(you can always create a new one if need
+be)image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e103904286364bc962164/file-4LCTJDtMr5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e103904286364bc962164/file-4LCTJDtMr5]
+. Next, you will need to choose your _Facebook Ad Account_, your
+_Facebook Page_ and __Facebook Form (__if you haven't yet added your
+Facebook account to your LeadsBridge dashboard, you can do so by
+clicking on the *_Add Ad Account_*
+button__)__image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e10ef2c7d3a7e9ae893d1/file-YdM4l0PVsF.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e10ef2c7d3a7e9ae893d1/file-YdM4l0PVsF]__
+. On the next step, you will need to simply confirm that you want the
+leads to be added to Sendlane, through the custom form. You'll also have
+the possibility to choose if you want to be notified via email as soon
+as someone subscribes, by toggling the button to _Yes_. When you are
+done,
+click _*Next*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e16ab2c7d3a7e9ae893f2/file-vg3RgaOu9r.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e16ab2c7d3a7e9ae893f2/file-vg3RgaOu9r]_
+. Here, you will need to match the fields you added inside your Facebook
+form and send this info over to Sendlane, like: Name, Email, Form Title,
+etc. 
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e12c304286364bc96216e/file-vbKTY89fya.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e12c304286364bc96216e/file-vbKTY89fya]
+. In this final step, you'll be able to send a lead from LeadsBridge to
+test if the configuration works properly. To do so, simply fill in
+your __Email __and _Full Name_ and then click on _Test Now_. 
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e148d04286364bc962177/file-1zLfunoH9j.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e148d04286364bc962177/file-1zLfunoH9j]
++
+. If you did everything right, the button will turn green, meaning your
+lead was synced successfully and the integration is ready, so please
+make sure to click on _Save & Publish_ at the bottom
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e14ed2c7d3a7e9ae893e8/file-vnzyfT7UfC.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e5e14ed2c7d3a7e9ae893e8/file-vnzyfT7UfC]
+
+To check if it worked, you can also view the list you selected inside
+your Sendlane account and you should see the test information you added.
+If it's there, it means your integration is successful and ready to be
+used! Congrats, you’re done! 
+
+====== Please Note
+
+For the integration _test_ to be successful, you'll need to make sure
+that your Sendlane account is set up with single-opt in access (contact
+our https://www.sendlane.com/contact-us[24/7 support team] to set this
+up!)
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to LeadsBridge, so we're only able to provide
+limited troubleshooting support. However, if you  _do_ need help,
+the LeadsBridge team is just a few clicks away!
+
+* https://leadsbridge.com/contact-us/[Connect] with their Support Team
+*  Visit the LeadsBridge https://leadsbridge.com/resources/[Help Center]
+
+'''''
+
+Additional LeadsBridge Resources
+
+https://leadsbridge.com/[Sign up for LeadsBridge]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/converting-landing-pages[4 Design
+Elements of Converting Landing Pages]
+* https://www.sendlane.com/blog-posts/8-ways-marketers-align-social-and-email[8
+Ways Successful Marketers Align Their Social Media and Email Marketing
+for Maximum Success]
+* https://www.sendlane.com/blog-posts/social-media-vs-email-marketing-5-reasons-why-email-wins[Social
+Media vs Email Marketing: 5 Reasons Why Email Marketing Wins ]
+
+'''''
+
+=== TL;DR
+
+Login to LeadsBridge → Integrations →   _Add New_ → _Name your
+integration and browse for Sendlane_ → Enter the RAW Form code (from
+within Sendlane) → _Finish_ 
+
+Go to Bridges →   _Add New_ → _Name_ your bridge and browse for
+_Facebook Lead Ads_ and _Sendlane_ → Choose your _Facebook Ad Account_,
+your _Facebook Page_ and __Facebook Form __→  Enter a test email address
+and _Test Now_ → _Save & Publish_ 

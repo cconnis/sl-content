@@ -1,0 +1,49 @@
+DMARC stands for “Domain-based Message Authentication, Reporting &
+Conformance” which is an email authentication policy, and reporting
+protocol.
+
+DMARC was designed to help email senders and receivers determine whether
+or not a message is legitimately from the sender, and what to do if it
+isn’t. This makes it easier to identify spam and phishing messages and
+keep them out of peoples’ inboxes.
+
+You can learn more about the DMARC and its specifics by visiting the
+official https://dmarc.org/[DMARC website].
+
+'''''
+
+=== How Sendlane is in Compliance
+
+Per DMARC lists and policies, free email services (like Yahoo, AOL,
+Microsoft, and Gmail) cannot be used to send email marketing messages.
+If an email address from a free email service is listed as the sender,
+the message will not inbox, and likely be rejected by the recipient's
+ESP entirely.
+
+====== Please Note
+
+This is why we're not able to accept certain email addresses in the
+*From Email* field of your Sendlane account.
+
+'''''
+
+=== Have Questions or Concerns?
+
+For more information on your responsibilities as a _sender_, you can
+visit the https://dmarc.org/[DMARC website] or reach out to our support
+team. You can also learn more about DMARC
+https://www.sendlane.com/blog-posts/dmarc-role-in-email-marketing[right
+here], in the Sendlane blog!
+
+To request assistance as a _recipient_ please email
+support@sendlane.com. If you're having trouble with a specific sender,
+please forward a copy of the message you received so we can investigate.
+
+'''''
+
+=== TL;DR
+
+https://dmarc.org/[DMARC] (aka Domain-based Message Authentication,
+Reporting & Conformance) authenticates email senders and helps identify
+spam and phishing messages to keep them out of peoples’ inboxes.
+Sendlane is fully DMARC compliant.

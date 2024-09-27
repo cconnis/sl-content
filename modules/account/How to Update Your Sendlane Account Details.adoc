@@ -1,0 +1,16 @@
+==== Overview
+
+On the Account Details page, update your profile information, including
+your timezone, name, phone number, organization or company name,
+address, tax ID, tax ID type, and default currency display.
+
+=== Change Account Details
+
+To make changes to your profile information:
+
+. Click the *Account* icon 
+. Click *Account*
+. Make changes 
+. Click *Save*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667c64d31f3fa9421e288737/file-pOlNe8Uwqb.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667c64d31f3fa9421e288737/file-pOlNe8Uwqb]

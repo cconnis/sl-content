@@ -1,0 +1,37 @@
+Sendlane's intelligent pop-ups are a great tool to use directly in
+your Miva online store. You can utilize pop-ups, banners, and even
+inline forms to collect contacts as they navigate your store! 
+
+In this article, we'll share how to integrate a Sendlane Pop-up with
+your Miva account!
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Create a Pop-up and
+https://help.sendlane.com/article/308-pop-ups#installing[grab your
+form's code]
+
+[[installing]]
+=== Add a Pop-up to your Miva storefront 
+
+Log in to your Miva account and navigate to the User Interface page
+
+. Inside of your Miva account, locate *User Interface* under
+the Quicklinks menu
+. From the User Interface page, search for your storefront page
+information, then click your store page template
+. Scroll until you see Headers and Footers, then input your pop-up code
+collected from Sendlane
+. Click *Update* to finalize adding the code
+
+Once everything has been finalized, your pop-up should now be visible on
+your storefront website!
+
+[[ar]]
+===== ⏭ Next Steps
+
+We always recommend testing your setup to be sure everything is working
+properly and set up as desired, so please be sure to test your pop-up by
+visiting your storefront website, opting-in, and making sure your
+contact information is added to Sendlane as intended!

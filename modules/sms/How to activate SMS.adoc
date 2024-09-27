@@ -1,0 +1,118 @@
+Sendlane's SMS packages allow you to add SMS marketing to your existing
+email marketing strategy quickly and seamlessly! Use both together to
+leverage customer behavioral data to send the right type of message at
+the right time.
+
+[[note]]
+===== ⚠️ Important notes regarding SMS activation
+
+* SMS carriers are experiencing higher than normal wait times in
+approving phone number applications; the registration process currently
+takes up to 4 weeks.
+* SMS activation is only available for businesses with registered
+addresses in the United States.
+* Using SMS to send marketing content means you must follow very strict
+legal requirements including content guidelines, time restrictions, and
+consent collection guidelines.
+* SMS messaging on shortcodes is only available to phone numbers located
+in the United States or Canada; SMS messaging on a toll free number is
+available to phone numbers located in the United States, Canada, and
+Puerto Rico
+* Your privacy policy must include your business' data storage and data
+usage terms. This information is required for SMS applications to be
+processed.
+
+1::
+  To get started, head to the https://app.sendlane.com/billing[Billing
+  tab] of your Account Settings page, then click *Set Up SMS.*
+  +
+  Read the SMS Consent / Opt-In agreement and restricted content
+  information carefully before checking the box and clicking *Continue*.
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/664f946c1f3fa9421e287091/file-hB1QQQZvim.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/664f946c1f3fa9421e287091/file-hB1QQQZvim]
+
+2::
+  Sendlane works with carriers to verify that your phone number belongs
+  to your business by registering your brand.
+  +
+  Enter your company’s information including your industry, legal entity
+  name, and business address.
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a17b048919a15d1b1d1f12/file-OxKHRdl9kK.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a17b048919a15d1b1d1f12/file-OxKHRdl9kK]Next,
+  you’ll set up how your business is identified in marketing SMS
+  messages and provide links to your business’ privacy policy and terms
+  of service.
+  +
+  * *Business Name* will be added to all of your SMS messages (and will
+  count toward’s the message’s character count) to identify you to your
+  Contacts.
+  * *Subdomain* will be used in tracking links to identify your brand to
+  your Contacts and cannot be changed. We recommend keeping your
+  subdomain as short as possible. Subdomains cannot contain periods and
+  cannot start or end with a dash.
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a17b328919a15d1b1d1f14/file-BVHAFgc8xP.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a17b328919a15d1b1d1f14/file-BVHAFgc8xP]Carriers
+  want to know that you are following legal guidelines that protect
+  consumers from unwanted marketing materials. Not having
+  https://help.sendlane.com/article/476-sms-quick-start-guide#privacy-policy[the
+  proper legal language] on every lead capture form and in your privacy
+  policy your business uses can result in massive fines for violating
+  TCPA.
+  +
+  Luckily, Sendlane has TCPA-compliant opt-in forms ready to go! If you
+  are using any lead collection method other than
+  https://help.sendlane.com/article/308-pop-ups#SMS[Sendlane’s native
+  Pop-Ups], upload a screenshot showing your lead collection page with
+  the required legal
+  language.image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a17b9948915f570c6a87ea/file-Pkx4NU2B5v.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a17b9948915f570c6a87ea/file-Pkx4NU2B5v]Click
+  *Submit* to submit your form and begin the compliance review process!
+  You'll receive an email from the Sendlane Compliance team on the
+  status of your registration.
+
+3::
+  Once your SMS registration is approved, you’ll be automatically placed
+  on our free trial SMS plan! The free trial plan gives you 50 SMS
+  credits to send test messages and get familiar with the SMS workflow.
+  +
+  To select your SMS plan:
+  +
+  . Click the Account icon
+  . Click Billing
+  . Click SMS Plans
+  . Select a plan from the dropdown
+  . Click Choose Plan under the annual or monthly billing agreement
+  +
+  ===== 💡 Pro Tip
+
+  Not sure which plan to pick? 10% of your audience size x 4 messages
+  per month is a good place to start!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dfc7ba0f2a4c04f24d9c68/file-J7nxQ18KVH.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dfc7ba0f2a4c04f24d9c68/file-J7nxQ18KVH]
+
+===== ⏭ Next Steps
+
+If you need to port your phone number over from an existing SMS
+solution, please reach out to our 24/7 product support team!
+
+_Disclaimer: The information provided in this article does not, and is
+not intended to, constitute legal advice. All information, content, and
+materials available in this article are for general informational
+purposes only._
+
+[[additional]]
+=== Additional SMS Resources
+
+Check out the Sendlane Marketing Journal for tips, tricks, and best
+practices for SMS Marketing:
+
+* https://www.sendlane.com/blog/sms-marketing-business-thrive[How SMS
+Marketing Can Help Your Business Thrive]
+* https://www.sendlane.com/blog/sms-mms-marketing[The New Sendlane
+SMS/MMS Marketing (+ 8 Best Practices)]
+* https://www.sendlane.com/blog/sms-marketing-benefits[8 SMS Marketing
+Benefits & Tips]
+* https://www.sendlane.com/blog/grow-sms-marketing-list[Six Effortless
+Ways to Grow Your SMS Marketing List]
+* https://www.sendlane.com/blog/sms-marketing-campaigns[9 Best Practices
+for Writing Effective SMS Campaigns]
+* https://www.sendlane.com/blog/easy-sms-marketing[11 Easy Ways to Make
+Your SMS Marketing More Powerful]

@@ -1,0 +1,65 @@
+Test up to 4 versions of an Automation email with different subjects,
+preheaders, and/or content to identify the best performer!
+
+1::
+  To turn on experiments for a Campaign, check the Experiments checkbox
+  in your email node's settings and set your components, duration, and
+  https://help.sendlane.com/article/107-senders[Sender Profile].
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633765f405ba014734a36986/file-qBHVzOOACJ.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633765f405ba014734a36986/file-qBHVzOOACJ]
+  +
+  You can identify email nodes with experiments by the beaker icon shown
+  below
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63376ab9e1c306062a1d36f7/file-zDfwCt5YKW.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63376ab9e1c306062a1d36f7/file-zDfwCt5YKW]
+
+2::
+  ===== Components
+  +
+  Select which part(s) of your email you would like to create variations
+  for (subject, preheader, and/or content).
+  +
+  ===== Duration
+  +
+  * *Specific amount of time* Select a set period of time to run the
+  experiment for
+  * *Total emails to be sent* Enter a number value for the total number
+  of emails that the Automation should send before selecting a winner
+  * *Ongoing* Select this option to send multiple variations of the
+  email indefinitely, or until you manually choose a winner
+  +
+  ===== Winning Version
+  +
+  For Automation experiments not set to "Ongoing," select the factor
+  that determines the winning email (click rate, open rate, or revenue)
+  and the number of hours to let the experiment run before sending the
+  winning email to the rest of the audience.
+
+3::
+  On the Content page, you can start building your first email by
+  clicking Create Email. Then click *Blank Experiment* to create another
+  blank email, or use the *Copy* button to copy email variations you've
+  already created. Create or copy up to four versions, then
+  click *Save*!
+  +
+  Make sure to test your Automation flow and activate your email nodes
+  and Automation when you're ready to start sending!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63376872e1c306062a1d36ef/file-BCrpI2XBu4.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63376872e1c306062a1d36ef/file-BCrpI2XBu4]
+
+=== Choose a Winner Manually
+
+To select the winning variation of an email manually, click *Make this a
+winner* under the variation you want to win!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63376a563f38fe1e46862c2e/file-YEk1ZCGyXV.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63376a563f38fe1e46862c2e/file-YEk1ZCGyXV]
+
+'''''
+
+[[additional]]
+=== Additional Resources
+
+* https://www.sendlane.com/blog/introducing-sendlane-experiments-multivariate-testing[Introducing
+Sendlane Experiments--Multivariate Testing]
+* https://www.sendlane.com/blog/unlock-these-5-effective-strategies-to-get-your-emails-opened[Unlock
+These 5 Effective Strategies to Improve Your Email Open Rates]

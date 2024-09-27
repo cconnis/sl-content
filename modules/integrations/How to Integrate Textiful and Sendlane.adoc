@@ -1,0 +1,98 @@
+https://textiful.com/[Textiful] is an easy-to-use data collection tool
+that uses the power of text messaging to collect email addresses for new
+leads.
+
+Using Textiful and Sendlane, you can collect emails through a keyword
+text messaging campaign. These collected email addresses can then be
+seamlessly transferred to your Sendlane list of choice. 
+
+Plus, you can also add https://help.sendlane.com/article/82-tags[Tags]
+to your new contacts, and employ
+https://help.sendlane.com/article/331-custom-fields[Custom Fields] to
+populate specific areas of their customer profile.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+https://textiful.com/[active Textiful account].
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Textiful knows where to place your
+new leads and contacts!
+
+=== Connecting Textiful and Sendlane
+
+. From your Textiful homepage, click *_Create New Campaign_* and select
+either *_Create a Blank Campaign_* or *_Use a Campaign Starter Recipe_.*
+If you choose to _"Use a Campaign Starter Recipe"_, make sure to select
+one that collects the _Email
+Address_.*_image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63ad8452faff00174f0c90/file-HrdSB6VvTY.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63ad8452faff00174f0c90/file-HrdSB6VvTY]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63adde4cedfd0017635c96/file-cenJwkq8LC.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63adde4cedfd0017635c96/file-cenJwkq8LC]_*
+. Enter a keyword and click *_Create
+Keywordimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63aeaf4cedfd00173b92cd/file-XyOIMw4VWe.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63aeaf4cedfd00173b92cd/file-XyOIMw4VWe] +
+_*
+. Click *Add Data Capture Message,* make sure you select *Email
+Address.* You can capture other data if you like. If you chose _"Use a
+Campaign Starter Recipe"_ at the beginning, the system will create these
+boxes for you. Please click on each box and modify the text as
+needed._image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63b2424cedfd0017635cba/file-oi5qepvl7f.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63b2424cedfd0017635cba/file-oi5qepvl7f]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63b251cff47e00168f7f42/file-1aw2ttPARZ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63b251cff47e00168f7f42/file-1aw2ttPARZ]_
+. Click *_Add Actions &
+Integrationsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63b3ba52faff00174f0ccb/file-E4Tvs4tR4I.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63b3ba52faff00174f0ccb/file-E4Tvs4tR4I] +
+_*
+. Select *_Email Platform
+Integrations__image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63b4ee4cedfd00173b92ff/file-IlGNQByfU0.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63b4ee4cedfd00173b92ff/file-IlGNQByfU0] +
+_*
+. Select *_Sendlane_* from the list of integrations
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63b57a4cedfd00173b9305/file-45lpnovHx7.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f63b57a4cedfd00173b9305/file-45lpnovHx7]
+. Enter your API/Hash Keys and Sendlane Subdomain, then click *_Update &
+Save_*
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cffdaf30428632218e3f9f4/file-suB8a8CgSM.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cffdaf30428632218e3f9f4/file-suB8a8CgSM]
+. Select the List in Sendlane with which you want to integrate, along
+with any tags, and *_Update &
+Save_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cffdb550428632218e3f9fc/file-J1MPNw51Ut.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cffdb550428632218e3f9fc/file-J1MPNw51Ut]
+
+Your integration is now complete!
+
+Contacts collected by Textiful will now automatically sync with your
+List in Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Textiful, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help,
+the Textiful team is just a few clicks away!
+
+* Connect with the mailto:mailto:support@textiful.com[Textiful team]
+* Visit the Textiful https://slimfaq.com/textiful[Support Page]
+
+=== Additional Textiful Resources
+
+https://textiful.com/register/free[Create a Textiful Account] |
+https://textiful.com/#product[Product Features]
+
+=== Additional Sendlane Resources 
+
+* https://www.sendlane.com/blog-posts/textiful-integration-spotlight[Sendlane
++ Textiful - Capture Data and Grow Your Email List Via SMS]
+* https://www.sendlane.com/blog-posts/ignite-sms-marketing-campaigns[9
+Tips to Ignite your SMS Marketing Campaigns (With Examples!)]
+* https://www.sendlane.com/blog-posts/sms-marketing-business-thrive[How
+SMS Marketing Can Help Your Business Thrive]
+
+'''''
+
+=== TL;DR
+
+Integrating: __Create Campaign** **__→ __Create Keyword __→ _Add Data
+Capture Message_ → Add Actions & Integrations → Sendlane → Enter
+API/Hash Keys, Subdomain → ** _Save_ → Choose List → _Save _

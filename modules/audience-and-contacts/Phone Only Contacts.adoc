@@ -1,0 +1,93 @@
+Phone only Contacts are Contacts who have only given you their phone
+number and have not given you their email address. Phone only Contacts
+do not count towards your account’s email plan Contact limit and all SMS
+plans offer unlimited phone only Contacts!
+
+Check out our frequently asked questions about phone only Contacts:
+
+* link:#6[Do I need an email plan if I just want to import phone only
+Contacts?]
+* link:#1[Do I pay for phone only Contacts?]
+* link:#2[What happens if an email address is added to a phone only
+Contact's profile?]
+* link:#3[How can I see all of my phone only Contacts?]
+* link:#4[How do I collect SMS consent for phone only Contacts?]
+* link:#5[How can I message phone only Contacts?]
+
+[[6]]
+===== Do I need an email plan if I just want to import phone only Contacts?
+
+Yes, all Sendlane accounts are required to have an active email plan.
+Our Growth Plan costs $100 per month (or $1000 annually, two months
+free!) which includes up to 5,000 Contacts and 75,000 email credits.
+
+link:#top[Back to Top]
+
+'''''
+
+[[1]]
+===== Do I pay for phone only Contacts?
+
+You are not charged for phone only Contacts. Phone only Contacts do not
+count towards your email plan’s Contact limit until there is an email
+address attached to the profile.
+
+link:#top[Back to top]
+
+'''''
+
+[[2]]
+===== What happens if an email address is added to a phone only Contact's profile?
+
+As soon as an email address is added to a Contact profile, that profile
+is considered a "paid Contact" and will count towards your email plan's
+Contact limit.
+
+Email addresses may be added to a Contact's profile if:
+
+* Contacts fill out another form or Pop-Up that sends leads to your
+account with an email address
+* You pull historical data from your deep data eCommerce platform or
+manually upload historical data to Sendlane
+
+link:#top[Back to top]
+
+'''''
+
+[[3]]
+===== How can I see all of my phone only Contacts?
+
+Create a Segment using the condition `+Email Address does not exist+` to
+see how many phone only Contacts you have in your account.
+
+link:#top[Back to top]
+
+'''''
+
+[[4]]
+===== How do I collect SMS consent for phone only Contacts?
+
+https://help.sendlane.com/search?collectionId=5cd312fa2c7d3a177d6e8301&query=collectingconsent[Collecting
+SMS consent] for phone only Contacts is exactly the same as collecting
+consent for paid email Contacts.
+
+link:#top[Back to top]
+
+'''''
+
+[[5]]
+===== How can I message phone only Contacts?
+
+Phone Only Contacts can only receive SMS messages, and you will receive
+replies to SMS messages from phone only Contacts in the
+https://help.sendlane.com/article/464-sms-reply-center[SMS reply
+center].
+
+SMS Campaigns work exactly the same for phone only Contacts as with paid
+email Contacts. 
+
+Phone only Contacts can be funneled through an Automation that has both
+email and SMS nodes, but the phone only Contacts will only receive the
+Automation’s SMS messages.
+
+link:#top[Back to top]

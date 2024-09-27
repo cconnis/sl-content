@@ -1,0 +1,112 @@
+link:++https://sendlaneaff--emarky.thrivecart.com/connectleads/++[Connectio]
+allows you to leverage tools from both your Sendlane account and
+Facebook Ads Manager together! 
+
+The Connectio suite includes multiple Facebook marketing solutions,
+including ConnectAudience and ConnectLeads:
+
+* Using ConnectLeads and Sendlane, you can collect lead information
+directly from FaceBook Lead Forms (such as Name and Email) and add them
+to your
+https://help.sendlane.com/knowledgebase/capturing-contacts/[lists]
+within Sendlane. 
+* Using ConnectAudience and Sendlane, you can display Facebook Ads to
+contacts that have opened your emails. Plus, you can add
+https://help.sendlane.com/knowledgebase/tags/[tags] to the collected
+contacts!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+link:++https://sendlaneaff--emarky.thrivecart.com/connectleads/++[Connectio
+account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_ → **_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Connectio knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting Connectio and Sendlane
+
+. Login to Connectio and click on your name (top right corner). Then,
+navigate to *_Autoresponders_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e53af1e04286364bc95c01c/file-N80WipGMkk.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e53af1e04286364bc95c01c/file-N80WipGMkk]
+. Next, select *_Sendlane_* from the drop-down menu and then enter _your
+Sendlane URL_ (for ex: “https://test.sendlane.com”), _API/Hash Keys_,
+_Name_ the integration and then click
+_*Save*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e53b0cd04286364bc95c028/file-BvB6rmilQ2.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e53b0cd04286364bc95c028/file-BvB6rmilQ2]_
+. {blank}
++
+Now that the integration is set up, you can test it and make sure it's
+good to go. To do that, click *_Manage Autoresponders_* at the top of
+the page
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e53b21304286364bc95c03b/file-37etyMpBSH.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e53b21304286364bc95c03b/file-37etyMpBSH]
+. Next, click on the __3 dots (...) __under _Actions_ then
+select _*Test*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e53b2922c7d3a7e9ae82de5/file-vCq8uQ4X3l.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e53b2922c7d3a7e9ae82de5/file-vCq8uQ4X3l]_
+. Fill out First and Last name, plus Email. Then, select which Sendlane
+https://help.sendlane.com/knowledgebase/capturing-contacts/[list] they
+should be added to, and click _*Add to
+List*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e53b32d04286364bc95c045/file-WjwDid2uQX.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e53b32d04286364bc95c045/file-WjwDid2uQX]_
++
+====== Please Note
+
+For the integration _test_ to be successful, you'll need to make sure
+that your Sendlane account is set up with single-opt in access (contact
+our https://www.sendlane.com/contact-us[24/7 support team] to set this
+up!)
+. To check if it worked, view the list you selected inside your Sendlane
+account and you should see the test information you added. If it's
+there, it means your integration is successful and ready to be used!
+Congrats, you’re done! 
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Connectio, so we're only able to provide
+limited troubleshooting support. However, if you  _do_ need help,
+the Connectio team is just a few clicks away!
+
+* https://support.connectio.io/support/home[Connect] with their Support
+Team
+*  Visit the Connectio https://app.connectio.io/course/index/[Help
+Center]
+
+'''''
+
+==== Additional Connectio Resources
+
+link:++https://sendlaneaff--emarky.thrivecart.com/connectleads/++[Sign
+up for Connectio] |
+https://support.connectio.io/support/solutions/articles/4000075776-how-to-get-started-with-facebook-lead-ads-on-connectleads-[Get
+Started]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/cross-channel-marketing-for-ecommerce[How
+to Develop a Winning Cross-Channel Marketing Strategy For Your eCommerce
+Business]
+* https://www.sendlane.com/blog-posts/8-ways-marketers-align-social-and-email[8
+Ways Successful Marketers Align Their Social Media and Email Marketing
+For Maximum Success ]
+
+'''''
+
+=== TL;DR
+
+Login to Connectio → Go to your name (top right corner) → 
+_Autoresponders_ → _Sendlane_ → Enter Sendlane URL, API and Hash
+keys →  _Save_ 
+
+Manage Autoresponders → Search for Sendlane, click _Test_ → Enter name,
+email and select List → __Add to List__→ _check your Sendlane account_

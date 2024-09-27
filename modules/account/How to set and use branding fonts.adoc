@@ -1,0 +1,220 @@
+[[top]]
+==== Overview
+
+You can specify up to nine colors and unlimited fonts to be displayed
+prominently anywhere color or font* pickers appear in Sendlane;
+including the email builder, form builder, and reviews. Read on to learn
+how to set brand colors and fonts!
+
+_*Branding fonts are not available
+for _https://help.sendlane.com/article/404-how-to-customize-your-unsubscribe-and-email-preferences-pages[email
+subscription pages]_._
+
+[[account-wide]]
+===== ⚠️ Brand fonts are set for the entire account
+
+If you have multiple stores under one Sendlane account, you will set
+brand fonts for all brands on your Account > Branding page.
+
+==== In this guide
+
+* link:#font-limitations[Brand font limitations]
+* link:#fallback[Font fallbacks ensure your email is legible]
+* link:#google[Import a Google font]
+* link:#adobe[Import an Adobe font]
+* link:#custom[Import a custom font file]
+* link:#set-font[How to use a branding font]
+* link:#troubleshooting[Troubleshooting]
+
+'''''
+
+[[font-limitations]]
+=== Brand font limitations
+
+Fonts are stored as files on mobile and desktop devices. All desktop
+computers and mobile devices ship with some pre-installed fonts. This
+means there is a (relatively small) collection of fonts you can
+reasonably expect all of your contacts’ devices to have installed. When
+contacts receive emails that use fonts installed on their device, the
+font loads quickly and easily because the device does not have to take
+the extra step to fetch the font from the email.
+
+Unfortunately, sometimes imported fonts don’t display as expected on
+certain devices and email apps. In those cases, contacts will see the
+fallback font you select when you import a font.
+
+You may have heard certain fonts described as “email-safe fonts,” but
+this is a marketing term used to describe commonly installed fonts. It
+does not guarantee that the fonts described as “email-safe” will render
+successfully in all email client and device configurations.
+
+Sendlane’s default font options are all commonly installed fonts that
+generally load without issue. However, because of the many variations
+possible for email client and device configurations, it is always
+possible that a few emails will render a fallback option instead of your
+preferred font.
+
+Select a web safe font to ensure your custom font is displayed
+correctly. You can use https://www.cssfontstack.com/[CSS Font Stack] to
+see a collection of widely installed fonts that should render correctly
+on your contacts’ devices and
+https://www.caniemail.com/features/css-font-weight/[Can I Email] for
+community developed information about email client font support
+(Sendlane does not control either of these resources).
+
+The following email apps support brand fonts:
+
+* Apple Mail - macOS and iOS
+* Samsung Mail - Android 8.0 and up
+* Outlook for Mac
+
+[[gmail]]
+===== ⚠️ Many Gmail inbox apps and device combinations do not support brand fonts
+
+Because Gmail has the largest market share for inbox providers, be aware
+that brand fonts may not render for most of your audience. It is
+important to pick a fallback font you are truly satisfied with because
+many contacts will see your fallback.
+
+[[variable]]
+===== ⚠️ Variable fonts are not supported
+
+[[fallback]]
+=== Font fallbacks ensure your email is legible
+
+Font fallbacks are alternative fonts known to be widely supported across
+various inbox apps and devices. Fallback fonts will be used in your
+email if your primary font is unavailable for a contact’s device or mail
+app. Select a fallback option that most closely resembles your custom
+font.
+
+Font fallbacks are tried in the order they appear. In the example below,
+the email will first try to use Arial if the primary font fails. If
+Arial fails, then Helvetica will be tried. If both Arial and Helvetica
+fail, then Futura will be tried.
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXe2VJyfjNv4MsfwY-iAN6GQ7hn9BTKM_T4-VeiqHSBInLgubI28J-KYK11d54rBsEpuE8O_vs5dpDMniZ08MqNCKzTnjrP9Xgo4poUUsJg0i_KLiz9dwA-QHikWo1dGkrqVYIQw1IAMdCELOPZD3wV4Lx0?key=g9E22OxugrKaa8noqRTA9g[https://lh7-us.googleusercontent.com/docsz/AD_4nXe2VJyfjNv4MsfwY-iAN6GQ7hn9BTKM_T4-VeiqHSBInLgubI28J-KYK11d54rBsEpuE8O_vs5dpDMniZ08MqNCKzTnjrP9Xgo4poUUsJg0i_KLiz9dwA-QHikWo1dGkrqVYIQw1IAMdCELOPZD3wV4Lx0?key=g9E22OxugrKaa8noqRTA9g,width=459,height=322]
+
+link:#top[Back to top]
+
+'''''
+
+[[google]]
+=== Import a Google font
+
+[[google-regular]]
+===== ⚠️ You must include a regular weight font in your font family
+
+You will see errors in the email builder if you attempt to use a
+branding font that does not include a regular weight (400) version.
+
+. Click the *Account* icon
+. Click *Branding*
+. Click the *+ Font* button
+. Select a *font* from the dropdown
+. Select font *variants* to import
+. Select font *fallbacks* from the dropdown menus (optionally, add
+additional font fallbacks by clicking + Font Fallback)
+. Click *Save*
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXfCER8dR2xlRGtijunMFJ1Pg0-BIo3WsMX0Adzx7LIE0VLNjRYrGdPDzUt1x5-b0YpaoF8Fh7SlInNZ8C95kTdkA5Rnjl5Rm1tTmKX5V9T-j3dWfEC5G1rohsPPiEMaMPIiUf0ckI2-8ns7jCZ3DlaRYMXc?key=g9E22OxugrKaa8noqRTA9g[https://lh7-us.googleusercontent.com/docsz/AD_4nXfCER8dR2xlRGtijunMFJ1Pg0-BIo3WsMX0Adzx7LIE0VLNjRYrGdPDzUt1x5-b0YpaoF8Fh7SlInNZ8C95kTdkA5Rnjl5Rm1tTmKX5V9T-j3dWfEC5G1rohsPPiEMaMPIiUf0ckI2-8ns7jCZ3DlaRYMXc?key=g9E22OxugrKaa8noqRTA9g,width=1680,height=1049]
+
+link:#top[Back to top]
+
+'''''
+
+[[adobe]]
+=== Import an Adobe font
+
+[[adobe-regular]]
+===== ⚠️ You must include a regular weight font in your font family
+
+You will see errors in the email builder if you attempt to use a
+branding font that does not include a regular weight (400) version.
+
+. Click the *Account* icon
+. Click *Branding*
+. Click the *+ Font* button
+. Click the *Adobe* tab of the slideout
+. Paste your *Adobe font URL*; the slideout should process your font URL
+nearly instantly and include all font variants
+. Set font *fallbacks*
+. Click *Save*
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXdvlMTGIA_Ll-JN-njs2mEtOwevcI7ekNtikMy_4Xfr_qnPnXzQN3VezizFLNTiA0B-pVfjiGBycjXaDD2QEPC2MPHkVIZfAvj24Yq2284ZrE6QOGM5lBWYMhOfS8HAqGjSrkL_asbjky8dTmWU4ksQrFku?key=g9E22OxugrKaa8noqRTA9g[https://lh7-us.googleusercontent.com/docsz/AD_4nXdvlMTGIA_Ll-JN-njs2mEtOwevcI7ekNtikMy_4Xfr_qnPnXzQN3VezizFLNTiA0B-pVfjiGBycjXaDD2QEPC2MPHkVIZfAvj24Yq2284ZrE6QOGM5lBWYMhOfS8HAqGjSrkL_asbjky8dTmWU4ksQrFku?key=g9E22OxugrKaa8noqRTA9g,width=1680,height=929]
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXfF-m5Hm_KidZPQbb04I9jSKdILXy-6446r0DF6x_X-wT6nqRsLp2OdxgBFu6K_u3pIkIHm7RkARAg5yTDVurPCpaVC9CI76Nz1XBoavLCMYvVgN53tk4YwWATTeUoTAXigaNRUaiHyHl8tvi82JsCMW9Y?key=g9E22OxugrKaa8noqRTA9g[https://lh7-us.googleusercontent.com/docsz/AD_4nXfF-m5Hm_KidZPQbb04I9jSKdILXy-6446r0DF6x_X-wT6nqRsLp2OdxgBFu6K_u3pIkIHm7RkARAg5yTDVurPCpaVC9CI76Nz1XBoavLCMYvVgN53tk4YwWATTeUoTAXigaNRUaiHyHl8tvi82JsCMW9Y?key=g9E22OxugrKaa8noqRTA9g,width=1680,height=929]
+
+link:#top[Back to top]
+
+'''''
+
+[[custom]]
+=== Import a custom font file
+
+[[custom-regular]]
+===== ⚠️ You must include a regular weight font in your font family
+
+You will see errors in the email builder if you attempt to use a
+branding font that does not include a regular weight (400) version.
+
+. Click the *Account* icon
+. Click *Branding*
+. Click the *+ Font* button
+. Click the *Custom Import* tab of the slideout
+. Enter a *name* for your font
+. Click the *+ Variant* button to select an .OTF, .TFF, or .WOFF file
+from your computer (do NOT create another custom font for additional
+variants; variants must be added under the original custom font import)
+. Set font *fallbacks*
+. Check the *box* confirming you have permission to use your custom font
+for marketing purposes
+. Click *Save*
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXc17jO6kZ3Qct4RM5fnrTEtB8uXeJZw9CzUPzxMGC5qllyG_S51L0FBqYaMGrTnxkAOLJ32p_Mr9goTTwkyQtYsYLh6NoujS8JxeBq9f9NeaQycnftjFqocjuAPj8J82ZMPIw46nzoD6JFcTaXeaAqrurd9?key=g9E22OxugrKaa8noqRTA9g[https://lh7-us.googleusercontent.com/docsz/AD_4nXc17jO6kZ3Qct4RM5fnrTEtB8uXeJZw9CzUPzxMGC5qllyG_S51L0FBqYaMGrTnxkAOLJ32p_Mr9goTTwkyQtYsYLh6NoujS8JxeBq9f9NeaQycnftjFqocjuAPj8J82ZMPIw46nzoD6JFcTaXeaAqrurd9?key=g9E22OxugrKaa8noqRTA9g,width=1680,height=929]
+
+link:#top[Back to top]
+
+'''''
+
+[[set-font]]
+=== How to use a branding font
+
+You can change text in any email, form, or reviews widget to a branding
+font.
+
+When you select your branding font, you'll first select the family (the
+name of your font), then select a font weight. If you've added variants
+that include italic options, use the italic button in the text menu to
+apply them:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a3c30a48915f570c6a89b6/file-7PZu0bpIqK.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a3c30a48915f570c6a89b6/file-7PZu0bpIqK]
+
+'''''
+
+=== Troubleshooting
+
+====== My custom fonts aren't being applied in the email builder OR my custom fonts are loading on some devices but not others.
+
+If you are trying to select a custom font and your text isn't changing,
+you likely have multiple separate uploads of the same custom font
+family. All custom font variants should be uploaded via the original
+font's entry on your branding page.
+
+Brand fonts rendering on some devices but not others
+link:#font-limitations[is normal], but can also be caused by having
+multiple versions of the same font installed in separate instances.
+
+If you see multiple versions of the same font, as shown below in the
+lefthand column, delete all but one. Then, review the
+link:#custom[instructions for importing a custom font file] and see step
+6 for instructions on adding variants to custom fonts.
+
+[cols="^,^",]
+|===
+|*Incorrectly uploaded custom font variants* |*Correctly uploaded custom
+font variants*
+
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a2c58f6eb51e63b8f9dd0c/file-Oe7udTnphx.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a2c58f6eb51e63b8f9dd0c/file-Oe7udTnphx]
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a2c59cd39e504a2aed1d2d/file-6YGDwjESpo.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a2c59cd39e504a2aed1d2d/file-6YGDwjESpo]
+|===

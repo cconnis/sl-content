@@ -1,0 +1,86 @@
+[[top]]
+==== Overview
+
+If you’re migrating to Sendlane Reviews from Yotpo, you can bring your
+hard earned reviews with you! Read on to learn how to import your Yotpo
+reviews to Sendlane.
+
+==== In This Guide
+
+* link:#export[Export reviews from Yotpo]
+* link:#formatting[Ensure your reviews file from Yotpo is formatted
+correctly]
+* link:#import[Import reviews file to Sendlane]
+
+'''''
+
+[[export]]
+=== 1. Export reviews from Yotpo
+
+Follow https://support.yotpo.com/docs/exporting-reviews-from-yotpo[these
+instructions] for exporting your product reviews from Yotpo. When your
+file is ready for download, save it somewhere easily accessible, like
+your desktop, and make sure it is saved as a .CSV file. Do not edit the
+file in any way.
+
+[[formatting]]
+=== 2. Ensure your reviews file from Yotpo is formatted correctly
+
+Yotpo sometimes provides different header columns based on the version
+of the app being used. If header columns do not exactly match Sendlane
+Reviews’ import tool, the import will fail.
+
+Open your Yotpo file using the spreadsheet software of your choice and
+compare your column headers to the table below.
+
+[cols=",",]
+|===
+|Accepted Yotpo Headers ✅ |Yotpo Header Variations ⚠️
+|`+Review ID+` |id
+|`+Review Status+` |published
+|`+Review Title+` |review_title
+|`+Review Content+` |review_content
+|`+Review Score+` |review_score
+|`+Review Creation Date+` |date
+|`+Product ID+` |product_id
+|`+Product Title+` |product_title
+|`+Reviewer Display Name+` |display_name
+|`+Reviewer Email+` |email
+|`+Comment Content+` |comment_content
+|`+Comment Public+` |comment_public
+|`+Comment Date+` |comment_created_at
+|`+Published Image URLs+` |published_image_url
+|===
+
+===== The headers on my Yotpo export match the accepted Yotpo headers!
+
+If your headers exactly match the headers in the Accepted Yotpo Headers
+column of the table above, awesome! You’re almost ready to proceed with
+importing your reviews file. Save your file as .CSV, then proceed with
+uploading your file.
+
+===== The headers on my Yotpo export DO NOT match the accepted Yotpo headers!
+
+No worries! You’ll need to replace your export’s headers and add an
+Order ID column before proceeding:
+
+. Replace any headers that do not exactly match the Accepted Yotpo
+Headers column in the table above
+. Add a header labeled `+Order ID+` and leave the column blank
+. Save your file as .CSV
+
+Once you’ve completed the steps above, proceed with uploading your file.
+
+[[import]]
+=== 3. Import reviews file to Sendlane
+
+To import your review file:
+
+. Click the Reviews icon
+. Click Content 
+. Click Import & Export
+. Click Import Reviews
+. Select Okendo from the Product Review Source dropdown
+. Drag and drop your .CSV file or click to browse for your file
+. Check the checkbox confirming that your reviews are genuine
+. Click Importimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e8c92c2411c5087b68412b/file-tbOHKXbNjq.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e8c92c2411c5087b68412b/file-tbOHKXbNjq]

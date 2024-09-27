@@ -1,0 +1,21 @@
+==== Overview
+
+You can add Tags to Contact Profiles using HTML blocks in Campaign or
+Automation emails. Read on to learn how to use HTML to apply Tags to
+Contact Profiles!
+
+'''''
+
+To add a Tag to a Contact Profile using HTML:
+
+. Find your Tag's
+https://help.sendlane.com/article/551-how-to-find-identifiers#tags[identifier]
+in the ID column of the https://app.sendlane.com/audience/tags[Tags
+page]
+. Add an HTML block to an
+emailimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e600610f2a4c04f24da030/file-6PQre34uu9.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e600610f2a4c04f24da030/file-6PQre34uu9]
+. Construct your link using a data-tag attribute with your Tag's ID. In
+the following example, the URL is `+https://www.sendlane.com/+`, and the
+Tag identifier is `+6+`:
+`+<a href="https://www.sendlane.com/" data-tag="6">+`image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e6009f6ba1d916ec4673ee/file-FugLvBgtii.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e6009f6ba1d916ec4673ee/file-FugLvBgtii]
+. Send your email!

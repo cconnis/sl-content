@@ -1,0 +1,240 @@
+[[top]]
+==== Overview
+
+A verified sending domain is a subdomain of your business’s primary
+domain used exclusively for sending marketing content. Using a subdomain
+to send marketing content protects your primary domain so that your
+marketing channel does not negatively affect your primary domain’s email
+delivery, which you rely on for daily internal and external business
+communication.
+
+In accordance with Google and Yahoo's 2024 announcements, Sendlane will
+require all users to send exclusively from verified sending domains,
+using authenticated sender profiles. An authenticated sender
+profile uses a verified sending domain as the email domain of its “sent
+from” and “reply to” email addresses.  +
+
+Sendlane’s preferred technique for verifying a sending domain is called
+subdomain DNS delegation using just a few records in your DNS setup.
+This technique provides SPF, DKIM, and DMARC verification for your
+chosen sending domain in the simplest way possible. Delegating a
+subdomain to Sendlane lets us handle all the technical details for you!
+Sendlane will manage your subdomain’s DNS while having no control of or
+impact on your primary domain.
+
+[[get-started]]
+===== ⏭️ Ready to get started?
+
+Check out our
+https://help.sendlane.com/article/550-how-to-authenticate-a-sending-domain[step-by-step
+guide to verifying a sending domain]!
+
+=== Frequently Asked Questions
+
+* link:#subdomain[What is a subdomain?]
+* link:#inbox[What does a verified sending domain look like in the
+inbox?]
+* link:#primary[Why can’t I just use my primary domain to send marketing
+content?]
+* link:#no-subdomain[I want to take the risks associated with sending
+from my primary domain.Can I authenticate a Sender Profile using my
+primary domain without a subdomain?]
+* link:#default[Does delegating a subdomain involve changing my default
+nameservers or giving Sendlane control of my primary domain?]
+* link:#switch[Will Sendlane still control my subdomain if I switch to
+another ESP?]
+* link:#multiple[Can I verify multiple domains or create multiple
+authenticated senders?]
+* link:#how[How are sending domains verified?]
+
+'''''
+
+[[subdomain]]
+==== What is a subdomain?
+
+A subdomain is an extension of your primary domain. Subdomains are
+typically used to create staging sites to test updates to a website
+before they are formally published. In this case, the subdomain you
+create will be used as part of the email address you send marketing
+content from.
+
+link:#top[Back to top]
+
+'''''
+
+[[inbox]]
+==== What does a verified sending domain look like in the inbox?
+
+Let’s look at two from addresses in the inboxes of a Sendlane staff
+member:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/644fff5bcdec2a7348811fc2/file-IVLit2YVK7.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/644fff5bcdec2a7348811fc2/file-IVLit2YVK7]
+
+This is the from email address on an email recently sent to Sendlane
+staff from our CEO, Jimmy. Because Jimmy sent _non-marketing content_ to
+Sendlane staff, he used his `+@sendlane.com+` email address which
+operates on Sendlane’s primary domain.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/644fff62cdec2a7348811fc3/file-uxwGDaoj4b.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/644fff62cdec2a7348811fc3/file-uxwGDaoj4b]
+
+This is the from email address on an email recently sent to everyone who
+subscribes to Sendlane’s (fabulous 💅)
+https://www.sendlane.com/resources[marketing content] by our Senior
+Director of Marketing, Caitlin. Because Caitlin sent _marketing content_
+to opted-in subscribers, she used a verified sending domain of
+`+@mail.sendlane.com+` * instead of an email address using the primary
+`+@sendlane.com+` domain. 
+
+Without a verified sending domain, your emails will appear in Contacts'
+inboxes with a note next to the from email address saying something like
+"via creatensend.com" or "via sldelivery.com". These domains are shared
+among non-verified accounts.
+
+*When you verify your own sending domain we suggest _not_ using `+mail+`
+as your subdomain due to the high probability that a subdomain of mail
+is already in use.
+
+link:#top[Back to top]
+
+'''''
+
+[[primary]]
+==== Why can’t I just use my primary domain to send marketing content?
+
+Businesses should never mix their marketing domain with their corporate
+domain or use the same domain for both purposes. If content or links in
+a marketing email are flagged by a real-time block list (RBL), email
+channels that send and receive email from the primary domain, including
+internal and vendor communication, could be blocked for an unknown time.
+
+Delegating a specific sending domain allows Sendlane to maintain and
+update your DNS records to protect your business' website and to ensure
+that nothing is accidentally changed for your primary domain, causing
+domain verification to break for your entire website.
+
+Sendlane continuously monitors the latest developments in domain
+verification and security. By delegating a sending domain to Sendlane,
+you will benefit from features we add to enhance security!
+
+link:#top[Back to top]
+
+'''''
+
+[[no-subdomain]]
+==== I want to take the risks associated with sending from my primary domain. Can I authenticate a Sender Profile using my primary domain without a subdomain?
+
+No, a subdomain is required for verified domains and authenticated
+Sender Profiles. Sendlane does not provide domain verification for
+primary domains.
+
+link:#top[Back to top]
+
+'''''
+
+[[default]]
+==== Does delegating a subdomain involve changing my default nameservers or giving Sendlane control of my primary domain?
+
+Nope. Your primary domain’s default nameservers should never be changed
+or adjusted on Sendlane’s behalf. Much like the IRS will never call you
+on the phone, Sendlane will never ask you to change or adjust your
+default nameservers.
+
+Let’s say your primary domain is `+example.com+`. Your default
+nameservers would look something like:
+
+....
+$ dig +short example.com NS
+a.iana-servers.net
+b.iana-servers.net
+....
+
+and will remain completely unchanged by the process of delegating a
+subdomain.
+
+You will create a subdomain in your Sendlane account, such as something
+like `+mail.example.com+`, then log into your DNS control panel and
+create the following _new_ NS records for that subdomain:
+
+[cols=",,,",options="header",]
+|===
+|Type |Host |Value |TTL
+|NS |mail |ns1.sendlane.com |3600
+|NS |mail |ns2.sendlane.com |3600
+|NS |mail |ns3.sendlane.com |3600
+|NS |mail |ns4.sendlane.com |3600
+|===
+
+Once the subdomain and new NS records have been created, the following
+authentication checks will resolve via Sendlane’s DNS servers rather
+than your primary domain’s servers:
+
+....
+mail.example.com TXT
+_dmarc.mail.example.com TXT
+slkey1.domainkeys.mail.example.com TXT
+....
+
+Sendlane will only process authentication checks at the
+`+mail.example.com+` level or above. Sendlane will never control
+`+example.com+`.
+
+link:#top[Back to top]
+
+'''''
+
+[[switch]]
+==== Will Sendlane still control my subdomain if I switch to another ESP?
+
+Not if you don’t want us to! You can revoke Sendlane’s control of your
+subdomain at any time by deleting the four NS records you added to
+verify your sending domain from your DNS.
+
+link:#top[Back to top]
+
+'''''
+
+[[multiple]]
+==== Can I verify multiple domains or create multiple authenticated senders?
+
+Yes, you can verify multiple domains (for example, store.company.com and
+international.company.com can exist in the same Sendlane account) and
+create multiple authenticated senders (for example,
+hello@store.company.com, email@store.company.com,
+hello@international.company.com, and email@international.company.com can
+all exist in the same Sendlane account).
+
+link:#top[Back to top]
+
+'''''
+
+[[hide]]
+==== Can I hide the subdomain so that it looks like my emails are being sent from my primary domain?
+
+No, subdomains will always be visible to Contacts in their inboxes. You
+can always use an email address associated with your primary domain as
+the reply to address:
+
+link:#top[Back to top]
+
+'''''
+
+[[how]]
+==== How are sending domains verified?
+
+Sending domains are verified by:
+
+. Creating a subdomain in Sendlane
+. Creating new records in your DNS control panel to delegate the
+subdomain to Sendlane
+. Attaching an existing or new Sender Profile to the subdomain
+
+[[get-started]]
+===== ⏭️ Ready to get started?
+
+Check out our
+https://help.sendlane.com/article/550-how-to-authenticate-a-sending-domain[step-by-step
+guide to verifying a sending domain]!
+
+link:#top[Back to top]
+
+'''''

@@ -1,0 +1,36 @@
+==== Overview
+
+SMS and email Campaigns can be stopped and restarted in case an issue
+with a Campaign is discovered after it has started sending. Read on to
+learn how to stop and restart Campaigns!
+
+==== In this guide
+
+* link:#stop[How to stop a Campaign that is sending]
+* link:#restart[How to restart a Campaign]
+
+'''''
+
+[[stop]]
+=== How to stop a Campaign that is sending
+
+When a Campaign is sending (has a blue Sending badge in the Status
+column of the Campaigns page) you'll see a stop icon in the Actions
+column. To stop a Campaign that is sending:
+
+. Click the *stop icon* in the Actions column
+. Click *Stop Campaign*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65f1ddb2c7af9d69c480af13/file-p8ObPhJzi6.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65f1ddb2c7af9d69c480af13/file-p8ObPhJzi6]
+
+[[restart]]
+=== How to restart a Campaign
+
+If it has been less than 24 hours since the Campaign was stopped, the
+Campaign can be restarted via the Restart icon on the Campaigns page. To
+restart a Campaign:
+
+. Click the *Restart* icon in the Actions column
+. Click *Restart Campaign*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65f1e045c68a4c3aac88833d/file-HPZTFPKbn6.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65f1e045c68a4c3aac88833d/file-HPZTFPKbn6]

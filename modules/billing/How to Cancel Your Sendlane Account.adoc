@@ -1,0 +1,47 @@
+Before canceling your email subscription, consider putting your
+account on hold or changing your plan to fit your needs.
+
+Our On Hold plan is a great option if you want to take a break from the
+email marketing world. We will keep all of your hard work and data safe
+and ready for you when you decide to return!
+
+If you choose to put your account on hold, your saved billing
+information will be used to charge your account a flat fee of $19 per
+month until you reactivate your account. This option saves all of your
+Contacts, Lists, Campaigns, and Automations, and all associated data for
+both email and SMS! It is not possible to put just email or just SMS on
+hold.
+
+[[note]]
+===== 🚨 Important Note
+
+* Once your account is canceled, Sendlane is not able to recover any
+lost data, including Lists, Contacts, Campaigns, or Automations.
+* Canceling your email plan will automatically cancel your SMS plan.
+
+To cancel your email plan, click the  *Account* icon in the left-hand
+menu bar > *Billing* > *Cancel subscription*
+
+*_image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63e42d84f19b3c454741d8cc/file-sEXmMNl4Nw.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63e42d84f19b3c454741d8cc/file-sEXmMNl4Nw]_*
+
+A popup window will appear with options to downgrade your plan or to
+continue with cancellation
+
+Click *Downgrade Plan* to downgrade your plan to a lower tier.
+
+Click *Continue with cancellation* to put your plan on hold or cancel
+your plan.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65c652aa55e4ed3089c15c4c/file-PQUcICM8Xd.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65c652aa55e4ed3089c15c4c/file-PQUcICM8Xd]Click
+*Put my account on hold* to place your account on hold and have your
+billing method charged $19 per month until you reactivate.
+
+Click *No thanks I would like to cancel* to immediately cancel your
+account.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65c6537dddc6d10d8ab2946b/file-mqH5YQGsK6.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65c6537dddc6d10d8ab2946b/file-mqH5YQGsK6]
+
+We are sorry to see you go! If you have any trouble with the
+cancellation process, please reach out to
+https://sendlane.com/contact[support] and we’ll help get your account
+adjusted.

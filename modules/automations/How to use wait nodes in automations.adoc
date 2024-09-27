@@ -1,0 +1,84 @@
+[[top]]
+==== Overview
+
+Add a wait node after every message sent in an automation to prevent
+your contacts from receiving too many messages in a short time. Read on
+to learn about wait nodes and how to use them.
+
+==== In this guide
+
+* link:#what-is-wait-node[What is a wait node?]
+* link:#wait-timing-options[Wait node timing options]
+* link:#add-wait-node-[Add a wait node]
+
+[[what-is-wait-node]]
+=== What is a wait node?
+
+Wait nodes act as buffers between automation nodes.
+
+For example, let's say you're setting up a welcome automation with three
+email nodes. Without a wait node between your email nodes, contacts will
+receive all three emails in rapid succession right after meeting the
+trigger criteria. However, if you include a wait node of one day between
+the first and second email and another one day wait node between the
+second and third email, contacts will receive email one on day one,
+email two on day two, and email three on day three.
+
+Remember that a contact's journey through automation is set when they
+meets its trigger criteria. When contacts enter the example welcome
+automation described above, they will not become "stuck" in a wait node;
+the wait node adds the amount of time specified in its settings to the
+contact's journey. An automation without wait nodes will schedule all
+messages to be sent as soon as the contact meets the trigger's criteria,
+while an automation with wait nodes adds the specified amount of time to
+the sending schedule.
+
+link:#top[Back to top]
+
+'''''
+
+[[wait-timing-options]]
+=== Wait node timing options
+
+You can set a wait node to wait for a specified day of the week and
+time. You can also set a specific time zone or select Recipient's Local
+Time Zone from the Timezone dropdown.
+
+For example, if you schedule your wait node to "end" at 9 AM your time
+(EST), contacts will proceed to the next node at whatever time 9 AM EST
+is in their time zone. If you schedule your wait node to "end" at 9 AM
+recipients' local time, all contacts will proceed to the next node at 9
+AM their local time.
+
+Contacts' time zones are determined by the following attributes in the
+following order:
+
+. Combination of the ZIP code or province and country shown on the
+contact profile
+. Contact's phone number area code
+. Contact's IP address (set by their latest click on a tracking link)
+. Country on the contact profile (see default time zones per country
+https://help.sendlane.com/article/693-default-time-zones-by-country?preview=66ad54f316e6a80d1e1d1fc4[here])
+
+If none of the above attributes are available for a contact, the
+campaign will be sent in the
+https://help.sendlane.com/article/439-updating-your-sendlane-account-details[account's
+local timezone].
+
+link:#top[Back to top]
+
+'''''
+
+[[add-wait-node-]]
+=== Add a wait node
+
+To add a wait node:
+
+. Click the *+ button* 
+. Click *Wait* 
+. Set your desired *wait period* and *timing options*
+. Click *Done*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5cdadd0f8c60bb3fd1f9/file-t7fQ11Hr8q.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5cdadd0f8c60bb3fd1f9/file-t7fQ11Hr8q]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5cdfd593d719515ca890/file-BcGspC9BDT.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666b5cdfd593d719515ca890/file-BcGspC9BDT]
+
+link:#top[Back to top]

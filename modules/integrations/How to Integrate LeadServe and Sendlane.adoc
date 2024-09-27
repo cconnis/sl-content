@@ -1,0 +1,80 @@
+Use http://www.leadserveads.com/landing/[LeadServe's] simple targeting
+tools to determine where your business operates and who your desired
+customers are.
+
+By integrating LeadServe with Sendlane, leads can be funneled directly
+to your desired Sendlane list!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+http://www.leadserveads.com/landing/[active account with LeadServe].
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, and
+https://help.sendlane.com/article/125-lists#id[know the list ID#] so
+LeadServe knows where to place your new leads and contacts!
+
+'''''
+
+=== Connecting LeadServe and Sendlane
+
+. https://leadserve.opt-intelligence.com/ls/signin.action[Login] to your
+LeadServe Account
+. While creating an offer, the _Lead Transfer Method_ section is where
+you'll select the integration settings to connect to Sendlane. Choose
+the option that says *_Send my Leads in_* *_real-time, as soon as they
+are generated_*
+. Select *_Deliver my Leads into my email marketing platform_*
+. Choose *_Sendlane_* from the available platforms
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d532f7f2c7d3a68825e9ea1/file-dh8a2uKCDV.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d532f7f2c7d3a68825e9ea1/file-dh8a2uKCDV]
+. Enter your Sendlane Subdomain in the _Sendlane URL_ field
+. Then, enter your Sendlane List ID, API Key and Hash Key
+. Click *_Save_*
+
+Your Integration is now complete!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to LeadServe, so we're only able to provide
+limited troubleshooting support. However, if you  _do_ need help,
+the LeadServe team is just a few clicks away!
+
+* Visit http://www.leadserveads.com/resources/setup.html[LeadServe's
+setup guide]
+* Connect with
+http://www.leadserveads.com/resources/help/[LeadServe's support team]
+
+'''''
+
+==== Additional LeadServe Resources
+
+https://leadserve.opt-intelligence.com/ls/signup.action?signUp&accountType=advertiser&ref=&sales=[Sign
+up for LeadServe] |
+http://www.leadserveads.com/resources/help/[Knowledge Base]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/the-ultimate-growth-hack-hyper-personalized-email-marketing-and-how-to-do-it[The
+Ultimate Growth Hack: Hyper-Personalized Email Marketing (And How to Do
+It!)]
+
+'''''
+
+=== TL;DR
+
+Login __→ Send my Leads in real-time, as soon as they are
+generated → _Deliver my Leads into my email marketing platform ___→
+Choose Sendlane → Enter Sendlane subdomain, List ID, API Key and Hash
+Key _→ Save_

@@ -1,0 +1,65 @@
+Using Sendlane's API, you can connect different tools, applications, and
+platforms to sync data back and forth as needed.
+
+Your API Key, API Hash Key, and Subdomain are unique identifiers,
+specific to your Sendlane account, that connect both sides of an
+integration to pass information directly.
+
+* *API Key* - a secret key that allows other programs to access API
+calls
+* *Hash Key* - another version of your API key with extra added security
+* *Subdomain* - a unique name (similar to an account number or customer
+ID) for your Sendlane account 
+
+====== Please Note
+
+Your Sendlane subdomain is not public to your contacts and cannot be
+changed.
+
+Plus we'll offer link:#additional[additional resources] about our
+currently available native integrations!
+
+'''''
+
+=== Find Your API Key, API Hash Key, and Subdomain
+
+. Navigate to your *_Account_* tab and click on__ __*_API_*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f4675a92c7d3a352e91681c/file-DyE7nxZlHb.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f4675a92c7d3a352e91681c/file-DyE7nxZlHb]
+
+2. On the *_API_* page, you'll see all of these unique identifiers
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f46b760c9e77c0016eb1e38/file-myyMoOEI3m.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f46b760c9e77c0016eb1e38/file-myyMoOEI3m]
+
+From here, you can copy and paste your API Key, API Hash Key, and
+Subdomain and use them as needed to integrate your Sendlane account with
+your favorite other marketing tools!
+
+====== Please Note
+
+Some platforms call for the subdomain in _*subdomain*.sendlane.com_
+format when verifying your Sendlane account details during the
+integration process. 
+
+If the  *_subdomain_* does not work on its own please try this variation
+as well!
+
+'''''
+
+[[additional]]
+=== Additional Resources
+
+Planning on integrating Sendlane with another platform? Check out our
+https://partners.sendlane.com/integrations/#directoryApp[integration
+marketplace] to see our native integrations!
+
+Don't see your platform listed? We also suggest using third-party
+platforms, like
+https://help.sendlane.com/article/95-how-to-integrate-zapier-and-sendlane[Zapier]
+to help integrate platforms. 
+
+'''''
+
+=== TL;DR
+
+Account → API

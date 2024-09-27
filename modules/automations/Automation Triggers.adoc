@@ -1,0 +1,260 @@
+[[top]]
+==== Overview
+
+Learn about what Automation triggers are, how to set them up, and review
+standard or integration trigger specific options!
+
+==== In This Guide
+
+* link:#what-is-trigger[What is an Automation Trigger?]
+* link:#setup[Automation Trigger Setup]
+* link:#standard[Automation Trigger Details]
+
+'''''
+
+[[what-is-trigger]]
+=== What is an Automation Trigger?
+
+An Automation Trigger is the first node in an Automation. The Automation
+Trigger tells the Automation when to start and which Contacts should be
+sent through the Automation.
+
+Sendlane provides a variety of standard and integration-specific
+https://help.sendlane.com/article/188-contacts[Contact] activity types
+to use as Automation Triggers, making it simple to send highly targeted
+content to Contacts who are most likely to engage!
+
+[[setup]]
+=== Automation Trigger Setup
+
+Click  *+* *Add Trigger* to access the Automation Triggers slideout
+menu. Select the *trigger* and *conditions* that will start your
+Automation. Click *Done* to save your selections!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6159e7ed0754e74465f15fad/file-om1pUHuNvg.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6159e7ed0754e74465f15fad/file-om1pUHuNvg]
+
+You can add up to two additional triggers for a total of three triggers
+per Automation.
+
+[[multiple-trigger]]
+===== 🚨 Important Note
+
+Using multiple triggers or multiple options in a single trigger creates
+OR logic where Contacts must meet just one condition to be sent through
+the Automation.
+
+[[standard]]
+=== Standard Automation Triggers
+
+The table below briefly describes the action required to start an
+Automation.
+
+[width="100%",cols="50%,50%",]
+|===
+|*Trigger* |*Description*
+
+|Subscribes to a List  |Contacts subscribe to at least one of the
+specified https://help.sendlane.com/article/125-lists[Lists]. Using the
+"any" option will start the Automation for Contacts when they subscribe
+to any List in your Sendlane account.
+
+|Submits a Form  |Contacts submit at least one of the specified
+https://help.sendlane.com/article/308-pop-ups[Pop-Up forms]
+
+|Tag Added / Tag Removed  |A specified
+https://help.sendlane.com/article/82-tags[Tag] is added or removed from
+a Contact's profile
+
+|Event Triggered |Contacts visit a page on your website that has
+https://help.sendlane.com/article/72-beacon[Beacon/Event Tracking]
+enabled
+
+|Custom Field Added |A specified
+https://help.sendlane.com/article/331-custom-fields[Custom Field] is
+populated or updated in a
+https://help.sendlane.com/article/188-contacts[Contact's profile] via a
+Pop-Up form or integration
+
+|Email Campaign Opened* |Contacts open a specified
+https://help.sendlane.com/article/153-campaigns[Campaign] email
+
+|Email Campaign Clicked |Contacts clicks any link in a specified
+https://help.sendlane.com/article/153-campaigns[Campaign] email
+
+|Another Automation |Contacts reach the end of a specified Automation
+
+|SMS Campaign Clicked |Contacts click a tracking link in an SMS message
+
+|SMS Consent Received |Contacts provide consent to receive SMS messages
+
+|SMS Reply |Contacts reply to an SMS Campaign message +
+|===
+
+**A note about iOS 15 and Apple's Mail Privacy Protection's impact on
+email open data*
+
+If any of your Automations use the _Email Campaign Opened_ trigger,
+consider adding additional triggers to catch any Contacts using Apple
+Mail with iOS 15 who may have Mail Privacy Protection turned on.
+
+Check out the Sendlane Marketing Automation Journal's
+https://www.sendlane.com/blog/ios-15-email-marketing#s2[What to Actually
+Do as an Email Marketer for iOS 15 guide] and our
+https://learn.sendlane.com/webinar-ios15[iOS 15 Update + Sendlane
+webinar] for more information and ideas.
+
+[[limits]]
+==== Automation Trigger Limits
+
+All Automation triggers provide the following Limit Per Contact options
+to exclude Contacts from being sent through the Automation:
+
+* No Limit - Don't exclude anyone
+* Do not trigger when already in Automation - Contacts will not be sent
+through the Automation if they trigger the Automation while already in
+the flow
+* Once Per Day - Contacts will not be sent through the Automation again
+if they trigger the Automation more than once on the same day
+* One Time Only - Contacts will not be sent through the Automation again
+after triggering the Automation one time
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6438818437fd073d73d6c7e5/file-rj7Hzm81Yf.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6438818437fd073d73d6c7e5/file-rj7Hzm81Yf]
+
+link:#top[Back to top]
+
+'''''
+
+[[int-triggers]]
+=== Integration Automation Triggers
+
+The following integrations come with Automation triggers:
+
+* link:#shopify[Shopify]
+* link:#bigcommerce[BigCommerce]
+* link:#recharge[Recharge]
+* link:#custom[Custom Integration eCommerce]
+* link:#woocommerce[Woocommerce]
+
+==== Shopify
+
+See
+https://help.sendlane.com/article/648-automation-triggers-for-shopify[Understanding
+automation triggers for Shopify].
+
+link:#top[Back to top]
+
+==== Recharge
+
+[cols=",",]
+|===
+|*Trigger* |*Description*
+
+|Subscription Created |Subscription has been created
+
+|Subscription Activated |Subscription has been activated
+
+|Subscription Cancelled |Subscription has been cancelled
+
+|Subscription Expired |Subscription has expired
+
+|Subscription Renewed |Subscription has been renewed
+
+|Upcoming Subscription Renewal |Subscription will renew within a
+specified period of time
+|===
+
+link:#top[Back to top]
+
+==== BigCommerce
+
+[width="100%",cols="50%,50%",]
+|===
+|*Trigger* |*Description*
+
+|Product Purchased |Customer purchased the specified product(s)
+
+|Product Variant Purchased |Customer purchased the specified product
+variant(s)
+
+|Product Viewed |Customer viewed the specified product(s)
+
+|Abandoned Product Viewed |Customer viewed the specified product(s) and
+did not purchase after a specified period of time
+
+|Order Placed + |An order has been placed (includes options to drill
+down by order status and/or order frequency)
+
+|Added to Cart + |Customer added the specified product(s) to their cart
+
+|Checkout Started |Customer began the checkout process
+
+|Abandoned Cart |Customer abandoned products in their cart
+
+|Customer Created |A new customer has been created in the specified
+store
+
+|Subscribed to Back in Stock |Customer subscribed to back in stock
+notifications for the specified store
+
+|Product Back in Stock |A specified product is back and stock
+|===
+
+link:#top[Back to top]
+
+[[custom]]
+==== Custom Integration eCommerce
+
+[cols=",",]
+|===
+|*Trigger* |*Description*
+
+|Product Purchased |Customer purchased the specified product(s)
+
+|Product Viewed |Customer viewed the specified product(s)
+
+|Abandoned Product Viewed |Customer viewed the specified product(s) and
+did not purchase after a specified period of time
+
+|Order Placed |An order has been placed (includes options to drill down
+by order status and/or order frequency)
+
+|Added to Cart |Customer added the specified product(s) to their cart
+
+|Checkout Started |Customer began the checkout process
+
+|Abandoned Checkout |Customer began the checkout process but did not
+complete it before a specified period of time passed
+
+|Customer Created |A new customer has been created in the specified
+store
+
+|Custom Event |Parameters for a custom event were met
+|===
+
+link:#top[Back to top]
+
+==== Woocommerce
+
+[cols=",",]
+|===
+|*Trigger* |*Description*
+
+|Product Purchased |Customer purchased the specified product(s)
+
+|Order Placed |An order has been placed (includes options to drill down
+by order status and/or order frequency)
+
+|Added to Cart |Customer added the specified product(s) to their cart
+
+|Checkout Started |Customer started checkout
+
+|Abandoned Checkout |Customer started checkout but did not complete
+checkout in a specified period of time
+
+|Customer Created |A customer has been created in the specified store
+
+|Subscribed to Back in Stock |Customer subscribed to back in stock
+notifications for the specified store
+|===
+
+link:#top[Back to top]

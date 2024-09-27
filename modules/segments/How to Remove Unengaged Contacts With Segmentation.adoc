@@ -1,0 +1,73 @@
+Removing unengaged Contacts with segmentation is a great way to maintain
+a healthy sender reputation.
+
+In this guide, you'll learn how to manually remove Contacts from your
+audience who haven't engaged with your marketing emails in a specified
+period of time. If you would like your list to be cleaned of unengaged
+contacts automatically, check out our
+https://help.sendlane.com/article/132-list-hygiene[list hygiene]
+feature!
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+ Create a https://help.sendlane.com/article/125-lists#create[List]
+
+ Send at least one
+https://help.sendlane.com/article/153-campaigns[Campaign] to this List
+
+1::
+  To create a new Segment, click on the  *Audience icon* in the
+  left-hand menu bar > *Segments* > *+Segment* > Enter
+  a Segment *name* > *Confirm*
+  +
+  image:https://d33v4339jhl8k0.cloudfront.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61afc082cec96836600b78d9/file-mO8TLn8nvm.gif[https://d33v4339jhl8k0.cloudfront.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61afc082cec96836600b78d9/file-mO8TLn8nvm]
+  +
+  To identify unengaged Contacts in your audience, set your
+  https://help.sendlane.com/article/452-segment-options-and-operators[segment's
+  parameters] to
+  `+Did Not Open - Any Email Campaign AND Subscription Date is before [date]+`.
+  This Segment will pull all Contacts who subscribed before the date you
+  selected and have not opened any email Campaigns. We recommend
+  selecting a date at least 30 days in the past to give new subscribers
+  a chance to engage with your emails.
+  +
+  To identify unengaged Contacts on specific List(s), add a
+  https://help.sendlane.com/article/452-segment-options-and-operators#list[List
+  parameter] to your segment.
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63657b49ae75b00b6be940a4/file-k1kU3Rugs6.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63657b49ae75b00b6be940a4/file-k1kU3Rugs6]
+
+1::
+  . Click on *_View Contacts_* for the
+  segmentimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e6818f004286364bc96836c/file-vJhw4Si6je.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e6818f004286364bc96836c/file-vJhw4Si6je]
+  . Review the contacts in the segment, just to be sure they're the
+  proper group you'd like to delete
+  . When you are ready to delete the contacts in this segment,
+  click *_Remove
+  Allimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e6812e904286364bc968328/file-9vRBncAsDN.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e6812e904286364bc968328/file-9vRBncAsDN]_*
+  +
+  ====== Please Note
+
+  If you created this segment for one specific list, the contacts will
+  be removed _only_ from that list, even if they are on other lists
+  within your account.  +
+   +
+  If you created a global segment, the contacts will be deleted
+  permanently from your _entire_ account.
+  . Once the contacts have been removed, a .CSV file will be emailed to
+  the address linked to your Sendlane account for your records. +
+  +
+  ====== Please Note
+
+  Files of deleted contacts under 20k rows will download immediately,
+  anything larger will be sent via email.
+
+  Depending on the number of contacts you're deleting, the file may not
+  arrive immediately. Please allow time for larger files to process and
+  be delivered to your inbox!
+
+=== Additional Sendlane Resources
+
+If you hit any roadblocks, you can also get in touch with our
+mailto:support@sendlane.com[Support Team] for assistance!

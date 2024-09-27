@@ -1,0 +1,274 @@
+==== Overview
+
+Sendlane Reviews lets you request and respond to product reviews with
+Automations, use product review data to create perfectly targeted
+audiences, and includes widget customization options to seamlessly blend
+with your website's branding! Read on to learn how to install Sendlane
+Reviews in your Shopify store.
+
+==== In This Guide
+
+* link:#snippets[Locate Reviews Script and Widgets Snippets]
+* link:#2[Install the Reviews Widget Script]
+* link:#3[Install the Reviews Main Widget Element]
+* link:#4[Install the Reviews Star Widget Element]
+* link:#next[Next Steps]
+* link:#troubleshooting[Troubleshooting]
+
+'''''
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Have admin access to your Shopify store
+
+Create a https://app.sendlane.com/audience/lists[List] named `+Reviews+`
+
+On your https://app.sendlane.com/integrations/shopify[Shopify
+integration page], click the Settings icon and select your new Reviews
+List under the Reviews
+dropdownimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64a874d60789fc4e36fece7e/file-OcDWROQY14.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64a874d60789fc4e36fece7e/file-OcDWROQY14]
+
+Follow the steps outlined in
+https://help.sendlane.com/article/525-how-to-import-reviews[How to
+Import to Sendlane Reviews]. Importing your existing reviews before you
+begin the installation process will allow you to view your reviews on
+your website right away.
+
+Determine whether your Shopify theme supports Custom Liquid blocks. Go
+to your store’s Themes Page, Click Customize, click Add Section, and
+scroll through the section options to see if Custom Liquid is available;
+usually, it is near the bottom. If your theme does not natively support
+custom.liquid blocks, follow the instructions in
+https://help.sendlane.com/article/578-how-to-create-a-custom-liquid-block-option-for-your-shopify-theme[How
+to Create a Custom Liquid Block For Your Shopify Theme].
+
+[[loyalty]]
+===== ⚠️ Sendlane Reviews does not include loyalty functionality
+
+If your existing reviews platform includes loyalty points or other
+rewards functionality, you must maintain access to it.
+
+[[snippets]]
+=== Locate Reviews Script and Widget Snippets
+
+Snippets for the reviews widget script (connects your Shopify store to
+Sendlane), widget element (displays your reviews on product pages), and
+star rating widget element (displays products’ and product groups’
+average star rating) are found on the Product Review page.
+
+To access all reviews snippets:
+
+. Login to Sendlane 
+. Click the *Reviews icon* 
+. Click *Product Review* 
+. Click *Get Widget Code* 
+. Click *Copy Code* under the snippet you need* 
+
+*To access the star rating widget, click the Show Star Rating Widget
+checkbox, then click Copy Code under Widget Element.
+
+image:https://lh7-us.googleusercontent.com/rDlRJ1Ovr64iTVKmDk0DA4jppbTHrjuZdbvK3XebKxjbwIqGwFZNw-wKgHBpnMHKQSknpHvebkk6voAeEYKI0Zj-qjUP3U9Q-pPodWikiDSAAI50x4vkA_gWTDpIHAtiGYzUKNtkisoTMex2jYIq1wA[https://lh7-us.googleusercontent.com/rDlRJ1Ovr64iTVKmDk0DA4jppbTHrjuZdbvK3XebKxjbwIqGwFZNw-wKgHBpnMHKQSknpHvebkk6voAeEYKI0Zj-qjUP3U9Q-pPodWikiDSAAI50x4vkA_gWTDpIHAtiGYzUKNtkisoTMex2jYIq1wA,width=720,height=509]
+
+1::
+  The reviews widget script connects your Shopify store to your Sendlane
+  account. To install the widget script:
+  +
+  . Login to Shopify
+  . Click *Sales Channels*
+  . Click *Online Store*
+  . Click *Themes*
+  . Click the *three dot menu*
+  . Click *Edit code*
+  . Search for the `+theme.liquid+` file
+  . Click into the file
+  . Press CTRL + F
+  . Enter `+</head>+`
+  . Paste the widget script on the line before the `+</head>+` tag
+  . Click *Save*
+2::
+  The reviews widget element tells your Shopify store where to display
+  reviews for individual products on your product pages. You can install
+  the widget element in the default product page template file, and
+  Sendlane Reviews will automatically only display reviews for the
+  product that appears on the page. +
+   +
+  To install the main review widget:
+  +
+  . Copy the Widget Element code from the reviews page in Sendlane
+  . Login to Shopify
+  . Click *Sales Channels*
+  . Click *Online Store*
+  . Click *Themes*
+  . Click *Customize*
+  . From the dropdown at the top center of the screen, select *Products*
+  . Click *Default product,* or the custom template you use as your
+  default product page
+  . Click *Add section* wherever you'd like the Reviews widget to appear
+  (generally, this is installed at the bottom of the product page; use
+  the preview button to see your widget's placement and make adjustments
+  as needed)
+  . Select *Custom Liquid* (if you don’t see Custom Liquid as an option,
+  follow
+  https://help.sendlane.com/article/578-how-to-create-a-custom-liquid-block-option-for-your-shopify-theme[these
+  instructions])
+  . Paste the widget element code in the Custom Liquid field
+  . Click *Save*
+  . If you use more than one product page template, repeat steps 1-11
+  for each product page
+  templateimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65ea4277b4dc640d457db4e8/file-061Ms0Iw7r.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65ea4277b4dc640d457db4e8/file-061Ms0Iw7r]
+  +
+  To check that the review script and widget were installed correctly,
+  click Preview Store, then click on a product and scroll down.
+  +
+  If you’ve imported reviews, you should see any existing reviews for
+  the product you clicked on.
+  +
+  If you have not imported reviews, you should see a section to write
+  the first review for the product you clicked on.
+  +
+  ===== 🙋 How do I fix a reviews widget that is too wide?
+
+  If a full-width reviews widget conflicts with your store's design, you
+  can use the div classes below, surrounding the widget element snippet,
+  to reduce the widget's width to match the rest of your website's
+  content. Try the second option if the first option doesn't fix your
+  widget's width.
+
+  Option 1: `+<div class="page-width"> </div>+`. To implement this
+  option, replace the snippet you pasted into the Custom Liquid block in
+  step 10 above with the following:
+
+....
+<div class="page-width">
+    <div class="sendlane-reviews" sl-product-id="{{product.id}}"></div>
+</div>
+....
+
+  Option 2: `+<div class="shopify-section"> </div>+`. To implement this
+  option, replace the snippet you pasted into the Custom Liquid block in
+  step 10 above with the following:
+
+....
+<div class="shopify-section">
+    <div class="sendlane-reviews" sl-product-id="{{product.id}}"></div>
+</div>
+....
+3::
+  The star rating widget element displays a product’s average star
+  rating on individual product pages and on product collection pages.
+  +
+  [[product-page-install]]
+  ==== Product Pages
+  +
+  . Click the 
+  . Copy the 
+  . Login to Shopify
+  . Click *Sales Channels*
+  . Click *Online Store*
+  . Click *Themes*
+  . Click *Customize*
+  . From the dropdown at the top center of the screen, select *Product*
+  . Click *Default product*, or the custom template you use as your
+  default product page
+  . Click Add section wherever you'd like the star widget to appear*
+  (this widget is often installed directly under the product's price or
+  title)
+  . Select Custom Liquid (if you don’t see Custom Liquid as an option,
+  follow
+  https://help.sendlane.com/article/578-how-to-create-a-custom-liquid-block-option-for-your-shopify-theme[these
+  instructions])
+  . Paste the star widget element code in the Custom Liquid field
+  . Click Save
+  . If you use multiple product page templates, repeat the steps above
+  for each product page
+  templateimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65ea4277b4dc640d457db4e8/file-061Ms0Iw7r.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65ea4277b4dc640d457db4e8/file-061Ms0Iw7r]
+  +
+  *If you don't see an "Add Section" option, see the video below about
+  using the Chrome inspect tool and your theme's files to install your
+  star rating widget
+  +
+  [[product-page-collections]]
+  ==== Product Collection Pages
+  +
+  The process for installing the star rating widget varies widely by
+  Shopify theme and can require experimentation. We highly recommend
+  that your store's webmaster complete this process. If you have
+  migrated to Sendlane Reviews from another reviews platform, we highly
+  suggest that you install the Sendlane Reviews product collection star
+  rating widget in the same place as your existing star rating widget.
+  +
+  . Login to Shopify
+  . Click *Sales Channels*
+  . Click *Online Store*
+  . Click the *three dot menu*
+  . Click *Edit code*
+  +
+  From here, you must search for the correct product collection file by
+  identifying key characteristics that indicate you are in the correct
+  file. Usually, only one product collection file will contain both
+  titles and prices, and these files are usually named
+  `+product-card.liquid+`, `+card-product.liquid+`, or
+  `+product-card-grid.liquid+`, depending on your Shopify store's theme.
+  +
+  Determine whether you've found the correct file by clicking into the
+  file, pressing CTRL + F, and searching for `+price+` and `+title+`.
+  You'll find both in the correct file. If your theme does not have
+  `+product-card.liquid+`, `+card-product.liquid+`, or
+  `+product-card-grid.liquid+` files, try files with the words product,
+  collection, card, or grid in their name.
+  +
+  You'll likely need to try pasting the star rating widget code in a few
+  different locations before you find the right place. You can use
+  Chrome's inspect tool to help you narrow down a location. Watch the
+  video below for a demonstration of using the inspect tool to identify
+  the right place for the star rating widget.
+  +
+  image:https://fast.wistia.com/embed/medias/8yhc5mitod/swatch[https://fast.wistia.com/embed/medias/8yhc5mitod/swatch]
+  +
+  ===== 🙋  How can I change the styling of the star rating widget?
+
+  . Open the Custom Liquid block or Liquid file where your star widget
+  is installed
+  . Copy the following snippet:
+  * {blank}
+  +
+....
+.slr-widget--mini {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .slr-widget--mini .slr-stars svg {
+    width: 20px;
+    height: 20px;
+  }
+  .slr-widget--mini .slr-stars-score__total {
+    font-size: 8px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+....
+  . Paste the snippet directly above the star rating widget snippet
+  . Adjust the values for each property
+  .. `+margin-top+`: Adds a margin above the star widget
+  .. `+margin-bottom+`: Adds a margin below the star widget
+  .. `+width+` and `+height+`: Determine the width and height of the
+  widget and should always be the same number
+  .. `+font-size+`: Determines the size of the font
+  .. `+color+`: Determines the color of the font
+  .. `+font-family+`: Determines the family of fonts and order of fonts
+  to display
+  . Click *Save*
+  . Review your changes by clicking *Preview*
+
+=== Troubleshooting
+
+[[widgets-not-appearing]]
+====== The widgets aren't appearing on all pages
+
+The widget element and star widget element must be installed separately
+on every product page or collection template you want them to appear on.
+Check that the product page you expect to see an element on contains the
+installation snippet.

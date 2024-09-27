@@ -1,0 +1,133 @@
+[[top]]
+==== Overview
+
+Plain text emails are a great way to connect personally with your
+contacts. Read on to learn about Sendlane's plain text email editor.
+
+==== In this guide
+
+* link:#compare[Plain text email builder versus visual builder]
+* link:#create[Create a plain text email]
+* link:#save[Save a plain text email as a template]
+
+'''''
+
+[[compare]]
+=== Plain text email builder versus visual builder
+
+[[use]]
+====== Use cases
+
+The visual builder is intended to create high-quality, visually stunning
+marketing emails, while the plain text editor is intended to create
+personal, text-focused emails.
+
+Use the plain text builder to create emails that strengthen a personal
+connection to your brand. Welcome emails, company history, requests for
+feedback, apology messages, and thought leadership are great candidates
+for the plain text email editor.
+
+[[elements]]
+====== Visual builder exclusive elements
+
+Elements like the abandoned cart and other dynamic blocks are
+unavailable in the plain text editor. We recommend reserving plain text
+emails for messages not solely focused on inviting contacts to make a
+purchase.
+
+====== Footer
+
+Your company name and business address (as set in the sender profile
+used for the email) and an unsubscribe link appear in the plain text
+email builder's footer as the last line in the email. This line cannot
+be edited.
+
+link:#top[Back to top]
+
+'''''
+
+[[create]]
+=== Create a plain text email
+
+Creating plain text emails is the same for automations and campaigns.
+You must create a plain text email within the campaign or automation
+builder; plain text emails cannot be created directly from the
+https://help.sendlane.com/article/519-how-to-save-an-email-as-a-template[email
+template center].
+
+====== Available styling
+
+The following styling options are available in the plain text builder:
+
+* https://help.sendlane.com/article/684-how-to-set-and-use-branding-fonts[Brand
+fonts]
+* Text color, size, alignment, and formatting
+* Ordered and unordered lists
+* Images*
+* https://help.sendlane.com/article/82-tags#tag-content[Tagged links]
+* Emojis
+* https://help.sendlane.com/article/79-what-are-personalization-tags[Personalization]
+and
+https://help.sendlane.com/article/691-shopify-templating-syntax[templating
+syntax]**
+* https://help.sendlane.com/article/510-how-to-add-a-unique-coupon-to-an-email[Coupons]**
+* https://help.sendlane.com/article/505-how-to-upload-custom-data[Custom
+data]**
+* HTML editing
+
+*When you upload an image, you can change its size in the visual editor
+only upon upload. After you've saved your image, use the HTML view to
+adjust your image's size further. +
+**Click the thunderbolt icon in the menu bar to access these features.
+
+To create a plain text email:
+
+. Create a https://help.sendlane.com/article/153-campaigns[campaign] or
+https://help.sendlane.com/article/73-automations[automation]
+. Fill in your campaign or automation's general, audience, and advanced
+settings
+. Click Create Email
+. Click Start From Scratch
+. Click Text Builder
+. Compose your email
+. Click Save & Continue
+. Continue scheduling your campaign or activating your automation
+
+link:#top[Back to top]
+
+'''''
+
+=== Convert a plain text email to HTML
+
+Plain text emails can be converted to HTML, but HTML emails cannot be
+converted back to plain text.
+
+To convert a plain text email to HTML:
+
+. Click the gear icon
+. Click Convert to HTML
+. Click Convert
+
+link:#top[Back to top]
+
+'''''
+
+[[save]]
+=== Save a plain text email as a new or existing template
+
+The visual builder, HTML builder, and plain text builder all use the
+same method of saving as a template.
+
+You must create a plain text email within the campaign or automation
+builder; plain text emails cannot be created directly from the
+https://help.sendlane.com/article/519-how-to-save-an-email-as-a-template[email
+template center].
+
+To save a plain text email as a template:
+
+. Click the gear icon
+. Click Save as New Template
+. Enter a descriptive name for your template
+. Click OK
+
+link:#top[Back to top]

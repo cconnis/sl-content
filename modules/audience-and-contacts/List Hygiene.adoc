@@ -1,0 +1,110 @@
+Removing Contacts who are not engaging with your content is an easy way
+to maintain your sender reputation with great deliverability and boost
+engagement. Use List Hygiene to remove Contacts from specified Lists
+after a period of email* inactivity!
+
+_*List Hygiene logic does not include SMS engagement_
+
+=== In This Article
+
+* link:#smart[Smart List Hygiene]
+* link:#automatic[Automatic List Hygiene]
+* link:#history[List Hygiene History]
+* link:#additional[Additional Resources]
+
+=== Before Getting Started 
+
+In order for List Hygiene to run, your account must have at least one
+List with Contacts who have been in your Sendlane account for at least
+30 days and have received at least one email.
+
+If you'd like to remove inactive Contacts that have been in your account
+for less than 30 days, use Segments. Learn more about that process
+https://help.sendlane.com/article/215-how-to-remove-unengaged-contacts-with-segmentation[here]!
+
+=== What Contacts Are Removed With List Hygiene?
+
+Contacts must meet all of the following criteria to be removed from a
+List during List Hygiene:
+
+. Has been on the specified List for at least 30 days, AND
+. Was sent an email in the specified time period, AND
+. Did not engage (open or click) on any email in the specified time
+period
+
+[[smart]]
+=== Accessing List Hygiene
+
+Click the *Audience* icon > *Lists* > *View* > *Hygiene*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61ddcd49e9457b05cfb87959/file-tumti1YRLb.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61ddcd49e9457b05cfb87959/file-tumti1YRLb]
+
+[[smart]]
+=== Smart List Hygiene 
+
+Use Smart List Hygiene to remove Contacts at one point in time rather
+than on an ongoing basis.
+
+Smart List Hygiene is the default first tab in the List Hygiene window.
+To run Smart List Hygiene:
+
+. Set the *number of days* (between 10 and 365) of inactivity to run
+Smart List Hygiene for
+. Click *Remove inactive contacts*
+
+Once the process is complete, inactive Contacts will be removed from
+your List and you'll receive an email with an export .CSV file that
+includes all of the removed Contacts' details.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61ddce44140013074137c3e7/file-2wKfq4YIzn.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61ddce44140013074137c3e7/file-2wKfq4YIzn]
+
+Lists with List Hygiene activated will show a magic wand icon:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62cdd768d242501d78c63b91/file-26GzFzLIn6.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62cdd768d242501d78c63b91/file-26GzFzLIn6]
+
+[[automatic]]
+=== Automatic List Hygiene
+
+Use Automatic List Hygiene if you'd like to have unengaged Contacts
+removed automatically! To enable Automatic List Hygiene:
+
+. Click the *Automatic* tab on the List Hygiene window
+. Click the toggle to *Enabled*
+. Choose a *number of days* of inactivity (we suggest 60)
+. Choose a *frequency* for Automatic List Hygiene (we suggest every 14
+days)
+. Click *Update Automatic Hygiene*
+. Click *Proceed*
+
+Every time Automatic List Hygiene runs, Contacts will be removed
+according to the unengagement settings you've specified and you'll
+receive an email with an export .csv file that includes details on the
+Contacts that were removed.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61ddcf4ca4966a24b4afdb47/file-OWOe6TaduP.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61ddcf4ca4966a24b4afdb47/file-OWOe6TaduP]
+
+[[history]]
+=== List Hygiene History
+
+The History tab shows the date and time of all past List Hygiene
+processes, the number of Contacts removed during each process, and the
+ability to download a .csv file of the removed Contacts' details or the
+option to restore the removed Contacts to the List.
+
+[[restoring]]
+===== 🚨 Important Note
+
+Sending to unengaged contacts can severely harm your deliverability,
+open rates, and sender reputation.
+
+Be cautious when restoring contacts removed by list hygiene. Contacts
+who were not engaging with your content are unlikely to start engaging
+again.
+
+[[additional]]
+=== Additional Resources
+
+* https://www.sendlane.com/blog-posts/why-list-hygiene-is-the-key-ingredient-for-increased-email-engagement-success[Why
+List Hygiene is the Key For Increased Email Engagement & Success]
+* https://www.sendlane.com/blog-posts/win-back-unengaged-email-subscribers[How
+to Win Back Your Unengaged Email Subscribers (With Examples!)]

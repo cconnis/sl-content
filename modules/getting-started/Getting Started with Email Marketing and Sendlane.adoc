@@ -1,0 +1,298 @@
+Welcome to Sendlane; we’re thrilled to meet you! This guide will show
+you how to set your Sendlane account up for success with email marketing
+while safely warming your sending infrastructure.
+
+Our https://www.sendlane.com/deliverability[world-class&#44; in-house
+deliverability experts] recommend following the steps in this guide in
+the order they appear to maximize your deliverability from the start!
+
+[[bgs]]
+===== 🚦 Before getting started
+
+Once you’ve https://auth.sendlane.com/register[signed up for Sendlane],
+make sure you also have access to the following:
+
+Your previous ESP, and
+
+Your business website’s DNS settings
+
+An email address that uses your company's business domain and is not
+role-based (like sales@yourdomain.com). Role-based email addresses do
+not necessarily belong to one person and cannot meaningfully consent to
+marketing messages.
+
+=== In this guide
+
+* link:#gather-metrics-contacts[Gather Metrics and Contacts From Your
+Previous Provider]
+* link:#setup[Set Up Sendlane Account]
+* link:#stop-sending-previous[Stop Sending Email From Previous Email
+Provider]
+* link:#send-campaigns[Send High Engagement Campaigns]
+
+[[gather-metrics-contacts]]
+=== Gather metrics and contacts from your previous provider
+
+When you migrate to Sendlane you'll be starting fresh with important
+metrics like open rates and click rates. You'll need to note your
+baseline performance from your previous email provider, and segment
+contacts by engagement data that lives in your previous email provider
+before importing Contacts into Sendlane.
+
+1
+
+[[note-metrics]]
+====   Note your baseline performance metrics
+
+Log in to your previous email provider and record the metrics you
+achieved for subscriber volume, open, click, and conversion rates. Keep
+this information somewhere safe! Your baseline metrics can be used to
+help diagnose deliverability issues in the future.
+
+Open and click rates will vary during warm up. After enough clean
+sending, generally one month, metrics should stabilize.
+
+When your account is fully warmed, you should see metrics that meet or
+exceed the baseline from your previous ESP!
+
+[[attribution-window-update]]
+===== ⚠️ Update the conversion or attribution window to equal last click in a five day window before noting conversion rates
+
+Email service providers use varying calculations for assigning revenue
+attribution or conversion. To best understand how your performance
+compares in Sendlane to your previous provider, update your attribution
+settings to last click in a five day window to match Sendlane's
+attribution reporting before you record attribution or conversion
+metrics. Using multiple different calculations for attribution means you
+cannot make meaningful inferences about performance.
+
+2
+
+[[segment-export]]
+====   Segment and export contacts from previous provider
+
+[[remove-inactives]]
+===== Create segments for and remove inactive contacts
+
+Inactive Contacts and invalid emails will hurt your new sending
+reputation and could lead to long-term damage to your sending
+infrastructure. When email addresses go unused, they can be turned into
+spam traps. Sending an email to a spam trap can cause severe problems
+for your business’ sending reputation and deliverability. Sendlane
+recommends removing Contacts who have not engaged with your content in
+120 days.
+
+Create a segment for Contacts who meet the following criteria: Has been
+on your list for at least 120 days, AND has been sent at least one email
+in the past 120 days, AND has NOT opened an email from you in the past
+120 days.
+
+Remove these contacts from your main list and do not upload these
+contacts into Sendlane.
+
+[[segment-actives]]
+===== Create segments for and export active contacts
+
+In your previous email provider create segments using the following
+logic for 30, 60, and 90 day periods: Has been on your list for the past
+X days AND has been sent at least one email in the past X days AND has
+clicked on at least one email in the past 30 days
+
+Export each of these segments separately in addition to your main list.
+You should now have four .CSV files to import into Sendlane!
+
+3
+
+[[import-exported-contacts]]
+====  Create engagement segments in Sendlane and import contacts
+
+Once your Contacts are imported, you'll send Campaigns to your most
+engaged Contacts to slowly warm up your sending infrastructure. Create
+these segments now so they are ready when you need them, then import
+your Contacts!
+
+[[new-segments]]
+===== Create high-engagement segments
+
+https://help.sendlane.com/article/137-segments[Create segments]
+identifying your Contacts' engagement over the last 30, 60, and 90 days.
+For each period of time, create a segment using the following logic: has
+been on your list for at least the past X days, AND has been sent at
+least one email in the past X days, AND has clicked on at least one
+email in the past X days.
+
+[[compliance]]
+===== ⚠️ Imports are reviewed during business hours
+
+New Contact imports will be reviewed by Sendlane’s compliance team
+during business hours of 8 AM to 4 PM PST, Monday through Friday. You
+will receive an email when your import is accepted!
+
+[[import-contacts]]
+===== Import Contacts into Sendlane
+
+. Gather the four files you exported from your previous email provider
+and save them somewhere easily accessible
+. Review
+https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account#file-import[Sendlane's
+import formatting rules] and adjust your files as needed to avoid import
+failures (Email and SMS consent are stored in separate columns and
+accept the specified values only, timestamps are not accepted for either
+consent)
+. https://help.sendlane.com/article/125-lists[Create Lists] in Sendlane
+for each of your files
+. Use the Import button on your Lists to import your
+filesimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64f7b9e44578be67333c6ccd/file-aQicQkAiev.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64f7b9e44578be67333c6ccd/file-aQicQkAiev]
+. Read our guide to
+https://help.sendlane.com/article/207-list-review[Sending Campaigns
+While on List Review]
+
+'''''
+
+[[setup]]
+=== Set up your Sendlane account
+
+[[dc8643e8-9c7b-4fe8-9238-1f7a4991e845]]
+===== ⚠️ Some action items build on previous items
+
+To avoid errors, please complete the items in the order they appear.
+Check off each item as you complete it to keep track of your progress!
+
+1::
+  If your business has an eCommerce Store, install your store's
+  integration. Check out our step-by-step guides for popular eCommerce
+  platforms or search for your platform
+  https://help.sendlane.com/category/170-integrations[here]:
+  +
+  * https://help.sendlane.com/article/454-integrate-bigcommerce-and-sendlane[BigCommerce]
+  * https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify]
+  * https://help.sendlane.com/article/98-how-to-integrate-woocommerce-and-sendlane[Woocommerce]
+2::
+  https://help.sendlane.com/article/72-beacon[Beacon] collects data
+  about every pageview on your website. You can target Contacts with
+  Beacon events to send emails based on their activity on your website!
+  By installing Beacon right away, you can start collecting valuable
+  pageview data right away.
+  +
+  If you've integrated a BigCommerce store, you're done with this step!
+  BigCommerce integrations automatically include Beacon general
+  tracking, but you may want to check out
+  https://help.sendlane.com/article/72-beacon#event-tracking[event
+  tracking] and
+  https://help.sendlane.com/article/72-beacon#conversion-rule[conversion
+  rules] which are not automatically installed with your BigCommerce
+  integration.
+3::
+  Sendlane strongly recommends
+  https://help.sendlane.com/article/433-authenticating-a-sending-domain[authenticating
+  a Sending Domain]. Authenticated Sending Domains verify that an email
+  came from the sender listed in the "from" field in the Sender Profile
+  and contribute to a strong sender reputation.
+  +
+  If you do not authenticate a Sending Domain, we recommend that you
+  https://help.sendlane.com/article/109-how-to-set-up-your-spf-record[add
+  an SPF record] to your business’ domain.
+4::
+  If you use templates for
+  https://help.sendlane.com/article/153-campaigns[Campaigns] emails,
+  re-build these templates from your previous ESP into Sendlane’s
+  Campaign email builder.
+5::
+  Check out our overview of
+  https://help.sendlane.com/article/73-automations[automations] and
+  https://help.sendlane.com/article/308-pop-ups[forms], then make
+  duplicates of flows you used with your previous ESP and replace any
+  forms associated with your last ESP.
+  +
+  ===== 💡  Put SMS opt-in language on all forms
+
+  Even if you aren't using SMS yet, you’ll have valuable customer data
+  and consent ready to go!
+  +
+  Once your lead capture methods all point to Sendlane, create and turn
+  on the following high-engagement Automations:
+  +
+  [arabic]
+  . https://help.sendlane.com/article/373-welcome-new-contacts[Welcome]
+  +
+  [arabic, start=2]
+  . https://help.sendlane.com/article/363-how-to-retarget-abandoned-cart-customers[Abandoned
+  cart]
+  +
+  [arabic, start=3]
+  . Abandoned browse
+
+'''''
+
+[[stop-sending-previous]]
+=== Stop sending email from previous email provider
+
+To maintain good deliverability and a positive sender reputation,
+determine a point in time when your business will stop collecting leads
+and sending emails with your previous ESP. Sending emails from two ESPs
+simultaneously can cause ongoing deliverability issues and permanently
+damage your business’ sending reputation.
+
+Let the high-engagement Automations you’ve created run for 1-3 days, and
+you’ll be ready to start sending Campaigns to newly engaged Contacts.
+Check out our
+https://help.sendlane.com/article/453-email-deliverability-best-practices[Email
+Marketing Best Practices] guide while your Automations are running!
+
+'''''
+
+[[send-campaigns]]
+=== Warm your verified domain
+
+Once your high-engagement Automations run for 1-3 days and the rest of
+your ESP migration and Sendlane setup is complete, you’re ready to
+https://help.sendlane.com/category/167-campaigns[send Campaigns]!
+Sendlane strongly recommends that you begin sending only to your most
+engaged Contacts.
+
+Follow the warming guidance in
+https://help.sendlane.com/article/550-how-to-authenticate-a-sending-domain#1send[How
+to verify a sending domain].
+
+'''''
+
+===== ⏭ Next steps
+
+* https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account[Add
+Contacts] to your audience!
+* Check out our
+https://help.sendlane.com/article/476-sms-quick-start-guide[SMS Quick
+Start Guide] to get started with SMS marketing!
+* Get familiar with Sendlane’s
+https://help.sendlane.com/category/165-dashboard-and-reporting[Reporting
+options] to monitor your new sending infrastructure.
+
+[[resources]]
+=== Additional Resources
+
+Want to _really_ hit the ground running? Check out
+https://www.ecommerceacademy.com/[eCommerce Academy], the step-by-step
+email marketing course built with Sendlane in mind!
+
+The Sendlane Blog also has great articles to help you start your
+eCommerce marketing journey:
+
+* https://help.sendlane.com/article/453-email-deliverability-best-practices[Email
+Marketing Best Practices]
+* https://www.sendlane.com/blog/launch-warm-up[How to Make Your Next
+Launch a Massive Success (Phase 1 - The Warm-Up)]
+* https://www.sendlane.com/customer-stories[Customer Success Stories]
+* https://www.sendlane.com/blog-category/sendlane-101[Sendlane 101 at
+The Marketing Automation Journal]
+* https://www.sendlane.com/ebooks/the-big-book-of-ecommerce-email-funnels[The
+Big Book of eCommerce Email Funnels]
+* https://www.sendlane.com/blog/generate-revenue-using-sendlane[The Top
+3 Ways to Generate Revenue Using Sendlane]
+* https://www.sendlane.com/blog/email-marketing-customer-retention[4
+Ways To Boost Customer Retention with Email Marketing]
+* https://www.sendlane.com/blog/grow-email-list[9 Ways to Grow Your
+Email List in Sendlane as a Digital Retailer]
+* https://www.sendlane.com/blog/sendlane-beacon-website-tracking[Sendlane
+Beacon: 5 Best Practices for Website Tracking]
+* https://www.sendlane.com/blog/sendlane-email-segmentation[8 Best Ways
+to Segment Your Contacts in Sendlane]

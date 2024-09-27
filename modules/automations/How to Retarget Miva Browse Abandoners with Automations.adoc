@@ -1,0 +1,97 @@
+Use this guide to set up a browse abandonment or abandoned product
+viewed https://help.sendlane.com/article/73-automations[Automation] that
+sends customers product recommendation emails containing information
+about products they’ve viewed in your Miva store.
+
+This Automation will only trigger for Contacts who have created an
+account via your Miva store’s checkout flow.
+
+=== In This Guide
+
+* link:#trigger[Miva Abandoned Product Viewed Trigger]
+* link:#build[Build a Miva Browse Abandonment Automation]
+* link:#resources[Additional Resources]
+
+[[trigger]]
+=== Miva Abandoned Product Viewed Trigger
+
+Use the _Abandoned Product Viewed_ trigger in the Miva tab of the
+Trigger menu to retarget Contacts who view products in your Miva store
+after a specified period of time.
+
+==== Trigger Settings
+
+* *Store* Select the applicable Miva store
+* *Limit Per Subscriber* Select a limit for the Automation
+** *No Limit* The Automation will trigger for all Contacts who meet the
+trigger criteria
+** *Do not trigger when already in Automation* The Automation will
+trigger only for Contacts who meet the trigger criteria and are not
+already being sent through the Automation
+** *Once Per Day* The Automation will trigger for all Contacts who meet
+the criteria one time in a 24 hour period, even if Contacts meet the
+trigger criteria more than once during the 24 hour period.
+** *One Time Only* The Automation will trigger one time for Contacts who
+meet the trigger criteria and will not trigger again, even if Contacts
+meet the trigger criteria again.
+* *Consider Abandoned After* Select a length of time the Automation
+should wait to send an email after the Contact has viewed a product.
+* *For Products* Move products from the Available box to the Selected
+box to specify which products should trigger the Automation when viewed.
+
+[[build]]
+=== Build a Miva Browse Abandonment Automation
+
+. To create a browse abandonment Automation, click *New Automation* >
+*Start From Scratch* on the
+https://app.sendlane.com/automations[Automations page].
+. Name your Automation and click *OK*.
+. Click *+Add Trigger* > *Abandoned Product Viewed*
+. Select your desired trigger settings and click *Done*
+. To add an email node, click the *+ icon* > *Send Message* > *Email* >
+*Create New Email*
+. https://help.sendlane.com/article/318-building-the-perfect-email[Build
+your email], and include the *Miva Abandoned Cart block* from the
+Content tab to populate links to products that Contacts viewed. Only one
+abandoned cart block is allowed per email.
+. Click *Activate* to activate your email.
+. Optional: Add a
+https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation#goal[Goal
+node] to your Automation to check for purchases. Click the *+ icon* >
+*Goal*.
+. Edit your Goal settings and click *Done*.
+. Add additional nodes to your Automation in line with your marketing
+strategy, then click *Active* to activate your Automation!
+
+Once your browse abandonment Automation is active, Contacts who have
+created an account from your Miva store’s checkout flow and viewed
+products (along with any other criteria you specify) will receive browse
+abandonment emails!
+
+[[resources]]
+=== Additional Resources
+
+* https://www.sendlane.com/blog/generate-revenue-using-sendlane#s2[The
+Top 3 Ways to Generate Revenue Using Sendlane]
+
+=== Troubleshooting
+
+====== The abandoned cart block isn't available!
+
+The abandoned cart block may not appear in your elements sidebar for two
+common reasons:
+
+. Your eCommerce integration is not set up correctly. Review your
+eCommerce store's integration with Sendlane for possible connection
+issues.
+. You already added an abandoned cart block to your email. Only one
+abandoned cart block is allowed per email.
+
+[[not-firing]]
+====== A Contact abandoned a product view and move through the Automation!
+
+The most common reason Contacts who abandon a checkout and do not move
+through your browse abandonment Automation is that they are
+https://help.sendlane.com/article/72-beacon#notes[browsing anonymously].
+Tracking requires non-anonymous browsing in order to trigger the
+Automation.

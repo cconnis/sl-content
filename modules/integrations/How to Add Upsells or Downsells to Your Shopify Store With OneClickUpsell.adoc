@@ -1,0 +1,124 @@
+Using https://landing.zipify.com/pages/ocu20[OneClickUpsell] to add
+post-purchase upsells to your Shopify store is an easy way to increase
+revenue.
+
+Once your OneClickUpsell integration is setup, you're able to create an
+upsell funnel for your Shopify Store!
+
+In this article you'll learn how to create your:
+
+* link:#funnel[Funnel in OneClickUpsell]
+* link:#automation["Thank You" automation in Sendlane]
+
+'''''
+
+=== Before Getting Started
+
+Before you're able to create upsell funnels for your customers, you'll
+need to have your https://landing.zipify.com/pages/ocu20[OneClickUpsell]
+account active within your Shopify store.
+
+You'll also need your
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify
+Store Integration] and your
+https://help.sendlane.com/article/345-how-to-integrate-oneclickupsell-and-sendlane[OneClickUpsell
+Integration] setup with your Sendlane account.
+
+'''''
+
+[[funnel]]
+=== Create your Funnel
+
+To create an upsell for your Shopify products, you will need to create a
+funnel in OneClickUpsell.
+
+. Login to your MyShopify Admin
+. Click *_Apps_* and select *_Zipify OneClickUpsell_* from your
+Installed apps +
+ +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8e8e9a2c7d3a7e9aeaa446/file-rqOAa4uv3F.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8e8e9a2c7d3a7e9aeaa446/file-rqOAa4uv3F]
+. Click the *_Upsell Funnels Icon_* and click the green *_Add New
+Funnel_* button on the right side
+. After naming your funnel and choosing your tag, click the green
+*_Save_* button +
+ +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8e8fd304286364bc9811df/file-GCbaeHfyfu.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8e8fd304286364bc9811df/file-GCbaeHfyfu]
+. Under _OneClickUpsell Checkout_ click _*Choose Product*,_** **choose
+to create a new offer page and click *_Continue_*
+. Select the product you want to upsell and click *_Add_* +
+*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8e90b004286364bc9811e7/file-5xTLR6Y3K9.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8e90b004286364bc9811e7/file-5xTLR6Y3K9]*
+. Repeat step 6 for any pre-purchase upsells, post-purchase upsells or
+downsells
+. Click the **_Three Dots (...)_ **to the right of any product to edit
+further details of any upsell including editing the offer page and using
+split testing
+. Once you are happy with your funnel click *_Publish Funnel_* in the
+top-right
+
+And that's it! 
+
+Here's what it will look like when a customer clicks checkout with one
+of your upsell funnel products:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8e91c204286364bc9811f0/file-UmAso7wPjx.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8e91c204286364bc9811f0/file-UmAso7wPjx]
+
+'''''
+
+[[automation]]
+=== Creating a "Thank you" Automation
+
+After a customer makes a purchase, it's a great idea to follow up and
+thank them for their business!
+
+You'll want to configure each one differently if you'd like to utilize
+both triggers within your Sendlane account.
+
+. In Sendlane, click start by creating a new
+https://help.sendlane.com/article/73-automations[Automation] and choose
+S__tart from scratch__
+. Click on *_Click here to add trigger_* and select
+*_OneClickUpsell_* from the Your integrations dropdown +
+ +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60c90c23b899954cddd47a79/file-uNxpgsmzuA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60c90c23b899954cddd47a79/file-uNxpgsmzuA]
+. Select *_Offer Completed_* and choose your store +
+ +
++
+====== Please Note
+
+The OneClickUpsell _Offer Completed_ trigger functions the same way as
+the Shopify _Order Completed_ trigger, so be sure you don't have
+duplicate "Thank you" automations running at the same time!
+. Click the "*+*" to add a new *_Send Message_* action
+. https://help.sendlane.com/article/150-email-builder[Design your email]
+and don't forget to click *_Publish_* on the email message once you're
+done
+. Finish building out your automation (adding any other actions or
+communications you'd like) and *_Activate_* your
+funnelimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee258aa2c7d3a10cba8c537/file-NNSNQ7H5f4.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee258aa2c7d3a10cba8c537/file-NNSNQ7H5f4]
+
+Now, if a customer purchases one of your upsell items, they'll receive a
+thank you email from you!
+
+'''''
+
+=== Additional Resources
+
+* https://www.sendlane.com/blog-posts/upsell-and-cross-sell-customers[How
+To Upsell and Cross-Sell Customers...the Right Way]
+* https://www.sendlane.com/blog-posts/keep-them-buying[5 Emails You Can
+Send Current Customers to Keep Them Buying]
+
+'''''
+
+=== TL:DR
+
+*[.underline]#Creating Your Funnel#:* Login to Shopify → Click Apps →
+Select Zipify OneClickUpsell → Click Upsells Funnel Icon → Add
+New Funnel → Name Funnel & Save → Choose Product, Create New Offer Page
+& Click Continue (Repeat For More Products) → Add Products → Publish
+Funnel
+
+*[.underline]#Creating A Thank You Automation#:* Create New Automation →
+Add Trigger → Select OneClickUpsell → Select Offer Completed & Choose
+Store → Click '+' to Create Email → Design Your Email →  Publish →
+Finish Building Automation → Activate Your Funnel

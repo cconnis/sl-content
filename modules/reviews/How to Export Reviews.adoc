@@ -1,0 +1,45 @@
+[[top]]
+==== Overview
+
+The export button on the Import & Export tab of the Reviews page allows
+you to export files of failed imports with error messages or export all
+of your reviews.
+
+==== In This Guide
+
+* link:#failed-import[Export a Failed Import]
+* link:#all-reviews[Export All Reviews]
+
+'''''
+
+[[failed-import]]
+=== Export a Failed Import
+
+To export a failed import and review import error messages:
+
+. Click the *Reviews* icon
+. Click *Content*
+. Click *Import & Export*
+. In the History section, click the download icon next to the failed
+import
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/653abde072690e4bf4d1d0cd/file-lMsIq5yZaS.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/653abde072690e4bf4d1d0cd/file-lMsIq5yZaS]
+
+link:#top[Back to top]
+
+'''''
+
+[[all-reviews]]
+=== Export All Reviews
+
+To export all of your Sendlane Reviews:
+
+. Click the *Reviews* icon
+. Click *Content*
+. Click *Import & Export*
+. Click *Export Reviews*
+. Check your email for a link to download your export
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/653abdaf283d7851b4fe9c7c/file-TedyjlT1WR.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/653abdaf283d7851b4fe9c7c/file-TedyjlT1WR]
+
+link:#top[Back to top]

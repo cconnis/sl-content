@@ -1,0 +1,97 @@
+https://thrivethemes.com/[Thrive Themes] provides WordPress themes &
+plugins, built from the ground up to make your entire website convert
+more of your visitors into subscribers, customers & clients!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://thrivethemes.com/leads/pricing/[Thrive Themes account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account so Thrive Themes knows where to place
+your new leads and contacts!
+
+'''''
+
+=== Connecting Thrive Themes and Sendlane
+
+To complete your Sendlane integration, follow these steps:
+
+. From the Thrive Dashboard in WordPress click *_API
+Connections_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1ca12c7d3a7e9ae1b979/file-WxBt6wHl5U.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1ca12c7d3a7e9ae1b979/file-WxBt6wHl5U]
+. Click *_Add New Connection_* and choose Sendlane from the list of
+available
+applicationsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1cea2c7d3a7e9ae1b97d/file-7Z6zR55bPZ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1cea2c7d3a7e9ae1b97d/file-7Z6zR55bPZ]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1cf304286364bc8fa6ba/file-P6cucVS8UT.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1cf304286364bc8fa6ba/file-P6cucVS8UT]
+. Enter your Sendlane API Key, Hash Key, and subdomain URL and click
+*_Connect_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1d1204286364bc8fa6bc/file-3psQQCHYQh.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1d1204286364bc8fa6bc/file-3psQQCHYQh]
+. Once you see a green success message, you're all
+set!image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1d1d04286364bc8fa6bd/file-sxX6wbPO27.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1d1d04286364bc8fa6bd/file-sxX6wbPO27]
+
+'''''
+
+==== Next Steps
+
+Once the integration is complete, follow these steps to connect Sendlane
+to one of your Thrive Theme forms:
+
+. Click on the form sign up area, and on the left hand side under *_Main
+Options_* choose *_Connect Form to
+Service_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1d4404286364bc8fa6c1/file-eR67phEuUS.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1d4404286364bc8fa6c1/file-eR67phEuUS]
+. Click on the available Sendlane integration to select
+itimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1d4b2c7d3a7e9ae1b984/file-11BNqeerZ7.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1d4b2c7d3a7e9ae1b984/file-11BNqeerZ7]
+. Choose your Sendlane list that you'd like these contacts to be added
+toimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1d512c7d3a7e9ae1b987/file-pAxhnWOhuz.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1d512c7d3a7e9ae1b987/file-pAxhnWOhuz]
+. Once the form is connected properly, you'll see Sendlane under Main
+Options on the
+left image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1d5a04286364bc8fa6c3/file-pzBMiHweoJ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8e1d5a04286364bc8fa6c3/file-pzBMiHweoJ]
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Thrive Themes, so we're only able to
+provide limited troubleshooting support. However, if you   _do_ need
+help, the Thrive Themes team is just a few clicks away!
+
+* https://thrivethemes.com/contact/[Contact] Thrive Themes
+* Review the Thrive Themes https://thrivethemes.com/sendlane/[video
+guide on connecting Sendlane]
++
+====== Please Note
+
+At the time of this edit the video provided is out of date regarding
+where to find your Sendlane API Key, Hash Key and Subdomain. Please
+follow
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[these
+instructions] to find that information.
+
+'''''
+
+==== Additional Thrive Themes Resources
+
+https://thrivethemes.com/architect/#getitnow[Sign up for Thrive Themes]
+| https://thrivethemes.com/blog/[Thrive Themes Blog]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/converting-landing-pages[4 Design
+Elements of Converting Landing Pages]
+
+'''''
+
+TL;DR
+
+Account → API → Subdomain, API Key and Hash Key
+
+Thrive Themes Dashboard → API Connections → Add New Connection
+
+Thrive Themes Form Settings → Connect Form to Service → Select
+Sendlane → Choose Sendlane list

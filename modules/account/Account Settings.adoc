@@ -1,0 +1,11 @@
+Head to the Account menu to update your Sendlane account details, change
+your password, or generate an Account Access token!
+
+Check out our Account details guides:
+
+* https://help.sendlane.com/article/439-updating-your-sendlane-account-details[Updating
+Your Sendlane Account Details]
+* https://help.sendlane.com/article/441-changing-your-password[Changing
+Your Password]
+* https://help.sendlane.com/article/440-creating-an-account-access-token[Creating
+an Account Access Token]

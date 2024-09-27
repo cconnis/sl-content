@@ -1,0 +1,90 @@
+link:++https://sendlaneaff--boost.thrivecart.com/boost-pro-1200-trial-aa/++[Boost]
+is a unique email capturing platform that allows you to acquire email
+addresses without the need to fill out a form. Instead, Boost requests a
+contact's information through social media, capturing their email
+address in the process.
+
+Integrating Boost and Sendlane enables you to add collected information
+directly to your Lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+link:++https://sendlaneaff--boost.thrivecart.com/boost-pro-1200-trial-aa/++[Boost
+account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account so Boost knows where to place your new
+leads and contacts!
+
+'''''
+
+=== Connecting Boost and Sendlane
+
+. From your Boost homepage, navigate to *_Setup_* → *Data sync
+integrations*
+. Click *_+ Add
+New_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce479732c7d3a6d82bdcc31/file-jrB11FlNxB.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce479732c7d3a6d82bdcc31/file-jrB11FlNxB]
+. Select *_Sendlane_* from the dropdown box and name your integration 
+. Enter your API key, Hash key, and subdomain. 
+. Click *_Test Connection_*. If the connection is successful, click
+*_Create_* +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce47ce30428634b85598979/file-p5ISzwqbdN.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce47ce30428634b85598979/file-p5ISzwqbdN]
+. When you go to create a Campaign in Boost, navigate to *_Step 3_* of
+the Campaign creator, click the *_Select a service_* dropdown box, and
+select *_Sendlane_*. From there, you can select your recently completed
+integration as well as the List in Sendlane with which you want Boost to
+integrateimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce47e1d2c7d3a6d82bdcc5f/file-DtZXjYhSwz.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce47e1d2c7d3a6d82bdcc5f/file-DtZXjYhSwz]
+. Click *_Create Campaign_* to continue along in the process on the
+Boost side, but once that's all set...
+
+Your integration is now complete and captured contacts will be
+automatically added to your chosen Sendlane list. 
+
+=== 
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Boost, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Boost team is just a few clicks away!
+
+* Connect with the mailto:mailto:support@boost.link[Boost team]
+* Visit the
+https://start.boost.link/how-to-integrate-sendlane-with-your-boost-account/[Boost
+tutorial]
+
+==== Additional Boost Resources
+
+https://www.facebook.com/groups/1557309140985534/[Boost Facebook Group]
+| https://start.boost.link/use-cases/[Use Cases] |
+link:++https://sendlaneaff--boost.thrivecart.com/boost-pro-1200-trial-aa/++[Free
+Trial]
+
+=== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/social-media-vs-email-marketing-5-reasons-why-email-wins[Social
+Media vs Email Marketing: 5 Reasons Why Email Wins ]
+* https://www.sendlane.com/blog-posts/email-vs-social-media-infographic[Email
+Vs Social Media - Where You Get the Most Bang for Your Buck!]
+* https://www.sendlane.com/blog-posts/8-ways-marketers-align-social-and-email[8
+Ways Successful Marketers Align Their Social Media and Email Marketing
+for Maximum Success]
+
+'''''
+
+=== TL;DR
+
+Login to Boost →  _Setup_ → _Data sync integrations_ → _Add
+New_ → _Sendlane_ → Enter Sendlane API Key, Hash Key & Subdomain → _Test
+Connection_ → _Create_ 

@@ -1,0 +1,229 @@
+Sendlane's lightweight but powerful Pop-Ups are customizable opt-in
+forms that can be embedded on your website to collect leads without
+compromising your website's load time.
+
+It's estimated that 96% of website visitors are not ready to make a
+purchase during their visit. It is critical to capture your visitors'
+email addresses in order to target them with content that aligns with
+their interests and preferences so that your brand has visibility when
+they are ready to purchase!
+
+[[[ID TAG]]]
+===== 🚦 Before Getting Started
+
+https://help.sendlane.com/article/125-lists[Create a List] for Contacts
+to be added to when they submit your Pop-Up
+
+ Have access to your website's HTML so you can embed your Pop-Up and
+start collecting leads right away!
+
+=== In This Guide
+
+* link:#types[Pop-Up Types]
+* link:#creating[Create a Pop-up]
+* link:#installing[Install a Pop-up]
+* link:#troubleshooting[Troubleshooting]
+* link:#additional[Additional Resources]
+
+[[types]]
+=== Pop-Up Types
+
+[cols=",",]
+|===
+|*Inline*    |A static form that is embedded on your website and does
+not move while scrolling. Use Inline when you want detailed control over
+the form's design using custom HTML!
+
+|*Pop-Up*    |A "pop up" form appears overlaid on your website after a
+visitor has viewed your website for a specified amount of time. Use a
+Pop-Up when you want a clean, straightforward way to collect leads using
+standard fields.
+
+|*Banner* |A form fixed to the top or the bottom of your website that
+will scroll with a visitor as they navigate your website. 
+
+| |
+|===
+
+[[creating]]
+=== Create a Pop-Up
+
+To create a Pop-Up, Click *Create New Pop-up* > Select a *Pop-Up
+Type* > *Next* > Enter a *name* for your Pop-Up* > *Create Pop-up*
+
+*The name you enter for your Pop-Up will not be public, Pop-Up names are
+only visible on the https://app.sendlane.com/pop-up[Pop-Up page] in your
+Sendlane account.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6231003daf6f8700f6daf87a/file-N1c0ho2dvk.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6231003daf6f8700f6daf87a/file-N1c0ho2dvk]
+
+[[design]]
+==== Pop-Up Design
+
+Once your first Pop-Up is created you'll be taken to the Pop-Up editor!
+
+Drag and drop elements, input fields, and
+https://help.sendlane.com/article/331-custom-fields[Custom Fields] from
+the Content tab into your Pop-Up. To delete an element, click on it,
+then click the trash can icon.
+
+[[SMS]]
+===== 💡 Collect Phone Numbers and SMS Consent!
+
+Make sure your billing information is up to date and that you have SMS
+credits available. If you do not have SMS credits available, Contacts
+will not receive the confirmation message they must reply to confirming
+their consent to receive SMS marketing messages.
+
+ Add the following language to your website's privacy policy:
+
+....
+By entering your phone number in our checkout SMS opt-in, subscribing via our subscription form or via our text-to-join keyword, you agree that By signing up via text, you agree to receive recurring automated promotional and personalized marketing text messages (e.g. cart reminders) from [Company Name] at the cell number used when signing up. You also acknowledge that consent is not a condition for any purchase made on our site.
+
+If you wish to unsubscribe from receiving text marketing messages and notifications reply with STOP to any mobile message sent from us or use the unsubscribe link we provided you within any of our messages. You understand and agree that alternative methods of opting out, such as using alternative words or requests will not be accounted as a reasonable means of opting out. Message and data rates may apply.
+
+For any questions please text HELP to the number you received the messages from. You can also contact us for more information. If you wish to opt out please follow the procedures above.
+    
+....
+
+ Add an optional Phone Number field to your Pop-Up
+
+ Add a text block to your Pop-Up that includes privacy and data use
+information, for example:
+
+....
+By signing up via text, you agree to receive recurring automated promotional and personalized marketing text messages (e.g. cart reminders) from [Company Name] at the cell number used when signing up. Consent is not a condition of any purchase. Reply HELP for help and STOP to cancel. Msg frequency varies. Msg and data rates may apply. View Terms [link] & Privacy [link]
+    
+....
+
+ Continue to edit your style and settings, then publish your Pop-up!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62310a7baf6f8700f6daf8b4/file-xjVLUR2kY2.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62310a7baf6f8700f6daf8b4/file-xjVLUR2kY2]
+
+Highlight text to edit font, size, color, and styling.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62310bb7c1e53608cf9e8dd0/file-EZFo3byqgv.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62310bb7c1e53608cf9e8dd0/file-EZFo3byqgv]
+Use the Style tab to edit your Pop-Up's background color, border style,
+and width
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/625a034a92fc506189807aa9/file-gsbWkAOPtk.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/625a034a92fc506189807aa9/file-gsbWkAOPtk]
+
+For Pop-Up and Banner types, the Position tab determines where your
+Pop-Up will appear on the page
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/625a03ca35f8b26458265246/file-pw5LM2qh3V.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/625a03ca35f8b26458265246/file-pw5LM2qh3V]
+
+Click *Next* to save your Pop-Up and move on!
+
+[[action]]
+==== Post Sign-Up Action
+
+After Contacts submit your Pop-Up, you can redirect them to a specific
+URL or show a thank you message.
+
+The default post-submission option is the thank you message page. Use
+the Style panel to edit and style your than you message, or click
+*Redirect to Custom URL* to send Contacts to a specific page after
+submission. Enter the URL and click *Save URL*, or click *Show Thank You
+Message* to revert to the default thank you message page option.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65aee8b43b1ed8383a2d324a/file-CdkADtpjLg.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65aee8b43b1ed8383a2d324a/file-CdkADtpjLg]
+
+[[settings]]
+==== Pop-Up Settings
+
+Use the *Form Name* field to change your Pop-Up's name, which will only
+show on the https://app.sendlane.com/pop-up[Pop-Up page] in your
+Sendlane account. Select a *Subscription List* that Contacts who submit
+this Pop-Up should be added to. Use the *Preview Pop-Up* button to
+preview your Pop-Up's desktop and mobile versions.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/615dcc7ce5648623c88e2086/file-Er450TtkNh.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/615dcc7ce5648623c88e2086/file-Er450TtkNh]
+
+[[opt-in]]
+==== Opt-in Settings
+
+Double opt-in allows you to require Contacts to confirm their
+subscription before Sendlane marks them as having consented to receive
+your marketing materials. Double opt-in is a great way to protect
+yourself from bots and accidental subscriptions! To turn on double
+opt-in for your Pop-up:
+
+. Toggle on Double Opt-in 
+. Provide a URL to redirect Contacts to when they submit their
+information to your Pop-up*
+. Click *Edit Confirmation Message* to provide a redirect URL or edit a
+thank you message to redirect Contacts to when they confirm their
+subscription
+. Click *Save*
+
+*There is no thank you message option for Contacts' initial submission
+when double-opt in is toggled on for a Pop-up
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65aef0d23b1ed8383a2d3259/file-XBNE0IiAUE.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65aef0d23b1ed8383a2d3259/file-XBNE0IiAUE]
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/615dcd632b380503dfdf7f72/file-PO7JN2lWsk.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/615dcd632b380503dfdf7f72/file-PO7JN2lWsk]
+
+[[audience]]
+==== Audience & Triggers
+
+Use the Audience & Triggers settings to determine when visitors to your
+website see your Pop-Up
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/615dcdd912c07c18afddadec/file-6LW85FddE1.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/615dcdd912c07c18afddadec/file-6LW85FddE1]
+
+Click the pink *Publish* button at the top right to save and publish
+your Pop-Up!
+
+[[installing]]
+=== Install a Pop-Up
+
+Click the *Get Code* icon next to the Pop-up you want to install, then
+click the *Copy Code* button
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64d40ec30b304e49374a6cf1/file-eRJLDxezua.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64d40ec30b304e49374a6cf1/file-eRJLDxezua]
+
+For pop-up and banner form types, paste the code inside the <header> or
+<footer> tags. For inline forms, paste the code inside the parent tags
+in your desired location.
+
+You can also install Pop-Ups using WordPress and Shopify by checking out
+these guides:
+
+. https://help.sendlane.com/article/360-how-to-use-pop-ups-with-wordpress[Install
+with WordPress]
+. https://help.sendlane.com/article/319-how-to-use-pop-ups-with-shopify[Install
+with Shopify]
+
+====== Please Note
+
+You need to have access to the HTML code of your website to install
+the Pop-Up.
+
+The "Raw Form" HTML code for the Pop-Ups is not available for the Banner
+or Pop-up types. These versions of the Pop-Up need to use JavaScript in
+order to function properly.
+
+=== Troubleshooting
+
+*I installed my Pop-Up on my website but I don't see it!*
+
+Check for conflicts caused by plugins or animations on your website that
+may be blocking your Sendlane Pop-Up. 
+
+*I made changes to my Pop-Up but I don't see them on my website!*
+
+Make sure your pop-up doesn't have any unpublished changes:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f4e7db82c7d3a352e91a55c/file-o2X0rb8JCq.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f4e7db82c7d3a352e91a55c/file-o2X0rb8JCq]
+
+[[additional]]
+=== Additional Resources:
+
+* https://www.sendlane.com/blog-posts/convert-new-subscribers-into-paying-customers-using-sendlanes-pop-ups[Convert
+New Subscribers Into Paying Customers Using Sendlane's Intelligent
+Pop-ups]
+* https://www.sendlane.com/blog-posts/how-to-use-custom-fields-to-create-hyper-personalized-emails[How
+to use Custom Fields to Create Hyper-Personalized Emails]
+* https://www.sendlane.com/blog-posts/10-surefire-ways-to-get-more-opt-ins-grow-your-ecommerce-email-list[10
+Surefire Ways to Get More Opt-ins & Grow Your List]

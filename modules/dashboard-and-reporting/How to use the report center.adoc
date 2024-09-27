@@ -1,0 +1,97 @@
+[[top]]
+==== Overview
+
+The report center allows you to run and download aggregate reports on
+your email, SMS, revenue, subscriber growth, and forms performance.
+Check out
+https://help.sendlane.com/article/652-understanding-report-center-options-and-data[Understanding
+reporting center data and options] for detailed information about what
+is included in each report.
+
+==== In this guide
+
+* link:#generate[Generate a report]
+* link:#download[Download a report]
+* link:#analyze[Analyze a report]
+* link:#faq[FAQ]
+* link:#troubleshooting[Troubleshooting]
+
+[[cache]]
+===== ⚠️ Report center data is not real time
+
+Report center reports rely on a cached copy of the Sendlane database to
+generate reports quickly, typically in under a minute or so. Cached
+versions of reports ensure that reports can be generated and downloaded
+quickly but might result in an older snapshot of your data. The
+information in your report may be between one and four hours behind real
+time.
+
+'''''
+
+[[generate]]
+=== Generate a report
+
+To generate a report in the reporting center:
+
+. Click the report center icon
+. In the card for the report you’d like to generate, click Generate
+. In the slideout window, select a date range
+. Click Generate
+
+image:https://lh7-us.googleusercontent.com/ycPJmfVuv-KYS9ZUbZndziQ3Z-5CEqcQDNVjRGuesxWv1sLNZPyYXzIe7jisQ0u5ODH5CJtFQye_fvfs23_XyEl_9UkBkjNLUMaw7xJdGHx-CMKOAY4uKaxK0KDuQ-xAlN84bi692rHbxgy-mObziLw[https://lh7-us.googleusercontent.com/ycPJmfVuv-KYS9ZUbZndziQ3Z-5CEqcQDNVjRGuesxWv1sLNZPyYXzIe7jisQ0u5ODH5CJtFQye_fvfs23_XyEl_9UkBkjNLUMaw7xJdGHx-CMKOAY4uKaxK0KDuQ-xAlN84bi692rHbxgy-mObziLw,width=1484,height=1043]
+
+You’ll see a popup notification when your report has finished
+generating:
+
+image:https://lh7-us.googleusercontent.com/IxT9kNbdhzIlOjlLlc3o-xg8HBkFH1xnxZq38oIb0HjWof-uTPWHOxdaJ6quqJ9aKf85GdFsaY3ynEnNm1IJTL9MQDuuu4zKJeh8Qk_kiKOcrhgTg44ljBK838oLekuehhNXEgt-S2jJPaqqmwT05BA[https://lh7-us.googleusercontent.com/IxT9kNbdhzIlOjlLlc3o-xg8HBkFH1xnxZq38oIb0HjWof-uTPWHOxdaJ6quqJ9aKf85GdFsaY3ynEnNm1IJTL9MQDuuu4zKJeh8Qk_kiKOcrhgTg44ljBK838oLekuehhNXEgt-S2jJPaqqmwT05BA,width=1240,height=885]
+
+link:#top[Back to top]
+
+'''''
+
+[[download]]
+=== Download a report
+
+To download a report:
+
+. Click the report center icon
+. Click Downloads
+. Click the download icon next to the report you’d like to download
+
+image:https://lh7-us.googleusercontent.com/oET7h6Dic4ae14JSen8LFPsbVKPmbLOorcWPt3kUScZP7R9bdO6XrzjozQ4T2ymmOPOi35bo0fP58EUcUhTfzBHD1w5Vu0D2vexkAU3Cknf5useq-ieMc9906-eES5AVOzfh6OamcGKE7zM1veqdC3s[https://lh7-us.googleusercontent.com/oET7h6Dic4ae14JSen8LFPsbVKPmbLOorcWPt3kUScZP7R9bdO6XrzjozQ4T2ymmOPOi35bo0fP58EUcUhTfzBHD1w5Vu0D2vexkAU3Cknf5useq-ieMc9906-eES5AVOzfh6OamcGKE7zM1veqdC3s,width=1453,height=1043]
+
+link:#top[Back to top]
+
+'''''
+
+[[analyze]]
+=== Analyze a report
+
+Use spreadsheet software like Excel or Google Sheets to open and analyze
+your report .CSV file.
+
+link:#top[Back to top]
+
+'''''
+
+=== FAQ
+
+[[schedule]]
+====== How do I schedule a report to generate on a regular interval?
+
+Report scheduling is not possible at this time, but is on our roadmap.
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+[[not-generating]]
+====== My report isn't generating!
+
+Report generation time can vary depending on the size of your report. If
+your report hasn't generated after one hour, please contact our 24/7
+product support or your Customer Success Manager
+
+link:#top[Back to top]

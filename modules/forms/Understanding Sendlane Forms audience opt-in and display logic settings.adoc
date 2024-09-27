@@ -1,0 +1,252 @@
+[[top]]
+==== Overview
+
+Sendlane Forms allow you to specify unique settings for audience
+management, opt-in settings, and targeted display options. Read on to
+learn more!
+
+==== In this guide
+
+* link:#audience[Set a form’s audience]
+* link:#opt-in[Set a form’s opt-in settings]
+* link:#display-targeting[Set a form’s display targeting]
+
+'''''
+
+[[audience]]
+=== Set a form’s audience
+
+You can specify Lists to subscribe Contacts to and Tags to apply to
+Contact profiles when website visitors submit their information to your
+form. List subscriptions and Tags are optional, you are not required to
+subscribe Contacts to Lists or apply Tags to their profiles with
+Sendlane Forms.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dceb1b1c2f8d3d7ebfd528/file-Y09uABPUoY.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dceb1b1c2f8d3d7ebfd528/file-Y09uABPUoY]
+
+To specify Lists and Tags for your form:
+
+. Click the *Subscription List* dropdown
+. Select one or more Lists to subscribe Contacts to when they submit
+your form
+. Click the *Tags* dropdown
+. Select one or more Tags to apply to Contacts’ profiles when they
+submit your form
+. Click *Design*
+. Click *Summary*
+. Click *Done* to save your changes
+
+link:#top[Back to top]
+
+'''''
+
+[[opt-in]]
+=== Set a form’s opt-in settings
+
+You can turn on double opt-in for email, SMS, or both for any Sendlane
+Form.
+
+When email double opt-in is turned on, website visitors who fill out
+your form will receive an email containing a link that leads to a
+subscription confirmation page. You will  select a Sender Profile that
+double opt-in emails are sent from. Contacts will need to click the link
+and confirm their subscription to grant permission to receive emails
+from you.
+
+When SMS double opt-in is turned on, people who fill out your form will
+receive an SMS message asking them to reply Y. Contacts will need to
+reply Y to grant permission to receive SMS messages from you. SMS double
+opt-in is highly recommended to prevent false opt-ins.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dced6f89182269183fa53c/file-UbCXSvTmYZ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dced6f89182269183fa53c/file-UbCXSvTmYZ]
+
+[[opt-in-language]]
+===== ⚠️ If double opt-in is turned on, include information on your form about how to confirm subscription
+
+Include a sentence like "check your email to confirm your subscription"
+so that contacts know they need to confirm their subscription to receive
+your messages
+
+To turn on email double opt-in:
+
+. Under Opt-In Settings, click the checkbox next to Email Double Opt-in
+. Select a sender profile for the opt-in confirmation email
+. Click *Design*
+. Click *Summary*
+. Click *Done*
+
+To turn on SMS double opt-in:
+
+. Under Opt-In Settings, click the checkbox next to SMS Double Opt-in
+. Click *Design*
+. Click *Summary*
+. Click *Done*
+
+**link:#top[Back to top]
+
+'''''
+
+[[display-targeting]]
+=== Set a form’s display targeting
+
+You can specify when, where, and how frequently Sendlane Forms appear to
+your website visitors. Set the following options in the Display section
+of the forms Settings page.
+
+===== ⚠️ Inline forms do not support targeting options
+
+==== Show
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcede293e735297b4ecbcc/file-q0KAZ5PQIM.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcede293e735297b4ecbcc/file-q0KAZ5PQIM]
+
+* *On any selected condition* - Will display the form as long as one
+selected condition is met
+* *Only if all selected conditions are met* - Will display the form only
+when all selected conditions are met
+* *Only on custom trigger* - Will display the form only when a
+https://help.sendlane.com/article/639-how-to-open-a-sendlane-form-programmatically-and-listen-to-sendlane-form-activity-events[custom
+trigger’s] conditions are met (custom trigger conditions cannot be used
+in conjunction with standard conditions)
+
+==== Conditions
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcedfc1c2f8d3d7ebfd530/file-SFZ2VUdd6d.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcedfc1c2f8d3d7ebfd530/file-SFZ2VUdd6d]
+
+*  +
+*Show X seconds after page load* - Click the checkbox and enter or
+select a number of seconds to wait after the page finishes loading to
+display the form
+* *Show after scrolling X% of the page* - Click the checkbox and enter
+or select a percentage website visitors must scroll down the page before
+the form displays
+* *Show when a visitor is about to exit the page* - Click the checkbox
+to display the form when a user mouses over the browser bar (available
+on desktop only)
+
+[[mobile-exit-intent]]
+===== 🙋 Is there any way to use exit intent for mobile devices?
+
+To simulate exit intent on mobile, use the Show after scrolling X% of
+the page condition
+
+[[visitors-options]]
+==== Visitors
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6627defe1bee2d183948c09a/file-vtUXljmgeT.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6627defe1bee2d183948c09a/file-vtUXljmgeT]
+
+You can show your form to contacts based on their subscription status or
+presence/absence on a list, segment, or tag:
+
+. *Show to all visitors* - Form will appear to any website visitor
+. *Show to any existing contact* - Form will appear to any website
+visitor who is subscribed to your email or SMS channels
+. *Show to email subscribers only* - Form will appear to any website
+visitor who is subscribed to your email channel
+. *Show to SMS subscribers only* - Form will appear to any website
+visitor who is subscribed to your SMS channel
+. *Show to contact based on a list, segment, or tag* - Form will appear
+to any website visitor who is or is not on the selected list, meets or
+does not meet the criteria of the selected segment, or has or does not
+have the selected tag applied to their contact profile
+. *Don't show to existing Sendlane Contacts* - Form will appear to any
+website visitor who is NOT subscribed to your email or SMS channels
+
+[[visitor-cookie-status]]
+===== ⚠️ Contacts must meet the above criteria _and_ be cookied in order to see the form
+
+For conditions 2-5, contacts must both meet the selected criteria and be
+cookied for the form to display. Contacts are cookied when they are
+opted into your content, and have received an email from you, and have
+clicked on a link in an email from you.
+
+If contacts meet the conditions but have cleared their cookies without
+being cookied again before visiting the website, they will not see the
+form.
+
+[[segment-refresh-rates]]
+===== ⚠️ Segment re-processing times affect form visibility
+
+Contacts' presence or absence on a segment can depend on the segment's
+last processing time. The first page of segments plus any segments in
+the "send to" section of a Campaign sent in the past three months are
+re-processed when any user logs in to your Sendlane account.
+
+For example, let's say you want to use a purchasers segment to exclude
+existing purchasers from seeing your form because it contains a coupon.
+The existing purchasers segment processes when you log into your
+Sendlane account at noon. Your contact Jimmy, who has never made a
+purchase, visits your site at 12:05 and sees the form containing a
+coupon. Jimmy completes a purchase at 12:15 and can still see the coupon
+form because, even though he just completed a purchase, the segment
+hasn't re-processed since noon.
+
+==== Frequency
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcee6093e735297b4ecbcd/file-Axgidaq5uZ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcee6093e735297b4ecbcd/file-Axgidaq5uZ]
+
+* Show on every page - Display the form on every page load for your
+website. See the list below for scenarios about the form's reappearance
+(If website visitors close the form with the close button or submit the
+form, they will see the form again 3 days after clicking the close
+button or submitting the form. If website visitors click outside the
+form to dismiss it, they will see the form the next time they load a
+page on the website.)
+* Show once per visitor session - Display the form only on someone’s
+first visit to your website (If website visitors close the form with the
+close button, submit the form, click outside the form to dismiss it, or
+clear their cookies, they will see the form the next time they visit the
+website)
+* Show after X page(s) - Display the form every specified number of page
+loads on your website (If website visitors close the form with the close
+button or submit the form, they will see the form again 3 days after
+clicking the close button or submitting the form. If website visitors
+click outside the form to dismiss it, they will see the form the next
+time they load as many pages as specified in the frequency setting.)
+
+==== Device
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcee341afd880d112b7f13/file-3Y9OApmsSp.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcee341afd880d112b7f13/file-3Y9OApmsSp]
+
+When you created your form, you selected whether you wanted your form to
+display on desktop, mobile, or both. To make a new selection, click the
+icon of the device configuration you want for your form.
+
+==== Targeting
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcef291c2f8d3d7ebfd531/file-2TmnMst6Do.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcef291c2f8d3d7ebfd531/file-2TmnMst6Do]
+
+Targeting options use OR logic, meaning just one of the conditions must
+be met for the form to display.
+
+* Show on specific URLs - Click the checkbox to display your form only
+on specified URLs
+. Click Add URL
+. Select Exact or Contains from the dropdown
+.. Exact - enter the exact URL to display the form on (e.g.
+https://www.sendlane.com/blog/engaged-sending-changes-2024)
+.. Contains - enter a word that the URL must contain in order to display
+the form on (e.g. `+blog+`)
+* Don’t show on specific URLs - Click the checkbox to NOT display your
+form on specified URLs
+. Click Add URL
+. Select Exact or Contains from the dropdown
+.. Exact - enter the exact URL to NOT display the form on (e.g.
+https://www.sendlane.com/blog/engaged-sending-changes-2024)
+.. Contains - enter a word that the URL must NOT contain in order to
+display the form (e.g. `+blog+`)
+
+==== Location
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcf04893e735297b4ecbd0/file-sX4cb1ZyY3.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dcf04893e735297b4ecbd0/file-sX4cb1ZyY3]
+
+Location options use OR logic, meaning just one of the conditions must
+be met for the form to display.
+
+* Show on specific locations - Click the checkbox and select countries
+(determined by visitor IP address) to display your form in
+* Don’t show on specific locations - Click the checkbox and select
+countries (determined by visitor IP address) to NOT display your form in
+
+link:#top[Back to top]
+
+'''''

@@ -1,0 +1,121 @@
+==== Overview
+
+Sendlane’s Beacon tracking pixel allows you to follow your Contacts
+through their entire customer journey, from pages viewed to purchases
+made, even if you don't use a deep data eCommerce integration!
+
+Read on to learn how to install general tracking on your Shopify store
+and start collecting valuable customer journey data.
+
+==== In this guide
+
+* link:#copy[Copy the Beacon general tracking code]
+* link:#add-to-shopify[Add Beacon general tracking code to Shopify]
+* link:#check-installation[Test Beacon installation]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Make sure you have
+https://help.shopify.com/en/manual/shopify-plus/users/tools-admin[admin
+access] to your Shopify store
+
+[[what-is-beacon]]
+=== How Does the Beacon Pixel Work?
+
+Sendlane’s Beacon tracking pixel collects information about your
+Contacts' pageview and purchase activity by cookie-ing them.
+
+For the pixel to begin tracking, Contacts must be cookied. Contacts are
+cookied when they:
+
+. Opt into your emails, and
+. Open an email from you, and
+. Click a link in an email from you
+
+OR subscribe to your account via a
+https://help.sendlane.com/article/634-getting-started-with-sendlane-forms[Sendlane
+Form].
+
+[[notes]]
+===== ⚠️ The Beacon tracking pixel cannot track visits from anonymous visitors or incognito browsers
+
+If the Beacon tracking pixel is blocked, Contacts will not be tracked in
+Beacon reporting or be sent through Automations such as browse and
+checkout abandonment. Contacts browsing using the following or other
+private browsing methods will not be tracked:
+
+* Safari private browsing on
+https://support.apple.com/guide/iphone/browse-the-web-privately-iphb01fc3c85[iOS]
+and
+https://support.apple.com/guide/safari/prevent-cross-site-tracking-sfri40732/mac[macOS]
+* Chrome Incognito browsing on
+https://support.google.com/chrome/answer/95464?hl=en&co=GENIE.Platform%3DDesktop[iOS&#44;
+Android&#44; and desktop]
+* Firefox private browsing on
+https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history[iOS&#44;
+Android&#44; and desktop]
+
+[[reporting-24-hours]]
+===== ⚠️ Beacon reporting can take up to 24 hours to populate accurately
+
+Once tracking begins, please allow up to 24 hours for reporting to
+populate accurately
+
+'''''
+
+1::
+  . Click *Account*
+  . Click *Beacon*
+  . Click *Get Beacon Code*
+  . Click *Copy code*
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63fd58830064af3c7159e6bb/file-qM2Qf33qfh.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63fd58830064af3c7159e6bb/file-qM2Qf33qfh]
+
+2::
+  . Log in to Shopify
+  . Click *Online Store*
+  . Click the *three dot menu* next to your active theme 
+  . Click *Edit Code*
+  . Search for `+header.liquid+`
+  . Click into the `+header.liquid file+`
+  . Click into line one > Press Enter > Press arrow up or click into
+  line one > Paste your Beacon code on the first line of the
+  `+header.liquid+`
+  fileimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/662bd317e66450147a8e5de3/file-ch3dXzsWwI.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/662bd317e66450147a8e5de3/file-ch3dXzsWwI]
+  . Click *Save*
+
+3::
+  Once you've saved your Beacon code inside your Shopify theme's header
+  file, check that Beacon is firing correctly by inspecting your
+  website. This process assumes you are using Chrome, which is the most
+  compatible browser for Sendlane:
+  +
+  . Copy the *event ID* from your https://app.sendlane.com/beacon[Beacon
+  installation
+  code]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6449ae92d50b2033bd2417bb/file-jteNIYEo9J.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6449ae92d50b2033bd2417bb/file-jteNIYEo9J]
+  . Open your *Shopify store*
+  . *Right click* anywhere on the page
+  . Click *Inspect*
+  . Click into the Elements tab
+  . Type *Command/Control + F* to open the finder
+  . *Paste the* *event ID* from your Beacon code
+  +
+  If your event ID is highlighted, Beacon is installed correctly! If
+  your event ID was not found, try installing Beacon again and reach out
+  to your Customer Success Manager or Sendlane's 24/7 Product Support
+  team for next steps.
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6449b196f3d5b34208a7f21e/file-nIpXIBsZD1.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6449b196f3d5b34208a7f21e/file-nIpXIBsZD1]
+
+Beacon is now equipped to track site visits, conversions, and events on
+your Shopify website and the information will be available inside of
+your Sendlane account, within each contact profile!
+
+[[addl]]
+=== Additional Resources
+
+* https://www.sendlane.com/blog/sendlane-beacon-website-tracking[Sendlane
+Beacon: 5 Best Practices for Website Tracking]
+* https://www.sendlane.com/blog/post-purchase-upsells[How Shopify Stores
+Boost Their AOV with Post-purchase Upsells]

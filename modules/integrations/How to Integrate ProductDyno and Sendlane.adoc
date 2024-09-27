@@ -1,0 +1,99 @@
+https://productdyno.com/[ProductDyno] is a nine-in-one selling platform
+allowing you to perform all of the actions required to properly sell a
+product or service from a single platform. 
+
+By integrating ProductDyno with Sendlane, product purchasers can be
+funneled directly to your desired Sendlane list!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+https://productdyno.com/[active account with ProductDyno].
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_* → *_Developer_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so ProductDyno knows where to place
+your new leads and contacts!
+
+'''''
+
+=== Connecting ProductDyno and Sendlane
+
+. https://app.productdyno.com/admin/login[Login] to your ProductDyno
+Account
+. On the left hand side, click *_Global Integrations_* and then choose
+*_Marketing Emails_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5319440428631e94f95756/file-JjbeLOtg3Y.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5319440428631e94f95756/file-JjbeLOtg3Y]
+. Click *_Add Marketing Email Integration_* and choose Sendlane from the
+list
+. Choose a nickname for your integration, enter your API Key, Hash Key
+and Sendlane Domain and click *_Save_*
+
+Your integration is now complete!
+
+'''''
+
+=== Next Steps
+
+Now that your Sendlane account is connected, you’ll need to
+https://docs.promotelabs.com/article/753-what-exactly-does-productdyno-do#setup[set
+up your product] within ProductDyno. 
+
+As you finalize your product, make sure to choose Sendlane under the
+Integrations settings for the product! That's where you'll select the
+Sendlane list you would like new contacts to be added to.  
+
+Once you do so, all contact information collected after a purchase will
+be automatically funneled directly to your chosen list in Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to ProductDyno, so we're only able to provide
+limited troubleshooting support. However, if you  _do_ need help,
+the ProductDyno team is just a few clicks away!
+
+* Visit
+https://productdyno.com/productdyno-sendlane-integration/[ProductDyno's documentation
+on Sendlane]
+* Connect with
+https://docs.promotelabs.com/article/409-contact-us[ProductDyno's support
+team]
+
+'''''
+
+Additional ProductDyno Resources
+
+https://productdyno.com/[Sign up for ProductDyno] |
+https://docs.promotelabs.com/category/747-productdyno[Knowledge Base]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/podcasts/how-to-maximize-your-ecommerce-store-sales-with-email-marketing-006[Marketing
+Automation Hustle Podcast: How to Maximize Your eCommerce Store Sales
+with Email Marketing]
+* https://www.sendlane.com/blog/first-impression-that-drives-more-sales[How
+To Make a Great First Impression That Drive More Sales]
+* https://www.sendlane.com/blog/order-confirmation-emails[6 Tips for
+Generating More Sales and User Engagement From Order Confirmation
+Emails]
+
+'''''
+
+=== https://docs.promotelabs.com/[]TL;DR
+
+https://app.productdyno.com/admin/login[Login] → _Global
+Integrations_ → _Marketing Emails_ → _Add Marketing Email
+Integration_ → Sendlane → Choose nickname → Enter API Key, Hash Key and
+Sendlane subdomain → _Save_
+
+__

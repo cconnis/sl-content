@@ -1,0 +1,329 @@
+[[top]]
+==== Overview
+
+See report and data descriptions below for information on reports
+available in the report center. Check out How to download a report from
+the report center for instructions on how to pull and download reports.
+
+==== In this guide
+
+* link:#available[Available reports]
+* link:#data[Report data]
+* link:#faq[FAQ]
+
+'''''
+
+[[available]]
+=== Available reports
+
+* link:#email-campaign[Email Campaign] - performance and deliverability
+data for email campaigns
+* link:#email-automation[Email Automation] - performance and
+deliverability data for Automation emails
+* link:#sms-campaign[SMS Campaign] - performance and deliverability data
+for SMS campaigns
+* link:#sms-automation[SMS Automation] - performance and deliverability
+data for Automation SMS messages
+* link:#email-sms-performance[Email and SMS Performance] - combined
+performance and deliverability data for email and SMS campaigns and
+Automation messages
+* link:#revenue[Revenue] - Attributed revenue across email and SMS
+* link:#subscribers[Subscribers] - Audience growth data
+* link:#forms[Forms] - Forms performance data
+
+[[cache]]
+===== ⚠️ Report center data is not real time
+
+Report center reports rely on a cached copy of the Sendlane database to
+generate reports quickly, typically in under a minute or so. Cached
+versions of reports ensure that reports can be generated and downloaded
+quickly but might result in an older snapshot of your data. The
+information in your report may be between one and four hours behind real
+time.
+
+[[rate-metrics]]
+===== ⚠️ Rate metrics are percentages but may not be automatically recognized as such by your spreadsheet software
+
+Metrics with `+rate+` in their name are percentages. If a `+rate+`
+metric looks suspiciously low on your report export, ensure the column
+is set to percentage
+(https://support.microsoft.com/en-us/office/quick-start-format-numbers-in-a-worksheet-c9fba2a2-7015-4fa5-b4e6-a29cb679e406#:~:text=On%20the%20Home%20tab%2C%20in,then%20adjust%20settings%2C%20if%20necessary.[Excel],
+https://support.google.com/docs/answer/56470?hl=en&co=GENIE.Platform%3DDesktop[Google
+Sheets]).
+
+[[ltv-returns]]
+===== ⚠️ Returned and canceled orders are included in revenue metrics
+
+'''''
+
+[[data]]
+=== Report data
+
+==== Email Campaign
+
+Use the Email Campaign report to see performance and deliverability data
+for email campaigns
+
+[cols=",",]
+|===
+|*Field* |*Definition*
+|channel |Email
+|scheduled_date |Date message was sent on
+|scheduled_time |Time message was sent at
+|day_of_week |Day of the week the message was sent on
+|title |Name of Campaign
+|campaign_id |ID of campaign
+|is_automation |Yes for Automation emails, No for Campaign emails
+|automation_id |ID of Automation
+|automation_name |Name of Automation
+|subject |Email subject line
+|preheader_text |Email preheader text
+|===
+
+link:#top[Back to top]
+
+'''''
+
+==== Email Automation
+
+Use the Email Automation report to see performance and deliverability
+data for automation emails. Reports in the report center do not capture
+data about Automation or Automation message node activation status.
+
+[cols="",]
+|===
+|*Field*
+|channel
+|title
+|campaign_id
+|is_automation
+|automation_id
+|automation_name
+|subject
+|preheader_text
+|total_revenue
+|total_orders
+|order_rate
+|average_order_value
+|sent
+|total_unsubscribed
+|unsubscribe_rate
+|total_resubscribed
+|resubscribe_rate
+|opens
+|open_rate
+|unique_opens
+|unique_open_rate
+|clicks
+|click_rate
+|unique_clicks
+|unique_click_rate
+|bounce
+|bounce_rate
+|complaints
+|complaint_rate
+|min_report_date
+|max_report_date
+|===
+
+link:#top[Back to top]
+
+'''''
+
+==== SMS Campaign
+
+Use the SMS Campaign report to see performance and deliverability data
+for SMS campaigns.
+
+[cols="",]
+|===
+|*Field*
+|channel
+|scheduled_date
+|scheduled_time
+|day_of_week
+|title
+|campaign_id
+|is_automation
+|automation_id
+|automation_name
+|total_revenue
+|total_orders
+|order_rate
+|average_order_value
+|sent
+|total_unsubscribed
+|unsubscribe_rate
+|total_resubscribed
+|resubscribe_rate
+|clicks
+|click_rate
+|unique_clicks
+|unique_click_rate
+|min_report_date
+|max_report_date
+|reply
+|reply_rate
+|failed
+|failed_rate
+|credits_total
+|delivered
+|delivered_rate
+|===
+
+link:#top[Back to top]
+
+'''''
+
+==== SMS Automation
+
+Use the SMS Automation report to see performance and deliverability data
+for automation SMS. Reports in the report center do not capture data
+about Automation or Automation message node activation status.
+
+[cols="",]
+|===
+|*Field*
+|channel
+|title
+|campaign_id
+|is_automation
+|automation_id
+|automation_name
+|total_revenue
+|total_orders
+|order_rate
+|average_order_value
+|sent
+|total_unsubscribed
+|unsubscribe_rate
+|total_resubscribed
+|resubscribe_rate
+|clicks
+|click_rate
+|unique_clicks
+|unique_click_rate
+|min_report_date
+|max_report_date
+|reply
+|reply_rate
+|failed
+|failed_rate
+|credits_total
+|delivered
+|delivered_rate
+|===
+
+link:#top[Back to top]
+
+'''''
+
+[[email-sms-performance]]
+==== Email and SMS Performance
+
+Use the Email and SMS Performance report to see combined performance and
+deliverability data for email and SMS campaigns and Automation
+messages. Reports in the report center do not capture data about
+Automation or Automation message node activation status.
+
+[cols="",]
+|===
+|*Field*
+|channel
+|scheduled_date
+|scheduled_time
+|day_of_week
+|title
+|campaign_id
+|is_automation
+|automation_id
+|automation_name
+|total_revenue
+|total_orders
+|order_rate
+|average_order_value
+|sent
+|total_unsubscribed
+|unsubscribe_rate
+|total_resubscribed
+|resubscribe_rate
+|clicks
+|click_rate
+|unique_clicks
+|unique_click_rate
+|min_report_date
+|max_report_date
+|===
+
+link:#top[Back to top]
+
+'''''
+
+==== Revenue
+
+Use the Revenue report to see Attributed revenue across email and SMS
+
+[cols="",]
+|===
+|*Field*
+|email_campaigns
+|email_automations
+|SMS_campaigns
+|SMS_automations
+|total_orders
+|total_revenue
+|===
+
+link:#top[Back to top]
+
+'''''
+
+==== Subscribers
+
+Use the Subscribers report to see audience growth data
+
+[cols="",]
+|===
+|*Field*
+|email_subscribes
+|email_unsubscribes_by_cohort
+|phone_subscribes
+|phone_unsubscribes_by_cohort
+|total_email_contacts
+|total_phone_contacts
+|===
+
+link:#top[Back to top]
+
+'''''
+
+==== Forms
+
+Use the Forms report to see forms performance data
+
+[cols="",]
+|===
+|*Field*
+|form_id
+|all_time_impressions
+|clicks
+|all_time_click_rate
+|email_contacts
+|all_time_email_conversion_rate
+|sms_contacts
+|all_time_sms_conversion_rate
+|LTV
+|conversion_revenue
+|start_report_date
+|end_report_date
+|===
+
+link:#top[Back to top]
+
+=== FAQ
+
+[[automation-activation]]
+====== How can I tell whether an Automation or Automation message node was active during the reporting period?
+
+Reports in the report center do not capture data about Automation or
+Automation message node activation status.

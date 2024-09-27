@@ -1,0 +1,81 @@
+https://app.joinbytext.com/register/starter[Join By Text] is a platform
+that allows people to quickly and easily sign up for your email list
+from their phones.
+
+Integrating Join By Text and Sendlane enables you to funnel collected
+emails directly to your Lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+https://app.joinbytext.com/register/starter[active Join By Text account]
+with a keyword created.
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_* → _*API*._
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so LiveChat knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting Join By Text and Sendlane
+
+. From your home page in Join By Text, select *_setup an email
+integration now_* +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdca3060428634b855945ee/file-JHYolM0QHF.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdca3060428634b855945ee/file-JHYolM0QHF]
+. Select *_Sendlane_* from the list of
+integrationsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdca4e82c7d3a6d82bd8564/file-Drbb4o2da5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdca4e82c7d3a6d82bd8564/file-Drbb4o2da5]
+. Next, enter your Subdomain, API Key, Hash Key, and List ID # and click
+*_Connect to Sendlane_* +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdca6812c7d3a6d82bd8568/file-ji8IhRa3Lo.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdca6812c7d3a6d82bd8568/file-ji8IhRa3Lo]
+. You can now edit your Welcome response and Thank you response +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdca9032c7d3a6d82bd856e/file-8LTWj1kGLW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdca9032c7d3a6d82bd856e/file-8LTWj1kGLW]
+. Click *Update responses*
+
+Your Integration is now complete! 
+
+Emails collected by Join By Text will now be funneled directly to your
+chosen List in Sendlane! 
+
+'''''
+
+=== *Troubleshooting*
+
+This integration is native to Join By Text, so we're only able to
+provide limited troubleshooting support. However, if you _do_ need help,
+the Join By Text team is just a few clicks away!
+
+* mailto:mailto:support@joinbytext.com[Connect] with the Join By Text
+team
+* Visit the https://www.joinbytext.com/faqs/[Join By Text FAQs]
+
+'''''
+
+Additional Join By Text Resources
+
+https://app.joinbytext.com/register/starter[Sign up for Join By Text] |
+https://www.joinbytext.com/contact-us/[Contact Form] |
+https://www.joinbytext.com/terms-of-use/[Terms of Use] |
+https://app.joinbytext.com/register/starter[Get Started]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-join-by-text[Sendlane
++ Join By Text - Grow Your Email List Offline by SMS]
+* https://www.sendlane.com/blog-posts/sms-marketing-business-thrive[How
+SMS Marketing Can Help YourBusiness Thrive ]
+
+'''''
+
+TL;DR
+
+Join by Text home page →  _Setup an email integration now_ → Sendlane →
+Enter Sendlane API Key, Hash Key, Subdomain & List ID# → __Connect to
+Sendlane** **__→ Edit responses → Update responses

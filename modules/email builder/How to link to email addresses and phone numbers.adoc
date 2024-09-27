@@ -1,0 +1,57 @@
+[[top]]
+==== Overview
+
+You can create hyperlinks and buttons in any email to open contacts'
+email, SMS, or phone apps, pre-populated with an email address or phone
+number. Read on to learn how to create email, phone, and SMS links.
+
+==== In this guide
+
+* link:email[Link to a new draft email with a pre-populated To field]
+* link:phone[Link to a phone app ready to dial a phone number]
+* link:sms[Link to a new draft SMS message with a pre-populated To
+field]
+
+[[variations]]
+===== ⚠️ Phone number links may not be supported for all contacts
+
+Some devices, inbox provider apps, and specific combinations of devices
+and inbox provider apps will not render links designed to open an SMS or
+phone app.
+
+If you experience an issue with SMS or phone links, try to recreate it
+using the same type of device and the same version of the same app. If
+the link does not work in the replicated environment, it is likely that
+the device and/or app combination does not support SMS or links.
+
+'''''
+
+[[email]]
+=== Link to a new draft email with a pre-populated To field
+
+To insert a link to an email address in a campaign or automation email:
+
+. Create a button or highlight text to be hyperlinked
+. In the URL field, enter the email address you want the contact's draft
+email To field to be pre-populated with (no `+mailto:+` needed)
+. Press enter to save your link
+
+[[sms]]
+=== Link to a new draft SMS message with a pre-populated To field
+
+To insert a link to a new draft SMS message with a pre-populated To
+field, follow the instructions
+https://help.sendlane.com/article/472-how-to-collect-sms-consent-via-email#sdg[here]
+but do not include the `+VAR_SMS_JOIN+` tag unless you are creating a
+link meant to be used by contacts to confirm their subscription to your
+SMS messages.
+
+[[phone]]
+=== Link to a phone app ready to dial a phone number
+
+To insert a link to a phone app ready to dial a phone number:
+
+. Create a button or highlight text to be hyperlinked
+. In the URL field, enter the phone number you want the contact's phone
+app to be pre-populated with
+. Press enter to save your link

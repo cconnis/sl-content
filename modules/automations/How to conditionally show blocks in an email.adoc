@@ -1,0 +1,68 @@
+[[top]]
+==== Overview
+
+Avoid creating multiple emails with slight differences by using
+templating syntax to show blocks conditionally based on contact
+attributes! Read on to learn how to show or hide email blocks
+conditionally.
+
+==== In this guide
+
+* link:#custom[Show and hide blocks based on custom fields]
+
+==== Prerequisites
+
+Conditionally showing or hiding content based on
+https://help.sendlane.com/article/331-custom-fields[custom fields]
+requires enough contacts to have specified data in their profiles for
+that custom field.
+
+'''''
+
+[[custom]]
+=== Show email blocks based on custom field data
+
+You can conditionally show email blocks with just two snippets of
+templating syntax:
+
+. *Opening if statement* - Tells the email builder to check if the
+condition in the if statement is true (the contact's profile contains
+the specified data for the specified custom field). +
+ +
+If the if statement is true, the blocks between the if statement and the
+endif tag will be displayed. If the if statement is false (the contact's
+profile does not contain the specified data for the specified custom
+field), the content between the if statement and the endif tag will not
+be displayed.
+. *endif tag* - Tells the email builder the if statement has ended
+
+The example in the screenshot below shows a simple if statement in
+action. Contacts whose profiles have the favorite color field populated
+with red will see all blocks between the text blocks containing
+templating syntax.
+
+Each separate email builder block is surrounded by a gray box and
+identified with a number in the screenshot below:
+
+. A text block containing the opening if statement
+`+{% if contact.custom('Favorite Color') == "red" %}+`
+. A text block containing copy intended for recipients whose
+`+Favorite Color+` custom field is set to `+red+`
+. An image block containing an image intended for recipients whose
+Favorite Primary Color custom field is set to red
+. A text block containing the endif tag `+{%-endif-%}+`
+. A text block containing copy intended for all recipients
+. An image block containing an image intended for all recipients
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66be2d4b6eb51e63b8f9f027/file-WIgj4qalth.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66be2d4b6eb51e63b8f9f027/file-WIgj4qalth]
+
+Contacts whose `+Favorite Color+` custom field is set to `+red+` will
+see the following in their inbox:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66bba43d493fd0116031f4cb/file-enAwjl69kS.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66bba43d493fd0116031f4cb/file-enAwjl69kS]
+
+Contacts whose `+Favorite Color+` custom field is NOT set to `+red+`
+(i.e., it is null or set to another color) will see the following in
+their inbox:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66bba3db067e9c553dc82bd5/file-960r7kMevo.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66bba3db067e9c553dc82bd5/file-960r7kMevo]

@@ -1,0 +1,57 @@
+The General Data Protection Regulation or “GDPR” is a data privacy
+regulation that protects the citizens of the European Union (EU). 
+
+This regulation outlines new procedures for how you collect, store, and
+use personal data. It also gives your contacts the right to access,
+protect, and modify the data that was collected about them.
+
+You can learn more about the GDPR and its specifics by visiting their
+https://ec.europa.eu/info/law/law-topic/data-protection_en[website right
+here].
+
+'''''
+
+=== How Sendlane is in Compliance
+
+. If you’re in any of the countries in the European Union and visit the
+https://sendlane.com/[Sendlane] website, you’ll notice a little bar that
+pops up that asks you to consent and agree that we’ll be dropping
+cookies for our tracking and marketing efforts.
+. You have the ability to manage and delete your data, as you need.
+. We’ve updated our https://sendlane.com/privacy[Privacy Policy] and
+https://sendlane.com/terms[Terms of Service] to reflect the necessary
+actions required by GDPR. This means we’ve laid out a clear explanation,
+along with internal data processes and product capabilities to adjust
+accordingly.
+
+You can learn more about GDPR and Sendlane, and how to make sure your
+email marketing is compliant
+https://blog.sendlane.com/gdpr-2018-sendlane/[right here on the Sendlane
+blog]!
+
+'''''
+
+=== Have Questions or Concerns?
+
+For more information on your responsibilities as a _sender_, you can
+visit the
+https://ec.europa.eu/info/law/law-topic/data-protection_en[GDPR website
+right here] or reach out to our support team. 
+
+To request assistance as a _recipient_ please email
+support@sendlane.com. If you're having trouble with a specific sender,
+please forward a copy of the message you received so we can investigate.
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/gdpr-2018-sendlane[GDPR - What it
+Is and How Sendlane is Preparing]
+
+'''''
+
+=== TL;DR
+
+https://ec.europa.eu/info/law/law-topic/data-protection_en[GDPR] (aka
+General Data Protection Regulation) establishes privacy regulations and
+procedures that protect the citizens of the European Union (EU).
+Sendlane is fully GDPR compliant.

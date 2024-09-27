@@ -1,0 +1,274 @@
+[[top]]
+==== Overview
+
+Sendlane Forms is a free and powerful solution to growing email and SMS
+lists with Sendlane that includes advanced targeting and design options.
+Read on to learn how to build your first Sendlane form!
+
+==== In this guide
+
+* link:#identify[Identify your form’s goal]
+* link:#create[Create a form]
+* link:#configure[Configure your form’s audience&#44; opt-in&#44; and
+display settings]
+* link:#design[Design your form]
+* link:#activate[Activate and install your form]
+* link:#next[Next steps]
+
+[[bgs]]
+===== 🚦 Before getting started
+
+You must
+https://help.sendlane.com/article/417-how-to-use-beacon-with-shopify[install
+Beacon] in your store before installing forms in order for form
+submitters to be
+https://help.sendlane.com/article/72-beacon#what-is-beacon[cookied] upon
+form submission
+
+[[identify]]
+=== Identify your form’s goal
+
+Before getting started with your first form, develop a goal for your
+form and a plan for how to achieve it. Forms can collect contact
+information from website visitors for the first time or be designed to
+collect additional information from your existing Contacts.
+
+Keep forms as simple as possible to reduce barriers to completion for
+your website visitors. Forms that have a busy design or too many fields
+may discourage website visitors from taking the time to give you their
+information.
+
+[[create]]
+=== 1. Create a Form
+
+When you create a form, you’ll be asked to give it a name that will be
+visible only on the Forms page, select a form type, specify which
+devices you want your form to appear on, and select a layout.
+
+In this guide, we’ll create a basic sign up form from start to finish.
+
+To create a form:
+
+. Click the *Forms* icon
+. Click *Create Form*
+. Enter a descriptive *name* for your form
+. Select a *form type** - Pop Up forms are overlaid on your website’s
+content, while inline forms are embedded in your form’s content
+. Select the *device types* you want your form to appear on
+. Select a *layout* for your form* - The regular layout displays your
+form in the middle of the screen, and the partial layout displays the
+form on the bottom section of the screen
+. Click *Next*
+
+*Learn more about form types and layouts in the
+https://help.sendlane.com/article/625-understanding-sendlane-forms-design-and-customization-options#new[new
+form options section of Understanding Sendlane Forms design and
+customization options].
+
+Want to create a full page form that completely fills the desktop or
+mobile screen? See the
+https://help.sendlane.com/article/625-understanding-sendlane-forms-design-and-customization-options#global-form-design:~:text=Fullscreen%20%2D%20Check%20the%20box%20to%20make%20your%20form%20take%20up%20the%20entire%20screen%20on%20desktop%20and%20mobile[Global
+Form Design Styles]
+section!image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1c981c2f8d3d7ebfd56b/file-BoLEkeQ2GC.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1c981c2f8d3d7ebfd56b/file-BoLEkeQ2GC]
+
+[[configure]]
+=== 2. Configure your form’s audience, opt-in, and display settings
+
+The first page of the Sendlane Forms builder is where you’ll determine
+which Lists or Tags you want Contacts to be added to when they submit
+your form, opt-in settings for your form, and what conditions should be
+met to trigger your form to appear on your website.
+
+==== Audience
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65df722b0f2a4c04f24d9c0d/file-ZOHt88yeMi.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65df722b0f2a4c04f24d9c0d/file-ZOHt88yeMi]
+
+Use the Subscription List and Tags dropdowns to select Lists you want
+Contacts to be added to or Tags you want applied to Contacts’ profiles
+when they submit your form.
+
+Learn more about form Audience settings in the
+https://help.sendlane.com/article/624-understanding-sendlane-forms-audience-opt-in-and-display-logic-settings#audience[audience
+section of Understanding Sendlane Forms audience&#44; opt-in&#44; and
+display logic settings].
+
+We’ll select our Newsletter List for new Contacts and no Tags for our
+example sign up form since this form is general purpose.
+
+[[opt]]
+==== Opt-In Settings
+
+Email and SMS double opt-in settings are a great way to ensure that the
+people filling out your form want to receive your content.
+
+Turn on email and SMS double opt-in by clicking the checkboxes:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1cb893e735297b4ecc02/file-aS06gN0G4m.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1cb893e735297b4ecc02/file-aS06gN0G4m]
+
+Learn more about form opt-in settings in the
+https://help.sendlane.com/article/624-understanding-sendlane-forms-audience-opt-in-and-display-logic-settings#opt-in[opt-in
+settings section of Understanding Sendlane Forms audience&#44;
+opt-in&#44; and display logic settings].
+
+For our example sign up form, we’ll turn on both email and SMS double
+opt-in.
+
+==== Displayimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1cca53788e77b07d4593/file-RgJqaHzH0l.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1cca53788e77b07d4593/file-RgJqaHzH0l]
+
+Display options contain trigger, display, and targeting options. These
+settings determine who sees your form and when they see it.
+
+Learn more about form display settings in the
+https://help.sendlane.com/article/624-understanding-sendlane-forms-audience-opt-in-and-display-logic-settings#display-targeting[display
+targeting section of Understanding Sendlane Forms audience&#44;
+opt-in&#44; and display logic settings]].
+
+For our example sign up form, we’ll leave *Show* options set to the
+default of On any selected condition.
+
+Because this is a general purpose sign up form where we want to collect
+as many interested website visitors as possible, the only *Condition*
+we’ll select is Show X seconds after page load and set the seconds to 1.
+
+We’ll also leave our *Device* selection as the Desktop & Mobile layout
+we selected when we created our form.
+
+We’ll set the *frequency* to Show on every visit so that website
+visitors have multiple chances to complete the form.
+
+We will not select any *targeting* or *location* options because we want
+our form to appear in as many places as possible.
+
+When you’re satisfied with your form’s audience, opt-in, and display
+settings, click *Design* to move on to designing your form’s look and
+feel!
+
+[[design]]
+=== 3. Design your form
+
+The second page of the Sendlane Forms builder is where you’ll determine
+the number of pages (steps) your form has, its styling, and its
+elements.
+
+[[arrange]]
+==== Arrange pages
+
+Let’s start with our form pages. Since this is an initial sign up form,
+we’ll collect website visitors’ email addresses and phone numbers and
+add a final confirmation page.
+
+Use the pages bar in the top middle of the form builder to add new
+pages, rearrange pages, or delete pages.
+
+Learn more about form pages in the
+https://help.sendlane.com/article/625-understanding-sendlane-forms-design-and-customization-options#form-pages[pages
+section of Understanding Sendlane Forms design and customization
+options].
+
+Want to add a teaser to your form? Check out
+https://help.sendlane.com/article/696-how-to-create-a-form-teaser?[How
+to create a form teaser].
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1ce91c2f8d3d7ebfd56c/file-151K2XosOv.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1ce91c2f8d3d7ebfd56c/file-151K2XosOv]
+
+[[global]]
+==== Set global styles
+
+Although each element on your form can be individually styled, the
+Global Styles tab allows you to set default styling for all elements at
+once so you don’t need to adjust each individual piece of your form’s
+styles.
+
+Head to the Global Styles tab of the form builder and adjust your form’s
+style settings to match your brand. Global Styles will automatically be
+applied to any new elements you add to your form.
+
+Learn more about global styles in the
+https://help.sendlane.com/article/625-understanding-sendlane-forms-design-and-customization-options#global-form-styles[global
+form styles section of Understanding Sendlane Forms design and
+customization options].
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1cfb1afd880d112b7f4d/file-UFLkcexGUk.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1cfb1afd880d112b7f4d/file-UFLkcexGUk]
+
+==== Adjust content
+
+You can add images, text, fields, and buttons to your form on the
+Content tab of the form builder.
+
+Learn more about content blocks in
+https://help.sendlane.com/article/622-understanding-sendlane-forms-content-options[Understanding
+Sendlane Forms content options] and design options in
+https://help.sendlane.com/article/625-understanding-sendlane-forms-design-and-customization-options[Understanding
+Sendlane Forms design and customization options].
+
+First, we’ll replace the placeholder logo by clicking the image >
+Replace:
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1d121afd880d112b7f4e/file-xAnW2CfXlu.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1d121afd880d112b7f4e/file-xAnW2CfXlu]
+
+Next, we’ll edit the placeholder text elements by clicking the element
+and making our desired changes, then we’ll delete a placeholder text
+element that we don’t need.
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1d6489182269183fa56b/file-vKINRudOhX.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1d6489182269183fa56b/file-vKINRudOhX]
+
+Our email page looks pretty good so far! Next, we’ll check the settings
+for our button and update its font.
+
+The button is set to Submit and go to next page, which means that when
+website visitors enter their email and click NEXT, the email address is
+sent to Sendlane. If visitors don’t complete the next page of the form,
+the email address will still be captured.
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1d981c2f8d3d7ebfd56d/file-sXmWuJSfRw.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1d981c2f8d3d7ebfd56d/file-sXmWuJSfRw]
+
+Now that our email page is ready, we’ll click the SMS and Confirmation
+pages to adjust content and styling before moving on.
+
+When you’re satisfied with your form’s pages, click *Summary* to
+activate your form!
+
+[[preferences]]
+===== 💡 Want to collect information from website visitors in the form of a questionnaire or survey with a multi-select field?
+
+Add an option selector block to your form! Learn more about option
+selectors in
+https://help.sendlane.com/article/628-how-to-collect-personal-preferences-with-sendlane-forms[How
+to collect personal preferences with Sendlane Forms].
+
+[[activate]]
+=== 4. Activate and install your form
+
+On the Summary screen you’ll select an activation option for your form
+and copy its installation code for publication on your website.
+
+Learn more about activation statuses in
+https://help.sendlane.com/article/623-understanding-sendlane-forms-statuses[Understanding
+Sendlane Forms statuses] and installation in the following guide based
+on your website provider:
+
+* https://help.sendlane.com/article/629-how-to-install-a-sendlane-form-on-a-website[How
+to install a Sendlane form on a website]
+* https://help.sendlane.com/article/630-how-to-embed-a-sendlane-form-on-shopify[How
+to install a Sendlane form on Shopify]
+* https://help.sendlane.com/article/631-how-to-install-a-sendlane-form-on-bigcommerce[How
+to install a Sendlane form on BigCommerce]
+* https://help.sendlane.com/article/632-how-to-install-a-sendlane-form-on-wordpress[How
+to install a Sendlane form on Wordpress]
+
+Our form looks great and we are ready to start collecting contact
+information, so we’ll leave our form’s activation status as the default
+Live and click Publish to publish our form! Now when we paste the form’s
+installation code where we want it to appear on our website, the form
+will be visible on the website.
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1da91afd880d112b7f4f/file-77j8vhIfJu.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65dd1da91afd880d112b7f4f/file-77j8vhIfJu]
+
+[[next]]
+=== Next steps
+
+Congratulations on creating your first Sendlane Form! Check out our
+blogs about forms for tips, strategy, and inspiration to create
+beautiful, targeted forms:.
+
+* https://www.sendlane.com/blog/website-pop-up-examples-for-websites[8
+Inspiring Website Pop-Up Examples to Boost Your Sales]
+* https://www.sendlane.com/blog/website-pop-up-messages[How to Create
+the Perfect Website Pop-Up Message: Step-by-Step]
+* https://www.sendlane.com/blog/websites-pop-up-tips[Practical Pop-Up
+Tips for Website Owners]

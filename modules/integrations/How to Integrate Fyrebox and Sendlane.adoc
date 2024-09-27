@@ -1,0 +1,82 @@
+https://www.fyrebox.com/?ref=2pLpjA8AZ[Fyrebox] is a quiz making
+platform that allows you to create lead generation quizzes to install on
+a website, landing page or blog.
+
+Integrating Fyrebox and Sendlane enables you to seamlessly funnel
+generated leads to your lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://www.fyrebox.com/?ref=2pLpjA8AZ[Fyrebox account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Fyrebox knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting Fyrebox and Sendlane
+
+. From your Fyrebox homepage, select *_Create a Quiz_*, set your initial
+preferences, and click
+*_Createimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5f3ef04286306738efc84/file-XKrjhVpi1D.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5f3ef04286306738efc84/file-XKrjhVpi1D]_*
+. You will be directed to the quiz editor. Scroll down until you see
+Integrations and select *_ADD AN
+APPLICATIONimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5f92a2c7d3a177d6ea4ce/file-0HmCNZkT9L.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5f92a2c7d3a177d6ea4ce/file-0HmCNZkT9L]_*
+. Scroll down until you reach Sendlane. After entering your Sendlane API
+Key, Hash & Subdomain,
+click *_TEST_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5f6d804286306738efc9b/file-dXxEsWfqON.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5f6d804286306738efc9b/file-dXxEsWfqON]
+. A check mark will appear next to the *_TEST_* button if inputted
+correctly. Click the *_PREVIOUS: CONTENT_* button at the bottom of the
+page
+. Scroll down again to Integrations and toggle the Sendlane logo to
+*_YES_*. This will connect your quiz to Sendlane +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5f99604286306738efca9/file-oambfwDQfW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5f99604286306738efca9/file-oambfwDQfW]
+. Select the list to which your contacts will be funneled
+
+Your integration is complete! 
+
+Leads from your quiz will automatically be added to your chosen List in
+Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+****This integration is native to Fyrebox, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Fyrebox team is just a few clicks away!
+
+* Contact the mailto:support@fyrebox.com[Fyrebox team]
+* Visit the https://www.fyrebox.guru/[Fyrebox Help Guru Page]
+
+'''''
+
+==== Additional Fyrebox Resources
+
+https://www.fyrebox.com/?ref=2pLpjA8AZ[Sign up for Fyrebox]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-fyrebox[Sendlane
++ Fyrebox - Quizzes to Generate Leads and Engage Your Audience ]
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage and Capture Leads]
+
+'''''
+
+=== TL;DR
+
+https://www.fyrebox.com/news[]Fyrebox homepage → _Create a Quiz_ → Set
+preferences → _Create_ → _Add an Application_ → Sendlane → Enter
+Sendlane API Key, Hash Key, Subdomain → _TEST_ → _PREVIOUS: CONTENT_  →
+Integrations ____→ Sendlane logo → _YES_ → Select List

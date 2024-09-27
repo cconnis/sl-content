@@ -1,0 +1,85 @@
+==== Overview
+
+Integrating Google Ads with Sendlane allows you to create targeted
+advertising campaigns for new and existing customers and custom
+audiences that allow you to launch or pause ads based on customer
+behavior.
+
+==== In This Guide
+
+* link:#connect[Grant Sendlane Access to Google Ads]
+* link:#configure[Configure Settings in Sendlane]
+* link:#connections[Sync Google Ads List and Sendlane Audience]
+* link:#disconnect[Disconnect a Google Ads Connection]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+ Integrate your https://app.sendlane.com/integrations[eCommerce
+platform] with Sendlane.
+
+ Have
+https://support.google.com/google-ads/answer/9978556[Administrative
+access] for the Google Ads account being connected to Sendlane.
+
+Review https://support.google.com/adspolicy/answer/6299717[Google's
+Customer Match policy] to ensure your business can use Google Ads.
+
+'''''
+
+[[integrate]]
+=== Integrate with Google Ads
+
+1::
+  . Head to the https://app.sendlane.com/integrations[Integrations page]
+  . https://app.sendlane.com/integrations[]Search for and click
+  on *Google Ads*
+  . ****Click *Configure*
+  . Click *Continue with Google*
+  . Log in to your Google account (your account must have
+  https://support.google.com/google-ads/answer/9978556[Administrative
+  access])
+  . Click *Allow* to grant Sendlane access to your Google Ads data
+  . Click *Continue* to return to Sendlane
+
+2::
+  Select your Google Ads account from the dropdown. If you do not see
+  your Google Ads account, make sure your account has
+  https://support.google.com/google-ads/answer/9978556[Administrative
+  access] and restart the integration process.
+
+3::
+  Google Ads and Sendlane are connected by associating a Google Ads User
+  List with a List, Tag, or Segment from your Sendlane audience. These
+  connections are 1:1, meaning you cannot connect the same Google Ads
+  User List to multiple Lists, Tags, or Segments, and vice versa.
+  Connections can take up to 48 hours to finish processing.
+  +
+   +
+  +
+  Create a Google Ads User List if your account does not already have
+  User Lists set up: +
+  +
+  . Click *Create Google Ads User List*
+  . Enter a *Name*
+  . Click *Save*
+  +
+  Sync Google and Sendlane lists: +
+  +
+  . Click *Add Sync*
+  . Select a *Google Ads User List*
+  . From the Audience dropdown, select a List, Tag, or Segment to sync
+  with the Google Ads User List
+
+link:#top[Back to top]
+
+'''''
+
+[[disconnect]]
+=== Disconnect a Google Ads Connection
+
+To disconnect your Google Ads connection, click Remove Integration:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65944ee9a55da02676abfe77/file-67mjuwFJ3J.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65944ee9a55da02676abfe77/file-67mjuwFJ3J]
+
+link:#top[Back to top]

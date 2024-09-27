@@ -1,0 +1,128 @@
+Sendlane's Beacon is automatically built into the one-click install
+BigCommerce integration, which means as soon as you install BigCommerce
+you're ready to set up a browse abandonment Automation!
+
+Browse abandonment, also known as product viewed or product abandoned,
+allows you to send messages to Contacts who have viewed specified
+products on your store's website and left without completing a
+purchase. 
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+If you installed
+https://app.sendlane.com/integrations/bigcommerce[Sendlane's BigCommerce
+integration] *before 6/13/22*, you will need to re-sync the integration
+to install the correct Beacon code. Check out our guide to
+https://help.sendlane.com/article/487-how-to-re-sync-an-integration[safely
+re-syncing integrations]!
+
+[[how]]
+===== 🙋 How Does the Beacon Pixel Work?
+
+Sendlane’s Beacon tracking pixel collects information about your
+Contacts' pageview and purchase activity. For the pixel to begin
+tracking, the viewer must opt into your marketing emails and then open
+an email from you. The Beacon tracking pixel cannot identify anonymous
+viewers.
+
+Once tracking begins, please allow up to 24 hours for reporting to
+populate accurately
+
+Follow the instructions below to set up a browse abandonment Automation
+and start winning back revenue from products viewed!
+
+1::
+  Create a new Automation, then click *Add Trigger* > *BigCommerce* >
+  *Abandoned Product Viewed*, then configure your trigger options:
+  +
+  * *Store* Select the applicable BigCommerce store
+  * *Limit Per Subscriber* Select a limit for the Automation
+  ** *No Limit* The Automation will trigger for all Contacts who meet
+  the trigger criteria
+  ** *Do not trigger when already in Automation* The Automation will
+  trigger only for Contacts who meet the trigger criteria and are not
+  already being sent through the Automation
+  ** *Once Per Day* The Automation will trigger for all Contacts who
+  meet the criteria one time in a 24 hour period, even if Contacts meet
+  the trigger criteria more than once during the 24 hour period.
+  ** *One Time Only* The Automation will trigger one time for Contacts
+  who meet the trigger criteria and will not trigger again, even if
+  Contacts meet the trigger criteria again.
+  * *Consider Abandoned After* Select a length of time the Automation
+  should wait to send an email after the Contact has viewed a product.
+  * *For Products* All products are selected by default. To only include
+  specified products, move products from the Available box to the
+  Selected box.
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62acc9311e5b41737b38f268/file-GkDdxoqF8H.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62acc9311e5b41737b38f268/file-GkDdxoqF8H]
+
+2::
+  Add a Conditional Split by clicking the *+ button* > *Conditional
+  Split*. Under *Conditions*, select *Event Tracking* and *Triggered
+  Event*. Click *Done* to save your Conditional Split!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62acce16f6341f7edc2a6407/file-AfT1TAOMQB.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62acce16f6341f7edc2a6407/file-AfT1TAOMQB] +
+
+3::
+  The BigCommerce Abandoned Cart element also pulls abandoned products
+  viewed when used with a browse abandonment Automation trigger. Only
+  one abandoned cart block is allowed per email.
+  +
+  Under the `+Yes+` node of your Conditional Split, add an email node by
+  clicking the *+ button* > *Send Message* > *Email*
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62accf6006aa97557846379d/file-AMysC1fcdF.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62accf6006aa97557846379d/file-AMysC1fcdF]
+  +
+  Include a BigCommerce Abandoned Cart element in your email by dragging
+  the element into the email body:
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62acd0941e5b41737b38f288/file-jPndiGCYTC.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62acd0941e5b41737b38f288/file-jPndiGCYTC]
+
+When you're satisfied with your browse abandonment email, activate your
+Automation by clicking *Active* in the top right corner of the
+Automation builder!
+
+===== ⏭ Next Steps
+
+Sendlane's BigCommerce integration automatically installs Sendlane's
+Beacon to track events on your BigCommerce store! Check out our
+https://help.sendlane.com/category/169-beacon[Beacon guides] to get even
+more use out of the data your account is collecting.
+
+[[addl]]
+=== Additional Resources
+
+* https://www.sendlane.com/ebooks/the-bigcommerce-experience-omnichannel-marketing-strategies-for-a-post-cookie-world[The
+BigCommerce Experience: Omnichannel Marketing Strategies for a
+Post-Cookie World]
+* https://www.sendlane.com/blog/sendlane-beacon-website-tracking[Sendlane
+Beacon: 5 Best Practices for Website Tracking]
+* https://www.sendlane.com/blog/abandoned-cart-subject-lines[Best
+Subject Lines for Abandoned Cart Emails]
+* https://www.sendlane.com/ebooks/the-definitive-guide-to-abandoned-cart-emails-for-ecommerce[The
+Definitive Guide to Abandoned Cart Emails for eCommerce]
+* https://www.sendlane.com/new-ebooks/the-digital-retailers-email-copywriting-handbook[The
+Essential Email Copywriting Handbook]
+
+=== Troubleshooting
+
+====== The abandoned cart block isn't available!
+
+The abandoned cart block may not appear in your elements sidebar for two
+common reasons:
+
+. Your eCommerce integration is not set up correctly. Review your
+eCommerce store's integration with Sendlane for possible connection
+issues.
+. You already added an abandoned cart block to your email. Only one
+abandoned cart block is allowed per email.
+
+[[not-firing]]
+====== A Contact abandoned a product view and move through the Automation!
+
+The most common reason Contacts who abandon a checkout and do not move
+through your browse abandonment Automation is that they are
+https://help.sendlane.com/article/72-beacon#notes[browsing anonymously].
+Tracking requires non-anonymous browsing in order to trigger the
+Automation.

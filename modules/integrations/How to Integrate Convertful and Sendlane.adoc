@@ -1,0 +1,89 @@
+https://convertful.com/[Convertful] is a conversion optimization
+platform that allows users to create powerful and beautiful sign-up
+forms. Users can configure these forms with their own display and
+targeting rules, resulting in increased high-quality traffic and greatly
+improved conversion rates. 
+
+With Convertful and Sendlane, you can collect lead information directly
+from Convertful forms (such as Name and Email) and add them to your
+Lists within Sendlane. You can also create custom fields to add for
+further segmentation in Sendlane. Additionally, you will be able to add
+Tags to the collected contacts.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://convertful.com/[Convertful account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Convertful knows where to place your
+new leads and contacts!
+
+*Please Note:* To add tags via API, you'll need to make sure that your
+Sendlane account is set up with single-opt in access (contact our
+https://www.sendlane.com/contact-us[24/7 support team] to set this up!)
+
+'''''
+
+=== Connecting Convertful and Sendlane
+
+. From the homepage of your Convertful account, choose the site you wish
+to integrate Sendlane
+with.image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6f2ee042863534399354a/file-GInjRqi6Wy.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6f2ee042863534399354a/file-GInjRqi6Wy]
+. Select *_Integrations_* in the top menu bar, then click *_Add
+Integration._*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6f4cf042863534399356f/file-yHpotRrh25.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6f4cf042863534399356f/file-yHpotRrh25]
+. Select
+*_Sendlane_* image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6f5010428635343993573/file-HwMeiYOHUl.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6f5010428635343993573/file-HwMeiYOHUl]
+. Fill out your Sendlane API key, Hash key and subdomain, then click
+*_Connect_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6f551042863534399357a/file-bj2KwEEvWq.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6f551042863534399357a/file-bj2KwEEvWq]
+. Select which Sendlane list you would like contacts to be added to. You
+can add tags as well for these new
+contacts.image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6f59b042863534399357f/file-smUQnFQWkW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6f59b042863534399357f/file-smUQnFQWkW]
+. Click *Save Changes* to finalize all of your edits
+
+You’re all done! 
+
+Now, when customers opt-in through a Convertful form, their information
+will be automatically sent to the Sendlane list you’ve selected!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Convertful, so we are only able to provide
+limited troubleshooting support. However, if you need help, the
+Convertful team is just a few clicks away! 
+
+* Connect with the Convertful team and
+https://app.convertful.com/tickets/[open a ticket]
+* Visit the https://app.convertful.com/docs/[Convertful knowledge base]
+
+==== Additional Convertful Resources
+
+https://convertful.com/[Sign up for Convertful] |
+https://app.convertful.com/docs/integrations/sendlane/[Convertful
+Integration
+Instructions]https://app.convertful.com/docs/integrations/sendlane/[]https://app.convertful.com/docs/integrations/sendlane/[]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-convertful[Sendlane
++ Convertful - The Ultimate On-Site List Builder]
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage and Capture Leads ]
+
+'''''
+
+=== TL;DR
+
+Convertful → My sites → Select Site → Integrations → Add Integration →
+Select Sendlane → API Key, Hash Key, Sendlane Subdomain → Select List to
+sync to/ Tags to add → Save Changes

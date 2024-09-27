@@ -1,0 +1,454 @@
+==== Overview
+
+Wonderment's custom events can be used as Automation triggers to send
+messages based on order, shipping, and delivery activity, and templating
+syntax can pull in shipping data to create beautifully branded emails.
+Read on to learn how to set up Wonderment Automations!
+
+==== In This Guide
+
+* link:#triggers[Wonderment Automation Triggers]
+* link:#wm-templates[Wonderment Template Examples]
+
+[[custom-event-setup]]
+===== ⚠️ The templates below will not work without a completed Wonderment integration
+
+Follow the instructions in
+https://help.sendlane.com/article/602-how-to-integrate-wonderment-and-sendlane[How
+to Integrate Wonderment and Sendlane] before creating the email
+templates below.
+
+Ensure your custom events are named exactly as shown, with no additional
+spaces or characters. If the event names do not match perfectly, the
+templates below cannot pull order data into emails.
+
+'''''
+
+[[triggers]]
+=== Wonderment Automation Triggers
+
+The events you created in the custom event for your Wonderment
+integration are used as Automation triggers. The table below describes
+each available Wonderment Automation trigger, and when to use them:
+
+[cols=",",]
+|===
+|*Event* |*Description*
+
+|`+Wonderment - Shipment Created+` |When a label has been created with a
+shipping carrier
+
+|`+Wonderment - Label Cancelled+` |When a label has been cancelled with
+the shipping carrier
+
+|`+Wonderment - Carrier Picked Up+` |When an order is first marked In
+Transit by the carrier.
+
+|`+Wonderment - In Transit+` |For each in-transit scan the package has.
+
+|`+Wonderment - Out for Delivery+` |When the carrier confirms the
+package has been handed off for delivery
+
+|`+Wonderment - Ready for Pickup+` |When an order has been marked ready
+for customer pickup by the shipping carrier, such as at a local office
+or postal facility.
+
+|`+Wonderment - Shipment Delivered+` |When the delivery scan has
+occurred for a package
+
+|`+Wonderment - Returned to Sender+` |When a package has been sent back
+to the origin facility because it was undeliverable, damaged, or
+otherwise can't be completed.
+
+|`+Wonderment - Attempted Delivery+` |If a package couldn't be delivered
+and was held by the carrier for re-delivery.
+
+|`+Wonderment - Delivery Error+` |In case of a permanent delivery error,
+such as a non-existent address, or a package is lost or damaged at the
+carrier.
+
+|`+Wonderment - Shipment Stalled+` |When a package hasn't made progress
+in the carrier network for a certain period of time, and is likely to be
+delayed.
+
+|`+Wonderment - Survey - Delivery Feedback Response+` |Feedback
+responses from Delivery Surveys.
+
+|`+Wonderment - Tracking Page View+` |Individual pageviews of a tracking
+page.
+
+|`+Wonderment - ETA Changed+` |When a package's ETA changes beyond the
+Change Sensitivity for a given shipping service level.
+|===
+
+To trigger an Automation with a Wonderment event:
+
+. Click *+ Add Trigger*
+. Select the *Custom* tab
+. Click *Custom Event*
+. Select a
+https://help.sendlane.com/article/448-automation-triggers#limits[*limit
+per Contact*]
+. Select an *event*
+. Click *Done*
+
+[[wm-templates]]
+=== Wonderment Template Examples
+
+The templates below can be used as a starting point for building
+Automation emails using Wonderment shipping data. To use the templates
+below:
+
+. Click Add Trigger
+. Click the Sendlane tab to access the triggers you created
+https://help.sendlane.com/article/602-how-to-integrate-wonderment-and-sendlane#events[as
+custom integration events]
+. Select a trigger
+. Find the template below that corresponds to your trigger
+. Copy and paste the text of a template below into a blank Automation
+email
+. Edit the copy and style your email
+
+[[data-trigger]]
+===== ⚠️ You must include the set data trigger
+
+The first line of each email template includes the tag 
+`+{% set data = trigger.getCustomEventData() %}+` , which allows
+Wonderment data to be pulled into your email. Without this snippet, none
+of your data will load, and contacts will receive mostly or entirely
+blank emails.
+
+[[hyperlink-error]]
+===== ⚠️ You may need to strip text formatting when inserting the templates below into an automation email
+
+When you paste one of the templates below into the email builder, it may
+try to create hyperlinks for some data. This will cause an error that
+says `+"Unexpected token "operator" of value "<"+`. If you see any blue
+text after pasting, highlight all text and click the remove formatting
+icon. This should clear the error, and you should be able to save your
+email.
+
+You can avoid this issue by pressing CMD + Shift + V on macOS or CTRL +
+Shift + V on Windows to paste without formatting.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66be8d3a8919a15d1b1d32b3/file-QtTw13Exv6.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66be8d3a8919a15d1b1d32b3/file-QtTw13Exv6]
+
+[[templates]]
+==== Available Wonderment Templates
+
+* link:#shipment-created[Shipment Created]
+* link:#shipment-stalled[Shipment Stalled]
+* link:#carrier-picked-up[Carrier Picked Up]
+* link:#out-for-delivery[Out for Delivery]
+* link:#attempted-delivery[Attempted Delivery]
+* link:#delivery-error-damage[Delivery Error/Shipping Damage]
+* link:#delivered[Delivered]
+
+===== Shipment Created
+
+....
+{% set data = trigger.getCustomEventData() %}
+
+Your order is packed!
+Order {{data.OrderNumber}}
+Hey {{ data.ShippingAddress.FirstName }}, we've got good news.
+
+Your order has been packed up by our warehouse, and is ready for {{ data.CarrierNameFriendly }} to pick it up. We'll continue to keep you updated as your shipment makes its way to your doorstep.{% if data.EstimatedPackageDelivery %} You should expect it around  {{ data.EstimatedPackageDelivery }}{% else %}{% endif %}
+
+What's Coming
+{% for item in data.LineItems %}
+{% if item.VariantImage is defined and item.VariantImage is not null %} {% set image_url = item.VariantImage %} {% else %} {% set image_url = item.ProductImage %} {% endif %}{{item.ProductName}}
+{{ item.ProductName }}
+Quantity: {{ item.Quantity }} {% if item.VariantName is defined and item.VariantName is not null %}- {{ item.VariantName }} {% endif %}
+Price: {{ item.Price }}
+{% endfor %}
+
+On Its Way To:
+Shipping Address
+{{ data.ShippingAddress.FirstName }} {{ data.ShippingAddress.LastName }}
+{{ data.ShippingAddress.Address1 }}
+{{ data.ShippingAddress.Address2 }}
+{{ data.ShippingAddress.City }}, {{ data.ShippingAddress.StateCode }} {{ data.ShippingAddress.Zip }}
+{{ data.ShippingAddress.CountryCode }}
+{% if data.EstimatedPackageDelivery is defined and data.EstimatedPackageDelivery is not null %} Estimated Delivery Date
+{{ data.EstimatedPackageDelivery }} {% else %} {% endif %}
+
+Shipped By
+{{ data.CarrierName | upper }}
+
+Tracking #
+{{ data.TrackingCode }}
+
+Tracking Link
+{{ data.TrackingURL }}
+....
+
+link:#templates[Back to template list]
+
+'''''
+
+===== Shipment Stalled
+
+....
+{% set data = trigger.getCustomEventData() %}
+
+An update on your order
+
+Order {{ data.OrderNumber }}
+Hey {{ data.ShippingAddress.FirstName }}, we noticed your shipment hasn't been updated by the carrier in a few days. Generally when this happens, it starts moving on its own again soon - delays happen. We're keeping an eye on it though, and if it doesn't start moving soon, we'll be in touch with how we're handling the situation for you.
+
+There's no need to check in with us - We're monitoring your shipment with {{ data.CarrierNameFriendly }} and will be in touch if it isn't moving soon.
+
+What's Coming
+{% for item in data.LineItems %}
+{% if item.VariantImage is defined and item.VariantImage is not null %} {% set image_url = item.VariantImage %} {% else %} {% set image_url = item.ProductImage %} {% endif %}{{item.ProductName}}
+{{ item.ProductName }}
+Quantity: {{ item.Quantity }} {% if item.VariantName is defined and item.VariantName is not null %}- {{ item.VariantName }} {% endif %}
+Price: {{ item.Price }}
+{% endfor %}
+
+On Its Way To:
+Shipping Address
+{{ data.ShippingAddress.FirstName }} {{ data.ShippingAddress.LastName }}
+{{ data.ShippingAddress.Address1 }}
+{{ data.ShippingAddress.Address2 }}
+{{ data.ShippingAddress.City }}, {{ data.ShippingAddress.StateCode }} {{ data.ShippingAddress.Zip }}
+{{ data.ShippingAddress.CountryCode }}
+{% if data.EstimatedPackageDelivery is defined and data.EstimatedPackageDelivery is not null %} Estimated Delivery Date
+{{ data.EstimatedPackageDelivery }} {% else %} {% endif %}
+
+Shipped By
+{{ data.CarrierName | upper }}
+
+Tracking #
+{{ data.TrackingCode }}
+
+Tracking Link
+{{ data.TrackingURL }}
+....
+
+link:#templates[Back to template list]
+
+'''''
+
+===== Carrier Picked Up
+
+....
+{% set data = trigger.getCustomEventData() %}
+
+Your order is on its way!
+
+Order {{data.OrderNumber}}
+
+Hey {{ data.ShippingAddress.FirstName | default('there')}}, we've got good news.
+
+Your order has been picked up by {{ data.CarrierNameFriendly }}. We'll continue to keep you updated as your shipment makes its way to your doorstep.{% if data.EstimatedPackageDelivery is defined and data.EstimatedPackageDelivery is not null %} You should expect it around {{ data.EstimatedPackageDelivery}}.{% else %}{% endif %}
+
+What's Coming
+{% for item in data.LineItems %}
+{% if item.VariantImage is defined and item.VariantImage is not null %} {% set image_url = item.VariantImage %} {% else %} {% set image_url = item.ProductImage %} {% endif %}{{item.ProductName}}
+{{ item.ProductName }}
+Quantity: {{ item.Quantity }} {% if item.VariantName is defined and item.VariantName is not null %}- {{ item.VariantName }} {% endif %}
+Price: {{ item.Price }}
+{% endfor %}
+
+On Its Way To:
+Shipping Address
+{{ data.ShippingAddress.FirstName }} {{ data.ShippingAddress.LastName }}
+{{ data.ShippingAddress.Address1 }}
+{{ data.ShippingAddress.Address2 }}
+{{ data.ShippingAddress.City }}, {{ data.ShippingAddress.StateCode }} {{ data.ShippingAddress.Zip }}
+{{ data.ShippingAddress.CountryCode }}
+{% if data.EstimatedPackageDelivery is defined and data.EstimatedPackageDelivery is not null %} Estimated Delivery Date
+{{ data.EstimatedPackageDelivery }} {% else %} {% endif %}
+
+Shipped By
+{{ data.CarrierName | upper }}
+
+Tracking #
+{{ data.TrackingCode }}
+
+Tracking Link
+{{ data.TrackingURL }}
+....
+
+link:#templates[Back to template list]
+
+'''''
+
+===== Out for Delivery
+
+....
+{% set data = trigger.getCustomEventData() %}
+
+Your order is out for delivery!
+
+Order {{data.OrderNumber}}
+Hey {{ data.ShippingAddress.FirstName }}, we've got good news.
+
+Your order is out for delivery with {{ data.CarrierNameFriendly }} today!
+
+What's Coming
+{% for item in data.LineItems %}
+{% if item.VariantImage is defined and item.VariantImage is not null %} {% set image_url = item.VariantImage %} {% else %} {% set image_url = item.ProductImage %} {% endif %}{{item.ProductName}}
+{{ item.ProductName }}
+Quantity: {{ item.Quantity }} {% if item.VariantName is defined and item.VariantName is not null %}- {{ item.VariantName }} {% endif %}
+Price: {{ item.Price }}
+{% endfor %}
+
+On Its Way To:
+Shipping Address
+{{ data.ShippingAddress.FirstName }} {{ data.ShippingAddress.LastName }}
+{{ data.ShippingAddress.Address1 }}
+{{ data.ShippingAddress.Address2 }}
+{{ data.ShippingAddress.City }}, {{ data.ShippingAddress.StateCode }} {{ data.ShippingAddress.Zip }}
+{{ data.ShippingAddress.CountryCode }}
+{% if data.EstimatedPackageDelivery is defined and data.EstimatedPackageDelivery is not null %} Estimated Delivery Date
+{{ data.EstimatedPackageDelivery }} {% else %} {% endif %}
+
+Shipped By
+{{ data.CarrierName | upper }}
+
+Tracking #
+{{ data.TrackingCode }}
+
+Tracking Link
+{{ data.TrackingURL }}
+....
+
+link:#templates[Back to template list]
+
+'''''
+
+===== Attempted Delivery
+
+....
+{% set data = trigger.getCustomEventData() %}
+
+Delivery Attempted - Order {{ data.OrderNumber }}
+ 
+Hi {{ data.ShipmentAddress.FirstName }},
+
+{{ data.CarrierName }} tried to deliver your order today, but couldn't reach you. They will try again tomorrow.
+
+Questions? Reach us here: help@brandname.com
+
+ What's Coming
+{% for item in data.LineItems %}
+{% if item.VariantImage is defined and item.VariantImage is not null %} {% set image_url = item.VariantImage %} {% else %} {% set image_url = item.ProductImage %} {% endif %}{{item.ProductName}}
+{{ item.ProductName }}
+Quantity: {{ item.Quantity }} {% if item.VariantName is defined and item.VariantName is not null %}- {{ item.VariantName }} {% endif %}
+Price: {{ item.Price }}
+{% endfor %}
+
+On Its Way To:
+Shipping Address
+{{ data.ShippingAddress.FirstName }} {{ data.ShippingAddress.LastName }}
+{{ data.ShippingAddress.Address1 }}
+{{ data.ShippingAddress.Address2 }}
+{{ data.ShippingAddress.City }}, {{ data.ShippingAddress.StateCode }} {{ data.ShippingAddress.Zip }}
+{{ data.ShippingAddress.CountryCode }}
+{% if data.EstimatedPackageDelivery is defined and data.EstimatedPackageDelivery is not null %} Estimated Delivery Date
+{{ data.EstimatedPackageDelivery }} {% else %} {% endif %}
+
+Shipped By
+{{ data.CarrierName | upper }}
+
+Tracking #
+{{ data.TrackingCode }}
+
+Tracking Link
+{{ data.TrackingURL }}
+....
+
+link:#templates[Back to template list]
+
+'''''
+
+[[delivery-error-damage]]
+===== Delivery Error/Shipping Damage
+
+....
+{% set data = trigger.getCustomEventData() %}
+
+Hey {{ data.ShippingAddress.first_name }}
+
+We saw that {{ data.CarrierNameFriendly }} marked your order as damaged in transit. We are aware of this and are preparing to ship out a replacement to you already. A member of our CS team will be reaching out shortly to confirm details and reship the damaged products to you.
+
+We will be in touch shortly - please let us know if you have any questions or concerns. Thank you!
+
+Shipment Contents
+
+{% for item in data.LineItems %}
+{% if item.VariantImage is defined and item.VariantImage is not null %} {% set image_url = item.VariantImage %} {% else %} {% set image_url = item.ProductImage %} {% endif %}{{item.ProductName}}
+{{ item.ProductName }}
+
+Quantity: {{ item.Quantity }} {% if item.VariantName is defined and item.VariantName is not null %}- {{ item.VariantName }} {% endif %}
+Price: {{ item.Price }}
+{% endfor %}
+
+On Its Way To:
+Shipping Address
+{{ data.ShippingAddress.FirstName }} {{ data.ShippingAddress.LastName }}
+{{ data.ShippingAddress.Address1 }}
+{{ data.ShippingAddress.Address2 }}
+{{ data.ShippingAddress.City }}, {{ data.ShippingAddress.StateCode }} {{ data.ShippingAddress.Zip }}
+{{ data.ShippingAddress.CountryCode }}
+
+{% if data.EstimatedPackageDelivery is defined and data.EstimatedPackageDelivery is not null %} Estimated Delivery Date
+{{ data.EstimatedPackageDelivery }} {% else %} {% endif %}
+
+Shipped By
+{{ data.CarrierName | upper }}
+
+Tracking #
+{{ data.TrackingCode }}
+
+Tracking Link
+{{ data.TrackingURL }}
+....
+
+link:#templates[Back to template list]
+
+'''''
+
+===== Delivered
+
+....
+{% set data = trigger.getCustomEventData() %}
+
+Your order has been delivered!!
+Order {{data.OrderNumber}}
+Hey {{ data.ShippingAddress.FirstName }}, we've got good news.
+
+Your order has been delivered by {{ data.CarrierNameFriendly }} today!
+ 
+What's Arrived
+{% for item in data.LineItems %}
+{% if item.VariantImage is defined and item.VariantImage is not null %} {% set image_url = item.VariantImage %} {% else %} {% set image_url = item.ProductImage %} {% endif %}{{item.ProductName}}
+{{ item.ProductName }}
+Quantity: {{ item.Quantity }} {% if item.VariantName is defined and item.VariantName is not null %}- {{ item.VariantName }} {% endif %}
+Price: {{ item.Price }}
+{% endfor %}
+
+Delivered To:
+Shipping Address
+{{ data.ShippingAddress.FirstName }} {{ data.ShippingAddress.LastName }}
+{{ data.ShippingAddress.Address1 }}
+{{ data.ShippingAddress.Address2 }}
+{{ data.ShippingAddress.City }}, {{ data.ShippingAddress.StateCode }} {{ data.ShippingAddress.Zip }}
+{{ data.ShippingAddress.CountryCode }}
+{% if data.EstimatedPackageDelivery is defined and data.EstimatedPackageDelivery is not null %} Estimated Delivery Date
+{{ data.EstimatedPackageDelivery }} {% else %} {% endif %}
+
+Shipped By
+{{ data.CarrierName | upper }}
+
+Tracking #
+{{ data.TrackingCode }}
+
+Tracking Link
+{{ data.TrackingURL }}
+....
+
+link:#templates[Back to template list]

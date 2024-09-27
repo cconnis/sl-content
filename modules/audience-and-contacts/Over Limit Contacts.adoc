@@ -1,0 +1,57 @@
+The Over Limit Contacts tab of the Audience page stores information
+about Contacts that have been collected through your account’s
+https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account[sign
+up sources] once your account has reached its Contact threshold.
+
+image:https://lh5.googleusercontent.com/PvL1Ty8rahM0YuhefEdfPBOy_9qgRTcJ_eTW87X6lbfDHe0xtg5ic1woDDbad8bq39bOMB8YdKaDybv6XsYvVI5Mh6j1gmoGXBxcmAydibPrz6v1g3Gpe8SDEu_cyn45BLhxrnZ0[https://lh5.googleusercontent.com/PvL1Ty8rahM0YuhefEdfPBOy_9qgRTcJ_eTW87X6lbfDHe0xtg5ic1woDDbad8bq39bOMB8YdKaDybv6XsYvVI5Mh6j1gmoGXBxcmAydibPrz6v1g3Gpe8SDEu_cyn45BLhxrnZ0,width=379,height=94]
+
+You will not be able to send content or add information to the profiles
+of Over Limit Contacts until:
+
+. Your subscription plan is upgraded to a Contact threshold that can
+accommodate the Over Limit Contacts, and
+. The Over Limit Contacts have been moved to
+https://help.sendlane.com/article/125-lists[Lists]
+
+Over Limit Contacts details can be exported or removed from the account
+without upgrading your subscription plan.
+
+=== Upgrading Your Subscription Plan
+
+Please reach out to your Customer Success Manager for assistance in
+upgrading your subscription plan!
+
+=== Exporting Over Limit Contacts
+
+Click the *_Audience_* icon in the left-hand menu bar → *_Over Limit
+Contacts_* tab → *_Export_* button
+
+image:https://lh4.googleusercontent.com/oNM7woVIx53xglMGNQ8XGDbv34zVSM2V1RHlUhOdOZ-mcFeLIu716yerwG2NszApSdvvMHgyOMNO2QqLTSNa44Pk8ECqYjOV2IbYMpMpgjq_Asphx8WMzB37MkjWlYIyboR-Agft[https://lh4.googleusercontent.com/oNM7woVIx53xglMGNQ8XGDbv34zVSM2V1RHlUhOdOZ-mcFeLIu716yerwG2NszApSdvvMHgyOMNO2QqLTSNa44Pk8ECqYjOV2IbYMpMpgjq_Asphx8WMzB37MkjWlYIyboR-Agft,width=358,height=188]Click
+*_Export as Text File_* or *_Export as CSV_* to start the export as your
+preferred file type
+
+image:https://lh3.googleusercontent.com/MnJu80izFQ2ibo2jIY0vFx01u4vd_u4Eja6qkkGCWy_iEfTdqF_RgqR7nbxbiqfO8-CsfrKYds8WBScabC4AoFpUD6Z05Rp8CDa-XwexMO0qoDiFUB2cQcj2G6hAL0Nd16AuAtdy[https://lh3.googleusercontent.com/MnJu80izFQ2ibo2jIY0vFx01u4vd_u4Eja6qkkGCWy_iEfTdqF_RgqR7nbxbiqfO8-CsfrKYds8WBScabC4AoFpUD6Z05Rp8CDa-XwexMO0qoDiFUB2cQcj2G6hAL0Nd16AuAtdy,width=356,height=139]
+
+Your export will begin processing immediately! You will receive an email
+with a copy of your export file to the
+https://help.sendlane.com/article/439-updating-your-sendlane-account-details#update-email[email
+address] in your Sendlane profile. You can also track the status of your
+export using the
+https://help.sendlane.com/article/387-import-exports[Imports & Exports
+tab] and download the file there when it is complete.
+
+=== Removing Over Limit Contacts
+
+To permanently remove all Over Limit Contacts, Click the *_Audience_*
+icon in the left-hand menu bar → *_Over Limit Contacts_* tab → *_Remove
+all contacts_* button
+
+image:https://lh3.googleusercontent.com/2lp7MwezRHa3lpjIt5C3rXSReCiuZHPKafT29wQ2LaCwZNXa1DLDjp9Qo9Va9uFpMi1vgPxooEeGV91nIy-fGY8y8qgZiI50iO-2wL0nw_tVPwJoAciNeKXDJAjaKO4-ivT4wRoU[https://lh3.googleusercontent.com/2lp7MwezRHa3lpjIt5C3rXSReCiuZHPKafT29wQ2LaCwZNXa1DLDjp9Qo9Va9uFpMi1vgPxooEeGV91nIy-fGY8y8qgZiI50iO-2wL0nw_tVPwJoAciNeKXDJAjaKO4-ivT4wRoU,width=358,height=188]
+
+To confirm the permanent deletion of all Over Limit Contacts, click the
+red *_Remove all contacts_* button. 
+
+Please note that deleted Over Limit Contacts are not retrievable and all
+Over Limit Contact information will be permanently deleted by proceeding
+
+image:https://lh5.googleusercontent.com/8bMnw7WOAQVYfKeWJ7pisXedJNJB2xkO_uwkZT-NcC5YhvnZXr0rSl9WVWWqP8ncpdd7S0Niu3IVXDQJnOxFfplT4AX1LdnXpZbP5uZ5xeWBhnaP0be3PSkSiwAY4ZP1pFyujWX0[https://lh5.googleusercontent.com/8bMnw7WOAQVYfKeWJ7pisXedJNJB2xkO_uwkZT-NcC5YhvnZXr0rSl9WVWWqP8ncpdd7S0Niu3IVXDQJnOxFfplT4AX1LdnXpZbP5uZ5xeWBhnaP0be3PSkSiwAY4ZP1pFyujWX0,width=276,height=149]

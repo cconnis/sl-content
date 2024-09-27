@@ -1,0 +1,95 @@
+https://www.deadlinefunnel.com/?lmref=XRFNfw[Deadline Funnel] allows you
+to create time-sensitive landing pages that will promote attention and
+incite actions throughout your entire funnel.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://www.deadlinefunnel.com/?lmref=XRFNfw[Deadline Funnel account]. 
+
+You will also need a Sendlane
+https://help.sendlane.com/article/73-automations[automation] created.
+Deadline Funnel will connect with Sendlane via a step within your
+automation that triggers the Deadline Funnel campaign. 
+
+'''''
+
+=== Connecting Deadline Funnel and Sendlane
+
+. First, create your Deadline Funnel campaign
+. Visit the *_API Integrations_* area of Deadline Funnels and click
+*_Add A New Integration_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9ba44804286364bc901800/file-u3hrY82pVy.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9ba44804286364bc901800/file-u3hrY82pVy]
+. Select *_Sendlane_* from the integration options and click the webhook
+link generated to copy it
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9b9bfb2c7d3a7e9ae2301b/file-9EGPcv6of3.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9b9bfb2c7d3a7e9ae2301b/file-9EGPcv6of3]
+. Within your Sendlane Automation that you'd like to use to trigger this
+Deadline Funnel campaign, add a *_Webhook_* step to indicate _when_ the
+Deadline Funnel should be triggered
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9b9c492c7d3a7e9ae23020/file-OJbRCqpMAS.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9b9c492c7d3a7e9ae23020/file-OJbRCqpMAS]
+. Paste the link that was copied from Deadline Funnel, and change the
+method from *_GET_* to *_POST_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9b9cb904286364bc901758/file-ykOIqotv5h.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9b9cb904286364bc901758/file-ykOIqotv5h]
+. Finish building your automation, and set it to *_Active_* 
+
+And that's it! 
+
+Once the integration is up and running, any contact who goes through
+your automation will start their Deadline Funnel tracking as soon as
+they reach the Webhook in your automation!
+
+'''''
+
+=== Next Steps
+
+Be sure to add the Deadline Funnel email links to the emails you create
+within your automation (wherever you're linking to a page that has a
+Deadline Funnel timer or redirect on it).
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9b9d4004286364bc901767/file-FU1I5pcrfn.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9b9d4004286364bc901767/file-FU1I5pcrfn]
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Deadline Funnel, so we're only able to
+provide limited troubleshooting support. However, if you  _do_ need
+help, the Deadline Funnel team is just a few clicks away!
+
+* Click the green chat icon in the lower right hand corner of the
+Deadline Funnel site to chat or email their support team
+* Visit the
+https://www.deadlinefunnel.com/integrations/sendlane[Deadline Funnel
+Guide] on connecting with Sendlane
++
+
+'''''
+
+Additional Deadline Funnel Resources
+
+https://www.deadlinefunnel.com/?lmref=XRFNfw[Sign up for Deadline
+Funnel] | https://documentation.deadlinefunnel.com/[Deadline Funnel Help
+Desk]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog/converting-landing-pages[4 Design
+Elements of Converting Landing Pages]
+* https://www.sendlane.com/blog/12-fomo-marketing-techniques-to-boost-your-email-conversions[12
+FOMO Marketing Techniques to Boost Your Email Conversions]
+
+'''''
+
+=== TL;DR
+
+Create Deadline Funnel campaign →  _API Integrations_ → __Add A New
+Integration __→ Select Sendlane → Copy webhook link → (in Sendlane
+automation) add a Webhook trigger action → Paste web hook link → Toggle
+from _GET_ to __POST __→ Set automation to _Active_ 
+
+=== 

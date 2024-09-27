@@ -1,0 +1,124 @@
+Want to grow your Audience with quality leads who actively want to
+receive your content? Justuno is Sendlane’s premier partner for lead
+capture forms for email and SMS! Check out the Sendlane Marketing
+Journal's
+https://www.sendlane.com/blog/sendlane-justuno-integration[guide to
+optimizing conversion with Justuno and Sendlane], then read on to
+connect your Sendlane account to Justuno!
+
+Integrate Justuno with your Sendlane account to target website visitors
+based on activity and preferences, capture Contact data, and provide
+coupons for your eCommerce store.
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+ Create a Promotion in your
+https://www.justuno.com/get-started/?utm_campaign=Sendlane%20Integration&utm_source=Partner%20-%20Sendlane_supportdoc[Justuno
+account] that contains a phone and/or email address field
+
+https://support.justuno.com/en/integrations[Connect your eCommerce
+platform] or
+https://support.justuno.com/en/install-justuno-general-embed-instructions[integrate
+manually] if your platform is not listed
+
+ Request single opt-in and SMS Consent API enablement for your Sendlane
+account from our
+https://help.sendlane.com/article/458-how-to-integrate-justuno-with-sendlane#contactModal[24/7
+support team]
+
+ Create https://help.sendlane.com/article/331-custom-fields[Custom
+Fields] for your promotion in Sendlane
+
+ If you plan to collect phone numbers for SMS marketing,
+https://help.sendlane.com/article/466-how-to-activate-sms[activate a
+Sendlane SMS plan]
+
+[[connect-accounts]]
+=== Connect Sendlane API Token and Justuno Promotion
+
+To integrate Sendlane and Justuno, you'll generate a Sendlane API token
+and add it to your Justuno promotion.
+
+[[token]]
+==== Generate Sendlane API Token
+
+. Click the *Account* icon
+. Click *API* 
+. Click *Create API Token* 
+. Enter a descriptive *Token Name* 
+. Click *Create* 
+. Click *Copy API Token*
+
+[[copy-key]]
+===== 🚨 API keys cannot be retrieved again after they are created
+
+You must copy the API Key at this stage! Once you exit the Access Token
+Created window, you will not be able to access this API Key again.
+
+[[expire]]
+===== 🚨 API keys expire one year after creation
+
+API keys expire one year from the day they are created. Set a reminder
+to replace your API key one year from the day you created it.
+
+image:https://lh4.googleusercontent.com/K14DfG8FkYjIXIHmE8c9XAXTaoACZBDTpoWgYA0kA-di_QecJm4KoSo7SfmrSTede-uKUv-getWQsJXqcs7FWlqyIYgbpdFA74o1BhMQ6QUkv7XNU-4I4bjtq6SnLB6JEOAGfrjU[https://lh4.googleusercontent.com/K14DfG8FkYjIXIHmE8c9XAXTaoACZBDTpoWgYA0kA-di_QecJm4KoSo7SfmrSTede-uKUv-getWQsJXqcs7FWlqyIYgbpdFA74o1BhMQ6QUkv7XNU-4I4bjtq6SnLB6JEOAGfrjU,width=720,height=532]
+
+==== Add Sendlane API Token to Justuno Promotion
+
+Open your Justuno Promotion by clicking *Options* > *Edit Design*
+
+image:https://lh6.googleusercontent.com/Y02kSoqi37ieAt3i5uctExgfNsd0CWZQEsXbXta8wxxNDoZZTuBthRsxFInmVmCheDm_7SCm6NlX0YFu0Hn-uK83qpS41HxXi9sQaGtXQsXtMTSGpbeC3iNZlgytb-eZ1Hh6E49G[https://lh6.googleusercontent.com/Y02kSoqi37ieAt3i5uctExgfNsd0CWZQEsXbXta8wxxNDoZZTuBthRsxFInmVmCheDm_7SCm6NlX0YFu0Hn-uK83qpS41HxXi9sQaGtXQsXtMTSGpbeC3iNZlgytb-eZ1Hh6E49G,width=720,height=544]
+
+Click the *email address field* in your Promotion > *Change Form* >
+*Connect Provider* > *Connect ESP Provider*
+
+image:https://lh5.googleusercontent.com/YEy2IW5oQTSVVj8RJZi7xV0qyJN-WOs9u07JrwUYFsb47j9Dpw9VKzcjFhSHcX-vhfGkmP4kdh9lUKPDTJj3F-uBAe9gwx_s5PGYLJrjD4xij4JpbcooPJru1UomYk1uMJcA-lty[https://lh5.googleusercontent.com/YEy2IW5oQTSVVj8RJZi7xV0qyJN-WOs9u07JrwUYFsb47j9Dpw9VKzcjFhSHcX-vhfGkmP4kdh9lUKPDTJj3F-uBAe9gwx_s5PGYLJrjD4xij4JpbcooPJru1UomYk1uMJcA-lty,width=720,height=544]
+
+Search for and select *Sendlane* from the ESP Providers screen > Paste
+your *Sendlane API Token* > Click *Import V2 API Token* > Click *Next* >
+Select a default *List* to add your Contacts to > Click *Next*
+
+image:https://lh6.googleusercontent.com/BxnTtfQiU5P5Paaf9lTEXUFb124XM15StRjhc0PGQiVRsdDkOdDoJp_niKz6U01-otCMwhq07GKJX1t0o2USuxToAdczqZw1M9akyigFEIgwxHEr9H3eTWqB8U_ilmMpRjbWg_hU[https://lh6.googleusercontent.com/BxnTtfQiU5P5Paaf9lTEXUFb124XM15StRjhc0PGQiVRsdDkOdDoJp_niKz6U01-otCMwhq07GKJX1t0o2USuxToAdczqZw1M9akyigFEIgwxHEr9H3eTWqB8U_ilmMpRjbWg_hU,width=720,height=544]
+
+Check out https://support.justuno.com/en/getting-started[Justuno’s
+guides] to building your first form!
+
+On the Form Builder page, add and adjust any additional fields, then
+click *Next* to head to the Settings page. Adjust your Form’s settings
+on the Settings page, then click *Update Form* to save your changes.
+
+image:https://lh3.googleusercontent.com/UFP921Josk0Sl3NktxBVP-wr8dOXD9UKB13HMRlOywMHiexUuyqAT47ZozyDmAUZXpb7HXOURIWpx1YJBUj729X5I_wcQFJV0yVpj2byEhEIlKN66g2-niD48jhQTp64gIsd61hI[https://lh3.googleusercontent.com/UFP921Josk0Sl3NktxBVP-wr8dOXD9UKB13HMRlOywMHiexUuyqAT47ZozyDmAUZXpb7HXOURIWpx1YJBUj729X5I_wcQFJV0yVpj2byEhEIlKN66g2-niD48jhQTp64gIsd61hI,width=720,height=211]
+
+[[test]]
+=== Collect Phone Numbers and SMS Consent
+
+To collect phone numbers and consent to receive SMS marketing content
+from leads who fill out your Justuno promotion, just add a Phone field
+to your promotion!
+
+Justuno promotions being used to collect phone numbers and SMS consent
+should be two-step forms, with separate compliance language for SMS
+messaging. See
+https://www.justuno.com/blog/new-pop-up-opt-in-policies-sms-compliant/[Justuno's
+SMS compliance blog] for more details!
+
+[[test]]
+=== Test Your Promotion
+
+Once you’ve created your first Promotion and inserted the Justuno embed
+code on your website, follow
+https://support.justuno.com/en/how-to-test-justuno-on-your-website[Justuno’s
+guide to testing your] Promotion. This process will verify that your
+embed code is working correctly and that your form collects lead
+information.
+
+When you see the test lead you submitted on your website in your Justuno
+account, head to your Sendlane
+https://app.sendlane.com/audience/lists[Audience page > Lists tab] to
+verify that your test lead was passed over to Sendlane.
+
+As soon as you see your test lead in Sendlane, you’re all set! Check out
+https://support.justuno.com/en/advanced-technical-use-cases[Justuno’s
+Advanced guides] to get the most out of Justuno’s segmentation and
+targeting abilities for future promotions.

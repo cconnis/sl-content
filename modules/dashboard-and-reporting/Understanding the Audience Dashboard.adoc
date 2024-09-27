@@ -1,0 +1,64 @@
+==== Overview
+
+Your https://app.sendlane.com/audience/overview[Audience dashboard] is a
+great way to quickly review your account's audience health and gain
+insights into your marketing strategy's performance. Read on to learn
+about all the data available on your Audience dashboard!
+
+==== In This Article
+
+* link:#behavior[Behavior]
+* link:#stats[Contact Stats]
+* link:#revenue[Revenue]
+
+'''''
+
+=== Behavior
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b9588e020fe4b2fcaf022/file-90MXRrxGMq.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b9588e020fe4b2fcaf022/file-90MXRrxGMq]
+
+Use the reporting period dropdown to select a preset reporting period or
+select Custom to set your own reporting period.
+
+* Growth - Shows the number of Contacts who subscribed and unsubscribed
+on a given day
+* Opens & Clicks - Shows the number of opens and clicks on a given day
+* Overall Health - Shows the average overall, Campaign, and Automation
+open and click rate
+
+link:#top[Back to top]
+
+'''''
+
+[[stats]]
+=== Contact Stats
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b96074773693a6d83e137/file-bZojaoffr9.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b96074773693a6d83e137/file-bZojaoffr9]
+
+* Email Summary - Shows the total number of email Contacts, plus the
+total number of Contacts by their email subscription status
+* Phone Summary - Shows the total number of phone Contacts, plus the
+total number of Contacts by their SMS subscription status
+* Breakdown by domain - Shows a breakdown of email Contacts by the
+Contacts' inbox provider
+* Contact Source - Shows a breakdown of Contacts and how they were added
+to your account
+
+link:#top[Back to top]
+
+'''''
+
+=== Revenue
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b97bca55b5524fb50d74a/file-LdGuELC5Xg.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b97bca55b5524fb50d74a/file-LdGuELC5Xg]
+
+* Lifetime Value - Shows your Audience's lifetime value in the selected
+reporting period
+* Average Value - Shows your Audience's average value in the selected
+reporting period
+* Campaigns - Shows the revenue generation of your Campaigns in the
+selected reporting period
+* Automations - Shows the revenue generation of your Automations in the
+selected reporting period
+
+link:#top[Back to top]

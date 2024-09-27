@@ -1,0 +1,183 @@
+Email marketing is one of the strongest performing marketing channels.
+However, your email marketing strategy can be derailed if your emails
+end up in your Contacts’ spam folders.
+
+To ensure your emails are not getting caught in spam filters or being
+misinterpreted by recipients, it is important to follow these tips to
+give your business the best chance of getting your emails delivered
+where they make the most impact: your recipients’ inboxes!
+
+=== What is Email Deliverability?
+
+Email deliverability is the ability to deliver emails to the recipients’
+inbox and avoid the spam folder.
+
+These four best practices for email marketing have a significant impact
+on email deliverability:
+
+. link:#list[Maintain a High-Quality List (Audience)]
+. link:%20#content[Send Relevant Content]
+. link:#infrastructure[Maintain Email Infrastructure]
+. link:%20#law[Comply With the Law]
+
+1::
+  Build a relationship with your customers that emphasizes your
+  trustworthiness as a sender by sending high-quality content that your
+  Contacts want to receive. Nurture your leads so they become
+  https://www.sendlane.com/blog/upsell-and-cross-sell-customers[long-lasting
+  customers]! Check out the tips below for building and maintaining a
+  high-quality Audience:
+  +
+  [[permission]]
+  ===== Get Permission
+  +
+  The first rule of email marketing is to obtain your Audience’s
+  explicit permission to send them emails.  This shows that you respect
+  your Audience’s privacy and that you are communicating only with those
+  who are actively interested in learning more about your business.
+  +
+  [[opt-in]]
+  ===== Confirm Opt-In
+  +
+  Implement confirmed opt-in to ensure that only people who want to
+  receive your content are receiving emails from you.
+  +
+  [[dont-buy]]
+  ===== Don’t Buy or Share Lists
+  +
+  People usually delete emails from unknown senders without opening
+  them. Or worse, they’ll click the spam button. When Contacts mark your
+  emails as spam, your sending reputation can be severely damaged,
+  causing widespread deliverability issues.
+  +
+  [[segment]]
+  ===== Segment Your Audience
+  +
+  Sendlane provides multiple ways to
+  https://help.sendlane.com/article/341-advanced-segmentation[slice your
+  Audience into easily targetable groups] like
+  https://help.sendlane.com/article/137-segments[Segments],
+  https://help.sendlane.com/article/82-tags[Tags],
+  https://help.sendlane.com/article/125-lists[Lists],
+  https://help.sendlane.com/article/331-custom-fields[Custom Fields],
+  and https://help.sendlane.com/category/166-audience[more]! Understand
+  the specific characteristics, demographics and psychographics of your
+  audience to create highly targeted groups of Contacts. This will allow
+  you to tailor and personalize your emails to each unique group, and
+  increase your conversation with the recipients.
+  +
+  [[incorrect]]
+  ===== Reduce Incorrect Email Addresses in Your Audience
+  +
+  Check for typos and disposable email addresses.  
+  +
+  [[role]]
+  ===== Don’t Send to Role-Based Email Addresses
+  +
+  These are email addresses associated with a function that is managed
+  by several people, and not to a particular person. These email
+  addresses are highly unlikely to have given consent to receive
+  marketing emails. Examples of role-based accounts are:
+  support@[domain].com, postmaster@[domain].com, admin@[domain].com,
+  sales@[domain].com
+  +
+  [[sunset]]
+  ===== Sunset Non-Responders
+  +
+  Develop a sunsetting strategy to remove recipients who have shown low
+  to no interest in your emails. Sending to those who are no longer
+  interested in your email can increase your spam complaint rate that
+  may result in deliverability issues.
+
+2::
+  [[message]]
+  ===== The Message
+  +
+  Make sure the content you send is relevant information that your
+  Contacts want to receive. The
+  https://www.sendlane.com/blog/sendlane-campaigns-increase-roi[message
+  and  call to action] should be clear and compelling from the moment
+  your Contact opens the email.  
+  +
+  [[subject]]
+  ===== Subject Line
+  +
+  Your subject lines must be a summary of your email’s content. In
+  addition to being a CAN-SPAM Act of 2003 requirement, delivering what
+  you promise is critical to maintaining optimal deliverability. For
+  example, if your subject line references a sale, your email’s content
+  should be about that sale. Subject lines that are not relevant to an
+  email’s content are considered deceiving and can lead to spam
+  complaints or worse.
+  +
+  ===== Links
+  +
+  Pay attention to the number of links in your email along with the size
+  of the images.  The links should direct the user to the destination
+  without too many hops.  Always include a functioning unsubscribe link
+  in the email.
+  +
+  ===== Images
+  +
+  Some of the major mailbox providers turn images off by default. If the
+  majority of your email’s content is image based, or you include many
+  large images in your email, your Contacts may see a blank email if
+  their mailbox provider have images are turned off.
+  +
+  [[address]]
+  ===== Your Business’ Physical Address
+  +
+  Your email must include the mailing address for your business. It can
+  be your business’ street address, a United States Postal Service
+  registered post office box, or a private mailbox you’ve registered
+  with a commercial mail receiving agency established under United
+  States Postal Service regulations.
+
+3::
+  Email infrastructure is the technical, back end, part of sending
+  email.  In this particular instance, it comprises the sending domain,
+  and IP address. Each of these components have a reputation. The
+  reputation is based on your historic and current sending behavior, and
+  is a crucial component to your email deliverability health.   
+  +
+  [[sending-domain]]
+  ===== The Sending Domain
+  +
+  * The domain should have a full website that is owned and managed by
+  your business
+  * You should use a consistent “from” address with a domain that
+  represents your brand.
+  * Apply all email authentication methods to your domain with SPF,
+  DKIM, DMARC to verify that the email message is sent from you.
+  +
+  [[ip]]
+  ===== The IP Address
+  +
+  * Warm cold IPs by developing and following an IP warming strategy. 
+  This usually involves sending low volume of highly engaged users, and
+  then slowly ramping the volume to your max daily volume.
+  * Send consistent volume over time which can reduce the impact that
+  larger sends can have on your reputation.  
+  * Monitor your performance by understanding your bounce, spam
+  complaint, and unsubscribes rates as well as your open, and click
+  rates. Sendlane provides an overall account dashboard and individual
+  email reports to help monitor your activity.
+  * Make sure your Audience is clean and that you have not snagged a
+  spam trap.
+
+4::
+  In the United States, commercial email is regulated by the CAN SPAM
+  Act of 2003. If you send to Canadian recipients, you must abide by
+  CASL (Canada Anti-Spam Legislation). If you send to recipients within
+  the EU, GDPR applies to any organization that offers goods and/or
+  services to recipients in the EU.
+
+The information provided is for general informational purposes only. The
+contents do not constitute legal advice, and are not intended to be a
+substitute for legal advice. Please consult a lawyer for personalized
+legal advice.
+
+=== Additional Resources
+
+* https://help.sendlane.com/article/356-spam-folder[Why is My Email
+Going to the Spam Folder?]

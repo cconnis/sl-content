@@ -1,0 +1,4 @@
+Sendlane's legacy email builder is no longer supported. Check out
+https://help.sendlane.com/article/499-sendlanes-new-email-builder[the
+new email builder] and contact your Customer Success Manager or our 24/7
+Product Support team if you have questions.

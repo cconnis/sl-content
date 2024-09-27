@@ -1,0 +1,503 @@
+[[top]]
+==== Overview
+
+You can use custom CSS to design your Sendlane forms with even more
+granular control. Read on to learn what's possible with CSS and Sendlane
+Forms!
+
+==== In this guide
+
+* link:#how[How to add custom CSS to a Sendlane Form]
+* link:#available[Available CSS selectors]
+* link:#target-page[How to target a specific page]
+* link:#target-element[How to target a specific element]
+* link:#target-position[How to target a specific position]
+* link:#stack[How to stack classes and target by multiple attributes]
+* link:#width[How to make an image or button full width]
+* link:#gradient[How to apply a gradient to buttons]
+* link:#wrap[How to wrap option selector block selections]
+* link:#option-button[How to make radio and checkbox style option
+selectors look like buttons]
+* link:#legal-height[How to change the color and line height of legal
+text +
+]
+* link:#link-color[How to change the color of links]
+
+'''''
+
+[[how]]
+=== How to add custom CSS to a Sendlane Form
+
+To add custom CSS to a Sendlane Form:
+
+. On the form design page, click the *Global Styles* tab
+. Click *Edit Custom CSS*
+. Enter your custom CSS in the text box
+. Click *Save*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66638fa05940934e140f47fb/file-0LI8yzsQBY.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66638fa05940934e140f47fb/file-0LI8yzsQBY]
+
+link:#top[Back to top]
+
+'''''
+
+[[available]]
+=== Available CSS selectors
+
+The CSS example below shows all available selectors for Sendlane forms.
+The screenshot below the CSS shows the effects of the sample CSS on a
+Sendlane form.
+
+Use https://www.w3schools.com/css/default.asp[w3's CSS reference guide]
+for information on styles to apply to your form. Then, try copying the
+snippet below into the custom CSS box of your own form and replacing the
+values to see how the CSS changes your form!
+
+....
+/* Text elements */
+.form-element__text-element {
+    color: #ff3c78;
+}
+
+/* Image elements */
+img {
+    width: 100%;
+}
+
+/* Each element in the email is a row; enter target row number in parentheses */
+.form-element:nth-child(1) {
+    background-color: #FFFFFF;
+}
+.form-element:nth-child(5) {
+    background-color: #ffc828;
+}
+
+/* Field text input */
+input {
+    color: #373737;
+}
+
+/* Option selector label */
+label.slf-questionnaire__item{
+      color: blue;
+}
+
+/* Dropdown */
+select {
+    color: #ff3c78;
+}
+
+/* Button text */
+.slf-button {
+    color: #e9f3ff;
+}
+
+/* Close/x button */
+.slf-widget__close-button {
+    background-color: #ffc828;
+}
+
+.legal-text {
+  line-height: 12px;
+}
+
+/* Class to target specific page; replace 1 with desired page */
+.slf-form--page-2 {
+    background-color: white;
+}
+
+/* Stack classes in one line separated by a space to target an element (e.g., button) on a specified page */
+.slf-form--page-2 .slf-button {
+    color: #ff3c78;
+}
+....
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668a631e1989867dcefdd2e/file-stGfWA0YEC.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668a631e1989867dcefdd2e/file-stGfWA0YEC]
+
+link:#top[Back to top]
+
+'''''
+
+[[target-page]]
+=== How to target a specific page
+
+You can target a specific page of your form with custom CSS to apply a
+single style to one page only by using the `+.slf-form--page-1+` class
+and replacing `+1+` with whichever page you want to target.
+
+Let's say you want each page of your form to have a different
+background, like this:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666393661f3fa9421e287b9c/file-AWMHC6IAEO.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666393661f3fa9421e287b9c/file-AWMHC6IAEO]You
+can use the following snippet to achieve the yellow, blue, and green
+pages above by changing the `+background-color+` values to your
+preferred colors (see more information on adjusting backgrounds with CSS
+https://www.w3schools.com/css/css_background.asp[here]):
+
+....
+.slf-form--page-1  {
+    background-color:#FDF2D0;
+
+}
+
+.slf-form--page-2  {
+    background-color: #D3E2F1;
+
+}
+
+.slf-form--page-3  {
+    background-color: #DCFFE4;
+
+}
+....
+
+Use  `+.slf-form--page-[PAGE NUMBER]+` v
+
+link:#top[Back to top]
+
+'''''
+
+[[target-element]]
+=== How to target a specific element
+
+You can use stacked classes to target a specified element on a specified
+page. Use the  `+.slf-form--page-[PAGE NUMBER]+` class to specify the
+form page (replace `+[PAGE NUMBER]+` with the number of the page you'd
+like to target), then add a space and an element selector,
+like `+.slf-button+` or another element link:#available[listed above].
+
+In the example below, only the button on the second page of the form is
+targeted:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668a59e5173914f806c1a5d/file-ZFjadVO20j.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668a59e5173914f806c1a5d/file-ZFjadVO20j]
+
+You can use the following snippet to single out an element by replacing 
+`+[PAGE NUMBER]+` in `+.slf-form--page-[PAGE NUMBER]+` with the number
+of the page you'd like to target, add a space, then
+change `+.slf-button+` to the element selector you'd like to target:
+
+....
+.slf-form--page-2 .slf-button {
+  background-image: linear-gradient(pink, purple);
+}
+....
+
+link:#top[Back to top]
+
+'''''
+
+[[target-position]]
+=== How to target a specific position
+
+Targeting by position is helpful when you have two of the same elements
+on a page, like a button, and want to change the styling for just one.
+Each element in your form has a sequential position that starts at the
+top (the first element) and ends at the bottom (the last element). You
+can target elements using their position on your form instead of the
+element name.
+
+To determine the position you want to target, count the elements in your
+form starting at the top:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668b600dd0f8c60bb3fcfc1/file-LqLXgi421Z.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668b600dd0f8c60bb3fcfc1/file-LqLXgi421Z]
+
+You can target the position you want by adding a 
+`+.form-element:nth-child(POSITION NUMBER)+` class before the element
+you want to change (replace `+POSITION NUMBER+` with a number). The
+following snippet will make the second button in the form above green
+instead of blue:
+
+....
+.slf-form--page-1 .form-element:nth-child(5) .slf-button {
+  background-color: green;
+}
+....
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668bb1a5940934e140f49c9/file-IpU2D9rgk1.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668bb1a5940934e140f49c9/file-IpU2D9rgk1]
+
+link:#top[Back to top]
+
+'''''
+
+[[stack]]
+=== How to stack classes and target by multiple attributes
+
+You can target multiple attributes by stacking classes from page >
+position > element. You must use that order whenever stacking classes
+and separate each class with one space.
+
+The snippet below targets both buttons on page 2 of a form:
+
+....
+.slf-form--page-2 .form-element:nth-child(6) .slf-button {
+  background-image: linear-gradient(orange, red);
+}
+
+.slf-form--page-2 .form-element:nth-child(7) .slf-button {
+  background-image: linear-gradient(gray, black);
+}
+....
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668bf87d593d719515ca6a4/file-4YBjdQMXRF.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668bf87d593d719515ca6a4/file-4YBjdQMXRF]
+
+link:#top[Back to top]
+
+'''''
+
+[[gradient]]
+=== How to apply a gradient to buttons
+
+You can use gradients to create smooth transitions between two or more
+colors in your form buttons. See examples below:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c1f0d593d719515ca6a8/file-tMPh2tbH2g.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c1f0d593d719515ca6a8/file-tMPh2tbH2g]
+
+....
+.slf-button {
+  background-image: linear-gradient(pink, purple);
+}
+....
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c1f51f3fa9421e287d64/file-agmclfrJEW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c1f51f3fa9421e287d64/file-agmclfrJEW]
+
+....
+.slf-button {
+  background-image: linear-gradient(
+    104deg,
+    rgba(253, 81, 100, 1),
+    rgba(36, 208, 235, 1)
+  );
+}
+....
+
+ For more information on gradients, check out
+https://www.w3schools.com/css/css3_gradients.asp[w3's guide to CSS
+gradients] and experiment with your forms.
+
+link:#top[Back to top]
+
+'''''
+
+[[wrap]]
+=== How to wrap option selector block selections
+
+If you use an option selector block with many options, you may want to
+wrap your options so that they appear more compactly in your form and
+are easier to scan.
+
+You can use and adjust the following snippet to turn your option
+selectors into "buttons" that are grouped together:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c29add0f8c60bb3fcfd3/file-N4kr48pChs.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c29add0f8c60bb3fcfd3/file-N4kr48pChs]
+
+We suggest not editing the `+.slf-questionnaire+` section or checkbox
+squares unless you are familiar with CSS. In the
+`+.slf-questionnaire__item+` section, Edit the
+https://www.w3schools.com/css/css_border.asp[border] and
+https://www.w3schools.com/css/css_background.asp[background-color] to
+match your brand's styling.
+
+....
+/* Make options wrap around */
+.slf-questionnaire {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 600px;
+}
+
+/* Add border to each option */
+.slf-questionnaire__item {
+  border: solid 1px black;
+  background-color: white;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+/* Make the checkbox square bigger */
+    input[type="checkbox"] {
+      width: 15px;
+  height: 15px;
+  margin: auto 0px;
+}
+....
+
+link:#top[Back to top]
+
+'''''
+
+[[option-button]]
+=== How to make radio and checkbox style option selectors look like buttons
+
+You can make radio and checkbox style option selectors look like buttons
+instead of radio buttons and dropdowns so that selections are
+highlighted when clicked. See examples below, and see the comments in
+the snippets (text surrounded by /* and */) for clarification:
+
+[[radio]]
+===== Radio style
+
+Use a radio style option selector if you want website visitors to be
+able to select just one option.
+
+[cols="^,^",]
+|===
+|*Unselected options* |*Selected option*
+
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c383d593d719515ca6ab/file-O24eON7RCD.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c383d593d719515ca6ab/file-O24eON7RCD]
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c388e1989867dcefdd52/file-OIRmyLLOnG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c388e1989867dcefdd52/file-OIRmyLLOnG]
+|===
+
+....
+label.slf-questionnaire__item{
+      margin-bottom: 20px;
+      color: #1E1E1E; /* Button text color */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 42px;
+}
+
+input[type="radio"]{
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      margin: 0px;
+      width: 360px;
+      height: 42px;
+}
+
+input[type="radio"] + span{
+      width: 100%;
+      line-height: 42px;
+      background-color: #F5F5F5; /* Button background color */
+      text-align: center;
+      border: 2px solid #8E8E8E; /* Button border color */
+      border-radius: 2px;
+
+}
+input[type="radio"]:checked + span{
+      background-color: #353535;  /* Selected button background color */
+      color: #FFFFFF; /* Selected button text color */
+      justify-content: center;
+}
+
+input[type="radio"]:hover + span{
+      background-color: #E9E9E9; /* Hover button background color */
+      color:  #1E1E1E; /* Hover button text color */
+}
+....
+
+[[checkbox]]
+===== Checkbox style
+
+Use a checkbox style option selector if you want website visitors to be
+able to select more than one option.
+
+[cols="^,^",]
+|===
+|*Unselected options* |*Selected options*
+
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c61ed593d719515ca6ae/file-vUQmZtSNvS.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c61ed593d719515ca6ae/file-vUQmZtSNvS]
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c5fee1989867dcefdd53/file-QPX0UzF2Yf.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6668c5fee1989867dcefdd53/file-QPX0UzF2Yf]
+|===
+
+....
+label.slf-questionnaire__item{
+      margin-bottom: 20px;
+      color: #1E1E1E; /* Button text color */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 42px;
+}
+
+input[type="checkbox"]{
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      margin: 0px;
+      width: 360px;
+      height: 42px;
+}
+
+input[type="checkbox"] + span{
+      width: 100%;
+      line-height: 42px;
+      background-color: #F5F5F5; /* Button background color */
+      text-align: center;
+      border: 2px solid #8E8E8E; /* Button border color */
+      border-radius: 2px;
+
+}
+input[type="checkbox"]:checked + span{
+      background-color: #353535;  /* Selected button background color */
+      color: #FFFFFF; /* Selected button text color */
+      justify-content: center;
+}
+
+input[type="checkbox"]:hover + span{
+      background-color: #E9E9E9; /* Hover button background color */
+      color:  #1E1E1E; /* Hover button text color */
+}
+....
+
+link:#top[Back to top]
+
+'''''
+
+[[legal-height]]
+=== How to change the color and line height of legal text
+
+Change the text color and line height of the legal text appended to
+email and SMS fields:
+
+[cols="^,^",]
+|===
+|*Before* |*After*
+
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667080091f3fa9421e2880d6/file-AvwEpuDn3U.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667080091f3fa9421e2880d6/file-AvwEpuDn3U]
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667080025173914f806c1dcd/file-0XsLKcVJYb.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/667080025173914f806c1dcd/file-0XsLKcVJYb]
+|===
+
+To adjust your legal text fields, replace the line-height pixel value
+and color value in the following snippet and add the snippet to your
+form's custom CSS:
+
+....
+.legal-text {
+  color: #ffffff;
+  line-height: 50px;
+}
+....
+
+link:#top[Back to top]
+
+'''''
+
+[[link-color]]
+=== How to change the color of links
+
+[cols="^,^",]
+|===
+|*Before* |*After*
+
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6671e32d1f3fa9421e2881db/file-LiQ7Om1IXP.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6671e32d1f3fa9421e2881db/file-LiQ7Om1IXP]
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6671e333dd0f8c60bb3fd431/file-1YCq5UdMcr.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6671e333dd0f8c60bb3fd431/file-1YCq5UdMcr]
+|===
+
+To change the color of links, replace the color value in the following
+snippet with your preferred color and add the snippet to your form's
+custom CSS:
+
+....
+a {
+  color: hotpink;
+}
+....
+
+link:#top[Back to top]
+
+'''''

@@ -1,0 +1,76 @@
+https://apps.shopify.com/wheelio-first-interactive-exit-intent-pop-up[Wheelio]
+allows you to easily create landing or sales pages within your WordPress
+dashboard. 
+
+By integrating Wheelio with Sendlane, you can effectively grow your
+email list by adding the contacts you capture straight to a list in
+Sendlane.
+
+'''''
+
+=== Before Getting Started
+
+Be sure to have your
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify
+integration] completed within your Sendlane account. 
+
+You will also need
+https://apps.shopify.com/wheelio-first-interactive-exit-intent-pop-up[Wheelio]
+active within your Shopify store.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Wheelio knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting Wheelio and Sendlane
+
+. From your Shopify dashboard, go to __*Apps*, __click on *_Wheelio_*
+and then select
+*_Integrationsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ef64cc72c7d3a10cba9a3e9/file-VFsjqZwIdu.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ef64cc72c7d3a10cba9a3e9/file-VFsjqZwIdu]_*
+. Under _Email Integrations_ find Sendlane and hover to
+click *_Loginimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ef64d1b2c7d3a10cba9a3ed/file-uWXhVf2E50.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ef64d1b2c7d3a10cba9a3ed/file-uWXhVf2E50]_*
+. Enter your Sendlane login details and
+hit *_Confirmimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ef64ebc2c7d3a10cba9a406/file-sOQ3xYPMcS.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ef64ebc2c7d3a10cba9a406/file-sOQ3xYPMcS]_*
+. Select the list you'd like to use from the _List_
+dropdownimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ef64f2204286306f805d64a/file-dkdHT7NcD6.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ef64f2204286306f805d64a/file-dkdHT7NcD6]
+. Toggle _Enable Sendlane_ to *ON* and click *_Save Changes_* to
+complete the process
+
+Your integration is now complete!
+
+Captured contacts will now be automatically added to your chosen
+Sendlane list
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Wheelio, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Wheelio team is just a few clicks away!
+
+* https://optimizesupport.com/op3/[Submit a request]
+* http://optimizepress.helpscoutdocs.com/collection/6-training-faqs[Visit
+their FAQ page]
+
+==== Additional Wheelio Resources
+
+Sign up for
+https://apps.shopify.com/wheelio-first-interactive-exit-intent-pop-up[Wheelio]
+
+=== Additional Sendlane Resources
+
+Ask An Expert Youtube Video: https://youtu.be/Qd-eeDcrF6k[3 Easy Tips to
+Convert More Visitors Into Paying Customers With Email!]
+
+'''''
+
+=== TL;DR
+
+Shopify dashboard → _Apps → __Wheelio → __Integrations ____→ Email
+Integrations_ → Sendlane (hover to click __Login) __→
+Enter Sendlane login details → __Confirm __→ Select list →
+Toggle _Enable Sendlane_ ON → _Save Changes_

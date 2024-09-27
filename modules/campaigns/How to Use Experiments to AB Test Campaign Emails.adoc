@@ -1,0 +1,90 @@
+Test up to 4 versions of a Campaign email with different subjects,
+preheaders, and/or content to identify the best performer!
+
+[[experiments]]
+===== 🚨 Don't use Experiments and Machine Learning Open Predictability together
+
+Because
+https://help.sendlane.com/article/142-what-is-machine-learning-open-predictability[MLOP]
+sends a Campaign to each audience member at a different time, enabling
+MLOP while using Experiments means that there are fewer Contacts
+available to interact with the Campaign before a winner is chosen.
+
+[[on]]
+=== Turn On Campaign Experiments
+
+To turn on experiments for a Campaign, check the *Experiments checkbox*
+on the Settings screen of a new Campaign and set your components, test
+audience, and winning version settings.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/632ccfe3e42649264a92c38f/file-J5QawAipfu.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/632ccfe3e42649264a92c38f/file-J5QawAipfu]
+
+'''''
+
+[[settings]]
+=== Campaign Experiment Settings
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/632ccd4be42649264a92c37d/file-VPn1ofKpKS.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/632ccd4be42649264a92c37d/file-VPn1ofKpKS]
+
+===== Components
+
+Select which part(s) of your email you would like to create variations
+for (subject, preheader, and/or content).
+
+===== Test Audience
+
+Select the percentage of the email's audience that should receive
+variations of your email.
+
+===== Winning Version
+
+Select the factor that determines the winning email (click rate, open
+rate, or revenue) and the number of hours to let the experiment run
+before sending the winning email to the rest of the audience.
+
+'''''
+
+[[variations]]
+=== Create Multiple Email Variations
+
+On the Content page, you'll see a column for the first version of your
+email and options to create a new version from scratch by clicking
+*Create Email* or copying the original email by clicking *Copy A*.
+
+Create or copy up to four versions, then click *Next: Schedule* to start
+your send!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/632cd081e42649264a92c395/file-Qm8wbGPryg.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/632cd081e42649264a92c395/file-Qm8wbGPryg]
+
+'''''
+
+[[reporting]]
+=== Campaign Experiment Reporting
+
+Identify Campaigns that ran experiments by the experiment icon next to
+the Campaign name
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/632e23eec5dd38351401b380/file-Mdlzw80CgW.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/632e23eec5dd38351401b380/file-Mdlzw80CgW]
+
+View the results of your Campaign experiment on the right sidebar of
+your
+https://help.sendlane.com/article/321-email-reporting-breakdown[Campaign
+report] to see which variation performed the best based on the specified
+factor!
+
+Open rate or click rate factors are determined by the highest number of
+clicks or opens. 
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/632e22e7c5dd38351401b37f/file-Px1LdhukhZ.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/632e22e7c5dd38351401b37f/file-Px1LdhukhZ]
+
+'''''
+
+[[addl]]
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog/introducing-sendlane-experiments-multivariate-testing[Introducing
+Sendlane Experiments - Multivariate Testing]
+* https://www.sendlane.com/blog/text-based-vs-image-based-emails[Text-Based
+vs Image-Based Emails: Which is  Best For Your Business?]
+* https://www.sendlane.com/blog/unlock-these-5-effective-strategies-to-get-your-emails-opened[Unlock
+These 5 Effective Strategies to Improve Your Email Open Rate]

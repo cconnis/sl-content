@@ -1,0 +1,26 @@
+An Account Access Token can be created and shared to grant access to
+your Sendlane account to another Sendlane account. Partners, such as a
+marketing agency you've hired to manage your email marketing, can use
+your Access Token to log in to your Sendlane account.
+
+To create an account access token:
+
+. Click the *Account* icon
+. Click *User Management* 
+. Click the *Copy* icon to copy your Account Access Token
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b35a21ef744662f032b6/file-ljsRgshacg.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b35a21ef744662f032b6/file-ljsRgshacg]
+
+=== Revoke Token Access
+
+To revoke access granted by an Account Access Token, generate a new
+Account Access Token. The previous Account Access Token will no longer
+grant access to your account.
+
+To revoke an account access token:
+
+. Click the *Account* icon
+. Click *User Management* 
+. Click *Renew Access Token*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b36cef1be44733171c01/file-LaJL6uyZBB.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b36cef1be44733171c01/file-LaJL6uyZBB]

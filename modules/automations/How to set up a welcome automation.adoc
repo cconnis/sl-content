@@ -1,0 +1,224 @@
+==== Overview
+
+Sending a welcome series to new audience members is an easy way
+to introduce Contacts to your brand, encourage engagement, and convert
+leads into customers by nurturing them along a journey from awareness to
+conversion!
+
+==== In this guide
+
+* link:#background[Background information for welcome automations]
+** link:#triggers[Welcome automation triggers]
+** link:#sms-in-automations[SMS in welcome automations]
+* link:#create[1. Create a welcome automation]
+* link:#control[2. Control the flow of contacts through multiple entry
+points]
+* link:#actions-content[3. Add welcome automation actions and content]
+* link:#test[4. Test and activate your automation]
+* link:#resources[Additional resources]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Create at least one list for new Contacts to be added to. We recommend
+using one list for all new contacts and creating a separate newsletter
+list for contacts to be added to once they complete the welcome
+automation.
+
+'''''
+
+[[background]]
+=== Background information for welcome automations
+
+==== Welcome automation triggers
+
+The automation trigger(s) you select for your welcome automation depends
+on the methods you use to collect contacts’ information. The following
+triggers are often used in welcome automations: +
+
+* Subscribes to a List
+* Submits a Form
+* SMS Consent Received
+
+Depending on your preferences and marketing programs, you can use
+multiple triggers for a single welcome automation or multiple separate
+welcome automations.
+
+[[ sms-in-automations]]
+==== SMS in welcome automations
+
+In most circumstances, it’s best to use separate welcome flows for email
+and SMS. We recommend using the SMS Consent Received trigger to start an
+SMS specific welcome automation.
+
+When contacts meet an automation trigger’s criteria, each node in the
+automation is nearly instantly queued up for the contact. Let’s say you
+have a welcome automation that uses the Subscribes to a List trigger
+with the following nodes:
+
+. Email
+. Wait one day
+. SMS
+. Wait two days
+. Email
+
+As soon as the contact subscribes to the list specified in the trigger’s
+settings, Sendlane generates a “schedule” for the contact based on the
+information available at the time. 
+
+If the contact hasn’t provided SMS consent before or during the sign up
+process, the automation sees that the contact cannot receive SMS
+messages and will skip the SMS message in node 3. The contact will never
+receive that SMS message, even if they provide consent to receive SMS
+before the SMS message is scheduled to send, because the schedule was
+created before consent was given.
+
+'''''
+
+[[create]]
+=== 1. Create a welcome automation
+
+Start your welcome automation setup by creating an automation and
+selecting the trigger(s) associated with your chosen entry point(s):
+
+. Click the *Automations* icon
+. Click *New Automation*
+. Click *Start From Scratch*
+. Enter a name for your abandoned browse automation
+. Click *Start*
+. Click *Add Trigger*
+. Select your trigger; see step 2 below for important information on
+your trigger settings
+
+image:https://lh7-us.googleusercontent.com/cf4Dsj9RFzvpWtLK8lTdTjo6G2xBpuwk3py_N11SiIxDSbmpix9PxBGhsEpu15FJdiEF4kBffVRN78E7Yjdmwn-vKoqQmDsrjGK17AHm7GtM1rqyjoWyGdi-CaTk5gs4UiVUN-sALSn2Qqt-yJjGd3Y[https://lh7-us.googleusercontent.com/cf4Dsj9RFzvpWtLK8lTdTjo6G2xBpuwk3py_N11SiIxDSbmpix9PxBGhsEpu15FJdiEF4kBffVRN78E7Yjdmwn-vKoqQmDsrjGK17AHm7GtM1rqyjoWyGdi-CaTk5gs4UiVUN-sALSn2Qqt-yJjGd3Y,width=1680,height=1050]
+
+[[control]]
+=== 2. Control the flow of contacts through multiple entry points
+
+You likely give prospective contacts multiple ways to sign up for your
+email and SMS marketing programs, such as multiple forms, text-to-join
+keywords, and the marketing consent checkbox on your checkout page. Your
+multiple welcome automations may contain entirely different content or
+share content across automations. Depending on the setup of your welcome
+automation, there are techniques you can implement to prevent contacts
+from receiving redundant content or the same content multiple times.
+
+If you choose to use multiple triggers (up to three) for your welcome
+automation, you can prevent contacts from being sent through the
+automation multiple times with the Limit Per Contact setting in your
+automation trigger:
+
+* Select `+Do not trigger when already in Automation+` if you’d like to
+allow contacts to re-enter the welcome automation at some point. If a
+contact unsubscribes from your content and re-subscribes later,
+triggering the welcome automation again, they will be sent through the
+automation again as long as they are not already in it.
+* Select `+One time only+` if you do not want contacts to ever re-enter
+the welcome automation. If a contact unsubscribes from your content and
+re-subscribes later, they will not trigger the welcome automation again.
+
+If you choose to create multiple separate welcome automations, you can
+prevent contacts from completing more than one of your welcome
+automations by:
+
+. Selecting `+One time only+` as the Limit Per Contact setting in your
+automation trigger, and
+. Using an Update Automation > End Other action as the first node(s) in
+all welcome automations to end any other welcome automations
+
+[[actions-content]]
+=== 3. Add welcome automation actions and content
+
+Start your automation with a Send Message action and select email or
+SMS, depending on which welcome automation you’re building:
+
+. Click the *+ button* under the automation’s trigger(s)
+. In the lefthand sidebar, click *Send Message*
+. Click *Email* or *Send SMS*
+(https://help.sendlane.com/article/449-automation-actions#notification[Send
+Email Notification is intended for internal notifications], not sending
+marketing messages)
+. Complete your email or SMS node (see our guide to automation message
+nodes
+https://help.sendlane.com/article/449-automation-actions#send-message[here],
+and check out our
+https://help.sendlane.com/article/82-tags#tag-automation[guide to tags]
+so you can capture contacts’ interests based on their clicks)
+. Add a
+https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation#timing[wait
+node] between subsequent messages
+
+You can end your welcome automation in multiple ways based on the goal
+of your welcome automation:
+
+* *Contacts make a purchase* - If your welcome automation series
+includes coupons or other strong CTAs designed to encourage a purchase,
+consider ending your welcome automation with a
+https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation#goal[goal]
+that checks to see whether or not contacts have purchased and pulls them
+to a specified node, out of the automation entirely, or starts a new
+automation once they have completed a purchase. You might also consider
+using
+https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation#conditional-splits[conditional
+splits] to focus branches of your automation on specific products or
+interests, or an
+https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation#audience-split[audience
+split] to A/B test different versions of similar content. Check out our
+guide to https://help.sendlane.com/article/82-tags#tag-content[tags] to
+learn how to apply tags to contacts based on the links they click.
+* *Contacts learn about your brand* - If your welcome automation is more
+focused on informing customers about your brand than convincing them to
+buy from you, you may want to use
+https://help.sendlane.com/article/449-automation-actions#update-contact[update
+contact property actions] to unsubscribe contacts from your welcome list
+and subscribe them to your newsletter list so they stay in the loop.
+
+Whatever the goal of your automation is, you can keep contacts engaged
+by using an
+https://help.sendlane.com/article/449-automation-actions#update-automation[update
+automation action] to start another automation.
+
+[[test]]
+=== 4. Test and activate your automation
+
+To test your automation:
+
+. Activate your
+https://help.sendlane.com/article/668-how-to-activate-an-automation#node[email
+nodes]
+. Activate your
+https://help.sendlane.com/article/668-how-to-activate-an-automation#automation[automation]
+. Meet your welcome automation's trigger criteria; If you used one of
+the more common welcome automation triggers mentioned above you can
+follow its testing protocol: +
+* Subscribes to a List - Add your email address to the list the same way
+contacts will to ensure your setup will work for them
+* Submits a Form - Submit the form specified in the trigger's settings
+* SMS Consent Received - Use your phone number to complete SMS sign up
+the same way your contacts will
+
+If you successfully completed your automation, you're all set! If you
+didn't receive messages you expected to receive, or otherwise didn't
+experience your automation the way you want your contacts to,
+https://help.sendlane.com/article/669-how-to-deactivate-an-automatio#automations[deactivate
+your automation] while you troubleshoot.
+
+'''''
+
+[[resources]]
+=== Additional Resources
+
+For helpful content on crafting powerful welcome series emails, check
+out these resources from the https://www.sendlane.com/blog[Sendlane
+Email Automation Journal]:
+
+* https://www.sendlane.com/blog-posts/3-ecommerce-welcome-email-examples-and-what-you-can-learn-from-them[]https://www.sendlane.com/blog/grow-sms-marketing-list[Six
+Effortless Ways to Grow Your SMS Marketing List]
+* https://www.sendlane.com/blog-posts/3-ecommerce-welcome-email-examples-and-what-you-can-learn-from-them[3
+eCommerce Welcome Email Examples and What You Can Learn From Them]
+* https://www.sendlane.com/blog/email-sms-why-you-need-both[Email & SMS:
+Why You Need Both & Tips to Get Started]
+* https://www.sendlane.com/ebooks/the-digital-retailers-guide-to-modern-sms-mms-marketing[The
+Digital Retailer's Guide to Modern SMS/MMS Marketing]
+* https://www.sendlane.com/blog-posts/how-to-drive-320-more-revenue-from-your-welcome-emails[Drive
+320% More  Revenue from Your Welcome Emails with These 3 Tips]

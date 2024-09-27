@@ -1,0 +1,43 @@
+[[top]]
+==== Overview
+
+You can specify up to nine colors and unlimited fonts to be displayed
+prominently anywhere color or font* pickers appear in Sendlane;
+including the email builder, form builder, and reviews.
+
+_*Branding fonts are not available
+for _https://help.sendlane.com/article/404-how-to-customize-your-unsubscribe-and-email-preferences-pages[email
+subscription pages]_._
+
+[[account-wide]]
+===== ⚠️ Brand colors and fonts are set for the entire account
+
+If you have multiple stores under one Sendlane account, you will set
+brand colors and fonts for all brands on your Account > Branding page.
+
+==== In this guide
+
+* link:#colors[Brand colors]
+* link:#font[Brand fonts]
+
+'''''
+
+[[color]]
+=== Brand colors
+
+You can use the color palette section of the branding page to select up
+to nine colors that will always be at the top of the color picker
+wherever it appears in Sendlane. Read more about branding colors
+https://help.sendlane.com/article/683-how-to-set-and-use-branding-colors[here].
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669e7e16641a5b210cd263e8/file-yIP3WWY3o8.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669e7e16641a5b210cd263e8/file-yIP3WWY3o8]
+
+[[font]]
+=== Brand fonts
+
+You can use the fonts section of the branding page to import preferred
+Google, Adobe, or custom fonts you've purchased or are otherwise
+licensed to use, plus fallback fonts. Read more about branding fonts
+https://help.sendlane.com/article/684-how-to-set-and-use-branding-fonts[here].
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a3c3958919a15d1b1d20c2/file-jwO6VAQ9UK.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66a3c3958919a15d1b1d20c2/file-jwO6VAQ9UK]

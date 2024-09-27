@@ -1,0 +1,259 @@
+[[top]]
+==== Overview
+
+You can add images, text, collection fields, multiple choice fields, and
+buttons to Sendlane Forms. Read on to learn about each available content
+block in Sendlane Forms!
+
+==== In this guide
+
+* link:#fields[Form Fields]
+** link:#add-field[Add a form field]
+** link:#required[Make form fields required]
+** link:#legal[Legal text]
+** link:#rearrange[Rearrange form fields]
+* link:#image[Images]
+** link:#add-image[Add an image]
+** link:#side-image[Add an image to one side of the form]
+** link:#adjust-image[Adjust an image's size&#44; alignment&#44; corner
+radius&#44; and margins]
+* link:#text[Text]
+* link:#option[Option Selector]
+* link:#button[Button]
+* link:#manage[Manage content blocks]
+** link:#rearrange[Rearrange content blocks]
+** link:#delete[Delete content blocks]
+
+'''''
+
+[[fields]]
+=== Form Fields
+
+Form fields include first name, last name, email, and phone number* as
+standard fields plus any custom fields in your account. These fields
+will appear to website visitors as text fields on your form.
+https://help.sendlane.com/article/331-custom-fields[Custom fields] set
+to date type will expand a date picker when clicked.
+
+*When Contacts submit their phone number via your form, consent to
+receive SMS messages from you is automatically applied to their Contact
+profile, even if your Sendlane account does not have an SMS plan yet.
+
+[[add-field]]
+==== Add a form field
+
+To add a form field:
+
+. If your form page does not already have a Form Field content block,
+click Form Fields in the Add block
+sectionimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d92c9989182269183fa39a/file-N6r3kud2SP.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d92c9989182269183fa39a/file-N6r3kud2SP]
+. Click the Form Fields dropdown
+. Click the Add Field dropdown
+. Click the field you'd like to add to your form
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d92d5a1afd880d112b7d82/file-3YDI1VZHpx.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d92d5a1afd880d112b7d82/file-3YDI1VZHpx]
+
+[[required]]
+==== Make form fields required
+
+All form fields can be set to required by checking the Required
+checkbox. The email field is hard required on
+https://help.sendlane.com/article/625-understanding-sendlane-forms-design-and-customization-options#form-pages[email
+form pages] and the phone field is hard required on
+https://help.sendlane.com/article/625-understanding-sendlane-forms-design-and-customization-options#form-pages[SMS
+form pages].
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d92a091afd880d112b7d81/file-3xDKkvjbyc.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d92a091afd880d112b7d81/file-3xDKkvjbyc]
+
+[[legal]]
+==== Add legal text to email form fields
+
+The email field has an optional checkbox for legal text. When enabled, a
+message informing website visitors that they are providing consent to
+receive marketing material by submitting the form will appear under the
+email field. You can edit the text to match your brand's existing
+consent guidance.
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d92a1553788e77b07d43d0/file-Q3BxPry6uy.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d92a1553788e77b07d43d0/file-Q3BxPry6uy]
+
+[[rearrange]]
+==== Rearrange form fields
+
+Only one form fields block is allowed per form. Use the drag and drop
+icon to rearrange the form fields’ order:
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d92a4493e735297b4eca1e/file-4LoiTXSTZc.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d92a4493e735297b4eca1e/file-4LoiTXSTZc]
+
+link:#top[Back to top]
+
+'''''
+
+[[image]]
+=== Images
+
+Use the image block to add images to your form, such as a logo or
+product picture. The image block supports .JPEG, .PNG, .GIF, and .WEBP
+files (.WEBP files are converted to .JPEG when uploaded to Sendlane).
+
+[[add-image]]
+==== Add an image block
+
+To add an image block:
+
+. Click the image
+iconimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d9307e53788e77b07d43d5/file-cJ9Epv6qlC.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d9307e53788e77b07d43d5/file-cJ9Epv6qlC]
+. Use the Upload Type radio buttons to select file or URL
+. Use the file selector to select your image file or paste your image's
+URL
+
+[[adjust-image]]
+==== Adjust an image's size, alignment, corner radius, and margins
+
+Use the controls below the image preview to adjust your image's size,
+alignment, corner radius, and margins.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d934bc53788e77b07d43d6/file-F2o0NecvEo.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d934bc53788e77b07d43d6/file-F2o0NecvEo]
+
+[[side-image]]
+==== Add an image to one side of the form
+
+You can add an image to one side of your form content (desktop only) by
+selecting a
+https://help.sendlane.com/article/625-understanding-sendlane-forms-design-and-customization-options#global-form-design[split
+layout in the global styles tab].
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d9345b1afd880d112b7d83/file-8RLr9rpDNr.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d9345b1afd880d112b7d83/file-8RLr9rpDNr]
+
+link:#top[Back to top]
+
+'''''
+
+=== Text
+
+Use the text block to insert text into your form, such as an attention
+grabbing headline, a call to action, instructions, or other relevant
+information. Try to keep text on forms concise and to the point so that
+website visitors aren’t dissuaded from signing up for your content by
+having to spend too much time reading.
+
+Dynamic content, personalization tags, coupon codes, and custom data
+cannot be rendered in text blocks.
+
+To add a text block, click the text Text icon:
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d936441c2f8d3d7ebfd3a0/file-vOIQyZtwgW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d936441c2f8d3d7ebfd3a0/file-vOIQyZtwgW]
+
+link:#top[Back to top]
+
+'''''
+
+[[option]]
+=== Option Selector
+
+Use the option selector block to insert a question or survey with
+multiple answer options. The option selector is a great way to collect
+standardized data from your Contacts and helps avoid the pitfalls of
+text field submissions differing slightly in spelling or composition
+(e.g., “blue,” “Blue,” and “blu” answers to “What is your favorite
+color?”)
+
+[[option-selector-identification]]
+===== ⚠️ Option selector blocks must be used with an email or phone field in order to save data to Contact Profiles
+
+Without an email address or phone number to associate with a form
+submission, data from an option selector block will be lost.
+
+[[option-selector-limit]]
+===== ⚠️ Only one option selector block is allowed per form
+
+The following collection options are available for option selector
+blocks:
+
+* Checkbox - Allow Contacts to select multiple options
+
+* Radio Button - Display all options and allow Contacts to select one
+only
+
+* Dropdown - Allow Contacts to select one option from a dropdown
+
+In the Option # fields, enter the option as you want it to appear to
+website visitors. In the Property fields, enter the option as you want
+it to appear in Contacts’ profiles.
+
+For example, let’s say you want to collect your Contacts’ clothing
+preferences. You could set up your option block like:
+
+[cols=",",]
+|===
+|*Option #* |*Property*
+|Women’s |women
+|Men’s |men
+|Children’s |kids
+|===
+
+so that the more colloquial format is shown to website visitors but your
+data is compact and clean on the back end.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d9368b89182269183fa39c/file-lK0qlG8FmU.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d9368b89182269183fa39c/file-lK0qlG8FmU]For
+more information on the option selector block, see
+https://help.sendlane.com/article/628-how-to-collect-personal-preferences-with-sendlane-forms[How
+to collect personal preferences with forms].
+
+link:#top[Back to top]
+
+'''''
+
+=== Button
+
+Use the button block to add a button to your form. The following actions
+are available for buttons:
+
+* Submit and go to next page - Submit data to Sendlane and go to the
+next page of the form
+
+* Submit and close form - Submit data to Sendlane and close form
+
+* Submit and go to URL - Submit data to Sendlane and go to a specified
+URL
+
+* Close Form
+
+* Go to URL
+
+To add a button block:
+
+. Click the button block
+. Select an action
+. Enter the text you want to appear on the button in the Text field
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d9375589182269183fa39d/file-3ANTtc2IlP.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d9375589182269183fa39d/file-3ANTtc2IlP]
+
+link:#top[Back to top]
+
+'''''
+
+[[manage]]
+=== Manage content blocks
+
+[[rearrange]]
+==== Rearrange content blocks
+
+To rearrange content blocks:
+
+. Click the block you want to move
+. Click the drag and drop icon
+. Drag the block where you want it to appear on your form
+. Release the block
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d939381c2f8d3d7ebfd3a1/file-rsHejSCsIv.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d939381c2f8d3d7ebfd3a1/file-rsHejSCsIv]
+
+[[delete]]
+==== Delete content blocks
+
+To delete a content block:
+
+. Click the content block you want to delete
+. Click the *trash can* icon
+. Click *OK*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d9399e1c2f8d3d7ebfd3a2/file-oGFdpUjdtf.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d9399e1c2f8d3d7ebfd3a2/file-oGFdpUjdtf]
+
+link:#top[Back to top]
+
+[.sans]##

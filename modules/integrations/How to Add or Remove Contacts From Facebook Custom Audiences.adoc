@@ -1,0 +1,91 @@
+[[top]]
+==== Overview
+
+A https://www.facebook.com/help/341425252616329[Custom Audience] is an
+ad targeting option that lets you find your _existing_ audiences among
+people who are on Facebook.
+
+Once your
+https://help.sendlane.com/article/174-how-to-integrate-facebook-and-sendlane[Facebook
+integration] is set up, you're able to adjust your Facebook Custom
+Audiences a few different ways!
+
+==== In This Guide
+
+* link:#export[Add Contacts to Facebook From a List]
+* link:#automation[Add or Remove Contacts From a Facebook Custom
+Audience with an Automation]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Complete your
+https://help.sendlane.com/article/174-how-to-integrate-facebook-and-sendlane[Facebook
+integration]
+
+'''''
+
+[[export]]
+=== Add Contacts to Facebook From a List
+
+Contacts can be sent directly to Facebook Custom Audiences from Lists.
+To send Contacts from a List to a Facebook Custom Audience:
+
+. Click a *List*
+. Click the *Audience* icon
+. Click the *Lists* tab
+. Click the *Facebook Custom Audience* icon
+. Select your business from the *Business dropdown*
+. Enter a *name* for your Facebook Custom Audience
+. Click *Create Audience*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656f8ac26cf7fd3739cc68be/file-PDS4M2TxxW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656f8ac26cf7fd3739cc68be/file-PDS4M2TxxW]
+
+'''''
+
+[[automation]]
+=== Add or Remove Contacts From a Facebook Custom Audience with an Automation
+
+You can use any Automation trigger to add or remove Contacts from a
+Facebook Custom Audience. Some popular examples include adding Contacts
+to a Facebook Custom Audience when they are subscribed to a specified
+List, has a specified Tag added to their profile, or clicks a specified
+link from an email or SMS Campaign.
+
+To use Automations to add or remove Contacts from a Facebook Custom
+Audience:
+
+. Choose a *trigger*
+. Click the *+ icon* to add a node
+. Select the *Facebook tab*
+. Select an *action*
+. Select a *Facebook Custom Audience* to add Contacts to
+. Click *Done*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656f8e4dceecfd080b19fbb4/file-TPTJenPOz5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656f8e4dceecfd080b19fbb4/file-TPTJenPOz5]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656f8e55ceecfd080b19fbb5/file-Zhd3cAQcNu.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/656f8e55ceecfd080b19fbb5/file-Zhd3cAQcNu]
+
+'''''
+
+=== Additional Resources
+
+Facebook Custom Audiences is a feature native to Facebook Business. 
+
+If you have any specific question about Facebook Custom Audiences,
+please visit the
+https://www.facebook.com/business/help/744354708981227?id=2469097953376494[Facebook
+Ads Help Center].
+
+If you need any help with completing your Facebook integration or adding
+the custom audience option to your automation,
+mailto:mailto:support@sendlane.com[our support team is available 24/7].
+
+'''''
+
+=== TL;DR
+
+[.underline]#Export from a List#: Audience → Lists → Open the
+list → Custom Audience *→* Select Custom Audience → Export to Facebook
+
+[.underline]#Using an Automation:# Automations → Add New Step into
+Automation → Change 'Integration' to Facebook → Choose Add or Remove
+to/from Custom Audience → Choose the Appropriate custom audience

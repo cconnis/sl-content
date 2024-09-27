@@ -1,0 +1,203 @@
+[[top]]
+==== Overview
+
+If you’re migrating to Sendlane Reviews from Stamped.io, you can bring
+your hard earned reviews with you! Read on to learn how to import your
+Stamped.io reviews to Sendlane.
+
+==== In This Guide
+
+* link:#export[Export reviews from Stamped.io Product Reviews]
+* link:#import[Import reviews file to Sendlane]
+
+'''''
+
+[[export]]
+=== 1. Export reviews from Stamped.io
+
+Stamped.io
+https://stampedsupport.stamped.io/hc/en-us/articles/8839244356891-Exporting-Reviews-Checkout-Comments-or-NPS[advises
+customers] to email `+support@stamped.io+` to request a full export of
+all reviews.
+
+[[export-warning]]
+===== ⚠️ You must explicitly request that your export file include product IDs and photo file names
+
+Customers sometimes receive export files without product ID or customer
+review photo link columns, or those columns may be included with a
+potential litany of issues.
+
+When you email Stamped.io, include a note that your export file must
+contain columns for product IDs and photos, and the photos column should
+only include customer review photos, not product images.
+
+When your file is ready for download, save it somewhere easily
+accessible, like your desktop, and make sure it is saved as a .CSV file.
+
+[[format]]
+=== 2. Format Stamped.io reviews file
+
+Exports from Stamped.io vary in their structure and content. Review your
+Stamped.io export file for the following potential issues that need to
+be fixed before proceeding with importing:
+
+* link:#column-headers[Incorrect or missing column headers]
+* link:#photo-file-structure[Incorrect photo column file structure]
+* link:#reply-status[Review replies with a status of FALSE]
+* link:#review-status[Incorrect review publication column values]
+
+[[column-headers]]
+==== Incorrect or missing column headers
+
+Open your Stamped.io export and
+https://docs.google.com/spreadsheets/d/1LkjMbzuMw9VjN929OQwfzgPhhkeYcSvpz0cqbrTXq4s/edit#gid=0[this
+Stamped.io template]. If you import a file with column headers that the
+Sendlane Reviews import tool doesn't recognize, or column headers that
+the Sendlane Reviews import tool expects to find are not there, your
+file will not import.
+
+Make sure that the column headers in your export exactly match the
+headers in the template. If you see any variations, such as createdat
+instead of created_at, copy the column header from the template file and
+paste it in your export's equivalent column header. The column headers
+highlighted in green in the template are columns with multiple known
+Stamped.io export variations.
+
+If you see any column headers in the template that are missing from your
+export file, add them to your export file by copying the column header
+from the template and pasting it into the column header to the right of
+your file's last column header. `+photoFilenames+` is a common missing
+header.
+
+[[photo-file-structure]]
+==== Incorrect photo column file structure
+
+The `+photoFilenames+` column should contain the photo's file name (a
+long string containing letters and numbers) and end in `+.jpg+`, like
+this: `+66389_8374587636_3ffbdgs876234_8hs7_72389.jpg+`. If you see any
+other file structure you will need to edit each row that deviates from
+the standard photo file naming convention.
+
+Review the following table for what to do for each photo file structure:
+
+[width="100%",cols="50%,50%",]
+|===
+|*`+photoFilenames+` example entries* |*Next steps*
+
+|`+66389_8374587636_3ffbdgs876234_8hs7_72389.jpg+` |Nothing, this is the
+standard file structure containing only the file's name (
+`+66389_8374587636_3ffbdgs876234_8hs7_72389+`) and extension (`+.jpg+`)
+🥳
+
+|`+https://s3.us-west-2.amazonaws.com/stamped.io/uploads/productImages/17761_75874444675.jpg+`
+|Photo file URLs beginning with
+https://s3.us-west-2.amazonaws.com/stamped.io/uploads are sometimes
+https://help.shopify.com/en/manual/products/product-media/add-media[product
+photos], not photos submitted by reviewers. To find all instances of
+product photos in your export file, filter the photoFilenames column and
+enter https. Click on each image link to determine whether it is a
+product photo or a customer review photo. +
+ +
+If you find rows with product images but you believe the review should
+have a customer submitted photo, you can ask Stamped.io to re-do your
+export and note the rows containing product photos instead of customer
+photos. Delete any instances of product photos that Stamped.io is not
+able to replace with customer review photos. If Stamped.io doesn't
+provide the customer review photo URLs and you don't delete links to
+product photos, product photos will appear attached to your reviews. +
+ +
+If you find rows with clickable links that lead to customer review
+photos you'll need to remove part of the URL so that you're left with
+the file name and `+.jpg+` extension, as shown in the column to the
+left. Using the example in the column to the left, you would open your
+spreadsheet software's search and replace function, enter
+`+https://s3.us-west-2.amazonaws.com/stamped.io/uploads/productImages/+`,
+and select replace all, which would return `+17761_75874444675.jpg +`for
+our example. Because the photo URL column in Stamped.io exports varies,
+you will need to copy the portion of a URL in your export file ending
+with the leftmost / for your search and replace. +
+
+|`+NULL+` |If you believe the review should have a customer submitted
+photo, you can ask Stamped.io to re-do your export and note the rows
+containing `+NULL+` instead of customer photos. +
+ +
+You can also delete any instances of `+NULL+` and proceed with reviewing
+your file and uploading to Sendlane.
+
+|`+126999_6566237012064_4d5967_38b8_49e6_aaf1_5e4fcb823aef.jpg, https://s3-us-west-2.amazonaws.com/stamped.io/uploads/videos/54ff3dc60e17968b089f6ac27e3135.mp4#t=0.1+`
+|Customers sometimes include a photo and video in their review. Sendlane
+Reviews does not support video files yet, so any URL containing a
+`+.mp4+` extension must be removed. If you see a row with an example
+like the one in the column to the left, delete the entire URL containing
+the `+.mp4+` extension so that you are left with only the photo:
+`+126999_6566237012064_4d5967_38b8_49e6_aaf1_5e4fcb823aef.jpg+`
+
+| + | +
+|===
+
+[[reply-status]]
+==== Review replies with a status of `+FALSE+`
+
+The Stamped.io export includes a column called `+verified+` which
+indicates the status of a reply; `+TRUE +`means published and `+FALSE+`
+means unpublished or deleted. The Sendlane Reviews import tool does not
+look at this column. All replies are imported and publicly available.
+
+If you want to prevent unpublished or deleted review replies from being
+published in your Sendlane Reviews widget, filter the
+`+verified+` column for `+FALSE+` and delete the reply in the `+reply+`
+column.
+
+[[review-status]]
+==== Incorrect review publication column values
+
+Stamped.io exports can contain multiple variations of publication
+statuses in the published column indicating whether a review should
+appear on your website or not. Variations include, but are not limited
+to, `+TRUE +`/`+FALSE+`, `+Published+`/`+Unpublished+`,
+`+published+`/`+unpublished+`, `+1+`/`+2+`, and `+0+`/`+1+`. The
+Sendlane Reviews import tool accepts `+TRUE +`/`+FALSE+` (case
+insensitive) or `+published+`/`+unpublished+` (case sensitive.) If your
+published column contains variations, use your spreadsheet tool's find
+and replace functionality to replace the variation with its accepted
+value.
+
+For example, if your published column contains Published/Unpublished,
+you can search for the word Published and replace it with `+TRUE+`, then
+search for the word Unpublished and replace it with `+FALSE+`.
+
+[[import]]
+=== 3. Import reviews file to Sendlane
+
+To import your review file:
+
+. Click the *Reviews* icon
+. Click *Content* 
+. Click *Import & Export*
+. Click *Import Reviews*
+. Select *Stamped.io* from the Product Review Source dropdown
+. Drag and drop your .CSV file or click to browse for your file
+. Check the checkbox confirming that your reviews are genuine
+. Click *Import +
+*
+
+If some reviews were not imported due to an error, the Results column
+will show how many reviews were not imported. Click the download icon in
+the Actions column to download a file of reviews that were not imported.
+See
+https://help.sendlane.com/article/647-troubleshooting-sendlane-reviews-imports[Troubleshooting
+Sendlane Reviews] for next steps.
+
+'''''
+
+=== Troubleshooting
+
+[[other-errors]]
+====== My review file contains errors!
+
+If some reviews were not imported due to an error, the Results column
+will show how many reviews were not imported. Click the download icon in
+the Actions column to download a file of reviews that were not imported.
+See
+https://help.sendlane.com/article/647-troubleshooting-sendlane-reviews-imports[Troubleshooting
+Sendlane Reviews] for next steps.

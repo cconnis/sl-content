@@ -1,0 +1,95 @@
+==== Overview
+
+Gmail sometimes "clips" emails that it considers too lengthy, meaning
+recipients have to click a link to see the entire email. This clip hides
+the unsubscribe link, which can lead to increased spam reports, and
+could hide important CTAs. Read on to learn more about Gmail clipping
+and how to avoid it!
+
+==== In this guide
+
+. link:#test[Send a Test Email To Your Gmail Account]
+. link:#size[Determine Your Email’s Size]
+. link:#reduce[Reduce the Size of Your Email]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Have access to a Gmail account
+
+'''''
+
+Gmail sets a variable limit on the email size depending on the email's
+content, the device the email is viewed on, and the app used to access
+the email. When this limit is crossed by a sender, Gmail users see
+“[Message Clipped] View entire message” and must click the hyperlink to
+access the rest of the email.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654bae252d28585006d01440/file-TXnibyM15a.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/654bae252d28585006d01440/file-TXnibyM15a]
+
+The clip can hide important content from your emails, such as calls to
+action and the unsubscribe link. Recipients may click spam on clipped
+emails to avoid the 2+ clicks it would take to unclip the email and
+click unsubscribe, making clipped emails dangerous for your overall
+revenue and hard earned sending reputation.
+
+Gmail accounts for an estimated 27% of all emails received worldwide, so
+optimizing your emails to avoid clipping is important. Follow the steps
+outlined below to test and reduce the size of your emails to avoid Gmail
+clipping.
+
+1::
+  While Gmail does not publicize the exact logic used to determine
+  whether an email gets clipped, ensuring emails are smaller than 102 KB
+  has become an email industry best practice for avoiding Gmail message
+  clipping.
+  +
+  Tracking links sent in live emails but not test emails contain more
+  characters than regular links. Every link in your email is turned into
+  a tracking link when sent as a live Campaign or Automation email. Send
+  yourself a live email by creating a list with only your email address,
+  then use that list as the Campaign audience for your "test" email. +
+   +
+  View the email on desktop and mobile, as well as in standard inbox
+  apps like Gmail and Apple Mail. If your email wasn’t clipped, you’re
+  good to go! If it was clipped, move on to step two.
+2::
+  You can use a tool like http://bytesizematters.com/[bytesizematters]
+  to determine the size of your email:
+  +
+  . Click the *View entire message* link in your clipped email to load
+  the rest of your content
+  . Right-click anywhere on the page and select *View Page Source*
+  . Copy the code that appears in a new tab
+  . Paste the code into bytesizematters
+  +
+  Look at the file size at the top right corner of the text box. If it
+  is more than 102 KB, you will need to reduce the size of your email.
+3::
+  The easiest way to reduce the size of your email is to cut content.
+  When you cut content or rework your email to reduce its size, remember
+  the email marketing best practice: an email’s content should be
+  roughly 60% text and 40% images.
+  +
+  Generally, images account for the largest parts of an email. Try
+  resizing or compressing the size of the images in your email and test
+  different options to see what works best.
+
+=== Troubleshooting
+
+====== I've reduced my email size, but Contacts still reports that they're receiving clipped emails!
+
+Sendlane users rarely experience persistent Gmail clipping due to
+Sendlane's MJML based email builder, which generally prevents Gmail
+clipping. If you can't determine why your emails are clipped right away,
+please contact your assigned Customer Success Manager for further
+assistance.
+
+As you work to find the cause of the clipping, you may want to add a
+note for Gmail users to existing emails explaining that they'll need to
+click the "View entire message" link to view your entire email. Create a
+Segment with a condition for Email address > contains > Gmail, then use
+this Segment as the Audience for Campaigns containing the clipped
+message note.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6545592bf5251b1e3f6f1d4d/file-d9UHPX4dwH.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6545592bf5251b1e3f6f1d4d/file-d9UHPX4dwH]

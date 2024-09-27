@@ -1,0 +1,117 @@
+http://go.wishlistproducts.com/?p=SendlaneAffiliate&w=wlm[WishList
+Member] is a powerful, yet easy to use Wordpress membership software
+solution that can turn any WordPress site into a full-blown membership
+site.
+
+When a visitor signs up for a membership level, you can seamlessly
+transfer their information to any list within Sendlane, apply or remove
+tags, and trigger automated emails.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need to have an active
+Wordpress website with the
+http://go.wishlistproducts.com/?p=SendlaneAffiliate&w=wlm[latest version
+of the WishList plugin installed].
+
+====== Please Note
+
+Be sure you've upgraded to WishList Member 3.0. Versions 2.93 and older
+do not include the Sendlane integration.
+
+Also, be sure you have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → _*API*._
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, and have the
+https://help.sendlane.com/article/125-lists#id[list ID] handy, so
+WishList Member knows where to place your new leads and contacts!
+
+'''''
+
+=== Connecting WishList Member and Sendlane
+
+. Login to your Wordpress account and navigate to the the _Wishlist
+Member_
+section image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5b74712c7d3a7920be3e91/file-LzbXl2W89Q.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5b74712c7d3a7920be3e91/file-LzbXl2W89Q]
+. Click on Setup, then *_Integrations _*
+. Under the *_Email Providers_* tab, find and select the *_Sendlane
+Icon _*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5b74ce2c7d3a7920be3e92/file-hSdNEOrM1w.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5b74ce2c7d3a7920be3e92/file-hSdNEOrM1w]
+. Select *Configure*, then on the popup, enter your Sendlane
+detailsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5b753c0428634552d863af/file-VHMWzuwwap.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5b753c0428634552d863af/file-VHMWzuwwap]
+. Click *_Save & Close_*
+. Check for the *_API Status: Connected_* message to confirm the
+integration was
+successfulimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5b75a62c7d3a7920be3e96/file-v6LPUOw341.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5b75a62c7d3a7920be3e96/file-v6LPUOw341]
+
+'''''
+
+=== Next Steps
+
+Once you've successfully integrated WishList Member and Sendlane, you'll
+want to connect each one of your membership levels:
+
+. Navigate to the *_Actions_* tab
+. Click the *pencil icon* next to the first membership level you'd like
+to connect
+. On the popup you'll see next, click *_When Added _*
+. In the *_Add to List_* dropdown choose the Sendlane list you'd like to
+send new contacts to
+. Specify any tags you'd like to _apply_ or _remove_
+. Click *Save & Close* to finalize your setting for this
+particular membership level
+. Repeat steps 2-6 to configure each membership level you offer
+
+And that's it, your entire integration is now complete! Any new WishList
+Members will be added to your Sendlane list automatically.
+
+====== Please Note
+
+For more specific details about configuring your membership levels, or
+to remove contacts from lists if they cancel their membership, see the
+https://help.wishlistproducts.com/knowledge-base/sendlane/[WishList
+Member integration guide] for instructions!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to WishList Member, so we're only able to
+provide limited troubleshooting support. However, if you _do_ need help,
+the WishList team is just a few clicks away!
+
+* Submit a https://support.wishlistproducts.com/helpdesk.htm[Support
+Ticket]
+* Watch the
+https://help.wishlistproducts.com/knowledge-base/installing-wishlist-member/[step-by-step
+installation video tutorial]
+
+'''''
+
+Additional WishList Resources
+
+http://go.wishlistproducts.com/?p=SendlaneAffiliate&w=wlm[Sign up for
+WishList Member] |
+https://member.wishlistproducts.com/training-videos/[WishList Training
+Videos] | https://member.wishlistproducts.com/faq/[Wishlist Products FAQ
+page] | https://help.wishlistproducts.com/[WishList Products Knowledge
+Base]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-wishlist-member[Sendlane
++ WishList Member - Quickly and Easily Create a Membership Site in
+Wordpress]
+
+'''''
+
+=== TL;DR
+
+Login to WordPress → WishList Member → Integrations → Email Providers →
+Select Sendlane → Configure → Enter Sendlane details → Save & Close →
+Check for API Status: Connected message

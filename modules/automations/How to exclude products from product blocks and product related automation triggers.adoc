@@ -1,0 +1,72 @@
+==== Overview
+
+Some merchants offer "products" like expedited shipping, shipping
+insurance, or other auxiliary services to customers that don't need to
+be highlighted in marketing content. Read on to learn how to exclude
+these products from your Sendlane account!
+
+==== In this guide
+
+* link:#what[What does "exclude" mean?]
+* link:#how[Exclude a Product in Your eCommerce Store]
+
+'''''
+
+[[what]]
+===== 🙋 What does "exclude" mean?
+
+When products are excluded using the method outlined below, the product
+will not appear anywhere in Sendlane. Products with the tag will not
+appear in product blocks, abandoned product blocks, review request
+blocks, testimonial blocks, segments, conditional splits, or product
+related automation triggers.
+
+It is not possible to only exclude a product from abandoned product
+blocks or any other specific area of Sendlane.
+
+Excluded products will still count towards
+https://help.sendlane.com/article/542-how-sendlane-attributes-revenue-to-email-and-sms[attributed
+revenue].
+
+[[how]]
+=== Exclude a product from Sendlane
+
+Products are excluded from Sendlane by adding a tag to the product in
+your eCommerce store. To exclude a product from appearing in your
+Sendlane account:
+
+[cols=",",]
+|===
+|*Platform Documentation* |*Notes*
+
+|https://help.shopify.com/en/manual/shopify-admin/productivity-tools/using-tags[Shopify]
+|Create a tag named  `+sl-exclude+`, then add the tag to any product you
+want to exclude from Sendlane
+
+|https://support.bigcommerce.com/s/article/Custom-Fields?language=en_US[BigCommerce]
+|Create a custom field and set the Custom Field Name and Custom Field
+Value to `+sl-exclude+`, then add the custom field to any product you
+want to exclude from Sendlane. If desired, use the solution provided
+https://support.bigcommerce.com/s/question/0D51B000046KIdjSAG/how-to-hide-custom-fields-from-the-product-page-on-the-site?language=en_US[here]
+to hide the custom field from the product page, but note that using this
+method will hide all custom fields.
+|===
+
+'''''
+
+=== Troubleshooting
+
+[[added-tag]]
+====== I added the tag, but my product is still appearing!
+
+If you just added the tag, check back in roughly one hour. If it's been
+more than one hour since you added the tag, ensure that the tag reads
+exactly as  `+sl-exclude+`. Any typos or variations
+of `+sl-exclude+` will not work, and products will still appear in
+Sendlane.
+
+[[areas]]
+====== How do I exclude the product from one area of Sendlane but not another?
+
+It is not possible to only exclude a product from abandoned product
+blocks or any other specific area of Sendlane.

@@ -1,0 +1,81 @@
+https://www.optimizepress.com/[OptimizePress] allows you to easily
+create landing or sales pages within your WordPress dashboard. 
+
+By integrating OptimizePress with Sendlane, you can effectively grow
+your email list by adding the contacts you capture straight to a list in
+Sendlane.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active WordPress site
+with the
+https://help.optimizepress.com/article/1916-install-optimizepress-plugin-within-wordpress[OptimizePress
+Plugin installed].
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_ → *_*API*._
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so OptimizePress knows where to place
+your new leads and contacts!
+
+'''''
+
+=== Connecting OptimizePress and Sendlane
+
+. From your WordPress dashboard, go to *_OptimizePress3_* and click on
+*_Integrations_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee9d4ae2c7d3a10cba90d0b/file-mUskxwG655.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee9d4ae2c7d3a10cba90d0b/file-mUskxwG655]
+. Click on *_Add New
+Integrationimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee9d56704286306f8054a5a/file-wBfffJAPk2.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee9d56704286306f8054a5a/file-wBfffJAPk2]_*
+. Select *_Sendlane_* from the list of available integrations and enter
+your *_API Key, Hash Key and Sendlane Subdomain_* in the respective
+fields
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee9d5ad04286306f8054a5d/file-iHnsKeAQrA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee9d5ad04286306f8054a5d/file-iHnsKeAQrA]
+. Click *_Add New Integration_* and that's it.__ __Your integration is
+now complete!
+
+Captured contacts will now be automatically added to your chosen
+Sendlane list.
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to OptimizePress, so we're only able to
+provide limited troubleshooting support. However, if you _do_ need help,
+the OptimizePress team is just a few clicks away!
+
+* https://optimizesupport.com/op3/[Submit a request]
+* http://optimizepress.helpscoutdocs.com/collection/6-training-faqs[Visit
+their FAQ page]
+
+'''''
+
+Additional OptimizePress Resources
+
+Sign up for https://www.optimizepress.com/pricing/[OptimizePress] |
+https://docs.optimizepress.com/category/2322-getting-started[Getting
+Started Tutorial]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/converting-landing-pages[4 Design
+Elements of Converting Landing Pages]
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage & Capture Leads]
+
+'''''
+
+=== TL;DR
+
+WordPress Dashboard → OptimizePress3 → Integrations → Add
+Integration → Select Sendlane → Enter Sendlane API Key, Hash Key,
+Subdomain → Add Integration 

@@ -1,0 +1,122 @@
+==== Overview
+
+You can collect SMS marketing consent from new or existing contacts by
+using a dynamic hyperlink!
+
+The  `+VAR_SMS_JOIN+` tag in the snippet below will generate a unique
+code and SMS link for each contact. When clicked on a mobile device, the
+SMS link will open the contact's SMS app with a message draft to your
+Sendlane phone number containing their unique consent code. When
+contacts send this message containing their unique code, consent to
+receive SMS will be recorded in their contact Profile. Messages sent by
+contacts to confirm their consent will appear in your Reply Center and
+will not cost any SMS credits!
+
+==== In this guide
+
+* link:#sdgfs[Include compliance messaging]
+* link:#sdg[Insert and edit an HTML block]
+
+[[variations]]
+===== ⚠️ SMS consent links will not open on certain devices or inbox providers
+
+Some devices, inbox provider apps, and specific combinations of devices
+and inbox provider apps will not render links designed to open an SMS
+app to send a message.
+
+If you experience an issue with SMS links, try to recreate it using the
+same type of device and the same version of the same app. If the SMS
+link does not work in the replicated environment, it is likely that the
+device and/or app combination does not support SMS links.
+
+[[test]]
+===== ⚠️ SMS consent links do not work in test email sends
+
+To receive a working SMS link, you must use a live email send. Instead
+of using the test email function, create a list with the email addresses
+you want to receive the "test" email.
+
+'''''
+
+[[sdgfs]]
+=== Include compliance messaging
+
+To collect consent to receive marketing SMS messages, your email, post,
+sign-up form, or other medium must contain:
+
+. A link to your terms of service, AND
+. A link to your privacy policy, AND
+. Clear messaging on the consent your contacts are giving to receive SMS
+marketing messages
+
+See the sample message below:
+
+By signing up for texts, you are agreeing to receive marketing text
+messages from `+[your business name]+` at the number provided, including
+messages sent by autodialer. Consent is not a condition of any purchase.
+Message and data rates may apply. Message frequency varies. Reply HELP
+for help or STOP to cancel at any time. View our Privacy Policy* and SMS
+Terms of Service*.
+
+_*Include hyperlinks to policies_
+
+[[sdg]]
+=== Insert and edit an HTML block
+
+The following method works wherever links are accepted. We'll use an
+email sent from your Sendlane account as an example!
+
+. Open any campaign or automation email
+. Drag an HTML block into your email
+. In the HTML window that appears, delete the Insert HTML Here
+placeholder text
+. Paste the following HTML snippet in the HTML window:
+
+....
+<a href="sms:VAR_SMS_PHONE?&body=Send%20this%20text%20to%20subscribe%20to%20SMS%20Updates! VAR_SMS_JOIN">
+    Text us to sign up for SMS updates!
+</a>
+....
+
+The `+sms:VAR_SMS_PHONE+` tag tells your contacts' SMS app to 1. open
+the SMS app and 2. Set your Sendlane phone number as the recipient. The
+`+VAR_SMS_JOIN+` tag generates a unique code that confirms their
+subscription to your SMS program when sent back to your account's
+Sendlane phone number.
+
+To change the text of the hyperlink that will appear in the email you
+send to contacts, replace  `+Text us to sign up for SMS updates!+` with
+your preferred message.
+
+To change the draft message in contacts' SMS app, edit the
+`+Send%20this%20text%20to%20subscribe%20to%20SMS%20Updates!+` text to
+your preferred message, ensuring that a `+%20+` remains between each
+word. We recommend drafting a message that clearly communicates that
+contacts will receive SMS messages from your brand if they choose to
+sign up for your SMS program and how often they should expect to be
+messaged. To add contacts to specific lists, include an
+https://help.sendlane.com/article/515-collect-sms-consent-opt-in-keywords[opt-in
+keyword] here to add contacts to specified lists!
+
+Click *Save* to finish your block!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/642e001d1274e915f2f92e6f/file-ZRQlU10WEg.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/642e001d1274e915f2f92e6f/file-ZRQlU10WEg]
+
+[[additional]]
+=== Additional SMS Resources
+
+Check out the Sendlane Marketing Journal for tips, tricks, and best
+practices for SMS Marketing:
+
+* https://www.sendlane.com/blog/sms-marketing-business-thrive[How SMS
+Marketing Can Help Your Business Thrive]
+* https://www.sendlane.com/blog/sms-mms-marketing[The New Sendlane
+SMS/MMS Marketing (+ 8 Best Practices)]
+* https://www.sendlane.com/blog/sms-marketing-benefits[8 SMS Marketing
+Benefits & Tips]
+* https://www.sendlane.com/blog/grow-sms-marketing-list[Six Effortless
+Ways to Grow Your SMS Marketing list]
+* https://www.sendlane.com/blog/sms-marketing-campaigns[9 Best Practices
+for Writing Effective SMS campaigns]
+* https://www.sendlane.com/blog/easy-sms-marketing[11 Easy Ways to Make
+Your SMS Marketing More Powerful]

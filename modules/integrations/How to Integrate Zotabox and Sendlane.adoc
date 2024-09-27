@@ -1,0 +1,85 @@
+https://info.zotabox.com/?utm_source=sendlane&utm_medium=website&utm_campaign=affiliate[Zotabox]
+is a collection of tools through which you can dramatically boost
+customer engagement and subscribers.
+
+Integrating Zotabox and Sendlane enables you to funnel contacts captured
+by Zotabox directly to your Lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://info.zotabox.com/?utm_source=sendlane&utm_medium=website&utm_campaign=affiliate[Zotabox
+account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Zotabox knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting Zotabox with Sendane
+
+. From the Zotabox Dashboard, hover over *_Get Ideas_* and select
+*_Email Service
+Integrationimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f68efb852faff00174f1a8d/file-JEo4xumeXg.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f68efb852faff00174f1a8d/file-JEo4xumeXg] +
+_*
+. Select *__Sendlan__e* from the list of applications
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f68f02452faff00174f1a91/file-BfXHsSg4al.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f68f02452faff00174f1a91/file-BfXHsSg4al]
+. Enter your Subdomain and API/Hash keys and click *_Submit API KEY_* +
++
+====== Please Note
+
+For this integration, you must enter "https://" before your subdomain
+url
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ced97be2c7d3a32d2a4e61e/file-BW5IkoLi1J.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ced97be2c7d3a32d2a4e61e/file-BW5IkoLi1J]
+. Select the List with which you want Zotabox to integrate, and click
+*_S__ave_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf6f3fb2c7d3a3837131c6b/file-XdKelxnv8f.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf6f3fb2c7d3a3837131c6b/file-XdKelxnv8f]
+
+Your Integration is now complete!
+
+Captured contacts from your Zotabox forms will now be synced with your
+selected List in Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+****This integration is native to Zotabox, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Zotabox team is just a few clicks away!
+
+* Connect with the https://info.zotabox.com/faq/[Zotabox team]
+* Visit the Zotabox https://info.zotabox.com/faq/[FAQ] page
+
+'''''
+
+Additional Zotabox Resources
+
+https://info.zotabox.com/?utm_source=sendlane&utm_medium=website&utm_campaign=affiliate[Sign
+up for Zotabox] | https://info.zotabox.com/blog/[Zotabox Blog] |
+https://info.zotabox.com/promotional-ideas-to-increase-website-sales/[Promotional
+Ideas]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-zotabox[Sendlane
++ Zotabox - Generate More Revenue With Live Chat and Opt-In Forms]
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage and Capture Leads]
+
+'''''
+
+=== TL;DR
+
+Login to Zotabox → __Dashboard__→ _Email Service Integrations_ → Select
+Sendlane → Enter Subdomain / API / Hash → Select List → _Save_

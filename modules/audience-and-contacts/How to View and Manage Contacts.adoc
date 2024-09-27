@@ -1,0 +1,246 @@
+[[top]]
+==== Overview
+
+A Contact in Sendlane is a profile belonging to someone who opted into
+your email and/or SMS marketing content. Contact profiles include email
+addresses and/or phone numbers and optional information like names,
+Tags, and any Custom Fields you create.
+
+Read on to learn about how to view and filter Contacts, what each part
+of a Contact's profile is, what each Contact status means, and how to
+edit a Contact's Profile.
+
+If you want to add Contacts to your account, check out our guide
+https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account[here].
+
+==== In This Guide
+
+* link:#viewing-contacts[View&#44; Sort&#44; and Filter Contacts]
+* link:#contact-profiles[About Contact Profiles]
+* link:#contact-statuses[About Contact Statuses]
+* link:#editing-contacts[Editing Contacts]
+
+'''''
+
+[[viewing-contacts]]
+=== View, Sort, and Filter Contacts
+
+To view the Contacts page:
+
+. Click the *Audience* icon 
+. Click *Contacts*
+
+On the Contacts page, you can sort by any column and filter by List,
+Tag, or Status. The Contacts tab defaults to displaying Contacts in
+descending order of Subscribe Date, meaning that the most recently
+subscribed Contacts appear first. 
+
+Sort by other Contact attributes like Status, Name, Email, or Lifetime
+Value by clicking the column headers:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64b9a4ea78d5c33f492414b4/file-ZC5sDJiKsQ.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64b9a4ea78d5c33f492414b4/file-ZC5sDJiKsQ]
+
+link:#top[Back to top]
+
+'''''
+
+[[contact-profiles]]
+=== About Contact Profiles
+
+Every Contact in your Sendlane account has a Contact profile where you
+can view all available data about that Contact. This data includes their
+Status, Lifetime Value, Custom Fields, Tags, recent activity and more.
+You can also delete the Contact, add a Tag, unsubscribe them from
+specific Lists, or suppress them while on the Contact profile page. 
+
+Contact profiles will show the past 30 days of engagement data in the
+Timeline section.
+
+[[viewing-profile]]
+==== Viewing a Contact Profile
+
+To view a Contact’s profile:
+
+* From the Contacts tab: Click the *gray* *arrow* button in the View
+column of the Contacts tab
+* From the Contact Sidebar: Click the pink *View More* button in the
+Contact sidebar
+* From the Lists tab: Click the *List* the Contact is on > gray *arrow*
+button in the Contacts section next to the Contact you want to view
+* From the Segments tab: Click the *Segment* the Contact is in > gray
+arrow button in the Contacts section next to the Contact you want to
+view
+* From the Tags tab: Click the *Tag* the Contact has applied to them >
+gray *arrow* button in the Contacts section next to the Contact you want
+to view
+* From an email report: Select an email report tab > *View Profile* next
+to the Contact you want to view
+
+==== Contact Statistics
+
+* Last Email Opened: The last email sent by your account that the
+Contact opened
+* Last Email Clicked: The last email sent by your account that the
+Contact clicked a link in
+* Last Order Value: The total value of the last order place by the
+Contact
+* Last SMS Opened: The last SMS sent by your account that the Contact
+opened
+* Last SMS Clicked: The last SMS sent by your account that the Contact
+clicked a link in
+* Number of Replies: The number of SMS replies sent by the Contact
+* Date Added: The date the Contact first subscribed to any List in your
+account
+* Subscription Sign Up Location: Where the Contact was first added to
+your account from
+* Last Seen: When the Contact last visited your website (Note: you must
+have Beacon installed and the Contact must have clicked on at least one
+email to see this data)
+* Revenue by Email: The total amount of revenue attributable to the
+Contact from email
+* Revenue by Email: The total amount of revenue attributable to the
+Contact from SMS
+
+[[contact-details]]
+==== Contact Information
+
+* Personal Details - Details shared by the Contact can be edited by
+clicking the *Edit* button
+* Revenue - Information on the Contact’s latest and lifetime orders, and
+their Product History
+* Tags & Lists - Any Tags that are applied to the Contact and and Lists
+they appear on
+* Internal Notes - Click the *+Note* button to add a note about the
+Contact
+* Integrations - Any applicable Integrations
+* Personalization - Any Custom Fields the Contact has completed
+
+==== Timeline
+
+The Timeline allows you to view a visual timeline of events for your
+Contact over the last 30 days:
+
+* Subscribed - Date the Contact was added to a List
+* Unsubscribed - Date the Contact unsubscribed from a List
+* Email Sent - Date the Contact was sent a Campaign
+* Opened - Date the Contact opened a Campaign
+* Clicked- Date the Contact clicked a link in a Campaign
+* Page View - Date the Contact triggered an event (Learn about
+https://help.sendlane.com/article/72-beacon[Event Tracking])
+* Conversions - Date the Contact made a conversion on your website
+(Learn about https://help.sendlane.com/article/72-beacon[Event
+Tracking])
+
+link:#top[Back to top]
+
+'''''
+
+[[contact-statuses]]
+=== About Contact Subscription Statuses
+
+Contacts are divided into 3 mutually exclusive subscription statuses for
+email and SMS - Subscribed, Unsubscribed, and Suppressed. Contacts'
+subscription statuses are notated in Contact profiles via the email and
+SMS icons; green for subscribed and red for unsubscribed. Suppressed
+Contacts can be viewed
+
+==== Subscribed
+
+Subscribed Contacts include active Contacts who have agreed to receive
+your content and are subscribed to at least one of your Lists. A Contact
+is no longer subscribed to a List if they unsubscribe or if
+https://help.sendlane.com/category/167-campaigns[Campaigns] sent to
+their email address
+https://help.sendlane.com/article/355-bounced-emails[bounce].
+
+==== Unsubscribed
+
+Contacts are considered Unsubscribed if they previously agreed to
+receive content from you, but have since opted out of all of your
+content. Contacts will have the Unsubscribed status if they have
+actively unsubscribed from all Lists. Contacts who are still subscribed
+to at least one List will show as Subscribed.
+
+Unsubscribed Contacts can opt out themselves by clicking the unsubscribe
+link in your email, reaching an unsubscribe action within an
+https://help.sendlane.com/article/74-what-is-an-automation[Automation],
+or you can opt Contacts out by:
+
+. Clicking the *Unsubscribe* button on the Contact sidebar or profile
+page to unsubscribe the Contact from all Lists in your account
+. Clicking the *circled X* button next to the List in the Lists section
+of the Contact’s profile to unsubscribe the Contact from a single List.
+
+==== Suppressed
+
+Contacts that have been Suppressed are added to the
+https://help.sendlane.com/article/135-suppression[Global Suppression
+List] and are unable to receive emails of any kind, including Campaigns
+and Automations. Contacts are considered Suppressed after they make a
+spam complaint. Unsubscribing does not suppress Contacts.
+
+Any email addresses that return a
+https://help.sendlane.com/article/355-bounced-emails#hard[hard bounce]
+are automatically Suppressed.
+
+[[suppression-warning]]
+===== 🚨 Once a Contact's information is added to our Global Suppression List, it cannot be removed for any reason.
+
+To Suppress a single Contact, click on the *Contact* then the Suppress
+button in the Contact sidebar. The Suppress button is also available on
+the Contact profile page, accessible by clicking the pink *View More*
+button in the Contact sidebar.
+
+To Suppress multiple Contacts:
+
+. select the *Contacts* to be Suppressed 
+. Click the *Suppress* button:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b790de020fe4b2fcaeffd/file-oXXz2EDRvy.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b790de020fe4b2fcaeffd/file-oXXz2EDRvy]
+
+link:#top[Back to top]
+
+'''''
+
+=== Editing Contacts
+
+===== 🚨 Using the *Unsubscribe* button on the Contact sidebar or profile page will unsubscribe the Contact from all Lists in your account.
+
+To unsubscribe a Contact from a single List, click the *circled X*
+button next to the List in the Lists section of the Contact’s profile.
+
+==== Bulk Editing Contacts
+
+To perform the same editing action to multiple Contacts at once, select
+the Contacts and use the selection menu to:
+
+* Apply a https://help.sendlane.com/article/82-tags[Tag]
+* https://help.sendlane.com/article/82-tags[]Subscribe to
+https://help.sendlane.com/article/125-lists[List(s)]
+* https://help.sendlane.com/article/348-unsubscribed-contacts[Unsubscribe]
+from https://help.sendlane.com/article/125-lists[List(s)]
+* https://help.sendlane.com/article/125-lists[]Remove a Contact's record
+(we don't recommend this in most circumstances!)
+* https://help.sendlane.com/article/135-suppression[Suppress]
+* https://help.sendlane.com/article/126-how-to-export-your-contacts[Export]
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64b9aad2a9d61472afe09207/file-rsWDjG4BpC.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64b9aad2a9d61472afe09207/file-rsWDjG4BpC]
+
+[[editing-single-contacts]]
+==== Editing a Single Contact
+
+Click the Contact’s Email or the *gray arrow* button in the View column.
+This will pull up a summary of the Contact’s information in a right-hand
+sidebar. From here you can view Contact statistics and any applicable
+https://help.sendlane.com/article/331-custom-fields[Custom Fields], edit
+the Contact’s personal details, Delete or Unsubscribe the Contact, or
+adjust the Contact’s https://help.sendlane.com/article/82-tags[Tags] and
+https://help.sendlane.com/article/125-lists[Lists].
+
+To view and edit any information for a single Contact (including
+Internal Notes and applicable Integrations), click the *View More*
+button in the Contact sidebar:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b83a54773693a6d83e11a/file-BCuH5cd8pZ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657b83a54773693a6d83e11a/file-BCuH5cd8pZ]
+
+link:#top[Back to top]

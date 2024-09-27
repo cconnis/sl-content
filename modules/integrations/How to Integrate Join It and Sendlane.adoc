@@ -1,0 +1,72 @@
+https://www.joinit.org/sync/sendlane?utm_source=sendlane&utm_campaign=partnerships[Join
+It] is an integrated membership management platform that helps your
+organization effectively sell, track, and grow their membership.
+
+By integrating Join It and Sendlane, users can automatically sync
+different Member types directly to specified Lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+https://www.joinit.org/sync/sendlane?utm_source=sendlane&utm_campaign=partnerships[active
+account with Join It].
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Join It knows where to place your
+new members and contacts!
+
+'''''
+
+=== Connecting Join It and Sendlane
+
+. From your Join It Dashboard, navigate to *_Automations_* and scroll to
+and select *_Sendlane_*
+. Enter your Sendlane API/Hash Keys as well as your Subdomain, then
+click *_Connect
+Sendlane_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d0939f404286318cac46843/file-kYQCtfEhvD.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d0939f404286318cac46843/file-kYQCtfEhvD]
+. From the first dropdown menu, select which members you wish to be
+synced with your List. From the second, select the List in Sendlane to
+which they will go. Then click *_Create
+Automation_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d093a7f2c7d3a1cad5b8582/file-bWa4d70dwZ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d093a7f2c7d3a1cad5b8582/file-bWa4d70dwZ]
+
+Your integration is now complete! 
+
+Selected members will automatically be funneled into your chosen List in
+Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Join It, so we're only able to provide
+limited troubleshooting support. However, if you do need help, the Join
+It team is just a few clicks away!
+
+* Connect with the mailto:support@joinit.org[Join It team]
+* Visit their http://support.joinit.org/[Help Center]
+
+==== Additional Join It Resources
+
+https://www.joinit.org/sync/sendlane?utm_source=sendlane&utm_campaign=partnerships[Sign
+up for Join It] | https://www.joinit.org/blog[Blog]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-joinit[Sendlane
++ JoinIt - Create a Hassle-Free&#44; Automated Membership Program]
+
+'''''
+
+=== TL;DR
+
+Integrating: Join It Dashboard → *_Automations_* → Sendlane→ Enter
+API/Hash Keys, Subdomain → Select Member types and List → *_Create
+Automation_*

@@ -1,0 +1,107 @@
+==== Overview
+
+Facebook Custom Audiences allows you to create
+https://www.facebook.com/business/help/168922287067163[Audiences] to
+reach people familiar with your business using data from Facebook and
+Instagram. Read on to learn how to integrate your Facebook and Sendlane
+audiences!
+
+==== In this guide
+
+* link:connecting[Integrate Facebook and Sendlane]
+* link:custom[Create a custom audience]
+* link:next[Next steps]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Create a https://www.facebook.com/[Facebook] account
+
+Create a https://business.facebook.com/[Facebook Business Manager]
+account
+
+To use Instagram data as well as Facebook data,
+https://www.facebook.com/business/help/connect-instagram-to-page[add an
+Instagram account to your Facebook page]
+
+1::
+  . Click the *Integrations icon*
+  . Click *Facebook Custom Audiences*
+  . Click *Configure*
+  . Click *Setup Integration*
+  . Click *Continue with Facebook*
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6466a1b1c6234261f380e458/file-a479FNr59s.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6466a1b1c6234261f380e458/file-a479FNr59s]
+  +
+  Log in to Facebook and confirm permission to integrate with Sendlane
+  to complete the integration process!
+  +
+  When the integration is successfully installed you'll see your
+  https://app.sendlane.com/integrations/facebook[Facebook integration
+  page] populated with your Facebook Business Page information.
+2::
+  All Contacts, including unsubscribed Contacts, will be synced.
+  +
+  . Click *Create Custom Audience*
+  . Enter a *name* for your custom audience
+  . Click *Create Audience*
+  . A pop-up will appear asking you to agree to terms of service. Click
+  the link in the pop-up to be redirected to Facebook Business Manager.
+  . In Facebook Business Manager, click *Accept*. You will be redirected
+  back to Sendlane.
+  +
+  When you are redirected to Sendlane, you should see your new custom
+  audience! Your Facebook Custom Audiences integration is now complete.
+
+[[next]]
+=== Next steps
+
+Once you've integrated Sendlane and Facebook together, you can:
+
+* Create Segments based on Facebook and/or Instagram data
+* Use Automations to streamline the targeting of your Facebook
+advertisements
+* https://help.sendlane.com/article/347-how-to-add-or-remove-contacts-from-facebook-custom-audiences[Add
+or remove Contacts from your Facebook Custom Audience]
+
+Click through to learn more about
+https://help.sendlane.com/article/347-how-to-add-or-remove-contacts-from-facebook-custom-audiences[how
+to add or remove contacts] from your Facebook Custom Audience.
+
+=== Troubleshooting
+
+[[#error]]
+====== How do I fix a server error?
+
+Server errors are likely due to one of the following issues:
+
+. The Facebook account that was used to integrate with Sendlane has not
+accepted the terms of service for Facebook Custom Audiences. Log in to
+the Facebook account that was used to connect with Sendlane and accept
+the https://www.facebook.com/ads/manage/customaudiences/tos/[terms of
+service].
+. The Facebook account that was used to integrate with Sendlane was
+given read-only access to the Facebook business account. Provide full
+access to the Facebook account used to manage the Facebook Custom
+Audience.
+. You have reached or exceeded Facebook's limit of 500 or more
+audiences. You can make room in your account by
+https://www.facebook.com/business/help/164749007013531?id=401668390442328[creating
+lookalike audiences] for other audiences, but be aware that lookalike
+audiences will not sync with Sendlane.
+
+[[additional]]
+=== Additional resources
+
+* https://www.shopify.com/blog/56441413-the-beginners-guide-to-facebook-custom-audiences[Facebook
+Custom Audiences 101: A Starter Guide for eCommerce Businesses]
+* https://www.facebook.com/business/help/744354708981227%3EFacebook%20Ads%20Help%20Center%3C/a%3E%3C/li%3E%20%20%20%0A%3Cli%3E%3Ca%20href=[Retarget
+Your Shoppers with Sendlane's Facebook Custom Audience Integration]
+* https://www.sendlane.com/blog-posts/social-media-vs-email-marketing-5-reasons-why-email-wins[Social
+Media vs Email Marketing: 5 Reasons Why Email Wins]
+* https://www.sendlane.com/blog-posts/8-ways-marketers-align-social-and-email[8
+Ways Successful Marketers Align Their Social Media And Email Marketing
+For Maximum Success]
+* https://www.sendlane.com/blog-posts/cross-channel-marketing-for-ecommerce[How
+to Develop a Winning Cross-Channel Marketing Strategy for Your eCommerce
+Busines]

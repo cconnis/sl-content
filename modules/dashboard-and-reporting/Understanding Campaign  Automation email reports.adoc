@@ -1,0 +1,179 @@
+Campaign and Automation emails automatically generate reports showing
+the email's performance, including what time of day received the most
+opens and which links got the most clicks. Regularly reviewing email
+reports can help direct your marketing strategy toward what works!
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+To give your Contacts enough time to engage with your email, we
+recommend waiting at least 24 hours after Campaign emails go out and 1-3
+days after Automations are activated to review email reports
+
+* link:#campaigns[Campaigns]
+* link:#automations[Automations]
+* link:#data[Available Email Report Data]
+* link:#export[Export Email Report Data]
+
+[[view]]
+=== View Email Reports
+
+==== Campaigns
+
+Click the *Campaigns icon*, then the *View icon* next to any completed
+Campaign
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c3ec796d36cc04e8262409/file-8PSlCp60cI.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c3ec796d36cc04e8262409/file-8PSlCp60cI]
+
+==== Automations
+
+Click into any *email node* in an Automation, then click *View Report*.
+
+Automation email nodes that have sent 0 emails will not show the View
+Report button.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c3ecdb0bcb3d67f4349f35/file-SMt5H8KndZ.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c3ecdb0bcb3d67f4349f35/file-SMt5H8KndZ]
+
+link:#top[Back to top]
+
+'''''
+
+[[data]]
+=== Available Email Report Data
+
+[width="100%",cols="34%,33%,33%",]
+|===
+|*Email Report Section* |*Campaigns* |*Automations*
+|link:#engagement[Engagement] + |✅ |✅
+|link:#behavior[Behavior] |✅ |🚫
+|link:#history[Automation History] |🚫 |✅
+|link:#revenue[Revenue] |✅ |✅
+|link:#tracking[Tracking] |✅ |✅
+|link:#provider[Email Providers & Devices] |✅ |✅
+|===
+
+===== Engagement
+
+* *Delivered* shows the total number of emails that were delivered to
+the recipient's inbox and the percentage of deliveries that were
+successful
+* *Opens* shows the counts and rates of total and unique opens
+* *Clicks* shows the counts and rates of total and unique clicks
+* *Attributed Revenue* shows the amount of revenue attributed to clicks
+from the email (revenue is attributed to purchases made within five days
+of a click)
+* *Deliverability* shows the counts and rates of recipients
+unsubscribing, clicking spam, and bouncing from the email
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633c98e0e1c306062a1d464c/file-AJBC980nZM.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633c98e0e1c306062a1d464c/file-AJBC980nZM]
+
+===== Revenue
+
+Revenue shows the total amount of revenue generated from orders
+attributed to the Campaign, the average amount of revenue per
+subscriber, how many orders were placed, and how many Contacts completed
+purchases.
+
+[[revenue-attribution-note]]
+===== ⚠️ Revenue is attributed to the Contact's last click in a five day window
+
+If you're coming from an email provider that includes open rates and/or
+longer attribution windows, it may seem like revenue is down. Sendlane
+strongly suggests using a third party analytics provider like Google
+Analytics or Triple Whale to compare your attribution to your actual
+sales.
+
+[[ltv-returns]]
+===== ⚠️ Returned and canceled orders are included in revenue metrics
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64fa3d1a6fa0952cf5a60be3/file-FrYpYSKUrQ.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64fa3d1a6fa0952cf5a60be3/file-FrYpYSKUrQ]
+
+===== Behavior
+
+Behavior is a Campaign only metric that shows the times of day with the
+best and worst open rates for the Campaign.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633c9d78e1c306062a1d4668/file-O8o0ITMZAB.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633c9d78e1c306062a1d4668/file-O8o0ITMZAB]
+
+[[history]]
+===== Automation History
+
+The Automation History section is an Automation specific metric that
+shows how many times the email has been sent in a given reporting period
+(change the dropdown for other reporting period options) and the email's
+click and open rate over time.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633c9ffbe1c306062a1d4679/file-AVEppiRwHT.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633c9ffbe1c306062a1d4679/file-AVEppiRwHT]
+
+===== Tracking
+
+The tracking section shows:
+
+* Tracking Summary - Clicks on tracking links in the message
+* Website Summary - Website views captured by
+https://help.sendlane.com/category/169-beacon[Beacon]
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633c9dc7e1c306062a1d466b/file-hB1iq70DoG.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633c9dc7e1c306062a1d466b/file-hB1iq70DoG]
+
+[[provider]]
+===== Email Providers & Devices
+
+The email providers & devices section breaks down Contact activity by
+email provider and device type.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633c9e5ecf38bc37aecf681a/file-WUyV2WGwtd.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633c9e5ecf38bc37aecf681a/file-WUyV2WGwtd]
+
+link:#top[Back to top]
+
+'''''
+
+[[export]]
+=== Export Email Report Data
+
+Drill down into your email report by exporting activity data for any
+group of Contacts!
+
+* *Sent*: Contacts the Campaign was Sent to
+* *Opened*: Contacts who opened the Campaign
+* *Clicked*: Contacts who clicked on at least one link in the Campaign
+* *Didn't Open*: Contacts who did not open the Campaign
+* *Bounced*: Contacts whose email addresses bounced
+* *Suppression*: Contacts whose email addresses were Suppressed
+* *Unsubscribed*: Contacts who unsubscribed from the List via the
+Campaign
+* *Spam*: Contacts who marked the Campaign as spam
+* *Events*: Contacts who triggered an Event from the Campaign
+
+The following fields are included in every email report export:
+
+* *subscriber_id*: the Contact's unique identifier
+* *email*: the Contact's email address
+* *name*: the Contact's first and last name
+* *date*: the date the Contact was sent your campaign
+* *views_count*: the count of times the Contact viewed your Campaign
+* *clicks_count*: the count of times the Contact clicked a link in your
+Campaign
+* *bounces_count*: the count of times the Contact's email addressed
+bounced
+* *suppression_count*: whether the Contact's email address was
+https://help.sendlane.com/article/135-suppression[Suppressed] or not.
+This field should always be 0 (not Suppressed) or 1 (Suppressed).
+
+Click one of the following tabs to export activity data > *Export as
+CSV* > Select any additional fields to export > *Export*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633cac543f38fe1e46863c29/file-QsuMsO1FpB.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/633cac543f38fe1e46863c29/file-QsuMsO1FpB]
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+[[automation-opens-sends]]
+====== Why are unique opens higher than the sent number in my Automation report?
+
+Because Automations are constantly sending emails, the Automation report
+represents the latest snapshot of email data. This can sometimes mean
+that you see more unique opens than sent emails when Contacts open an
+older email sent from the Automation.

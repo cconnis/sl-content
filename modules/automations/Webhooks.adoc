@@ -1,0 +1,94 @@
+==== Overview
+
+A webhook is a tool that broadcasts information about an action that has
+taken place on a server. In other words, webhooks are notifications that
+a specified event has happened.
+
+In this article, we'll go over the following: 
+
+. {blank}
+* link:#Test[Testing Webhooks with Sendlane]
+* link:#Create[Creating Your Automation]
+
+===== 🚦 Before Getting Started
+
+Choose the service you'd like to use to manage your webhooks and read
+their documentation to familiarize yourself with the process; here are
+some popular options:
+
+* https://zapier.com/apps/sendlane/integrations[Zapier]
+* https://docs.deadlinefunnel.com/en/articles/5654160-how-to-find-your-webhook[Deadline
+Funnel]
+* https://help.involve.me/en/articles/2193514-how-to-use-involve-me-webhooks[Involve.me]
+* http://support.joinit.com/en/articles/3564070-webhooks-overview[Join
+It]
+
+'''''
+
+=== Testing Webhooks with Sendlane
+
+{empty}1. Use a Webhook tester like http://requestcatcher.com/[Request
+Catcher] to create a test URL. Create a test subdomain to complete your
+unique URL.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7772afcff47e001a58aa18/file-xBCHfke2Ox.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7772afcff47e001a58aa18/file-xBCHfke2Ox]2.
+Then click *_Get Started_*.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7772c74cedfd0017dcdf01/file-cP8qg710nW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7772c74cedfd0017dcdf01/file-cP8qg710nW]
+
+{empty}3. Next, take the created URL and paste it into a new browser
+window to receive this screen:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7666d952faff0016aebddc/file-xPvzB0Wib4.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7666d952faff0016aebddc/file-xPvzB0Wib4]
+
+Now, we're going to take that same URL and use it to test integration
+with Sendlane!
+
+'''''
+
+=== Creating Your Automation
+
+This is where you define what actions will be reported when they take
+place.
+
+If you haven't created an automation before, please see our
+https://help.sendlane.com/article/73-automations[tutorial].
+
+{empty}1. Set your trigger. This will be the action you would like to
+monitor. For our example, we are using  _Subscribes to a List_. 
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7775b3cff47e001a58aa2a/file-2MuobhJdBP.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7775b3cff47e001a58aa2a/file-2MuobhJdBP]
+
+. {empty}2. Select and click _Post_ from the drop-down menu
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7775bdc9e77c0016213f8d/file-B4SAsJslu9.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7775bdc9e77c0016213f8d/file-B4SAsJslu9]
++
+{empty}3. Paste your unique URL you created earlier into the URL input
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7775c9c9e77c0016213f8e/file-tOGEBlm6bb.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7775c9c9e77c0016213f8e/file-tOGEBlm6bb]
++
+4.Click the drop down and choose _Post_
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7775e4cff47e001a58aa2b/file-Umq3ianckJ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7775e4cff47e001a58aa2b/file-Umq3ianckJ]5.
+Click *_Done_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7775f24cedfd0017dcdf0b/file-ssDiN6w19d.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7775f24cedfd0017dcdf0b/file-ssDiN6w19d]6.
+Lastly, don't forget to set your Automation as active!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7775fd46e0fb001798933f/file-55q60ewZv4.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f7775fd46e0fb001798933f/file-55q60ewZv4]
+
+. {empty}7. To test, add a contact to your list. You will be able to see
+the result of your test in the Tester (Request Catcher) once the test
+contact enters the Automation. It will show:
++
+{empty}1. the contact's email address
++
+{empty}2. the list ID (which list they were added to in Sendlane)
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f779a8ec9e77c001621412f/file-edVrAEYohw.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f779a8ec9e77c001621412f/file-edVrAEYohw]
++
+Attain your unique webhook URL from the service you plan to Integrate
+with Sendlane and paste it into the URL input, then Save and publish
+your changes! Every contact that fits the parameters of the Automation's
+trigger will have it's information logged in your Integration. You can
+use the same steps to test your webhook

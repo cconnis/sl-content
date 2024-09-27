@@ -1,0 +1,92 @@
+https://carthook.com/[CartHook] helps you customize your up-sells, sales
+funnels, product funnels, and more for your Shopify store.
+
+Integrating CartHook enables you to sync your Shopify abandoned cart
+customers with your Sendlane account so you can retarget those leads
+directly.
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active CartHook
+account connected to your Shopify store. If you don't have a CartHook
+account just yet, please click https://carthook.com/apply/[here] to
+apply.
+
+'''''
+
+=== Connecting CartHook and Sendlane
+
+. Navigate to the *_Integrations_* tab within your Sendlane account and
+find the CartHook listing
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ecac2aa042863474d1b470e/file-MRMTd7uDb8.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ecac2aa042863474d1b470e/file-MRMTd7uDb8]
+. Click on CartHook and click the *_Configure_* button
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ecac3dd042863474d1b471b/file-GrEO13XwwL.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ecac3dd042863474d1b471b/file-GrEO13XwwL]
+. Click on *_New CartHook Integration_* or *_Connect Integration_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ecb15862c7d3a5ea54baddd/file-ZGHRNc8ryb.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ecb15862c7d3a5ea54baddd/file-ZGHRNc8ryb]
+. Input the name of your Shopify shop and click *_Continue_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ecac465042863474d1b471e/file-VmQTt5VWzj.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ecac465042863474d1b471e/file-VmQTt5VWzj]
+. Next, you'll be redirected to CartHook. Login when prompted (if you're
+not already) and you'll see the install App for Sendlane. If not,
+navigate to that page under your *_email_* → **_settings, _**click the
+*_Apps_* tab and then search and find _Sendlane_
+. Click *_Install App_* at the bottom of the page
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ecaeec62c7d3a5ea54bad4b/file-BTKqSRR27L.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ecaeec62c7d3a5ea54bad4b/file-BTKqSRR27L]
+. After the installation completes, you'll be redirected back into
+Sendlane where you can see the integration status and details
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ecb15f5042863474d1b48a8/file-5ZxViCwFTj.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ecb15f5042863474d1b48a8/file-5ZxViCwFTj]
+. You'll see the integration status as _Initializing_ first,
+then _Syncing_ as the data starts to transfer - please give the system
+just a bit of time to process here, then once the status updates
+to _Connected_ you're all set!
+
+Your integration is now complete!
+
+'''''
+
+=== Next Steps
+
+Once you have CartHook integrated with Sendlane, you can start
+https://help.sendlane.com/article/395-how-to-retarget-carthook-abandoned-cart-customers[retargeting
+cart abandoners] to make more sales!
+
+'''''
+
+=== Additional CartHook Resources
+
+If you have any issues connecting your Sendlane and CartHook accounts,
+mailto:mailto:support@sendlane.com[our support team is available 24/7].
+Plus, the CartHook team is just a few clicks away!
+
+* Email their mailto:mailto:support@carthook.com[support team]
+* Connect to the https://help.carthook.com/[CartHook Knowledge Base]
+* Visit the CartHook https://carthook.com/blog/[Blog] page
+
+Apply for a CartHook account https://carthook.com/apply/[here].
+
+=== Additional Sendlane Resources:
+
+* https://www.sendlane.com/search?query=carthook[Sendlane + Carthook -
+Boost Your AOV with Post-Purchase Funnels and Funnels]
+* https://marketingautomationhustle.com/[The Marketing Automation Hustle
+Podcast: The Art of Upselling on Shopify: Boosting Your AOV with
+Carthook]
+* https://www.sendlane.com/blog-posts/3-revenue-generating-ecommerce-email-marketing-funnels[3
+Revenue Generating eCommerce Email  Marketing Funnels]
+* https://www.sendlane.com/blog-posts/upsell-and-cross-sell-customers[How
+to Upsell and Cross-Sell Customers...the Right Way!]
+
+'''''
+
+=== TL;DR
+
+(In Sendlane)  Integrations → CartHook integration → Configure → New
+CartHook Integration → Input the name of your Shopify shop, Continue →
+(In CartHook) Install App ** **→ Integration successfully connected

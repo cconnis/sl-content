@@ -1,0 +1,169 @@
+[[top]]
+==== Overview
+
+Teasers, especially if they are set to display persistently, help
+increase form submissions by reminding shoppers to fill out your main
+form while they browse.
+
+You can create a form teaser by adding a page to your form's design.
+Teasers can be displayed persistently or before and/or after contacts
+open or close your form.
+
+==== In this guide
+
+* link:#add[Add a teaser page to your form]
+* link:#logic[Teaser display logic options]
+* link:#design[Teaser page design options]
+* link:#reporting[Teaser reporting]
+* link:#troubleshooting[Troubleshooting]
+
+'''''
+
+[[add]]
+=== Add a teaser page to your form
+
+You can add a teaser to any new or existing
+https://help.sendlane.com/article/625-understanding-sendlane-forms-design-and-customization-options#new[pop
+up style] form, but we highly recommend adding a teaser to your welcome
+form.
+
+If you add a teaser page to an existing live form, remember to
+https://help.sendlane.com/article/623-understanding-sendlane-forms-statuses#publish[publish
+the changes].
+
+To add a teaser page to a form:
+
+. Click the *+* button to add a page
+. Select *Teaser*
+. Click *Add Page*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66b263c865e01777a933337a/file-o57yKmgSlr.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66b263c865e01777a933337a/file-o57yKmgSlr]
+
+link:#top[Back to top]
+
+'''''
+
+[[logic]]
+=== Show logic options
+
+Note that when website visitors dismiss the teaser and main form via
+close buttons without submitting the form, neither will appear again for
+three days as long as the visitor remains cookied.
+
+Select your preferred display logic in the Show section:
+
+* *On page load before main form* - Teaser will load just after the page
+loads. The teaser will not load again after the main form is
+dismissed. +
+ +
+If a website visitor opens the main form via the teaser before the main
+form's display conditions are met and closes the main form, the main
+form will not display again, even if its display conditions are met
+later in the same browsing session. +
+ +
+For example, say the main form is set to display after scrolling 50% of
+the page. If a website visitor clicks the teaser and dismisses the main
+form before scrolling to 50%, the main form will not display even if the
+website visitor scrolls to 50% of the page.
+* *After main form is closed* - Teaser will load only after a website
+visitor closes the main form.
+* *On page load before main form and after main form is closed* - Teaser
+will display persistently regardless of website visitor interaction with
+the main form.
+
+link:#top[Back to top]
+
+'''''
+
+[[design]]
+=== Teaser design options
+
+Note that text is the only content supported in teasers; it is not
+possible to add a button, option selector, or image block to a teaser.
+
+====== Style
+
+You can select Circle to change your teaser from the default of
+rectangular to circular.
+
+The size of the teaser cannot be manually adjusted, but rectangular
+teasers will increase in height to accommodate lengthy text.
+
+====== Position
+
+You can select any position for your teaser except the center. Teasers
+in the right or left middle positions will rotate ninety degrees to
+display vertically on either side of your website.
+
+====== Spacing
+
+Use the pixel boxes or sliders to adjust your teaser's horizontal and
+vertical spacing.
+
+====== Background
+
+Select a color or image to use as your teaser's background.
+
+====== Border
+
+Check the border box to add a border to your teaser, then adjust the
+border's color, style, and thickness.
+
+====== Corner radius and shadow
+
+Teasers default to no corner radius or shadow. Select an optional corner
+radius or shadow if these elements further your design goals.
+
+[[close]]
+====== Close button
+
+Check the Close Button checkbox to add a close button to your teaser.
+Adjust the close button's location, position, size, stroke width, and
+color. 
+
+Check the icon background checkbox to add a background to your teaser's
+close button, then select a color and corner radius for the background.
+
+====== Text
+
+Add text for your teaser and adjust its color, font family, font size
+and weight, letter spacing, line height, style (underlined or italic),
+alignment, and top and bottom margins.
+
+link:#top[Back to top]
+
+'''''
+
+[[reporting]]
+=== Teaser reporting
+
+Teasers themselves do not contribute to
+https://help.sendlane.com/article/637-understanding-sendlane-form-reporting-and-metrics[form
+reporting metrics]. An impression is recorded for your form only when
+the main form is loaded.
+
+You may see a spike in impressions when you add a teaser to an existing
+live form because website visitors are clicking the teaser and therefore
+loading the main form more frequently.
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+[[no-teaser-option]]
+====== I don't see a teaser page option
+
+Teaser pages are not available for inline forms. Please contact product
+support if you do not see the teaser page option when designing a pop up
+form.
+
+[[dismiss]]
+====== Someone dismissed the form and teaser via the close button and saw it sooner than three days afterward
+
+If website visitors clear their cookies before the three day "timer"
+expires, their history with your form is erased. Without the cookie,
+their browser cannot know they had dismissed the form via the close
+button. If they dismiss the form via the close button again, the "timer"
+will restart.

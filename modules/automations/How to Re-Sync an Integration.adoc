@@ -1,0 +1,41 @@
+When integration modules are updated or you seem to be missing data, you
+may need to re-sync an integration. Follow the instructions below to
+safely re-sync your integrations in 3 easy steps!
+
+1::
+  If you have any Automations that use your integration's triggers
+  you'll want to deactivate each Automation before re-syncing your
+  integration.
+  +
+  If Automations using integration triggers are active while an
+  integration is re-synced, the Automation will trigger, which could
+  cause emails or SMS messages to send when you don't want them to!
+  +
+  To deactivate an Automation, click on
+  https://app.sendlane.com/automations[the Automations icon in your
+  sidebar] then click the *Deactivate* icon > *Deactivate*
+  +
+  *image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62acbc83f6341f7edc2a63b5/file-UvZ4kpT8f7.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62acbc83f6341f7edc2a63b5/file-UvZ4kpT8f7] +
+  *
+
+2::
+  To re-sync your integration, click
+  https://app.sendlane.com/integrations[the *Integrations icon*] ** >
+  Select an integration to re-sync > *Configure*
+  +
+  On the integration's status page, click the *three-dot menu* next to
+  your integration name > *Resync* > *Resync*
+  +
+  It may take up to an hour to re-sync your integration if your account
+  contains a large amount of data. If your re-sync takes more than an
+  hour, feel free to reach out to our 24/7 product support team for
+  assistance!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62acbde21e5b41737b38f239/file-GJzF9jnzFO.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62acbde21e5b41737b38f239/file-GJzF9jnzFO]
+
+3::
+  Once your integration has finished re-syncing, reactivate the
+  Automations you deactivated in Step 1 by clicking the *play icon* >
+  *Reactivate*
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62acc258f6341f7edc2a63d6/file-eUJZBoVCPI.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62acc258f6341f7edc2a63d6/file-eUJZBoVCPI]

@@ -1,0 +1,102 @@
+https://shareasale.com/r.cfm?b=1043332&u=1942993&m=62510&urllink=&afftrack=[MailOptin]
+is a WordPress plugin that allows you to create email signup forms that
+convert visitors into subscribers.
+
+Integrating MailOptin and Sendlane enables you to seamlessly funnel
+generated leads to your lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+https://shareasale.com/r.cfm?b=1043332&u=1942993&m=62510&urllink=&afftrack=[active
+MailOptin account] and to be sure that MailOptin is
+https://www.youtube.com/watch?v=AXM1QgMODW0&feature=emb_logo[installed]
+on your WordPress site.
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+*__*
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account so MailOptin knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting MailOptin and Sendlane
+
+. Navigate to the MailOptin plugin from your WordPress
+dashboardimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e33319f04286364bc94a933/file-s4mLI66MOx.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e33319f04286364bc94a933/file-s4mLI66MOx]
+. Find the *Settings* menu**,** then click *_Integrations_*
+. Scroll down until you see *_Sendlane_*, and click to expand.
+. Scroll back up and enter your *API Key*, *Hash Key* and *Subdomain*. +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdb4a4a0428634b855937b3/file-h0VdSIdDRl.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdb4a4a0428634b855937b3/file-h0VdSIdDRl]
+. Click *_Save Changes_*. If the connection is successful, you will see
+the red text turn green and say (Connected)
++
+
+'''''
+
+=== Connecting a MailOptin Form to a Sendlane List
+
+. If you haven't already created a form, go to your WordPress dashboard,
+navigate to *_MailOptin_* → *_Optin Campaigns_* and click *_Add
+New_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdb51ac2c7d3a6d82bd76df/file-R3Yg2cXPaa.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdb51ac2c7d3a6d82bd76df/file-R3Yg2cXPaa]
+. Type your campaign title, then select your Type and Theme +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdb52a92c7d3a6d82bd76eb/file-87DNQ2JhP4.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdb52a92c7d3a6d82bd76eb/file-87DNQ2JhP4]
+. You will be taken to the customization page. Select *_Integrations_*
+from the options on the left, then click *_New
+Integration_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdb53dd0428634b85593838/file-TXfgrhQaIg.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdb53dd0428634b85593838/file-TXfgrhQaIg]
+. Select *_Sendlane_* from the first drop down list, then choose the
+Sendlane list with which you want the form to integrate in the second
+drop down menu +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdb548b0428634b85593844/file-cJgH11ouWn.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cdb548b0428634b85593844/file-cJgH11ouWn]
+. *_Save_* changes
+
+Your integration is now complete! Captured contacts will now be
+automatically added to your chosen Sendlane list.
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to MailOptin, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+MailOptin team is just a few clicks away!
+
+* Connect with the https://mailoptin.io/support/[MailOptin team]
+mailto:support@optinopoli.com[]
+* Visit the https://mailoptin.io/docs[MailOptin Documentation Page]
+
+'''''
+
+Additional MailOptin Resources
+
+https://shareasale.com/r.cfm?b=1043332&u=1942993&m=62510&urllink=&afftrack=[Create
+a MailOptin Account] | https://mailoptin.io/blog/[Blog]
+
+=== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/mailoptin-generate-high-quality-leads-increase-sign-ups-and-boost-conversions-all-inside-wordpress[Sendlane
++ MailOptin - Generate High-Quality Leads&#44; Increase Sign-Ups&#44;
+and Boost Conversions All Inside Wordpress]
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage & Capture Leads]
+
+'''''
+
+=== TL;DR
+
+[.underline]#Integrating:# WordPress dashboard → MailOptin → _Settings_
+→ _Integrations_ → _Sendlane_ → Enter Sendlane API Key, Hash Key,
+Subdomain → _Save changes_
+
+[.underline]#Connecting Your List:# Wordpress dashboard → _MailOptin_ →
+_Optin Campaigns_ → _Add New_ → Title, Type, Theme → _Integrations_ →
+_New Integration_ → _Sendlane_ → Choose List → _Save Changes_

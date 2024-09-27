@@ -1,0 +1,380 @@
+[[d0bcb1f8-8ff9-47eb-9c39-edc3d7666d4e]]
+==== Overview
+
+You can use templating syntax to insert dynamic data from the payloads
+of events that trigger certain Shopify automations. Read on to learn
+about how to use templating syntax in Shopify automations.
+
+==== In this guide
+
+* link:#f3c271f5-3968-4341-968e-f639480a594f[Available data types in
+Shopify automations]
+* link:#standard-shopify-data[Standard Shopify data]
+** link:#c213e0aa-0f2d-4922-aef8-63682c4c5edd[Order data]
+** link:#c2cd4701-f31a-4e36-8313-f656dd87df4d[Checkout data]
+** link:#db5c85aa-7e9e-4d04-bf56-aafc7215627c[Product data]
+* link:#011c1dcfb-05-62-a499-c37a[Formatting and rendering templating
+syntax]
+** link:#b83734b4-2a12-41fa-9a0a-7d75b0ba2ffc[Prepare your email for
+templating syntax with an assignment tag]
+** link:#e1b6602a-861b-4501-bf57-5546444ecb8d[Provide context for all
+templating syntax in your email]
+* link:#b4726dce-f605-4862-a499-c37a011c1dcf[Other data]
+
+'''''
+
+[[f3c271f5-3968-4341-968e-f639480a594f]]
+=== Available data types in Shopify automations
+
+Order and product data can be dynamically inserted into certain Shopify
+automation emails, depending on the automation's trigger.
+
+When specified events occur, such as a website visitor clicking an "add
+to cart" button, a webhook sends a payload of related data to Sendlane.
+That data can be dynamically inserted into automation emails.
+
+The data you can render in an automation email depends on the event that
+triggers the automation and that event's place in the buying cycle:
+
+[cols=",,",]
+|===
+|*Action* |*Event sent to Sendlane contains* |*Automation triggered*
+
+|Customer clicks on a product page AND does not complete an order within
+the specified time |Product data |Abandoned product viewed
+
+|Customer clicks "add to cart" |Product data |Added to cart
+
+|Customer clicks "add to cart" AND does not complete an order within the
+specified time |Product data |Abandoned cart
+
+|Customer clicks "start checkout" AND does not complete an order within
+the specified time |Checkout data |Abandoned checkout
+
+|Customer completes an order |Order data |Order placed
+|===
+
+link:#d0bcb1f8-8ff9-47eb-9c39-edc3d7666d4e[Back to top]
+
+'''''
+
+=== Standard Shopify data
+
+The order, customer, and product data below are standard for Shopify
+stores. Your Shopify store may provide additional useful data not
+covered in this section; see Other Shopify data below for more
+information.
+
+[[db5c85aa-7e9e-4d04-bf56-aafc7215627c]]
+===== Product data
+
+The following product data can be inserted into emails in automations
+using a Shopify Abandoned Product Viewed, Added to Cart, Abandoned Cart,
+Abandoned Checkout, or Order Placed trigger.
+
+To insert any of the following syntax into your email, paste the
+following assignment tag in a text element at the very top of your
+email:  `+{% set product = trigger.getProduct() %}+`
+
+[cols=",,,",]
+|===
+|*Description* |*Templating syntax* |*Renders as* |*Notes*
+
+|Quantity of products in order |`+{{product.quantity}}+` |1 |
+
+|Product name/title |`+{{product.title}}+` |Shirt |
+
+|Product variant name/title |`+{{product.variant_title}}+` |Shirt - Blue
+|
+
+|Product image URL |`+{{product.image_url}}+`
+|https://cdn.shopify.com/s/files/1/0607/1844/8811/files/3DrawerCart_0290b7-963-4b2e-bfa2-a67c2838f2b1.jpg?v=17120267&width=800
+|Syntax renders as a raw URL. You can insert it anywhere you can insert
+a URL, like a hyperlink, button, or image.
+
+|Link to product’s page |`+{{product.url}}+`
+|https://store.com/collections/best-sellers?handle=essentials-half-zip
+|Syntax renders as a raw URL. You can insert it anywhere you can insert
+a URL, like a hyperlink, button, or image.
+|===
+
+[[c2cd4701-f31a-4e36-8313-f656dd87df4d]]
+===== Checkout data
+
+The following customer data can be inserted into emails in automations
+using a Shopify Order Placed or Abandoned Checkout trigger.
+
+To insert any of the following syntax into your email, paste the
+following assignment tag in a text element at the very top of your
+email: `+{% set checkout = trigger.getCheckout() %}+`
+
+[cols=",,,",]
+|===
+|*Description* |*Templating syntax* |*Renders as* |*Notes*
+
+|Checkout URL |`+{{ checkout.abandoned_checkout_url }}+`
+|https://store.myshopify.com/85861892391/checkouts/ac/Z2NwLXVzLWNlbnRyYWwxOjAxSFMyN05LVzI4TUVHRFdHODFNMVMxMFFT/recover?key=d6098c2cbc45d515a7c0b5d681c66e77
+|
+
+| | | |
+
+| | | |
+|===
+
+[[c213e0aa-0f2d-4922-aef8-63682c4c5edd]]
+===== Order data
+
+The following order data can be inserted into emails in automations
+using a Shopify Order Placed trigger.
+
+Paste the following assignment tag in a text element at the very top of
+your email: `+{% set order = trigger.getOrder() %}+`
+
+[width="100%",cols="25%,25%,25%,25%",]
+|===
+|*Description* |*Templating syntax* |*Renders as* |*Notes*
+
+|Order number |`+{{order.name}}+` |#1003 |
+
+|Order status URL |`+{{order.order_status_url}}+` | |
+
+|Order subtotal |`+{{order.subtotal_price}}+` |10 | +
+
+|Order tax |`+{{order.total_tax}}+` |2 |
+
+|Order total |`+{{order.total_price}}+` |12 |
+
+|Billing address first and last name
+|`+{{order.billing_address.first_name}} {{order.billing_address.last_name}}+`
+|Jimmy Kim |Add the title filter to capitalize each name for contacts
+with middle or other additional names: +
+ +
+`+{order.billing_address.first_name | title} {order.billing_address.last_name | title}+`
+
+|Billing address line one |`+{{order.billing_address.address1}}+` |13
+Cornelia St |
+
+|Billing address line two |`+{{order.billing_address.address2}}+` |Apt
+13 |
+
+|Billing address city |`+{{order.billing_address.city}}+` |New York |
+
+|Billing address state or province
+|`+{{order.billing_address.province_code}}+` |NY |
+
+|Billing address ZIP code |`+{{order.billing_address.zip}}+` |13131 |
+
+|Billing address country |`+{{order.billing_address.country_code}}+`
+|USA |
+
+|Shipping address first and last name
+|`+{order.shipping_address.first_name} {order.shipping_address.last_name}+`
+|Jimmy Kim |Add the title filter to capitalize each name for contacts
+with middle or other additional names: +
+ +
+`+{order.shipping_address.first_name | title} {order.shipping_address.last_name | title}+`
+
+|Shipping address line one |`+{{order.shipping_address.address1}}+` |13
+Cornelia St |
+
+|Shipping address line two |`+{{order.shipping_address.address2}}+` |Apt
+13 |
+
+|Shipping address city |`+{{order.shipping_address.city}}+` |New York |
+
+|Shipping address state or province
+|`+{{order.shipping_address.province_code}}+` |NY |
+
+|Shipping address ZIP code |`+{{order.shipping_address.zip}}+` |13131 |
+
+|Shipping address country |`+{{order.shipping_address.country_code}}+`
+|USA |
+|===
+
+'''''
+
+[[011c1dcfb-05-62-a499-c37a]]
+=== Formatting and rendering templating syntax
+
+[[b83734b4-2a12-41fa-9a0a-7d75b0ba2ffc]]
+==== Prepare your email for templating syntax with an assignment tag
+
+The assignment tag tells the email builder to look out for templating
+syntax that needs to be rendered into plain language. Without the
+assignment tag, your templating syntax will not render and will appear
+to contacts as raw templating syntax.
+
+Insert the appropriate assignment tag according to the table above in a
+text element at the very top of your email. The assignment tag will not
+be visible in email previews, test emails, or live emails.
+
+All other elements in your email must be below the text element
+containing the assignment tag.
+
+The screenshots below show a draft email with an assignment tag
+correctly set, templating syntax that renders basic information about an
+order, and the results of previewing the draft:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66916f5c5908935e84818602/file-oCseOd1mI5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66916f5c5908935e84818602/file-oCseOd1mI5]
+
+*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66916f625908935e84818603/file-0CuVaZNKz7.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66916f625908935e84818603/file-0CuVaZNKz7] +
+*
+
+[[c499727d-0bc7-44ab-ba19-e6748d618a44]]
+===== ⚠️ Previews of templating syntax render using a randomly selected contact profile
+
+The email builder’s preview function displays the syntax rendered as the
+plain language using data from a randomly selected contact profile.
+
+You may see some pieces of syntax “disappear” when you click Preview.
+This means that the randomly selected contact did not have that data in
+their profile.
+
+For example, if you insert contacts’ billing address with templating
+syntax in your email and the randomly selected contact profile does not
+have a billing address, the billing address syntax will appear blank.
+
+To force a new randomly selected contact profile, log out of Sendlane
+and log in again.
+
+[[loop]]
+==== Create loops to display all products in an order
+
+If you use product related templating syntax without a loop, only the
+first product from the order or checkout will be rendered in the email.
+
+To add a loop function:
+
+[arabic]
+. Copy the following loop tag `+{% for product in order.line_items %}+`
+
+[arabic, start=2]
+. Paste the loop tag directly above the beginning of your product
+related syntax
+
+[arabic, start=3]
+. Copy the following end loop tag `+{% endfor %}+`
+
+[arabic, start=4]
+. Paste the end loop tag directly below the end of your product related
+syntax
+
+For example, the syntax below will display a list containing the name of
+each product in the randomly selected order or checkout used by the
+email builder preview:
+
+*Order*
+
+[source,code]
+----
+{% for product in order.line_items %}
+{{product.title}}
+{% endfor %}
+----
+
+*Checkout*
+
+[source,code]
+----
+{% for product in checkout.line_items %}
+{{product.title}}
+{% endfor %}
+----
+
+[[e1b6602a-861b-4501-bf57-5546444ecb8d]]
+==== Provide context for all templating syntax in your email
+
+Templating syntax returns raw data without contextual labels
+
+For example, the order number tag `+{{order.name}}+` returns a raw order
+number without indication that it is an order number.
+
+If you do not include text that provides context for your templating
+syntax, your email will be difficult to understand.
+
+The table below shows the results of templating syntax with and without
+manually added contextual labels:
+
+[cols=",",]
+|===
+|*Content* |*Renders as*
+|`+{{order.name}}+` |#1032
+|Order number: `+{{order.name}}+` |Order number: #1032
+|===
+
+'''''
+
+[[b4726dce-f605-4862-a499-c37a011c1dcf]]
+=== Other Shopify data
+
+The examples and references above represent the most commonly available
+and valuable data that can be dynamically pulled into emails using
+templating syntax. However, Shopify may provide more useful data that
+you can take advantage of!
+
+Advanced users can use the `+json_encode+` function to look at all data
+available with a given automation trigger.
+
+To see available data:
+
+[arabic]
+. Open an automation
+
+[arabic, start=2]
+. Select an order or checkout related trigger
+
+[arabic, start=3]
+. Add an email node
+
+[arabic, start=4]
+. Set the email node’s name and subject line to anything you like
+
+[arabic, start=5]
+. Click Edit Email
+
+[arabic, start=6]
+. Click Start From Scratch
+
+[arabic, start=7]
+. Add a text box to your email
+
+[arabic, start=8]
+. Copy the following snippet depending on whether your trigger is order
+or checkout based:
+[loweralpha]
+.. Checkout: `+{{ trigger.checkout | json_encode }}+`
+[loweralpha, start=2]
+.. Order: `+{{ trigger.order | json_encode }}+`
+
+[arabic, start=9]
+. Paste the snippet into the text box
+
+[arabic, start=10]
+. Click Preview
+
+In the email preview, you’ll see a large block of JSON that is difficult
+to read. Copy the entire block, then paste it into a JSON parser, like
+http://jsonformatter.org/[jsonformatter.org], to see your data in a
+structured format:
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXdpf4BiHSrw8-a0yt9lCbjrlfNVvM_DfrygRBJerXOJGAZhzPVdX-kHIUzck40RXCmisOkKxaE-MNlRvGyCRgAfXqJHOb0MCJu-DDS8JGGsfszEafjd-7ROZfJUz4A9Djj6ckwiVgolI7gNViG00642mN9z?key=i2wcvCyEL3MR7kyQvhKKZg[AD_4nXdpf4BiHSrw8-a0yt9lCbjrlfNVvM_DfrygRBJerXOJGAZhzPVdX-kHIUzck40RXCmisOkKxaE-MNlRvGyCRgAfXqJHOb0MCJu-DDS8JGGsfszEafjd-7ROZfJUz4A9Djj6ckwiVgolI7gNViG00642mN9z?key=i2wcvCyEL3MR7kyQvhKKZg]
+
+You can now select items to render in your automation emails from the
+parsed JSON. For example, let's grab that order_status_url towards the
+bottom of the parsed JSON above.
+
+An order status URL would only be appropriate in an order placed
+automation, so we'll use the `+{% set order = trigger.getOrder() %}+`
+assignment tag in a text element at the very top of the email.
+
+If we paste `+order_status_url+` into our email at this point, nothing
+will happen even though we have the correct assignment tag set. We need
+to format the syntax properly first.
+
+Now, we need to show the assignment tag where to look for syntax that
+needs to be rendered. Since we're using the order assignment tag,
+we'll add the word order and a period before `+order_status_url+` to get
+`+order.order_status_url+`, and finish with a space plus two curly
+brackets surrounding the syntax: `+{{ order.order_status_url }}+`
+
+[.sans]##

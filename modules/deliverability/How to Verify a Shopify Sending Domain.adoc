@@ -1,0 +1,309 @@
+[[h.o0ihj1t4fj2d]]
+==== [.c6]#Overview#
+
+[.c0]#Verifying a domain means using a subdomain of your business'
+website to send marketing emails that are identified as coming directly
+from your brand, without qualifiers such as "via Sendlane" appearing in
+Contacts' inboxes. Read on to learn how to verify a sending domain and
+authenticate a Sender Profile!#
+
+[[h.9sogjgl1kk2l]]
+==== [.c6]#In This Guide#
+
+* link:#confirm[Confirm your domain is registered to Shopify]
+* link:#subdomain[Create a subdomain in Sendlane]
+* link:#add-dns[Add records to your DNS panel and verify]
+* link:#link[Link a Sender Profile to your verified domain]
+* link:#warm[Warm your verified domain]
+* link:#troubleshooting[Troubleshooting]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+* Have admin access to your Shopify account. Sendlane cannot adjust your
+DNS settings.
+
+[[first-time]]
+===== 🚨 Are you setting up a verified sending domain for the first time?
+
+* Read
+https://help.sendlane.com/article/433-authenticating-a-sending-domain[What
+is a Verified Sending Domain?] before proceeding!
+
+[[shopify-email]]
+===== 🚨 If you use Shopify's transactional emails, verify a separate subdomain with Sendlane
+
+* If you have
+https://help.shopify.com/en/manual/domains/add-a-domain/connecting-domains/connect-subdomain[verified
+a sending domain with Shopify Email], use a different subdomain when
+verifying with Sendlane. If the same subdomain is used for both, then
+both channels can be interrupted by one channel's deliverability hiccup,
+such as a
+https://mxtoolbox.com/problem/blacklist/dns-realtime-blackhole-list[temporary
+RBL flag].
+
+'''''
+
+Check out the video of verifying a Shopify domain below to see the
+process from start to finish!
+
+image:https://fast.wistia.com/embed/medias/kbn3i4kcmh/swatch[https://fast.wistia.com/embed/medias/kbn3i4kcmh/swatch]
+
+1::
+  [.c0]#In order for the domain verification method described in this
+  article to work, your domain must be registered to Shopify. To
+  determine whether your domain is registered to Shopify:#
+  +
+  . Go to
+  [.c11]#https://www.google.com/url?q=https://www.whois.com/&sa=D&source=editors&ust=1705977941043714&usg=AOvVaw1ZR1uLtk4r-Fj7oV4-efS8[Whois.com]#
+  . Enter your domain (company.com) in the smaller search bar at the top
+  right of the corner where the search button is labeled
+  “WHOIS"image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65af1aa1c231e622d44b3aa4/file-s3y2bLWl3A.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65af1aa1c231e622d44b3aa4/file-s3y2bLWl3A]
+  . [.c0]#Click WHOIS#
+  . [.c0]#Scroll down to the Raw Whois Data section#
+  . Find the Reseller
+  fieldimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65af1ab0c231e622d44b3aa5/file-ZOmLrWUhc6.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65af1ab0c231e622d44b3aa5/file-ZOmLrWUhc6]
+  +
+  [.c0]#If the reseller is Shopify, your domain is registered to
+  Shopify!#
+  +
+  [.c0]##
+  +
+  [.c0]#If the reseller is not Shopify,
+  https://cloud.google.com/identity/docs/identify-host[determine where
+  your domain is hosted] and follow the instructions in
+  https://help.sendlane.com/article/550-how-to-authenticate-a-sending-domain[How
+  to Verify a Sending Domain]. Use your hosting provider’s documentation
+  to guide you through adding the required DNS records to your DNS
+  panel.#
+2::
+  [.c0]#Before starting the process of creating a subdomain, you'll need
+  to decide what you want your subdomain to be and ensure it is not
+  already being used.#
+  +
+  [.c0]##
+  +
+  [.c0]#Choose a common subdomain like send, mail, or e, or choose a
+  word related to your business. Do not choose a subdomain that could
+  cause inbox providers or Contacts to confuse you with another
+  business. Using another business' name (including Sendlane) will cause
+  deliverability issues.#
+  +
+  [.c0]##
+  +
+  Once you've selected a subdomain, check that it is not already in use
+  by entering it into
+  [.c11]#https://www.google.com/url?q=https://mxtoolbox.com/&sa=D&source=editors&ust=1705977941045194&usg=AOvVaw2b1ytqW7g4dhzjSQk0ZwNI[MxToolbox]#[.c0]#.
+  The DNS Record Published test will return “DNS Record not found” if
+  the subdomain is not already in
+  use.image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65af1ada33fd8c767f4f8a4d/file-4K2klFciLa.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65af1ada33fd8c767f4f8a4d/file-4K2klFciLa] To
+  create a subdomain in Sendlane:#
+  +
+  . [.c0]#Click the Account icon#
+  . [.c0]#Click Email#
+  . [.c0]#Click Setup Domain#
+  . [.c0]#Enter your business’ primary domain in the Domain Name field#
+  . [.c0]#Enter the word you’d like to use as your subdomain in the
+  Sending Domain field#
+  . [.c0]#Click Save#
+  . [.c0]#Your subdomain has now been created!#
+  +
+  [.c0]##
+3::
+  [.c0]#After creating your subdomain, you’ll see a list of CNAME, MX,
+  and TXT DNS records appear on the Sending Domain slideout window.
+  These records will authorize Sendlane to use your new subdomain to
+  send Campaign and Automation emails from your account.#
+  +
+  [[h.4iz58z6q3igz]]
+  ==== [.c6]#Add CNAME records to your Shopify domain#
+  +
+  . [.c0]#Log in to Sendlane#
+  . [.c0]#Click Account > Email > Settings icon to open the DNS records
+  window for the subdomain you created in the steps above#
+  . [.c0]#Open another tab or window and log in to Shopify#
+  . [.c0]#Click Settings#
+  . [.c0]#Click Domains#
+  . [.c0]#Select your primary domain#
+  . [.c0]#Click the Domain settings dropdown*#
+  . [.c0]#Select Edit DNS settings#
+  . [.c0]#Click the Add custom record dropdown#
+  . [.c0]#Select CNAME#
+  . [.c0]#Navigate to the DNS records window in Sendlane#
+  . [.c0]#Click the copy icon next to the CNAME record’s Host column#
+  . [.c0]#Navigate to your Shopify tab or window#
+  . P[.c0]##aste the CNAME Host copied from Sendlane into the Name
+  field##image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65af1b2c3b1ed8383a2d3281/file-Bqe5DtevkB.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65af1b2c3b1ed8383a2d3281/file-Bqe5DtevkB]
+  . [.c0]#Navigate to the DNS records window in Sendlane#
+  . [.c0]#Click the copy icon next to the CNAME record’s Value column#
+  . [.c0]#Navigate to your Shopify tab or window#
+  . Paste the CNAME Value copied from Sendlane into the Points to field
+  . Click Confirm
+  . [.c0]#Repeat steps 9-19 for the second CNAME record#
+  +
+  *If you do not see the Domain settings dropdown, your domain is not
+  hosted by Shopify.
+  https://cloud.google.com/identity/docs/identify-host[Determine your
+  domain's hosting provider] and follow the instructions in
+  https://help.sendlane.com/article/550-how-to-authenticate-a-sending-domain[How
+  to Verify a Sending Domain]. Use your hosting provider’s documentation
+  to guide you through adding the required DNS records to your DNS
+  panel.
+  +
+  [[h.ahhcfzyhieyl]]
+  ==== [.c6]#Add an MX record to your Shopify domain#
+  +
+  . [.c0]#Click the Add custom record dropdown#
+  . [.c0]#Select MX#
+  . [.c0]#Navigate to the DNS records window in Sendlane#
+  . [.c0]#Click the copy icon next to the MX record’s Host column#
+  . [.c0]#Navigate to your Shopify tab or window#
+  . [.c0]#Paste the MX record’s Host into the Name field#
+  . [.c0]#Navigate to the DNS records window in Sendlane#
+  . [.c0]#Click the copy icon next to the MX record’s Value column#
+  . Navigate to your Shopify tab or window
+  . [.c0]#Paste the MX record’s Value into the Points to field#
+  . [.c0]#Enter `+1+` in the Priority field#
+  . [.c0]####Click
+  Confirmimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65af1b683b1ed8383a2d3282/file-JB5ahVFKIn.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65af1b683b1ed8383a2d3282/file-JB5ahVFKIn]
+  +
+  [[h.npybkxqwpxjb]]
+  ==== [.c6]#Add TXT records to your Shopify domain#
+  +
+  . [.c0]#Click the Add custom record dropdown#
+  . [.c0]#Select TXT#
+  . [.c0]#Navigate to the DNS records window in Sendlane#
+  . [.c0]#Click the copy icon next to the TXT record’s Host column#
+  . [.c0]#Navigate to your Shopify tab or window#
+  . [.c0]#Paste the TXT record’s Host into the Name field#
+  . [.c0]#Navigate to the DNS records window in Sendlane#
+  . [.c0]#Click the copy icon next to the TXT record’s Value column#
+  . Navigate to your Shopify tab or window
+  . [.c0]#Paste the TXT record’s Value into the TXT Value
+  field#image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65af1af833fd8c767f4f8a4e/file-fEuqyNmMKC.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65af1af833fd8c767f4f8a4e/file-fEuqyNmMKC]
+  . [.c0]#Click Confirm#
+  . Repeat steps 1-10 for the second TXT record
+4::
+  [.c0]#After your subdomain has been verified, you need to create a new
+  or edit an existing Sender Profile to use your verified subdomain to
+  send from.#
+  +
+  [[h.pptymzffpstn]]
+  ==== [.c6]#Create a new Sender Profile#
+  +
+  . [.c0]#Navigate to the Sender Profile tab by clicking Manage Sender
+  Profiles on the Sending Domain slideout window or clicking the
+  Audience icon > Sender Profile tab#
+  . [.c0]#Click + Sender Profile#
+  . [.c0]#Enter the Sender name and Company name#
+  . [.c0]#Under Domain, select the Verified radio button#
+  . [.c0]#Under From Email, enter a prefix for your new Sender Profile
+  and select your verified subdomain from the dropdown#
+  . [.c0]#Enter a Reply to email address#
+  . [.c0]#Enter your business’ address in the address fields#
+  . [.c0]#Click Save#
+  +
+  [[h.f30tzn504z2h]]
+  ==== [.c6]#Edit an existing Sender Profile#
+  +
+  . [.c0]#Click the arrow icon in the View column next to the Sender
+  Profile you want to edit#
+  . [.c0]#Click Edit#
+  . [.c0]#Under Domain, select the Verified radio button#
+  . [.c0]#Under From Email, enter a prefix for your Sender Profile and
+  select your verified subdomain from the dropdown#
+  . [.c0]#Click Save#
+5::
+  [.c0]#Both methods of domain verification result in a new or reset
+  sending reputation. After you verify a sending domain for the first
+  time, we strongly recommend that you follow one of the two warm-up
+  plans described below:#
+  +
+  [[h.mqj6ktlolwt7]]
+  ==== [.c6]#One send to engaged Contacts (riskier, faster)#
+  +
+  . [.c0]#Update all Automation emails to use your new authenticated
+  Sender Profile#
+  . [.c0]#If you use 3rd-party data tools to collect leads, pause them#
+  . https://help.sendlane.com/article/137-segments#creating-segment[Create
+  a Segment] of 30 day clicks (do not include opens)
+  . [.c0]#Create a Campaign (check out Sendlane's guide to evergreen
+  email content for tips and tricks!)#
+  . [.c0]#Use the Segment you created in step one as the Audience for
+  your Campaign#
+  . [.c0]#Send your Campaign#
+  . [.c0]#If you disabled any 3rd-party tools in step two, enable them
+  again#
+  . [.c0]#After sending the warm up Campaign to engaged Contacts, send
+  Campaigns as usual.#
+  +
+  [.c0]##
+  +
+  [[h.g6vplkvrbt8j]]
+  ==== [.c6]#Five sends to engaged Contacts over ten days (safer, slower)#
+  +
+  . Update all Automation emails to use your new authenticated Sender
+  Profile
+  . If you use 3rd-party data tools to collect leads, pause them
+  . https://help.sendlane.com/article/341-advanced-segmentation#activity[Create
+  Segments] for:
+  .. 7, 14, and 30 day clickers 
+  .. 7, 14, and 30 day openers 
+  . Create or update evergreen content for five sends 
+  . On Day 0, send to 7 day clickers and keep the volume of the audience
+  between 500 and 3,000 
+  . On Day 1, send to 14 day clickers and keep the volume of the
+  audience between 2,500 and 7,500 
+  . On Day 2: 
+  .. Before continuing with the next send, pause to review reporting
+  from the previous sends. Pay close attention to the Email Providers &
+  Devices section of your Campaign report to confirm that emails are
+  being accepted appropriately. Gmail, Yahoo, and AOL should show 15-20%
+  open rates. 
+  .. Send Day 2's Campaign to your 30 day clickers Segment and keep the
+  volume of the audience between 3,500 and 10,000 
+  . On Day 3, send again to your 30 day clickers Segment and increase
+  the audience to between 7,000 and 20,000 
+  . On Day 4: 
+  .. Send again to your 30 day clickers Segment and increase the
+  audience to between 14,000 and 40,000 
+  .. Pause to review reporting again 
+  . For Days 5-10, repeat steps 5-9 using the opener Segments you
+  created in step 3b in addition to the clicker Segments as the audience
+  for your Campaigns. Continue to monitor reporting during these sends
+  and aim to double the size of your audience with each send. 
+  . If you disabled any 3rd-party tools in step two, enable them again
+
+'''''
+
+=== Troubleshooting
+
+[[edit-dns]]
+====== I don't see the option to select Edit DNS settings in Shopify!
+
+If you do not see the domain settings dropdown and cannot select Edit
+DNS settings in Shopify, your domain is not hosted by Shopify.
+https://cloud.google.com/identity/docs/identify-host[Determine your
+domain's hosting provider] and follow the instructions in
+https://help.sendlane.com/article/550-how-to-authenticate-a-sending-domain[How
+to Verify a Sending Domain]. Use your hosting provider’s documentation
+to guide you through adding the required DNS records to your DNS panel.
+
+'''''
+
+[[addl]]
+=== Additional Resources
+
+* https://help.sendlane.com/article/433-authenticating-a-sending-domain[What
+is a Verified Sending Domain?]
+* https://www.sendlane.com/blog/engaged-sending-changes-2024[A Deep Dive
+into Gmail’s 2024 Engaged Sending
+Changes]https://www.sendlane.com/blog/deliverability-changes-2024#s3[A
+Review Of Gmail’s 2024 Deliverability Changes: What You Need To Know]
+* Yahoo -
+https://blog.postmaster.yahooinc.com/post/730172167494483968/more-secure-less-spam[More
+Secure&#44; Less Spam: Enforcing Email Standards for a Better
+Experience]
+* Gmail -
+https://blog.google/products/gmail/gmail-security-authentication-spam-protection[New
+Gmail protections for a safer&#44; less spammy inbo]

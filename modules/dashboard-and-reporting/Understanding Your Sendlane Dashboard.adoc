@@ -1,0 +1,240 @@
+[[top]]
+==== Overview
+
+Your https://app.sendlane.com/dashboard[Sendlane Dashboard] is a great
+way to quickly review your account's activity and gain insights into
+your marketing strategy's performance. Read on to learn about each
+section of your Sendlane dashboard!
+
+==== In This Guide
+
+* link:#Daily[Weekly Digest]
+* link:#plan-info[Sendlane Plan Information]
+* link:#Contacts[Contacts]
+* link:#Revenue[Revenue]
+* link:#eCommerce[eCommerce]
+* link:#Deliverability[Deliverability]
+* link:#Latest[Latest Campaigns]
+* link:#Automations[Automations]
+* link:#Pop-ups[Pop-ups]
+* link:#Site[Site Tracking]
+
+'''''
+
+[[Daily]]
+=== Weekly Digest
+
+The Weekly Digest sidebar is a great way to see a quick overview of your
+entire Sendlane account. The information here refreshes weekly at
+midnight on Sundays EST, regardless of the time zone your account is set
+in.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6373fe71bedde91b3d8c92c6/file-rIxrvbBF9A.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6373fe71bedde91b3d8c92c6/file-rIxrvbBF9A]
+
+link:#top[Back to top]
+
+'''''
+
+[[plan-info]]
+=== Sendlane Plan Information
+
+Under the Weekly Digest is a quick view of your Sendlane plan stats,
+including your current email plan, the number of Contacts currently in
+your account, how many emails have been sent so far in your billing
+cycle, and how many sending credits remaining in your billing cycle for
+both email and SMS.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6373fed6bedde91b3d8c92c7/file-zUwkpCLx99.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6373fed6bedde91b3d8c92c7/file-zUwkpCLx99]
+
+link:#top[Back to top]
+
+'''''
+
+[[Contacts]]
+=== Contacts, Email, and SMS
+
+[[rp]]
+===== 💡 Adjust Reporting Periods
+
+The Contacts, Email, and SMS sections of the Sendlane dashboard let you
+select from a set of preset relative reporting periods or a custom date
+range:
+
+* Today (Today only)
+* Last 7 days (Yesterday - 7 days ago)
+* Last 30 days (Yesterday - 30 days ago)
+* Last 90 days (Yesterday - 90 days)
+* Last month (Last complete month; selecting this option on 12/31 will
+pull 11/1-11/30)
+* Last 3 months (Last complete three months; selecting this option on
+12/31 will pull 9/1-11/30)
+* Last 12 months (Yesterday - 12 months)
+* Last calendar year (Last complete year; selecting this option on any
+date in 2024 will pull 1/1/23-12/31/23)
+* Custom range
+
+The Contacts section shows an overview of your account's Contact growth
+for both email and SMS, activity, email domain breakdown, and collection
+source.
+
+Hover over individual points in the Growth, Top Domains, and Source
+visualizations to view details for these charts:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63349a5b3f38fe1e46861b64/file-B2ShevE7TH.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63349a5b3f38fe1e46861b64/file-B2ShevE7TH]
+
+===== Contacts Takeaways
+
+Ask yourself the following questions while monitoring your Contacts data
+to keep your email and SMS marketing strategy agile and effective:
+
+* *Growth* - When did you experience periods of higher growth? What were
+your strategies then? How can you iterate on those strategies to keep
+your growth up?
+* *Contact Activity* - Are your unsubscribe and deleted/removed numbers
+stable?
+* *Top Domains* - Are you surprised by the breakdown of your Contacts'
+domains? Are you aware of best practices for each domain?
+* *Source* - Is the amount of time and other resources being invested in
+each source reflected in this chart?
+
+link:#top[Back to top]
+
+'''''
+
+[[Revenue]]
+=== Revenue
+
+[[rp-2]]
+===== 💡 Adjust Reporting Periods
+
+The Revenue section of the Sendlane dashboard lets you select from a set
+of preset relative reporting periods or a custom date range:
+
+* Today (Today only)
+* Last 7 days (Yesterday - 7 days ago)
+* Last 30 days (Yesterday - 30 days ago)
+* Last 90 days (Yesterday - 90 days)
+* Last month (Last complete month; selecting this option on 12/31 will
+pull 11/1-11/30)
+* Last 3 months (Last complete three months; selecting this option on
+12/31 will pull 9/1-11/30)
+* Last 12 months (Yesterday - 12 months)
+* Last calendar year (Last complete year; selecting this option on any
+date in 2024 will pull 1/1/23-12/31/23)
+* Custom range
+
+The Revenue section provides an overview of revenue earned from
+https://help.sendlane.com/article/73-automations[Automations] and
+https://help.sendlane.com/article/153-campaigns[Campaigns]
+
+Hover over individual points in the Revenue Breakdown and % of Revenue
+by Source visualizations to view details for these charts:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6373fff56c146d4e429d07f2/file-0efKYzyj71.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6373fff56c146d4e429d07f2/file-0efKYzyj71]
+
+===== Revenue Takeaways
+
+Ask yourself the following questions while monitoring your Total Account
+Revenue data to keep your email marketing strategy agile and effective:
+
+* *Revenue Breakdown* and *Attributed Revenue* - When do you see higher
+revenue? What were your strategies then? How can you iterate on those
+strategies to keep your revenue up?
+* *% of Revenue by Source* and *Revenue by Module* - Is the amount of
+time and other resources being invested in Campaigns vs. Automations
+reflected in this data?
+
+When you're able to see which messages have the highest revenue
+and engagement, you can uncover which strategies work best for your
+audience and leverage those more effectively to boost your engagement
+and ROI!
+
+link:#top[Back to top]
+
+'''''
+
+[[eCommerce]]
+=== Stores
+
+The Stores section populates data from your connected eCommerce
+integration, or provides instructions for integrating supported
+eCommerce integrations.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63349ac8cf38bc37aecf4757/file-t0gLLkS7r2.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63349ac8cf38bc37aecf4757/file-t0gLLkS7r2]
+
+link:#top[Back to top]
+
+'''''
+
+[[Latest]]
+=== Latest Campaigns
+
+In the Latest Campaigns section you'll see a "quick look" at the last 5
+email or SMS Campaigns sent from your account, including open rates
+(email only), click rates, and attributed revenue for each Campaign
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6100a617b55c2b04bf6d8ace/file-NzXJBJbY8N.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6100a617b55c2b04bf6d8ace/file-NzXJBJbY8N]
+
+===== Takeaways
+
+When you have visibility into the performance of your most recent
+campaigns, you'll be fully in-the-know about how well your one-time
+sends are working, and either reassess and adjust, or maintain your
+strategy as needed!
+
+link:#top[Back to top]
+
+'''''
+
+[[Automations]]
+=== Automations  
+
+In the _Automations_ section you'll see your Top 5
+https://help.sendlane.com/article/73-automations[Automations], including
+the number of times the automation is triggered, how many contacts are
+currently active within the automation, how many contacts have completed
+the automation, the open rate, click rate, and revenue (if any) of each
+automation.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6100a661766e8844fc34ac16/file-S6S7ePZj3K.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6100a661766e8844fc34ac16/file-S6S7ePZj3K]
+
+link:#top[Back to top]
+
+'''''
+
+[[Pop-ups]]
+=== Pop-Ups
+
+In the Pop-Ups section you'll see your Top 5
+https://help.sendlane.com/article/308-pop-ups[Pop-Ups]. This will allow
+you to see how many impressions and submissions along with the
+conversions rate of those forms.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6100a6da766e8844fc34ac18/file-OV5jzSzcTg.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6100a6da766e8844fc34ac18/file-OV5jzSzcTg]
+
+link:#top[Back to top]
+
+'''''
+
+[[Site]]
+=== Site Tracking
+
+The Site Tracking section shows the top five
+https://help.sendlane.com/article/72-beacon[Beacon] events on your
+website by the number of total visits, or Impressions. Impressions count
+each page view even if the same Contact visits the page multiple times.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6100a7386ffe270af2a9328e/file-PjqHLH5VhY.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6100a7386ffe270af2a9328e/file-PjqHLH5VhY]
+
+link:#top[Back to top]
+
+'''''
+
+=== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/an-insiders-look-at-sendlanes-new-dashboard-analytics[An
+Insider's Look at Sendlane's new Dashboard Analytics]
+* https://www.sendlane.com/blog-posts/how-to-leverage-campaign-reporting-in-sendlane-to-boost-engagement[How
+to Leverage Campaign Reporting Data in Sendlane to Boost Engagement]
+
+link:#top[Back to top]

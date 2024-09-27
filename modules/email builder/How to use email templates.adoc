@@ -1,0 +1,97 @@
+==== Overview
+
+Using email templates is a great way to have perfectly branded layouts
+ready to go for Campaigns and Automations. Read on learn how to create
+and manage templates for Campaign and Automation emails.
+
+==== In this guide
+
+* link:#new[Create a new template]
+* link:#save[Save an email as a template]
+* link:#manage[Preview&#44; edit&#44; or delete a template]
+* link:#use[Use a template in a Campaign or Automation email]
+
+'''''
+
+[[new]]
+=== Create a new template
+
+. Click the https://app.sendlane.com/templates[*Email Templates icon*]
+. Click *Create new template* 
+. [#name]#Enter a *name* #
+. Click *Create*
+. ****Design your template
+. Click *Save Template* 
+. Click *Save*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6650b44a5940934e140f3ddc/file-J2QQG76pFz.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6650b44a5940934e140f3ddc/file-J2QQG76pFz] +
+link:#top[Back to top]
+
+'''''
+
+[[save]]
+=== Save an email as a template
+
+Open a Campaign or Automation email and edit its content. To save an
+email as a template:
+
+. Click the  *three-dot menu* 
+. Click *Save as Template* 
+. Enter a descriptive *name* 
+. Click *Save* 
+
+Once you save an email as a template, it will stay in the template
+center unless you delete it from the email templates page. If you delete
+the original Campaign or Automation email node the template was created
+in, it will still be available in the email templates page.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6650b40c1f3fa9421e2871ed/file-k9vZ6eJgvb.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6650b40c1f3fa9421e2871ed/file-k9vZ6eJgvb]
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6650b434e1989867dcefd15a/file-aerWo231eL.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6650b434e1989867dcefd15a/file-aerWo231eL]
+
+link:#top[Back to top]
+
+'''''
+
+[[manage]]
+=== Manage Templates
+
+Click the *template icon* on the left-hand sidebar, then hover over a
+template to see commands for duplicating, editing, previewing, or
+deleting a template. Deleted templates cannot be retrieved, so delete
+with caution.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65736af188ef5c2b70fb5417/file-9S8iArcBQL.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65736af188ef5c2b70fb5417/file-9S8iArcBQL]
+
+link:#top[Back to top]
+
+'''''
+
+[[use]]
+=== Use a template in a Campaign or Automation email
+
+. Click the  *Custom tab* of the template picker 
+. Click *Use Template*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6650b4dd5940934e140f3dde/file-2ixu4hEjXe.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6650b4dd5940934e140f3dde/file-2ixu4hEjXe]
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+[[legacy]]
+====== I don't see my email template!
+
+If you created your email in Sendlane's legacy email builder, it will
+not appear on the Email Templates page. Templates created in the legacy
+email builder can still be accessed via the Campaigns page or in
+Automations.
+
+[[search]]
+====== Why is my template not appearing in the search results?
+
+The search bar on the Email Templates page only searches the text in a
+template's name. Make sure you are searching for terms that appear in a
+template's link:#name[name].

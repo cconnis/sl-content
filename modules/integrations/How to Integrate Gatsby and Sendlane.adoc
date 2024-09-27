@@ -1,0 +1,83 @@
+https://www.gatsby.ai/[Gatsby] helps you build real relationships with
+micro-influencers and grow your brand automatically.
+
+Integrating Gatsby and Sendlane enables you to sync data directly to
+your contact profiles in Sendlane, so you can send targeted content to
+your greatest influencers!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://www.gatsby.ai/[Gatsby account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, and
+https://help.sendlane.com/article/125-lists#id[know the list ID# ] so
+Gatsby knows where to place your new leads and contacts!
+
+'''''
+
+=== Connecting Gatsby and Sendlane
+
+. https://gatsby.run/login[Log in to your Gatsby account], or create a
+new one https://www.gatsby.ai/[here]
+. Toggle the Instagram switch to *_On_* and click *_Launch Campaign_*
+. From the dashboard in your Gatsby account, hover over the profile box
+in the lower left corner and select *_Integrations_* +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6ffb40428635343993615/file-Q9wMbPpfZX.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce6ffb40428635343993615/file-Q9wMbPpfZX]
+. Find the Sendlane box and click *_Connect_* +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce7002e042863534399361c/file-GUU2AI87tI.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce7002e042863534399361c/file-GUU2AI87tI]
+. Next, enter your API key, Hash key, Subdomain (user.sendlane.com), and
+List ID#.
+. Click *_Integrate_*
+
+**__**Your Integration is now complete!
+
+Data collected by Gatsby will now be funneled to the contact profiles in
+your selected List! You can now set up email campaigns to target your
+influencers and encourage them to share about your brand on social
+media.
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Gatsby, so we're only able to provide
+limited troubleshooting support. However, if you do need help, the
+Gatsby team is just a few clicks away!
+
+* Connect with the mailto:support@gatsby.ai[Gatsby team]
+* Visit the Gatsby https://www.gatsby.ai/pricing#faq[FAQ] page
+
+'''''
+
+==== Additional Gatsby Resources
+
+https://www.gatsby.ai/[Sign up for Gatsby] |
+https://www.gatsby.ai/blog[Gatsby Blog] |
+https://www.gatsby.ai/checkout-integration-demo[Demo]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-gatsby[Sendlane
++ Gatsby - Discover Powerful Influencers Within Your Customer Base]
+* https://www.sendlane.com/blog-posts/8-ways-marketers-align-social-and-email[8
+Ways Successful Marketers Align Their Social Media and Email Marketing
+For Maximum Success]
+* https://www.sendlane.com/blog-posts/boost-your-business-with-data-driven-marketing[7
+Easy Ways to Boost Your Business With Data Driven-Marketing]
+
+'''''
+
+=== TL;DR
+
+Gatsby dashboard →  _Integrations_ → Sendlane → _Connect_ → Enter
+Sendlane API Key, Hash Key, Subdomain & List ID# → _Integrate_

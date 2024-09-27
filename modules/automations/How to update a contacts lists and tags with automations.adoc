@@ -1,0 +1,113 @@
+[[#top]]
+==== Overview
+
+You can update the lists contacts are subscribed to and tags applied to
+their profiles with automations. Read on to learn how to use the update
+contact property nodes.
+
+==== In this guide
+
+* link:add-node[Add an Update Contact Property node to an automation]
+* link:move[Move to List]
+* link:/subscribe[Add to List]
+* link:unsubscribe[Remove from List]
+* link:add[Add Tag]
+* link:remove[Remove Tag]
+
+'''''
+
+[[add-node]]
+=== Add an Update Contact Property node to an automation
+
+To add an update contact property node to an automation:
+
+. Click the *+ icon* to add a new node to your automation.
+. Under Actions, click *Update Contact Property*
+. Select an update contact property node to add to your automation
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66c7c74b8919a15d1b1d387a/file-anVmpYkHlB.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66c7c74b8919a15d1b1d387a/file-anVmpYkHlB]
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66c7c75a48915f570c6aa119/file-0V1IZhwPeO.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66c7c75a48915f570c6aa119/file-0V1IZhwPeO]
+
+link:#top[Back to top]
+
+'''''
+
+[[move]]
+==== Move to List
+
+To move contacts from one list to another at a specified step in your
+automation:
+
+. Click the *+ button*
+. Click *Update Contact Property*
+. Click *Move to List*
+. In the *Move to List dropdown*, select a list you want contacts to be
+added to once they reach this step
+. In the *From List dropdown*, select the list you want to remove
+contacts from
+. Click *Done*
+
+link:#top[Back to top]
+
+'''''
+
+[[subscribe]]
+==== Add to List
+
+. Click the *+ button*
+. Click *Update Contact Property*
+. Click *Add to List*
+. In the *Select List dropdown*, select a list you want contacts to be
+added to once they reach this step
+. Click *Done*
+
+link:#top[Back to top]
+
+'''''
+
+[[unsubscribe]]
+==== Remove from List
+
+⚠️ If your Automation removes contacts from a list that triggers the
+automation, make sure the Remove from List action is the last action in
+the automation
+
+. Click the *+ button*
+. Click *Update Contact Property*
+. Click *Remove From List*
+. In the *Select List dropdown*, select a list you want contacts to be
+removed from once they reach this step
+. Click *Done*
+
+link:#top[Back to top]
+
+'''''
+
+[[add]]
+==== Add Tag
+
+. Click the *+ button*
+. Click *Update Contact Property*
+. Click *Add Tag*
+. In the *Select Tag dropdown*, select a tag you want added to contacts'
+profiles once they reach this step
+. Click *Done*
+
+link:#top[Back to top]
+
+'''''
+
+[[remove]]
+==== Remove Tag
+
+. Click the *+ button*
+. Click *Update Contact Property*
+. Click *Remove Tag*
+. In the *Select Tag dropdown*, select a tag you want removed from
+contacts' profiles once they reach this step
+. Click *Done*
+
+link:#top[Back to top]
+
+'''''

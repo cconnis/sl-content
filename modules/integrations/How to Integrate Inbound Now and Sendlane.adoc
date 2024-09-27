@@ -1,0 +1,118 @@
+https://www.inboundnow.com/?ref=382[Inbound Now] provides entry-level
+inbound marketing tools to the WordPress Content Management system
+through a collection of free and premium plugin add-ons. 
+
+Features include form-based data collection, calls to action, landing
+pages, and an integration with Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+https://www.inboundnow.com/?ref=382[active account with Inbound Now].
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_* → *_API_*.
+
+You'll also want to be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Inbound Now knows where to place
+your new leads and contacts!
+
+Last (but not least), you'll need to install the Inbound Now plugin into
+your WordPress site!
+
+'''''
+
+=== Installing the Sendlane Extension
+
+First, we'll walk through how to install the Sendlane extension!
+
+. https://www.inboundnow.com/market/inbound-sendlane/[Click here] to
+view the free extension in the Inbound Now Marketplace
+. Click *_Add item to cart_* at the bottom of this page, and then click
+*_Checkoutimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9bbc8a04286364bc901925/file-1xOREROFtX.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9bbc8a04286364bc901925/file-1xOREROFtX]_*
+. If prompted, sign in to your Inbound Now account and proceed by
+clicking *_Free
+Downloadimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8ab6152c7d3a7e9ae19460/file-EmsGCwXngs.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8ab6152c7d3a7e9ae19460/file-EmsGCwXngs]_*
+. If the file does not download automatically, click *_My Account_* in
+the upper right-hand corner and click *_D_**_ownloads_*. Here, you can
+view and download the Sendlane Integration
+Extensionimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8ab56c2c7d3a7e9ae19456/file-x57g5haTPx.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8ab56c2c7d3a7e9ae19456/file-x57g5haTPx]
+. Once the .zip file has been downloaded to your computer, visit your
+WordPress account and choose *_Add New Plugin _*
+. Click *_Upload Plugin_* (toward the top of the
+screen)image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8ab5832c7d3a7e9ae19458/file-57Y7S5WbsY.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8ab5832c7d3a7e9ae19458/file-57Y7S5WbsY]
+. Choose the .zip file you just downloaded and click *_Install Now_* +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8ab58704286364bc8f8427/file-McZjzYt3rE.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8ab58704286364bc8f8427/file-McZjzYt3rE]
+
+'''''
+
+=== Connecting Inbound Now and Sendlane
+
+Now that the Sendlane Integration Extension has been added, we'll move
+on to connecting Inbound Now and Sendlane!
+
+. Inside of your WordPress site navigate to the *_Settings_* area
+(within the _Landing Pages_ tab) and click
+*_Extensions_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9bbced04286364bc901927/file-TRXsZNutsL.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d9bbced04286364bc901927/file-TRXsZNutsL]
+. Enter your API Key, Hash Key, and subdomain (enter only your
+subdomain, do not include .sendlane.com) and 
+. Click *_Save Settings_*
+
+Your integration is now complete!
+
+'''''
+
+=== Next Steps
+
+When creating a new Inbound Form, be sure to enable the Sendlane
+integration for that form, and choose the Sendlane List you'd like those
+contacts to be added to. 
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8ab59e2c7d3a7e9ae19459/file-FTiqPttYhD.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d8ab59e2c7d3a7e9ae19459/file-FTiqPttYhD]
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Inbound Now, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Inbound Now team is just a few clicks away!
+
+* Visit https://www.inboundnow.com/market/inbound-sendlane/[Inbound
+Now's documentation on Sendlane]
+* Visit https://www.inboundnow.com/support/[Inbound Now's Support Page]
+
+==== Additional Inbound Now Resources
+
+https://www.inboundnow.com/?ref=382[Sign up for Inbound Now] |
+https://www.inboundnow.com/newest-addition-to-inbound-pro-sendlane-integration/[Inbound
+Pro & Sendlane]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-inbound-now[Inbound
+Now - The Ultimate Marketing Automation Plugin for WordPress]
+* https://www.sendlane.com/blog-posts/converting-landing-pages[4 Design
+Elements of Converting Landing Pages]
+* https://www.sendlane.com/blog-posts/boost-your-business-with-data-driven-marketing[7
+Easy Ways to Boost Your Business With Data-Driven Marketing]
+
+'''''
+
+=== TL;DR
+
+[.underline]#Downloading Sendlane extension:#
+https://www.inboundnow.com/market/inbound-sendlane/[Click here] → _Add
+item to cart_ → __Checkout __→ Sign in (if needed) → _Free Download_
+
+[.underline]#Installing Sendlane extension:# (inside WordPress) __Add
+New Plugin __→ _Upload Plugin_ → Choose Sendlane extension file
+→ _Install Now_
+
+[.underline]#Connecting Inbound Now and Sendlane:# (inside WordPress)
+_Landing Pages_ → _Settings_ → __Extensions __→ Enter API Key, Hash Key
+and subdomain → _Save Settings_

@@ -1,0 +1,193 @@
+With Sendlane's deep data
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify
+integration], you can send emails to your prospective customers that
+include the product they were interested in along with a link to quickly
+and seamlessly complete their purchase!
+
+We'll share how to create a captivating email to remind your Shopify
+customers of items left in their shopping cart, and encourage them to
+complete their purchase.
+
+This tutorial walks you through:
+
+=== 
+
+* link:#before[Before Getting Started]
+* link:#building[Building Your Email]
+* link:#next[Next Steps]
+* link:#email-content[Email Content Tips]
+* link:#resources[Additional Abandoned Cart Resources]
+
+'''''
+
+[[before]]
+=== Before Getting Started
+
+These emails are intended to be created within a Shopify
+https://help.sendlane.com/article/77-retarget-shopify-abandoned-cart-customers['Recover
+Abandoned Cart' Automation]. 
+
+Before following these steps, please be sure your
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify
+integration] is complete and you have created an automation with
+_Shopify Customer Abandoned Checkout_ as the initial trigger. 
+
+====== Please Note
+
+Some of these features will not work unless the email is being created
+within an abandoned cart automation.
+
+'''''
+
+[[building]]
+=== Building Your Email
+
+This step-by-step guide was designed around building a message from
+scratch. If you're using the pre-built Shopify Abandoned Cart Checkout
+automation, some of these items will already be pre-filled for you -
+please make edits accordingly to customize your message!
+
+. Select the first *_Email_* action, use the _Send Email_ toolbar
+and follow the prompts to build your first message.
+. Give your email a name (this will not be seen by customers), craft a
+compelling subject line and enter any preheader text you'd like. The
+subject line and preheader are the first things your contacts will see,
+so be sure to write something that will grab their attention! 
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5faed412cff47e0017d319ed/file-6S4m7O41nZ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5faed412cff47e0017d319ed/file-6S4m7O41nZ]
+. Next, add any optional settings, select your _Sender Profile_ and then
+click *_Create Email_* to design your message. 
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5faed43bcff47e00160b9c39/file-iBr34QEhSG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5faed43bcff47e00160b9c39/file-iBr34QEhSG]
+. If you'd like, you can use one of our pre-designed templates, but for
+this example we will choose *Start From Scratch* in the Design section.
+. Remind your customer where they were shopping by adding your logo to
+the top of your email, and then tell them why you're emailing them. Use
+an exciting headline with a short description that entices them to
+complete their
+purchase. image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea23c2404286364bc98eb95/file-k5h4BGRN6B.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea23c2404286364bc98eb95/file-k5h4BGRN6B]
+. Our deep data integration with Shopify empowers you to include photos
+of the items your customer had added to their cart. To include this,
+under the _Content_ tab, drag the *_Abandoned Cart_* icon into your
+email. image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60c902d1fa6e7d669e9d65fe/file-SRJAKZOndL.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60c902d1fa6e7d669e9d65fe/file-SRJAKZOndL] +
+ +
+. This dynamic content block will display _up to 4 items_ from your
+visitor's abandoned cart, including pictures, names & prices! Next, drag
+the *_Button_* icon into your email to add a _Complete Your Order_
+button. This will direct your customer right back to their abandoned
+shopping cart for quick and easy check out!
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60c90323fa6e7d669e9d6603/file-4qBb32g7ZR.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60c90323fa6e7d669e9d6603/file-4qBb32g7ZR] +
+. Once you're done designing your email, click _Save and continue_ to
+finalize the content of your message.
++
+====== Please Note
+
+While our current deep data integration with Shopify allows for
+abandoned cart items to be displayed, other eCommerce integrations do
+not yet have this option. However, you can still engage contacts with a
+follow-up email to encourage a sale.
+
+'''''
+
+[[next]]
+=== Next Steps
+
+Sending a short series of targeted follow-up emails is a great way to
+keep your product top-of-mind and entice more conversations. So, go
+ahead and continue creating and adding abandoned cart retargeting emails
+to your automation sequence.
+
+Be sure to add a wait time between the emails so your customers don't
+receive them all at once!
+
+'''''
+
+[[email-content]]
+=== Email Content Tips
+
+===== Provide Customization Options
+
+If you offer any type of customization, try highlighting those options
+in your abandoned cart message! This is a great way to boost
+conversions, especially since customers may have missed that detail the
+first time around in your store.
+
+* Offer a variety of colors
+* Provide a range of product sizes, such as a trial or travel size
+* Highlight a variety of shapes 
+
+===== Overcome Common Buyer Objections
+
+Think about the most common customer objections you face, the FAQ’s you
+receive most often, or the top reason for product returns. Address those
+concerns head-on in your abandoned cart email copy.
+
+* List 10 real reasons your customer will miss out if they abandon their
+cart
+* List 5-10 lighthearted/funny reasons why they need your product
+* Compile the lists, add some
+https://help.sendlane.com/article/152-how-to-use-emojis-in-your-emails[emojis]
+and VOILA! You have a compelling (and entertaining) list of why the
+customer should go back and commit to the checkout
+
+===== Offer a Discount
+
+Discount codes are a simple and effective way to boost sales and bring
+customers back.
+
+* Create a custom discount code specifically for abandoned cart
+customers
+* Use a scratch card to make the discount offer more entertaining
+
+===== Get Right to the Point
+
+Creating a clean abandoned cart email template allows your customer to
+focus in on the product that they left behind. This works exceptionally
+well for physical products - without a busy background or a lot of copy,
+product photos really stand out!
+
+* Use crisp and clear typography
+* Stick with a simple color scheme
+* Use icons rather than text
+* Make use of negative space
+* Use one of Sendlane's pre-designed email marketing templates
+
+===== Use a "Limited-Time-Only" Free Shipping Approach
+
+The limited-time-anything approach is a great way to encourage
+conversions, especially when it's paired with free shipping! Cart
+abandoners will feel compelled to make a decision quickly because they
+don't want to miss out.
+
+* Offer free shipping with no limitation or minimums
+* Free shipping at a certain $ threshold (i.e., spend $50 or more)
+* Free shipping for members only
+* Free shipping on select items
+* Free shipping for a limited time
+
+'''''
+
+[[resources]]
+=== Additional Abandoned Cart Resources
+
+For some more great information on creating abandoned cart emails, check
+out these resources:
+
+* https://blog.sendlane.com/off-the-wall-abandoned-cart-emails/[Off-The-Wall
+Abandoned Cart Emails That Work]
+* https://blog.sendlane.com/designing-an-abandoned-cart-email/[Designing
+An Abandoned Cart Email To Increase Conversions]
+* https://www.youtube.com/watch?v=fmw44vopoWI[Marketing Automation
+Hustle Podcast: Six Step Abandoned Cart Series Guaranteed to Improve
+Cart Recovery]
+* https://www.sendlane.com/blog-posts/create-a-buy-now-mindset[How to
+Create a "Buy Now" Mindset Your Shoppers Can't Resist]
+
+'''''
+
+=== TL;DR
+
+Create Abandon cart automation → Create email, start from scratch → Use
+personalization tags → Add content for product image → Add complete
+order button 

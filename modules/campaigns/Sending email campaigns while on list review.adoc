@@ -1,0 +1,66 @@
+==== Overview
+
+Sendlane is a permission-based platform. Our ultimate goal is to help
+you develop a strong email marketing strategy that allows you to send
+targeted content to people who actively want to receive it. List review
+helps ensure that your content goes to contacts who want to receive it.
+Read on to learn about list review and campaign manual approval!
+
+'''''
+
+=== What is list review?
+
+When you import a list, the Sendlane Compliance team reviews it to
+determine the engagement of the included contacts and confirm that they
+are actively engaged with your content. This process is called list
+review and takes place from 9AM to 5PM PST, Monday through Friday. Your
+list will be reviewed in the order it was received, generally within 24
+hours.
+
+=== What is campaign manual approval?
+
+Once our Compliance team approves an imported list, you can send one
+email to that new set of contacts. The first email you send will be
+released slowly to a small segment of your new audience to monitor their
+engagement.
+
+On the campaigns page, you'll see a red flag icon that indicates list
+review _:_
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64da7488422535774ad18e8a/file-QGHJx26ZCf.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64da7488422535774ad18e8a/file-QGHJx26ZCf]
+
+As long as the campaign meets the necessary engagement standards, that
+specific audience will be fully ready to receive your messages going
+forward!
+
+====== ⚠️The first 3-5 campaign sends to a new audience must be manually approved by Sendlane's compliance team
+
+Your list review status will be removed depending on your campaigns'
+engagement metrics (open rate and click rate). Contact your Customer
+Success Manager or reply to the email you receive from our Compliance
+team for more information.
+
+'''''
+
+=== Troubleshooting
+
+[[schedule-send]]
+====== Why can't I send or schedule campaigns?
+
+Any pending emails (Draft, Sending, or Stopped) cannot include an
+audience under list review. 
+
+[[stuck]]
+====== Why does it look like my campaign is stuck?
+
+The list review process may take *24 hours or more* to complete,
+depending on the size of your audience and their level of engagement
+with your first email.
+
+'''''
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog/why-list-hygiene-is-the-key-ingredient-for-increased-email-engagement-success[Why
+list Hygiene is the Key Ingredient For Increased Email Engagement and
+Success]

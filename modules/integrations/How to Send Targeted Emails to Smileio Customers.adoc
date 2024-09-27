@@ -1,0 +1,99 @@
+Once your Smile.io integration is complete, you can send targeted email
+campaigns to your customers by creating segments, or triggering an
+automation! 
+
+* link:#points[Segment Based on Points or VIP Tier]: Send targeted
+campaigns to your customers based on their points balance or VIP tier
+* link:#field[Segment Based on Custom Fields]: Create segments based on
+custom field data collected from Smile.io
+* link:#automation[Using an Automation]: Trigger an automated series of
+emails when a customer is added to Sendlane via Smile.io
+
+'''''
+
+=== Before Getting Started
+
+If you haven't yet, please
+https://help.sendlane.com/article/323-how-to-integrate-smile-and-sendlane[follow
+the instructions here] to complete your Smile.io integration.
+
+'''''
+
+[[points]]
+=== Segmenting Based on Smile.io Points Balance or VIP Tier
+
+. Navigate to *_Audience_* → *_Segments_* 
+. Name your Segment and choose whether you'd like to identify contacts
+on one specific list, or across all lists (All contacts) 
+. From the dropdown menu, select *_Smile.io_* and then select your shop
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea08bca2c7d3a7e9aeb6edf/file-Tozl3T83l0.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea08bca2c7d3a7e9aeb6edf/file-Tozl3T83l0]
+. Select the conditions for your segment:
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea08bf72c7d3a7e9aeb6ee2/file-8SWSU4jj0p.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea08bf72c7d3a7e9aeb6ee2/file-8SWSU4jj0p]
+* *Exists*: This option will segment all of your contacts that are
+customers from Smile.io
+* *Points Balance*: Segment customers based on their points balance;
+lesser, greater than or equal to a certain number of points
+* *VIP Tier*: Segment customers based on their VIP tier
+
+You can now send targeted campaigns to your Smile.io customers based on
+their points balance or VIP tiers!
+
+'''''
+
+[[field]]
+=== Segmenting Based on Smile.io Custom Fields
+
+. Navigate to *_Audience_* → *_Segments_* 
+. Name your Segment and choose whether you'd like to identify contacts
+on one specific list, or across all lists (All contacts). +
+. From the drop down menu, select *_Custom Fields_* and choose the
+custom field you'd like to segment based on.
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea611922c7d3a7e9aeba779/file-ubMZxskhDd.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea611922c7d3a7e9aeba779/file-ubMZxskhDd]
+. Choose a matching rule from the drop down, and then enter the value of
+your custom field
+. Click *_Create Segment_* to save your settings and create your new
+custom fields segment
+
+You can now send targeted campaigns to your customers based on the
+information provided in those custom fields!
+
+'''''
+
+[[automation]]
+=== Using Smile.io to Trigger an Automation
+
+. When creating an automation, click the box at the top that says
+*_Click Here to Add a Trigger_*
+. Within the menu that populates on the right, select *_Smile.io_* from
+the Integrations drop down menu:
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea6134e04286364bc99066e/file-Rb13SNFTFN.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea6134e04286364bc99066e/file-Rb13SNFTFN]
+. Select the *_Customer Joined_* trigger, and then select your smile
+account/shop
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea614082c7d3a7e9aeba787/file-KCDSj6tfZW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea614082c7d3a7e9aeba787/file-KCDSj6tfZW]
+
+Now, when a contact is added to Sendlane from Smile.io they will
+automatically trigger this automation! 
+
+'''''
+
+=== Troubleshooting
+
+*I do not see my Smile.io customers within Sendlane or the Segmentation
+options are not available!*
+
+If you have just completed the integration process, it will take some
+time for all of that information to sync over. If you visit the Smile.io
+integration page within your Sendlane account and see that the status
+still shows _Syncing_, some information or actions may not be available
+yet. 
+
+If you have any issues using your Smile.io integration,
+mailto:mailto:support@sendlane.com[our support team is available 24/7].
+Plus, the Smile.io team is just a few clicks away!
+
+* Connect with the https://smile.io/contact-us[Smile.io team]

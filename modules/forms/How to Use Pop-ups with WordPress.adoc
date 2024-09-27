@@ -1,0 +1,113 @@
+Sendlane's intelligent pop-ups are a great tool to use directly on your
+*WordPress* website! 
+
+In this article we'll go over:
+
+* link:#install[Installing the plugin]
+* link:#locate[Locating your Pop-up code]
+* link:#code[Adding your Pop-up code]
+
+'''''
+
+=== Before Getting Started 
+
+You will first need to
+https://help.sendlane.com/article/308-popups[create a pop-up] in your
+Sendlane account. 
+
+Also, be sure that you have _admin access_ for your self-hosted
+WordPress site. 
+
+====== Please Note
+
+We recommend creating a *_Banner_* type pop-up form, as this form will
+be shown on every page of your WordPress site.  
+
+Having a Pop-up or Inline form on every page may be distracting for your
+website's visitors. 
+
+'''''
+
+[[install]]
+=== Installing the Plugin into WordPress
+
+First, we are going to
+https://www.youtube.com/watch?v=AXM1QgMODW0&feature=emb_logo[install a
+plugin] called "Insert Headers and Footers" into your WordPress account.
+This plugin allows you to easily paste your Pop-up code into your
+website's header. 
+
+. Go to the
+https://wordpress.org/plugins/insert-headers-and-footers/[Insert Headers
+and Footers plugin page] and download the plugin's zip file by clicking
+the download button on the right.  +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df717592c7d3a7e9ae5257d/file-Mw23XsnL2e.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df717592c7d3a7e9ae5257d/file-Mw23XsnL2e]
+. Login to your WordPress website and hover over Plugins and click _*Add
+New*. +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df718a004286364bc92e290/file-bKFg7hFHlL.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df718a004286364bc92e290/file-bKFg7hFHlL]_
+. Click *_Upload Plugin_* at the top +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df7190e2c7d3a7e9ae5257f/file-z9DuPBwrEd.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df7190e2c7d3a7e9ae5257f/file-z9DuPBwrEd]
+. Click *_Choose File_* and select the Zip file you downloaded in step 1
+and click *_Install
+Now_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df7197504286364bc92e291/file-TZDo41SKxa.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df7197504286364bc92e291/file-TZDo41SKxa]
+. You will be notified that the Plugin has been installed successfully.
+Make sure to click **_Activate Plugin_ **and your plugin will be ready
+to use! +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df719e22c7d3a7e9ae52582/file-0YQTKxzDnM.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df719e22c7d3a7e9ae52582/file-0YQTKxzDnM]
+
+'''''
+
+[[locate]]
+=== Locating the Code for your Pop-up
+
+Once your plugin is activated, it's time to grab your pop-up code from
+inside of Sendlane!
+
+. Navigate to _Pop-ups_ using the left side navigation bar from your
+Sendlane dashboard.
+. Click on the three dots next to the pop-up form that you would like to
+add to your WordPress site. From the dropdown selection, click *_Get
+Code_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d657fe504286350aeeb17ab/file-b51H88krR6.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d657fe504286350aeeb17ab/file-b51H88krR6]
+. On the next screen, copy the pop-up code you see because you're going
+to paste that into your WordPress website!
+
+'''''
+
+[[code]]
+=== Adding your Pop-up Code to WordPress
+
+Once you've copied the pop-up code, jump back into your Wordpress admin
+panel.
+
+. Hover over Settings and click _Insert Headers and Footers +
+_image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df71aa12c7d3a7e9ae52583/file-68C9zdAVLy.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df71aa12c7d3a7e9ae52583/file-68C9zdAVLy]
+. Paste your Pop-up code into the Scripts in Header section, click save
+and you are all set! +
+ +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df812d204286364bc92ed43/file-JtuEGR7HhC.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5df812d204286364bc92ed43/file-JtuEGR7HhC]
+
+Your pop-up can now be seen on your WordPress website!
+
+'''''
+
+==== Additional Sendlane Resources:
+
+* https://www.sendlane.com/blog-posts/convert-new-subscribers-into-paying-customers-using-sendlanes-pop-ups[Convert
+New Subscribers into Paying Customers Using Sendlane's Intelligent
+Pop-Ups]
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage and Capture Leads]
+
+'''''
+
+=== TL;DR
+
+_Locating code:_ Pop-ups → Click "..." next to pop-up → Get Code → Copy
+
+_Installing WordPress Plugin_: Download Plugin → Login to WordPress →
+Plugins → Add new → Install → Activate
+
+_Adding Code to WordPress_: Login to WordPress → Settings → Insert
+Headers and Footers → Paste code into Headers → Save

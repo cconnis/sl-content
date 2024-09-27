@@ -1,0 +1,88 @@
+[[top]]
+==== Overview
+
+Sending close to and on holidays like Thanksgiving, Black Friday, Cyber
+Monday, Christmas, New Year's Eve, Valentine's Day, and other sales
+oriented holidays requires careful attention and targeting. Read on to
+learn Sendlane's best practices for sending during holidays, and make
+sure to check out Sendlane's marketing experts'
+https://www.sendlane.com/blog/holiday-email-marketing-strategy[guide to
+BFCM]!
+
+==== In This Guide
+
+* link:#content[Prepare Content in Advance]
+* link:#segment[Use Segments to Target Sends]
+* link:#automations[Use Automations to Update Contact Profiles]
+
+'''''
+
+[[content]]
+=== Prepare Content in Advance
+
+Carefully constructing content in advance of holidays can help ensure
+your calls to action lead to as many happy customers as possible. Check
+out the following guides to preparing content for smooth holiday
+sending:
+
+* https://help.sendlane.com/article/499-sendlanes-new-email-builder[Sendlane's
+Email Builder]
+* Collect SMS consent via
+https://help.sendlane.com/article/472-how-to-collect-sms-consent-via-email[Automation
+or Campaign emails] or
+https://help.sendlane.com/article/515-collect-sms-consent-opt-in-keywords[opt-in
+keyword]
+* https://help.sendlane.com/article/462-how-to-send-an-sms-campaign#content[SMS
+content best practices]
+* https://www.sendlane.com/blog/evergreen-email-content[How to Create
+Evergreen Content to Warm Up Customers]
+* {blank}
++
+https://www.sendlane.com/blog/holiday-sms-examples[11 SMS Examples to
+Sell More This Holiday Season] +
+* {blank}
++
+https://www.sendlane.com/blog/email-marketing-personalization-for-ecommerce[How
+to Create Personalized Emails for eCommerce]
+
+link:#top[Back to top] +
+
+'''''
+
+[[segment]]
+=== Use Segments to Target Sends
+
+Segmentation is critical for holiday sending because, on these higher
+volume sending days, inbox providers are working overtime to protect
+their users' inboxes from unwanted email.
+
+Read our guide to advanced segmentation and create the suggested
+Segments if you haven't already, and consider the following practices:
+
+* Offer your Segment of all time non-purchasers a special offer
+* Target new subscribers who are engaged with your content but haven't
+yet made a purchase by creating a Segment like the following:
+** Subscription date is during the timeframe that makes up the current
+holiday season, AND
+** Clicked > Recent > X > Days, OR
+** Opened > Recent > X > Days, AND
+** eCommerce integration > Store > order > Fulfilled (or the order
+status your store uses to indicate a completed order) > Does Not Exist
+
+link:#top[Back to top]
+
+'''''
+
+[[automations]]
+=== Use Automations to Update Contact Profiles
+
+Holiday activity can be a valuable predictor of future behavior, and
+Automations are here to help you add this data to Contact profiles.
+
+Use the
+https://help.sendlane.com/article/449-automation-actions#update-contact[Update
+Contact Profile action] in an Automation to add a Tag with purchase
+preferences to the profiles of Contacts who purchase during your holiday
+season.
+
+link:#top[Back to top]

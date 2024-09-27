@@ -1,0 +1,130 @@
+[[top]]
+==== Overview
+
+Loop Subscriptions, also known as Loop, is a subscription management
+platform for Shopify merchants. Sendlane users with Shopify stores can
+manage subscription billing in Loop and keep customers up to date on
+their subscriptions using Sendlane's Automations. Read on to learn how
+to integrate your Loop and Sendlane accounts!
+
+==== In This Guide
+
+* link:custom-integration[Create a Custom Integration for Loop
+Subscriptions]
+* link:integration-token[Add Sendlane Custom Integration Token to Loop
+Subscriptions]
+* link:events[Create Custom Events for Loop Subscriptions]
+* link:token[Add Sendlane API Token to Loop Subscriptions]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Sign up for a Loop Subscriptions account https://www.loopwork.co/[here +
+]
+
+'''''
+
+Check out the video below for a demonstration of integrating a Sendlane
+account with Loop Subscriptions:
+
+1::
+  Loop Subscriptions connects to Sendlane via the
+  https://help.sendlane.com/article/451-custom-integration-setup[Sendlane
+  custom integration]. To create a custom integration for Loop:
+  +
+  . Click on the *Integrations* page
+  . Click the *Sendlane Custom Integration*
+  . Click *Configure*
+  . Click *Create New Custom Integration*
+  . Enter `+Loop+` as your *Store Name*
+  . Enter `+https://loopwork.storename.co+` as your *Store URL*
+  . Replace `+storename+` with the name of your store in the *Store URL
+  field*
+  . Select a default *List*
+  . Select a *customer address* type
+  . Click *Continue*
+2::
+  The custom integration token connects your Loop and Sendlane accounts.
+  To add the custom integration token to Loop:
+  +
+  . Click the *Settings icon* next to the Loop custom integration
+  . Click the *copy icon* next to the token
+  . Navigate to the Sendlane integration in your Loop account
+  . Click the *Set up instructions* tab
+  . Paste the integration token in the *Token field*
+  . Click
+  *Connectimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657216c718590a2d69aaa0d4/file-YbxeK41mtW.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657216c718590a2d69aaa0d4/file-YbxeK41mtW]*
+3::
+  Events inside the custom integration will be used as Automation
+  triggers to send Contacts information about their subscriptions. To
+  create events for the Loop integration:
+  +
+  . Navigate to https://app.sendlane.com/integrations/custom[the Custom
+  integration page]
+  . Click the *events icon* next to the Loop integration
+  . Click *Create Event*
+  . In the *event name* field, copy and paste an event name exactly as
+  it appears in the first column of the table below
+  . Click *Create*
+  . Repeat steps 3-5 for each event
+  +
+  [cols=",",]
+  |===
+  |*Event* |*Description*
+
+  |`+loop_subscription_created+` |New subscription is created
+
+  |`+loop_subscription_paused+` |Subscription is paused
+
+  |`+loop_subscription_resumed+` |Subscription is resumed
+
+  |`+loop_subscription_cancelled+` |Subscription is cancelled
+
+  |`+loop_subscription_reactivated+` |Subscription is reactivated
+
+  |`+loop_subscription_expired+` |Subscription is expired
+
+  |`+loop_order_upcoming+` |Upcoming recurring order reminder
+
+  |`+loop_order_skipped+` |Order skipped
+
+  |`+loop_order_out_of_stock+` |Order delayed/skipped out of stock
+
+  |`+loop_order_processed+` |Order processed successfully
+
+  |`+loop_order_partially_processed+` |Order partially processed
+
+  |`+loop_payment_attempt_failed_with_retries_left+` |Payment failed
+  with retries left
+
+  |`+loop_payment_attempt_failed_last_retry_left+` |Payment failed with
+  only 1 retry left
+
+  |`+loop_payment_attempt_failed+` |Payment failed with no retries left
+
+  |`+loop_payment_method_expiring_soon+` |Payment method expiring
+
+  |`+loop_flow_completed+` |Loop flow executed successfully
+
+  |`+loop_customer_activation+` |Customer created subscription but have
+  not created the customer account yet
+  |===
+4::
+  An API token provides Loop access to Sendlane's v2 API. To create a
+  Sendlane API token and apply it to your Loop account:
+  +
+  . Click the *Account icon*
+  . Click *API*
+  . Under Sendlane API V2, click *+ API Token*
+  . Enter Loop as your *token name*
+  . Click *Create*
+  . Click *Copy API Token**
+  . Navigate to the Sendlane integration in your Loop account
+  . Click the *Set up instructions* tab
+  . Paste the API V2 token in the **API V2 key**field
+  . Click
+  *Connectimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657216d5cdc01d716a36e618/file-PiXcRNQxc5.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/657216d5cdc01d716a36e618/file-PiXcRNQxc5]*
+
+*The API token must be copied at this stage and cannot be retrieved
+later. If you close the API token window without copying the API token,
+delete the API token and create a new one.

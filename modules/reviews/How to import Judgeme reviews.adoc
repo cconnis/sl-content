@@ -1,0 +1,44 @@
+[[top]]
+==== Overview
+
+If you’re migrating to Sendlane Reviews from Judge.me, you can bring
+your hard earned reviews with you! Read on to learn how to import your
+Judge.me reviews to Sendlane.
+
+==== In This Guide
+
+* link:#export[Export reviews from Judge.me Product Reviews]
+* link:#import[Import reviews file to Sendlane]
+
+'''''
+
+[[export]]
+=== Export reviews from Judge.me
+
+Follow
+https://help.judge.me/en/articles/8236266-exporting-reviews[Judge.me's
+instructions] for exporting your product reviews. When your file is
+ready for download, save it somewhere easily accessible, like your
+desktop, and make sure it is saved as a .CSV file. Do not edit the file
+in any way.
+
+[[import]]
+=== Import reviews file to Sendlane
+
+To import your review file:
+
+. Click the *Reviews* icon
+. Click *Content* 
+. Click *Import & Export*
+. Click *Import Reviews*
+. Select *Other* from the Product Review Source dropdown
+. Drag and drop your .CSV file or click to browse for your file
+. Check the checkbox confirming that your reviews are genuine
+. Click *Import*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/663532a6e66450147a8e636a/file-IhvFDWCRH8.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/663532a6e66450147a8e636a/file-IhvFDWCRH8]
+
+If some reviews were not imported due to an error, the Results column
+will show how many reviews were not imported. Click the download icon in
+the Actions column to download a file of reviews that were not imported.
+See Troubleshooting Sendlane Reviews imports for next steps.

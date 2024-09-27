@@ -1,0 +1,73 @@
+Machine Learning Open Predictability (MLOP) helps you send Campaigns
+when Contacts are most likely to open and click based on their past
+behavior.
+
+When MLOP is enabled, Sendlane uses behavior tracking to analyze the
+activity patterns and habits of every Contact in your Campaign's
+audience. This data is used to send out Campaigns at the most optimal
+time for each Contact within the 24 hour window after the Campaign is
+sent. Contacts with little or no data will receive the Campaign when it
+is sent.
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Because MLOP relies on Contacts' activity to determine when to send the
+Campaign, we recommend waiting to use MLOP until you have sent multiple
+Campaigns to give your account enough time to collect activity data.
+
+[[experiments]]
+===== 🚨 Don't use Experiments and MLOP together
+
+Because MLOP sends a Campaign to each audience member at a different
+time, enabling MLOP while using
+https://help.sendlane.com/article/370-campaign-experiments[Experiments]
+means that there are fewer Contacts available to interact with the
+Campaign before a winner is chosen.
+
+[[experiments]]
+===== 🚨 Contacts without activity data in their profiles will receive the Campaign immediately
+
+MLOP relies on a Contact's average activity data to determine the best
+time for them to receive your Campaign. If a Contact is new to your
+audience and does not have activity data recorded yet, they will receive
+a Campaign with MLOP enabled immediately when the Campaign is sent.
+
+=== Turn on Machine Learning Open Predictability
+
+MLOP can be enabled for any Campaign that has not already been sent:
+
+. Open a *Campaign*
+. Click *Next to Summary* tab
+. Check the *Send Time Optimization
+checkbox*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65089071f09e1f2e46c83597/file-z82q4pjyhQ.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65089071f09e1f2e46c83597/file-z82q4pjyhQ]
+. *Send* or *Schedule* your Campaign
+
+On your https://app.sendlane.com/campaigns[Campaigns page], you'll see
+Campaigns with MLOP enabled identified with a clock icon next to the
+Campaign name. Campaigns with MLOP enabled will show as Sending for the
+entire 24 hour sending window.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6449bbedcdec2a7348811c6d/file-SnYYoVvTlQ.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6449bbedcdec2a7348811c6d/file-SnYYoVvTlQ]
+
+'''''
+
+=== Troubleshooting
+
+====== My campaign is stuck in "Sending"!
+
+Campaigns with MLOP enabled will show as Sending for the entire 24 hour
+sending window.
+
+====== *I enabled MLOP but my Campaign sent to all my Contacts immediately!*
+
+Campaigns with MLOP enabled will send immediately to any Contact without
+sufficient behavior tracking data associated with their Contact Profile.
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/how-to-use-machine-learning-open-predictability-to-skyrocket-email-performance[How
+to Use Machine Learning Open Predictability to Skyrocket Email
+Performance]
+* https://www.sendlane.com/blog-posts/artificial-intelligence-email-marketing[How
+Artificial Intelligence is Changing the Email Marketing Game]

@@ -1,0 +1,57 @@
+An email signature is a great way to boost brand recognition and make a
+lasting impression on your audience.
+
+With Sendlane's custom content blocks, you can create a reusable
+signature, and apply it to every email you send - saving time _while_
+building brand equity!
+
+'''''
+
+=== Creating & Saving Your Signature
+
+What goes into your email signature will depend on your marketing
+strategy and https://blog.sendlane.com/great-email-branding/[email
+branding], but you should consider including anything relevant to your
+goals such as:
+
+* Social media links
+* A link to your homepage 
+* Your contact information
+
+==== How to _Save_ Your Signature
+
+. While https://help.sendlane.com/article/150-email-builder[designing an
+email], create a section including only what you'd like to use for your
+email signature
+. Click the *_Save_* icon within the section
+toolbarimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea1def304286364bc98e6bf/file-AbN4jubJuO.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea1def304286364bc98e6bf/file-AbN4jubJuO]
+. Then, enter a name for your signature and click *_Save_*
+
+==== How to _Use_ Your Signature
+
+. Click the *_Custom_* tab in the toolbar on the left 
+. Drag the custom content block into your email where you'd like the
+signature
+placedimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea1df3204286364bc98e6c1/file-Mb20etQKd1.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ea1df3204286364bc98e6c1/file-Mb20etQKd1]
+
+And that's it! 
+
+'''''
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/5-creative-ways-to-sign-off-your-emails[5
+Creative Ways to Sign Off Your Emails]
+* https://www.sendlane.com/blog-posts/great-email-branding[The 4 Step
+Checklist For Great Email Branding]
+
+'''''
+
+=== TL;DR
+
+[.underline]#Create/Save Email Signature#: Email Builder → Create
+Section for Email Signature → Design and Name Signature → Click Save on
+Toolbar
+
+[.underline]#Using Signature#: Email Builder → Custom Toolbar → Drag
+Custom Content Into Email 

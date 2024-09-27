@@ -1,0 +1,469 @@
+[[top]]
+==== Overview
+
+Sendlane’s Custom Integration
+https://sendlane.stoplight.io/docs/api-documentation/ZG9jOjE1NDIyMzg-overview[*JavaScript
+Tracking API and Server-Side API*] allow you to integrate your eCommerce
+platform with Sendlane. Sendlane’s APIs can support a completely custom
+eCommerce store or work in tandem with our existing eCommerce platform
+integrations!
+
+Using a combination of Sendlane’s JavaScript and Server-Side APIs will
+bring your eCommerce store’s key metrics, like customer behavior and
+transaction history, into Sendlane where you can use your customer data
+to segment and target your audience.
+
+==== In this guide
+
+* link:event-ref[Event quick reference]
+* link:authorization[Custom integration and API v2 authorization]
+* link:js-setup[Setup for JavaScript tracking API]
+* link:js-tracking[Available JavaScript tracking API on site behaviors]
+* link:server-events[Server-Side API Events]
+* link:historical-sync[Historical data syncs]
+* link:troubleshooting[Troubleshooting]
+
+'''''
+
+[[event-ref]]
+=== Event quick reference
+
+See
+https://sendlane.stoplight.io/docs/api-documentation/ZG9jOjE1NDIyMzg-overview[the
+complete API documentation] for more details about Sendlane's v2 API.
+
+Use Sendlane’s JavaScript API for data on your customers’ website
+activity:
+
+* link:#active[*Active on Site*] contact visits your website after
+clicking on a link from a Sendlane email
+* link:#identify[Identify] - contact visits your site in an identifiable
+state (i.e., while logged into your store)
+* link:#viewed[*Product Viewed*]* contact views a product on your
+website
+* link:#added[*Added to Cart*]* contact adds a product to their cart
+* link:#started[*Checkout Started*]* contact lands on the begin checkout
+page of your website
+
+_*Events can also be called using Sendlane’s Server-Side API_
+
+Use Sendlane’s Server-Side API for transactional data:
+
+* link:#placed-order[*Placed Order*] contact successfully completes an
+order and lands on the checkout complete page
+* link:#ordered-product[*Ordered Product*] An event for each product in
+a completed order
+* *link:#fulfilled-order[Fulfilled Order]* An order is marked as shipped
+to the contact
+* link:#cancelled-order[*Cancelled Order*] contact cancels their order
+* link:#refunded-order[*Refunded Order*] contact’s order is refunded
+
+link:#top[Back to top]
+
+'''''
+
+[[authorization]]
+=== Custom integration and API v2 authorization
+
+See
+https://help.sendlane.com/article/706-how-to-generate-authorization-tokens[How
+to generate API and custom integration authorization tokens].
+
+link:#top[Back to top]
+
+'''''
+
+[[js-setup]]
+=== Setup for JavaScript tracking API
+
+Customers need to be identified via cookies to associate customers’ data
+with their contact profiles after clicking a Sendlane email or
+submitting a Sendlane form using Sendlane’s JavaScript Tracking API. Use
+the methods described below to identify site activity.
+
+[[active]]
+===== Active on site
+
+Paste the snippet below in the header of your website and replace
+`+INTEGRATION_TOKEN+` with your account’s Sendlane Custom Integration
+token. This will allow the script to track customer behavior on every
+page of your website.
+
+....
+<script src="https://sendlane.com/scripts/pusher.js" async data-token="INTEGRATION_TOKEN"></script>
+....
+
+You can access this snippet with your integration token populated by
+clicking *Manage* next to your Sendlane Integration > *Copy code*
+
+Once this snippet is live on your website, active on site activity will
+be recorded for visitors who:
+
+* Sign up to receive your content via a Sendlane form, OR
+* Click on a link in your email and land on your website
+
+===== Identify
+
+You can use the identify function to set a cookie for website browsers
+who are logged into your site (or otherwise identifiable via email
+address) to associate the email address they are logged in as (or
+otherwise identifiable as) with their Sendlane contact profile. We
+recommend implementing the identify call everywhere email addresses are
+captured.
+
+The snippet below assumes you have already included the script shown in
+the active on site snippet above.
+
+....
+_Sendlane.push({
+    "event": "identify",
+    "email": "email_address_of_website_browser",
+});
+....
+
+link:#top[Back to top]
+
+'''''
+
+[[js-tracking]]
+=== Available JavaScript tracking API on site behaviors
+
+[[jstrack]]
+====== ⚠️ Contacts must have been identified via one of the methods described above to continue tracking
+
+[[viewed]]
+===== Product viewed
+
+Use the
+https://sendlane.stoplight.io/docs/api-documentation/ZG9jOjE5MjAzODI4-product-viewed[Product
+viewed] snippet to collect product browsing data. Product browsing data
+can be used to set up automations or Segments for re-targeting contacts
+who have shown interest in certain products.
+
+Call the Product Viewed event (for example, on your website’s product
+page template) with a snippet like the following:
+
+....
+ <script>
+    _Sendlane.push({
+    "event": "product_viewed",
+    "product_id": 12345,
+});
+</script>
+....
+
+[[added]]
+===== Added to cart
+
+Use the
+https://sendlane.stoplight.io/docs/api-documentation/ZG9jOjE5MTkyMDE4-added-to-cart[Added
+to cart] snippet to track information on products your contacts have
+added to their carts before landing on the begin checkout page. This
+allows you to send re-targeting emails before contacts begin checkout.
+
+Note that each call represents one product being added to the customer's
+cart; there is no contextual information about other items that are
+previously or subsequently added to the cart. Use the checkout started
+call for access to all products in the "cart," or checkout.
+
+Call the Added to cart event with a snippet like the following:
+
+....
+<script>
+    _Sendlane.push({
+    "event": "added_to_cart",
+    "line_items": [
+        {
+            "product_id": 12345,
+        }
+    ],
+});
+</script>
+....
+
+[[started]]
+===== Checkout started
+
+Data from the
+https://sendlane.stoplight.io/docs/api-documentation/ZG9jOjE5MTk1MTEw-checkout-started[Checkout
+Started] snippet can be used to re-target contacts who begin checkout
+but do not place an order within a specified period of time. Because
+this data will be used in abandoned checkout emails, it is important to
+include all product details including name, pictures, links, and other
+pertinent information.
+
+Call the Checkout Started event (for example, on your website’s “begin
+checkout” page) with a snippet like the following:
+
+....
+<script>
+    _Sendlane.push({
+    "event": "checkout_started",
+    "email": "jimmy@sendlane.com",
+    "checkout_id": 9876,
+    "status": "pending",
+    "checkout_url": "https://www.sendlane.com/checkout/9876",
+    "subtotal": 19.99,
+    "total_tax": 0,
+    "total": 19.99,
+    "total_items": 1,
+    "currency": "USD",
+    "line_items": [
+        {
+            "product_id": 12345678,
+            "sku": "ABC123",
+            "product_name": "tshirt #1",
+            "quantity": 1,
+            "item_price": 19.99,
+            "total": 19.99,
+        },
+        {
+            "product_id": 12345679,
+            "sku": "ABC124",
+            "product_name": "tshirt #2",
+            "quantity": 1,
+            "item_price": 19.99,
+            "total": 19.99,
+        }
+    ]
+});
+</script>
+....
+
+link:#top[Back to top]
+
+'''''
+
+[[server-events]]
+=== Server-side API events
+
+Sendlane’s Server-Side API should be used to collect data about orders
+placed on your website. To implement the following calls, you'll need
+link:#authorization[API v2 and custom integration tokens].
+
+==== Special notes about event data
+
+[[ei]]
+====== Event IDs
+
+In the snippets below, `+event_id+` should be a unique identifier for
+the order, such as `+order_id+`. If the same combination of `+event+`
+and `+id+` are sent more than once, Sendlane will record the first event
+and skip all subsequent events with the same `+event+` and `+id+`
+combination.
+
+[[total]]
+====== Total Property
+
+The `+total+` property allows Sendlane to track revenue as the total
+monetary value of the event with which it is associated. The `+total+`
+for an order placed will equal the total amount spent on a single order.
+Changes made to the total after calculation will not be passed over to
+Sendlane.
+
+[[line]]
+====== Line Items
+
+The `+line_items+` array should contain one dictionary for each item.
+
+[[time]]
+====== Time Properties
+
+`+time+` is a special property that should be a UNIX timestamp of the
+order date and time while `+date_created+` is a date string. If you use
+`+date_created+`, Sendlane will convert to `+time+`.
+The `+time+` property is only needed for historical syncs.
+
+[[product-events]]
+====== Order & Other Product Events
+
+To track data about orders placed, make a Track request to Sendlane’s
+Server-Side API. From the `+order_placed+`
+https://sendlane.stoplight.io/docs/api-documentation/ZG9jOjE5MjAwNTUw-order-placed[event], ordered
+product events (such as `+product_purchased+`) will execute based on the
+content of the `+line_items+` array. When an order’s status changes to
+fulfilled, refunded, or canceled, other product events will be
+triggered.
+
+==== Example order event data
+
+Below is an example Order Placed payload:
+
+....
+{
+    "event": "order_placed",
+    "token": "ABCDEFGHIJKLM1234567890",
+    "order_id": 1001,
+    "email": "jimmy@sendlane.com",
+    "status": "processing",
+    "subtotal": 19.99,
+    "total_tax": 0,
+    "total": 19.99,
+    "total_items": 1,
+    "currency": "USD",
+    "discounts": {
+        "discount_code": "25OFF",
+        "discount_value": 4.99
+    },
+    "line_items": [
+        {
+            "product_id": 12345678,
+            "sku": "ABC123",
+            "product_name": "tshirt #1",
+            "quantity": 1,
+            "item_price": 19.99,
+            "total": 19.99,
+        },
+        {
+            "product_id": 12345679,
+            "sku": "ABC124",
+            "product_name": "tshirt #2",
+            "quantity": 1,
+            "item_price": 19.99,
+            "total": 19.99,
+        }
+    ],
+    "billing_address": {
+        "first_name": "Jimmy",
+        "last_name": "Kim",
+        "email": "jimmy@sendlane.com",
+        "company": "Sendlane",
+        "address_1": "10620 Treena St",
+        "address_2": "UNIT 250",
+        "city": "San Diego",
+        "state": "California",
+        "state_code": "CA",
+        "country": "United States",
+        "country_code": "US",
+        "postal_code": "92131",
+        "phone": "8885552664"
+    },
+    "shipping_address": {
+        "first_name": "Jimmy",
+        "last_name": "Kim",
+        "email": "jimmy@sendlane.com",
+        "company": "Sendlane",
+        "address_1": "10620 Treena St",
+        "address_2": "UNIT 250",
+        "city": "San Diego",
+        "state": "California",
+        "state_code": "CA",
+        "country": "United States",
+        "country_code": "US",
+        "postal_code": "92131",
+        "phone": "8885552664"
+    },
+    "customer_id": 123456789,
+    "accepts_marketing": true,
+}
+....
+
+[[order-statuses]]
+===== Available Order Statuses
+
+....
+'cancelled'
+'completed'
+'failed'
+'fulfilled'
+'pending'
+'processing'
+'refunded'
+....
+
+===== Ordered Product
+
+The ordered product event ( `+product_purchased+`) will execute based on
+the content of the line_items array in the order placed event.
+
+===== Fulfilled Order
+
+When an order’s `+status+` = fulfilled, the `+order_fulfilled+` event
+will trigger.
+
+===== Cancelled Order
+
+When an order’s `+status+` = cancelled, the `+order_cancelled+` event
+will trigger.
+
+[[refunded order]]
+===== Refunded Order
+
+When an order’s `+status+` = refunded, the `+order_refunded+` event will
+trigger.
+
+link:#top[Back to top]
+
+'''''
+
+[[historical-sync]]
+=== Historical data sync
+
+To sync historical customer and order data, you’ll need to complete
+`+customer_added+`, `+product_added+`, and `+order_placed+` requests
+that include `+"initial_sync": true+` and `+time+` or `+date_created+`
+set in the past.
+
+[[sync-nightly]]
+====== ⚠️ You must sync product data nightly, and for all changes
+
+Use the
+https://sendlane.stoplight.io/docs/api-documentation/605e3c80bea60-product-added[product
+added call] to set up a nightly sync of all product data and sync
+product data when making changes.
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+[[bea]]
+====== I don't have backend access to my website, will I be able to use API v2’s event tracking calls?
+
+No, backend website access is required for event tracking because
+snippets must be embedded to enable website tracking.
+
+[[comp]]
+====== Contacts aren’t being sent through automations even though I completed a historical data sync!
+
+Data that is older than 24 hours at the time of the sync will not
+trigger automations even if an automation’s conditions are met. If 90
+days of data are synced and one contact meets the automation’s condition
+less than 24 hours before the sync, they will be sent through the
+automation.
+
+[[too]]
+====== Too much or not enough data is coming through!
+
+Check the call for `+time+` values.  `+time+` values should only be used
+when passing historical data into Sendlane. Calls without `+time+`
+values will default to the time the call was made. +
+
+[[price]]
+====== A product’s price changed in the customer’s database!
+
+Check your coupon code setup. If the customer has set up a coupon code
+to alter `+item_price+` instead of the `+subtotal+`, then the product
+price will be changed. Whenever Sendlane receives updated or new data
+about a product, the new data will overwrite the product’s existing
+data.
+
+[[cid]]
+====== I can’t find contacts’ customer IDs in Sendlane!
+
+`+customer_id+` is generated by the eCommerce platform, not Sendlane.
+
+[[ltv]]
+====== Contacts’ LTV does not appear to be calculating correctly!
+
+LTV is calculated as the amount from a `+customer_id+`’s cumulative
+order totals. Historical order data must be synced to see historical LTV
+data in Sendlane.
+
+[[un]]
+====== Some contacts appear to be added to Sendlane and immediately unsubscribed!
+
+If the contact did not agree to accept marketing emails, the
+`+accepts_marketing+` value will be FALSE and trigger an immediate
+unsubscribe after data is passed to Sendlane.

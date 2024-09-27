@@ -1,0 +1,373 @@
+=== Overview
+
+Sendlane's drag-and-drop MJML email builder allows you to create
+engaging and perfectly branded Campaign and Automation emails. This
+guide will introduce you to our email builder and all of its features!
+
+=== In This Guide
+
+* link:#add[Add Content to an Email]
+** link:#layout[Layout Blocks]
+** link:#elements[Elements]
+* link:#global[Set Global Email Styles]
+* link:#appearance[Configure Email Appearance Settings]
+* link:#save[Save an Email as a Template]
+* link:#recreate[Recreate Legacy Emails]
+* link:#default[Set Default Values for Personalization Tags]
+* link:#files[Use Hyperlinks to Images or Text for Large Files]
+* link:#custom[Set Custom Styling for Email Footers]
+
+'''''
+
+[[add]]
+=== Add Content to an Email
+
+The Content tab of the email builder contains layout blocks which
+organize your email into sections, and content blocks which allow you to
+embed text, images, and more to your Campaign or Automation emails!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/630fc1867164226be0c82076/file-1wQDnJWQEE.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/630fc1867164226be0c82076/file-1wQDnJWQEE]
+
+[[layout]]
+==== Layout Blocks
+
+Layout blocks make it easy to organize your content into sections! Click
+on a layout block to add it to the bottom of your email, or drag and
+drop exactly where you want it.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6499e5f48bdb973f12e45f90/file-X4eHSUG1tG.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6499e5f48bdb973f12e45f90/file-X4eHSUG1tG]
+
+===== Layout Settings
+
+* *Background color* - Change a layout block's background color
+* *Fullwidth Background* - Check this box to apply a background to the
+entire width of the email for the selected layout block
+* *Background image* - Check this box to use an image instead of a solid
+color for the layout block's background
+** Accepted file types: .JPG, .JPEG, .PNG, .GIF
+** Maximum file size is 10 MB
+** Background size options
+*** Cover - Image is cropped horizontally or vertically based on the
+shortest side to fill the layout element
+*** Contain - Image is scaled as large as possible within the layout
+block without cropping or stretching
+*** Auto - Image's proportions are maintained and the image is scaled to
+fit the layout block
+** Background position - Select the background image's position inside
+the layout block
+** Background Repeat
+*** Repeat Y - Image repeats on the Y axis
+*** Repeat X - Image repeats on the X axis
+* *Border* - Check this box to apply a border to a layout block
+** Border Color - Change the layout block's border's color
+** Border Style - Select a solid or dashed line
+** Border Width - Select a border width from the dropdown or slider
+** Spacing Top/Bottom/Left/Right - Adjust spacing on any side of the
+layout block
+* [#stack]#*Stacking*#
+** Prevent stacking on mobile - Check this box to prevent layout blocks
+from being stacked when the email is viewed on a mobile device
+** Reverse stacking order on mobile - Check this box to reverse the
+order of blocks when the email is viewed on mobile
+
+===== Column Settings
+
+Adjust background settings for each column individually by clicking the
+Column tab and selecting a column:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6499e6f9e832b96f633ab1c4/file-OZY6qqqjwp.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6499e6f9e832b96f633ab1c4/file-OZY6qqqjwp]
+
+link:#top[Back to top]
+
+'''''
+
+==== Elements
+
+Elements determine the type of content that appears in a layout block in
+your email. Click and drag a content block into a layout block to start
+creating your content!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/630fc1a1037bc877147b4ecc/file-wcp6555sWx.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/630fc1a1037bc877147b4ecc/file-wcp6555sWx]
+
+The email builder includes the following elements:
+
+* *Text* - Best for copy and longer sections of text. Adjust the text’s
+size, font family, color, alignment, line height, letter spacing, and
+add hyperlinks, text styling or emojis by clicking the text element.
+
+* *Title* - Best for titles, headers, or short sections of text. Adjust
+the title’s size, font family, color, alignment, line height, letter
+spacing, and add hyperlinks, text styling or emojis by clicking the
+title element.
+
+* *Image* - Add static (.JPEG, .PNG, .GIF, or .WEBP files) or dynamic
+images (using
+https://help.sendlane.com/article/79-what-are-personalization-tags#templating[templating
+syntax]) to your emails! Add alt text, adjust alignment, size, and
+corner radius by clicking on the image element. Images can be made
+clickable by pasting a link in the Link field. Linked images can add
+Tags to Contacts who click the linked image by selecting or creating a
+Tag from the Tag dropdown.
+
+* [#button]#*Button* - Create a clickable button with custom text and
+styling! Buttons can add Tags to Contacts who click the button by
+selecting or creating a Tag from the Tag dropdown.#
+
+* *Divider* - Insert a divider line with custom styling to separate
+content sections.
+
+* *Spacer* - Insert a spacer to separate content sections without a
+visible line.
+
+* *Social* - Insert links to your company’s social media profiles!
+Adjust the styling and social media icons and links by clicking the
+social element.
+
+* *HTML* - Insert custom HTML!
+
+* *Media* - Insert a link to a YouTube or Vimeo video to create a
+clickable image of the video’s thumbnail. Adjust the video’s alt text,
+spacing, and button styles by clicking the media element.
+
+* *Link Bar* - Insert a bar with links to any URL you need! Add,
+rearrange, and style the link bar by clicking on the link bar element.
+
+* *Text Wrap Image* - Insert a combination text and image element to
+wrap text around an image! Adjust all text and image settings by
+clicking on the text wrap image
+element.image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63990500efdd5760d1d80ba5/file-GBbVhHLzVA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63990500efdd5760d1d80ba5/file-GBbVhHLzVA]
+
+* *Saved Block* - Save any block in your email by clicking the Save icon
+on the right hand side of the block. Saved blocks can be added to any
+email!
+
+link:#top[Back to top]
+
+'''''
+
+[[global]]
+=== Set Global Email Styles
+
+Save time and set up global styling before adding content to your email!
+In the styles tab, you can create default styling for the following
+elements:
+
+* *Links* - Select a color or enter a hex code for the default color of
+all hyperlinks, and check the Text Underline box to underline all links
+* *Buttons* - Select a default background color, border, font styling,
+corner radius, alignment, width, and spacing for all Button elements
+* *Headings* - Select font color, font family, font size, line height,
+and letter spacing for all headings in your email by selecting the
+heading type from the dropdown and editing each heading's settings
+* *Body Text* - Select font color, font family, font size, line height,
+and letter spacing for all body text
+
+Click the Styles tab in the email builder, then click the preview eye
+icon to see previews of your style selections in real-time.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6398ed084d4cf87851c91f89/file-ebyKckQvO5.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6398ed084d4cf87851c91f89/file-ebyKckQvO5]
+
+link:#top[Back to top]
+
+'''''
+
+[[appearance]]
+=== Configure Email Appearance Settings
+
+Determine high level settings for your email using the Settings tab!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/630fec267164226be0c8219f/file-2oTFNdzCOK.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/630fec267164226be0c8219f/file-2oTFNdzCOK]
+
+* *Background Color* - Select a background color for your entire email
+* *Background Image* - Select the checkbox to use an uploaded .JPEG or
+.PNG file as a background image and choose the image's position setting
+* *Border* - Select the checkbox to add and style a border for your
+entire email, including dashed or solid borders
+* *Spacing* - Adjust the spacing on all sides of your email
+* *Save as new template* - Save this email as a new template that will
+appear in the Custom tab of the template page
+* *Change Template* - Replace the entire email you're working on with a
+pre-designed template from the Sendlane template library
+* *Clear Template* - Remove all content from your email and start from
+scratch
+
+link:#top[Back to top]
+
+'''''
+
+[[saved-blocks]]
+=== Saved Email Blocks
+
+Use saved blocks to create standard email blocks like link bars, social
+media information, and other static information about your company or
+brand! Saved blocks can be used in any email you create in the future.
+
+To create a saved block:
+
+. Click the block you want to save
+. Click the *Settings* icon 
+. Click *Layout* 
+. Click the *Save* icon 
+. Enter a name for the saved block 
+. Click *Save*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6398f9ceefdd5760d1d80b9c/file-RrGzXBdmFX.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6398f9ceefdd5760d1d80b9c/file-RrGzXBdmFX]
+
+link:#top[Back to top]
+
+'''''
+
+[[save]]
+=== Save an Email as a Template
+
+To reuse an email multiple times, use the Save As Template feature!
+Click  *Save As* at the top of the email builder screen. Enter a name
+for your template and click Save!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/630fe1037164226be0c8214a/file-75So7zFHWS.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/630fe1037164226be0c8214a/file-75So7zFHWS]
+
+[[campaign]]
+==== Campaign Templates
+
+When you create a Campaign email, it will automatically be saved in the
+Previous tab of the Email Design page
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6508bab1e249755d2f85c1e2/file-4FL9AOHgPv.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6508bab1e249755d2f85c1e2/file-4FL9AOHgPv]
+
+Emails saved as templates are saved in the Custom tab of the Email
+Design page
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6508bad6f09e1f2e46c835d9/file-ENJ35TtC66.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6508bad6f09e1f2e46c835d9/file-ENJ35TtC66]
+
+To use a template, hover over the preview and click Use Template
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6508bb4fe249755d2f85c1e3/file-JfcNOiWpWt.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6508bb4fe249755d2f85c1e3/file-JfcNOiWpWt]
+
+link:#top[Back to top]
+
+'''''
+
+[[recreate]]
+=== Recreate Legacy Emails
+
+Because emails cannot be transferred from the legacy builder to the new
+builder, you'll need to recreate any email templates you want to
+continue using for Campaigns or Automations in the new builder. This is
+a great time to review your email templates and
+https://www.sendlane.com/resources[Sendlane's many resources] for
+building awesome emails!
+
+Here are just a few that will help you decide which templates to bring
+over and how to optimize them:
+
+* https://www.sendlane.com/blog/email-design-trends[5 Email Design
+Trends to Inspire You in 2022]
+* https://www.sendlane.com/blog/email-design-tips[6 Email Design Tips to
+Increase Engagement (and Conversions!)] +
+* https://www.sendlane.com/blog/ecommerce-marketing-trends[4 Essential
+eCommerce Marketing Trends for 2022]
+
+Take advantage of your ability to be logged into Sendlane in multiple
+tabs! It's helpful to use two tabs during this process, one for your
+legacy email templates and one for the new builder:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/630fdebec713d51da3eda8ca/file-oKwD8gqKXq.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/630fdebec713d51da3eda8ca/file-oKwD8gqKXq]
+
+link:#top[Back to top]
+
+'''''
+
+[[files]]
+=== Use Hyperlinks to Images or Text for Large Files
+
+Sending marketing emails with attachments, large files, or videos can
+trigger spam filters and cause bounced emails, negatively affecting your
+email deliverability. Using hyperlinks to files avoids these
+deliverability issues and allows you to add Tags to Contacts who click
+your links!
+
+. Upload your file to the file hosting service of your choice
+. Copy the shareable link to your file
+. Highlight text or select an image
+.. For text links, click the link icon
+.. For image links, find the Link field in the Image Settings left-hand
+slideout
+. Insert the link to your file
+. Click the Tag dropdown and select a Tag to apply to Contacts who click
+on your text or image link
+
+[cols="^,^",]
+|===
+|*Links in Text* |*Links in Images*
+
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c38793a47f35db9dbfd5/file-qmsx14CzYA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c38793a47f35db9dbfd5/file-qmsx14CzYA]
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c394e114d11769c3ca95/file-j54U0LGg9O.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c394e114d11769c3ca95/file-j54U0LGg9O]
+|===
+
+link:#top[Back to top]
+
+'''''
+
+[[default]]
+=== Set Default Values for Personalization Tags
+
+In Sendlane's legacy email builder, there wasn't a way to set default
+values for personalization tags which meant that Contacts without data
+in the selected tag would see a blank space. Now, you can enter a
+default to show when Contacts don't have data in the personalization tag
+you want to use!
+
+To set a default value for a personalization tag, add `+| default("")+` 
+to the tag and enter your desired default text between the quotation
+marks.
+
+For example, to set a default of "Friend" for Contacts without a first
+name recorded, select First Name from the tag dropdown:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/630fe4d17164226be0c82157/file-358rlZspER.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/630fe4d17164226be0c82157/file-358rlZspER]Then,
+edit the tag text to
+read  `+{{ contact.first_name | default('Friend') }}+` 
+
+link:#top[Back to top]
+
+'''''
+
+[[footer]]
+=== Set Custom Styling for Email Footers
+
+Choose background and font colors in your email's footer by clicking
+into the footer, selecting Custom for Appearance, and setting your color
+preferences. Our contrast calculator will let you know if your
+background and font colors are not contrasted enough!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/638a61d0d15be60e82eb5d81/file-WnY1Wj3hNo.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/638a61d0d15be60e82eb5d81/file-WnY1Wj3hNo]
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+[[formatting-remove]]
+====== My text's formatting looks odd or isn't updating correctly when I adjust its color, size, or font!
+
+If you pasted text from another application into the email builder, the
+text may be attempting to retain its formatting from the previous
+application. If your text looks off, you can remove all of its
+formatting by selecting the text and clicking the remove formatting
+button:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/652419dbed8c6d2f1cffe306/file-8NArMmWhJD.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/652419dbed8c6d2f1cffe306/file-8NArMmWhJD]
+
+[[addl]]
+=== Additional Resources
+
+* https://www.ecommerceacademy.com/courses/email-marketing[Learn from
+the email marketing experts at eCommerce Academy!]
+* https://www.sendlane.com/blog/email-builder[Sendlane’s New Email
+Builder: Create Engaging & Personalized Emails Faster]
+* https://www.sendlane.com/blog/how-to-create-eye-catching-emails-with-sendlanes-email-builder[How
+to Create Eye-Catching Emails with Sendlane’s Email Builder]
+* https://www.sendlane.com/blog/email-design-trends[5 Email Design
+Trends to Inspire You in 2023]
+* https://www.sendlane.com/blog/email-design-tips[6 Email Design Tips to
+Increase Engagement (and Conversions!)]

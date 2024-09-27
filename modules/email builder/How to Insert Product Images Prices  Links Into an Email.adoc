@@ -1,0 +1,3 @@
+If you use BigCommerce, Shopify, Miva, or Woocommerce for your eCommerce
+solution, you can automatically pull products from your store into
+Campaign or Automation emails!

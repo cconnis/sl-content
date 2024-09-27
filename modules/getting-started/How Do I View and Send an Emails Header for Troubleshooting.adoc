@@ -1,0 +1,91 @@
+If you're experiencing deliverability issues, it's helpful to share the
+original or raw message HTML details so our team can troubleshoot!
+
+Here are instructions on how to view and share the raw HTML for the most
+common email providers:
+
+* link:#gmail[Gmail]
+* link:#yahoo[Yahoo]
+* link:#outlook-desktop[Outlook Desktop App]
+* link:#outlook-com[Hotmail/Outlook]
+* link:#mac-mail[Mac Mail]
+* link:#mac-mail[AOL]
+
+'''''
+
+=== Gmail
+
+. Open the message and click "..." (the 3 _vertical dots)_ in the top
+right of the message window
+. Choose *_Show original_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f3da6232c7d3a352e911817/file-KKzI7spt82.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f3da6232c7d3a352e911817/file-KKzI7spt82]
+. Copy and paste the HTML into a text editor tool
+(like _TextEdit_ or _Notepad++_)
+. In your text editor tool, click *_File_* then *_Save As..._* choose
+.*txt* and send that file to Sendlane!
+
+'''''
+
+=== Yahoo
+
+. Open the message and click "..." (the 3 _horizontal_ dots__)__ in the
+top middle of the message window 
+. Choose *_View raw message_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f3db9642c7d3a352e9118e1/file-4s0ckPndyX.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f3db9642c7d3a352e9118e1/file-4s0ckPndyX]
+. In your browser window, click *_File_* then *_Save Page
+As...image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f3dbd2f2c7d3a352e911901/file-ptWv1qATbe.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f3dbd2f2c7d3a352e911901/file-ptWv1qATbe]_*
+. Choose .*txt* and send that file to Sendlane!
+
+'''''
+
+[[outlook-desktop]]
+=== Outlook Desktop App
+
+. Open the message, click the *_Actions_* menu, then *_Other Actions_*
+and then *_View Source_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f3dc0fb2c7d3a352e911929/file-fMuctZXBwN.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f3dc0fb2c7d3a352e911929/file-fMuctZXBwN]
+. Use the *_File_* menu to *_Save As_* a .*txt* file and send that file
+to Sendlane!
+. Depending on your version of Outlook, you may have the Forward as
+Attachment option under either the Actions menu, the Other Actions menu,
+or by right clicking on the message and choosing More Actions.
+
+'''''
+
+[[outlook-com]]
+=== Hotmail/Outlook
+
+. Open the message, click "..." (the 3 _horizontal_ dots) in the top
+right of the message window, choose __*View,* __and then *_View Message
+Source_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f3dd9692c7d3a352e9119c8/file-TOJpXIUhbL.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f3dd9692c7d3a352e9119c8/file-TOJpXIUhbL]
+. Copy and paste the HTML into a text editor tool
+(like _TextEdit_ or _Notepad++_)
+. In your text editor tool, click *_File_* then *_Save As..._* choose
+.*txt* and send that file to Sendlane!
+
+'''''
+
+=== Mac Mail
+
+. Select the message, then under the *_View_* menu, choose *_Message_*,
+then *_Raw Source_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f3dd7252c7d3a352e9119a9/file-V1VEMSjjMh.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f3dd7252c7d3a352e9119a9/file-V1VEMSjjMh]
+. Once you have the original message displayed, use the *_File_* menu to
+*_Save As_* a *_plain text_* file and send that file to Sendlane!
+
+[[mac-mail]]
+=== AOL
+
+. Double click the email to display it in its own window
+. Click the *_More_* menu in the toolbar
+. Click *_View Message Source_*
+. Use the *_File_* menu to _Save As_ a _plain text_ file and send that
+file to Sendlane!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60b12f374dda6972e09306c8/file-ixymiuVl3e.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60b12f374dda6972e09306c8/file-ixymiuVl3e]

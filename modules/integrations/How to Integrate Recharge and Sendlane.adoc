@@ -1,0 +1,67 @@
+Integrate Recharge and Sendlane to use your Shopify or BigCommerce
+store's subscription data to target customers based on their activity
+and preferences!
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Sign up for a https://rechargepayments.com/[Recharge] account
+
+Have either
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify]
+or
+https://help.sendlane.com/article/454-integrate-bigcommerce-and-sendlane[BigCommerce]
+integrated with Sendlane
+
+1
+
+[[keys]]
+===   Generate API Keys in Recharge
+
+[[expire]]
+===== 🚨 API keys expire one year after creation
+
+API keys expire one year from the day they are created. Set a reminder
+to replace your API key one year from the day you created it.
+
+Log in to Recharge, then
+
+. Click *Apps*
+. Click *API Tokens*
+. Click *Create an API token*
+
+* image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62c613c0360964399e46e364/file-uyiAJ2XkS3.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62c613c0360964399e46e364/file-uyiAJ2XkS3]
++
+On the API token creation screen, 
+. Enter a *Token nickname* and your *email address*
+. Set all permissions to "*Read Access*" ("Grant Access" for Customer
+Notifications)
+. click the terms of service agreement checkbox
+. click Save to generate your Access Token and Client Secret keys!
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62c6138003382e4311cf1eea/file-PKQdb4P4rO.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62c6138003382e4311cf1eea/file-PKQdb4P4rO]
+
+2::
+  You can access your Recharge keys at any time. If you prefer to save
+  your Recharge API keys on your device, follow the steps below to copy
+  each key.
+  +
+  Copy your *Access Token* by clicking the copy icon next to the token
+  you just created:
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62c6152b360964399e46e36b/file-IS8cslvmcs.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62c6152b360964399e46e36b/file-IS8cslvmcs]
+  Copy your *Client Secret* key by clicking on your API token's
+  nickname, then double-click the *API Client Secret field* and copy:
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62c616d4360964399e46e377/file-pRyRv0eOKs.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62c616d4360964399e46e377/file-pRyRv0eOKs]
+
+3::
+  Search for and click on *Recharge* on the Integrations page in
+  Sendlane, then click *Configure* > *Create New Recharge Integration*
+  +
+  Enter your *Recharge Store Name*, *Access Token*, and *Client Secret*
+  +
+  Select your store as the *Parent Integration*
+  +
+  Click *Continue* to complete your integration!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62c619e6c74a080359c873a9/file-PSwfJCjYfU.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62c619e6c74a080359c873a9/file-PSwfJCjYfU] +

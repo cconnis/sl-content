@@ -1,0 +1,71 @@
+https://gleam.io/?via=1267658[Gleam] is a multi-functional marketing
+platform that allows users to create behavior-based capture forms,
+contests and giveaways, galleries and more!
+
+Integrating Gleam and Sendlane enables you to funnel contacts captured
+by Gleam forms directly to your lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://gleam.io/?via=1267658[Gleam account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account so Gleam knows where to place your new
+leads and contacts!
+
+'''''
+
+=== Connecting Gleam with Sendane
+
+. From the Gleam home page, select *_Site Settings +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce5e7fb04286353439928e5/file-0OIJK9E4it.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce5e7fb04286353439928e5/file-0OIJK9E4it]_*
+. Click the *_Integrations_* tab, scroll until you find Sendlane, and
+toggle the switch to *_On +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce5e47c04286353439928c8/file-3Rhxc8zlfY.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ce5e47c04286353439928c8/file-3Rhxc8zlfY]_*
+. Enter your Subdomain, API/Hash keys, and select the list in Sendlane
+with which you want to integrate.
+. Scroll to the bottom of the page and click *_Save_*.
+
+Your Integration is now complete! 
+
+Captured contacts from your Gleam campaigns can now be synced with your
+selected list in Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+****This integration is native to Gleam, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Gleam team is just a few clicks away!
+
+* Connect with the https://gleam.io/contact[Gleam team]
+* Visit the https://gleam.io/docs[Gleam Docs]
+
+==== Additional Gleam Resources
+
+https://gleam.io/?via=1267658[Sign up for Gleam] |
+https://gleam.io/blog/[Gleam Blog] | https://gleam.io/guides[Guides]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-gleam[Sendlane
++ Gleam - Competition and Giveaway Tools Designed to Boost Sales]
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage & Capture Leads ]
+
+'''''
+
+=== TL;DR
+
+Login to Gleam → _Site Settings_ → _Integrations_ → Toggle Sendlane to
+_On_ → Enter Subdomain / API / Hash → Select list → _Save_ 

@@ -1,0 +1,145 @@
+Take advantage of Sendlane's deep-data integration with BigCommerce to
+use the valuable data collected in your BigCommerce store to target your
+Sendlane Audience with hyper-relevant email and SMS marketing content!
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+ Follow
+https://support.bigcommerce.com/s/article/Getting-Started-with-the-New-Control-Panel[BigCommerce's
+guide] to setting up your BigCommerce Store.
+
+ Contact your Customer Success Manager or our 24/7 product support team
+to request single opt-in status for your Sendlane account.
+
+[[complete-integration]]
+===== 🚨 Installation must be completed all at once
+
+If you do not complete the entire installation process at the same time,
+you may have to uninstall and re-install the Sendlane app from the
+https://www.bigcommerce.com/apps/search/?search=sendlane[BigCommerce app
+marketplace]
+
+[[sync-date]]
+===== 🚨 90 days of customer data will be synced upon installation
+
+When you install BigCommerce, all customers with any activity
+(subscribed, ordered) within the last 90 days will be synced and added
+as Contacts in your Sendlane account subscribed to email content.
+
+1::
+  Once your BigCommerce store is set up, click the *Sendlane app* in the
+  https://www.bigcommerce.com/apps/search/?search=sendlane[BigCommerce
+  app marketplace] then click *Get This App* > *Log in* to be redirected
+  to your BigCommerce account.
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62730f40a65f844e77f8935b/file-LUsnUzPagw.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62730f40a65f844e77f8935b/file-LUsnUzPagw]Click
+  *Install* > *Confirm*, then log in to your existing Sendlane account
+  or create a new Sendlane account!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6273117ded262d106f73ec4b/file-68EYn7aVmz.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6273117ded262d106f73ec4b/file-68EYn7aVmz]
+  +
+  Set up a https://help.sendlane.com/article/107-senders[*Sender
+  Profile*] for your BigCommerce integration, then click *Next* to
+  complete installation. Click *Launch* to go to your Sendlane
+  dashboard!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/627310eec5cfff5d83fcd253/file-LzURxkQw4s.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/627310eec5cfff5d83fcd253/file-LzURxkQw4s]
+
+2::
+  To confirm default lists and other settings in your BigCommerce
+  integration, click the *Integrations* icon > *BigCommerce* >
+  *Configure* > *Manage*
+  +
+  * *Choose your default lists* Select List to sync new, newsletter, and
+  abandoned cart BigCommerce Contacts to
+  ** *Optional Checkbox* Automatically remove Contacts from your
+  abandoned cart list when they make a purchase
+  * *Assign contact email addresses from* Select a customer address to
+  assign Contacts' email addresses from
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6273139d9fcefa46a68cbacf/file-D93MfcHPl3.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6273139d9fcefa46a68cbacf/file-D93MfcHPl3]
+
+[[sms-consent]]
+===== ⏭  Next Steps
+
+Check out our
+https://help.sendlane.com/article/471-how-to-collect-consent-for-sms-messaging-with-bigcommerce[guide
+to collecting consent to receive SMS marketing content] from your
+customers at checkout!
+
+[[multiple-logins]]
+===== 🙋 How do I connect multiple BigCommerce stores to my Sendlane account?
+
+If you have two BigCommerce stores under one login, your stores are both
+connected to Sendlane.
+
+[[troubleshooting"]]
+=== Troubleshooting
+
+[[abandoned-install]]
+====== I'm getting an error when I try to install the Sendlane app from the BigCommerce Marketplace!
+
+....
+{"error":{"message":"App not found. Already uninstalled, access denied, or incomplete setup. Please uninstall first to try again"}}
+....
+
+This error has two possible causes:
+
+. *Navigating Away From App During Installation* To fix this, uninstall
+and re-install the Sendlane app from the
+https://www.bigcommerce.com/apps/search/?search=sendlane[BigCommerce app
+marketplace] making sure to complete the entire process
+. *Third Party Cookies Are Disabled* To fix this, make sure your
+browser's third party cookies are enabled
+
+====== I see my Sendlane dashboard in BigCommerce, but I don't see the BigCommerce integration installed in Sendlane!
+
+You may have navigated away from the installation process before it was
+completed. To fix this, uninstall and re-install the Sendlane app from
+the https://www.bigcommerce.com/apps/search/?search=sendlane[BigCommerce
+app marketplace].
+
+[[403]]
+====== I'm getting a 403 Forbidden error!
+
+Review
+https://developer.bigcommerce.com/api-docs/apps/guide/best-practices#respect-api-rate-limits[BigCommerce's
+API rate limits] for your BigCommerce plan. `+403 Forbidden+` errors are
+generally caused by exceeding your BigCommerce plan's API rate limit.
+
+[[unsubscribed-purchasers]]
+====== Contacts are showing as Unsubscribed right after they make an order!!
+
+If your BigCommerce checkout page pre-selects the marketing email opt-in
+checkbox, Contacts who uncheck the newsletter email opt-in box during
+checkout will be unsubscribed from the List attached to your BigCommerce
+integration as soon as checkout is complete.
+
+[[no-order-data]]
+====== I don't see order data coming into Sendlane!
+
+Missing order data can usually be solved by re-syncing your BigCommerce
+integration. Pause your BigCommerce Automations to avoid oversending,
+then follow the steps in our
+https://help.sendlane.com/article/487-how-to-re-sync-an-integration[guide
+to Re-syncing Integrations].
+
+[[no-profile-data]]
+====== I don't see Contact profile data coming into Sendlane!
+
+This error has two possible causes:
+
+. Your Sendlane account has double opt-in turned on. Reach out to our
+24/7 product support team or your Customer Success Manager to request
+single opt-in.
+
+If you've deleted the List associated with your BigCommerce integration,
+you need to choose a replacement List. Follow the steps below to replace
+your integration's associated List and reach out to our 24/7 product
+support team or your Customer Success Manager if the problem persists!
+
+*Integrations* page > *BigCommerce* > *Configure* > *Manage* > Select a
+new *List* > *Save*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6202ab6a68cd260cc2d38fcb/file-RgE2Cva43M.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6202ab6a68cd260cc2d38fcb/file-RgE2Cva43M]

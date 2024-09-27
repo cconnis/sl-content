@@ -1,0 +1,159 @@
+==== Overview
+
+Google Shopping product listings are a great place to display the
+reviews you’ve worked hard to collect from your customers. After
+applying for the Google Product Ratings program, you can generate a
+dynamic feed of your approved reviews within Sendlane and connect them
+to the Google Shopping tab of Google search results! Read on to learn
+how.
+
+==== In This Guide
+
+* link:#requirements[Google Shopping Review Requirements]
+
+. link:#apply[Apply For a Google Merchant Center Account]
+. link:#xml-url[Set Up a Reviews XML URL]
+. link:#install[Install XML URL in Google Merchant Center]
+
+'''''
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Set up Reviews for your eCommerce store:
+
+* https://help.sendlane.com/article/522-how-to-install-reviews-shopify[Shopify]
+* https://help.sendlane.com/article/560-how-to-install-reviews-bigcommerce[BigCommerce
+Blueprint Themes]
+* https://help.sendlane.com/article/567-how-to-install-reviews-for-bigcommerce-stencil-themes[BigCommerce
+Stencil Themes]
+
+Collect at least 50 Reviews. Google will only approve your application
+if your store has at least 50 product reviews. Set up an
+https://help.sendlane.com/article/553-review-request-automation[Automation
+to request reviews] from your purchasers if you haven’t already!
+
+[[requirements]]
+=== Google Shopping Review Requirements
+
+Google maintains strict requirements for participation in its Product
+Ratings program. Read the entire
+https://support.google.com/merchants/answer/6098512?hl=en&ref_topic=7307120[policy
+document] carefully, and make special note of the following
+requirements:
+
+* *Review volume*: Your store must have at least 50 product reviews.
+Your application will be rejected if your store has fewer than 50
+product reviews. Set up an
+https://help.sendlane.com/article/553-review-request-automation[Automation
+to request reviews] from your purchasers if you haven’t already!
+* *Review sync frequency*: Google requires you to provide them with at
+least monthly updates of your review feed, which is an XML URL similar
+to an RSS feed. When you add your XML URL to your Google Merchant
+Center, you’ll select a frequency for the XML URL to refresh. We
+recommend selecting a refresh rate of daily to keep your reviews as up
+to date as possible.
+* [#content-rules]#*Review content*: Google reserves the right to
+“remove reviews or block entire fields that violate
+https://support.google.com/merchants/answer/6098512?hl=en&ref_topic=7307120[these
+policies].” You must actively
+https://help.sendlane.com/article/527-how-to-moderate-reviews[moderate
+your reviews] and select the appropriate reason when
+https://help.sendlane.com/article/527-how-to-moderate-reviews#publish-or-reject[rejecting
+reviews]. Reviews without content (e.g., reviews with a rating only) are
+not accepted by Google and will not be displayed or included in average
+star rating calculations.#
+
+1::
+  . Apply for a new account or log in with an existing account to the
+  https://www.google.com/retail/solutions/merchant-center/[Google
+  Merchant Center]
+  . Apply for Google’s Product Reviews program using Google’s
+  https://support.google.com/merchants/troubleshooter/10994881?hl=en[Product
+  Ratings Interest Form]
+  .. For “Do you work with an approved third-party reviews aggregator?”,
+  select No
+  +
+  Because Sendlane is still in the process of joining the Google Product
+  Ratings program, after you submit your application, you will receive
+  an email from Google saying:
+  +
+  ____
+  Your aggregator, 'Sendlane', isn’t part of the Product Ratings program
+  yet, so they won’t be able to submit a direct feed for you. Instead,
+  you’ll need to send a direct product ratings feed to Google Merchant
+  Center. Please let us know if you would like to send a direct Product
+  Ratings feed by replying to this email.
+  ____
+  +
+  Reply to the email from Google and say you will submit a direct
+  product ratings feed to your Google Merchant Center.
+  +
+  Applications can take a few days to be processed. If your application
+  is approved, Google will send a follow-up email, and a Product Reviews
+  tab will appear in your Google Merchant Center account:
+  +
+  image:https://lh6.googleusercontent.com/Xx9EBhyj1U1CuAcdToDXZOBezqypZ8m5It8yEjaD-nKT2oHT8oYl_1O8JKtDYoJ3rPEAQEBEZV3ldihMaIGw06Pr1EHTsoMHYaZg1heWxsTA5vafuzru86_JdZkTXc9T051I_QZec1r71q5J2riqjzQ[https://lh6.googleusercontent.com/Xx9EBhyj1U1CuAcdToDXZOBezqypZ8m5It8yEjaD-nKT2oHT8oYl_1O8JKtDYoJ3rPEAQEBEZV3ldihMaIGw06Pr1EHTsoMHYaZg1heWxsTA5vafuzru86_JdZkTXc9T051I_QZec1r71q5J2riqjzQ,width=720,height=180]
+2::
+  The XML URL you generate in Sendlane will tell Google which reviews to
+  display. Only reviews that have been approved,
+  https://help.sendlane.com/article/527-how-to-moderate-reviews#publish-or-reject[manually]
+  or
+  https://help.sendlane.com/article/527-how-to-moderate-reviews#moderation[automatically],
+  will appear in your XML feed and be added to the Google shopping tab.
+  +
+  To generate an XML URL:
+  +
+  . Click the *Reviews icon*
+  . Click *Google Shopping*
+  . Select options to include or exclude Global Trade Number (GTN) and
+  Manufacturing Part Number (MPN; uses your Shopify SKUs) data from your
+  XML URL. Use
+  https://support.google.com/merchants/answer/160161#Guidance[Google’s
+  guidance] to determine which options work best for your store.
+  . If you modify either of the GTN or MPN options, click *Save Changes*
+  . Click the *copy icon* to copy the XML URL
+  +
+  image:https://lh4.googleusercontent.com/38CsIKcdrxRrhcpygEpFAoC2WV4ZW4bXKRE_PaPApcKQ6RKHYmCMupn5r75AYnK8WntgThWeJtI2anvo910DbfMd19M8bL753DVNb431z0KR8yb-06fipZ5WkqTzPufXo9-asMwPH-YXrxkbAcg8MNc[https://lh4.googleusercontent.com/38CsIKcdrxRrhcpygEpFAoC2WV4ZW4bXKRE_PaPApcKQ6RKHYmCMupn5r75AYnK8WntgThWeJtI2anvo910DbfMd19M8bL753DVNb431z0KR8yb-06fipZ5WkqTzPufXo9-asMwPH-YXrxkbAcg8MNc,width=720,height=516]
+3::
+  Once Google approves your application and you’ve generated your XML
+  URL, you’re ready to install your XML URL in your Google Merchant
+  Center and start displaying product reviews on the Google Shopping
+  tab!
+  +
+  To install your XML URL:
+  +
+  . Log into Google Merchant Center
+  . Click *Product Reviews*
+  . Select the following options for your reviews feed:
+  .. Feed type: Product Reviews
+  .. Primary feed name: Sendlane Reviews (ensure that the file name you
+  submit to Merchant Center if submitting via SFTP, FTP, or Google Cloud
+  Storage is also Sendlane Reviews)
+  .. Choose how to set up your feed and connect your data to Merchant
+  Center: Scheduled fetch
+  . Click *Continue*
+  . Copy the XML URL from the Google Shopping tab of the Reviews page
+  . Set *Fetch frequency* to Daily
+  . Leave other options set as the default selections
+  . Paste your XML URL in the *File URL* field
+  . Click *Create feed*
+  +
+  Clicking Create feed submits your feed information to Google for final
+  approval, which can take a few days. If your feed is approved, you’ll
+  receive an email from Google, and your feed’s status should be live.
+  You can search for your products on the Google Shopping tab to see
+  your reviews!
+  +
+  If you receive a confirmation email, but your feed is not live, or if
+  your feed is not approved and you want further information,
+  https://support.google.com/merchants/gethelp[contact Google].
+
+=== Troubleshooting
+
+[[shopify-google-shopping]]
+====== How do I set up Google Shopping reviews if I use Shopify’s Google Shopping app?
+
+Please contact Sendlane’s 24/7 product support team or your assigned
+Customer Success Manager for assistance with Shopify’s Google Shopping
+app.

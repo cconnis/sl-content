@@ -1,0 +1,18 @@
+While an entire deleted node cannot be recovered entirely, email content
+remains in your automation even if the node is deleted.
+
+You can select the deleted email node's email when you add another email
+node to your automation:
+
+. Click the *+ button* to add a new node
+. Click *Send Message*
+. Click *Email*
+. Select your deleted email from the *Duplicate existing email for this
+automation dropdown**
+
+*Your deleted email will have the same name it had before it was deleted
+
+Watch the video below to see how a deleted email node's content can be
+recovered:
+
+image:https://fast.wistia.com/embed/medias/owuelnrr0l/swatch[https://fast.wistia.com/embed/medias/owuelnrr0l/swatch]

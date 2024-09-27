@@ -1,0 +1,60 @@
+==== Overview
+
+Sendlane Forms can be installed on any website with the form’s
+lightweight script. Read on to learn how to find a form’s installation
+code and guidance on where to install forms on your website.
+
+==== In this guide
+
+* link:#beacon[Ensure Beacon is installed]
+* link:#access-code[Access the Sendlane Form installation code]
+* link:#pop-up[Install a pop up style form]
+* link:#inline[Install an inline form]
+
+[[beacon]]
+=== Ensure Beacon is installed
+
+Sendlane Forms requires
+https://help.sendlane.com/article/72-beacon[Beacon] to be installed on
+your website before any site tracking data can be collected for your
+forms. Ensure Beacon is installed before proceeding with form
+installation.
+
+[[access-code]]
+=== Access the Sendlane Form installation code
+
+To access a form’s installation code and copy the script to your
+clipboard:
+
+. Click the Forms icon
+. In the Actions column, click the edit icon
+. Click *Design*
+. Click *Summary*
+. Under Form Installation Code, click *Copy Code*
+
+[[pop-up]]
+=== Install a pop up style form
+
+You can paste a pop up form’s installation in your website’s source
+code. For pop up style forms, this is usually in your website’s theme
+file.
+
+The form’s installation code is the only code required to make your form
+appear on your website. See
+https://help.sendlane.com/article/627-how-to-manage-sendlane-forms-activation-status[How
+to manage Sendlane Forms’ activation status] for information on form
+publication/activation statuses.
+
+===== 🚨 All forms require their own unique installation codes to be added to your website.
+
+[[inline]]
+=== Install an inline style form
+
+You can paste an inline form’s installation code anywhere you’d like it
+to appear in your website’s source code. The form’s installation code is
+the only code required to make your form appear on your website. See
+https://help.sendlane.com/article/627-how-to-manage-sendlane-forms-activation-status[How
+to manage Sendlane Forms’ activation status] for information on form
+publication/activation statuses.
+
+===== 🚨 All forms require their own unique installation codes to be added to your website.

@@ -1,0 +1,154 @@
+[[top]]
+==== Overview
+
+Google and Yahoo announced in October 2023 that email marketers will be
+required to authenticate the email addresses they send from and keep
+spam complaints below 0.2% by February 1, 2024, or risk being blocked by
+inbox providers like Gmail, Yahoo Mail, and Microsoft. Read on to learn
+why sending may be temporarily blocked to specified inbox providers and
+how to avoid blocks in the future.
+
+==== In This Guide
+
+* link:#why[Why sending may be temporarily blocked]
+* link:#future[How to avoid being blocked in the future?]
+* link:#campaigns[How do campaigns work while my sending domain is
+blocked?]
+* link:#automations[How do automations work while my sending domain is
+blocked?]
+* link:#unblocked[How do I get my sending domain unblocked?]
+
+'''''
+
+[[why]]
+=== Why sending may be temporarily blocked
+
+If your email sends receive too many spam complaints from contacts using
+a particular inbox provider or you are sending email from an
+unauthenticated sending domain, Sendlane may pause your ability to send
+to that inbox provider with that
+https://help.sendlane.com/article/433-authenticating-a-sending-domain#inbox[sending
+domain] for 24 hours. Any
+https://help.sendlane.com/article/550-how-to-authenticate-a-sending-domain#sp[sender
+profiles] using the blocked sending domain cannot be used to send email
+to that inbox provider for the duration of the block.
+
+You will see a warning message in your Sendlane account if any of your
+sending domains are temporarily blocked that will:
+
+. Identify the sending domain being temporarily blocked
+. Identify the inbox provider from which a disproportionate amount of
+spam complaints originated
+. Let you know when the block will be lifted
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6675d262d593d719515cad76/file-W9k5G96Nub.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6675d262d593d719515cad76/file-W9k5G96Nub]
+
+link:#top[Back to top]
+
+'''''
+
+[[future]]
+=== How do I avoid being blocked in the future?
+
+If the sending domain that was blocked was not authenticated,
+https://help.sendlane.com/article/550-how-to-authenticate-a-sending-domain[authenticate
+it] as soon as possible. Unauthenticated sending domains are the biggest
+risk factor for being temporarily blocked.
+
+If the sending domain that was blocked was authenticated, review the
+audience and content for the sends that occurred around the time of the
+block. You may need to create tighter Segments and more relevant content
+so that contacts are not receiving emails they aren't interested in.
+
+link:#top[Back to top]
+
+'''''
+
+[[#campaigns]]
+=== How do campaigns work when my sending domain is blocked?
+
+When your sending domain is temporarily blocked for a certain inbox
+provider, campaigns that were in progress when the block began and any
+that start before the block is lifted will not be sent to contacts who
+use the specified inbox provider.
+
+For example, let’s say your sending domain is blocked from sending to
+Gmail. If a campaign audience contains 10,000 contacts, 8,000 of whom
+use Gmail email addresses, the 8,000 Gmail users will not receive your
+campaign, but the 2,000 contacts using other inbox providers will
+receive your campaign.
+
+A list of contacts who did not receive the campaign will appear in the
+Blocked tab of your campaign report. Emails sent to contacts in the
+Blocked tab are considered not delivered.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65bc3ef17507a5314cbc0e62/file-l91qVLZq4L.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65bc3ef17507a5314cbc0e62/file-l91qVLZq4L]
+
+link:#top[Back to top]
+
+'''''
+
+[[automation]]
+=== How do automation email nodes work while my sending domain is blocked?
+
+When a sending profile is blocked, automation email nodes will not be
+deactivated, but the email will be blocked from sending to contacts
+using the specified inbox provider at the time of the initial block.
+contacts using other inbox providers will receive the automation email
+as usual.
+
+There is no way to resend the email node to contacts who would have
+received it if the block were not in place. A list of contacts who did
+not receive the automation email will appear in the Blocked tab of your
+automation email report:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65bc3efb7507a5314cbc0e63/file-bHgRPdrSrM.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65bc3efb7507a5314cbc0e63/file-bHgRPdrSrM]
+
+link:#top[Back to top]
+
+'''''
+
+[[unblocked]]
+=== How do I get my sending domain unblocked?
+
+See the warning message in your Sendlane account for when your sending
+domain will be unblocked. There is no way to override or shorten the
+block period.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65bc3f567507a5314cbc0e64/file-PovuKKh4sv.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65bc3f567507a5314cbc0e64/file-PovuKKh4sv]
+
+link:#top[Back to top]
+
+'''''
+
+[[addl]]
+=== Additional Resources
+
+* https://help.sendlane.com/article/611-google-yahoo-guidance[Understanding
+Google and Yahoo’s New Guidance for Email Marketers]
+* https://help.sendlane.com/article/433-authenticating-a-sending-domain[What
+is a Verified Sending Domain?]
+* https://help.sendlane.com/article/550-how-to-authenticate-a-sending-domain[How
+to Verify a Sending Domain]
+* https://help.sendlane.com/article/614-how-to-verify-a-shopify-sending-domain[How
+to Verify a Shopify Sending Domain]
+* Sendlane Blog:
+https://www.sendlane.com/blog/deliverability-changes-2024[A Review Of
+Gmail’s 2024 Deliverability Changes: What You Need To Know]
+* Sendlane Blog:
+https://www.sendlane.com/blog/engaged-sending-changes-2024[A Deep Dive
+into Gmail’s 2024 Engaged Sending Changes]
+* Google’s announcement:
+https://blog.google/products/gmail/gmail-security-authentication-spam-protection/[New
+Gmail protections for a safer&#44; less spammy inbox]
+* Google’s https://support.google.com/mail/answer/81126?hl=en[Email
+sender guidelines]
+* Yahoo’s announcement:
+https://blog.postmaster.yahooinc.com/post/730172167494483968/more-secure-less-spam[More
+Secure&#44; Less Spam: Enforcing Email Standards for a Better
+Experience]
+* Yahoo’s https://senders.yahooinc.com/best-practices/[Sender Best
+Practices]
+* Blog from Messaging Malware Mobile Anti-Abuse Working Group (M3AAWG):
+https://www.m3aawg.org/blog/SendingBulkMailToGmail_Yahoo[New Minimum
+Requirements For Sending Bulk Mail To Gmail And Yahoo]

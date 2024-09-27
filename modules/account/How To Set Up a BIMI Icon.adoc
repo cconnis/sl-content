@@ -1,0 +1,49 @@
+If you have
+https://help.sendlane.com/article/433-authenticating-a-sending-domain[authenticated
+your sending domain], you have a new option for providing even more
+assurance to your audience that your emails are from you and are not
+being spoofed! BIMI allows you to display a logo inside
+https://bimigroup.org/bimi-infographic/[participating inbox providers]
+to prove that emails sent from your domain originated with your
+business.
+
+===== 🙋 What is BIMI?
+
+_Brand Indicators for Message Identification or BIMI (pronounced:
+Bih-mee) is an emerging email specification that enables the use of
+brand-controlled logos within supporting email clients. BIMI leverages
+the work an organization has put into deploying DMARC protection, by
+bringing brand logos to the customer’s inbox. For the brand’s logo to be
+displayed, the email must pass DMARC authentication checks, ensuring
+that the organization’s domain has not been impersonated._
+
+https://bimigroup.org/faqs-for-senders-esps/?#FAQ_1[BIMI FAQs For
+Marketers and ESPs]
+
+BIMI is set up entirely outside of Sendlane. Google is a partner in the
+BIMI and has published
+https://support.google.com/a/answer/10911320?hl=en&ref_topic=10911234&sjid=9745827376117470908-NA[an
+extensive guide to authenticating your domain with a BIMI record]. We
+recommend following their guide to ensure you get the most up to date
+information.
+
+Below is a general outline of the process for setting up BIMI to give
+you an idea of the steps you'll need to complete. Please follow
+https://support.google.com/a/answer/10911320?hl=en&ref_topic=10911234&sjid=9745827376117470908-NA[Google's
+guide] when you begin working on your own BIMI set up.
+
+. Implement DMARC, DKIM, and SPF by
+https://help.sendlane.com/article/433-authenticating-a-sending-domain[authenticating
+a sending domain]
+. Trademark your brand's logo
+. Apply for a
+https://support.google.com/a/answer/10911028?hl=en[Verified Mark
+Certificate]
+. Ensure the image you use for your BIMI logo meets
+https://bimigroup.org/creating-bimi-svg-logo-files/[BIMI's
+specifications]
+. Create a https://support.google.com/a/answer/10911321?hl=en[BIMI TXT
+record] in your DNS
+
+If you have questions about BIMI, please
+https://bimigroup.org/contact-us/[contact the BIMI group].

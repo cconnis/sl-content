@@ -1,0 +1,88 @@
+Retargeting website visitors is a great way to keep your brand
+top-of-mind even after contacts click away from your site.
+
+By tracking the behavior of anyone who visits your website, you can
+easily trigger an automation to follow up with every person via email,
+and encourage them to convert!
+
+Please find more details below:
+
+* link:#Setting[Setting up your Automation]
+* link:#Additional[Additional resources]
+
+'''''
+
+=== Before Getting Started
+
+Before you begin, please be sure that you've
+https://help.sendlane.com/article/72-beacon[installed _Beacon_ on your
+website]. During that process, you should also
+https://help.sendlane.com/article/72-beacon#conversion-rules[set up
+a Conversion Rule and an Event to track].
+
+====== Please Note
+
+In order for Beacon to begin tracking the behavior of your audience,
+contacts first need to opt-in to your account. 
+
+Once they open a campaign that leads them back to your website, their
+behavior will be tracked accordingly and available within their customer
+profile!
+
+'''''
+
+[[Setting]]
+=== Setting up your Automation
+
+. Begin by heading to *_Automations_* → *New Automation*
+. ****From here select *Start From Scratch* and name your automation
+. Select the _Event Triggered_ action for retargeting +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8fad2f2c7d3a7e9aeab651/file-mveEC2s3rc.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8fad2f2c7d3a7e9aeab651/file-mveEC2s3rc]
+. Select the event you previously created (in this example our event was
+named _Site
+Tracking_)image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8fafab04286364bc9822b2/file-EYvfhgdiEW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8fafab04286364bc9822b2/file-EYvfhgdiEW]
+. Continue building your automation by adding any other
+https://help.sendlane.com/article/73-automations#communications[actions
+and communications] you'd like to use. Depending on what your goals and
+objectives are, we recommend sending three emails over the next three
+days to encourage contacts to come back and visit your website.
+. Next, add a *Goal* action. We recommend checking to see if contacts
+purchased! (So in this example, the goal conditions are that the contact
+triggered the event by going back to the original URL _and_ have a
+conversion amount greater than $1.00) +
+ +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8faef604286364bc9822ad/file-tkqkUNfkP5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e8faef604286364bc9822ad/file-tkqkUNfkP5]
+. From here you can decide what happens next based on your overall
+strategy! Select the next action once the goal is reached and what
+happens if they do not reach the goal. You will also have the option to
+select how many times the goal is checked before determining that it was
+not met.
+. Once you have completed your automation be sure to set the funnel
+from _Inactive_ to *_Active_image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee258aa2c7d3a10cba8c537/file-NNSNQ7H5f4.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee258aa2c7d3a10cba8c537/file-NNSNQ7H5f4]*
+
+And that's it! 
+
+Now, any contacts that visit your website will trigger this automation,
+see your marketing emails and hopefully return to your website to make a
+purchase!
+
+'''''
+
+=== TL;DR
+
+Automations → New Automation → Start From Scratch → Trigger: Event
+Triggered → Page URL → Build automation with actions & communications
+→ Add Goal → Active
+
+'''''
+
+[[Additional]]
+=== Additional Resources
+
+* https://www.sendlane.com/blog-posts/effective-lifecycle-email-marketing[How
+to Practice Effective Lifecycle Email Marketing with these Five
+Messages ]
+* https://www.sendlane.com/blog-posts/track-your-customer-journey-send-laser-targeted-emails-with-sendlane-beacon[Track
+Your Customer Journey & Send Laser-Targeted Emails With Sendlane Beacon]
+* https://www.youtube.com/watch?v=Qd-eeDcrF6k[3 Easy Tips to Convert
+More Visitors Into Paying Customers With Email! | Ask an Expert]

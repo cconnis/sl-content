@@ -1,0 +1,92 @@
+https://www.mailmunch.com/[MailMunch] is a service that allows you to
+create lead capture forms to grow your email list and convert visitors
+into contacts.
+
+By integrating MailMunch with Sendlane, you can funnel your captured
+MailMunch leads directly to your Lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://www.mailmunch.com/[MailMunch] account, with a site created and
+https://help.mailmunch.com/hc/en-us/articles/207870409-How-to-get-your-MailMunch-site-code-[the
+MailMunch site code installed] on your website.
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account so MailMunch knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Integrating MailMunch and Sendlane
+
+. From the main page in MailMunch, sign in and select your site +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd51ed104286306738ef513/file-nYUVmbYSyn.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd51ed104286306738ef513/file-nYUVmbYSyn]
+. From the site dashboard, navigate to *_Forms_* and select the type of
+form or landing page you want to create
+. After designing the form to your preference, navigate to the
+*_Integrate_* tab of the form builder, and click the *_Sendlane_* logo +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd521d02c7d3a177d6e9cd6/file-36aGATIXeu.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd521d02c7d3a177d6e9cd6/file-36aGATIXeu]
+. A pop-up will appear prompting you to enter your Sendlane API Key,
+Hash Key, and
+Subdomain.image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5235704286306738ef527/file-hHid1guCSW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd5235704286306738ef527/file-hHid1guCSW]
+. Next, you will be able to configure the integration settings. Here,
+you can do the following:
+.. Select which Sendlane List you want the contacts to enter
+.. Assign Tags to users who subscribe via the form
+.. Match fields between Sendlane and the opt-in form +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd526ee04286306738ef532/file-Iocl0lZy8s.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cd526ee04286306738ef532/file-Iocl0lZy8s]
+. Click *_Publish_*, toggle *_Activate Form_*, and click *Finish*
+
+****Your integration is now complete! 
+
+Captured contacts will be automatically added to your chosen Sendlane
+list.
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to MailMunch, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+MailMunch team is just a few clicks away! 
+
+* Connect with the https://www.mailmunch.com/contact/[MailMunch team]
+* Visit the MailMunch https://help.mailmunch.com/hc/en-us[Knowledge
+base]
+
+'''''
+
+Additional MailMunch Resources
+
+Sign up for https://www.mailmunch.com/[MailMunch] |
+https://www.mailmunch.com/blog/[MailMunch Blog] |
+https://help.mailmunch.com/hc/en-us/categories/115000332669-Getting-Started[Getting
+Started]
+
+=== *Additional Sendlane Resources*
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-mailmunch[Sendlane
++ MailMunch - Professionally Designed Opt-In Forms that Convert]
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Leads Magnets Proven to Engage & Capture Leads]
+* https://www.sendlane.com/blog-posts/10-surefire-ways-to-get-more-opt-ins-grow-your-ecommerce-email-list[10
+Surefire Ways to Get More Opt-Ins & Grow Your eCommerce Email List]
+* https://www.sendlane.com/blog-posts/converting-landing-pages[4
+Elements of Converting Landing Pages]
+
+'''''
+
+=== TL;DR
+
+Log in to MailMunch → Select Site → _Forms_ → _Integrate_ → click
+Sendlane logo → Enter Sendlane API Key, Hash Key, Subdomain → customize
+integration settings → _Publish_  → _Activate Form_ → ** _Finish_

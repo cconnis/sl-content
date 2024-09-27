@@ -1,0 +1,36 @@
+Use Rivo's integration with Sendlane to use loyalty data to create
+Segments, personalize emails, and use Conditional Splits in Automations!
+
+The following Rivo properties are available for use in Sendlane:
+
+* Rivo Points Balance (e.g. `+1000+`)
+* Rivo Loyalty Status (e.g. `+member+`)
+* Rivo Referral URL (e.g. `+https://example.com/?referral_code=X+`)
+* Rivo VIP Tier Name (e.g. `+Gold+`)
+* Rivo Date of Birth (e.g. `+9-28+`)
+
+Check out
+https://help.rivo.io/en/articles/8292873-sendlane-integration[Rivo's
+documentation of their Sendlane integration] for more information.
+
+=== Connect Rivo and Sendlane
+
+. Click the *Settings* icon
+. Click *API*
+. Click *+ API Token*
+. Enter a *name* for your API Token
+. Click *Create*
+. Click *Copy API token*
+. Paste the API token in the
+https://help.rivo.io/en/articles/8292873-sendlane-integration#h_7ab42f4d7d[configuration
+settings of the Sendlane integration in Rivo]
+
+[[copy-key]]
+===== 🚨 API tokens cannot be retrieved again after they are created
+
+Once you exit the Access Token Created window, you will not be able to
+access this API token again. If you exit the Access Token Created window
+without copying your API token, click the trash can icon next to the API
+token to delete it and follow the steps above again.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/652d901374982009a94e7377/file-IR5Pen9R77.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/652d901374982009a94e7377/file-IR5Pen9R77]

@@ -1,0 +1,119 @@
+[[top]]
+==== Overview
+
+Set up a price drop automation to let contacts know when products
+they've viewed, added to their cart, or abandoned in checkout have been
+reduced in price.
+
+==== In this guide
+
+* link:#trigger[Price drop trigger]
+* link:#block[Price drop email block]
+* link:#syntax[Price drop templating syntax]
+
+'''''
+
+[[trigger]]
+=== Price drop trigger settings
+
+See important details about the price drop trigger in
+https://help.sendlane.com/article/648-automation-triggers-for-shopify?#price-drop[Understanding
+Shopify automation triggers].
+
+The price drop trigger is only available for Sendlane accounts using
+Shopify as their eCommerce integration. To create an automation with a
+price drop trigger:
+
+. Click the *Automations* icon
+. Click *New Automation*
+. Click *Start From Scratch*
+. Click *+ Add trigger*
+. Click the *Shopify* tab
+. Click *Product Price Drop*
+. Configure your
+https://help.sendlane.com/article/648-automation-triggers-for-shopify#price-drop[Product
+Price Drop settings]
+. Click the *+ button* to add a new node
+. Click *Send Message*
+. Click *Email*
+. Set up your
+https://help.sendlane.com/article/703-how-to-send-email-and-sms-messages-with-automations#email[automation
+email]
+. Include a price drop block
+
+link:#top[Back to top]
+
+'''''
+
+[[block]]
+=== Price drop email block
+
+Email nodes in automations with Product Price Drop triggers can access
+the Price Drop email block, which dynamically displays information about
+the product that was reduced in price. One price drop block is allowed
+per email.
+
+With the price drop email block, you can:
+
+* Include or not include and rearrange the block's product name, stars &
+reviews, percentage off & price*, and old price elements
+* Change the CTA button's text and position
+* Individually style each element
+
+*The price drop product block will always display the percentage off
+between the last viewed price and the new lowered price, even if the
+product's price was lowered by a dollar amount in Shopify.
+
+link:#top[Back to top]
+
+'''''
+
+[[syntax]]
+=== Price drop templating syntax
+
+Use templating syntax to reference information about a product's price
+drop without using the pre-built email block.
+
+The following properties are available for price drop automations and do
+not require an
+https://help.sendlane.com/article/691-shopify-templating-syntax#b83734b4-2a12-41fa-9a0a-7d75b0ba2ffc[assignment
+tag]:
+
+[cols=",,",]
+|===
+|*Syntax* |*Description* |*Renders as*
+
+|`+{{trigger.getPriceDropNewPrice}}+` |Product's new lowered price
+|19.99
+
+|`+{{trigger.getPriceDropViewedPrice}}+` |Product's price when contact
+last viewed it* |29.99
+
+|`+{{trigger.getPriceDropAmountDifference}}+` |Dollar amount between the
+viewed price and lowered price |10.00
+
+|`+{{trigger.getPriceDropPercentageOff}}+` |Percentage of difference
+between viewed price and lowered price |33
+|===
+
+*This tag will render the price at the last view, regardless of future
+engagement with the product.
+
+You can recreate the price drop product block with the following simple
+template:
+
+....
+{% set product = trigger.getProduct() %}
+{{product.title}}
+Old price: {{trigger.getPriceDropViewedPrice}}
+New price: {{trigger.getPriceDropViewedPrice}}
+Percentage off: {{trigger.getPriceDropPercentageOff}}
+Amount off: {{trigger.getPriceDropAmountDifference}}
+....
+
+For more information on customizing your pricing syntax-based product
+price drop block, see
+https://help.sendlane.com/article/691-shopify-templating-syntax[Introduction
+to Shopify templating syntax].
+
+link:#top[Back to top]

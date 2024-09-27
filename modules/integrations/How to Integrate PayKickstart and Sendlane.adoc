@@ -1,0 +1,134 @@
+https://paykstrt.com/2539/32670[PayKickstart] is an all-in-one payment
+and affiliate management system that will allow you to easily sell your
+products, recruit affiliate partners and manage your customer
+transactions.
+
+By integrating PayKickstart with Sendlane, customer information
+collected at checkout can be funnelled directly to your desired Lists in
+Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://paykstrt.com/2539/32670[PayKickstart account] with at least one
+PayKickstart Campaign and one Product created.
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_* → *_Developer_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so PayKickstart knows where to place
+your new leads and contacts!
+
+'''''
+
+=== Connecting PayKickstart and Sendlane
+
+. From your PayKickstart homepage, click on _*Configure*,_ then
+*_Integrationsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f68da58cff47e00168f8c8a/file-CYeHboWVsL.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f68da58cff47e00168f8c8a/file-CYeHboWVsL] +
+**_*
+. Click _*Autoresponders*,_ followed by**_ + Add an Email
+Integration_**image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d14d56b04286305cb87ca5d/file-SU8kJ2pu2T.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d14d56b04286305cb87ca5d/file-SU8kJ2pu2T]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d14d67304286305cb87ca79/file-klWSEMCz7q.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d14d67304286305cb87ca79/file-klWSEMCz7q]
+. Select *_Sendlane_* from the dropdown menu, then enter an *_Account
+Name_*, followed by your *_Sendlane API/Hash Keys and
+Subdomain_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d14d8d204286305cb87cab8/file-ui9ZCn1Q3T.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d14d8d204286305cb87cab8/file-ui9ZCn1Q3T]
+. Click *_Connect_*
+
+'''''
+
+=== Next Steps
+
+Now that your Sendlane account is Linked with PayKickstart, we'll
+connect a specific PayKickstart Product within a Campaign, to a List in
+Sendlane.
+
+. From your *_Campaigns page_*, select your desired *_Product_* from the
+dropdown next to your desired Campaign
+. Click the *_pencil_* to go into the product
+editorimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d14dd3b04286305cb87cb01/file-hHwFOYav7L.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d14dd3b04286305cb87cb01/file-hHwFOYav7L]
+. Scroll down to *_Integrations_*, and enable *_Email
+Integration_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d14dd9b04286305cb87cb04/file-B2Nkhav6NB.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d14dd9b04286305cb87cb04/file-B2Nkhav6NB]
+. Now you have some options. From here, you can select which triggers
+will add a contact to a specific List within Sendlane. After clicking
+Enable on the desired trigger, continue making selections from each of
+the appearing dropdown boxes, selecting your List, tags, etc.
+. Scroll to the top and click *_Save_*
+
+====== Please Note
+
+You may wish to make different lists for different triggers. i.e, one
+for abandoned carts, one for successful conversions, etc.
+
+Your Integration is now complete!
+
+'''''
+
+=== Test Mode: Testing your funnel before going live
+
+With PayKickstart, you have the ability to test everything before going
+live, using the Test Mode feature. To enable that, you will need to
+navigate to *_Campaigns_* and select *_Test Mode_* from the
+*_Campaign Status_* column:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e60bb832c7d3a7e9ae8b3da/file-Is3IxJNFR7.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e60bb832c7d3a7e9ae8b3da/file-Is3IxJNFR7]
+
+Now that *_Test Mode_* is enabled, you can run _test transactions_
+without having to worry that the payments go through. 
+
+====== Please Note
+
+Once Test Mode is enabled, only the transactions will be considered
+_test_ ones. All other integrations attached to the campaign will still
+trigger for testing purposes.
+
+After you go through the checkout page submission, you can also check
+these  *_Test transactions_* by going to *_Payments → Transactions →
+Test:_*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e60bc7f04286364bc963ea5/file-XC5WT2ZuSe.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e60bc7f04286364bc963ea5/file-XC5WT2ZuSe]
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to PayKickstart, so we're only able to
+provide limited troubleshooting support. However, if you do need help,
+the PayKickstart team is just a few clicks away!
+
+https://support.digitalkickstart.com/support/tickets/new[Connect] with
+the PayKickstart team
+
+Read through PayKickStart's integration
+https://support.paykickstart.com/knowledge-base/integrating-sendlane/[help
+document ]
+
+'''''
+
+==== Additional PayKickstart Resources
+
+https://paykstrt.com/2539/32670[Sign Up for Paykickstart] |
+https://paykickstart.com/blog/[Blog] |
+https://support.paykickstart.com/[FAQ]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/is-sendlane-affiliate-marketing-friendly[Is
+Sendlane Affiliate Marketing Friendly?]
+* https://www.sendlane.com/blog-posts/first-impression-that-drives-more-sales[How
+to Make A Great First Impression That Drives More Sales]
+* https://www.sendlane.com/blog-posts/10-simple-ways-to-optimize-your-checkout-process[10
+Simple Ways to Optimize Your Checkout Process]
+
+'''''
+
+=== TL;DR
+
+Integrating: Homepage → Drop-down → Autoresponders → + Add an Email
+Integration → Select Sendlane → Enter account name, email/Subdomain/API
+Key → Connect → Homepage → Campaigns → Product → Editor → Integrations →
+Sendlane → Select triggers → Choose List/Tags → Save

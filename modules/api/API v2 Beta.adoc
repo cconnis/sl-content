@@ -1,0 +1,43 @@
+[[beta-live]]
+=== Sendlane’s API v2 is now in beta! 
+
+Sendlane customers can use API v2 to integrate with custom interfaces
+and eCommerce stores and access and export data for personal data
+storage solutions.
+
+API v2 is in beta! Please proceed with caution.
+
+Check out the
+https://sendlane.stoplight.io/docs/api-documentation/docs/GettingStarted.md[Sendlane
+API v2 documentation] for a full index of Sendlane’s API calls.
+
+[[before-starting]]
+=== Before Getting Started
+
+Sendlane’s API v2 requires an API Token that is generated in your
+Sendlane account. Follow the guide below to grab your API Token:
+
+Click the *_Account_* icon → *_API_* → *_Create API Token_*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6109cc306ffe270af2a9593e/file-dp0H6k4FFH.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6109cc306ffe270af2a9593e/file-dp0H6k4FFH]
+
+Enter a *_Token name_* for the API token → *_Create_*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6109cce0b55c2b04bf6db1cf/file-yvexiyg1hz.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6109cce0b55c2b04bf6db1cf/file-yvexiyg1hz]
+
+Clicking Create will open the _Access Token created_ window. Use the
+*_Copy API Token_* button to copy the entire token. You must copy the
+API Token at this step and store it somewhere secure.
+
+The API Token cannot be accessed again after exiting the Access Token
+created window.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6109cdf564a230081ba1bf52/file-DrxAKYTH88.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6109cdf564a230081ba1bf52/file-DrxAKYTH88]
+
+=== Troubleshooting
+
+*I’m getting a “Could not get any response” error!*
+
+If you are located outside the United States and using a proxy, a “Could
+not get any response” error can sometimes be resolved by turning the
+proxy off.

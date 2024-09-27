@@ -1,0 +1,25 @@
+==== Overview
+
+Using goal, conditional split, or audience split logic and inserting
+wait times in your automation is a great way to send customers through a
+highly targeted and personalized path based on their actions and
+preferences! 
+
+Check out the guides below to learn about each logic and timing control
+in Sendlane automations.
+
+==== Automation logic and timing nodes
+
+* https://help.sendlane.com/article/698-how-to-use-wait-nodes[Adjust
+timing with wait nodes]: Start a countdown from the time contacts last
+received a message from you before they receive another to prevent
+saturating their inboxes
+* https://help.sendlane.com/article/699-how-to-use-goals[Determine next
+action with goals]: Move contacts ahead to a different point in the
+automation once the goal is reached.
+* https://help.sendlane.com/article/697-how-to-use-conditional-splits[Create
+logic based paths with conditional splits]: Specify the path contacts
+will take within your automation based on conditions or rules. 
+* https://help.sendlane.com/article/700-how-to-split-your-automation-audience-to-a-b-test-two-paths[Split
+your audience to A/B test two paths]: Split your audience into two
+random segments and send them down separate paths

@@ -1,0 +1,103 @@
+SMS, or Short Message Service, is a great new way to stay connected with
+your contacts. Easily design and create hyper-personalized SMS messages
+based on actions and behaviors to deploy the right message, to the right
+contact, at the right time!
+
+Sendlane's SMS functionality is only available on paid plans.
+
+In this article we'll cover how to:
+
+* link:#activating[Activate an SMS plan]
+* link:#automation[Send SMS messages]
+
+'''''
+
+=== Before Getting Started
+
+Please be sure you've started collecting phone numbers for your contacts
+prior to sending any SMS messages. You can either create a
+https://help.sendlane.com/article/308-pop-ups[Pop-up] in Sendlane, or
+use a platform that we integrate with such as
+https://a.paddle.com/v2/click/30347/37978?link=1070[Convertful] to
+collect phone numbers!
+
+====== International SMS
+
+We do not currently support international SMS at this time due to data
+restrictions and privacy regulations, so please be sure the phone
+numbers you collect are from US-based contacts only.
+
+*Cannabis Related SMS Content*
+
+Sendlane strictly adheres to all federal communication regulations, and
+cannot provide SMS services for cannabis related content due to current
+federal regulations prohibiting the use of SMS for cannabis marketing.
+Cannabis related content is welcome on Sendlane's platform for email
+marketing.
+
+'''''
+
+[[activating]]
+=== Activating SMS Messaging
+
+. From your Sendlane dashboard, click on *_Account_* → *_Billing_* 
+. Under SMS Plan click the Terms of Service checkbox
+. Click Add SMS
+Planimage:https://lh6.googleusercontent.com/qxGzhzDF2jiB0NXNnXzUYBIhpuJ6jn1asYXqlnACktLO340eJlm4g4bJX3e7iD-UHDTp9qp-hv_v1kFnAebFpKFh_JzrwCDl22k47zZCw-jM6toXB_-_ObdLDOrqBujBJ9h3a-_y[https://lh6.googleusercontent.com/qxGzhzDF2jiB0NXNnXzUYBIhpuJ6jn1asYXqlnACktLO340eJlm4g4bJX3e7iD-UHDTp9qp-hv_v1kFnAebFpKFh_JzrwCDl22k47zZCw-jM6toXB_-_ObdLDOrqBujBJ9h3a-_y,width=482,height=241]
+. Choose a phone number to send SMS messages to your Contacts from and
+click Get
+Numberimage:https://lh4.googleusercontent.com/RdacvfoFNRl-3jZIhIsCSJ_oMQxbpgvpHVG7Gh-SKV0KjDduEHVW87cjJJcCwL75va7HTe3VVvVSWUjWyX-mWS0YCEbpmSKUhR2xN1xJKAaRn0RdctiaiwV59cYTey6Us1oEQrj7[https://lh4.googleusercontent.com/RdacvfoFNRl-3jZIhIsCSJ_oMQxbpgvpHVG7Gh-SKV0KjDduEHVW87cjJJcCwL75va7HTe3VVvVSWUjWyX-mWS0YCEbpmSKUhR2xN1xJKAaRn0RdctiaiwV59cYTey6Us1oEQrj7,width=244,height=159]
+. Confirm the SMS activation plan upgrade by clicking Proceed
+. In the *_SMS_* section, select the number of credits you'd like to
+purchase
+. Click *Add to
+Account*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e4f1aae2c7d3a7e9ae8155d/file-VcIqVyXg9J.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e4f1aae2c7d3a7e9ae8155d/file-VcIqVyXg9J]
+
+You're all set! You can now use SMS within automations to send text
+messages to your contacts.
+
+====== Please Note
+
+The SMS Service Plan is $10 per month, and rebills on the same date as
+your regular subscription plan. Credits are purchased separately. 
+
+Each credit purchase is a one-time-only payment and is equivalent to the
+number of texts you can send. 1 credit = 1 text.
+
+'''''
+
+[[automation]]
+=== Sending SMS Messages via an Automation
+
+. From your Sendlane dashboard, click on *_Automations_*
+. Click on *_New Automation_* in the top right.
+https://help.sendlane.com/article/73-automations[Here's] where you can
+learn more about creating Automations
+. https://help.sendlane.com/article/73-automations[]Select the _Start
+from scratch_ option
+. Select an appropriate trigger to begin your automation. In this
+example, we will use _Subscribes to a List_ 
+. Next, you will select *_Send Message_* followed by
+*_Send_* *_SMSimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fad9b45cff47e00160b9661/file-VE4FyqJvMQ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fad9b45cff47e00160b9661/file-VE4FyqJvMQ]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fad9b64cff47e00160b9663/file-gJYj6grIrY.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fad9b64cff47e00160b9663/file-gJYj6grIrY]_*
+. Once the action has been added, you will be able to create the body of
+your SMS message on the right side of the editor 
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fcbb35ade1bfa158fb55ad7/file-jgTo7ROnSG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5fcbb35ade1bfa158fb55ad7/file-jgTo7ROnSG]
+. Continue to build out your automation to include any other desired
+actions
+. Don't forget to _Activate_ the automation once you're done building
+out your funnel
+
+Once the automation is triggered, SMS messages will be sent to your
+contacts after an automatic 24 hour waiting period!
+
+'''''
+
+=== TL;DR
+
+[.underline]#Activating SMS:# Account → Billing → Activate SMS → Get
+Phone Number
+
+[.underline]#Creating an Automation Using SMS:# Automation → New
+Automation → Start from scratch → Select trigger → Send Message → SMS →
+Create Message → Save and Activate automation

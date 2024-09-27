@@ -1,0 +1,136 @@
+First things first, Welcome to Sendlane! * *
+
+If you're interested in getting started or having trouble activating
+your account, this Introduction and Activation Guide will walk you
+through exactly how to do just that! 
+
+Specifically, we will cover how to:
+
+* link:#create-account[Create a Sendlane account]
+* link:#activate[Activate/verify your new account]
+* link:#basics[Complete your onboarding survey]
+
+Plus, we'll also go over the link:#next-steps[next steps] and
+link:#additional[additional resources]!
+
+'''''
+
+[[create-account]]
+=== Create a Sendlane Account
+
+If you haven't already signed up, head over the
+https://sendlane.com/pricing[Sendlane site], choose the plan that works
+best for you (or, select our
+https://help.sendlane.com/article/197-free-14-day-trial[free 14-day
+trial]) and register!
+
+====== Please Note
+
+You do need to have a fully functional
+https://help.sendlane.com/article/108-business-website-company-email[_business_
+email address] to register with Sendlane. If you cannot send and receive
+emails via the email address you used to register, you cannot complete
+the verification process to create your account.
+
+'''''
+
+[[activate]]
+=== Activate/Verify Your New Account
+
+Keep an eye on your inbox because once you register, we'll be sending
+you an email to verify your account details with the subject line
+*"Final Step: Confirm Your Account"*.
+
+When you receive our activation/verification email simply click the pink
+button in the email that says _*Activate
+Account*._image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d2dfffa042863478674f6e8/file-6519rLHR0O.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d2dfffa042863478674f6e8/file-6519rLHR0O]
+
+====== Please Note
+
+Be sure to check all inbox folders in the email account you used to
+register for Sendlane. You cannot access your new Sendlane account until
+you click on the button in your activation/verification email.
+
+Then, the final step of the activation process is a short survey about
+you and your business. Once you've answered a few quick questions, your
+account will be fully activated and ready to go!
+
+Next, we'll complete the onboarding survey for your account.
+
+'''''
+
+[[basics]]
+=== Complete Your Onboarding Survey
+
+The first thing you'll see after activating your Sendlane account is
+your *Onboarding Survey*.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5daf8cf804286364bc90c0ee/file-nKMWLP5vzj.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5daf8cf804286364bc90c0ee/file-nKMWLP5vzj]
+
+This survey was designed to help customize your Sendlane experience with
+the most relevant tools and features for your business.
+
+All you have to do is answer a few quick questions about your company,
+your sender info, and your eCommerce Store - _if you have one!_
+
+. {blank}
++
+====== Please Note
+
+On the *_Your Sender Info_* page, you cannot use a free email account
+such as Gmail, Yahoo, or Hotmail for your _From Email_.
+
+We are compliant with current data processing and privacy regulations
+which require all marketing emails to be sent from a paid, custom domain
+email address.
+
+Sendlane will create your first
+https://help.sendlane.com/article/107-how-to-create-a-sender-profile[Sender
+Profile], default https://help.sendlane.com/article/125-lists[List], and
+even help connect your
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify],
+or
+https://help.sendlane.com/article/98-how-to-integrate-woocommerce-and-sendlane[WooCommerce]
+store automatically!
+
+. {blank}
++
+====== Please Note 
+
+Be sure you've entered information into *_every_* field of your
+onboarding survey! If any fields are left blank, the Next button will
+not be visible and the survey cannot be submitted.
+
+'''''
+
+=== Next Steps
+
+Once you complete your onboarding survey, you can focus on setting up
+the rest of your account with our
+https://help.sendlane.com/article/325-sendlane-quick-start-guide[Quick
+Start Guide]!
+
+'''''
+
+[[additional]]
+=== Additional Sendlane Resources
+
+* Sendlane's searchable https://help.sendlane.com/[Knowledge Base]
+* Sendlane https://www.sendlane.com/blog[blog]
+* the
+link:++https://www.youtube.com/channel/UCCNc--p7AN9ULMwOwP2AcZQ++[Sendlane
+Training Youtube Channel ]
+* Sendlane's
+https://partners.sendlane.com/integrations/#directoryApp[Integration
+Marketplace]
+
+And if you hit any roadblocks, you can also get in touch with our team
+of email marketing automation experts mailto:support@sendlane.com[right
+here]!
+
+'''''
+
+=== TL;DR
+
+Create Sendlane Account → Activate Your New Account → Complete
+Onboarding Survey → Quick Start Guide

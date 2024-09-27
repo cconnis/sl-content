@@ -1,0 +1,135 @@
+When you select Recipients' Local Timezone for scheduling campaigns or
+creating wait nodes in automations, contacts' time zones are determined
+in the following order:
+
+. Combination of the ZIP code or province and country shown on their
+contact profile
+. Contact's phone number area code
+. Contact's IP address (set by their latest click on a tracking link)
+. Country shown on the contact's profile
+
+[cols=",",]
+|===
+|name |timezone
+|Andorra |Europe/Andorra
+|United Arab Emirates |Asia/Dubai
+|Afghanistan |Asia/Kabul
+|Antigua and Barbuda |America/Antigua
+|Anguilla |America/Anguilla
+|Albania |Europe/Tirane
+|Armenia |Asia/Yerevan
+|Netherlands Antilles |America/Curacao
+|Angola |Africa/Luanda
+|Antarctica |Antarctica/Casey
+|Argentina |America/Argentina/Buenos_Aires
+|American Samoa |Pacific/Pago_Pago
+|Austria |Europe/Vienna
+|Australia |Australia/Sydney
+|Aruba |America/Aruba
+|Aland |Europe/Mariehamn
+|Azerbaijan |Asia/Baku
+|Bosnia and Herzegovina |Europe/Sarajevo
+|Barbados |America/Barbados
+|Bangladesh |Asia/Dhaka
+|Belgium |Europe/Brussels
+|Burkina Faso |Africa/Ouagadougou
+|Bulgaria |Europe/Sofia
+|Bahrain |Asia/Bahrain
+|Burundi |Africa/Bujumbura
+|Benin |Africa/Porto-Novo
+|Saint Barth?lemy |America/St_Barthelemy
+|Bermuda |Atlantic/Bermuda
+|Brunei Darussalam |Asia/Brunei
+|Bolivia |America/La_Paz
+|Brazil |America/Sao_Paulo
+|Bahamas |America/Nassau
+|Bhutan |Asia/Thimphu
+|Bouvet Island |Antarctica/Syowa
+|Botswana |Africa/Gaborone
+|Belarus |Europe/Minsk
+|Belize |America/Belize
+|Canada |America/Toronto
+|Cocos (Keeling) Islands |Indian/Cocos
+|Congo (Kinshasa) |Africa/Kinshasa
+|Central African Republic |Africa/Bangui
+|Congo |Africa/Brazzaville
+|Switzerland |Europe/Zurich
+|Cote d'Ivoire |Africa/Abidjan
+|Cook Islands |Pacific/Rarotonga
+|Chile |America/Santiago
+|Cameroon |Africa/Douala
+|China |Asia/Shanghai
+|Colombia |America/Bogota
+|Costa Rica |America/Costa_Rica
+|Cuba |America/Havana
+|Cape Verde |Atlantic/Cape_Verde
+|Christmas Island |Indian/Christmas
+|Cyprus |Asia/Nicosia
+|Czech Republic |Europe/Prague
+|Germany |Europe/Berlin
+|Djibouti |Africa/Djibouti
+|Denmark |Europe/Copenhagen
+|Dominica |America/Dominica
+|Dominican Republic |America/Santo_Domingo
+|Algeria |Africa/Algiers
+|Ecuador |America/Guayaquil
+|Estonia |Europe/Tallinn
+|Egypt |Africa/Cairo
+|Western Sahara |Africa/El_Aaiun
+|Eritrea |Africa/Asmara
+|Spain |Europe/Madrid
+|Ethiopia |Africa/Addis_Ababa
+|Finland |Europe/Helsinki
+|Fiji |Pacific/Fiji
+|Falkland Islands |Atlantic/Stanley
+|Micronesia |Pacific/Pohnpei
+|Faroe Islands |Atlantic/Faroe
+|France |Europe/Paris
+|Gabon |Africa/Libreville
+|United Kingdom |Europe/London
+|Grenada |America/Grenada
+|Georgia |Asia/Tbilisi
+|French Guiana |America/Cayenne
+|Guernsey |Europe/Guernsey
+|Ghana |Africa/Accra
+|Gibraltar |Europe/Gibraltar
+|Greenland |America/Godthab
+|Gambia |Africa/Banjul
+|Guinea |Africa/Conakry
+|Guadeloupe |America/Guadeloupe
+|Equatorial Guinea |Africa/Malabo
+|Greece |Europe/Athens
+|South Georgia and South Sandwich Islands |Atlantic/South_Georgia
+|Guatemala |America/Guatemala
+|Guam |Pacific/Guam
+|Guinea-Bissau |Africa/Bissau
+|Guyana |America/Guyana
+|Hong Kong |Asia/Hong_Kong
+|Heard and McDonald Islands |Indian/Kerguelen
+|Honduras |America/Tegucigalpa
+|Croatia |Europe/Zagreb
+|Haiti |America/Port-au-Prince
+|Hungary |Europe/Budapest
+|Indonesia |Asia/Jakarta
+|Ireland |Europe/Dublin
+|Israel |Asia/Jerusalem
+|Isle of Man |Europe/Isle_of_Man
+|India |Asia/Kolkata
+|British Indian Ocean Territory |Indian/Chagos
+|Iraq |Asia/Baghdad
+|Iran |Asia/Tehran
+|Iceland |Atlantic/Reykjavik
+|Italy |Europe/Rome
+|Jersey |Europe/Jersey
+|Jamaica |America/Jamaica
+|Jordan |Asia/Amman
+|Japan |Asia/Tokyo
+|Kenya |Africa/Nairobi
+|Kyrgyzstan |Asia/Bishkek
+|Cambodia |Asia/Phnom_Penh
+|Kiribati |Pacific/Tarawa
+|Comoros |Indian/Comoro
+|Saint Kitts and Nevis |America/St_Kitts
+|North Korea |Asia/Pyongyang
+|South Korea |Asia/Seoul
+|===

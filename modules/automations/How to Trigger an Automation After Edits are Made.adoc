@@ -1,0 +1,54 @@
+When you edit the flow of an active Automation, only edits to
+existing email content will be received by contacts in real-time. Any
+other edits will not be seen by Contacts who are already moving through
+the flow.
+
+To manually re-trigger an Automation, you will create a Segment of
+existing Contacts, send those Contacts a campaign, and add an Email
+Campaign Opened trigger to your existing Automation.
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Deactivate the Automation you'll be manually triggering
+
+1::
+  This Segment will be used to send a Campaign to your existing Create a
+  Segment by clicking on the *Audience* icon > *Segments* > *+Segment* >
+  Enter a *name* > *Confirm*
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62db13d0b828a850e9e607cc/file-ILf5Dbsnpy.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62db13d0b828a850e9e607cc/file-ILf5Dbsnpy]
+  +
+  Use the  `+Subscription date+` operator set to `+is before+` the date
+  your Automation was edited
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62db146bb828a850e9e607cd/file-sa1gvDw2GY.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62db146bb828a850e9e607cd/file-sa1gvDw2GY]
+
+2::
+  Create a Campaign by clicking the *Campaign* icon > *New Email
+  Campaign* > Enter a *name* > Select the Segment created in the
+  previous step as the
+  *Audience*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62db1669a3bd5139650527e4/file-4Jv02JcrL1.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62db1669a3bd5139650527e4/file-4Jv02JcrL1]
+  +
+  Design the email with information your Contacts are particularly
+  likely to open, then Schedule your Campaign for the closest available
+  time.
+
+3::
+  . Open the edited Automation you made edits to
+  . Click *Add Trigger*
+  . Click *Email Campaign Opened*
+  . Select the *Campaign* you just sent
+  . Click *Done*
+  . Click *Active* to reactivate your Automation!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62db23b1b828a850e9e607f8/file-jKy6aUpxQj.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62db23b1b828a850e9e607f8/file-jKy6aUpxQj]
+
+=== 
+
+=== Troubleshooting
+
+====== My Campaign isn't showing up in the Email Campaign Opened trigger options!
+
+Check that your Campaign has been scheduled. If your Campaign has been
+saved as a draft, it will not appear in the trigger options.

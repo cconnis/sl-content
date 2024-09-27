@@ -1,0 +1,225 @@
+==== Overview
+
+Welcome to Sendlane Reviews! With Sendlane Reviews you can collect,
+monitor, and leverage review behavior data to increase revenue, all
+within the Sendlane platform and included free with your email
+subscription! Sendlane Reviews also provides review previews on organic
+Google searches of your products!
+
+Read on to get started with Sendlane Reviews, and use the checklists in
+this guide to track your progress!
+
+==== In This Guide
+
+. link:#2[Import Existing Reviews]
+. link:#install[Install and Customize Main Reviews Widget and Star
+Rating Widget]
+. link:#3[Set Up Reviews Automations]
+
+'''''
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Integrate your Sendlane account with
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify]
+or
+https://help.sendlane.com/article/454-integrate-bigcommerce-and-sendlane[BigCommerce]
+
+Turn off your previous Reviews providers' review request system
+
+Have admin access to your Shopify or BigCommerce store
+
+Create a https://app.sendlane.com/audience/lists[List] named `+Reviews+`
+
+Associate the `+Reviews+` List with your eCommerce integration by
+clicking the Settings icon next to your store and selecting the List
+from the Reviews dropdown
+
+On your https://app.sendlane.com/integrations/shopify[Shopify] or
+https://app.sendlane.com/integrations/bigcommerce[BigCommerce]
+integration page, click the Settings icon and select your new Reviews
+List under the Reviews dropdown
+
+[[loyalty]]
+===== 🚨 Sendlane Reviews does not include loyalty functionality
+
+If your existing reviews platform includes loyalty points or other
+rewards functionality, you will need to maintain access to it.
+
+1::
+  If you’ve already collected reviews with another platform you can
+  import them to Sendlane and hit the ground running!
+  +
+  Follow the instructions provided in our platform specific review
+  import guides:
+  +
+  * https://help.sendlane.com/article/656-how-to-import-reviews-from-okendo[How
+  to import reviews from Okendo]
+  * https://help.sendlane.com/article/643-how-to-import-shopify-product-reviews[How
+  to import reviews from Shopify Reviews]
+  * https://help.sendlane.com/article/644-how-to-import-bigcommerce-reviews[How
+  to import reviews from BigCommerce]
+  * https://help.sendlane.com/article/646-how-to-import-loox-reviews[How
+  to import reviews from Loox]
+  * https://help.sendlane.com/article/645-how-to-import-judge-me-reviews[How
+  to import reviews from Judge.me]
+  * https://help.sendlane.com/article/657-how-to-import-reviews-from-stamped-io[How
+  to import reviews from Stamped.io]
+  * https://help.sendlane.com/article/658-another-provider[How to import
+  reviews from another provider]
+  +
+  ===== 📍 Import Checkpoint
+
+  At this point, you should have:
+
+  Exported reviews from a previous reviews provider
+
+  Formatted the .CSV file of reviews according to Sendlane Review file
+  acceptance standards
+
+  Uploaded the .CSV file of reviews to your Sendlane account
+2::
+  Sendlane Reviews requires three snippets to be added to your Shopify
+  or BigCommerce store. A script connects your store to your Sendlane
+  account, and two widgets display product reviews and average star
+  ratings.
+  +
+  {empty}1. Check out our detailed step by step guides to installing
+  Reviews:
+  +
+  * https://help.sendlane.com/article/522-how-to-install-reviews-shopify[Shopify]
+  * [#bc-tt]#BigCommerce installation varies depending on your theme
+  type. Read
+  https://support.bigcommerce.com/s/article/Which-Theme-Platform-do-I-have?language=en_US[BigCommerce's
+  doc on determining your theme type], then click corresponding the link
+  below:#
+  ** https://help.sendlane.com/article/560-how-to-install-reviews-bigcommerce[BigCommerce
+  Blueprint themes]
+  ** https://help.sendlane.com/article/560-how-to-install-reviews-bigcommerce[]https://help.sendlane.com/article/567-how-to-install-reviews-for-bigcommerce-stencil-themes[BigCommerce
+  Stencil themes]
+  +
+  {empty}2. Check out
+  https://help.sendlane.com/article/547-how-to-customize-review-widget-styling[our
+  guide to customizing your reviews widget] for a thorough look at all
+  settings and style options.
+  +
+  {empty}3.
+  https://help.sendlane.com/article/524-how-to-set-up-seo-full-page-for-reviews[Install
+  and style an SEO page of all reviews]
+  +
+  ===== 📍 Installation Checkpoint
+
+  At this point, you should have:
+
+  Installed the Reviews Script in your eCommerce store
+
+  Installed the Reviews Main Widget in your eCommerce store
+
+  Installed the Reviews Star Rating Widget in your eCommerce store
+
+  Customized your Reviews widget's styling
+
+  Installed an SEO page of reviews
+
+  Customized the SEO page's styling
+3::
+  Sendlane’s Reviews platform is powered by our in house Automations
+  which let you automatically request reviews from purchasers, respond
+  to reviews with an email or SMS message, and notify reviewers that
+  you've commented on their review.
+  +
+  Use the guides linked in the table below to set up Automations for
+  Sendlane Reviews!
+  +
+  [width="100%",cols="50%,50%",]
+  |===
+  |*Automation* |*Required?*
+
+  |https://help.sendlane.com/article/553-review-request-automation[Review
+  Request Automation] + |Yes
+
+  |https://help.sendlane.com/article/556-how-to-respond-to-new-reviews-with-automations[Review
+  Response] + |Highly recommended but not required for Reviews to
+  function
+
+  |https://help.sendlane.com/article/555-how-to-notify-customers-of-review-comment-responses-with-automations[Review
+  Reply Notification] + |Highly recommended but not required for Reviews
+  to function
+  |===
+  +
+  ===== 📍 Automation Checkpoint
+
+  At this point, you should have:
+
+  Created an Automation to request reviews from customers
+
+  Created an Automation to send an email or SMS response to review
+  submitters
+
+  Created an Automation to notify review submitters that you've replied
+  to their review in your store
+
+  Activated each of the Automations
+
+[[next]]
+=== ⏭️ Next Steps
+
+[[mod]]
+==== Moderate Reviews
+
+With Sendlane Reviews your customers can “like” reviews and you can
+reply to reviews to increase engagement!
+
+Head to the Moderation tab of the Reviews page to adjust review
+settings, comment settings, and moderation settings. Reviews can be
+rejected for a wide range of reasons allowing you to keep bad actors out
+of your store’s average review score.
+
+Check out our guide to
+https://help.sendlane.com/article/527-how-to-moderate-reviews[review
+moderation] for more details!
+
+[[FAQ]]
+=== Frequently Asked Questions
+
+[[cost]]
+====== How much does Sendlane Reviews cost?
+
+Sendlane Reviews is completely free and included with your email
+subscription! The only costs you'll incur when using Sendlane Reviews
+are the email credits used by link:#3[reviews-related Automations]
+
+[[platforms]]
+====== Which eCommerce platforms can integrate with Sendlane Reviews?
+
+Sendlane Reviews supports
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify],
+https://help.sendlane.com/article/454-integrate-bigcommerce-and-sendlane[BigCommerce],
+and
+https://help.sendlane.com/article/451-custom-integration-setup[custom
+stores].
+
+[[sms]]
+====== Can you use SMS with Sendlane Reviews?
+
+SMS is not currently supported for requesting or responding to Sendlane
+Reviews, but this functionality is on our road map!
+
+[[submissions]]
+====== What can customers submit with their reviews?
+
+Customers must submit text of their review and have the option to upload
+photos. Videos are not currently supported.
+
+[[questions]]
+====== Does Sendlane Reviews include question and answer functionality or custom questions about specific products?
+
+Sendlane Reviews does not currently support questions and answers where
+customers ask questions that the merchant or other customers can answer,
+or custom questions about specific products.
+
+[[language]]
+====== Can the Reviews widget's language be changed?
+
+At this time the Reviews widget is only available in English

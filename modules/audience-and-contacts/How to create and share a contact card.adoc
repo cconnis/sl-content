@@ -1,0 +1,61 @@
+==== Overview
+
+You can create a contact card or a virtual business card (vCard), which
+lets your Contacts save your brand's phone number, name, and image to
+their phone's contacts, making it easier to recognize SMS messages from
+you! Read on to learn how to create and share a contact card.
+
+==== In this guide
+
+* link:#create[Create a contact card]
+* link:#share[Share your contact card]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+ Sign up for Sendlane SMS
+
+ Prepare a branded icon for your contact card
+
+[[bgs]]
+===== ⚠️ Contact cards might look odd when using test sends
+
+https://help.sendlane.com/article/599-how-to-send-a-test-email[Test SMS
+messages] might render the contact card with special characters. Regular
+Campaign or Automation SMS messages render contact cards normally.
+
+'''''
+
+1::
+  A contact card is a .VCF file that stores contact information in any
+  system designed to store contact information, including smart phones
+  and email providers.
+  +
+  There are two ways to create a contact card:
+  +
+  . Use an online .VCF file generator like
+  https://vcardmaker.com/[vcardmaker.com]. We recommend this method
+  because it provides many customization options and will be
+  standardized across inbox providers. Enter your brand's information,
+  then click Generate at the bottom of the page to download your .VCF
+  file.
+  . Use your email provider's address book functionality to download a
+  .VCF file. We do not recommend this method because the contact card
+  may only appear to Contacts who use the inbox provider the file was
+  generated from.
+2::
+  Share your contact card via email and SMS messages by creating a
+  download link for your .VCF file and including that link in an email
+  or SMS message:
+  +
+  . Log in to a cloud storage service like Google Drive or Dropbox
+  . Upload your .VCF file
+  . Set sharing options to public or viewable by anyone
+  . Follow instructions for your cloud storage service to create an
+  automatic download link  +
+  .. https://www.howtogeek.com/747810/how-to-make-a-direct-download-link-for-google-drive-files/[Google
+  Drive]
+  .. https://help.dropbox.com/share/force-download[Dropbox]
+  . Include the automatic download link in an email or SMS message
+  . Ask Contacts to save your contact card to their phones in the
+  message that sends them the link

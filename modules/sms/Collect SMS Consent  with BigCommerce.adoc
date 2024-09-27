@@ -1,0 +1,70 @@
+Grow your Audience and drive engagement with customers who love your
+products by gathering their consent to receive SMS messages during
+account creation for your BigCommerce store!
+
+Start collecting SMS consent by creating a checkbox for your BigCommerce
+account creation page using the instructions below!
+
+[[create]]
+=== Create SMS Consent Checkbox
+
+Log in to your BigCommerce account to get started.
+
+Click *Advanced Settings* > *Account Signup Form* > *Create a New Field*
+> *Checkboxes*
+
+image:https://lh4.googleusercontent.com/q2mgPZuO2pQ0LIEovIISo2EDUzekWE--HR3fqCHSjRk6v8P5UE5ssPGB85IV1KqlPRnRthOxokjpHqdydUsWBB2_RhxZPHZlj5EUAod2KMlxNeKS_RJThwdxZbjHWYPUuvO_O-wu[https://lh4.googleusercontent.com/q2mgPZuO2pQ0LIEovIISo2EDUzekWE--HR3fqCHSjRk6v8P5UE5ssPGB85IV1KqlPRnRthOxokjpHqdydUsWBB2_RhxZPHZlj5EUAod2KMlxNeKS_RJThwdxZbjHWYPUuvO_O-wu,width=720,height=593]
+
+Complete the Create a Checkboxes fields:
+
+* *Field Name* `+SMS Consent+`
+* *List of Values* `+Subscribe to marketing texts+`
+* *Required* Leave unchecked (SMS consent cannot be required)
+* *CSS Class Name* Leave blank
+* *Inline-CSS Style* Leave blank
+
+Click *Save* to save the SMS consent checkbox to your checkout form!
+
+Customers will now see a checkbox like this on your BigCommerce account
+creation form:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6206a6b9025ca67522c7a59b/file-OJ4ExDDWKD.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6206a6b9025ca67522c7a59b/file-OJ4ExDDWKD]
+
+[[confirm]]
+=== Confirm SMS Consent in Contact Profiles
+
+Below is an example of what the default structure from the webhook
+coming into Sendlane will look like if they have checked the SMS Consent
+box (if they do not check the box, no data is sent):
+
+....
+$customer->customer_data = [
+            'form_fields' => [
+                [
+                    'name' => 'SMS Consent',
+                    'value' => [
+                        'Subscribe to marketing texts'
+                    ]
+                ],
+            ]
+        ];
+....
+
+A green checkmark next to the SMS icon in a Contact’s profile indicates
+that they have provided consent to receive SMS messages
+
+image:https://lh6.googleusercontent.com/47d3ofBkVKbzu2Zb_PbxBHtIuCnSJny4Tk8iFMwnR8YDSYitH9fki-znuKUHw1Kf78t71ASaJXgFts2VgT9uArd2ZS8_1KKZYr51YlRnPpHRzE5xOC64-JVjppD8Hc3zx6K670ZU[https://lh6.googleusercontent.com/47d3ofBkVKbzu2Zb_PbxBHtIuCnSJny4Tk8iFMwnR8YDSYitH9fki-znuKUHw1Kf78t71ASaJXgFts2VgT9uArd2ZS8_1KKZYr51YlRnPpHRzE5xOC64-JVjppD8Hc3zx6K670ZU,width=346,height=111]
+
+=== Troubleshooting
+
+[[values]]
+====== I don't see SMS Consent being updated in Contacts' profiles!
+
+Make sure that the Field Name and List of Values in your form matches
+the text below exactly:
+
+* *Field Name* `+SMS Consent+`
+* *List of Values* `+Subscribe to marketing texts+`
+
+Any variation in these fields will prevent SMS consent from being
+recorded in your Contacts' profiles.

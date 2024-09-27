@@ -1,0 +1,117 @@
+Use Recharge's Quick Action URLs to help your customers manage their
+subscriptions!
+
+Using the templating syntax `+{{ trigger.function() }}+` you can create
+dynamic links and buttons to dynamic subscription management actions in
+any Campaign or Automation email.
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Set up your
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify
+integration]
+
+Set up your
+https://help.sendlane.com/article/490-how-to-integrate-recharge-and-sendlane[Recharge
+integration]
+
+=== Add a Quick Action URL to an Email
+
+In this example, we'll add a URL that takes customers to their
+subscription portal. See below for all available quick actions! 
+
+Open a Campaign or Automation email and add a text box containing the
+following snippet
+
+....
+{{ trigger.getShopifyViewCustomerPortalURL() }}
+....
+
+image:https://lh4.googleusercontent.com/xk2PzPp4ufoLwyIzXrLh07D70IjxAhVxpSic3YN-XKI9e8gID-8BAT4c7yAMb99tEfunQxSFnJfPBi8Ru0wLSMcGmrgzYTZCaZFh4KYVVdiHg6VGnHxwaOTe4UVNbYLfrm0D6Jyr9QxPo8Xd_CzkMUSEx_dPpwcXzLw3SV99cPbnOfAEox7QRoFIb4sz[https://lh4.googleusercontent.com/xk2PzPp4ufoLwyIzXrLh07D70IjxAhVxpSic3YN-XKI9e8gID-8BAT4c7yAMb99tEfunQxSFnJfPBi8Ru0wLSMcGmrgzYTZCaZFh4KYVVdiHg6VGnHxwaOTe4UVNbYLfrm0D6Jyr9QxPo8Xd_CzkMUSEx_dPpwcXzLw3SV99cPbnOfAEox7QRoFIb4sz,width=624,height=264]
+
+Click the preview button to make sure the URL renders properly:
+
+image:https://lh4.googleusercontent.com/fvD7hnRCcgR3OqEThq_90eFhseOTmxSl0dbxvqEmTZvUVS48h8t8Uh6Fa3NrXvZBLtoUvpBd7nGe7jYy1zzq0vvmMxy1Hsrp7fKfmKg8JiEHRk5UOGxt_fR_Ild6PwHSq70HeytiatgjDnLocReCNypeZTzdXo9-tWzxrepXnirBjgP3BBU850E069Ne[https://lh4.googleusercontent.com/fvD7hnRCcgR3OqEThq_90eFhseOTmxSl0dbxvqEmTZvUVS48h8t8Uh6Fa3NrXvZBLtoUvpBd7nGe7jYy1zzq0vvmMxy1Hsrp7fKfmKg8JiEHRk5UOGxt_fR_Ild6PwHSq70HeytiatgjDnLocReCNypeZTzdXo9-tWzxrepXnirBjgP3BBU850E069Ne,width=624,height=352]
+
+'''''
+
+=== Available Quick Action URLs
+
+See
+https://support.rechargepayments.com/hc/en-us/articles/4410118419095#h_01FJA185SBMR0R7MJJBFRYQ449[Recharge's
+detailed instructions] on adding your store's variables to quick action
+URLS.
+
+[width="100%",cols="34%,33%,33%",]
+|===
+|*Description* |*Notes* |*Function*
+
+|Link customer to their subscriptions page | a|
+....
+getShopifyViewCustomerPortalURL(page = 'subscriptions')
+        
+....
+
+|Ship next scheduled subscription order immediately | a|
+....
+getShopifyShipNextOrderURL()
+        
+....
+
+|Skip next scheduled subscription | a|
+....
+getShopifySkipNextOrderURL()
+        
+....
+
+|Delay next scheduled delivery |Set `+count+` to desired number of days
+a|
+....
+getShopifyDelayNextOrderURL(interval = 'days', count = 1)
+        
+....
+
+|Add a specified product to the next scheduled subscription order |Set 
+`+variantID+` to desired product a|
+....
+getShopifyAddOneTimeProductURL(variantID)
+        
+....
+
+|Change specified subscription |Set  `+variantID+` to desired
+subscription a|
+....
+getShopifySwapSubscriptionURL(variantId)
+        
+....
+
+|Reactivate customer's canceled subscription | a|
+....
+getShopifyReactivateCancelledSubscriptionURL()
+        
+....
+
+|Apply a specified discount to next order |Set `+discountCode+` to
+desired discount + a|
+....
+getShopifyApplyDiscountToNextOrderURL(discountCode)
+        
+....
+
+|Reactivate a canceled order with specified discount |Set 
+`+discountCode+` to desired discount a|
+....
+getShopifyReactivateCancelledWithDiscountURL(discountCode)
+        
+....
+
+|Reactivate a canceled order with specified product |Set 
+`+variantID+` to desired product + a|
+....
+getShopifyReactivateCancelledWithOneTimeProductURL(variantId)
+        
+....
+
+| | |
+|===

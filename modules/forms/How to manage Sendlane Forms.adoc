@@ -1,0 +1,113 @@
+[[top]]
+==== Overview
+
+Sendlane Forms can be edited and adjusted after publication to ensure
+you get as much use as possible out of the forms you dedicate resources
+to creating. Read on to learn how to manage your Sendlane Forms
+
+==== In this guide
+
+* link:#preview[Preview a form]
+* link:#edit[Edit a form]
+* link:#duplicate[Duplicate a form]
+* link:#rename[Rename a form]
+* link:#status[Change a form's status]
+* link:#delete[Delete a form]
+
+'''''
+
+[[preview]]
+=== Preview a form
+
+Preview a form to review the form's design, copy its installation code,
+or go to the form's design page.
+
+You must have visited the design page of the form builder in order for
+the form's design to be previewable. If the preview icon doesn't appear
+next to a form, open the form and click into the design page.
+
+To preview a form, click the *preview icon* in the actions column:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66623f38d593d719515ca3ee/file-TN1MrXPeH1.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66623f38d593d719515ca3ee/file-TN1MrXPeH1]
+
+link:#top[Back to top]
+
+'''''
+
+[[edit]]
+=== Edit a form
+
+To edit an existing form, click the *Edit icon* in the Actions column.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66623cd31f3fa9421e287ad4/file-ukZ3Hir75v.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66623cd31f3fa9421e287ad4/file-ukZ3Hir75v]
+
+link:#top[Back to top]
+
+'''''
+
+[[duplicate]]
+=== Duplicate a form
+
+To duplicate a form, click the *Duplicate icon* in the Actions column.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66623cf0d593d719515ca3ec/file-aHOst1huz2.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66623cf0d593d719515ca3ec/file-aHOst1huz2]
+
+link:#top[Back to top]
+
+'''''
+
+[[rename]]
+=== Rename a form
+
+The name of your Sendlane Form is visible on the Forms page and should
+describe your form. To change a form’s name:
+
+. In the actions column, click the *Edit icon*
+. Enter a new name in the *Form Name* field
+. Click *Design*
+. Click *Summary*
+. Click *Done*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66623da75940934e140f4722/file-fqmnQL0voy.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66623da75940934e140f4722/file-fqmnQL0voy]
+
+link:#top[Back to top]
+
+'''''
+
+[[status]]
+=== Change a form’s Status
+
+Sendlane Forms can be set to draft, publish, or schedule. To change a
+form’s status:
+
+. In the actions column, click the *Edit icon*
+. Click *Design*
+. Click *Summary*
+. Make your desired changes to the form’s status
+. Click *Save as Draft* for drafted forms, *Publish* for published
+forms, or *Schedule* for scheduled forms
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66623e03e1989867dcefdaa8/file-Mj86RQ88Yc.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66623e03e1989867dcefdaa8/file-Mj86RQ88Yc]
+
+link:#top[Back to top]
+
+'''''
+
+[[delete]]
+=== Delete a form
+
+Deleted Sendlane Forms and their associated metrics cannot be retrieved.
+We strongly recommend setting forms you no longer need to draft status
+instead of deleting.
+
+To delete a form:
+
+. Click the *trash can icon* in the Actions column
+. Click *Delete*
+. If the form is live at the time of deletion, you may see another
+prompt saying “This form may be live/in use currently, are you sure?”
+Click *Delete* to permanently delete your form.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66623e1f5173914f806c17c0/file-LrAr95H03o.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66623e1f5173914f806c17c0/file-LrAr95H03o]
+
+link:#top[Back to top]

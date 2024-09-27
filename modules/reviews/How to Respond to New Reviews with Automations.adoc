@@ -1,0 +1,125 @@
+==== Overview
+
+Using a Conditional Split and a Review Submitted trigger allows you to
+create an Automation that targets Contacts based on their reviews’
+rating.. Read on to learn how to set up a review response Automation
+with conditional logic for separate journeys for positive versus
+negative reviews!
+
+==== In This Guide
+
+. link:#create[Create an Automation]
+. link:#trigger[Add Triggers]
+. link:#split[Add a Conditional Split]
+. link:#email[Add an Email Node]
+
+'''''
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Complete
+https://help.sendlane.com/article/534-reviews-quick-start-guide[Reviews
+setup]
+
+[[create]]
+=== 1. Create an Automation
+
+. Click the *Automation icon*
+. Click *New Automation*
+. Click *Start from Scratch*
+. Enter a name for the Automation
+. Click *Start*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f54cc5d2b53344e72b73/file-vhMj5Zj0TD.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f54cc5d2b53344e72b73/file-vhMj5Zj0TD]
+
+[[trigger]]
+=== 2. Add Triggers
+
+. Click *+Add Trigger*
+. Click your eCommerce integration’s *tab*
+. Select the *Review Submitted trigger*
+. Select *No Limit* in the Contact Limit dropdown
+. Click *Done*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f55c046c1478e8c77260/file-iz1eysvErs.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f55c046c1478e8c77260/file-iz1eysvErs]
+
+[[split]]
+=== 3. Add a Conditional Split
+
+. Click the *+ button*
+. Click *Conditional Split*
+. Select the Reviews condition > Submitted Review > Rating > Greater
+than 2*
+. Click *Done*
+
+* Using `+Rating = Greater than 2+` will send all reviewers who left
+ratings of 3-5 stars down the Yes path and reviewers who left ratings of
+1-2 stars down the No path.*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f571046c1478e8c77262/file-3ktcdnyZKZ.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f571046c1478e8c77262/file-3ktcdnyZKZ]
+
+[[email]]
+=== 4. Add Email Nodes
+
+. Click the *+ button* under the Yes path for positive reviews or under
+the No path for negative reviews
+. Click *Send Message*
+. Click *Email*
+
+Learn more about Automation email nodes
+https://help.sendlane.com/article/449-automation-actions#email[here].
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f57fe9352a3c57926f4d/file-wjMPYzYWjU.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f57fe9352a3c57926f4d/file-wjMPYzYWjU]
+
+Click *Create New Email* to start designing your review response emails.
+
+If you used logic of `+Rating = Greater than 2+` in your Conditional
+split, then email nodes under the Yes node should be designed for
+positive reviews and emails under the No node should be designed for
+negative reviews.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Yes Node/Positive Reviews |No Node/Negative Reviews
+a|
+* Thank you message
+* Referral to other products
+* Request to share review on social media
+* Request to join VIP program
+
+a|
+*  Apology message
+* Troubleshooting
+* Coupon offer for a second try
+
+|===
+
+Use personalization and Twig to dynamically insert the text of the
+recipient’s review!
+
+* `+{{trigger.getReviewDisplayName()}}+` Displays the name the Contact
+used when submitting their review (may not match the name in their
+Contact Profile)
+* `+{{trigger.getReview.title}}+` Displays the text the Contact entered
+in the title field of their review
+* `+{{trigger.getReview.content}}+` Displays the entire body of the
+review
+* `+{{trigger.getReviewContentPartial}}+` Displays a snippet of the text
+of the reply to the review
+
+[[next]]
+===== ⏭️ Next Steps
+
+Now that you've completed the required Automation to request reviews
+from purchasers, set up an Automation to respond to reviewers with an
+email or SMS, and a final Automation to notify reviewers that you've
+left a public reply on their review:
+
+https://sendlane-beta.helpscoutdocs.com/article/553-review-request-automation[Request
+Reviews with Automations]
+
+ Respond to New Reviews with Automations
+
+https://sendlane-beta.helpscoutdocs.com/article/555-how-to-notify-customers-of-review-comment-responses-with-automations[Notify
+Customers of Public Review Replies with Automations]

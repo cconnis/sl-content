@@ -1,0 +1,93 @@
+[[top]]
+==== Overview
+
+Creating additional users is a great way to allow access to your
+Sendlane account without needing to share your account's email address
+and password. You can even specify what type of access your users should
+have to your account!
+
+[[access]]
+===== ⚠️ Role based emails cannot be used for user accounts
+
+Role based email addresses (like info@domain.com, sales@domain.com,
+support@domain.com, etc.) cannot be used for user accounts.
+
+[[reuse]]
+===== ⚠️ Email addresses cannot be used more than once
+
+If you receive a `+The email has already been taken.+` error when
+creating a new user account, the email address is already being used in
+Sendlane. Users with
+https://help.sendlane.com/article/440-creating-an-account-access-token[agency
+access] or multiple Sendlane accounts may need to use plus email
+addressing to create a user account. If your email address is
+name@example.com and already associated with an agency account or
+additional Sendlane account, you can use name+anything@example.com to
+create an additional account.
+
+==== In This Guide
+
+* link:#creating[Create a User Profile]
+* link:#resend[Resend a User Invite]
+* link:#editing[Edit a User Profile]
+* link:#delete[Delete a User Profile]
+
+'''''
+
+[[creating]]
+=== Create a User Profile
+
+. Click the *Account* icon
+. Click *Access*
+. ****Click *New User*
+. Enter the new user's name 
+. Enter the new user's email address (note that users' email addresses
+cannot be changed once the user profile has been created)
+. Select a
+https://help.sendlane.com/article/491-how-to-set-user-permissions[permission
+level]
+. https://help.sendlane.com/article/491-how-to-set-user-permissions[]Click *Confirm*
+
+Your new user will receive an email with a link to log in to their new
+account and create a password.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b3a121ef744662f032b7/file-IfdG7Wq0mO.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b3a121ef744662f032b7/file-IfdG7Wq0mO]
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b404337af47ff1ef52ec/file-zCUR0yo68D.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b404337af47ff1ef52ec/file-zCUR0yo68D]
+
+link:#top[Back to top]
+
+'''''
+
+[[resend]]
+=== Resend a User Invitation
+
+Invitations to finish creating an account expire after 24 hours. To send
+another invitation, click the envelope icon next to the user's name:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b4b4ef1be44733171c04/file-hJpzaIw1Tz.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b4b4ef1be44733171c04/file-hJpzaIw1Tz]
+
+link:#top[Back to top]
+
+'''''
+
+[[editing]]
+=== Edit a User Profile
+
+Click the *edit icon* next to the user profile you'd like to edit
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b4de1f35360c6a1f04ae/file-Gxat7uGpIG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b4de1f35360c6a1f04ae/file-Gxat7uGpIG]
+
+link:#top[Back to top]
+
+'''''
+
+[[delete]]
+=== Delete a User Profile
+
+. Click the *trash icon* next to the profile you want to delete
+. Click *Delete User*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b4fa159a844203c011b4/file-3dLSI1LzQd.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6570b4fa159a844203c011b4/file-3dLSI1LzQd]
+
+link:#top[Back to top]

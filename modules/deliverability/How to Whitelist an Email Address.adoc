@@ -1,0 +1,56 @@
+Adding an email address to an approved senders list or always allow
+list is a way for your Contacts to signal to their inbox provider that
+they want to receive your content. 
+
+Each inbox provider uses a simple, one time only process for adding a
+sender to the always allow list. Check out instructions for each popular
+inbox provider below!
+
+* link:#gmail[Gmail]
+* link:#yahoo[Yahoo]
+* link:#outlook[Outlook/Hotmail]
+* link:#mac[Mac Mail]
+* link:#aol[AOL]
+
+=== Gmail
+
+. Open an email from the email address to be whitelisted
+. Hover over the From email address or the sender’s round icon
+. Click the round Add to contacts button
+
+image:https://lh3.googleusercontent.com/m51avHySmZE_G9SMWVu2HnV-xVkL-8QVqouRLKUwM8dUISDESh2-J2mBIs0ZDsPW0f8r6RKCV998jhLYcZ7SWmbnmDGZF2II_HzvbxAdTt-Sp6oR2n18hNefc2iH3ZGLM4x-Mp0X[https://lh3.googleusercontent.com/m51avHySmZE_G9SMWVu2HnV-xVkL-8QVqouRLKUwM8dUISDESh2-J2mBIs0ZDsPW0f8r6RKCV998jhLYcZ7SWmbnmDGZF2II_HzvbxAdTt-Sp6oR2n18hNefc2iH3ZGLM4x-Mp0X,width=345,height=188]
+
+=== Yahoo
+
+. Open an email from the email address to be whitelisted
+. Hover over the From email address
+. Click the Add to contacts link
+
+image:https://lh5.googleusercontent.com/o0Y7b1bhQuq--1QzmHB86HeoxiyXZZhTYIRa7jLn2szkTc2jxADP8MxIKmqFVN2bHYiMyd755HOcADUeHASUWDrPMzYXQFG3GZIAd9Kzlw3jkUt_EVAJSQsuI_ZdfD1RfNAFFC_F[https://lh5.googleusercontent.com/o0Y7b1bhQuq--1QzmHB86HeoxiyXZZhTYIRa7jLn2szkTc2jxADP8MxIKmqFVN2bHYiMyd755HOcADUeHASUWDrPMzYXQFG3GZIAd9Kzlw3jkUt_EVAJSQsuI_ZdfD1RfNAFFC_F,width=364,height=190]
+
+[[outlook]]
+=== Outlook/Hotmail
+
+. Open an email from the email address to be whitelisted
+. Click the dot menu
+. Click Add to Safe Senders
+
+image:https://lh5.googleusercontent.com/JFJ25B5cAseOM3xAKOx9fLBhF-4PrGHmENlbF1IoNeYOTrkiqg45Q-I8Jlo-0EwuZ5Sn07CICLD3Yv_EGRE4IEZNf_YwecGrkbQY2wmOMjV8qGMkqOPSZJDULvCH4-uaa5bogmR_[https://lh5.googleusercontent.com/JFJ25B5cAseOM3xAKOx9fLBhF-4PrGHmENlbF1IoNeYOTrkiqg45Q-I8Jlo-0EwuZ5Sn07CICLD3Yv_EGRE4IEZNf_YwecGrkbQY2wmOMjV8qGMkqOPSZJDULvCH4-uaa5bogmR_,width=369,height=344]
+
+[[mac]]
+=== Mac Mail
+
+. Open an email from the email address to be whitelisted
+. Click the dropdown arrow next to the sender’s name or right click on
+the sender
+. Click Add to VIPs
+
+image:https://lh5.googleusercontent.com/iqsvf9mte9d9h6N0gHr0I4EVYLPS8XsLhFnNFusVikwXxJb567hPVdtTNEdJvmm3g1-wpe51d5edQFRIIP3yXIpL9Az3WSl1F4FX-utN--0QrLnPTPR6kWyB4u60zVmlZt4dlD6s[https://lh5.googleusercontent.com/iqsvf9mte9d9h6N0gHr0I4EVYLPS8XsLhFnNFusVikwXxJb567hPVdtTNEdJvmm3g1-wpe51d5edQFRIIP3yXIpL9Az3WSl1F4FX-utN--0QrLnPTPR6kWyB4u60zVmlZt4dlD6s,width=493,height=121]
+
+=== AOL
+
+. Open an email from the email address to be whitelisted
+. Click on the sender name/email address
+. Click Add Contact
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60e5d96c05ff892e6bc2ea1b/file-CEvgMdK7Vw.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/60e5d96c05ff892e6bc2ea1b/file-CEvgMdK7Vw]

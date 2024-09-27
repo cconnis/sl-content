@@ -1,0 +1,59 @@
+Sendlane's Automation export allows you to access
+https://help.sendlane.com/article/188-contacts[Contact] and behavior
+data for recipients of your
+https://help.sendlane.com/article/73-automations[Automations]. 
+
+[[values]]
+=== Automation Email Export Data Values
+
+* *subscriber_id*: the Contact's unique identifier
+* *email*: the Contact's email address
+* *name*: the Contact's first and last name
+* *date*: the date the Contact was sent your campaign
+* *views_count*: the count of times the Contact viewed your Campaign
+* *clicks_count*: the count of times the Contact clicked a link in your
+Campaign
+* *bounces_count*: the count of times the Contact's email addressed
+bounced
+* *suppression_count*: whether the Contact's email address was
+https://help.sendlane.com/article/135-suppression[Suppressed] or not.
+This field should always be 0 (not Suppressed) or 1 (Suppressed).
+
+[[generate]]
+=== Generate an Automation Email Export
+
+Inside the Automation, click the *_node_* of the Email you want to
+generate an export for
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6132b46212c07c18afdd0f44/file-9zPSTV0HY0.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6132b46212c07c18afdd0f44/file-9zPSTV0HY0]
+
+Click the *_tab_* for the group of Contacts you want to export data for
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6132adeadfe5d73d7687901e/file-GfAQZldiYA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6132adeadfe5d73d7687901e/file-GfAQZldiYA]
+
+* *Sent*: Contacts the Campaign was Sent to
+* *Opened*: Contacts who opened the Campaign
+* *Clicked*: Contacts who clicked on at least one link in the Campaign
+* *Didn't Open*: Contacts who did not open the Campaign
+* *Bounced*: Contacts whose email addresses bounced
+* *Suppression*: Contacts whose email addresses were Suppressed
+* *Unsubscribed*: Contacts who unsubscribed from the List via the
+Campaign
+* *Spam*: Contacts who marked the Campaign as spam
+* *Events*: Contacts who triggered an Event from the Campaign
+
+Click  *_Export as CSV_* to begin your export.
+
+Exports under 20k rows will begin downloading immediately. Exports with
+more than 20k rows will be sent to the email address on file in your
+Sendlane account.
+
+Once the export is complete, you'll also see a record of the file in the
+https://help.sendlane.com/article/387-import-exports[Imports & Exports
+tab] of your account.
+
+[[resources]]
+=== Additional Resources
+
+* https://www.sendlane.com/blog/how-to-leverage-campaign-reporting-in-sendlane-to-boost-engagement[How
+to Leverage Campaign Reporting in Sendlane to Boost Engagement]

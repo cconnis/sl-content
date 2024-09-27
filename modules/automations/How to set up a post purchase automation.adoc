@@ -1,0 +1,178 @@
+==== Overview
+
+Post purchase automations are a great way thank customers for their
+order, introduce them to your brand, recommend products, offer a
+discount, ask for a review, and more. Read on to learn how to set up the
+perfect post purchase automation.
+
+==== In this guide
+
+* link:#trigger[Background on triggers]
+* link:#create[1. Create a post purchase automation]
+* link:#trigger-settings[2. Automation trigger settings]
+* link:#prevent[3. Prevent contacts from continuing through pre-purchase
+automations]
+* link:#content[4. Post purchase automation content]
+* link:#test[5. Test and activate your automation]
+* link:#example[Example of a complete abandoned checkout automation]
+
+'''''
+
+[[trigger]]
+=== Background on triggers
+
+You should use the Order Placed trigger for your post purchase
+automation unless your store’s unique setup requires a different
+trigger.
+
+Other triggers commonly attempted for post purchase automations, such as
+product purchased and checkout complete, do not provide as much utility
+as the order placed trigger.
+
+The product purchase trigger is unsuitable for most post purchase flows
+because it fires on the product level instead of the order level; an
+order with more than one product will trigger the automation once for
+each product, with no way to reference all products in the order in an
+email. The order placed trigger fires when an order is placed and
+retains information about all products in the order.
+
+The checkout complete trigger fires on the order level, but as soon as a
+checkout is complete, information about the products that were in the
+cart during checkout is moved out of the checkout table of Sendlane’s
+database and into the order table of the database. This means that the
+checkout completed trigger doesn’t retain information about the contents
+of the checkout.
+
+'''''
+
+[[create]]
+=== 1. Create a post purchase automation
+
+Start your abandoned checkout automation setup by creating an automation
+and selecting the Abandoned Checkout trigger:
+
+. Click the *Automations* icon
+. Click *New Automation*
+. Click *Start From Scratch*
+. Enter a name for your abandoned checkout automation
+. Click *Start*
+. Click *Add Trigger*
+. In the lefthand sidebar, click your eCommerce integration’s tab
+. Click *Order Placed*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6660ec84dd0f8c60bb3fcc21/file-CggvAAzQ9k.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6660ec84dd0f8c60bb3fcc21/file-CggvAAzQ9k]
+
+[[trigger-settings]]
+=== 2. Order placed trigger settings
+
+When you select the Order Placed trigger, you’ll see its settings in the
+left-hand sidebar. These settings are the criteria contacts need to meet
+to be sent through the automation.
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXePUAdYCR8rRP6zJzg6ovS0AkhPw9G-HPGG6VlvJfgro4FDpBijenylZRiF3AfE11bLr_5hZHA8AxP8Ig5YJ8qIYV10RGrGxHXVOTYEiqEBhcAXFW7JtFh5_AuORrmOtB8ZZcQu_5miao0vrbxU72bImxX_?key=ZoorK52hryDiHpje49tkHg[https://lh7-us.googleusercontent.com/docsz/AD_4nXePUAdYCR8rRP6zJzg6ovS0AkhPw9G-HPGG6VlvJfgro4FDpBijenylZRiF3AfE11bLr_5hZHA8AxP8Ig5YJ8qIYV10RGrGxHXVOTYEiqEBhcAXFW7JtFh5_AuORrmOtB8ZZcQu_5miao0vrbxU72bImxX_?key=ZoorK52hryDiHpje49tkHg,width=386,height=331]
+
+* *Store* - Select the store you’re creating an order placed automation
+for
+* *Limit Per Contact* - No Limit is recommended for post purchase
+automations.
+* *Order Status* - We suggest selecting unfulfilled
+* *Frequency* - If you want contacts to be sent through the automation
+every time they purchase, select [.underline]#Any#. If you want contacts
+to be sent through the automation only on their first, second, or third
+purchase, select the corresponding option.
+
+[[prevent]]
+=== 3. Prevent contacts from continuing through pre-purchase automations
+
+The first node of your post purchase automation should be an update
+automation node that ends your abandoned browse and abandoned cart
+automations. Since placing an order is the last step in the pre-purchase
+journey, you don’t want contacts to keep receiving pre-purchase content
+about orders they’ve already completed.
+
+To add an update automation node:
+
+. Click the *+ icon* below the Abandoned Checkout trigger
+. Click *Update Automation*
+. Click *End Other*
+. From the Automation dropdown, select your
+https://help.sendlane.com/article/663-how-to-set-up-an-abandoned-browse-automation[browse
+abandon automation]
+. Select a time period wait before allowing contacts to re-enter the
+browse abandon automation once they've completed the abandoned browse
+automation
+. Click *Done*
+. Repeat steps 1-6 and select your
+https://help.sendlane.com/article/664-how-to-set-up-an-abandoned-cart-automation[abandoned
+cart automation] for step 4
+. Repeat steps 1-6 and select your
+https://help.sendlane.com/article/662-how-to-set-up-an-abandoned-checkout-automation[abandoned
+checkout automation] for step 4
+
+[[content]]
+=== 4. Post purchase automation content
+
+For more information on optimizing your email and SMS nodes, check out
+our guide to
+https://help.sendlane.com/article/449-automation-actions#send-message[automation
+nodes].
+
+We highly recommend placing a wait node between messages to prevent
+contacts from receiving too many messages too quickly.
+
+[[split]]
+===== 💡 Optional: Add a conditional split to create nodes for specific products
+
+Conditional Splits allow you to target specific products for specialized
+content! If you'd like to create specific content for specific products
+or product groups, create a Conditional Split node under your final End
+Automation action and set the conditions for:
+
+. Condition: Your eCommerce integration
+. Resource: Order
+. Filter: Product or Product Collection, depending on what you want to
+target
+. Operator: Select In to specify products or product groups present in
+the order
+. Select Items or Groups
+. Click Done
+. Create nodes under each path:
+
+[cols="",]
+|===
+|Yes Path
+
+|Customers who had the selected products or product groups in their
+order
+|===
+
+[[test]]
+=== 5. Test and activate your automation
+
+You can test your abandoned browse automation by placing a test order in
+your store with an email address that is opted in to your account. To
+test your abandoned browse automation:
+
+. Activate your
+https://help.sendlane.com/article/668-how-to-activate-an-automation#node[email
+nodes]
+. Activate your
+https://help.sendlane.com/article/668-how-to-activate-an-automation#automation[automation]
+. Place a test order
+. Check your inbox to ensure you received the first email in your post
+purchase automation
+. If you received the email, your automation was set up correctly and
+should stay activated
+
+If you successfully completed your automation, you're all set! If you
+didn't receive messages you expected to receive, or otherwise didn't
+experience your automation the way you want your contacts to,
+https://help.sendlane.com/article/669-how-to-deactivate-an-automatio#automations[deactivate
+your automation] while you troubleshoot.
+
+'''''
+
+[[example]]
+=== Example of a complete abandoned checkout automation
+
+image:https://lh7-us.googleusercontent.com/docsz/AD_4nXdJYVOnn5hKgazrk98f534uzJrLjk8g5de17Rr5l6PI4VR36v0d-aAHOfdA8Xs2uK_X5uE83-2BQJeb2oQfL1eDp-YBJzPHEEDmqEUc-IrEuL4xCA4r8jGDMH-JXQMxjBwH0twhE-gg2Vy2lnxx29FKbXw?key=ZoorK52hryDiHpje49tkHg[https://lh7-us.googleusercontent.com/docsz/AD_4nXdJYVOnn5hKgazrk98f534uzJrLjk8g5de17Rr5l6PI4VR36v0d-aAHOfdA8Xs2uK_X5uE83-2BQJeb2oQfL1eDp-YBJzPHEEDmqEUc-IrEuL4xCA4r8jGDMH-JXQMxjBwH0twhE-gg2Vy2lnxx29FKbXw?key=ZoorK52hryDiHpje49tkHg,width=843,height=1209]

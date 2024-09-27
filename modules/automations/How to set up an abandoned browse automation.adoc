@@ -1,0 +1,228 @@
+==== Overview
+
+Give your contacts a nudge when they view products on your store, but
+don't make a purchase with an abandoned browse automation! Read on to
+learn how to set up an abandoned browse automation.
+
+==== In this guide
+
+* link:#create[1. Create an abandoned browse automation]
+* link:#trigger[2. Configure abandoned browse trigger settings]
+* link:#filter[3. Filter out contacts who purchased during the wait
+time]
+* link:#content[4. Abandoned browse automation content]
+* link:#goal[5. Add a goal node to pull purchasers out of the
+automation]
+* link:#test[6. Test and activate your automation]
+* link:#example[Example of a complete abandoned browse automation]
+* link:#troubleshooting[Troubleshooting]
+
+[[bgs]]
+===== 🚦 Before getting started
+
+If your store is hosted on Shopify, or BigCommerce, ensure
+https://help.sendlane.com/article/72-beacon[Beacon general tracking] is
+installed on your store’s website.
+
+If your store is hosted on WooCommerce, you will need to set up a
+https://help.sendlane.com/article/451-custom-integration-setup[custom
+integration] for your store and a
+https://sendlane.stoplight.io/docs/api-documentation/6a1bb93db3f9c-custom-event[custom
+event] to use as a trigger in order to set up an abandoned browse
+automation.
+
+'''''
+
+[[create]]
+=== 1. Create an abandoned browse automation
+
+Start your abandoned browse automation setup by creating an automation
+and selecting the Abandoned Product Viewed trigger:
+
+. Click the *Automations* icon
+. Click *New Automation*
+. Click *Start From Scratch*
+. Enter a name for your abandoned browse automation
+. Click *Start*
+. Click *Add Trigger*
+. In the lefthand sidebar, click your eCommerce integration’s tab (if
+using a custom integration, click the custom integration tab)
+. Click *Abandoned Product Viewed* (or, if using a custom integration,
+the name of your custom trigger)
+
+[[multiple-trigger-warning]]
+===== ⚠️ Do not select additional or alternative triggers
+
+The only trigger that is appropriate to use for an abandoned browse flow
+is the Abandoned Product Viewed trigger. Do not select an alternative
+trigger or add additional triggers to your abandoned browse automation.
+Additional triggers can cause issues with your abandoned browse
+automation.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/665a0e095173914f806c131b/file-aifHQPfCwd.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/665a0e095173914f806c131b/file-aifHQPfCwd]
+
+[[trigger]]
+=== 2. Configure abandoned browse trigger settings
+
+When you select the Abandoned Product Viewed trigger, you’ll see its
+settings in the left-hand sidebar. These settings are the criteria
+contacts need to meet to be sent through the automation.
+
+image:https://lh7-us.googleusercontent.com/eh3Z0wVUAjfDV3FOqbw8Av3r5-UJJOd0HfVunRrbyPERURLSezZIF704P8xK6m7rejf5U1sibLrA-zewyYQq4VrYRbx4CnMrpg0Z0qKZdbLOAGIYVxIXclczskDAy1Ps30jX2f3-9QZlzJqv_9fJ0_I[https://lh7-us.googleusercontent.com/eh3Z0wVUAjfDV3FOqbw8Av3r5-UJJOd0HfVunRrbyPERURLSezZIF704P8xK6m7rejf5U1sibLrA-zewyYQq4VrYRbx4CnMrpg0Z0qKZdbLOAGIYVxIXclczskDAy1Ps30jX2f3-9QZlzJqv_9fJ0_I,width=377,height=249]
+
+* *Store* - Select the store you’re creating an abandoned browse
+automation for
+* *Limit Per Contact* - Not in the last, Once per day, or Do not trigger
+when already in automation are recommended for abandoned browse
+automations.
+* *Consider abandoned after* - Select a time period of at least one
+hour. The 5 minute and 30 minute settings are intended for internal
+testing and may inundate contacts with messages if used in a live
+automation.
+
+You can specify individual products that should trigger the automation
+by searching for and selecting products in the For Products section of
+the trigger settings. If you do not select any specific products, all
+products will trigger the automation.
+
+image:https://lh7-us.googleusercontent.com/1hN_uT1yspvwffFlOkT5Lu4U4rM3G4NHhBg43DgE57nKZcMzVQOxC8cbbuqNUZDYh9r7EYvtsF3wsMCXcyKQwsvMAsbMQ1RMS2ZlaoNLNptlGPcLmkh2NarZ7srtOXtKbNOSv2CF1rC1DK0o2Es_dzM[https://lh7-us.googleusercontent.com/1hN_uT1yspvwffFlOkT5Lu4U4rM3G4NHhBg43DgE57nKZcMzVQOxC8cbbuqNUZDYh9r7EYvtsF3wsMCXcyKQwsvMAsbMQ1RMS2ZlaoNLNptlGPcLmkh2NarZ7srtOXtKbNOSv2CF1rC1DK0o2Es_dzM,width=376,height=448]
+
+Shopify and BigCommerce, and custom store users can apply a product tag
+of `+sl-exclude+` to products that should not trigger the automation.
+This process removes the product from Sendlane entirely. Read more about
+excluding products
+https://help.sendlane.com/article/601-how-to-exclude-products-from-product-blocks[here].
+
+[[filter]]
+=== 3. Filter out contacts who purchased during the wait time
+
+The first node of your abandoned browse automation should be a
+Conditional Split that checks to see whether contacts who met the
+trigger settings’ criteria have made a purchase during the wait time
+selected for the “consider abandoned after” setting. On some platforms,
+this check happens in the trigger settings and acts as a filter. The
+functionality is the same with a conditional split.
+
+To add a conditional split to your automation:
+
+. Click the *+ icon* below the update automation node
+. Click *Conditional Split*
+. Set the conditional split's settings (see guidance below the
+screenshot)
+
+image:https://lh7-us.googleusercontent.com/vQQnanPxIx9ts9ZALSpQw2b8eVYIji7Bl0JQ0i8Vv_Knyz1VzdnGdxPxC_tcdA524Mh_wCSLagIKAxxaURtYFTPe1egJnNaDZ3qtmx2O-oyQnRgKFTqI4j5entTkGQ9GrMJbr1VjbvVqd0vglydhkL8[https://lh7-us.googleusercontent.com/vQQnanPxIx9ts9ZALSpQw2b8eVYIji7Bl0JQ0i8Vv_Knyz1VzdnGdxPxC_tcdA524Mh_wCSLagIKAxxaURtYFTPe1egJnNaDZ3qtmx2O-oyQnRgKFTqI4j5entTkGQ9GrMJbr1VjbvVqd0vglydhkL8,width=1680,height=1050]
+
+When you select the conditional split, its settings will appear in the
+left-hand sidebar:
+
+image:https://lh7-us.googleusercontent.com/uQUG4GSG0spOgx1q-kZcgrYOlKBgvs5MwBP-ba_E4qK8_4HColdtjGkZdxliamDq52ox8wKED1rwB5baFZOtiPztKhgDQVZTxCEKmG3Hqik3g2Ux44I9ALbP-iUazrz2PCABMntIHBOsoK3nTzRJIN0[https://lh7-us.googleusercontent.com/uQUG4GSG0spOgx1q-kZcgrYOlKBgvs5MwBP-ba_E4qK8_4HColdtjGkZdxliamDq52ox8wKED1rwB5baFZOtiPztKhgDQVZTxCEKmG3Hqik3g2Ux44I9ALbP-iUazrz2PCABMntIHBOsoK3nTzRJIN0,width=377,height=249]
+
+These settings will check for orders placed by the contact during the
+day before they met the automation trigger’s criteria:
+
+* *Condition* - Select your eCommerce solution (or custom integration)
+* *Store* - Select the store you’re creating an abandoned browse
+automation for
+* *Resource* - Order
+* *Order Status* - Any
+* *Filter* - Order Date
+* *Operator* - In the last
+* Relative date range - 1 day
+
+Add the rest of your automation’s nodes to the NO side so that you
+target contacts who have NOT placed an order in the last day.
+
+[[content]]
+=== 4. Add Abandoned browse automation content
+
+Now that the logic for your abandoned browse automation is in place, you
+can add nodes for emails and SMS messages. For more information on
+optimizing your email and SMS nodes, check out
+https://help.sendlane.com/article/449-automation-actions#send-message[our
+guide to automation nodes].
+
+You can use the abandoned cart product block in email nodes to pull
+information about the product that was browsed.
+
+We highly recommend placing a wait node between messages to prevent
+contacts from receiving too many messages too quickly.
+
+[[goal]]
+=== 5. Add a goal node to pull purchasers out of the automation
+
+Depending on the number of message nodes and the length of wait nodes in
+between, contacts may complete their purchase before being sent through
+the entire automation. To prevent contacts from continuing to receive
+abandoned browse content with a goal:
+
+. Click the + button under the last node of your automation
+. Click Goal
+. Add a name for your goal, like "Completed purchase"
+. In the Select condition dropdown, select your eCommerce integration
+. Select your store
+. Select Order
+. Select Unfulfilled
+. Select Order Date
+. Select in the last
+. Enter the number of days that it takes to complete your automation
+. Click Done
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66510c391f3fa9421e287237/file-x4XhSOBmqV.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66510c391f3fa9421e287237/file-x4XhSOBmqV]image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66510c3fdd0f8c60bb3fc3f6/file-rxwc66LiW8.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66510c3fdd0f8c60bb3fc3f6/file-rxwc66LiW8]
+
+[[test]]
+=== 6. Test and activate your automation
+
+You can test your abandoned browse automation with an email address that
+is opted in to your account and
+https://help.sendlane.com/article/72-beacon#what-is-beacon[has been
+cookied by Beacon]. To test your abandoned browse automation:
+
+. In your trigger's settings, set the "consider abandoned after" setting
+to 5 minutes
+. Activate your
+https://help.sendlane.com/article/668-how-to-activate-an-automation#node[email
+nodes]
+. Activate your
+https://help.sendlane.com/article/668-how-to-activate-an-automation#automation[automation]
+. Log out of your Shopify store in all tabs
+. Visit your website
+. Click on a product page
+. Wait at least five minutes
+. Check your inbox to ensure you received the first email in your
+abandoned browse automation
+
+If you successfully completed your automation, you're all set! If you
+didn't receive messages you expected to receive, or otherwise didn't
+experience your automation the way you want your contacts to,
+https://help.sendlane.com/article/669-how-to-deactivate-an-automatio#automations[deactivate
+your automation] while you troubleshoot.
+
+'''''
+
+[[example]]
+=== Example of a completed abandoned browse automation
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66510d825940934e140f3e2d/file-J3XZgava5k.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66510d825940934e140f3e2d/file-J3XZgava5k]
+
+'''''
+
+=== Troubleshooting
+
+====== The abandoned cart block isn't available!
+
+The abandoned cart block may not appear in your elements sidebar for two
+common reasons:
+
+. Your eCommerce integration is not set up correctly. Review your
+eCommerce store's integration with Sendlane for possible connection
+issues.
+. You already added an abandoned cart block to your email. Only one
+abandoned cart block is allowed per email.
+
+====== A Contact abandoned a product view and didn’t move through the Automation!
+
+The most common reason Contacts who view a product and do not move
+through your browse abandonment Automation is that they are
+https://help.sendlane.com/article/72-beacon#notes[browsing anonymously].
+Tracking requires non-anonymous browsing in order to trigger the
+Automation.

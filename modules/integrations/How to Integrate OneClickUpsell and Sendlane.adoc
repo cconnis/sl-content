@@ -1,0 +1,85 @@
+Use https://landing.zipify.com/pages/ocu20[OneClickUpsell] to add
+post-purchase upsells to your Shopify store, or retarget customers who
+abandon their carts!
+
+Integrating OneClickUpsell and Sendlane enables you to sync new customer
+data directly to your email list, so you can stay connected, recover
+abandoned carts and send additional follow-up offers to increase your
+customer LTV.
+
+'''''
+
+=== Before Getting Started
+
+Be sure to have your
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify
+integration] completed within your Sendlane account. 
+
+You will also need
+https://landing.zipify.com/pages/ocu20[OneClickUpsell] active within
+your Shopify store.
+
+'''''
+
+=== Connecting OneClickUpsell
+
+Completing the integration in your Sendlane account is quick and easy! 
+
+. Navigate to the *_Integrations_* tab and click *_OneClickUpsell_*
+. Click *_Configure_*
+. Click *_New OneClickUpsell Integration_*
+. If your Shopify store is _not_ connected, you will see a prompt to
+connect your store
+firstimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5db0d9202c7d3a7e9ae2f371/file-3bBAYksJ9F.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5db0d9202c7d3a7e9ae2f371/file-3bBAYksJ9F]
+. Enter your Shopify Store Domain
+. You will then be directed to Shopify. Log in to your store if prompted
+and then click
+*_Authorizeimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5db0d92e04286364bc90ceaf/file-xQL5B0OP1Q.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5db0d92e04286364bc90ceaf/file-xQL5B0OP1Q]_*
+
+Your integration is now complete!
+
+'''''
+
+=== Next Steps
+
+Once you have OneClickUpsell integrated with Sendlane, you can start
+leveraging
+https://help.sendlane.com/article/377-how-to-add-upsells-or-downsells-to-your-shopify-store-with-oneclickupsell[upsells
+(or downsells) during the checkout process], or
+https://help.sendlane.com/article/381-how-to-retarget-oneclickupsell-abandoned-cart-customers[retarget
+cart abandoners] to make more sales!
+
+'''''
+
+=== Additional OneClickUpsell Resources
+
+If you have any issues connecting your Sendlane and Shopify or
+OneClickUpsell accounts, mailto:mailto:support@sendlane.com[our support
+team is available 24/7]. Plus, the Shopify and OneClickUpsell teams are
+just a few clicks away!
+
+* Connect with the
+https://help.shopify.com/en/questions#/contact[Shopify Team]
+* Connect with the https://zipify.com/contact/[OneClickUpsell Team]
+
+https://help.shopify.com/en/manual/intro-to-shopify/initial-setup[Create
+a Shopify store] | https://landing.zipify.com/pages/ocu20[Sign Up for
+OneClickUpsell]
+
+=== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-oneclickupsell[Sendlane
++ OneClickUpsell - The Shopify App You Need to Boost Your eCommerce
+Sales]
+* https://www.sendlane.com/blog-posts/3-email-retargeting-strategies-guaranteed-to-win-you-more-sales[3
+Email Retargeting Strategies Guaranteed  to Win You More Sales ]
+* Ask An Expert Youtube Video: https://youtu.be/Qd-eeDcrF6k[3 Easy Tips
+to Convert More Visitors Into Paying Customers With Email!]
+
+'''''
+
+=== TL;DR
+
+Log in to Sendlane → Integrations → OneClickUpsell → Configure → New
+OneClickUpsell Integration → Enter Shopify Store Domain → Next → Login
+to Shopify → Authorize Connection 

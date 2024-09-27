@@ -1,0 +1,198 @@
+https://www.clickbank.com/[ClickBank] is an eCommerce marketplace that
+empowers businesses to sell products worldwide!
+
+Clickbank's integration with Sendlane allows you to sync contact
+information over so you can continue connecting with customers, send
+automated emails to encourage future purchases, and target cart
+abandoners to capture lost sales!
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+ Set up and activate your https://www.clickbank.com/[ClickBank
+seller account] with
+https://support.clickbank.com/hc/en-us/articles/220364387-What-is-a-Master-Account-[master access].
+Affiliate and sub-user accounts cannot be integrated.
+
+ Request single-opt-in status for your Sendlane account from your
+Customer Success Manager or our 24/7 chat support.
+
+https://help.sendlane.com/article/125-lists#creating-a-list[Create two
+Lists] in your Sendlane account: one for all customers and one for
+abandoned carts.
+
+=== Generate ClickBank Keys
+
+You'll need the Clerk API and Developer API keys from your ClickBank
+account to complete the integration process.
+
+==== Clerk API Key
+
+Log in to your ClickBank account, then click the *Users* page > *Manage
+Permissions* next to the main clerk (user profile)
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/635852a17678db1f1186873f/file-8c1x4SkXXU.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/635852a17678db1f1186873f/file-8c1x4SkXXU]
+
+On the Manage Permissions page:
+
+. Copy the *API Key*
+. Turn on all *API permissions*
+. Turn on all *Third Party Integration permissions*
+. Click *Save*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6358537e73d6a22819f06513/file-ZgSaJl9yrJ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6358537e73d6a22819f06513/file-ZgSaJl9yrJ]
+
+==== Developer API Key
+
+To generate a developer API key, go to the Accounts page and click on
+your store nickname.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/635858707678db1f11868764/file-GvZ8vyvzmm.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/635858707678db1f11868764/file-GvZ8vyvzmm]
+
+On the dashboard page, click *Account Settings* > scroll down to the
+Developer API Keys section and click *Edit*.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/635858b173d6a22819f06533/file-21zyo7pvug.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/635858b173d6a22819f06533/file-21zyo7pvug]Click
+*Create New Developer Key*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6358592d2a22cc147576ccc1/file-u5Uci1geHk.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6358592d2a22cc147576ccc1/file-u5Uci1geHk]
+
+Enter a *description* for your developer key, then click *Save* to
+generate your key.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6358594673d6a22819f06535/file-VnH2EKcH4e.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6358594673d6a22819f06535/file-VnH2EKcH4e]Copy
+your developer key, and you're ready to integrate with Sendlane!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6358595f7678db1f1186876f/file-HssMDV2YG3.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6358595f7678db1f1186876f/file-HssMDV2YG3]
+
+'''''
+
+[[connecting]]
+=== Integrate ClickBank and Sendlane
+
+From your Sendlane dashboard, click the *Integrations page* >
+*ClickBank* > *Configure* > *Create New ClickBank Integration*
+
+. Enter your ClickBank account's nickname
+. Paste your clerk and developer API keys in their respective fields
+. Select a default List for product purchasers
+. Add an optional rule for adding Contacts to Lists
+. Select a default List for abandoned checkouts
+. Click *Continue*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63585a457678db1f1186877b/file-TdVO4cflGe.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63585a457678db1f1186877b/file-TdVO4cflGe]
+
+While your integration is syncing, click *Manage* to access your
+ClickBank Site Settings. If Sendlane is the first platform you're
+integrating with your ClickBank account, the Secret Key field will be
+blank.
+
+Copy the *Instant Notification URL* and head back to your ClickBank
+account.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63585f357678db1f11868796/file-aJEfETtX3L.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63585f357678db1f11868796/file-aJEfETtX3L]
+
+Go to the *Vendor Settings tab* of your ClickBank dashboard, then scroll
+down to *Advanced Settings* and click *Edit*.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63585da32a22cc147576ccd8/file-WVeDJQjfeD.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63585da32a22cc147576ccd8/file-WVeDJQjfeD]
+
+Paste the instant notification URL from Sendlane in the *Instant
+Notification URL field* and click *Save Changes.*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/635860f83b533e0f9677d393/file-8vipf1QwvH.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/635860f83b533e0f9677d393/file-8vipf1QwvH]
+
+If the Secret Key field was blank when you checked the ClickBank Site
+Settings in Sendlane, copy it now. Click  *Manage* next to your
+ClickBank integration in Sendlane and paste your secret key in
+the *Secret Key field*. Click *Save*.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/635861e53b533e0f9677d397/file-QRrjZPYvCr.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/635861e53b533e0f9677d397/file-QRrjZPYvCr]
+
+Head back to your Advanced Settings (Vendor Settings tab > Advanced
+Settings > Edit) and click TEST IPN to verify your connection.
+
+Your integration will not be completed until your IPN is verified.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/635863bf7678db1f118687a5/file-ZBbcsEA1C2.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/635863bf7678db1f118687a5/file-ZBbcsEA1C2]
+
+[[[ID TAG]]]
+===== 🚨 Important Note
+
+Each process step must be saved by clicking Save or Save Changes.
+Missing a save button is a common reason IPNs do not verify.
+
+Customers will now sync to your Sendlane account!
+
+'''''
+
+[[abandon cart]]
+=== Next Steps: Using ClickBank Abandoned Cart
+
+. https://accounts.clickbank.com/login.htm[Log in to your ClickBank
+account].
+. Inside your ClickBank account, click the *_Vendor Settings_* tab.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/600aee2fcfe30d219ccda916/file-mgIdIJgmWV.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/600aee2fcfe30d219ccda916/file-mgIdIJgmWV]
+
+    3.Click  *_My Features_*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/600aee8f1c64ad47e4b71ff5/file-p5PqrvnoHj.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/600aee8f1c64ad47e4b71ff5/file-p5PqrvnoHj]
+
+**    4. Scroll to the Vendor Enabled section and click the "Enabled"
+checkbox for Cart Abandonment.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/600af3fb1c64ad47e4b7202f/file-O4kypbYhmA.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/600af3fb1c64ad47e4b7202f/file-O4kypbYhmA]
+
+Your ClickBank account is now enabled to send abandoned cart emails
+through this integration! For more information on creating abandoned
+cart emails, check out our document,
+https://help.sendlane.com/article/320-building-the-perfect-abandoned-cart-email[Building
+the Perfect Abandoned Cart Email]. 
+
+'''''
+
+=== Troubleshooting  
+
+===== Response Code 422
+
+If you are seeing a response code 422 after testing, there is an unsaved
+step in your integration. Please review _all_ steps, making sure to save
+at _every_ opportunity. Take extra care to copy _and then_* save* your
+IPN in Sendlane before proceeding to Clickbank to *save* __and
+then __test. 
+
+===== image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f9b2a5c4cedfd0016107e40/testing_IPN-2.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f9b2a5c4cedfd0016107e40/testing_IPN-2]The integration is connected in Sendlane, but data isn't being passed
+
+Please be sure you've clicked *_Save_* in every step on the ClickBank
+side, and have fully tested and verified your Instant Notification URL.
+The integration will fail if these pieces aren't fully done!
+
+===== I do not see my ClickBank customers within Sendlane
+
+If you just completed the integration process, it will take some time
+for all of that information to sync over. If you visit the ClickBank
+integration page within your Sendlane account and see that the status
+still shows  _Initializing_ or _Syncing_, some information or actions
+may not be available yet. 
+
+'''''
+
+=== Additional Sendlane Resources
+
+Please reach out to our mailto:support@sendlane.com[Support Team] with
+any questions regarding your integration. If you need to get in touch
+with the ClickBank team, they're just a few clicks away! 
+
+=== Additional ClickBank Resources
+
+* Visit ClickBank's https://support.clickbank.com/hc/en-us[knowledge
+base]
+* Contact
+https://support.clickbank.com/hc/en-us/requests/new[ClickBank's support
+team]
+* https://support.clickbank.com/hc/en-us/articles/360040581831-How-to-Generate-API-Keys-[How
+to Generate ClickBank API Keys]
+
+https://accounts.clickbank.com/signup/[Sign up for ClickBank] |
+https://blog.clickbank.com/[Blog]

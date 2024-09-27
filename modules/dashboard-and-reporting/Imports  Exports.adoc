@@ -1,0 +1,16 @@
+You can track the progress of your recent import or export on the
+https://app.sendlane.com/audience/import-export[Imports & Exports tab]
+of the Audience page!
+
+For each Import and Export, you'll see:
+
+* *Type* Import or Export
+* *Status* Pending, Completed, or Failed
+* *Summary* Lists that Contacts were imported to or exported from and
+the date of the import or export
+* *Details*
+** Imports - File name and counts of Contacts that were Attempted,
+Duplicates, and Suppressed
+** Exports - File name and count of Contacts
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6286de578c9b58508348b7e9/file-AcxdmzJCEG.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6286de578c9b58508348b7e9/file-AcxdmzJCEG]

@@ -1,0 +1,36 @@
+Sending marketing emails with attachments, large files, or videos can
+trigger spam filters and cause bounced emails, negatively affecting your
+email deliverability. Using hyperlinks to files avoids these
+deliverability issues and allows you to add
+https://help.sendlane.com/article/82-tags[Tags] to Contacts who click
+your links!
+
+Once you have uploaded your file to the file hosting service of your
+choice, grab the shareable link to include in your email or SMS message.
+
+==== Link Text to a File
+
+To create a link to a file in text, highlight the *text* you want to
+link > Click the *link icon* > Paste your *link* > Click the *checkbox*
+to confirm!
+
+Click the tag icon next to the link icon to add
+a https://help.sendlane.com/article/82-tags[Tag] to Contacts who click
+that link!
+
+==== image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/632234b5037bc877147b8efd/file-jyZd5sB6Zc.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/632234b5037bc877147b8efd/file-jyZd5sB6Zc]Link an Image to a File
+
+To create a link to a file in an image, click on the *image* you want to
+link > Paste your link in the *Link box* > Click the *checkbox* to
+confirm!
+
+Click the tag icon next to the link icon to add
+a https://help.sendlane.com/article/82-tags[Tag] to Contacts who click
+that link!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6322354390c29a3d732c7985/file-zVUzPyLMIq.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6322354390c29a3d732c7985/file-zVUzPyLMIq]
+
+=== Additional Resources
+
+* https://www.sendlane.com/blog/text-based-vs-image-based-emails[Text-Based
+vs Image-Based Emails: Which is Best for Your Business?]

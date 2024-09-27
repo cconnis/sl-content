@@ -1,0 +1,61 @@
+[[top]]
+==== Overview
+
+You can generate tokens for Sendlane's v2 API and the custom integration
+in the account settings page.
+
+==== In this guide
+
+* link:api[API v2 key]
+* link:custom-integration[Custom integration token]
+
+'''''
+
+[[api]]
+=== API v2 token
+
+You can use an API v2 token to authorize Sendlane's v2 API. API v2
+tokens cannot be retrieved again after they are created and expire ten
+years after they are generated.
+
+To generate an API v2 token:
+
+. Click the *Account* icon in the left sidebar
+. Click *API*
+. Under Sendlane API V2, click *+ API Token*
+. Enter a descriptive *name* for your token
+. Click *Create*
+. Click *Copy API Token*
+. Save your token in a safe place; you cannot retrieve it again once you
+dismiss the Access Token Created pop up
+. Click *Done*
+
+link:#top[Back to top]
+
+'''''
+
+[[custom-integration]]
+=== Custom integration token
+
+You can use a custom integration token to authorize your custom
+integration. Custom integration tokens can be retrieved again at any
+time after they are created.
+
+To generate a custom integration token (in other words, create a custom
+integration):
+
+. Click the *Account* icon in the left sidebar
+. Click *Integrations*
+. Click *Add Store* (your integration does not have to be an eCommerce
+store)
+. Enter a descriptive name for your integration under *Store Name*
+. Enter the URL of your website or store under *Store URL*
+. Choose a *list* to add new contacts to when they are added to your
+account via your custom integration
+. Select *Shipping or Billing* as the default address type to save to
+contacts' profiles
+. Click *Continue*
+. Click the *copy icon* next to your integration token
+. Click *Save*
+
+link:#top[Back to top]

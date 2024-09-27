@@ -1,0 +1,162 @@
+[[top]]
+==== Overview
+
+https://woocommerce.com[WooCommerce] is an eCommerce plugin for
+WordPress. 
+
+Integrating Sendlane and WooCommerce allows you to automatically sync
+customers to Sendlane so you can stay in touch via targeted email
+campaigns and automation funnels! 
+
+==== In This Guide
+
+* link:#connecting-wc-sl[Connecting WooCommerce and Sendlane]
+* link:#installing-wc-plugin[Installing the WooCommerce Plugin for
+Sendlane Abandoned Cart Automations]
++
+link:#connecting-wc-sl[]
+* link:#connecting-wc-sl[]link:#next-steps[Next Steps]
++
+link:#next-steps[]
+* link:#next-steps[]link:#troubleshooting[Troubleshooting]
++
+link:#troubleshooting[]
+* link:#troubleshooting[]link:#additional-wc-resources[Additional
+WooCommerce Resources]
++
+link:#additional-wc-resources[]
+* link:#additional-wc-resources[]link:#additional-sendlane-resources[Additional
+Sendlane Resources]
+
+[[before]]
+===== 🚦 Before Getting Started
+
+Complete these steps before starting the WooCommerce/Sendlane
+integration process:
+
+* Create a https://woocommerce.com/[WooCommerce account] for your
+eCommerce store
+* Create a
+https://help.sendlane.com/article/125-lists#creating-a-list[List] for
+your WooCommerce abandoned cart customers
+
+[[custom-fields]]
+===== 🚨 Some custom fields do not sync with Sendlane
+
+Custom fields that contain `+_playback_+` or are any format other than
+simple string, numeric, or null, will not sync with Sendlane.
+
+'''''
+
+[[installing-wc-plugin]]
+=== Connecting WooCommerce and Sendlane
+
+. From your WordPress website, click into *Settings* and find the
+*Permalink* section
+. Update both the Common Settings and Product Permalink from Default to
+*Custom* 
+. Enter /%category%/ (or another tag of your choice) for Custom
+Structureimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f315d6a2c7d3a352e9091ca/file-A0xAXQZJGV.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f315d6a2c7d3a352e9091ca/file-A0xAXQZJGV]
+. Update Custom Base to
+*product/image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f315dcf042863444aa01877/file-tR0ykWqBUB.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f315dcf042863444aa01877/file-tR0ykWqBUB]*
+. Click *Save Changes*
+. In the sidebar,
+click *WooCommerce*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d69321e04286350aeeb4478/file-rK71pdbpFB.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d69321e04286350aeeb4478/file-rK71pdbpFB]
+. Click on the *Settings* tab under WooCommerce
+. Once in the settings page, click the  *Advanced tab* 
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d6979932c7d3a7a4d77e97d/file-JVj4XuYaNl.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d6979932c7d3a7a4d77e97d/file-JVj4XuYaNl]
+. Click *REST API*
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d6979f12c7d3a7a4d77e985/file-9Szd8yRcLS.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d6979f12c7d3a7a4d77e985/file-9Szd8yRcLS]
+. Click  *Add Key *
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d69329704286350aeeb448a/file-dhanIZ3fPW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d69329704286350aeeb448a/file-dhanIZ3fPW]
+. Enter a name for the key in the description field
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d69336804286350aeeb4499/file-oMAG91egXP.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d69336804286350aeeb4499/file-oMAG91egXP]
+. Select yourself as the user if it is not already set
+. Select  *Read/Write* for the *Permissions*. 
+. The next page you will see will include your Consumer Key and Consumer
+Secret. [.underline]#*Do Not*# leave this
+page image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d6934952c7d3a7a4d77e5bc/file-EcKcJyxMQl.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d6934952c7d3a7a4d77e5bc/file-EcKcJyxMQl]
++
+====== Once you leave this page you cannot retrieve these keys again. If you leave this page before adding the keys to Sendlane, you will need to start over.
+. In a different window or tab, login to *Sendlane*. 
+. Navigate to the *Integrations* tab, locate WooCommerce, and click on
+*configure*.
+. In the top right, click on *Connect Integration*. 
+. Fill in your Woocommerce store information, making sure to
+include https:// for the URL
+. Return to your Woocommerce admin page to retrieve the Consumer Key
+(this is your REST API Key) and your Consumer Secret (this is your REST
+API Secret). 
+. Select a default list. This is the list your existing contacts will be
+added to, and where new contacts will be added after completing a
+purchase in your store. 
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d6936032c7d3a7a4d77e5d7/file-B2mIMk2ZAt.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d6936032c7d3a7a4d77e5d7/file-B2mIMk2ZAt]
+. Click *Continue* 
+. You'll see the integration status as *Initializing* first,
+then *Syncing* as the data starts to transfer - please give the system
+just a bit of time to process here, then once the status updates
+to *Installed* you're all set!
+
+Your integration is now complete! You can now develop targeted Campaigns
+and Automations for your WooCommerce audience!
+
+WooCommerce customer data from the last 90 days will now be available in
+Sendlane, and any new leads or customers will automatically be synced
+over as well, enabling you to develop targeted Campaigns and Automations
+for your WooCommerce audience!
+
+=== Installing the WooCommerce Plugin for Sendlane Abandoned Cart Automations
+
+Complete these steps to be able to retarget your abandoned cart
+customers using an Automation!
+
+. https://sendlane.s3-us-west-1.amazonaws.com/woocommerce/WooCommerce-For-Sendlane.zip[Download
+the WooCommerce plugin for Sendlane] and install the .ZIP file on your
+WordPress site (saving the plugin as any other file type will prevent
+you from uploading the plugin to your Wordpress site)
+. Verify that you have Version 2.0 installed on your WordPress plugins
+pageimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/610d5c13b37d837a3d0e1921/file-oydnBcwSs0.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/610d5c13b37d837a3d0e1921/file-oydnBcwSs0]
+. Click on the WooCommerce page in your left-hand
+sidebar → Settings → Integration tab
+. Enter your Sendlane subdomain and click Save Changes
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/610d5144b55c2b04bf6dc289/file-8ZnoDPbnO7.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/610d5144b55c2b04bf6dc289/file-8ZnoDPbnO7]
+
+=== Next Steps
+
+Now that you've fully integrated WooCommerce and Sendlane, we recommend
+setting up an automation to retarget anyone who exits your WooCommerce
+store before completing their purchase!
+
+Click here to set up an
+https://help.sendlane.com/article/344-how-to-retarget-woocommerce-abandoned-cart-customers[abandoned
+cart automation] that sends automated emails directly to contacts who
+abandon their shopping cart.
+
+=== Troubleshooting  
+
+If you have any other issues connecting your Sendlane and
+WooCommerce accounts, mailto:mailto:support@sendlane.com[our support
+team is available 24/7]. Plus, the WooCommerce team is just a few clicks
+away!
+
+[[additional-wc-resources]]
+=== Additional WooCommerce Resources
+
+* Connect with the https://woocommerce.com/contact-us/[WooCommerce team]
+* Visit the WooCommerce
+https://docs.woocommerce.com/?_ga=2.114251905.72143830.1567106330-1428694708.1567106330[Help
+Docs]
+
+https://woocommerce.com/[Sign up for WooCommerce] |
+https://woocommerce.com/blog/[WooCommerce Blog] |
+https://woocommerce.com/features/[WooCommerce Features]
+
+=== Additional Sendlane Resources
+
+* Check out our guide to maximizing the value of
+https://www.sendlane.com/blog/woocommerce-email-template[integrating
+WooCommerce and Sendlane]
+* https://www.sendlane.com/blog-posts/introducing-deep-data-for-woocommerce[Introducing
+Deep-Date for WooCommerce!]

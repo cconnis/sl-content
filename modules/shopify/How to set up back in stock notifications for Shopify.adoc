@@ -1,0 +1,362 @@
+==== Overview
+
+Set up back in stock notifications for your Shopify store to send
+Contacts email when your products are back in stock! It's as easy as
+creating two Automations and pasting a snippet into your Shopify store's
+theme.
+
+In this guide
+
+. Create a subscribed to back in stock automation
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+ Set up your
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify
+integration]
+
+ Install https://help.sendlane.com/article/72-beacon#general[Beacon
+general tracking]
+
+1::
+  This Automation will send an email to Contacts confirming their
+  subscription to back in stock notifications. Create an Automation
+  using the  *Subscribed to Back in Stock trigger*. Add an
+  https://help.sendlane.com/article/449-automation-actions#send-message[email
+  node] with a message that confirms Contacts' subscription to
+  notifications.
+
+2::
+  This Automation will send an email to Contacts when the product they
+  are interested in is back in stock!
+  +
+  Create an Automation and select the  *Product Back in Stock
+  trigger* from the Shopify tab. In the *Units* field, enter the number
+  of units that should be in stock before the Automation sends out back
+  in stock notifications.
+  +
+  Add an
+  https://help.sendlane.com/article/449-automation-actions#send-message[email
+  node] with a message that informs Contacts that the product they want
+  is back in stock! Use the In Stock block to display the product's
+  photo, price, reviews (if Sendlane Reviews is installed), and a link
+  to
+  purchase:image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d630ee4efad40db94fa61a/file-Ku20LPDjjE.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d630ee4efad40db94fa61a/file-Ku20LPDjjE]
+  +
+   +
+  Add a
+  https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation#goal[Goal
+  node] that checks for purchases, and your finished Automation should
+  look something like this:
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63d01e1c7eb7a63c30e3f2a8/file-XM4bVEziDM.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63d01e1c7eb7a63c30e3f2a8/file-XM4bVEziDM.png]
+
+3::
+  The script below will attempt to automatically pull your Shopify
+  store’s styling if you are using a standard Shopify theme. If your
+  button doesn't look like the rest of your store after installation,
+  check out the link:#style[Style Options section] below for a script
+  that provides more granular control of your button's design, and
+  review the Troubleshooting section to see specific suggestions for
+  known design fixes.
+  +
+....
+<script src="https://sendlane.com/scripts/sendlane-backinstock-widget.lib.js"></script>
+<script> 
+    SendlaneBackInStock.configure({
+    account: {
+        token: "PUBLIC_TOKEN",
+        platform: "shopify",
+    },
+    settings: {
+        cta_button: {
+            text: "Notify me when available",
+            product_page_form_element_selector: ".product-form",
+        },
+        modal: {
+            headline: "Get notified when this product is back in stock.",
+            email_field_label: "Email",
+            button_label: "Notify me when available",
+            success_message: "We will notify you when it becomes available",
+            disable_phone_field: true,
+        }
+    }
+})
+</script>
+....
+  +
+  Before logging into Shopify, add your Shopify integration token to the
+  script so it's ready to paste in your store. Copy the script to a text
+  editor, then replace the `+PUBLIC_TOKEN+` with the token in your
+  https://app.sendlane.com/integrations/shopify[Shopify integration's
+  settings]
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/651f0257ed8c6d2f1cffe07e/file-MHzDUutraR.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/651f0257ed8c6d2f1cffe07e/file-MHzDUutraR]
+  +
+  To install the script:
+  +
+  . Log in to your Shopify account
+  . Click  *Online Store*
+  . Click *Themes*
+  . Click the *Three dot menu*
+  . Click *Edit code*
+  . Search for the theme.liquid file
+  . Click into the theme.liquid file
+  . Press `+CMD+` + `+F+` to open the search function
+  . Type `+</body>+` in the search field
+  . Paste the snippet just before the `+</body>+` tag
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/651efe78c00c2b65208e1dad/file-JxUcRNETKn.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/651efe78c00c2b65208e1dad/file-JxUcRNETKn]
+
+4::
+  Now that your script is successfully installed, it's time to
+  https://help.sendlane.com/article/668-how-to-activate-an-automation[activate
+  your Automations]!
+
+'''''
+
+[[style]]
+=== *Style Options*
+
+The following script provides more granular control over the appearance
+and settings for the back in stock notification form and button
+appearing on product pages when a product is out of stock. This script
+can be used in place of the simplified script in step 3.
+
+Replace `+PUBLIC_TOKEN+` in the script below with the token in your
+link:#shopify-token[Shopify integration's settings]
+
+....
+<script src="https://sendlane.com/scripts/sendlane-backinstock-widget.lib.js"></script>
+<script>
+SendlaneBackInStock.configure({
+    account: {
+        token: "PUBLIC_TOKEN",
+        platform: "shopify",
+    },
+    settings: {
+        cta_button: {
+            text: "Notify me when available",
+            background_color: "black",
+            text_color: "white",
+            margin: "0.5rem 0",
+            padding: "10px",
+            width: "100%",
+            product_page_button_class: "btn",
+            product_page_form_element_selector: ".product-form",
+        font_family: "Arial"
+        },
+        modal: {
+            headline: "Get notified when this product is back in stock.",
+            email_field_label: "Email",
+            button_label: "Notify me when available",
+            success_message: "We will notify you when it becomes available",
+            drop_background_color: "rgba(0,0,0,0.4)",
+            background_color: "#fff",
+            text_color: "#222",
+        font_family: "Arial",
+        disable_phone_field: true,
+            button_text_color: "#ffffff",
+            button_background_color: "#006fbb",
+            close_button_color: "#ccc",
+            error_background_color: "#fcd6d7",
+            error_text_color: "#c72e2f",
+            success_background_color: "#d3efcd",
+            success_text_color: "#1B9500"
+        }
+    }
+})
+</script>
+....
+
+[[button]]
+==== Button Settings
+
+* `+settings.trigger.text+` - Text displayed on button when an item goes
+out of stock.
+* `+settings.trigger.background_color+` - Button background color
+* `+settings.trigger.text_color+` - The text color of the button
+* `+settings.trigger.margin+` - Margin around the button (defaults to
+'0.5rem 0' or 8px)
+* `+settings.trigger.padding+` - Padding around the button
+* `+settings.trigger.width+` - Override of the button width (defaults to
+100%)
+* `+settings.trigger.product_page_use_button_classes+` - Enabling this
+feature will attempt to use existing buttons' width in the product form
+element on the product page. While enabled, the
+settings.trigger.product_page_button_class will be ignored.
+* `+settings.trigger.product_page_form_element_selector+` - Enabling
+this feature overrides the widget's location for the back in stock
+notification button on the page (defaults to .product-form)
+
+[[form]]
+==== Subscription Form Settings
+
+* `+settings.modal.headline+` - Headline that appears at the top of the
+form; (defaults to product name)
+* `+settings.modal.email_field_label+` - Email field label (defaults to
+'Email')
+* `+settings.modal.button_label+` - Text within the submit button
+(defaults to 'Notify Me')
+* `+settings.modal.success_message+` - Message that appears when form is
+submitted (defaults to '"You're in! We'll let you know when it's back"')
+* `+settings.modal.drop_background_color+` - Drop background color that
+appears when the form is open (defaults to 'rgba(0,0,0,0.4)')
+* `+settings.modal.background_color+` - Background color of the form
+(defaults to white)
+* `+settings.modal.text_color+` - Text color of the popup form (defaults
+to black)
+* `+settings.modal.button_text_color+` - Text color of the button on the
+popup form (defaults to white)
+* `+settings.modal.button_background_color+` - Background color of the
+button on the popup form (defaults to black)
+* `+settings.modal.close_button_color+` - Color of the "X" button that
+closes the form (defaults to #ccc)
+* `+settings.modal.error_background_color+` - Background color of the
+form's error notification (defaults to pale red)
+* `+settings.modal.error_text_color+` - Text color of the form's error
+notification (defaults to red)
+* `+settings.modal.success_background_color+` - Background color of the
+form's success notification (defaults to pale green)
+* `+settings.modal.success_text_color+` - Text color of the form's error
+notification (defaults to green)
+
+'''''
+
+=== Troubleshooting
+
+[[notify-button-mods]]
+====== The Notify me when available button doesn't match my theme!
+
+If the standard back in stock script cannot match your store's theme,
+you can fix this by adding the `+product_page_button_class: "btn",+`
+setting to the script with your theme's specific button class. The
+adjusted standard script will look something like this (note the
+addition of `+product_page_button_class: "btn",+` in settings):
+
+....
+<script src="https://sendlane.com/scripts/sendlane-backinstock-widget.lib.js"></script>
+<script> 
+    SendlaneBackInStock.configure({
+    account: {
+        token: "PUBLIC_TOKEN",
+        platform: "shopify",
+    },
+    settings: {
+        cta_button: {
+            text: "Notify me when available",
+            product_page_form_element_selector: ".product-form",
+        product_page_button_class: "btn",
+        },
+        modal: {
+            headline: "Get notified when this product is back in stock.",
+            email_field_label: "Email",
+            button_label: "Notify me when available",
+            success_message: "We will notify you when it becomes available",
+            disable_phone_field: true,
+        }
+    }
+})
+</script>
+....
+
+`+btn+` and `+button+` are common generic button classes. If using the
+script above with the class set to `+btn+` doesn't work, try changing
+`+btn+` to `+button+`.
+
+If neither `+btn+` or `+button+` work, you'll need to use Chrome's
+inspect tool to find the button class your theme is using. If you
+haven't used the Chrome inspect tool before, check out
+https://help.sendlane.com/article/522-how-to-install-reviews-shopify#product-page-collections[this
+video] on using the inspect tool to find the correct place to install
+the star rating widget for Sendlane Reviews. Use the technique shown in
+the video to highlight and identify the class associated with buttons in
+your store.
+
+You should see `+<div>+` tags related to buttons with a button class
+specified, like this:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66197d874db6eb7a51d9373f/file-RcpiUJXwHn.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66197d874db6eb7a51d9373f/file-RcpiUJXwHn]In
+this specific instance, you'd replace the `+btn+` in the modified script
+above with `+shopify-payment-button+`.
+
+Replace the button class in the script with button classes found in your
+theme until the back in stock notification button matches your theme.
+
+link:#top[Back to top]
+
+'''''
+
+====== The Notify me when available button is showing up in an odd place!
+
+The basic back in stock script uses the
+`+product_page_form_element_selector: ".product-form",+` setting to
+determine where the back in stock button appears. Most Shopify themes
+use the class `+.product-form+` for the area of the product page where
+the variant and add to cart buttons are.
+
+If your back in stock button appears somewhere odd on your product page,
+your theme either uses a class other than `+.product-form+` for its
+product page selection buttons, or does not have a class (this is where
+the other method comes in, check stamped and klaviyo). You can fix this
+by changing the `+product_page_form_element_selector: ".product-form",+`
+setting from `+.product-form+` to your theme's class. Some common
+alternate classes are `+.product-single__form+` and `+js-product-form+`.
+
+The adjusted standard script will look something like this (note the
+change of `+.product-form+` to `+.product-single__form+` in the
+`+product_page_form_element_selector+` line):
+
+....
+<script src="https://sendlane.com/scripts/sendlane-backinstock-widget.lib.js"></script>
+<script> 
+    SendlaneBackInStock.configure({
+    account: {
+        token: "PUBLIC_TOKEN",
+        platform: "shopify",
+    },
+    settings: {
+        cta_button: {
+            text: "Notify me when available",
+            product_page_form_element_selector: ".product-single__form",
+        product_page_button_class: "btn",
+        },
+        modal: {
+            headline: "Get notified when this product is back in stock.",
+            email_field_label: "Email",
+            button_label: "Notify me when available",
+            success_message: "We will notify you when it becomes available",
+            disable_phone_field: true,
+        }
+    }
+})
+</script>
+....
+
+If neither `+.product-single__form+` or `+js-product-form+` work to
+place your button beneath the add to cart button, you'll need to use
+Chrome's inspect tool to determine the correct class for your theme.
+Note that the correct class will be unique, meaning it will appear only
+once in your product page's theme file.
+
+You should see  `+<div>+` tags related to product information with a
+class specified, like this:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66197d874db6eb7a51d9373f/file-RcpiUJXwHn.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66197d874db6eb7a51d9373f/file-RcpiUJXwHn]In
+this specific instance, you'd replace the `+btn+` in the modified script
+above with `+shopify-payment-button+`.
+
+Replace the button class in the script with button classes found in your
+theme until the back in stock notification button matches your theme.
+
+'''''
+
+=== Additional Resources
+
+* https://www.sendlane.com/blog/introducing-sendlanes-back-in-stock-notifications[Introducing
+Sendlane’s Back-in-Stock Notifications]
+* Learn the ins and outs of marketing automation from experts at
+https://www.ecommerceacademy.com/[eCommerce Academy]
+* https://www.sendlane.com/blog/how-to-improve-ecommerce-emails[6 Ways
+to Improve Your eCommerce Emails]

@@ -1,0 +1,96 @@
+Keeping a record of unsubscribed contacts is one of the ways Sendlane
+works to protect you as a sender. When Contacts are designated as
+unsubscribed from a List in Sendlane, they cannot be added back to that
+List.
+
+Email regulations such as the
+https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business[CAN-SPAM
+act] and https://gdpr-info.eu[GDPR] require that all digital senders
+honor the privacy of personal data and opt-out requests.
+
+Sendlane is a fully permission-based platform and complies with all
+email regulations. We require that every person on your list expressly
+consents to being contacted by you, from the moment they subscribe, to
+every email opened, to the moment they choose to unsubscribe.
+
+=== In This Guide
+
+* link:#protecting[Protecting Your Reputation]
+* link:#removing[Removing Unsubscribed Contacts From Lists]
+* link:#troubleshooting[Troubleshooting]
+* link:#additional[Additional Sendlane Resources]
+
+[[protecting]]
+=== Protecting Your Reputation
+
+If a Contact who has unsubscribed from a List is accidentally added back
+to the same List after their record is deleted from Sendlane, receiving
+content that they explicitly do not want to receive might prompt them to
+mark your content as spam. Spam complaints can cause deliverability and
+sender reputation issues.
+
+Customer journey data (including unsubscribed, or "opt-out requests")
+is essential to keep on file, in case a Contact questions if their
+privacy data was violated at any point by your account. 
+
+We recommend keeping all customer journey data in Sendlane and not
+removing unsubscribed Contacts. However, if you choose to delete
+unsubscribed Contacts, it is important to keep copies of all customer
+journey data.
+
+=== Protecting Your Data
+
+We do not recommend deleting unsubscribed Contacts for two important
+reasons:
+
+. Keeping customer journey data outside of your Sendlane account means
+you are responsible for backing up that data.
+. Removing unsubscribed Contacts from your Sendlane account removes all
+data associated with the Contacts' profiles, including revenue data.
+
+For more information on how to export your unsubscribed contacts, please
+click
+https://help.sendlane.com/article/126-how-to-export-your-contacts[here.]
+
+[[removing]]
+=== Remove Unsubscribed Contacts From Your Account
+
+Contacts who unsubscribe from any List in your account are automatically
+unsubscribed from your entire account, no matter how many Lists they are
+on.
+
+To remove unsubscribed Contacts from your account:
+
+. Click the *Audience* icon
+. Click *Contacts* 
+. Select *List(s)**
+. ** Click *Remove unsubscribed*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/651eed0005231a0b51d234df/file-Lsb7BITky6.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/651eed0005231a0b51d234df/file-Lsb7BITky6]
+
+=== Troubleshooting
+
+[[number]]
+====== My number of unsubscribed Contacts isn't going down!
+
+If you have followed the instructions above for unsubscribing Contacts
+from Lists and aren't seeing your unsubscribe total go down, you may be
+encountering a timeout error. Try selecting fewer Lists at a time while
+removing unsubscribed Contacts.
+
+[[sms-only]]
+====== How do I unsubscribe a Contact only from SMS and keep the Contact's email subscription?
+
+You cannot remove SMS consent from a Contact profile without also
+removing email consent from within Sendlane. Contacts can reply STOP to
+any SMS message from you to be unsubscribed from SMS and still receive
+emails.
+
+[[additional]]
+=== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog/why-list-hygiene-is-the-key-ingredient-for-increased-email-engagement-success[Why
+List Hygiene is the Key Ingredient For Increased Email Engagement &
+Success]
+* https://www.sendlane.com/ebooks/the-ecommerce-segmentation-handbook[The
+eCommerce Segmentation Handbook]

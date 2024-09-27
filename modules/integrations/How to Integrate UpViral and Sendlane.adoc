@@ -1,0 +1,91 @@
+link:++https://sendlane--emarky.thrivecart.com/upviral/++[UpViral] is an
+integrated membership management platform that helps your organization
+effectively sell, track, and grow their membership.
+
+By integrating UpViral and Sendlane, users can automatically sync
+different Member types directly to specified lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+link:++https://sendlane--emarky.thrivecart.com/upviral/++[active account
+with UpViral].
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so UpViral knows where to place your
+new contacts!
+
+'''''
+
+=== Connecting UpViral and Sendlane
+
+. Login to your UpViral account and click *_Settings_* then
+*_Integrations_*
+.  Click *_Add New +_* under Autoresponders
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5dc3760428634552d87e77/file-zo9NzKYQ2I.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5dc3760428634552d87e77/file-zo9NzKYQ2I]
+. Choose a name for the integration (for your reference) and select
+*_Sendlane_* from the list of available
+Autorespondersimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d7bf6ed2c7d3a7e9ae124b7/file-rBj1qjZk9h.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d7bf6ed2c7d3a7e9ae124b7/file-rBj1qjZk9h]
+. Enter your Sendlane subdomain, API Key and Hash Key and click
+**Saveimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d7bf6f62c7d3a7e9ae124b8/file-dFVh6tR5jR.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d7bf6f62c7d3a7e9ae124b8/file-dFVh6tR5jR] **Your
+integration is now complete!
+
+'''''
+
+=== 
+
+=== Next Steps
+
+When creating a campaign in UpViral, select your Sendlane integration in
+the _Email Autoresponder_ section under __General Setup __and choose the
+list you'd like these contacts to be added
+toimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d7bf7512c7d3a7e9ae124bf/file-Vd0ejbsmSu.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d7bf7512c7d3a7e9ae124bf/file-Vd0ejbsmSu]Now,
+all new contacts collected within UpViral will automatically be funneled
+into your chosen list in Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to UpViral, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help,
+the UpViral team is just a few clicks away!
+
+* Connect with the
+https://support.upviral.com/support/tickets/new[UpViral Team]
+* Visit their https://support.upviral.com/support/solutions[Knowledge
+Base]
+
+=== Additional Join It Resources
+
+link:++https://sendlane--emarky.thrivecart.com/upviral/++[Sign up for
+UpViral] |
+https://support.upviral.com/support/solutions/articles/4000075847-how-to-add-your-autoresponder-[UpViral
+Autoresponder Documentation]
+
+=== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-upviral[Sendlane
++ UpViral - Create a Viral Referral Campaign and Multiply Your Email
+List ]
+* https://www.sendlane.com/blog-posts/boost-referrals-with-email-marketing[Four
+Ways to Boost Referrals with Email Marketing]
+* https://www.sendlane.com/blog-posts/cross-channel-marketing-for-ecommerce[How
+to Develop a Winning Cross-Channel Marketing Strategy for your eCommerce
+Business ]
+
+'''''
+
+=== TL;DR
+
+UpViral Settings → Integrations → Add New → Sendlane → Domain, API Key &
+Hash Key → Save

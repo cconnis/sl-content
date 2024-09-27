@@ -1,0 +1,70 @@
+Sendlane account Owners and Admins can add or edit
+https://help.sendlane.com/article/399-users[additional user] permissions
+at any time. Review the chart below to determine which user role is most
+appropriate for your additional user.
+
+If users try to access a page or action that is restricted from their
+user permission role, they will see a grayed-out button or be redirected
+to the
+https://help.sendlane.com/article/329-dashboard-overview[Dashboard].
+
+Any user in a Sendlane account can contact Sendlane's 24/7 chat support
+or the account's assigned Customer Success Manager!
+
+[[descriptions]]
+=== Available User Roles
+
+====== Owner
+
+The Owner role is assigned to the user who created the Sendlane account.
+Owners are not restricted from any actions in the Sendlane account.
+Sendlane sometimes sends automated emails to account owners regarding
+administration and compliance.
+
+====== Admin
+
+Admins can perform any action in the Sendlane account but will not
+receive automated account or compliance-related emails.
+
+====== Manager
+
+Managers are restricted from billing actions, changing the account's
+password, adding or editing other additional users, and exporting
+Contacts.
+
+====== Content Creators
+
+Content Creators are restricted from billing actions, changing the
+account's password, adding or editing other additional users, exporting
+Contacts, and sending or activating email or SMS messages.
+
+=== User Role Permissions
+
+[width="100%",cols="20%,20%,20%,20%,20%",]
+|===
+| + |*Owner* |*Admin* |*Manager* |*Content Creator*
+
+|Receives account communication from Sendlane |✅ |🚫 |🚫 |🚫
+
+|All billing actions |✅ |✅ + |🚫 |🚫
+
+|Change account password |✅ |✅ + |🚫 |🚫
+
+|Add & edit users |✅ |✅ |🚫 |🚫
+
+|Export Contacts |✅ |✅ |🚫 |🚫
+
+|Generate and download
+https://help.sendlane.com/article/651-how-to-use-the-report-center[report
+center] reports + |✅ |✅ |✅ |🚫
+
+|Send Campaigns |✅ |✅ |✅ |🚫
+
+|Activate and deactivate Automations |✅ |✅ |✅ |🚫
+
+|Create & edit Campaign or Automation emails |✅ |✅ |✅ |✅
+
+|Create a new Automation |✅ |✅ |✅ |✅
+
+|Activate Automation emails + |✅ |✅ |✅ |✅
+|===

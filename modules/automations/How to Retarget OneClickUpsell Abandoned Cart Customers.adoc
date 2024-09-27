@@ -1,0 +1,104 @@
+Sendlane's deep data integrations with Shopify and OneClickUpsell allow
+you to send targeted emails directly to contacts who abandon their
+shopping cart!
+
+With this automation, you can send emails to your prospective customers
+about the product they were interested in along with a link to quickly
+and seamlessly complete their purchase. 
+
+'''''
+
+=== Before Getting Started
+
+Prior to creating an abandoned cart automation, you'll need to have your
+https://help.sendlane.com/article/345-how-to-integrate-oneclickupsell-and-sendlane[OneClickUpsell
+integration] connected.
+
+You will also need to have your
+https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[Shopify
+integration] connected, and
+https://landing.zipify.com/pages/ocu20[OneClickUpsell] installed within
+your Shopify store.
+
+'''''
+
+=== Creating an Abandoned Cart Automation
+
+. Begin by clicking *_Automations_* on the left of your dashboard and
+clicking *_New Automation_* on the top right
+. Choose the *_eCommerce_* tab within the template options and
+select _*Recover abandoned
+carts*image:https://d33v4339jhl8k0.cloudfront.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d58e11a2c7d3a7920be2ce0/file-iogtwC0rVB.png[https://d33v4339jhl8k0.cloudfront.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d58e11a2c7d3a7920be2ce0/file-iogtwC0rVB]_
++
+====== Please Note
+
+Once you choose this option it will create an automation using Shopify
+abandoned checkout as the trigger. The OneClickUpsell app uses the
+Shopify abandoned trigger even if a OneClickUpsell upsell or downsell is
+the only product abandoned.
+. Once the pre-designed automation loads, click to configure
+the __Customer Abandoned Checkout __trigger details:    
+* _*Select a Shop*:_ Choose your Shopify store from the drop down menu
+* _*Limit Per Subscriber*:_ How often you'd like for this automation to
+be triggered for a potential customer
+* _*Consider Abandoned After*:_ How long after the customer has
+abandoned the shopping cart that you'd like the automation to start
+(i.e., 1 hour, 3 hours) +
+ +
+image:https://d33v4339jhl8k0.cloudfront.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5b14a90428634552d860ec/file-jbGXmZ0suh.png[https://d33v4339jhl8k0.cloudfront.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5b14a90428634552d860ec/file-jbGXmZ0suh]
+. Next, click on the *_Email_* action to edit/create the content that
+you'd like to send to your customer. Follow the prompts to complete all
+of the basic details, then continue along to the email design
+. Inside the _Email Builder_, you'll see that the message has already
+been pre-filled with _Abandoned Cart_ content. Only one abandoned cart
+block is allowed per
+email.image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e9dfced04286364bc98acb1/file-XhWijEPBAf.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e9dfced04286364bc98acb1/file-XhWijEPBAf]
++
+====== Please Note
+
+The _Product Name_ and _Price_ sections will automatically populate
+information from the product your customer added to their shopping cart
+when the message is sent.
+. Once you have completed the content for this email, click *_Save and
+Continue_*
+. Continue building your automation by adding any other
+https://help.sendlane.com/article/73-automations#communications[actions
+and communications] you'd like to use. Depending on what your goals and
+objectives are, we recommend sending three emails over the next few days
+to encourage contacts to come back and complete a purchase.
+. Last but not least, don't forget set the automation to *_Active_* once
+you're done building out your funnel +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee258aa2c7d3a10cba8c537/file-NNSNQ7H5f4.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee258aa2c7d3a10cba8c537/file-NNSNQ7H5f4]
+
+And that's it! Anytime someone abandons their checkout with an OCU offer
+in the cart, they'll receive a follow up series showing the products
+they abandoned and an accessible button to bring them right back to
+their cart to finish their purchase!
+
+'''''
+
+=== Additional Resources
+
+* https://www.sendlane.com/blog-posts/designing-an-abandoned-cart-email[Designing
+An Abandoned Cart Email to Increase Conversions]
+* https://www.sendlane.com/blog-posts/tips-to-create-an-abandoned-cart-funnel-guaranteed-to-revive-lost-sales[5
+Emails For Your Abandoned Cart Proven to Recover Lost Sales ]
+* https://www.sendlane.com/blog-posts/off-the-wall-abandoned-cart-emails[Off-the-Wall
+Abandoned Cart Emails that Work ]
+* Email Marketing Insider Youtube Series: https://youtu.be/s3U83TizmWw[5
+Must Haves For A Picture Perfect Abandoned Cart Email]
+
+'''''
+
+=== Troubleshooting
+
+====== The abandoned cart block isn't available!
+
+The abandoned cart block may not appear in your elements sidebar for two
+common reasons:
+
+. Your eCommerce integration is not set up correctly. Review your
+eCommerce store's integration with Sendlane for possible connection
+issues.
+. You already added an abandoned cart block to your email. Only one
+abandoned cart block is allowed per email.

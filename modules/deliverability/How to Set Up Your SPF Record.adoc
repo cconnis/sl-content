@@ -1,0 +1,58 @@
+Many inbox providers use Sender Policy Framework (SPF) records
+to determine the legitimacy of an email address and detect domain
+spoofing. To ensure that your emails maintain optimal deliverability, we
+recommend authenticating your domain with an SPF record!
+
+[[single-record]]
+===== 🚨 Important Note
+
+Make sure to add only one SPF record to your domain. Multiple SPF
+records can cause serious delivery issues because inbox providers will
+not be able to tell which authentication is real.
+
+=== Setting up Your SPF Record
+
+Every domain provider has specific instructions on adding SPF records
+within their platform. Search your domain provider's knowledge base to
+find step by step instructions!
+
+Below are generalized instructions for adding an SPF record to your
+domain:
+
+. Navigate to your Domain Provider
+. Locate the DNS editor/zone
+. Add a record containing the following: *v=spf1 mx
+include:_spf.sendlane.com ~all*
+. ****If prompted use the ‘@’ symbol for the host field
+. Make sure to save your changes
+
+=== *Troubleshooting*
+
+Because SPF/DNS record setup done within your domain provider, Sendlane
+can provide limited technical support. Reach out to your DNS hosting
+company's support for more assistance.
+
+[[deliverability]]
+====== Deliverability didn't improve after I added an SPF record!
+
+SPF record validation can help establish your sender reputation if
+you're just starting out, or protect performance that's already strong.
+If your sender reputation is poor, SPF authentication is unlikely to
+improve your reputation or boost your delivery.
+
+[[cloudflare]]
+====== I use Cloudflare for hosting and can't add SPF records!
+
+Use Cloudflare's guidance for adding TXT records. For more information,
+see
+https://support.cloudflare.com/hc/en-us/articles/360019093151-Managing-DNS-records-in-Cloudflare#h_60566325041543261564371[Cloudflare's
+documentation].
+
+__
+
+=== Additional Resources:
+
+* https://help.sendlane.com/article/159-dmarc-and-sendlane[DMARC and
+Sendlane]
+
+=== 

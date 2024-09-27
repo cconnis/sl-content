@@ -1,0 +1,57 @@
+Sendlane's new email builder makes inserting clickable thumbnails from
+any YouTube or Vimeo video into a Campaign or Automation email as simple
+as pasting a link!
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Make sure your video is published and publicly viewable. Videos in draft
+or with restricted sharing settings may not embed.
+
+[[[ID TAG]]]
+===== 🚨 Video comments can affect deliverability
+
+When inbox providers scan your email for potentially dangerous links,
+comments on videos linked in the email are also scanned. Consider
+turning off comments for any video you want to link to in an email to
+avoid spam comments on a video causing deliverability problems for your
+email.
+
+1::
+  Click the Media element and drag it in your email, or click the Media
+  element once to add it to the bottom of your email
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6318f81e037bc877147b6cf0/file-EtiDVmGhXE.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6318f81e037bc877147b6cf0/file-EtiDVmGhXE]
+
+2::
+  Paste a link to a YouTube or Vimeo video and watch Sendlane's email
+  builder create a thumbnail screenshot and play button instantly!
+  +
+  image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6318f90690c29a3d732c57a6/file-hFhV5MechF.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6318f90690c29a3d732c57a6/file-hFhV5MechF]
+
+[[settings]]
+=== Video Embed Settings
+
+====== Tag
+
+Select or create a Tag to assign to Contacts who click the video
+thumbnail
+
+[[alt]]
+====== Alt Text
+
+The media element will automatically pull the video's title and insert
+it as the thumbnail's alt text, but you can enter whatever makes the
+most sense for your audience
+
+[[spacing]]
+====== Vertical Spacing
+
+Adjust vertical spacing up to create more space between the media
+element and the surrounding elements
+
+[[button]]
+====== Play Button Appearance
+
+Select a color and button style for the button that appears over your
+video's thumbnail

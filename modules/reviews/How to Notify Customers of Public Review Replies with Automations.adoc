@@ -1,0 +1,108 @@
+==== Overview
+
+With Sendlane Reviews, you can respond publicly to reviews on your site
+to thank customers for their positive reviews or provide further
+assistance to negative reviewers. Read on to learn how to set up an
+Automation that will notify reviewers that you've commented on their
+review!
+
+==== In This Guide
+
+. link:#create[Create an Automation]
+. link:#trigger[Add Triggers]
+. link:#email[Add an Email Node]
+
+'''''
+
+Use the Review Comment Reply to notify reviewers that you’ve responded
+to their review!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64b1c82ea9d61472afe08cb0/file-2WqA2jR7Sm.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64b1c82ea9d61472afe08cb0/file-2WqA2jR7Sm]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Complete
+https://www.notion.so/How-to-Set-Up-Reviews-ab50a796ff5546cdb4ecaed31501bdc1?pvs=21[Reviews
+setup]
+
+[[create]]
+=== 1. Create an Automation
+
+. Click the *Automation icon*
+. Click *New Automation*
+. Click *Start from Scratch*
+. Enter a name for the Automation
+. Click *Start*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f62e046c1478e8c77263/file-hEJaOwrgoO.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f62e046c1478e8c77263/file-hEJaOwrgoO]
+
+[[trigger]]
+=== 2. Add Triggers
+
+. Click *+Add Trigger*
+. Click your eCommerce integration’s *tab*
+. Select the *Review Comment Reply* trigger
+. Select *No Limit* in the Contact Limit dropdown
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f63fc5d2b53344e72b77/file-f5nuFIPAmu.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f63fc5d2b53344e72b77/file-f5nuFIPAmu]
+
+[[email]]
+=== 3. Add an Email Node
+
+. Click the *+ button*
+. Click *Send Message*
+. Click *Email*
+
+Learn more about Automation email nodes
+https://help.sendlane.com/article/449-automation-actions#email[here].
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f64e885de842a5d8cbc9/file-SOUwLq4z58.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495f64e885de842a5d8cbc9/file-SOUwLq4z58]
+
+Click *Create New Email* to start designing your review comment
+notification email.
+
+Use personalization and Twig to dynamically insert the text of the
+recipient’s review and the comment left on the review:
+
+* `+{{trigger.getReviewDisplayName()}}+` Displays the name the Contact
+used when submitting their review (may not match the name in their
+Contact Profile)
+* `+{{trigger.getReview.title}}+` Displays the text the Contact entered
+in the title field of their review
+* `+{{trigger.getReview.content}}+` Displays the body of the review
+* `+{{trigger.getReview.reply}}+` Displays the text of the reply to the
+review
+
+Here's some sample copy for inspiration:
+
+====== Subject
+
+Company Name has commented on your review
+
+====== Body
+
+Hi `+{{trigger.getReviewDisplayName()}}+`, +
+ +
+You have a comment on your review: +
+`+{{trigger.getReview.title}}+` +
+`+{{trigger.getReview.content}}+` +
+ +
+Comment: +
+`+{{trigger.getReview.reply}}+`
+
+[[next]]
+===== ⏭️ Next Steps
+
+Now that you've completed the required Automation to request reviews
+from purchasers, set up an Automation to respond to reviewers with an
+email or SMS, and a final Automation to notify reviewers that you've
+left a public reply on their review:
+
+https://help.sendlane.com/article/553-review-request-automation[Request
+Reviews with Automations]
+
+https://help.sendlane.com/article/553-review-request-automation[Respond
+to New Reviews with Automations]
+
+ Notify Customers of Public Review Replies with Automations

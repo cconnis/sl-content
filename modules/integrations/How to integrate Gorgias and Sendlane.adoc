@@ -1,0 +1,133 @@
+[[top]]
+==== Overview
+
+You can manage responses to SMS messages sent from Sendlane in Gorgias!
+Read on to learn how to install and configure Sendlane's Gorgias
+integration.
+
+==== In this guide
+
+* link:#install[Install the Gorgias integration]
+* link:#respond[Respond to SMS messages in Gorgias]
+* link:#uninstall[Uninstall the Gorgias integration]
+
+[[bgs]]
+===== 🚦Before getting started
+
+You must have an https://www.gorgias.com/[active Gorgias account] to
+integrate Gorgias and Sendlane
+
+[[which-messages-go-to-gorgias]]
+===== 🙋 When are tickets created in Gorgias?
+
+Tickets are created in Gorgias when the following conditions are met:
+
+. A subscribed contact sends an SMS message to your Sendlane phone
+number
+. The SMS message does not contain:
+.. https://help.sendlane.com/article/515-collect-sms-consent-opt-in-keywords[Opt-in
+keywords]
+.. Opt-out or fuzzy opt-out keywords  ( `+Stop!+`, `+Stopp+`, etc.)
+.. Functional keywords (`+HELP+`, `+INFO+`)
+
+[[which-messages-go-to-gorgias]]
+===== 🙋 What happens when my Sendlane phone number receives an SMS message that doesn't create a Gorgias ticket?
+
+[width="100%",cols="50%,50%",]
+|===
+|*Message contains* |*Outcome*
+
+|Opt-in keywords |No ticket is created in Gorgias, but the message is
+visible in the
+https://help.sendlane.com/article/464-sms-reply-center[reply center]
+
+|Opt-out or fuzzy opt-out keywords |If a ticket doesn't already exist
+for the contact in Gorgias, one will be created. The opt-out keyword
+will appear in the ticket thread in Gorgias, but the autoresponse from
+Sendlane will only be visible in the reply center.
+
+|Functional keywords ( `+HELP+`, `+INFO+`) + |If a ticket doesn't
+already exist for the contact in Gorgias, one will be created. The
+functional keyword will appear in Gorgias, but the autoresponse from
+Sendlane will only be visible in the reply center.
+|===
+
+[[gorgias-credits]]
+===== 🙋 How will integrating with Gorgias affect my SMS credits?
+
+Inbound messages do not cost credits, but outbound messages do. Outbound
+messages from Gorgias cost the same in credits as SMS messages sent from
+Sendlane.
+
+'''''
+
+[[install]]
+=== Install the Gorgias integration
+
+To install the Gorgias integration:
+
+. Login to Gorgias
+. Open a new tab
+. Login to Sendlane
+. Click the *Account* icon
+. Click *Integrations*
+. Click the https://www.sendlane.com/integrations/gorgias[*Gorgias*
+card]
+. Click *Configure*
+. Click *+Setup Integration* to be redirected to the Gorgias
+authorization page
+. Click *Authorize Unapproved App* to grant Sendlane access to your
+Gorgias account.
+
+Watch the video below to see the integration process:
+
+image:https://fast.wistia.com/embed/medias/8zg8ket7cp/swatch[https://fast.wistia.com/embed/medias/8zg8ket7cp/swatch]
+
+link:#top[Back to top]
+
+'''''
+
+[[respond]]
+=== Respond to SMS messages in Gorgias
+
+SMS replies routed to Gorgias will appear like an email in your Gorgias
+inbox:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6643ef26e127f12a7e611b3d/file-DeUlJ8V6ZE.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6643ef26e127f12a7e611b3d/file-DeUlJ8V6ZE]To
+respond to your customer, type your response in the message field and
+click Send as usual.
+
+Even though it looks like an email, you're sending an SMS, which means
+https://help.sendlane.com/article/462-how-to-send-an-sms-campaign#emoji-character-count[using
+emojis] will increase the number of credits used to send your reply.
+
+Images and files are not supported in the Gorgias integration. Images
+sent by your customer will not show up in Gorgias or the Sendlane reply
+center, and there will be no indication in either that the customer
+attempted to send an image. To send an image to your customer via
+Gorgias, upload the image to a photo hosting service that provides a URL
+for the image.
+
+Don't use hyperlinks when replying to Gorgias tickets; they appear in
+brackets to contacts which unnecessarily uses up credits.
+https://help.sendlane.com/[This hyperlink] would appear in Gorgias, and
+to the contact, as `+This hyperlink [https://help.sendlane.com/]+`
+
+link:#top[Back to top]
+
+'''''
+
+[[uninstall]]
+=== Uninstall the Gorgias integration
+
+To uninstall your Gorgias integration:
+
+. Log into Sendlane
+. Click the Account icon
+. Click Integrations
+. Click the https://www.sendlane.com/integrations/gorgias[Gorgias card]
+. In the upper right corner, click Remove Integration
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/664ce700e1989867dcefcda9/file-tF9T6W6gPq.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/664ce700e1989867dcefcda9/file-tF9T6W6gPq]
+
+link:#top[Back to top]

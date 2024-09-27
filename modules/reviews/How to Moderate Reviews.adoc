@@ -1,0 +1,235 @@
+==== Overview
+
+Honest reviews and merchant comments help customers feel confident when
+purchasing from your store. Spam or dishonest reviews can hurt your
+brand's reputation, so Sendlane Reviews gives you plenty of moderation
+tools to ensure that honest high quality reviews are front and center in
+your store.
+
+Read on to learn how to configure your default moderation settings,
+publish, reject, or unpublish reviews, and add labels to organize
+reviews!
+
+==== In This Guide
+
+* link:settings[Review Settings]
+** link:#moderation[Moderation Settings]
+** link:#notification[Notification Settings]
+* link:#pru[Publish&#44; Reject&#44; or Unpublish Reviews]
+* link:#reply[Reply to Reviews]
+* link:#label[Add a Label to Reviews]
+* link:#share[Share Reviews]
+
+'''''
+
+[[set]]
+=== Review Settings
+
+Click the *Reviews icon* > *Content* to access Review content and
+settings tabs:
+
+* General - Review autopublish and merchant notifications settings
+* Store Profile - Merchant avatar name and icon settings (see our guide
+to
+https://help.sendlane.com/article/558-how-to-respond-to-reviews-in-your-store[replying
+to reviews] for more details on this tab)
+* Thank You - Set the thank you message Contacts see after submitting a
+review (see our guide to
+https://help.sendlane.com/article/547-how-to-customize-review-widget-styling[setting
+a thank you message] for more details on this tab)
+* Import & Export - Import existing reviews from other platforms and
+export reviews from Sendlane Reviews (see our
+https://help.sendlane.com/article/525-how-to-import-reviews[guide to
+importing and exporting] for more details on this tab)
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6494a2be885de842a5d8caae/file-nTwDjY2BYy.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6494a2be885de842a5d8caae/file-nTwDjY2BYy]
+
+[[settings]]
+=== General Settings Tab
+
+[[moderation]]
+==== Moderation Settings
+
+Automatically publishing reviews above a certain star rating threshold
+allows you to reach out to unhappy customers and attempt to address
+their concerns before negative reviews are published. Read on to learn
+how to reply to a review!
+
+Reviews that are not automatically published will be Pending for 14
+days. If a Pending review is not manually published or rejected during
+the 14 day window, the review will be automatically published. Read on
+to learn how to publish or reject a review.
+
+Under Moderation, check the Publish checkbox and select an option form
+the Approve dropdown to automatically publish reviews above a specified
+number of stars. Click Save Changes to save your preferences.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6494c33ae9352a3c57926e53/file-qhlGJxKC3s.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6494c33ae9352a3c57926e53/file-qhlGJxKC3s]
+
+[[notification]]
+==== Notification Settings
+
+Sendlane Reviews can automatically alert you via email when reviews with
+a specified star rating are submitted.
+
+To turn on notifications, check the Notify checkbox and select a star
+threshold to receive an email notification when reviews under the star
+threshold you select are submitted. Click Save Changes to save your
+preferences.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6494c372e9352a3c57926e54/file-dw7gtrWwLq.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6494c372e9352a3c57926e54/file-dw7gtrWwLq]
+
+link:#top[Back to top]
+
+'''''
+
+[[pru]]
+=== Publish, Reject, or Unpublish Reviews
+
+Manage reviews by clicking the Moderation tab.
+
+[[filter]]
+==== Filter Reviews
+
+Use the filter icon to filter reviews by the following parameters:
+
+* Date range
+* Product
+* With or without replies
+* Verified (review was submitted from a link in a
+https://help.sendlane.com/article/553-review-request-automation[review
+request Automation] and is associated with a confirmed purchase) or
+unverified reviewer
+* With or without replies
+* With or without media
+* Review status
+* Star rating
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495dd4a1c43322e9690e02f/file-0Z8fWYi4RZ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495dd4a1c43322e9690e02f/file-0Z8fWYi4RZ]
+
+[[publish-or-reject]]
+==== Publish or Reject a Review
+
+Publish or reject a single review by clicking the Review then clicking
+the Publish or Reject button on the top right. To unpublish a published
+review, select the review and click Reject.
+
+Reviewers are not notified when their reviews are published, rejected,
+or unpublished.
+
+Select multiple reviews to publish or reject more than one review at
+once.
+
+[[rejected-metrics]]
+===== 🚨 Rejected reviews are excluded from all widgets and metrics and included on exports
+
+When you reject a review, or unpublish a previously published review,
+the review will be removed from your review widgets and from all
+reporting data. The Contact who submitted the review will not be
+notified that their review was rejected or unpublished.
+
+Rejected reviews are always available within the Moderation tab and in
+exports.
+
+To reject a review you’ll need to select a reason for the review’s
+rejection. Reviews that do not contain the following characteristics
+should generally remain published to maintain authenticity in your
+store’s reviews.
+
+* *Offensive or Inappropriate* - Review contains inappropriate or
+offensive content. This includes content that is harassing, libelous,
+abusive, profane, obscene, sexually explicit, or discriminatory.
+* *Unrelated to the product or service* - Review is not primarily
+concerned with the specified product or store.
+* *Contains personal information* - Review contains confidential or
+private information.
+* *Foreign language* - Review is written in a language other than the
+language the store operates in.
+* *Legal transgression* - Review content contains information that
+cannot legally be published, such as an individual’s medical, financial,
+or other protected information; a company’s trade secrets; or any other
+unlawful information.
+* *Spam or contains advertising* - Review advertises another product or
+service
+* *False or misleading* - Review contains information or claims that are
+demonstrably false or misleading.
+* *Fake* - Review was not written by an actual customer.
+
+link:#top[Back to top]
+
+'''''
+
+[[reply]]
+=== Reply to a Review
+
+Reply to reviews by clicking the Reviews tab, selecting a Review, and
+clicking Add Comment. Only one comment can be added per Review.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495e0bd046c1478e8c7724c/file-j8hwtrJQ56.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495e0bd046c1478e8c7724c/file-j8hwtrJQ56]
+
+link:#top[Back to top]
+
+'''''
+
+[[label]]
+=== Add a Label to a Review
+
+Add a label to a review to organize reviews into categories like
+"marketing" to note reviews that should be used in marketing content, or
+create labels for different properties of your products such as "color"
+or "packaging" to note what specifically stood out to the reviewer for
+further analysis.
+
+Labels are only visible on the
+https://app.sendlane.com/product-review/1/moderation[review moderation
+page]. There is no limit to the number of labels you can create to
+organize your reviews; create as many labels as you need!
+
+To create a label and add it to a review:
+
+. Click the review you want to add a label to
+. Click the *Select Labels* dropdown
+. Enter a name for your label
+. Click *+ Create*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6525943205231a0b51d23923/file-UucCrHPd7Z.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6525943205231a0b51d23923/file-UucCrHPd7Z]
+
+link:#top[Back to top]
+
+'''''
+
+[[share]]
+=== Share a Review
+
+Share a specific review to social media to show prospective customers
+how happy and satisfied your purchasers are. Reviews can be shared one
+at a time.
+
+To share a review:
+
+. Click the review you want to share
+. Click the *Share* icon
+. Select a social media platform
+. Click Share on the pop-up window that opens with your review
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495e1c1885de842a5d8cbb3/file-64lUV7ETYr.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6495e1c1885de842a5d8cbb3/file-64lUV7ETYr]
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+[[edit]]
+====== *How do I edit a Review?*
+
+Reviews cannot be edited, they can only be published, rejected,
+unpublished, or replied to.
+
+====== *How do I add or take away Likes?*
+
+Likes cannot be edited by store owners. Users can click Like once per
+review, or click the same review twice to remove their Like.
+
+https://www.notion.so/How-to-Moderate-Reviews-2ee58d4de5404de8af0702f760e11a2e?pvs=21[Back
+to top]

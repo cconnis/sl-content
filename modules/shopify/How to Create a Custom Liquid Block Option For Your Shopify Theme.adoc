@@ -1,0 +1,47 @@
+Themes that are not available in the Shopify Theme Store, or are
+otherwise not supported by Shopify, do not have a native Custom Liquid
+block option in the theme customization screen.
+
+Follow the instructions below to add a Custom Liquid block option to any
+theme!
+
+. Login to Shopify
+. Click *Sales Channels*
+. Click *Online Store*
+. Click the *three dot* menu next to your theme
+. Click *Edit Code*
+. Click the *Sections* folder
+. Click *Add a new section*
+. Ensure *liquid* is the selected radio button
+. In the File Name field, enter `+section-custom-liquid+`
+. Click *Done*
+. Remove the default code that appears in your new
+section-custom-liquid.liquid file
+. Copy the following code:
++
+....
+{{ section.settings.custom_liquid }}
+{% schema %}
+{
+   "name": "Custom Liquid",
+   "settings": [
+   {
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "Custom Liquid",
+      "info": "Add app snippets or other liquid code to create advanced customizations."
+   }],
+   "presets": [
+   {
+      "name": "Custom Liquid"
+   }]
+}
+{% endschema %}
+    
+....
+. Paste the code into the blank `+section-custom-liquid.liquid+` file
+. Click *Save*
+
+Check out the video below for a walkthrough of the process:
+
+image:https://fast.wistia.com/embed/medias/226vtnbj0b/swatch[https://fast.wistia.com/embed/medias/226vtnbj0b/swatch]

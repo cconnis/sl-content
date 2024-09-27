@@ -1,0 +1,87 @@
+https://smile.io/[Smile.io] helps you turn one-time sales into repeat
+customers with a loyalty program!
+
+Integrating Smile.io enables you to sync your rewards program customers
+with your Sendlane account, so you can connect with your best, most
+loyal customers directly.
+
+'''''
+
+=== *Before Getting Started*
+
+Prior to connecting with Sendlane, you'll need an active
+https://smile.io/[Smile.io account].
+
+Please also be sure you
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Smile.io knows where to place
+your leads and contacts in Sendlane!
+
+'''''
+
+=== *Connecting Smile.io and Sendlane*
+
+. Navigate to the *Integrations* tab within your Sendlane account by
+clicking the Account icon > Integrations
+. Select the *_Smile.io
+integration_* image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5dc4ab4004286364bc917d8b/file-8oacgkqAPU.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5dc4ab4004286364bc917d8b/file-8oacgkqAPU]
+. Click
+_Configureimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5dc4ab2804286364bc917d8a/file-smMjfbzSPH.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5dc4ab2804286364bc917d8a/file-smMjfbzSPH]_**
+. Choose _New Smile.io
+Integrationimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d714e9904286364bc8ec6df/file-zq3qowqTJM.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d714e9904286364bc8ec6df/file-zq3qowqTJM]_
+. Next, name your integration, choose your list and click
+*_Continueimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d714ea02c7d3a7e9ae0cc4b/file-2dO4dPYWCj.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d714ea02c7d3a7e9ae0cc4b/file-2dO4dPYWCj]_*
+. Click __Authorize __when you're redirected back to your Smile.io
+accountimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d714d242c7d3a7e9ae0cc2f/file-EhBYYKUDYp.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d714d242c7d3a7e9ae0cc2f/file-EhBYYKUDYp]
+. Finally, you'll see the Integration successfully connected
+messageimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d714e432c7d3a7e9ae0cc45/file-Whc7oIzfJS.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d714e432c7d3a7e9ae0cc45/file-Whc7oIzfJS]
+
+And that's it! Your Integration is now complete!
+
+Customer data collected by Smile.io will now be funneled into your
+selected list in Sendlane.
+
+'''''
+
+=== Next Steps
+
+Once you've fully integrated Smile.io and Sendlane together, please
+click here to learn more about
+https://help.sendlane.com/article/351-how-to-send-targeted-emails-to-smileio-customers[how
+to use Smile.io] to send targeted email campaigns to your customers!
+
+'''''
+
+=== *Troubleshooting*
+
+If you have any issues connecting your Sendlane and Smile.io accounts,
+mailto:mailto:support@sendlane.com[our support team is available 24/7].
+Plus, the Smile.io team is just a few clicks away!
+
+* Connect with the https://smile.io/contact-us[Smile.io team].
+* Visit the Smile.io https://blog.smile.io/[Blog] page
+
+'''''
+
+*Additional Smile.io Resources*
+
+Sign up for Smile.io https://smile.io[here]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/customer-loyalty-starbucks-case-study[ How
+Starbucks Uses Email Marketing to Gain Customer Loyalty]
+* https://www.sendlane.com/blog-posts/keep-them-buying[5 Emails You Can
+Send to Customers to Keep Them Buying]
+* https://www.sendlane.com/blog-posts/5-post-purchase-emails-you-should-be-sending-to-increase-your-customer-ltv[5
+Post-Purchase Emails You Should Be Sending to Increase Your Customer
+LTV]
+
+'''''
+
+*TL;DR*
+
+https://app.smile.io/auth/login[Log in to Smile.io] → (In
+Sendlane) _Integrations_ → Smile.io integration → __Configure __→ __New
+Smile.io Integration __→ Name integration, choose list, _Continue_ → (In
+Smile.io) _Authorize_ → Integration successfully connected

@@ -1,0 +1,101 @@
+https://a.paddle.com/v2/click/34000/48463?link=1050[Wishloop] is a lead
+capture platform that can help to grow your subscriber list and improve
+user engagement on your website.
+
+By integrating Wishloop and Sendlane, leads generated through Wishloop
+can be automatically funneled directly to your Lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+https://a.paddle.com/v2/click/34000/48463?link=1050[active Wishloop
+account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_ → **_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account so Wishloop knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting Wishloop and Sendlane
+
+. From your Wishloop dashboard, navigate to
+*_Workspace_* *_Settings_ → **_Integrationsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f77ed99c9e77c00162141cf/file-BcJjvx8Ol6.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f77ed99c9e77c00162141cf/file-BcJjvx8Ol6] +
+_*
+. Click on *_+New
+Integrationimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f77ef0bc9e77c00162141d0/file-tMXitR73u4.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f77ef0bc9e77c00162141d0/file-tMXitR73u4]_*
+. Scroll to and
+select *_Sendlaneimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f77ef1f52faff0016aec465/file-1huaTcumw8.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5f77ef1f52faff0016aec465/file-1huaTcumw8] +
+_*
+. Label your integration, enter your API key, Hash key, and subdomain
+. Click *_Sync lists_* to display and select the Sendlane lists you'd
+like to add Wishloop contacts to (All are preselected by
+default)image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cfeaa3b0428632218e3ed26/file-MtQBDsmUih.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cfeaa3b0428632218e3ed26/file-MtQBDsmUih]
+. Click *_Save_*
+
+'''''
+
+=== Connecting a Wishloop Campaign to a List
+
+Now that your Sendlane integration is in the system, let's go over how
+to link a specific Wishloop campaign to a List:
+
+. From within the editor of any of your Wishloop forms, ensure that
+there is a field for collecting a user's email
+addressimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cfeb9e12c7d3a493e798008/file-7R845wcAUc.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cfeb9e12c7d3a493e798008/file-7R845wcAUc]
+. Click on the section with the email field, select *_Settings_* from
+the top of the sidebar menu and under _List_, choose your integrated
+Lists from the
+drop-downimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cfeb9eb0428632218e3ee2a/file-wIqBjN05QR.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cfeb9eb0428632218e3ee2a/file-wIqBjN05QR]
+. Finish designing your form 
+
+Once you're done, and everything is saved - your integration is now
+complete! 
+
+Leads generated with Wishloop will now be automatically funneled into
+your selected Lists in Sendlane.
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Wishloop, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+Wishloop team is just a few clicks away!
+
+* Connect with the
+https://wishloop.zendesk.com/hc/en-us/requests/new[Wishloop team]
+* Visit the https://wishloop.zendesk.com/hc/en-us[Wishloop Documentation
+Page]
+
+==== Additional Wishloop Resources
+
+https://a.paddle.com/v2/click/34000/48463?link=1050[Signup for Wishloop]
+| https://wishloop.com/blog/[Wishloop Blog] |
+https://wishloop.zendesk.com/hc/en-us/categories/203913208-Troubleshooting[Troubleshooting]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/powerful-lead-magnets[6 Powerful
+Lead Magnets Proven to Engage and Capture Leads]
+
+'''''
+
+=== TL;DR
+
+[.underline]#Integrating:# Wishloop dashboard → _Workspace_ _Settings_ →
+_Integrations_ →__** **New Integration__→ Select Sendlane→ Label
+integration and enter your Sendlane API/Hash Keys & Subdomain → _Sync
+lists_ → Select Lists → _Save_
+
+[.underline]#Connecting a form to a list:# (inside your Wishloop form)
+add email collection field → Click email field → _Settings_ →
+ __List __→  select Lists → Finish designing form → Save

@@ -1,0 +1,109 @@
+ClickFunnels is an online sales funnel builder that helps businesses
+market, sell, and deliver their products online.
+
+By integrating ClickFunnels with Sendlane, contacts collected by
+ClickFunnels can be automatically sent to a List in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://www.clickfunnels.com[ClickFunnels account] with an opt-in page
+created that contains an email field _and_ a submit button.
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_* → _*API*._
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so ClickFunnels knows where to place
+your new leads and contacts!
+
+'''''
+
+=== Integrating ClickFunnels and Sendlane
+
+. From your homepage in ClickFunnels, hover over your profile photo in
+the top right corner, and click on *_Account
+Settingsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d7144c504286364bc8ec64c/file-uA9485jUvW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d7144c504286364bc8ec64c/file-uA9485jUvW]_*
+. Locate and click on *_Integrations_* under
+Setupimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d7145282c7d3a7e9ae0cbb9/file-mWbzrNANig.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d7145282c7d3a7e9ae0cbb9/file-mWbzrNANig]
+. ****Click *_Add New Integration_*
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1b8bb04286333a2640bf8/file-gcmjT9jaRp.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1b8bb04286333a2640bf8/file-gcmjT9jaRp]
+. Search for and select *_Sendlane_* from the list of
+integrationsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1b96c04286333a2640bf9/file-xAvrhOZbAN.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1b96c04286333a2640bf9/file-xAvrhOZbAN]
+. Next, you will need to name your Integration, enter your Subdomain
+(without “.sendlane.com”) API/Hash Keys, and click *_Add
+Integration_*. +
+ +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1ba3c04286333a2640c00/file-AE6ttwFuoZ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1ba3c04286333a2640c00/file-AE6ttwFuoZ]
++
+====== Please Note
+
+All letters in your subdomain, API Key, and Hash Key will need to be
+lowercase in order for the integration to work properly
+. Once you have added your integration, open the funnel that you would
+like to link to Sendlane. 
+. From within your Funnel editor, hover over *_Settings_* and click
+*_Integrations_*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1c0cc04286333a2640c15/file-wQDHLyGUod.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1c0cc04286333a2640c15/file-wQDHLyGUod]
+. From here, you will select the integration you just created, the
+action the integration will perform (ie adding contacts to your List),
+and the List with which you want your funnel to
+integrateimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1c50c2c7d3a383712facb/file-mjRe3ghSe8.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5cf1c50c2c7d3a383712facb/file-mjRe3ghSe8]
+. Make sure to Save the funnel before you leave the page.
+
+Your integration is now complete! 
+
+Captured contacts will be automatically added to your chosen Sendlane
+list.
+
+=== Troubleshooting
+
+*I'm not seeing new Contacts in Sendlane from my ClickFunnel form!*
+
+Make sure there is only one ClickFunnel form per page on your website.
+Inserting more than one ClickFunnel form on a single page of your
+website can cause Contact information to not be passed to your Sendlane
+account.
+
+Because this integration is native to ClickFunnels, Sendlane is only
+able to provide limited troubleshooting support. However, if you _do_
+need help, the ClickFunnels team is just a few clicks away! 
+
+* Go through the
+https://help.clickfunnels.com/hc/en-us/articles/360007295974-Launch-Checklist[ClickFunnels
+step-by-step setup checklist]
+* Connect with the
+https://help.clickfunnels.com/hc/en-us/articles/360006194653-Contact-Support[ClickFunnels
+team]
+* Visit the ClickFunnels https://help.clickfunnels.com/hc/en-us[Help
+Desk]
+
+==== Additional ClickFunnels Resources
+
+https://www.clickfunnels.com/blog/?https://www.clickfunnels.com/?cf_affiliate_id=513516&affiliate_id=513516&wickedsource=google&wickedid=327310437298&wtm_term=&wtm_campaign=1685121071&wtm_content=66039405779&wickedplacement=&wickedkeyword=&gclid=Cj0KCQjwocPnBRDFARIsAJJcf96qvRJXzXiaiP6bhEw9pqmej3qlxwXBzudwkxUFc9nUW2xdg5uYIYsaAtGaEALw_wcB[ClickFunnels
+Blog] |
+https://goto.clickfunnels.com/clickfunnels-features?cf_affiliate_id=513516&affiliate_id=513516&https://www.clickfunnels.com/?cf_affiliate_id=513516&affiliate_id=513516&wickedsource=google&wickedid=327310437298&wtm_term=&wtm_campaign=1685121071&wtm_content=66039405779&wickedplacement=&wickedkeyword=&gclid=Cj0KCQjwocPnBRDFARIsAJJcf97JDI0TJyFBDw3VYB36O_XX_OICMQYiXDdClzXw2RnnQAnNy2XyPrsaAuQpEALw_wcB[ClickFunnels
+Features]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/converting-landing-pages[4 Design
+Elements of Converting Landing Pages]
+* https://www.sendlane.com/blog-posts/why-marketing-automation-is-an-absolute-must-have-for-modern-business-owners[Why
+Marketing Automation is a Must-Have For Modern Business Owners]
+* https://www.sendlane.com/blog-posts/keep-them-buying[5 Emails You Can
+Send Current Customers to Keep Them Buying ]
+* https://www.sendlane.com/blog-posts/is-sendlane-affiliate-marketing-friendly[Is
+Sendlane Affiliate Marketing Friendly?]
+
+=== TL;DR
+
+Log in to ClickFunnels → _Integrations_ → _Add New Integration_ → Find
+Sendlane → Click Sendlane logo → Enter Sendlane API Key, Hash Key,
+Subdomain → _Add Integration_ → Go into your funnel
+→** **_Settings_ → __Integrations __→ Choose Integration/Action/List

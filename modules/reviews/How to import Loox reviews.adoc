@@ -1,0 +1,69 @@
+[[top]]
+==== Overview
+
+If you’re migrating to Sendlane Reviews from Loox, you can bring your
+hard earned reviews with you! Read on to learn how to import your Loox
+reviews to Sendlane.
+
+==== In This Guide
+
+* link:#export[Export reviews from Loox Product Reviews]
+* link:#import[Import reviews file to Sendlane]
+
+'''''
+
+[[export]]
+=== Export reviews from Loox
+
+Follow https://help.Loox/en/articles/8236266-exporting-reviews[Loox's
+instructions] for exporting your product reviews. When your file is
+ready for download, save it somewhere easily accessible, like your
+desktop, and make sure it is saved as a .CSV file. Do not edit the file
+in any way.
+
+[[import]]
+=== Import reviews file to Sendlane
+
+To import your review file:
+
+. Click the *Reviews* icon
+. Click *Content* 
+. Click *Import & Export*
+. Click *Import Reviews*
+. Select *Loox* from the Product Review Source dropdown
+. Drag and drop your .CSV file or click to browse for your file
+. Check the checkbox confirming that your reviews are genuine
+. Click *Importimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e8c92c2411c5087b68412b/file-tbOHKXbNjq.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e8c92c2411c5087b68412b/file-tbOHKXbNjq]*
+
+If some reviews were not imported due to an error, the Results column
+will show how many reviews were not imported. Click the download icon in
+the Actions column to download a file of reviews that were not imported.
+See
+https://help.sendlane.com/article/647-troubleshooting-sendlane-reviews-imports[Troubleshooting
+Sendlane Reviews] for next steps.
+
+'''''
+
+=== Troubleshooting
+
+[[productid]]
+====== My review file wasn't accepted!
+
+Sometimes, Loox reviews are exported with an alternate spelling of the
+Product ID column. The heading should read `+productID+` but sometimes
+reads `+productid+`. If your file wasn't accepted, open the .CVS file
+you exported from Loox and check for `+productid+`. If it's there,
+change it to `+productID+`, save the file as .CSV, and try uploading
+again. If you are still unable to get your file accepted, see
+https://help.sendlane.com/article/647-troubleshooting-sendlane-reviews-imports[Troubleshooting
+Sendlane Reviews] for next steps.
+
+[[other-errors]]
+====== My review file contains errors!
+
+If some reviews were not imported due to an error, the Results column
+will show how many reviews were not imported. Click the download icon in
+the Actions column to download a file of reviews that were not imported.
+See
+https://help.sendlane.com/article/647-troubleshooting-sendlane-reviews-imports[Troubleshooting
+Sendlane Reviews] for next steps.

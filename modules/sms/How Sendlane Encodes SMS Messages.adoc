@@ -1,0 +1,110 @@
+[[top]]
+Sendlane encodes SMS messages to send in as few segments as possible to
+reduce costs for SMS sends.
+
+Read on to learn how your SMS messages are encoded and why emojis and
+other special characters increase the number of segments needed to
+complete a send!
+
+* link:#encoding[What is SMS message encoding?]
+* link:#alphabets[What are GSM-7 and UCS-2?]
+* link:#segments[How does Sendlane determine how many segments an SMS
+message uses?]
+* link:#common[What are the most common UCS-2 characters that end up in
+SMS messages?]
+* link:#emojis[How are emojis encoded?]
+* link:#check[How can I check my SMS message for UCS-2?]
+
+'''''
+
+[[encoding]]
+=== What is SMS message encoding?
+
+SMS message encoding is the process of translating the SMS message sent
+from Sendlane (text characters and emojis) to mobile carriers (GSM-7 or
+UCS-2 standardized characters).
+
+Think of SMS encoding like handwriting recognition software. The
+handwritten text is the SMS message you wrote in Sendlane; the resulting
+digital text is the encoded SMS message received by mobile carriers.
+
+link:#top[Back to top]
+
+'''''
+
+[[alphabets]]
+=== What are GSM-7 and UCS-2?
+
+GSM-7 is an encoding method, or alphabet, used in SMS communication for
+languages with more than 128 commonly used characters.
+
+UCS-2 is a “backup” encoding method for characters outside the GSM-7
+alphabet.
+
+GSM-7 encoding allows 160 characters per segment, while UCS-2 allows
+only 70 characters per segment.
+
+link:#top[Back to top]
+
+'''''
+
+[[segments]]
+=== How does Sendlane determine how many segments an SMS message uses?
+
+As long as there are no UCS-2 characters in your SMS message, it will be
+encoded as GSM-7 and will use 160 total characters per segment. If there
+is one or more UCS-2 character in your SMS message, the message will be
+encoded as UCS-2 and sent in 70 character segments.
+
+Sendlane prepends a six Byte user data header for each SMS segment to
+specify how mobile carriers should format and process the SMS message.
+
+After the header is applied, GSM-7 encoded segments have 157 characters,
+and UCS-2 encoded segments have 67 characters available for content.
+
+link:#top[Back to top]
+
+'''''
+
+[[common]]
+=== What are the most common UCS-2 characters that end up in SMS messages?
+
+Modern text editors, the process of copying and pasting, and autocorrect
+can inadvertently sneak UCS-2 characters into your SMS message.
+
+Common UCS-2 characters include angled quotes (” vs ”), non-standard
+spacing, and other punctuation. Check out the GSM-7 character set
+https://en.wikipedia.org/wiki/GSM_03.38#GSM_7-bit_default_alphabet_and_extension_table_of_3GPP_TS_23.038_.2F_GSM_03.38[here].
+
+link:#top[Back to top]
+
+'''''
+
+[[emojis]]
+=== How are emojis encoded?
+
+Emojis are not characters in the GSM-7 standard; therefore, SMS messages
+that include emojis are encoded as UCS-2 and will be processed as 67
+character segments (excluding the automatically prepended user data
+header mentioned above.)
+
+link:#top[Back to top]
+
+'''''
+
+[[check]]
+=== How can I check my SMS message for UCS-2 encoding?
+
+When building your SMS message, watch the segment counter in the bottom
+right corner of the Text Message field. One emoji takes this example SMS
+message from one segment to three!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64386f7991f91f0beedfc9a3/file-oa0aWLO3vV.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64386f7991f91f0beedfc9a3/file-oa0aWLO3vV]
+
+Use a tool like
+https://freetools.textmagic.com/unicode-detector[TextMagic] to identify
+exactly where UCS-2 characters might be lurking in your SMS message.
+
+link:#top[Back to top]
+
+'''''

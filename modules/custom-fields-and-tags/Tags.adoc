@@ -1,0 +1,245 @@
+Tags are labels that are assigned to Contacts based on their unique
+interests, activity and behavior. Tags help create granular collections
+of Contacts for highly targeted content!
+
+Follow along with this guide to Tags and check out the Additional
+Resources section below for even more information on using Tags to their
+full potential!
+
+[[guide]]
+=== In This Guide
+
+* link:#managing-tags[Manage Tags]
+* link:#tag-contacts[Tag Contacts Manually]
+* link:#tag-automation[Tag Contacts in Automations]
+* link:#tag-content[Tag Content in Email or SMS]
+* link:#managing-contact-tags[Manage a Contact's Tags]
+* link:#troubleshooting[Troubleshooting]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Complete the following steps before creating Tags:
+
+https://help.sendlane.com/article/128-how-do-i-add-contacts-to-my-account[Add
+Contacts]
+
+https://help.sendlane.com/article/125-lists#creating-a-list[Create a
+List]
+
+[[managing-tags]]
+=== Manage Tags
+
+* link:#creating-new-tag[Create a Tag]
+* link:#renaming-tag[Rename a Tag]
+* link:#deleting-tag[Delete a Tag]
+
+[[creating-new-tag]]
+==== Create a Tag
+
+. Click the *Audience icon*
+. Click *Tags*
+. Click *+Tag*
+. Enter a *name* for the Tag
+. Click *Confirm*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c81ba93379714240cfede0/file-CpPmVcG1ij.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c81ba93379714240cfede0/file-CpPmVcG1ij]
+
+[[renaming-tag]]
+==== Rename a Tag
+
+. Click the *view icon* next to the Tag to be renamed
+. Click the *Edit* icon 
+. Enter your new Tag name 
+. Click the green *Save* icon
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c81c1a8ec1e24edafd2026/file-evoTluDZ3W.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c81c1a8ec1e24edafd2026/file-evoTluDZ3W]
+
+[[deleting-tag]]
+==== Delete a Tag
+
+. Click the view icon next to the *Tag* you want to delete 
+. Click *Delete Tag* 
+. Click *Delete*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c81c9f3aabb03ecd7e64f1/file-TT8kaCjpMa.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c81c9f3aabb03ecd7e64f1/file-TT8kaCjpMa]
+
+link:#top[Back to Top]
+
+'''''
+
+[[tag-contacts]]
+=== Tag Contacts Manually
+
+* Tag Contacts While Importing
+* Tag Manually Added Contacts
+
+[[tag-imported]]
+==== Tag Contacts While Importing
+
+During the Contact import process, you can easily apply an existing Tag
+to all contacts within your import file using the Tags field in the
+import window!
+
+[[import-warning]]
+===== 🚨 Applying Tag(s) while importing will Tag every Contact in the import file
+
+To apply Tags only to certain imported Contacts, split each group of
+Contacts into its own file and import the files separately.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c833153aabb03ecd7e650b/file-ZdKhPdFtS6.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c833153aabb03ecd7e650b/file-ZdKhPdFtS6]
+
+==== Tag Lists
+
+Adding a Tag to a List allows you to add a specified Tag to all Contacts
+currently on the List. Contacts later added to the same List will not
+automatically have the Tag applied.
+
+. Select the List you'd like to Tag
+. Click *Tag*
+. Select a *Tag* from the dropdown
+. Click *Add*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c83c956d36cc04e82625b8/file-XHmYSq9R2Y.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c83c956d36cc04e82625b8/file-XHmYSq9R2Y]
+
+[[tag-manual-contacts]]
+==== Tag Manually Added Contacts
+
+Use the Tag field on the Add Contact sidebar to apply a Tag to a
+manually created Contact:
+
+. Click the *view icon* next to the Contact
+. Click *+Tag(s)*
+. Click into the Add tag field and enter a few characters of the Tag's
+name
+. Select one or multiple Tag(s)
+. Click *Add Tag*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c834d63379714240cfee00/file-iz81gsDKs2.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c834d63379714240cfee00/file-iz81gsDKs2]
+
+link:#top[Back to top]
+
+'''''
+
+[[tag-automation]]
+=== Tag Contacts in Automations
+
+Using the Add Tag function within an Automation allows you to add tags
+based on Contact behavior such as opening an email or clicking a link,
+while the Contact moves through your Automation.
+
+===== 🚨 Any Automation action created after a Contact has already started the Automation sequence will not affect that Contact
+
+For example, if a Contact subscribed to your List yesterday and you
+create an "Add Tag" function in your welcome Automation today (even if
+the contact has not reached this point in automation yet), the Tag will
+not be added to that Contact.
+
+To add a Tag action to your Automation:
+
+. Open the Automation and click the black *+ button* to add an Update
+Contact Property step
+. Select *Update Property Contact* from the Actions menu in the
+left-hand sidebar
+. Select *Add Tag*
+. Select an *existing Tag* from the Select Tag dropdown or click the
+pink *Create New Tag* button to create a new Tag for the Automation.
+
+[[add-tag-to-new-contacts]]
+==== Add a Tag to New Contacts
+
+Use an Add Tag action right after a Subscribes to a list trigger to tag
+a contact as soon as they are added to a List:
+
+image:https://lh6.googleusercontent.com/n6ZAGFVEcN4zmg5VeD2f1P6KPoi4b26JMkE39mZ3OQBTvPpSQx3z4r8Na8pjaEwyuJSBF0EeqjV6kvb_Tq9UHlaQADq3L8qratv_MqfG16FSkmQMnhvzG5k7pnmdjhYgZ2DHLDBc[https://lh6.googleusercontent.com/n6ZAGFVEcN4zmg5VeD2f1P6KPoi4b26JMkE39mZ3OQBTvPpSQx3z4r8Na8pjaEwyuJSBF0EeqjV6kvb_Tq9UHlaQADq3L8qratv_MqfG16FSkmQMnhvzG5k7pnmdjhYgZ2DHLDBc,width=551,height=260]
+
+[[tag-conditional-split]]
+==== Add a Tag After a Conditional Split
+
+Use this to Tag a Contact that has either satisfied or did not satisfy
+conditions within the Automation.
+
+image:https://lh3.googleusercontent.com/UuH8zxcsQROo0yswL-LxRO4xuvhvj1sZP996dni1l8WBZwicugqsLmLgZH9P5GSHN8r--xRbukO7kF6bSBDekf2O-mmDcogfphB4ZkgaManNOtsDHvrVIXA3clbF0uBHn5ZjtDFH[https://lh3.googleusercontent.com/UuH8zxcsQROo0yswL-LxRO4xuvhvj1sZP996dni1l8WBZwicugqsLmLgZH9P5GSHN8r--xRbukO7kF6bSBDekf2O-mmDcogfphB4ZkgaManNOtsDHvrVIXA3clbF0uBHn5ZjtDFH,width=590,height=404]
+
+link:#top[Back to top]
+
+'''''
+
+[[tag-content]]
+=== Tag Content in Emails or SMS
+
+[[tag-link]]
+==== Tag a Link
+
+Applying a Tag to a link in your Campaign or Automation messages allows
+you to add tags to Contacts who click on certain links in your content.
+Adding a Tag to your call to action link allows you to follow up with
+Contacts who responded to your call to action!
+
+. Click the *link icon*
+. Add a URL to the link field
+. Click the *Add...* dropdown to select an existing Tag or create a new
+one
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c8371e8ec1e24edafd2044/file-WgtdIFIraZ.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c8371e8ec1e24edafd2044/file-WgtdIFIraZ]
+
+[[tag-image]]
+==== Tag an Image or Button
+
+Tagging a linked image or button provides the same ability to apply Tags
+to Contacts based on their clicks as tagging hyperlinks.
+
+. Add a URL to the link field
+. Click the *Tag* dropdown
+. Select an existing Tag or create a new one
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c838806d36cc04e82625b1/file-J9QHMR3Q7A.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c838806d36cc04e82625b1/file-J9QHMR3Q7A]
+
+link:#top[Back to top]
+
+'''''
+
+[[managing-contact-tags]]
+=== Manage a Contact's Tags
+
+[[delete-profile]]
+==== Delete a Tag From a Contact
+
+To manually delete a Tag from a Contact, click the x button next to the
+Tag on the Contact's profile
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c83a6f3379714240cfee03/file-yCXzxDAuTK.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c83a6f3379714240cfee03/file-yCXzxDAuTK]
+
+==== Identify Contacts in a Tag
+
+. Click the *Tags tab*
+. Click the *Tag* you want to search within
+. Click into the search bar and search for a Contact
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c8397c6d36cc04e82625b4/file-imaKEtFqJ1.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64c8397c6d36cc04e82625b4/file-imaKEtFqJ1]
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+[[tag-segment]]
+====== How do I add a Tag to a Segment?
+
+It is not possible to apply a Tag to a Segment. Since Segments are
+dynamic, Contacts move in and out of them and there isn't a
+straightforward way to later remove a Tag that is based on the behavior
+or status qualified the Contact to be included in the Segment.
+
+If you'd like to
+https://help.sendlane.com/article/137-segments#creating-list-from-segment[create
+a List from a Segment], you can then link:#tag-lists[add a Tag to the
+newly created List]!
+
+=== Additional Resources
+
+* https://www.sendlane.com/blog-posts/how-to-use-tags-to-organize-and-segment-your-sendlane-contacts[How
+to use tags to Organize and Segment Your Contact List ]
+* https://www.sendlane.com/blog-posts/the-ultimate-guide-to-tagging[The
+Ultimate Guide to Tagging]

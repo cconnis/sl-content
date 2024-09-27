@@ -1,0 +1,81 @@
+Engage your leads with exciting sweepstakes, contests, instant win games
+and much more! Grow your email list with highly-responsive contacts.
+
+By integrating https://www.viralsweep.com[ViralSweep] with Sendlane,
+leads can be funneled directly to your desired Sendlane list!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an
+https://www.viralsweep.com/[active account with ViralSweep].
+
+Please have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready as well. These can be found
+in your Sendlane account under *_Account_* → *_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so ViralSweep knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting ViralSweep and Sendlane
+
+Each time you create a new promotion within ViralSweep, you will need to
+connect that promotion to Sendlane.
+
+. https://app.viralsweep.com/[Login] to your ViralSweep Account
+. Click *_New Promotion_* and choose the promotion type you'd like to
+create
+. On the left hand side under Tracking & Integrations click *_Connect
+Email Service_* and choose *_Sendlane_* from the list
++
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5303a22c7d3a68825e9b18/file-FGXdmWsyVk.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5d5303a22c7d3a68825e9b18/file-FGXdmWsyVk]
+. Enter your API Key, Hash Key and Sendlane Domain then click
+*_Connect_*
+. Choose the Sendlane list that you'd like to connect to and click
+*_Connect_* again
+
+Your Integration is now complete! 
+
+Leads captured in ViralSweep will be automatically added to your chosen
+list in Sendlane.
+
+'''''
+
+=== 
+
+=== Troubleshooting
+
+This integration is native to ViralSweep, so we're only able to provide
+limited troubleshooting support. However, if you _do_ need help, the
+ViralSweep team is just a few clicks away!
+
+* Visit https://www.viralsweep.com/integrations/sendlane/[ViralSweep's
+documentation on Sendlane]
+* https://www.viralsweep.com/contact[Contact ViralSweep's support team]
+
+==== Additional ViralSweep Resources
+
+https://app.viralsweep.com/register[Sign up for ViralSweep] |
+https://www.viralsweep.com/resources/[Resources]
+
+* https://www.viralsweep.com/advanced-sweepstakes-guide/[The Advanced
+Guide to Sweepstakes]
+
+==== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/integration-spotlight-viralsweep[Sendlane
++ ViralSweep - Create Sweepstakes&#44; Contests&#44; and Giveaways to
+Grow Your Email List and Increase Engagement]
+
+'''''
+
+TL;DR
+
+Login → New Promotion → Connect Email Service  → Enter API & Hash and
+Subdomain → Connect → Choose Sendlane List → Connect

@@ -1,0 +1,623 @@
+[[top]]
+==== Overview
+
+Verifying a sending domain means using a subdomain of your business'
+website to send marketing emails identified as coming directly from your
+brand. Check out
+https://help.sendlane.com/article/433-authenticating-a-sending-domain[What
+is a Verified Sending Domain?] before proceeding, then read on to learn
+how to verify a sending domain and authenticate a Sender Profile!
+
+==== In This Guide
+
+* link:#dns-prep[Prepare to update your DNS]
+* link:#create[Create a subdomain in Sendlane]
+* link:#establish[Add records to your DNS panel and verify]
+* link:#sp[Link a Sender Profile to your verified domain]
+* link:#1send[Warm your verified domain]
+* link:#troubleshooting[Troubleshooting]
+
+[[bgs]]
+===== 🚦 Before Getting Started
+
+Have admin access to your website's DNS settings; Sendlane cannot adjust
+your DNS settings.
+
+'''''
+
+1
+
+[[dns-prep]]
+===  Prepare to update your DNS
+
+There are two methods of verifying a sending domain: NS records only or
+a combination of CNAME, MX, and TXT records. Sendlane looks at your
+primary domain to determine which DNS records your domain needs.
+
+[[ns-cname-needed]]
+===== 🙋 What do I do if I see NS records in Sendlane, but my hosting provider doesn't allow me to add NS records?
+
+If you see NS records on the Sending Domain slideout window, but your
+website's host doesn't allow you to add new NS records, contact your
+Customer Success Manager or Sendlane's 24/7 live chat. We'll set you up
+with the DNS records you need! +
+ +
+Users with AWS hosting will also need to request CNAME/MX/TXT records
+
+[[first-time]]
+===== ⚠️ If your DNS host is Wix or Hostgator, you need to move your DNS before proceeding
+
+Wix and Hostgator do not support either verification method; you must
+move your DNS hosting to a different provider. We highly recommend
+https://developers.cloudflare.com/registrar/get-started/transfer-domain-to-cloudflare/[Cloudflare].
+
+2
+
+[[create]]
+===  Create a subdomain in Sendlane
+
+[[dns-methods]]
+===== ⚠️ You MUST ensure your intended subdomain is not already being used before proceeding
+
+If you have previously used subdomains of your primary domain for
+sending (or any other reason), you should not reuse them with Sendlane.
+If you attempt to use a subdomain that is still in use, meaning its DNS
+records are associated with another ESP, you will receive errors when
+verifying it with Sendlane. +
+ +
+Even if you clear the DNS records associated with a subdomain previously
+used for email marketing, you will bring the sending reputation of that
+subdomain to Sendlane. We highly recommend creating a subdomain that has
+never been used before.
+
+Before creating a subdomain, decide what you want it to be and ensure it
+is not already being used.
+
+Choose a subdomain like `+send+` or `+e+`, or choose a word related to
+your business. Do not choose a subdomain that could cause inbox
+providers or Contacts to confuse you with another business. Using
+another business' name (including `+sendlane+`) will cause
+deliverability issues.
+
+Once you've selected a subdomain, check it is not already in use by
+entering it into https://mxtoolbox.com/[MxToolbox]. The DNS Record
+Published test will return `+DNS Record not found+` if the subdomain is
+not already used. If you receive any other result, remove all DNS
+records from your intended subdomain OR choose a different subdomain.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65a99e3169979704a279a583/file-UveHTVg9dC.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65a99e3169979704a279a583/file-UveHTVg9dC]
+
+To create a subdomain in Sendlane:
+
+. Click the *Account* icon
+. Click *Email*
+. Click *Setup Domain*
+. Enter your business’ primary domain in the *Domain Name* field
+. Enter the word you’d like to use as your subdomain in the *Sending
+Domain* field
+. Click *Save*
+
+Your subdomain has now been created!
+
+3
+
+[[establish]]
+===  Add records to your DNS panel and verify
+
+After creating your subdomain, you’ll see a list of DNS records appear
+on the Sending Domain slideout window. Some hosting providers require NS
+records, and others require MX/TXT/CNAME records.
+
+You'll use this information to create records in your DNS panel that
+will authorize Sendlane to use your new subdomain to send Campaign and
+Automation emails from your account. You'll create a new record for each
+line listed; for example, if your provider requires the NS records
+method, you'll create four new NS records in your DNS panel. If your
+provider requires MX/TXT/CNAME records, you'll create one MX record, two
+CNAME records, and two TXT records.
+
+Adding DNS records varies by DNS provider but usually involves selecting
+a record type from a dropdown and entering the host, value, and TTL
+information you copied from the Sending Domain slideout in the specified
+fields. Watch the video below to see this process demonstrated in
+Cloudflare.
+
+[[wistia-avkqagwc4i-1]]
+[[wistia_chrome_751]]
+[[wistia_grid_757_wrapper]]
+[[wistia_grid_757_above]]
+
+[[wistia_grid_757_main]]
+[[wistia_grid_757_behind]]
+
+[[wistia_grid_757_center]]
+
+[[w-vulcan-v2-756]]
+
+image:https://embed-ssl.wistia.com/deliveries/8797cca290aa0b4b8d9b6225b86b1378e31867a5.webp?image_crop_resized=1280x1094[Video
+Thumbnail]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEyNSA4MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTI1IDgwIiBhcmlhLWhpZGRlbj0idHJ1ZSIgYWx0IHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogOTcuMzE1cHg7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsgcG9zaXRpb246IGFic29sdXRlOyI+PHJlY3QgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9Im5vbmUiIHdpZHRoPSIxMjUiIGhlaWdodD0iODAiIC8+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEyNSA4MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTI1IDgwIiBhcmlhLWhpZGRlbj0idHJ1ZSIgYWx0IHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogOTcuMzE1cHg7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsgcG9zaXRpb246IGFic29sdXRlOyI+PHJlY3QgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9Im5vbmUiIHdpZHRoPSIxMjUiIGhlaWdodD0iODAiIC8+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc3ZnPg==]
+
+Click for sound
+
+image:data:image/svg+xml;base64,PHN2ZyB2aWV3Ym94PSIwIDAgMjM3IDIzNyIgd2lkdGg9IjYzLjg2Mjk2ODc1IiBoZWlnaHQ9IjYzLjg2Mjk2ODc1Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGtleWZyYW1lcyBWT0xVTUVfU01BTExfV0FWRV9GTEFTSCB7CiAgICAwJSB7IG9wYWNpdHk6IDA7IH0KICAgIDMzJSB7IG9wYWNpdHk6IDE7IH0KICAgIDY2JSB7IG9wYWNpdHk6IDE7IH0KICAgIDEwMCUgeyBvcGFjaXR5OiAwOyB9CiAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB2aWV3Ym94PSIwIDAgMjM3IDIzNyIgd2lkdGg9IjYzLjg2Mjk2ODc1IiBoZWlnaHQ9IjYzLjg2Mjk2ODc1Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQGtleWZyYW1lcyBWT0xVTUVfU01BTExfV0FWRV9GTEFTSCB7CiAgICAwJSB7IG9wYWNpdHk6IDA7IH0KICAgIDMzJSB7IG9wYWNpdHk6IDE7IH0KICAgIDY2JSB7IG9wYWNpdHk6IDE7IH0KICAgIDEwMCUgeyBvcGFjaXR5OiAwOyB9CiAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=]
+
+@keyframes VOLUME_LARGE_WAVE_FLASH \{ 0% \{ opacity: 0; } 33% \{
+opacity: 1; } 66% \{ opacity: 1; } 100% \{ opacity: 0; } }
+
+.volume__small-wave \{ animation: VOLUME_SMALL_WAVE_FLASH 2s infinite;
+opacity: 0; }
+
+.volume__large-wave \{ animation: VOLUME_LARGE_WAVE_FLASH 2s infinite
+.3s; opacity: 0; }
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PHJlY3QgeD0iNi41IiB5PSIwIiB3aWR0aD0iMy41IiBoZWlnaHQ9IjEyIiAvPjwvZz48L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PHJlY3QgeD0iNi41IiB5PSIwIiB3aWR0aD0iMy41IiBoZWlnaHQ9IjEyIiAvPjwvZz48L3N2Zz4=]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxwb2x5Z29uIHBvaW50cz0iMTEuNTU2LDcuNSAwLDE1IDAsMCI+PC9wb2x5Z29uPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDEwIDEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMCAxMiIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJ3LWNzcy1yZXNldCB3LWNzcy1yZXNldC10cmVlIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBoZWlnaHQ6IDEwMCU7IGxlZnQ6IDBweDsgc3Ryb2tlLXdpZHRoOiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsiPjxwb2x5Z29uIHBvaW50cz0iMTEuNTU2LDcuNSAwLDE1IDAsMCI+PC9wb2x5Z29uPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIxMiIgLz48cmVjdCB4PSI2LjUiIHk9IjAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMTIiIC8+PC9nPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDExLjU1NiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEuNTU2IDE2IiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InctY3NzLXJlc2V0IHctY3NzLXJlc2V0LXRyZWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyI+PHBvbHlnb24gcG9pbnRzPSIxMS41NTYsNy41IDAsMTUgMCwwIj48L3BvbHlnb24+PC9zdmc+]
+
+1:27
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGcgc3R5bGU9InRyYW5zZm9ybTogdHJhbnNsYXRlWCgxLjI1cHgpOyB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMTAwbXMgZWFzZSAwczsiPjxnPjxwYXRoIGQ9Ik0xMy44LDE0LjJjLTAuNSwwLjUtMS40LDAuOC0yLDAuOGgtMS42QzkuNSwxNSw5LDE1LjUsOSwxNi4ydjEuNmMwLDAuNywwLjUsMS4yLDEuMiwxLjJoMS42YzAuNywwLDEuNiwwLjQsMiwwLjhsMi4zLDIuM2MwLjUsMC41LDAuOCwwLjMsMC44LTAuNHYtOS42YzAtMC43LTAuNC0wLjgtMC44LTAuNEwxMy44LDE0LjJ6IiAvPjwvZz48Zz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMjIsMTEuN2MwLDAsMS4xLDIuNSwxLjEsNXMtMS4xLDUtMS4xLDUiIHN0eWxlPSJvcGFjaXR5OiAxOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7IiAvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmUtY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yNS44LDkuMmMwLDAsMS43LDMuOCwxLjcsNy41YzAsMy43LTEuNyw3LjUtMS43LDcuNSIgc3R5bGU9Im9wYWNpdHk6IDE7IHRyYW5zaXRpb246IG9wYWNpdHkgMTAwbXMgZWFzZSAwczsiIC8+PC9nPjxnIHN0eWxlPSJvcGFjaXR5OiAwOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7Ij48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTUiIHgyPSIyMy4yIiB5Mj0iMTkiPjwvbGluZT48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTkiIHgyPSIyMy4yIiB5Mj0iMTUiPjwvbGluZT48L2c+PC9nPjwvc3ZnPg==[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGcgc3R5bGU9InRyYW5zZm9ybTogdHJhbnNsYXRlWCgxLjI1cHgpOyB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMTAwbXMgZWFzZSAwczsiPjxnPjxwYXRoIGQ9Ik0xMy44LDE0LjJjLTAuNSwwLjUtMS40LDAuOC0yLDAuOGgtMS42QzkuNSwxNSw5LDE1LjUsOSwxNi4ydjEuNmMwLDAuNywwLjUsMS4yLDEuMiwxLjJoMS42YzAuNywwLDEuNiwwLjQsMiwwLjhsMi4zLDIuM2MwLjUsMC41LDAuOCwwLjMsMC44LTAuNHYtOS42YzAtMC43LTAuNC0wLjgtMC44LTAuNEwxMy44LDE0LjJ6IiAvPjwvZz48Zz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMjIsMTEuN2MwLDAsMS4xLDIuNSwxLjEsNXMtMS4xLDUtMS4xLDUiIHN0eWxlPSJvcGFjaXR5OiAxOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7IiAvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmUtY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yNS44LDkuMmMwLDAsMS43LDMuOCwxLjcsNy41YzAsMy43LTEuNyw3LjUtMS43LDcuNSIgc3R5bGU9Im9wYWNpdHk6IDE7IHRyYW5zaXRpb246IG9wYWNpdHkgMTAwbXMgZWFzZSAwczsiIC8+PC9nPjxnIHN0eWxlPSJvcGFjaXR5OiAwOyB0cmFuc2l0aW9uOiBvcGFjaXR5IDEwMG1zIGVhc2UgMHM7Ij48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTUiIHgyPSIyMy4yIiB5Mj0iMTkiPjwvbGluZT48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lLWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxLjgxMDIiIHgxPSIxOS4yIiB5MT0iMTkiIHgyPSIyMy4yIiB5Mj0iMTUiPjwvbGluZT48L2c+PC9nPjwvc3ZnPg==]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBhdGggZD0iTTI4LjMsMTYuNGgtMS45Yy0wLjQsMC0wLjgtMC4zLTAuOS0wLjdsLTAuNC0xLjFjLTAuMi0wLjMtMC4xLTAuOCwwLjItMS4xbDEuMy0xLjNjMC4zLTAuMywwLjMtMC43LDAtMWwtMC40LTAuNGMtMC4zLTAuMy0wLjctMC4zLTEsMGwtMS4zLDEuM2MtMC4zLDAuMy0wLjgsMC4zLTEuMSwwLjFsLTEuMS0wLjVjLTAuNC0wLjEtMC43LTAuNS0wLjctMC45VjkuMWMwLTAuNC0wLjMtMC43LTAuNy0wLjdoLTAuNmMtMC40LDAtMC43LDAuMy0wLjcsMC43djEuN2MwLDAuNC0wLjMsMC44LTAuNywwLjlsLTEuMiwwLjVjLTAuMywwLjItMC44LDAuMS0xLjEtMC4ybC0xLjItMS4yYy0wLjMtMC4zLTAuNy0wLjMtMSwwbC0wLjQsMC40Yy0wLjMsMC4zLTAuMywwLjcsMCwxbDEuMiwxLjJjMC4zLDAuMywwLjMsMC44LDAuMSwxLjFsLTAuNSwxLjJjLTAuMSwwLjQtMC41LDAuNy0wLjksMC43aC0xLjZjLTAuNCwwLTAuNywwLjMtMC43LDAuN3YwLjZjMCwwLjQsMC4zLDAuNywwLjcsMC43aDEuNmMwLjQsMCwwLjgsMC4zLDAuOSwwLjdsMC41LDEuMmMwLjIsMC4zLDAuMSwwLjgtMC4xLDEuMWwtMS4yLDEuMmMtMC4zLDAuMy0wLjMsMC43LDAsMWwwLjQsMC40YzAuMywwLjMsMC43LDAuMywxLDBsMS4yLTEuMmMwLjMtMC4zLDAuOC0wLjMsMS4xLTAuMmwxLjIsMC41YzAuNCwwLjEsMC43LDAuNSwwLjcsMC45djEuN2MwLDAuNCwwLjMsMC43LDAuNywwLjdoMC42YzAuNCwwLDAuNy0wLjMsMC43LTAuN1YyNGMwLTAuNCwwLjMtMC44LDAuNy0wLjlsMS4xLTAuNWMwLjMtMC4yLDAuOC0wLjEsMS4xLDAuMWwxLjMsMS4zYzAuMywwLjMsMC43LDAuMywxLDBsMC40LTAuNGMwLjMtMC4zLDAuMy0wLjcsMC0xbC0xLjMtMS4zQzI1LDIxLDI1LDIwLjUsMjUuMSwyMC4ybDAuNC0xLjFjMC4xLTAuNCwwLjUtMC43LDAuOS0wLjdoMS45YzAuNCwwLDAuNy0wLjMsMC43LTAuN3YtMC42QzI5LDE2LjcsMjguNywxNi40LDI4LjMsMTYuNHogTTIzLjgsMTcuNWMwLDIuMi0xLjgsMy45LTMuOSwzLjljLTIuMiwwLTMuOS0xLjgtMy45LTMuOXMxLjctMy45LDMuOS0zLjlDMjIuMSwxMy42LDIzLjgsMTUuMywyMy44LDE3LjV6IiAvPjwvZz48L2c+PC9zdmc+[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBhdGggZD0iTTI4LjMsMTYuNGgtMS45Yy0wLjQsMC0wLjgtMC4zLTAuOS0wLjdsLTAuNC0xLjFjLTAuMi0wLjMtMC4xLTAuOCwwLjItMS4xbDEuMy0xLjNjMC4zLTAuMywwLjMtMC43LDAtMWwtMC40LTAuNGMtMC4zLTAuMy0wLjctMC4zLTEsMGwtMS4zLDEuM2MtMC4zLDAuMy0wLjgsMC4zLTEuMSwwLjFsLTEuMS0wLjVjLTAuNC0wLjEtMC43LTAuNS0wLjctMC45VjkuMWMwLTAuNC0wLjMtMC43LTAuNy0wLjdoLTAuNmMtMC40LDAtMC43LDAuMy0wLjcsMC43djEuN2MwLDAuNC0wLjMsMC44LTAuNywwLjlsLTEuMiwwLjVjLTAuMywwLjItMC44LDAuMS0xLjEtMC4ybC0xLjItMS4yYy0wLjMtMC4zLTAuNy0wLjMtMSwwbC0wLjQsMC40Yy0wLjMsMC4zLTAuMywwLjcsMCwxbDEuMiwxLjJjMC4zLDAuMywwLjMsMC44LDAuMSwxLjFsLTAuNSwxLjJjLTAuMSwwLjQtMC41LDAuNy0wLjksMC43aC0xLjZjLTAuNCwwLTAuNywwLjMtMC43LDAuN3YwLjZjMCwwLjQsMC4zLDAuNywwLjcsMC43aDEuNmMwLjQsMCwwLjgsMC4zLDAuOSwwLjdsMC41LDEuMmMwLjIsMC4zLDAuMSwwLjgtMC4xLDEuMWwtMS4yLDEuMmMtMC4zLDAuMy0wLjMsMC43LDAsMWwwLjQsMC40YzAuMywwLjMsMC43LDAuMywxLDBsMS4yLTEuMmMwLjMtMC4zLDAuOC0wLjMsMS4xLTAuMmwxLjIsMC41YzAuNCwwLjEsMC43LDAuNSwwLjcsMC45djEuN2MwLDAuNCwwLjMsMC43LDAuNywwLjdoMC42YzAuNCwwLDAuNy0wLjMsMC43LTAuN1YyNGMwLTAuNCwwLjMtMC44LDAuNy0wLjlsMS4xLTAuNWMwLjMtMC4yLDAuOC0wLjEsMS4xLDAuMWwxLjMsMS4zYzAuMywwLjMsMC43LDAuMywxLDBsMC40LTAuNGMwLjMtMC4zLDAuMy0wLjcsMC0xbC0xLjMtMS4zQzI1LDIxLDI1LDIwLjUsMjUuMSwyMC4ybDAuNC0xLjFjMC4xLTAuNCwwLjUtMC43LDAuOS0wLjdoMS45YzAuNCwwLDAuNy0wLjMsMC43LTAuN3YtMC42QzI5LDE2LjcsMjguNywxNi40LDI4LjMsMTYuNHogTTIzLjgsMTcuNWMwLDIuMi0xLjgsMy45LTMuOSwzLjljLTIuMiwwLTMuOS0xLjgtMy45LTMuOXMxLjctMy45LDMuOS0zLjlDMjIuMSwxMy42LDIzLjgsMTUuMywyMy44LDE3LjV6IiAvPjwvZz48L2c+PC9zdmc+]
+
+image:data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIzMS40LDEyLjYgMzEuNCw4LjcgMjUuOCw4LjciPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNC43LDguNyA5LjEsOC43IDkuMSwxMi42Ij48L3BvbHlsaW5lPjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMjUuOCwyNC44IDMxLjQsMjQuOCAzMS40LDIwLjkiPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSI5LjEsMjAuOSA5LjEsMjQuOCAxNC43LDI0LjgiPjwvcG9seWxpbmU+PC9nPjxyZWN0IHg9IjEzLjciIHk9IjEyLjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyIgd2lkdGg9IjEzLjMiIGhlaWdodD0iOC45IiAvPjwvZz48L3N2Zz4=[data:image/svg+xml;base64,PHN2ZyB4PSIwcHgiIHk9IjBweCIgdmlld2JveD0iMCAwIDQwIDM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCAzNCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGhlaWdodDogMTAwJTsgbGVmdDogMHB4OyBzdHJva2Utd2lkdGg6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAxMDAlOyI+PGc+PGc+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIzMS40LDEyLjYgMzEuNCw4LjcgMjUuOCw4LjciPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNC43LDguNyA5LjEsOC43IDkuMSwxMi42Ij48L3BvbHlsaW5lPjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMjUuOCwyNC44IDMxLjQsMjQuOCAzMS40LDIwLjkiPjwvcG9seWxpbmU+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSI5LjEsMjAuOSA5LjEsMjQuOCAxNC43LDI0LjgiPjwvcG9seWxpbmU+PC9nPjxyZWN0IHg9IjEzLjciIHk9IjEyLjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyIgd2lkdGg9IjEzLjMiIGhlaWdodD0iOC45IiAvPjwvZz48L3N2Zz4=]
+
+#wistia_chrome_751 #wistia_grid_757_wrapper
+.w-css-reset\{font-size:14px;} #wistia_chrome_751
+#wistia_grid_757_wrapper
+div.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+span.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+ul.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+li.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+label.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+fieldset.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+button.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+img.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+a.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+svg.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+p.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper a.w-css-reset\{border:0;}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+h1.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:2em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+h2.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.5em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+h3.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.17em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper p.w-css-reset\{margin:1.4em
+0;} #wistia_chrome_751 #wistia_grid_757_wrapper
+a.w-css-reset\{display:inline;} #wistia_chrome_751
+#wistia_grid_757_wrapper span.w-css-reset\{display:inline;}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+svg.w-css-reset\{display:inline;} #wistia_chrome_751
+#wistia_grid_757_wrapper
+ul.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+ol.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+li.w-css-reset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+ul:before.w-css-reset\{display:none} #wistia_chrome_751
+#wistia_grid_757_wrapper ol:before.w-css-reset\{display:none}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+li:before.w-css-reset\{display:none} #wistia_chrome_751
+#wistia_grid_757_wrapper ul:after.w-css-reset\{display:none}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+ol:after.w-css-reset\{display:none} #wistia_chrome_751
+#wistia_grid_757_wrapper li:after.w-css-reset\{display:none}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+label.w-css-reset\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;float:none;outline:none} #wistia_chrome_751
+#wistia_grid_757_wrapper
+button.w-css-reset\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;border:0;border-radius:0;outline:none;position:static}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+img.w-css-reset\{border:0;display:inline-block;vertical-align:top;border-radius:0;outline:none;position:static}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset
+button::-moz-focus-inner\{border: 0;} #wistia_chrome_751
+#wistia_grid_757_wrapper .w-css-reset-tree \{font-size:14px;}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+div\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+span\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+ul\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+li\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+label\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+fieldset\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+button\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+img\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+a\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+svg\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+p\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+a\{border:0;} #wistia_chrome_751 #wistia_grid_757_wrapper
+.w-css-reset-tree
+h1\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:2em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+h2\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.5em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+h3\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:1.17em;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+p\{margin:1.4em 0;} #wistia_chrome_751 #wistia_grid_757_wrapper
+.w-css-reset-tree a\{display:inline;} #wistia_chrome_751
+#wistia_grid_757_wrapper .w-css-reset-tree span\{display:inline;}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+svg\{display:inline;} #wistia_chrome_751 #wistia_grid_757_wrapper
+.w-css-reset-tree
+ul\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+ol\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+li\{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+ul:before\{display:none} #wistia_chrome_751 #wistia_grid_757_wrapper
+.w-css-reset-tree ol:before\{display:none} #wistia_chrome_751
+#wistia_grid_757_wrapper .w-css-reset-tree li:before\{display:none}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+ul:after\{display:none} #wistia_chrome_751 #wistia_grid_757_wrapper
+.w-css-reset-tree ol:after\{display:none} #wistia_chrome_751
+#wistia_grid_757_wrapper .w-css-reset-tree li:after\{display:none}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+label\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;float:none;outline:none} #wistia_chrome_751
+#wistia_grid_757_wrapper .w-css-reset-tree
+button\{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0
+0;background-repeat:no-repeat;background-size:100%
+100%;border:0;border-radius:0;outline:none;position:static}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+img\{border:0;display:inline-block;vertical-align:top;border-radius:0;outline:none;position:static}
+#wistia_chrome_751 #wistia_grid_757_wrapper .w-css-reset-tree
+button::-moz-focus-inner\{border: 0;} #wistia_chrome_751
+#wistia_grid_757_wrapper
+.w-css-reset-max-width-none-important\{max-width:none!important}
+#wistia_chrome_751 #wistia_grid_757_wrapper
+.w-css-reset-button-important\{border-radius:0!important;color:#fff!important;}
+
+[[wistia_grid_757_front]]
+
+[[wistia_grid_757_top_inside]]
+[[wistia_grid_757_top]]
+
+[[wistia_grid_757_bottom_inside]]
+[[wistia_grid_757_bottom]]
+
+[[wistia_grid_757_left_inside]]
+[[wistia_grid_757_left]]
+
+[[wistia_grid_757_right_inside]]
+[[wistia_grid_757_right]]
+
+[[wistia_grid_757_below]]
+
+#wistia_grid_757_wrapper\{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;font-family:Arial,sans-serif;font-size:14px;height:100%;position:relative;text-align:left;width:100%;}
+#wistia_grid_757_wrapper
+*\{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+#wistia_grid_757_above\{position:relative;}
+#wistia_grid_757_main\{display:block;height:100%;position:relative;}
+#wistia_grid_757_behind\{height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_grid_757_center\{height:100%;overflow:hidden;position:relative;width:100%;}
+#wistia_grid_757_front\{display:none;height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_grid_757_top_inside\{position:absolute;left:0;top:0;width:100%;}
+#wistia_grid_757_top\{width:100%;position:absolute;bottom:0;left:0;}
+#wistia_grid_757_bottom_inside\{position:absolute;left:0;bottom:0;width:100%;}
+#wistia_grid_757_bottom\{width:100%;position:absolute;top:0;left:0;}
+#wistia_grid_757_left_inside\{height:100%;position:absolute;left:0;top:0;}
+#wistia_grid_757_left\{height:100%;position:absolute;right:0;top:0;}
+#wistia_grid_757_right_inside\{height:100%;right:0;position:absolute;top:0;}
+#wistia_grid_757_right\{height:100%;left:0;position:absolute;top:0;}
+#wistia_grid_757_below\{position:relative;}
+
+Use your DNS providers’ documentation to ensure you follow the correct
+procedure for adding new DNS records (do not edit any existing records).
+Below are links to documentation for popular DNS providers:
+
+[width="100%",cols="50%,50%",]
+|===
+a|
+*NS Method +
+* +
+The following DNS providers use the NS method (click to view
+instructions for creating records): +
+
+* **https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/[Cloudflare]
+* Dream Host
+* https://www.godaddy.com/help/add-an-ns-record-19212[GoDaddy]
+* https://support.google.com/domains/answer/3290350?hl=en[Google
+Domains]
+* https://support.hostinger.com/en/articles/1583249-how-to-manage-dns-records-at-hostinger#h_b130604446[Hostinger]
+* Namecheap
+
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65f8cbac54e485464f3dcea5/file-RiKeTeZZhI.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65f8cbac54e485464f3dcea5/file-RiKeTeZZhI]
+
+a|
+*CNAME/MX/TXT Method* +
+** +
+The following DNS providers use the CNAME method (click to view
+instructions for creating records): +
+
+* https://www.a2hosting.com/kb/cpanel/cpanel-domain-features/using-the-cpanel-zone-editor/#Adding-a-record[A2
+DNS]
+* AMA Server
+* AWS*
+(https://docs.aws.amazon.com/managedservices/latest/ctref/management-directory-dns-add-cname-record.html[CNAME],
+https://docs.aws.amazon.com/workmail/latest/adminguide/domain_verification.html[MX and
+TXT])
+* https://support.bigcommerce.com/s/article/Managing-DNS?language=en_US#web[BigCommerce]
+* Clickfunnels
+* https://docs.cpanel.net/cpanel/domains/zone-editor/[cPanel]
+* https://support.dnsimple.com/articles/manage-cname-record/[DNS Simple]
+(process is the same for MX and TXT records)
+* https://help.fasthosts.co.uk/app/answers/detail/a_id/9/~/managing-dns-records-on-your-domain[Fasthosts.co.uk]
+* Float Hosting
+* https://help.hover.com/hc/en-us/articles/217282457-Managing-DNS-records#h_43dbccfb-a3d3-408b-bd6a-204dab1616cb[Hover]
+* https://www.ibm.com/docs/en/ns1-connect?topic=answers-create-dns-record[NS1]
+* Parking Crew
+* https://www.siteground.com/kb/manage-dns-records/#How_to_Create_new_DNS_record[Site
+Ground]
+* https://help.sendlane.com/article/614-how-to-verify-a-shopify-sending-domain#add-dns[Shopify]
+* https://support.squarespace.com/hc/en-us/articles/360002101888-Adding-custom-DNS-records-to-your-Squarespace-managed-domain[Squarespace]
+* Turbify
+(https://help.turbify.com/s/article/how-do-i-add-edit-and-delete-a-cname-record[CNAME],
+https://help.turbify.com/s/article/how-do-i-add-edit-or-delete-an-mx-record[MX],
+https://help.turbify.com/s/article/how-do-i-manage-txt-records-for-my-domain[TXT])
+* https://rest.websupport.sk/v2/docs#/DNS/rest.v2.dns.create-record[Web
+Support SK] +
+ +
+*AWS allows for the creation of NS records, but you will need to use the
+CNAME/MX/TXT method to avoid conflicting with Sendlane's NS records.
+Contact our 24/7 product support or your Customer Success Manager to get
+set up with the correct DNS records!
+
+|image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65f8cb6bc68a4c3aac88875c/file-YQg7RjzVFv.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65f8cb6bc68a4c3aac88875c/file-YQg7RjzVFv]
+|===
+
+[[new-not-edit]]
+===== ⚠️ You need to create new DNS records; do not alter existing DNS records
+
+Look for language like “add” and “create,” which indicate new DNS
+records, versus “change,” “edit,” or “update,” which indicate modifying
+existing DNS records.
+
+Once you’ve added the DNS records provided by Sendlane to your DNS
+panel, click *Verify DNS Records*. You should see a new Verified column
+with green checkmarks next to each record, indicating that the records
+were added correctly.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65972a577273d90e4339ad88/file-OA1DvjdUof.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65972a577273d90e4339ad88/file-OA1DvjdUof]
+
+If the system can’t verify a record, you’ll see an X icon instead of a
+checkmark. Review the DNS records you created in your DNS panel against
+the DNS records in the Sending Domain slideout and make any necessary
+changes, then click *Verify DNS Records* again. DNS records can
+sometimes take up to 24 hours to verify.
+
+4
+
+[[sp]]
+===  Link a Sender Profile to your verified domain
+
+After your subdomain has been verified, you need to create a new or edit
+an existing Sender Profile to use your verified subdomain to send from.
+
+==== Create a new Sender Profile
+
+. Navigate to the Sender Profile tab by clicking *Manage Sender
+Profiles* on the Sending Domain slideout window or clicking the Audience
+icon > Sender Profile tab
+. Click *+ Sender Profile*
+. Enter the *Sender name* and *Company name*
+. Under Domain, select the *Verified* radio button
+. Under From Email, enter a *prefix* for your new Sender Profile and
+select your *verified subdomain* from the dropdown
+. Enter a *Reply to* email address
+. Enter your business’ *address* in the address fields
+. Click *Save*
+
+==== Edit an existing Sender Profile
+
+. Click the *arrow icon* in the View column next to the Sender Profile
+you want to edit
+. Click *Edit*
+. Under Domain, select the *Verified* radio button
+. Under From Email, enter a *prefix* for your Sender Profile and select
+your verified subdomain from the dropdown
+. Click *Save*
+
+5
+
+[[1send]]
+===  Warm your verified domain
+
+Both methods of domain verification result in a new or reset sending
+reputation. After you verify a sending domain for the first time, we
+strongly recommend that you follow one of the two warm-up plans
+described below: +
+
+[[one-send]]
+==== One send to engaged Contacts (riskier, faster)
+
+. Update all Automation emails to use your new authenticated Sender
+Profile
+. If you use 3rd-party data tools to collect leads, pause them
+. https://help.sendlane.com/article/137-segments#creating-segment[Create
+a Segment] of 30 day clicks (do not include opens)
+. https://help.sendlane.com/article/153-campaigns[Create a Campaign]
+(check out
+https://www.sendlane.com/blog/evergreen-email-content[Sendlane's guide
+to evergreen email content] for tips and tricks!)
+. Use the Segment you created in step one as the
+https://help.sendlane.com/article/153-campaigns#c-a[Audience] for your
+Campaign
+. Send your Campaign
+. If you disabled any 3rd-party tools in step two, enable them again
+
+After sending the warm up Campaign to engaged Contacts, send Campaigns
+as usual.
+
+[[five-sends]]
+==== Five sends to engaged Contacts over ten days (safer, slower)
+
+. Update all Automation emails to use your new authenticated Sender
+Profile
+. If you use 3rd-party data tools to collect leads, pause them
+. https://help.sendlane.com/article/137-segments#creating-segment[Create
+Segments] for:
+.. 7, 14, and 30 day clickers
+.. 7, 14, and 30 day openers
+. Create or update
+https://www.sendlane.com/blog/evergreen-email-content[evergreen content]
+for five sends
+. On Day 0, send to 7 day clickers and keep the volume of the audience
+between 500 and 3,000
+. On Day 1, send to 14 day clickers and keep the volume of the audience
+between 2,500 and 4,500 (1.5x your first audience maximum)
+. On Day 2:
+.. Before continuing with the next send, pause to review reporting from
+the previous sends. Pay close attention to the Email Providers & Devices
+section of your Campaign report to confirm that emails are being
+accepted appropriately. Gmail, Yahoo, and AOL should show 15-20% open
+rates.
+.. Send Day 2's Campaign to your 30 day clickers Segment and keep the
+volume of the audience between 4,500 and 6,750 (1.5x your first audience
+maximum)
+. On Day 3, send again to your 30 day clickers Segment and increase the
+audience to between 6,750 and 10,125 (1.5x your first audience maximum)
+. On Day 4:
+.. Send again to your 30 day clickers Segment and increase the audience
+to between 14,000 and 15,188 (1.5x your first audience maximum)
+.. Pause to review reporting again
+. For Days 5-10, repeat steps 5-9 using the opener Segments you created
+in step 3b in addition to the clicker Segments as the audience for your
+Campaigns. Continue to monitor reporting during these sends and aim to
+double the size of your audience with each send.
+. If you disabled any 3rd-party tools in step two, enable them again
+
+'''''
+
+[[addl]]
+=== Additional Resources
+
+* https://help.sendlane.com/article/433-authenticating-a-sending-domain[What
+is a Verified Sending Domain?]
+* https://www.sendlane.com/blog/engaged-sending-changes-2024[A Deep Dive
+into Gmail’s 2024 Engaged Sending
+Changes]https://www.sendlane.com/blog/deliverability-changes-2024#s3[A
+Review Of Gmail’s 2024 Deliverability Changes: What You Need To Know]
+* Yahoo -
+https://blog.postmaster.yahooinc.com/post/730172167494483968/more-secure-less-spam[More
+Secure&#44; Less Spam: Enforcing Email Standards for a Better
+Experience]
+* Gmail -
+https://blog.google/products/gmail/gmail-security-authentication-spam-protection[New
+Gmail protections for a safer&#44; less spammy inbox]
+
+'''''
+
+=== Troubleshooting
+
+* link:#cantadd[]
+* link:#cantadd[]link:#notauthenticated[I added my NS records&#44; but
+they are not authenticated in Sendlane!]
+* link:#aws[I use Amazon Web Services and can only add one NS record!]
+* link:#google[I use Google Domains and can only add one NS record!]
+* link:#info[I need my Sending Domain Type&#44; Host&#44; Value&#44; or
+TTS information!]
+
+[[notauthenticated]]
+====== I added my records, but they are not authenticated in Sendlane!
+
+There are two common reasons your sending domain may not be verified in
+Sendlane after following the instructions above:
+
+. *You added records to the account where you registered the domain, but
+you have actually moved DNS control to another DNS provider.* Go to the
+current DNS provider for your domain and add them there.
+. *The Sending Domain you added has other associated records.* You may
+have attempted to verify a subdomain that is already in use. Try
+verifying another subdomain or remove any records associated with your
+subdomain that are not Sendlane's records. For example, if you chose
+`+mail.domain.com+` as your Sending Domain, `+mail.domain.com+` cannot
+have NS, A, CNAME, TXT, or MX records currently existing in its DNS. If
+you do consider changing your Sending Domain from "mail" to "email" or
+"e" or something other than "mail" in the first step above
+
+If you use separate services for your domain and hosting, please add
+these records to the service that controls DNS. You can check which
+service controls your DNS using a service like
+https://dnschecker.org/#NS[DNS Checker]. Enter
+http://sendlane.com[sendlane.com], and you’ll see we use Cloudflare for
+our DNS!
+
+link:#troubleshooting[Back to Troubleshooting]
+
+'''''
+
+[[google]]
+====== I use Google Domains and can only add one NS record!
+
+Check out
+https://support.google.com/domains/answer/3290350?hl=en#[Google's
+instructions] under "Create or modify a resource record," then add the
+four NS records in a single row.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61df50e779a38f5473fd361c/file-Hu5YDKxrHv.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/61df50e779a38f5473fd361c/file-Hu5YDKxrHv.png]
+
+link:#troubleshooting[Back to Troubleshooting]
+
+'''''
+
+[[info]]
+====== I need my Sending Domain Type, Host, Value, or TTL information!
+
+This information can be retrieved by clicking the gear icon in the
+Actions column of the
+https://app.sendlane-qa-002.com/email-preferences[Sending Domains
+section]:
+
+image:https://lh7-us.googleusercontent.com/PZiTtoc-YA81VD7WTOBcHAK_KupvDkwXf2bcwsgG59kls6cVa6rYL35TpKlO9mlzEQDkycilCstq9nWj-oAAUVyQspX1wVbgvd09ppyObbGt_-cDlVem28Mo5mPEqw8XNmMF6EAiNGes8GarKGFegxk[https://lh7-us.googleusercontent.com/PZiTtoc-YA81VD7WTOBcHAK_KupvDkwXf2bcwsgG59kls6cVa6rYL35TpKlO9mlzEQDkycilCstq9nWj-oAAUVyQspX1wVbgvd09ppyObbGt_-cDlVem28Mo5mPEqw8XNmMF6EAiNGes8GarKGFegxk,width=720,height=503]
+
+link:#troubleshooting[Back to Troubleshooting]
+
+[[google-warning]]
+====== Why is Google showing a warning on my email that was sent with an authenticated sending domain?
+
+This warning usually appears on emails sent with an authenticated
+sending domain because the email was sent to the email address used in
+the sender profile. Emails sent to the same email address they're sent
+from can seem suspicious to Google's filters.
+
+Try sending your email to a different email address to see if the
+warning still appears.
+
+link:#troubleshooting[Back to Troubleshooting]

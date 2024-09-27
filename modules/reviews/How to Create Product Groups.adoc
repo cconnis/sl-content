@@ -1,0 +1,73 @@
+[[top]]
+==== Overview
+
+Product groups allow you to group the reviews of different products
+together and display reviews of all products in the group on each
+individual product's page. Product groups also combine star ratings for
+each included product.
+
+If your store offers the same base product with different designs,
+product groups are a great way to make sure all of the products benefit
+from the reviews submitted by your customers! Read on to learn how to
+create and edit product groups.
+
+==== In This Guide
+
+* link:#create[Create a Product Group]
+* link:#edit[Edit a Product Group]
+* link:#delete[Delete a Product Group]
+
+'''''
+
+[[create]]
+=== Create a Product Group
+
+. Click the *Reviews* icon
+. Click *Content*
+. Click *Product Groups*
+. Click *+ Product Group*
+. Enter a name for your Product Group
+. Select products to add to the Product Group*
+. Click *Save*
+
+*Each product can only be added to only one group
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c6ff42e1f64bf80265b9/file-4zIDSH6wHx.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c6ff42e1f64bf80265b9/file-4zIDSH6wHx]
+
+link:#top[Back to top]
+
+'''''
+
+[[edit]]
+=== Edit a Product Group
+
+. Click the *pencil icon* next to the Product Group you'd like to edit
+. Unselect existing products and/or select additional products*, or
+change the name of the Product Group
+. Click *Save*
+
+*Each product can only be added to only one group
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c72693a47f35db9dbfdb/file-35XBPHxKBc.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c72693a47f35db9dbfdb/file-35XBPHxKBc]
+
+link:#top[Back to top]
+
+'''''
+
+[[delete]]
+=== Delete a Product Group
+
+When you delete a Product Group you are only deleting the association
+between the products in the group. Each product will retain its reviews,
+and each product's average star rating will be re-calculated to only
+include reviews left for that individual product.
+
+. Click the *trash can* icon next to the Product Group you'd like to
+delete
+. Click *Delete*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c7686ca77422d0964715/file-rEvasIbdcg.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e7c7686ca77422d0964715/file-rEvasIbdcg]
+
+link:#top[Back to top]
+
+'''''

@@ -1,0 +1,81 @@
+https://everlesson.com/[Everlesson] is a comprehensive technology
+solution that allows you to create and sell online courses from your own
+website. Integrating Everlesson and Sendlane enables you to funnel email
+information captured by Everlesson directly to your lists in Sendlane!
+
+'''''
+
+=== Before Getting Started
+
+Prior to connecting with Sendlane, you'll need an active
+https://everlesson.com[Everlesson account].
+
+Please also have your
+https://help.sendlane.com/article/71-how-to-find-your-api-key-api-hash-key-and-subdomain[Sendlane
+API Key&#44; Hash Key and Subdomain] ready. These can be found in your
+Sendlane account under *_Account_ → **_API_*.
+
+Last (but not least) be sure you have
+https://help.sendlane.com/article/125-creating-a-list[created a list]
+inside of your Sendlane account, so Everlesson knows where to place your
+new leads and contacts!
+
+'''''
+
+=== Connecting Everlesson and Sendlane
+
+. Login to Everlesson and navigate to *_Global Settings_* _→
+*Integrations*image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e6762372c7d3a7e9ae8edd1/file-8Trm159TPg.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e6762372c7d3a7e9ae8edd1/file-8Trm159TPg]_
+. Find Sendlane in the list of applications and then
+enter your _Sendlane API Key, Hash Key and Subdomain_ and click *_Save
+Sendlane API
+Keysimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e67eab72c7d3a7e9ae8f964/file-YeI56v3LP4.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e67eab72c7d3a7e9ae8f964/file-YeI56v3LP4]_*
+
+That's it! Your Integration is now complete!
+
+'''''
+
+=== Next Steps
+
+Now that Everlesson and Sendlane are integrated, it's time to connect
+your membership as well!
+
+. From your Everlesson dashboard, click into the membership you'd like
+to connect and navigate to *_Step 2 - Pricing
+Optionsimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e67e8ce2c7d3a7e9ae8f93d/file-o8c7lYEqc5.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e67e8ce2c7d3a7e9ae8f93d/file-o8c7lYEqc5]_*
+. Choose the course and then click the *_Member Actions_*
+iconimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e67e9072c7d3a7e9ae8f942/file-fmxPVUALt0.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e67e9072c7d3a7e9ae8f942/file-fmxPVUALt0]
+. On the next screen, select *_Sendlane_* from the _Member Actions_
+dropdown, choose the list you'd like to add contacts to and then click
+*_Save
+Settingimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e67ec1704286364bc9680d8/file-tFjUxN8PfH.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e67ec1704286364bc9680d8/file-tFjUxN8PfH]_*
+. Once you see the __Successfully Saved** **__notification, you're
+done!image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e67ec8e04286364bc9680df/file-DY1HJL8mol.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5e67ec8e04286364bc9680df/file-DY1HJL8mol]
+
+Now any new members who join your Everlesson course will automatically
+be added to your list in Sendlane!
+
+'''''
+
+=== Troubleshooting
+
+This integration is native to Everlesson, so we're only able to provide
+limited troubleshooting support. However, if you  _do_ need help, the
+Everlesson team is just a few clicks away!
+
+* Connect with the
+https://memberhub.freshdesk.com/support/tickets/new[Everlesson Team]
+* Visit https://everlesson.replytap.io/[their Knowledgebase] for more
+tutorials
+
+==== Additional Everlesson Resources
+
+https://everlesson.com[Sign up for Everlesson]
+
+'''''
+
+=== TL;DR
+
+Login to Everlesson → _Global Settings_ → _Integrations_ →
+_Sendlane_ → Enter Api Key / Hash Key / Subdomain → _Save Sendlane API
+Keys_

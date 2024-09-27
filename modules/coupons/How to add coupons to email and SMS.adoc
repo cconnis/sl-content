@@ -1,0 +1,96 @@
+[[top]]
+==== Overview
+
+Unique coupons are a great way to avoid coupon abuse and give customers
+a personalized discount. Read on to learn how to insert unique coupon
+codes into email and SMS messages!
+
+==== In this guide
+
+* link:#email[Add coupon codes to email]
+* link:#sms[Add coupon codes to SMS]
+* link:#troubleshooting[Troubleshooting]
+
+[[bgs]]
+====== 🚦 Before Getting Started
+
+Upload a
+https://help.sendlane.com/article/492-how-to-send-unique-coupon-codes[custom
+coupon collection] or
+https://help.sendlane.com/article/507-how-to-generate-unique-coupons-for-shopify[generate
+codes from a Shopify discount].
+
+'''''
+
+[[email]]
+=== Add coupon codes to email
+
+Coupon codes can be displayed in any heading or text block in a Campaign
+or Automation Email. To insert a snippet that will render as a unique
+coupon code to each contact:
+
+. Place your cursor where you want your coupon to appear
+. In the visual builder, click the *three-dot icon*; in the plain text
+builder, click the *lightning bolt icon*
+. Click the *coupon icon* 
+. Select the *coupon collection* 
+. Select the *coupon *
+. ****Click *Preview* to see how the coupon code will appear to your
+Contacts!
+
+[[personalization-styling]]
+====== 🙋 How do I change the font styling for an inserted personalization?
+
+When you select a Custom Field or templating syntax personalization from
+a dropdown, the syntax is inserted into the email as a snippet with
+protections that help avoid breaking the syntax.
+
+To change the styling of an inserted syntax snippet:
+
+. Use your cursor to select the snippet (you may need to select the
+space just before and after the snippet)
+. Paste the snippet somewhere else to remove the formatting by pressing
+`+CMD+`+ `+Shift+` + `+V+`
+. Copy the snippet from where it was pasted in the previous step
+. Paste the snippet back into your email
+. Format the text as normal
+
+Previewing a coupon code will not use a code, but sending a test email
+will. Check out our guide to
+https://help.sendlane.com/article/492-how-to-send-unique-coupon-codes?#replenish[replenishing
+an existing coupon collection] to learn how to add more unique codes to
+a coupon collection.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66635f885940934e140f47e2/file-7KKPNMqvdd.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/66635f885940934e140f47e2/file-7KKPNMqvdd]
+
+link:#top[Back to top]
+
+'''''
+
+[[sms]]
+=== Add coupon Codes to SMS
+
+Coupon codes can be displayed in any Campaign or Automation SMS message.
+To insert a snippet that will display a unique coupon code to each
+Contact:
+
+. Place your cursor where you want your coupon to appear
+. Click the *Coupon icon* 
+. Select the *coupon collection*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666365745173914f806c1880/file-j4Mf757az2.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/666365745173914f806c1880/file-j4Mf757az2]
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+[[stopped]]
+====== Why did my campaign stop sending?
+
+If your coupon collection does not have enough coupon codes left to send
+to each contact in the campaign's audience, the campaign will not go out
+to any contacts. Replenish your coupon collection and send the campaign
+again. +
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63a23c5af9c92f5c53dd68dd/file-rdonSuGRIn.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63a23c5af9c92f5c53dd68dd/file-rdonSuGRIn]

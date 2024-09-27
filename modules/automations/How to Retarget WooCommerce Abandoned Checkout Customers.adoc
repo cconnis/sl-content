@@ -1,0 +1,109 @@
+Sendlane's integration with WooCommerce allows you to use automations to
+send targeted messages directly to contacts who have abandoned their
+checkout!
+
+=== Before Getting Started
+
+Complete these steps before creating an abandoned checkout Automation
+for your WooCommerce store:
+
+* Create a
+https://help.sendlane.com/article/125-lists#creating-a-list[List] for
+your WooCommerce abandoned checkout customers
+* https://help.sendlane.com/article/98-how-to-integrate-woocommerce-and-sendlane[Integrate
+WooCommerce and Sendlane]
+
+[[CreateACA]]
+=== In This Guide
+
+* link:#sl-automation-plugin[Installing the WooCommerce Plugin for
+Sendlane Abandoned Checkout Automations]
+* link:#wc-abandoned-cart[Creating an Abandoned Checkout Automation]
+
+[[sl-automation-plugin]]
+=== Installing the WooCommerce Plugin for Sendlane Abandoned Checkout Automations
+
+. Download the
+https://sendlane.s3-us-west-1.amazonaws.com/woocommerce/WooCommerce-For-Sendlane.zip[WooCommerce
+plugin for Sendlane] and install the plugin's .ZIP file on your
+WordPress site (saving the plugin as any other file type will prevent
+you from uploading the plugin to your Wordpress site)
+. Verify that you have Version 2.0 installed on your WordPress plugins
+pageimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/610d5c13b37d837a3d0e1921/file-oydnBcwSs0.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/610d5c13b37d837a3d0e1921/file-oydnBcwSs0]
+. Click on the *_WooCommerce_* page in your left-hand sidebar →
+*_Settings_* → *_Integration_* tab
+. Enter your Sendlane *_subdomain_* and click *_Save Changes_*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/610d5144b55c2b04bf6dc289/file-8ZnoDPbnO7.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/610d5144b55c2b04bf6dc289/file-8ZnoDPbnO7]
+
+[[wc-abandoned-cart]]
+=== Creating an Abandoned Checkout Automation
+
+. Log into Sendlane, then click the *_Automations icon_* on the left
+hand side of your dashboard
+. On the Automations page, click *_New Automation_* then *_Start From
+Scratch_*image:https://lh6.googleusercontent.com/ank4Hi594ZmHzWUItkLPKcc2j-BcXDIfUWLikN6hzb2fxug3yuaT6hCqpkG6Rd16x7DjVDecmbXwCFGdUWfiOc8Zs_GNbElI0AFRFXa22kqhm1xEC9yMzQNexLsczEkxTcw84z3y[https://lh6.googleusercontent.com/ank4Hi594ZmHzWUItkLPKcc2j-BcXDIfUWLikN6hzb2fxug3yuaT6hCqpkG6Rd16x7DjVDecmbXwCFGdUWfiOc8Zs_GNbElI0AFRFXa22kqhm1xEC9yMzQNexLsczEkxTcw84z3y,width=446,height=238]
+. Enter a name for your new Automation (remember, this name is only
+visible internally) and click *_OK_* to get
+startedimage:https://lh5.googleusercontent.com/_pC5oeWECucv59YHH2QeplM9oxGbBy8uO4MajFdTIcfL8AL5i9nQQP7X46WDdg1p3t28ExNl7LEitv4enyyxrfFuWXz4eOeNfAK8ZcbC85aJZKhUt6IqbB5xrjgfXbwf1AqRUYVd[https://lh5.googleusercontent.com/_pC5oeWECucv59YHH2QeplM9oxGbBy8uO4MajFdTIcfL8AL5i9nQQP7X46WDdg1p3t28ExNl7LEitv4enyyxrfFuWXz4eOeNfAK8ZcbC85aJZKhUt6IqbB5xrjgfXbwf1AqRUYVd,width=231,height=180]
+. Click the *_Add Trigger_* box, select the *_Woocommerce tab_*, and
+choose *_Customer Abandoned
+Checkoutimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/611d379d21ef206e5592cb88/file-ZBrcJN3hqF.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/611d379d21ef206e5592cb88/file-ZBrcJN3hqF]_*
+. Continue to build out your automation to
+https://help.sendlane.com/article/73-automations#communications[include
+any desired emails and wait times]
+. Add a button and an abandoned checkout block to your email which will
+link customers back to the abandoned cart
+. Last but not least, don't forget to *Activate* the automation once
+you're done building out your
+funnelimage:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee258aa2c7d3a10cba8c537/file-NNSNQ7H5f4.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/5ee258aa2c7d3a10cba8c537/file-NNSNQ7H5f4]
+
+Now, when contacts are added to the abandoned checkout list they will
+automatically start this automation!
+
+[[cart-link]]
+===== 💡 Use the following snippet to add a direct link to Contacts' carts in hyperlinked text and images or custom buttons!
+
+To place a direct link to a Contact's abandoned checkout in hyperlinked
+text and images or a button, paste the following snippet in the URL
+field:
+
+`+{% set data = trigger.getCheckout() %} {{ data.checkout_data.cart_link }} +`
+
+If Contacts click this link on a device other than the one they built
+their checkout on, they will be taken to your store's generic cart page.
+
+=== Troubleshooting
+
+*Checkout was abandoned but the automation didn't trigger*
+
+If you have noticed that a checkout has been abandoned but the
+automation was not triggered, it is likely that the customer has not
+clicked through to provide their contact information or did not agree to
+receive promotional emails. Being a
+https://help.sendlane.com/article/402-what-is-permission-based-marketing[permission-based
+platform], the contact must have opted-in/agreed to receive promotional
+emails during the checkout process.
+
+====== The abandoned cart block isn't available!
+
+The abandoned cart block may not appear in your elements sidebar for two
+common reasons:
+
+. Your eCommerce integration is not set up correctly. Review your
+eCommerce store's integration with Sendlane for possible connection
+issues.
+. You already added an abandoned cart block to your email. Only one
+abandoned cart block is allowed per email.
+
+=== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/tip-of-the-week-how-to-retarget-woocommerce-abandoned-cart-customers-recover-lost-sales[Tip
+of the Week: How to Retarget WooCommerce Abandoned Cart Customers &
+Recover Lost Sales ]
+* https://www.sendlane.com/blog-posts/designing-an-abandoned-cart-email[Designing
+an Abandoned Cart Email to Increase Conversions ]
+* Email Marketing Insider Youtube Series: https://youtu.be/s3U83TizmWw[5
+Must Haves for a Picture Perfect Abandoned Cart Email]
+* https://www.sendlane.com/blog-posts/off-the-wall-abandoned-cart-emails[Off-the-Wall
+Abandoned Cart Emails That Work]

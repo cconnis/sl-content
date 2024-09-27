@@ -1,0 +1,47 @@
+Re-engaging Contacts who have stopped opening and clicking on your
+emails is a challenge, and can hurt your sending reputation
+substantially if not done carefully. Proceed with caution!
+
+Sendlane suggests the following guidelines for re-engaging unengaged
+Contacts:
+
+[[combine]]
+==== Send to Unengaged Contacts With Engaged Contacts
+
+Sending to a segment of unengaged Contacts without a large group of
+engaged Contacts will result in extremely poor open, click, and spam
+metrics. Unengaged Contacts are not likely to open or click on links in
+emails, and they are likely to mark your content as spam.
+
+When sending a re-engagement Campaign, unengaged Contacts should account
+for no more than 10% of the Campaign’s audience. For those sending to
+smaller lists, unengaged Contacts should account for a maximum of 3-5%
+of a re-engagement Campaign’s audience.
+
+[[small]]
+==== Send Multiple Small Re-Engagement Campaigns
+
+Sendlane strongly recommends against sending a single, large Campaign
+for the purpose of re-engagement. To minimize the risk to your sender
+reputation, keep the audience for each re-engagement Campaign small.
+
+This means sending multiple Campaigns over a period of time, depending
+on the size of your overall audience and the proportion of unengaged
+Contacts in your audience.
+
+[[remove]]
+==== Remove Remaining Unengaged Contacts After Re-Engagement
+
+Contacts who have been sent a re-engagement Campaign and remain
+unengaged should be removed from your audience for the health of your
+sender reputation.
+
+The following Segment can identify Contacts who have not engaged with
+your content for a specified period of time:
+
+* Engagement and Activity > Did Not Open > Recent> (Number of days since
+beginning of re-engagement attempt), AND
+* Contact Properties > Subscription Date > Is Before > (Date that is 1
+month prior to the day running the segment)
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62cf200c03382e4311cf431a/file-7Ae9fKZyHQ.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62cf200c03382e4311cf431a/file-7Ae9fKZyHQ]

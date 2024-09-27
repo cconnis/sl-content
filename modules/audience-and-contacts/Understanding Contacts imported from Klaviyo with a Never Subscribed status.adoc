@@ -1,0 +1,66 @@
+==== Overview
+
+Klaviyo allows email addresses collected by eCommerce integrations like
+Shopify to collect email addresses from purchasers who did not opt into
+email marketing consent. These contacts are given a status of "Never
+Subscribed." Read on to learn more about how to manage these contacts in
+Sendlane.
+
+==== In this guide
+
+* link:#when[When are contacts considered "never subscribed"?]
+* link:#can[Can I send to contacts with a "never subscribed" status?]
+* link:#exclude[How to exclude contacts with a "never subscribed" status
+from Campaigns]
+
+'''''
+
+[[when]]
+=== When are contacts considered "never subscribed"?
+
+https://help.klaviyo.com/hc/en-us/articles/115005246968#h_01HCCXMXMZ09DAKSHPWYR2G41S[According
+to Klaviyo], contacts are considered "never subscribed" when they are
+brought into Klaviyo after "general engagement":
+
+There are certain methods of adding a profile to Klaviyo that will
+result in consent status of Never Subscribed, with a yellow checkmark.
+If a profile has Never Subscribed, and is also not a member of any
+lists, they were likely added to Klaviyo due to general engagement with
+your brand.
+
+For example, this can include profiles synced through certain
+third-party integrations, or customers that started a checkout without
+subscribing on your ecommerce platform. 
+
+[[can]]
+=== Can I send email to contacts with a "never subscribed" status?
+
+After importing contacts from Klaviyo, you may want to send email to
+contacts with a "never subscribed" status. "Never subscribed" contacts
+are not automatically prevented from receiving email from your Sendlane
+account. Klaviyo advises that these contacts "are eligible for campaign
+and flow emails, but we recommend exercising caution when contacting
+them. Make sure you’re only sending them emails you know they’ll be
+interested in, like abandoned cart flow messages or followup information
+from a recent order."
+
+We highly recommend creating a segment for never subscribed contacts and
+excluding that segment from most, if not all, Campaigns.
+
+[[can]]
+=== Can I send SMS to contacts with a "never subscribed" status?
+
+The "never subscribed" status applies to email only. No contacts are
+imported with a "never subscribed" status for SMS. Contacts without
+affirmative SMS consent recorded in their contact profile in Sendlane
+are automatically prevented from receiving SMS messages.
+
+[[exclude]]
+=== How to exclude contacts with a "never subscribed" status from Campaigns
+
+https://help.sendlane.com/article/137-segments#creating-segment[Create a
+segment] with a condition of Email Consent = Never Subscribed. Add this
+segment to the
+https://help.sendlane.com/article/153-campaigns#c-a["don't send" section
+of the audience setup] for email
+campaigns.image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6606efa96b58437311e412a7/file-VBLo6pzuWH.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6606efa96b58437311e412a7/file-VBLo6pzuWH]

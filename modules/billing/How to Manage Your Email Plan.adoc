@@ -1,0 +1,76 @@
+[[select]]
+=== Select Your Email Plan
+
+==== Sending Credits
+
+Sendlane's email plans are based on sending volume and provide a set
+number of sending credits for your billing period.
+
+If you're moving to Sendlane from another email service provider we
+recommend selecting a plan that provides at least enough sending credits
+to continue sending at your current volume.
+
+Check out the resources below for common former ESPs to determine your
+email volume:
+
+* Klaviyo -
+https://help.klaviyo.com/hc/en-us/articles/360047399472#h_01EFQGR7S4CMNHZPF1FC98WKAG[Flows
+performance report] and
+https://help.klaviyo.com/hc/en-us/articles/360047399472#h_01EFQGS5CPS31T7CNJ2K09TWJK[Campaign
+performance report]
+* Mailchimp -
+https://mailchimp.com/help/about-comparative-reports/?_gl=1*1d391nl*_up*MQ..*_ga*MTc1NTk3ODE2Ny4xNjg5MDk0MTI5*_ga_N5HD1RTH6E*MTY4OTA5NDEyOC4xLjEuMTY4OTA5NDE0NS4wLjAuMA..[Comparative
+report]
+* Attentive -
+https://help.attentivemobile.com/hc/en-us/articles/14553114929556-Create-custom-visual-reports[Custom
+reporting]
+
+Change your Sendlane subscription plan at any time to accommodate a
+growing list of Contacts or strategic cleaning that lowers your Contact
+count for more targeted sending.
+
+SMS are billed separately in your Sendlane account. Head to
+https://help.sendlane.com/article/468-how-to-change-your-sms-package[How
+to Change Your SMS Plan] for instructions on adjusting your SMS plan!
+
+[[date]]
+===== 🚨 Plan changes take 24 hours to process
+
+Make sure to change your plan at least one day before your plan's
+renewal date to avoid being charged for your previous plan!
+
+Check out your current plan information at the bottom of the
+https://help.sendlane.com/article/329-dashboard-overview#Daily[Weekly
+Digest section of your Dashboard]!
+
+[[change-plan]]
+=== Change Your Email Plan
+
+. To access the https://app.sendlane.com/billing/plans[plans page],
+click *Account* 
+. Click *Billing* 
+. Click *Change Plan*
+. ****Click the Email Plan dropdown and select a new plan
+. Click Upgrade under the billing period (annual or monthly) of your
+choice
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63e431f4f5e6e535e1a9668b/file-mxqcHc2rkx.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/63e431f4f5e6e535e1a9668b/file-mxqcHc2rkx]
+
+Enter your billing information, and click *Save* to confirm your new
+plan!
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/611c0bf66ffe270af2a99c1d/file-7Gmf1uroJc.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/611c0bf66ffe270af2a99c1d/file-7Gmf1uroJc]
+
+[[auto]]
+=== Auto-Upgrade Protection
+
+If you attempt to send an email using more credits than are available in
+your account and you have auto-upgrade protection turned on, your plan
+will be auto-upgraded to the next plan level. You can also choose to pay
+CPM overages, which charge a fee per credit when attempting to send
+without enough sending credits in your account.
+
+Use the radio buttons underneath your email plan details to choose
+Upgrade to next plan or Pay CPM overage:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e8c91d42e1f64bf8026685/file-bK1u7B7KW6.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e8c91d42e1f64bf8026685/file-bK1u7B7KW6]

@@ -1,0 +1,356 @@
+[[top]]
+==== Overview
+
+Email campaigns are one-time, broadcast-style emails you can use to send
+newsletters, updates, announcements, or any other type of marketing
+content to your audience. Campaigns are great for sale/special offer,
+date, or event-specific content.
+
+If you want to send content based on a contact's behavior and
+preferences, check out our guide to
+https://help.sendlane.com/article/73-automations[automations]!
+
+[[bgs]]
+===== 🚦 Before getting started
+
+Create a https://help.sendlane.com/article/107-senders[Sender Profile]
+and a https://help.sendlane.com/article/125-lists[List],
+https://help.sendlane.com/article/137-segments[Segment], or created
+before you begin building your campaign
+
+[[itg]]
+=== In this guide
+
+* link:#creating[Create a new campaign]
+* link:#content[Campaign content]
+* link:#statuses[Campaign statuses]
+
+'''''
+
+[[creating]]
+=== Create a new campaign
+
+To create a new campaign:
+
+. Click the *Campaign* icon
+. Click *New Campaign *
+. Click *Create Email Campaign*
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/650884032a3af31439ad6bda/file-rCmrDemKwN.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/650884032a3af31439ad6bda/file-rCmrDemKwN]
+
+[[settings]]
+==== Campaign settings
+
+Name your campaign, select a sender profile, set your Audience, and
+configure advanced settings on the left hand pane of the Settings &
+Content page.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65088c6ce249755d2f85c19a/file-B4KDWGNqPL.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65088c6ce249755d2f85c19a/file-B4KDWGNqPL]
+
+[[c-name]]
+===== Campaign Name
+
+Under Campaign Name, enter a descriptive name for your campaign. This
+name will identify the campaign on the campaigns page; it is not the
+subject line for your campaign email.
+
+[[c-sp]]
+===== Sender Profile
+
+link:#statuses[Select an existing or create a new]
+https://help.sendlane.com/article/107-senders[Sender Profile] to send
+the campaign from.
+
+[[c-a]]
+===== Audience
+
+Select Lists, Segments, or Tags from the the *Send to* (will receive the
+campaign) or *Don't send to* (will NOT receive the campaign) dropdown
+menus.
+
+Use the audience size estimate button to calculate an estimate of how
+many contacts are included in the Audience options selected:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/650888d39446233b93527e19/file-0Za0TEGQ5T.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/650888d39446233b93527e19/file-0Za0TEGQ5T]
+
+[[included-vs-excluded]]
+===== ⚠️ Don't send to overrides Send to
+
+If a contact is on a List Segment, or Tag in the Send to section but is
+also on a List, Segment, or Tag in the Don't send to section, they will
+not receive the campaign. contacts in the Don't send to section are not
+included in the Audience count.
+
+[[utm-c]]
+===== UTM Tracking
+
+Check the Customize UTM checkbox to edit UTM tracking information for
+the campaign. If you have global UTM tracking set up, you will see your
+global settings when the button is checked. Change or add new UTM
+parameters and values for this campaign only.
+
+[[c-rss]]
+===== RSS Feed
+
+Check the RSS Feed box if you'd like to add your campaign to an existing
+RSS feed on your website, then enter your RSS feed's URL.
+
+https://help.sendlane.com/article/326-how-to-use-google-analytics-in-campaigns%22[]
+
+[[c-e]]
+===== Experiments
+
+Check the Experiments box if you'd like to turn on
+https://help.sendlane.com/article/370-campaign-experiments[campaign
+Experiments] for your campaign.
+
+link:#top[Back to top]
+
+'''''
+
+[[content]]
+=== Campaign content
+
+Set your subject and preheader, and access the email builder for your
+campaign on the right hand pane of the Settings & Content page.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65088c9af09e1f2e46c8358a/file-iitzB3xb8I.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65088c9af09e1f2e46c8358a/file-iitzB3xb8I]
+
+[[sp]]
+==== Subject & Preheader
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62f5855861ff5d5f24f9b3da/file-rXbEo0a8VW.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62f5855861ff5d5f24f9b3da/file-rXbEo0a8VW]
+
+[cols=",",]
+|===
+|*Subject* |The subject line should be an attention-getter. Use 4-6
+compelling words for best results, and consider using the
+https://help.sendlane.com/article/79-what-are-personalization-tags[personalization]
+icon to add personalized data from your contacts' profiles, like their
+first name.
+
+|*Preheader* |The preheader text is used build curiosity and increase
+your open rates by displaying a summary of your message in your
+audience's inbox!
+|===
+
+[[c-content]]
+==== Content
+
+Click *Create Email* to go to the Email builder, where you can either
+use a template for your campaign or design it from scratch! Read the
+https://help.sendlane.com/article/499-sendlanes-new-email-builder[guide
+to Sendlane's email builder] for details about everything you can
+achieve with our MJML drag-and-drop email builder.
+
+Sendlane has https://www.sendlane.com/resources[many resources] to help
+clarify a winning marketing strategy for your brand! Check out our blog
+https://www.sendlane.com/blog/email-design-tips[6 Email Design Tips to
+Increase Engagement] for tips on creating a style guide for your brand,
+optimizing for mobile devices, personalization, color psychology, and
+call-to-action best practices.
+
+In addition to design resources, consult content resources that focus on
+how content can affect deliverability, such as
+https://help.sendlane.com/article/356-spam-folder[Why is my email going
+to the spam folder?]
+
+Here are a few simple rules that can help your email reach as many
+contacts as possible:
+
+* *Emails should be 40% images at most*. Some inbox providers block
+automatic image downloading which means contacts who use those services
+will not immediately see any images in your email. Images are also not
+readable by screen readers. Use text or buttons whenever possible!
+* *Content order matters*. contacts see the top of your email first; if
+the first sections don't grab them, they likely won't continue
+scrolling. Keep logo images and generic brand information at the top of
+an email as small as possible while still being readable, or consider
+moving it to the bottom of the email.
+* *Use one call-to-action per email*. When emails have multiple
+calls-to-action, contacts aren't sure which is the most important. Keep
+your content focused and concise so contacts can easily scan it!
+
+Click *Next to Summary* to continue to the campaign Summary page.
+
+link:#top[Back to top]
+
+'''''
+
+[[send]]
+==== Campaign summary and sending
+
+Select a sending method, turn on send time optimization, and view a
+summary of campaign content and settings on the Schedule & Summary page.
+
+Select a sending method from the radio buttons under the Schedule
+heading:
+
+[cols=",",]
+|===
+|*Save as Draft* |Use the Save as Draft option to save a draft of your
+campaign for later. When you're ready to send, find your campaign on the
+https://app.sendlane.com/campaigns[campaigns page], then click through
+to the Schedule page.
+
+|*Send Immediately* |Use the Send Immediately option to send your
+campaign to your contacts as soon as you click Send.
+
+|*Schedule* |Use the Schedule option to specify a time in the future to
+send your campaign
+|===
+
+[[timezone]]
+===== Time zone options for scheduled campaigns
+
+You can schedule a campaign to send to all contacts simultaneously or at
+a specified time in their local time zone. For example, if you schedule
+a campaign to send at 9 AM your time (EST), contacts will receive the
+campaign at whatever time 9 AM EST is in their time zone.
+
+Contacts' time zones are determined by the following attributes in the
+following order:
+
+. Combination of the ZIP code or province and country shown on the
+contact profile
+. Contact's phone number area code
+. Contact's IP address (set by their latest click on a tracking link)
+. Country shown on the contact profile
+
+The campaign will be sent in the account's local timezone if none of the
+above attributes are available.
+
+To send a campaign to all recipients at the same time in a specified
+time zone, select a time zone from the Time zone dropdown (your
+account's time zone is noted as Default) and set your preferred time:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669e946838e94c7683947166/file-5bdHCXM1Wp.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669e946838e94c7683947166/file-5bdHCXM1Wp]
+
+To send a campaign to recipients at a specified time in their local time
+zone, select Recipient's Local Time zone from the Time zone dropdown and
+set your preferred time:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669e949fea04c5571255668c/file-ZoDCObaiHp.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669e949fea04c5571255668c/file-ZoDCObaiHp]
+
+When you schedule campaigns to send at recipients' local time, you'll
+see a note informing you when the campaign will begin to send. This time
+is the first instance of the specified time for all time zones
+represented in your campaign's audience. Campaigns sent at recipients'
+local time may have a Sending status for up to 24 hours.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669e959c38e94c7683947169/file-Okk4npkiy6.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/669e959c38e94c7683947169/file-Okk4npkiy6]
+
+[[c-mlop]]
+===== Machine Learning Open Predictability
+
+Select this checkbox to send your campaign when contacts are most likely
+to open it based on past behavior. Machine Learning Open Predictability
+is not available if Recipient's Local Timezone is selected. Check out
+our guide to
+https://help.sendlane.com/article/142-what-is-machine-learning-open-predictability[Machine
+Learning Open Predictability] to learn more!
+
+link:#top[Back to top]
+
+'''''
+
+[[statuses]]
+=== Campaign statuses
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62f6943f61ff5d5f24f9b8bd/file-6HHpkwire1.jpg[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/62f6943f61ff5d5f24f9b8bd/file-6HHpkwire1]
+
+The https://app.sendlane.com/campaigns[campaigns page's] Status column
+provides a Status for all campaigns
+
+* *Completed* - The campaign has finished sending. We suggest waiting 24
+hours before reviewing the campaign's report to give your contacts
+enough time to engage with your campaign.
+* *Denied* - The campaign has been reviewed and denied by the Sendlane
+Compliance Team. Common reasons for denial include spam-like or
+misleading content; broken, unmasked, or untrusted URLs, and poor
+image-to-text ratio (i.e. single, large image with hardly any text).
+* *Experimenting* - The campaign was sent and has campaign Experiments
+turned on.
+* *Draft* - The campaign has not been sent.
+* *Pending Compliance Review* - The Sendlane Compliance Team is
+reviewing the campaign. Most campaigns are approved within 24 hours. If
+after 24 hours your campaign has not been approved, please reach out to
+our mailto:support@sendlane.com[Support Team].
+* *Scheduled* - The campaign is scheduled to be sent at a specified date
+and time.
+* *Sending* - The campaign is being sent. The campaign may remain in
+this status for a period of time if the audience is large, or if the
+campaign is being sent via
+https://help.sendlane.com/article/142-what-is-machine-learning-open-predictability[Machine
+Learning Open Predictability].  
+* *Stopped* - The campaign was manually stopped after sending began.
+
+[[audience-pop-up]]
+==== Campaign audience pop-up
+
+To view the Audience that was used in a campaign, click the number in
+the Audience column
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e65ba46ca77422d096455a/file-bwDKldPvwE.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/64e65ba46ca77422d096455a/file-bwDKldPvwE]
+
+[[actions]]
+==== Campaign actions
+
+The action buttons at the right of each campaign's name on the
+https://app.sendlane.com/campaigns[campaigns page] provide different
+available actions based on the status of the campaign
+
+* *Edit* - Make changes to any campaigns that have not yet been sent.
+* *Duplicate *- Create an exact copy of a campaign including all
+settings, audience, and content details.
+* *Delete* - Delete any campaigns that have not yet been sent.
+* *Un-schedule* _-_ Change the Schedule settings for your campaign. You
+can re-schedule sending, send immediately or save the campaign as a
+draft.
+* *View Report* - View the
+https://help.sendlane.com/article/321-email-reporting-breakdown[reporting
+data and statistics] for any sent campaigns
+
+link:#top[Back to top]
+
+'''''
+
+=== Troubleshooting
+
+[[blank]]
+====== My contacts are seeing blank emails! 
+
+The campaign likely used one image as the entire email. contacts may be
+seeing the image because they have not downloaded or allowed images in
+their inbox settings, or they are receiving the plain
+text-only format of an email that has no text inside. Best practices
+suggest a ratio of 60% text and 40% images.
+
+[[rate-over-100]]
+====== Why is the click or open rate >100% on the Campaigns page?
+
+Metrics on the Campaign page show total click rate and total open rate.
+Click on the Campaign report to view the unique click rate and unique
+open rate.
+
+'''''
+
+[[resources]]
+=== Additional Sendlane Resources
+
+* https://www.sendlane.com/blog-posts/irresistible-email-newsletters[A
+Complete Guide to Crafting Irresistible Email Newsletters]
+* https://www.sendlane.com/blog-posts/simple-effective-emails[7 Examples
+of Simple & Effective Emails]
+* https://www.youtube.com/watch?v=Uc5dQZZ-IfY[Email Marketing Insider
+Video: Four Tips for Writing Emails People Actually Want to Read]
+* https://www.sendlane.com/blog-posts/promotional-emails[9 Promotional
+Emails Your contacts Will Love]
+* https://www.sendlane.com/blog-posts/text-based-vs-image-based-emails[Text-based
+Vs Image-based Emails: Which is Best For Your Business?]
+* https://www.sendlane.com/blog-posts/product-update-emails[5 Ways to
+Send Product Update Emails That Engage Your contacts]
+* https://www.sendlane.com/blog-posts/6-email-templates-you-need-to-create-the-perfect-product-launch-campaign[6
+Email Templates You Need to Create the Perfect Product Launch campaign]
+* https://www.sendlane.com/blog-posts/how-to-leverage-campaign-reporting-in-sendlane-to-boost-engagement[How
+to Leverage campaign Reporting In Sendlane to Boost Engagemen]
