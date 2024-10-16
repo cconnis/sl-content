@@ -1,0 +1,45 @@
+:last-update-label:
+[#top]
+= How to update your payment method
+:page-title: Article Title  // Default page title, modify per article
+:page-aliases:  // Add aliases as /path/to/old/url
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description:  // Optimize for SEO
+:author: Author Name
+:keywords: billing, payment
+:page-diataxis:  // Options: explanation (explaining a concept not guiding users through a process), how-to (guiding users through a process with a prescriptive outcome), reference, tutorial (teaches users a new concept)
+
+// Article content starts here
+[#abstract]
+[abstract]
+--
+This article explains how to change the payment method on file for your Sendlane subscription(s).
+--
+
+== Introduction
+Update or replace the payment method for your Sendlane account at any
+time by following the instructions below. Sendlane accepts all major
+credit cards, including VISA, Mastercard, and American Express.
+
+IMPORTANT: Sendlane does not accept PayPal or pre-paid debit cards.
+To avoid interruption in service, make sure a debit or credit card is on
+file in your account's billing details.
+
+== Update your payment information
+To update your payment method:
+
+. Click the *Account* icon
+. Click *Billing* 
+. Click *Payment Method* 
+. Click *Change payment details*
+
+Enter your debit or credit card's information and billing address in the
+Billing Information window, then click *Save* to confirm your new
+billing details
+
+=== Troubleshooting
+
+====== I'm seeing an "invalid payment method" error!
+
+Double check your card number, card expiration date, card CVC code, name, address, and zip code.
+include::ROOT:partial$if_issue_persists.adoc[]

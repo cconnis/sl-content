@@ -1,0 +1,64 @@
+:last-update-label:
+[#top]
+= How to set and use branding colors
+:page-title: How to set and use branding colors  // Default page title, modify per article
+:page-aliases:  // Add aliases as /path/to/old/url
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description:  // Optimize for SEO
+:author: Author Name
+:keywords: color, colors, branding, brand
+:page-diataxis:  // Options: explanation (explaining a concept not guiding users through a process), how-to (guiding users through a process with a prescriptive outcome), reference, tutorial (teaches users a new concept)
+
+// Article content starts here
+[#abstract]
+[abstract]
+--
+This article explains how to set branding colors for your account and where you'll find them in Sendlane.
+--
+
+[#intro]
+== Introduction
+
+You can specify up to nine colors to be displayed prominently anywhere
+color pickers appear in Sendlane, including the email builder, form
+builder, and reviews. Read on to learn how to set brand colors and
+fonts!
+
+
+
+[#set-color]
+== Set preferred colors
+
+[IMPORTANT]
+====
+Brand colors are set for an entire account.
+It is not possible to set separate brand colors for more than one store under the same account.
+====
+
+To set preferred colors:
+
+. Click the *Account* icon
+. Click *Branding*
+. Click *+ Create Palette*
+. Click the *circle icon* to select a preferred color
+. Click the *dots icon* and drag the colors to rearrange them
+. Click *Add* to add a new color
+. Click *Save* to save your preferred colors
+
+[#remove-color]
+== Remove a color or color palette
+
+You can remove one color from your color palette or delete your entire
+color palette and start over.
+
+To remove a color from your color palette:
+
+. In the color palette, click the *edit* icon
+. Next to the color you want to delete, click the *trash can* icon
+. Click *Delete*
+. Click *Save*
+
+To delete your entire color palette:
+
+. In the color palette, click the *trash can* icon
+. Click *Delete*

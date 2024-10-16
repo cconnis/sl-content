@@ -1,11 +1,11 @@
-name: content
-title: Content
+name: automations
+title: Automations
 version: "1.0"
 asciidoc:
   attributes:
     source-language: asciidoc@
     table-caption: false
-    partialdir: _partials
+    partialdir: ../_partials
     toc: left
     imagesdir: /assets
 nav:

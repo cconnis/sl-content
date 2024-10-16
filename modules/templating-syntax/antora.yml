@@ -1,5 +1,5 @@
-name: content
-title: Content
+name: templating-syntax
+title: Templating Syntax
 version: "1.0"
 asciidoc:
   attributes:

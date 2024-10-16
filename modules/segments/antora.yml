@@ -1,5 +1,5 @@
-name: content
-title: Content
+name: segments
+title: Segments
 version: "1.0"
 asciidoc:
   attributes:

@@ -1,5 +1,5 @@
-name: content
-title: Content
+name: email-builder
+title: Email Builder
 version: "1.0"
 asciidoc:
   attributes:

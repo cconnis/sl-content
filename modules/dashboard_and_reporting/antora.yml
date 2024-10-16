@@ -1,5 +1,5 @@
-name: content
-title: Content
+name: dashboardreporting
+title: Dashboard and Reporting
 version: "1.0"
 asciidoc:
   attributes:

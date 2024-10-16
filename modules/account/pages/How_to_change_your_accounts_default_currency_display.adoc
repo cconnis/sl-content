@@ -1,0 +1,107 @@
+:last-update-label:
+[#top]
+= How to change your account's default currency settings
+:page-title: How to change your account's default currency settings  // Default page title, modify per article
+:page-aliases:  // Add aliases as /path/to/old/url
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description:  // Optimize for SEO
+:author: Author Name
+:keywords: currency, display
+:page-diataxis: how-to // Options: explanation (explaining a concept not guiding users through a process), how-to (guiding users through a process with a prescriptive outcome), reference, tutorial (teaches users a new concept)
+
+// Article content starts here
+[#abstract]
+[abstract]
+--
+This article explains how to change your account's default currency symbol,
+where you can expect to see currency display in Sendlane, and which currencies are available.
+--
+
+[#currency-displays]
+== About currency displays in Sendlane
+
+All revenue amounts displayed in Sendlane come directly from your
+eCommerce integration and represent the currency used in your store,
+even if you sometimes see a US dollar sign (`$`). The US dollar sign is the
+default currency option for all Sendlane accounts.
+
+Sendlane does not re-calculate revenue or perform currency conversions
+when currency settings are changed.
+The new currency's symbol replaces the standard option of the US dollar sign with the symbol of whichever currency you selected.
+
+When you change your account's default currency, the new currency symbol
+will appear:
+
+* In the revenue sections of the
+https://help.sendlane.com/article/329-dashboard-overview[dashboard]
+* In the lifetime value section of the
+https://app.sendlane.com/audience/overview[audience overview page]
+* In the revenue sections of
+https://help.sendlane.com/article/321-email-reporting-breakdown[campaign
+and automation reports]
+* As the pre-selected option in
+https://help.sendlane.com/article/531-how-to-display-selected-products-in-an-email#options[product]
+and
+https://help.sendlane.com/article/662-how-to-set-up-an-abandoned-checkout-automation#blocks[abandoned
+product] blocks (default currency settings can be overridden in these
+blocks by selecting a different currency)
+
+[#change-currency]
+== How to change your account's default currency display
+
+To change your account's default currency:
+
+. Click the *Account icon*
+. Click *Account*
+. Under Account, click *Edit*
+. Select a new default currency
+. Click *Save*
+
+[[available-options]]
+== Available currency options
+
+. $ - US Dollars
+. د.م. - United Arab Emirates Dirham
+. AR$ - Argentine Pesos
+. A$ - Australian Dollars
+. лв - Bulgarian Lev
+. Bs. - Bolivian Boliviano
+. R$ - Brazilian Real
+. C$ - Canadian Dollars
+. CHF - Swiss Francs
+. CH$ - Chilean Peso
+. CH¥ - Yuan Renminbi
+. CO$ - Colombian Peso
+. Kč - Czech Koruna
+. Kr. - Denmark Kroner
+. £ - Egyptian Pound
+. € - Euros
+. ₣ - French Francs
+. £ - British Pounds
+. HK$ - Hong Kong Dollars
+. kn - Croatian Kuna
+. Ft - Hungarian Forint
+. Rp - Indonesian Rupiah
+. ₪ - Israeli Shekel
+. ₹ - Indian Rupee
+. ¥ - Japanese Yen
+. ₩ - South Korean Won
+. Lt - Lithuanian Litas
+. Mد.م. - Moroccan Dirham
+. M$ - Mexican Peso
+. RM - Malaysian Ringgit
+. kr - Norway Kroner
+. NZ$ - New Zealand Dollars
+. S/. - Peruvian Nuevo Sol
+. ₱ - Philippine Peso
+. ₨ - Pakistan Rupee
+. zł - Polish New Zloty
+. lei - New Romanian Leu
+. дин. - Serbian Dinar
+. ₽ - Russian Ruble
+. ر.س - Saudi Riyal
+. kr - Sweden Kronor
+. S$ - Singapore Dollars
+. ฿ - Thai Baht
+. ₺ - Turkish Lira
+. NT$ - New Taiwan Dollar

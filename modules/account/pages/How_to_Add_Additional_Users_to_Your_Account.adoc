@@ -1,0 +1,70 @@
+:last-update-label:
+[#top]
+= How to add additional users to your account
+:page-title: How to add additional users to your account  // Default page title, modify per article
+:page-aliases:  // Add aliases as /path/to/old/url
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description:  // Optimize for SEO
+:author: Author Name
+:keywords: users, permission, access
+:page-diataxis: how-to // Options: explanation (explaining a concept not guiding users through a process), how-to (guiding users through a process with a prescriptive outcome), reference, tutorial (teaches users a new concept)
+
+// Article content starts here
+[#abstract]
+[abstract]
+--
+This article explains how to create and manage additional user accounts.
+--
+
+== Introduction
+
+Creating additional users is a great way to allow access to your Sendlane account without needing to share your account's email address and password.
+You can also specify what type of access your users should have to your account!
+
+[#creating]
+== Create a User Profile
+
+User profile restrictions:
+
+* Role based email addresses (like info@domain.com, sales@domain.com,
+support@domain.com, etc.) cannot be used for user accounts.
+
+* Email addresses cannot be used more than once. If you see the error `The email has already been taken`, the email address is associated with an existing Sendlane account. Use https://learn.microsoft.com/en-us/exchange/recipients-in-exchange-online/plus-addressing-in-exchange-online[plus addressing] to create more than one account for the same email address.
+
+To create a new user account:
+
+. Click the *Account* icon
+. Click *Access*
+. Click *New User*
+. Enter the new user's name
+. Enter the new user's email address (note that users' email addresses
+cannot be changed once the user profile has been created)
+. Select a
+https://help.sendlane.com/article/491-how-to-set-user-permissions[permission
+level]
+. Click *Confirm*
+
+Your new user will receive an email with a link to log in to their new account and create a password.
+Invitations to finish creating an account expire after 24 hours.
+
+link:#top[Back to top]
+
+[#resend]
+== Manage user profiles
+
+[cols="1,1"]
+|===
+|Resend a user's invitation
+|Click the envelope icon image:../../../assets/icon_resend.png[Envelope icon] next to the user's information
+
+|Edit a user profile
+|Click the pencil icon image:../../../assets/icon_edit.png[Edit icon] next to the user's information
+
+|Delete a user profile
+|Click the trash can icon image:../../../assets/icon_edit.png[Delete icon] next to the user's information
+|===
+
+link:#top[Back to top]
+
+
+

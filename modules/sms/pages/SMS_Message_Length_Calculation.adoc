@@ -1,0 +1,173 @@
+:last-update-label:
+
+= How Sendlane encodes SMS and MMS messages
+:page-title: How Sendlane encodes SMS messages  // Default page title, modify per article
+:page-tags: sms, emoji, billing
+:page-aliases:  // Add aliases as /path/to/old/url
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description: Learn how Sendlane determines SMS message size and cost // Optimize for SEO
+:author: Author Name
+:keywords: sms, emoji, billing, cost
+:page-diataxis: explanation // Options: explanation, how-to, reference, tutorial
+
+// Article content starts here
+[abstract]
+--
+This article explains how Sendlane determines how many characters, segments, and credits each SMS or MMS message requires.
+--
+
+[#intro]
+== Introduction
+The size and cost of SMS and MMS messages are determined by the types of characters and/or media present in the message.
+
+[#encoding]
+== How characters are encoded
+If you've drafted your own SMS message in Sendlane and included emojis or other "non-standard" characters, you may have noticed that when you add your emoji or special characters, your entire message takes up more characters and segments. This is because emojis and other special characters use more data than standard characters.
+
+=== Standard characters
+Most commonly used characters, including all Latin-script letters and some symbols, are included in the GSM 7-bit default alphabet. Every character in the GSM 7-bit alphabet
+
+[#mms]
+== How an SMS message becomes an MMS message
+Image, .GIF
+
+[#sms-calculator]
+== Estimate the rough cost of your message
+
+You can estimate the rough cost of your message by using the character, segment, and credit calculator in the SMS message builder or the calculator below.
+
+The cost and size of SMS messages cannot be definitively determined before the message is sent because:
+
+. Contacts who use AT&T, have a Canadian phone number, or are receiving an SMS from your account for the first time (regardless of carrier or country) have `Text STOP to stop` appended to the message in keeping with SMS carrier guidelines. This message cannot be removed.
+. If you include personalization in your SMS message, the number of characters required to render the personalization varies for each contact. Personalization is rendered when the message is sent. For example, if you include `{{ contact.first_name }}`, the message sent to a contact named Sam requires fewer characters than a message sent to a contact named Samantha.
+
+To use the calculator below, enter your business name exactly as it appears in the https://app.sendlane.com/sms-preferences[SMS details page]. Any variation on the business name you see in Sendlane will cause the calculator below to estimate inaccurately.
+
+image:../assets/sms_find_company_display_name.png[Copy your business name to avoid unwanted characters or spaces]
+
+---
+++++
+<label for="business-name">Business Name:</label>
+<input type="text" id="business-name" placeholder="Enter your business name..." />
+
+<textarea id="sms-input" placeholder="Your message..." disabled></textarea>
+<p class="result">
+    Characters Remaining: <span id="characters-left">150</span> |
+    Segments Used: <span id="segments-used">1</span>
+</p>
+
+<script>
+// Constants for segment limits based on encoding
+        const GSM_7_SINGLE_SEGMENT = 160;
+        const GSM_7_MULTI_SEGMENT = 153; // Used for messages spanning multiple segments
+        const UTF_16_SINGLE_SEGMENT = 70;
+        const UTF_16_MULTI_SEGMENT = 67; // Used for messages spanning multiple segments
+
+        let fixedText = "sendlane: "; // Initial default fixed text
+
+        const smsInput = document.getElementById('sms-input');
+        const businessNameInput = document.getElementById('business-name');
+
+        // Function to check if the message contains emojis or other non-GSM characters
+        function usesUtf16Encoding(text) {
+            // GSM-7 includes basic Latin characters, digits, and some special characters
+            const gsm7Regex = /^[\x00-\x7F|\x20-\x7E\xA0-\xBF\xC0-\xFF\u00A1-\u00DF\u00E0-\u00EF\u00F0-\u00F7\u00F8-\u00FE]*$/;
+            return !gsm7Regex.test(text);
+        }
+
+        // Function to update the fixed text and enable SMS input field
+        function updateFixedText() {
+            const businessName = businessNameInput.value.trim();
+
+            if (businessName) {
+                const previousMessageText = smsInput.value.slice(fixedText.length); // Get current message text
+                fixedText = `${businessName}: `; // Update the fixed text with the new business name
+
+                // Set the SMS input field to include the updated fixed text and previous message
+                smsInput.value = `${fixedText}${previousMessageText}`;
+                smsInput.disabled = false; // Enable the SMS input field
+                calculateCost(); // Recalculate segments and remaining characters
+            } else {
+                // Reset to default state if no business name is provided
+                fixedText = "sendlane: ";
+                smsInput.value = ""; // Clear the SMS input field
+                smsInput.disabled = true; // Disable the SMS input field
+                document.getElementById('characters-left').innerText = "150";
+                document.getElementById('segments-used').innerText = "1";
+            }
+        }
+
+        // Function to maintain the fixed text in the SMS input field
+        function updateSmsInput() {
+            let inputText = smsInput.value;
+
+            // If the input doesn't start with the fixed text, update it
+            if (!inputText.startsWith(fixedText)) {
+                const messageText = inputText.replace(fixedText, '').trim(); // Remove any existing fixed text
+                smsInput.value = `${fixedText}${messageText}`; // Reapply the correct fixed text and message
+            }
+        }
+
+        // Function to calculate characters and segments
+        function calculateCost() {
+            let inputText = smsInput.value;
+
+            // Ensure the input always contains the fixed text at the beginning
+            if (!inputText.startsWith(fixedText)) {
+                inputText = fixedText;
+                smsInput.value = fixedText; // Reset the input value to include the fixed text
+            }
+
+            // Remove the fixed text for calculation purposes
+            const messageText = inputText.slice(fixedText.length);
+
+            // Determine the encoding used
+            const usesUtf16 = usesUtf16Encoding(messageText);
+            let maxCharactersPerSegment = usesUtf16 ? UTF_16_SINGLE_SEGMENT : GSM_7_SINGLE_SEGMENT;
+            let maxCharactersPerMultiSegment = usesUtf16 ? UTF_16_MULTI_SEGMENT : GSM_7_MULTI_SEGMENT;
+
+            // Calculate total characters
+            const characterCount = inputText.length;
+
+            // Calculate segments based on encoding and character count
+            let segmentsUsed;
+            if (characterCount <= maxCharactersPerSegment) {
+                // Single segment case
+                segmentsUsed = 1;
+            } else {
+                // Multi-segment case
+                segmentsUsed = Math.ceil(characterCount / maxCharactersPerMultiSegment);
+            }
+
+            // Calculate remaining characters
+            const totalCapacity = segmentsUsed === 1 ? maxCharactersPerSegment : maxCharactersPerMultiSegment * segmentsUsed;
+            const charactersLeft = totalCapacity - characterCount;
+
+            // Update the display
+            document.getElementById('characters-left').innerText = charactersLeft;
+            document.getElementById('segments-used').innerText = segmentsUsed;
+        }
+
+        // Event listener for the business name input
+        businessNameInput.addEventListener('input', updateFixedText);
+
+        // Event listener for the SMS input field
+        smsInput.addEventListener('input', () => {
+            updateSmsInput();
+            calculateCost();
+        });
+
+        // Initial calculation display
+        updateFixedText();
+</script>
+++++
+---
+
+[#troubleshooting]
+== Troubleshooting
+
+[#calculator-inconsistency]
+===== The calculator in this article is showing different estimates than the calculator in the SMS message builder in Sendlane!
+If the business name entered in the calculator above is different than the business name exactly as it appears in the https://app.sendlane.com/sms-preferences[SMS details page], the calculation will be different than the calculation you see in Sendlane.
+
+If you've entered your business name as it appears in Sendlane and the calculations are still different, consider the calculator in Sendlane accurate. Please reach out to product support to report inconsistencies.

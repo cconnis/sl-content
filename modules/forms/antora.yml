@@ -1,5 +1,5 @@
-name: content
-title: Content
+name: forms
+title: Forms
 version: "1.0"
 asciidoc:
   attributes:

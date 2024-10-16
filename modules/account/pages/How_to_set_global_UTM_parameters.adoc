@@ -1,0 +1,156 @@
+:last-update-label:
+[#top]
+= How to set global UTM parameters
+:page-title: How to set global UTM parameters  // Default page title, modify per article
+:page-aliases:  // Add aliases as /path/to/old/url
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description:  // Optimize for SEO
+:author: Author Name
+:keywords: utm, tracking
+:page-diataxis:  // Options: explanation (explaining a concept not guiding users through a process), how-to (guiding users through a process with a prescriptive outcome), reference, tutorial (teaches users a new concept)
+
+// Article content starts here
+[#abstract]
+[abstract]
+--
+This article explains how to set global UTM parameters that are automatically enabled for campaign and automation emails and how to override global UTM settings for individual messages.
+--
+
+[#introduction]
+== Introduction
+
+UTM tracking parameters are automatically appended snippets on the end of links to your website in Campaign or Automation messages that collect data about website visitors.
+
+Sendlane automatically turns on global UTM settings for all new accounts.
+Turning on global UTM tracking means that the parameters you set on the UTM Tracking page will automatically be applied to all links in any Campaign or Automation messages.
+
+Even when global UTM tracking is turned on, global UTM settings can be overridden for individual Campaigns or Automation messages on the Settings & Content page of the email builder, so you’re always in control.
+
+We highly recommend reading the guide to https://help.sendlane.com/article/595-understanding-utm-tracking-options[Understanding UTM Tracking Options], which provides examples of when and where to use global versus customized UTM tracking.
+
+[#prerequisites]
+== Prerequisites
+
+To use the data collected by UTM tracking, you need an account with an analytics provider.
+We recommend the following analytics providers:
+
+* https://www.google.com/url?q=https://support.google.com/analytics/troubleshooter/12627681?hl%3Den%26ref_topic%3D13009749%26sjid%3D2565706756398484578-NA&sa=D&source=editors&ust=1694819062366294&usg=AOvVaw1jYTgi9DLlStXDsOsSHHDE[Google Analytics]
+* https://www.google.com/url?q=https://kb.triplewhale.com/en/articles/5677051-getting-started-onboarding-to-triple-whale&sa=D&source=editors&ust=1694819062366636&usg=AOvVaw30LT33Za6xGSMWf3x89Mjg[Triple Whale]
+* https://www.google.com/url?q=https://info.northbeam.io/knowledge/get-started-with-mta&sa=D&source=editors&ust=1694819062366875&usg=AOvVaw1AH2jRnb_ky-LH7XET9qme[Northbeam]
+
+[#global-parameter-keys]
+== UTM parameters and values
+
+=== UTM parameters (keys)
+
+UTM parameters (sometimes also known as keys) determine what categories
+of tracking information is collected from each click on a URL. The table
+below explains what type of information can be tracked using global UTM
+tracking using Sendlane's default parameters.
+
+[cols=",,",]
+|===
+|*Parameter Name and Snippet* |*Parameter Description* |*Mandatory?*
+
+|Source - `+utm_source+` |Identifies the source of traffic |✅
+
+|Medium - `+utm_medium+` |Identifies the channel of the message |✅
+
+|Campaign - `+utm_campaign+` |The name or identifier of the message |
+
+|Term - `+utm_term+` |Identifies paid search keywords associated with
+the message |
+
+|Content - `+utm_content+` |Differentiates similar content to determine
+which is more effective |
+|===
+
+=== UTM values
+
+UTM values determine what information about a click on a URL is reported
+back to an analytics provider. Use a Static option to apply the same
+value to all tracking, or Dynamic options to apply values specific to
+the message being sent.
+
+* Static—Will display the exact text of the value selected in your
+analytics
+** Sendlane
+** Campaign
+* Dynamic—Will display the selected value's data for the specific
+message in your analytics
+** Email or SMS—Displays `+email+` for emails and `+sms+` for SMS
+messages
+** Campaign Name—Displays the name of the Campaign or Automation
+message node
+** Campaign ID—Displays the ID of the Campaign or Automation message
+node
+** Automation ID*—Displays the ID of the Automation
+** Automation Name*—Displays the name of the Automation
+** Contact ID—Displays the ID of the Contact who clicked
+
+*Available for Automations only
+
+Use the standard options provided or create link:#custom[custom
+parameters or values] to collect the exact data you need!
+
+link:#top[Back to top]
+
+[#set-tracking]
+== Set Global UTM Tracking
+
+When turned on, the parameters and values set on the UTM Tracking page will automatically append to all links in all Campaigns and Automation messages sent after tracking is turned on. See link:#override[OverrideGlobal UTM Tracking in Individual Campaigns or Automation Messages] to learn how to adjust UTM tracking for individual messages when global UTMs are set.
+
+To turn on global UTM tracking for all Campaigns and Automation messages:
+
+. Click the *Settings* icon
+. Click *UTM Tracking*
+. If tracking parameters is not already toggled, click the toggle *on*
+. Check the checkboxes for the *Parameters* (keys) you'd like to
+activate
+. Select *Values* for each parameter
+. Click *Save*
+
+The Example box highlighted in gray will automatically provide a preview of how links will appear to Contacts as you select or edit parameters and values.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6504de474baf3c02bf19802d/file-SJjNDMpgUN.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6504de474baf3c02bf19802d/file-SJjNDMpgUN]
+
+link:#top[Back to top]
+
+[#override]
+== Override global UTM tracking in individual campaigns or automation messages
+
+Global UTM tracking can be overridden on any individual Campaign or Automation message for any or all parameters. Parameters and values set in the global UTM tracking page will apply to all messages unless they are changed in the message builder.
+
+Messages where global UTM settings have been overridden will not be automatically updated if changes to global UTM settings are made.
+If you override global UTM settings in a message to add a custom parameter to a specific message and then update the global UTM setting for a standard parameter, the message's standard parameters will not be affected.
+
+To override global UTM tracking:
+
+. Open the message you want to adjust global UTM tracking for
+. Click the *Customize UTM Tracking checkbox*
+. Check or uncheck parameters and select values for any parameters you want to change from your global UTM tracking settings
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6504df67e249755d2f85c024/file-AuLV1fmCfj.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6504df67e249755d2f85c024/file-AuLV1fmCfj]
+
+link:#top[Back to top]
+
+[[custom-parameters]]
+== Create custom parameters and values
+
+Create as many custom parameters and values as your marketing strategy or analytics provider requires!
+
+Create a custom parameter:
+
+. Click *+Custom Parameter*
+. Enter a name for your new custom parameter
+
+Create a custom value:
+
+. Click into the *value dropdown* 
+. Click *+ Create value* 
+. Enter your custom value 
+. Press *Enter* to save your custom value.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6504e1109446233b93527cad/file-OXIKdiforK.gif[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6504e1109446233b93527cad/file-OXIKdiforK]
+
+link:#top[Back to top]

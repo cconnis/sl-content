@@ -1,5 +1,5 @@
-name: content
-title: Content
+name: billing
+title: Billing
 version: "1.0"
 asciidoc:
   attributes:

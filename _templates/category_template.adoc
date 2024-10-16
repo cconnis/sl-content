@@ -1,0 +1,60 @@
+// Replace [category name] with the name of the category (nail biter, huh)
+
+:page-title: Category Name  // Default page title, modify per article
+:page-tags: tag1, tag2
+:page-aliases:  // Add aliases as /path/to/old/url comma separated for multiples
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description: Brief description of article // Optimize for SEO
+:author: Author Name
+:keywords: keyword1, keyword2
+:page-diataxis:  // Options: explanation, how-to, reference, tutorial
+:last-update-label:
+
+= Category Name
+
+[abstract]
+--
+This overview page introduces the [category name] feature, describing what it is, how it works, and what you need to get started. Use this page as a guide to understand the key capabilities of [category name] and how it fits into your workflow.
+--
+
+== What [is/are] category name?
+
+[category name] is a [brief description of the feature]. It allows you to [summarize the main functionality or purpose]. By using [category name], you can [describe key benefits or outcomes].
+
+== What [is/are] category name for?
+
+[category name] provides the following key capabilities:
+
+* **Capability 1**: Brief description of the first key feature or functionality.
+* **Capability 2**: Brief description of the second key feature or functionality.
+* **Capability 3**: Brief description of the third key feature or functionality.
+
+== Prerequisites
+
+Before using [category name], make sure you have the following:
+
+* **Access Permissions**: [Describe any specific access or role permissions needed].
+* **Configured Settings**: [List any settings or configurations that need to be in place].
+* **Other Tools**: [Mention any other tools or software that need to be installed].
+
+If you need help setting up these prerequisites, see [Setting Up Your Environment](link-to-setup-guide).
+
+== How to Use [category name]
+
+[category name] can be used to achieve the following:
+
+* **Use Case 1**: Describe how this feature is used for a specific use case or scenario.
+* **Use Case 2**: Describe another common use case or application of the feature.
+* **Use Case 3**: Mention any specialized use cases that are relevant.
+
+== Related Documentation
+
+For more information about [category name], see the following topics:
+
+* xref:{module-name}/getting-started.adoc[Getting Started with [category name]]
+* xref:{module-name}/configuration.adoc[Configuring [category name]]
+* xref:{module-name}/troubleshooting.adoc[Troubleshooting [category name] Issues]
+
+== Next Steps
+
+To get started, read the [Getting Started](xref:{module-name}/getting-started.adoc) guide or explore other topics in the sidebar navigation.

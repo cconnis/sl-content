@@ -1,5 +1,5 @@
-name: content
-title: Content
+name: customdata
+title: Custom Data
 version: "1.0"
 asciidoc:
   attributes:

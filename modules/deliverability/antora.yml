@@ -1,5 +1,5 @@
-name: content
-title: Content
+name: deliverability
+title: Deliverability
 version: "1.0"
 asciidoc:
   attributes:

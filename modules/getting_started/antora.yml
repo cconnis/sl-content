@@ -1,5 +1,5 @@
-name: content
-title: Content
+name: getting-started
+title: Getting Started
 version: "1.0"
 asciidoc:
   attributes:

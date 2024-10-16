@@ -1,0 +1,94 @@
+== How to collect personal preferences with forms
+// Metadata:
+:description: The description of this page.
+:keywords: writing, documentation, publishing
+// Settings:
+
+
+==== Overview
+
+You can collect new subscribers’ preferences with an option selector block and custom fields!
+Read on to learn how to collect personal preferences with Sendlane Forms.
+
+[#_in_this_guide]
+==== In this guide
+
+* link:#data[Determine what data you want to collect]
+* link:#option-selector[Add an option selector block to your form]
+* link:#view[View and use Contacts' preferences]
+
+'''''
+:sectnums:
+[[data]]
+=== Determine what data you want to collect
+
+The option selector is a great way to collect standardized data from
+your Contacts and helps avoid the pitfalls of text field submissions
+differing slightly in spelling or composition (e.g., “blue,” “Blue,” and
+“blu” answers to “What is your favorite color?”)
+
+Before adding an option selector block to your form, consider what data
+you want to collect. Review your existing Custom Fields to see if you
+can use one you’re already using to collect data or if an additional
+field is needed.
+
+'''''
+
+[[option-selector]]
+=== Add an option selector block to your form
+
+[[option-selector-identification]]
+===== 🚨 Option selector blocks must be used with an email or phone field in order to save data to Contact Profiles
+
+Without an email address or phone number to associate with a form
+submission, data from an option selector block will be lost.
+
+[[option-selector-limit]]
+===== 🚨 Only one option selector block is allowed per form
+
+The following collection options are available for option selector
+blocks:
+
+* Checkbox - Allow Contacts to select multiple options
+* Radio Button - Display all options and allow Contacts to select one
+only
+* Dropdown - Allow Contacts to select one option from a dropdown
+
+In the Option # fields, enter the option as you want it to appear to
+website visitors. In the Property fields, enter the option as you want
+it to appear in Contacts’ profiles. If you are using a Custom Field
+already in use, check naming conventions that may already be in place
+for your field data and use those options in the Property fields.
+
+For example, let’s say you want to collect your Contacts’ clothing
+preferences. You could set up your option block like this:
+
+[cols=",",options="header",]
+|===
+|Option # |Property
+|Women’s |women
+|Men’s |men
+|Children’s |kids
+|===
+
+so that the more colloquial format is shown to website visitors, but
+your data is compact and clean on the back end.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d9368b89182269183fa39c/file-lK0qlG8FmU.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65d9368b89182269183fa39c/file-lK0qlG8FmU]
+
+'''''
+
+[[view]]
+=== View and use Contacts' preferences
+
+Responses to option selector blocks will appear as Custom Fields in
+Contacts' profiles. Let's say you've created a checkbox option selector
+to collect your Contacts' favorite colors like this:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e8eaafa7c9e24f3b1c04c0/file-OkxlG6yYQN.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e8eaafa7c9e24f3b1c04c0/file-OkxlG6yYQN]
+
+A Contact who selected Orange, Green, and Indigo will display those
+selections in the Personalization section of their Contact profile under
+the Favorite Color custom field:
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e8ec48fac9297916a43c10/file-NEs08guggN.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/65e8ec48fac9297916a43c10/file-NEs08guggN]

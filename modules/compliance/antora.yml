@@ -1,5 +1,5 @@
-name: content
-title: Content
+name: compliance
+title: Compliance
 version: "1.0"
 asciidoc:
   attributes:

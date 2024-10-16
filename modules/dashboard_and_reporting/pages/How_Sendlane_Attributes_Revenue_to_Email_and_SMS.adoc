@@ -1,0 +1,125 @@
+:last-update-label:
+[#top]
+= How Sendlane attributes revenue
+:page-title: How Sendlane attributes revenue  // Default page title, modify per article
+:page-aliases:  // Add aliases as /path/to/old/url
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description:  // Optimize for SEO
+:author: Author Name
+:keywords: revenue, attribution, LTV, AOV
+:page-diataxis: explanation // Options: explanation (explaining a concept not guiding users through a process), how-to (guiding users through a process with a prescriptive outcome), reference, tutorial (teaches users a new concept)
+
+// Article content starts here
+[#abstract]
+[abstract]
+--
+This article explains Sendlane's approach to revenue attribution, how time zones affect attribution, and why you should use third party analytics to confirm revenue attribution.
+--
+
+== Introduction
+
+Attribution is the process of determining which email or SMS message most likely led a Contact to complete a transaction, making attribution a valuable insight into which marketing strategies motivate customers to purchase. Sendlane allows you to adjust attribution settings to match previous platforms’ settings or use more or less aggressive attribution windows and settings than Sendlane’s default.
+
+[#determination]
+== How Sendlane determines which message(s) to attribute
+
+Sendlane’s default attribution settings in the screenshot below represent the latest industry research and Sendlane’s deliverability experts’
+experience, which indicate that emails and SMS messages are rarely revisited more than five days after delivery.
+
+Orders that meet any channel’s qualifications will be attributed to each message individually, even if multiple messages contributed to the same purchase.
+If a Contact’s purchase meets the qualifications of more than one message’s attribution settings, the purchase will be attributed to both the email Campaign and SMS message.
+
+Revenue from canceled and returned orders is not deducted from lifetime revenue metrics.
+
+==== Email attribution options
+
+* *Opened or clicked emails*—Attribution will be applied to purchases based on the latest email open or click in the specified window, whichever is later
+* *Opened or clicked emails (excluding Apple Privacy opens)*—Attribution will be applied to purchases based on the latest email open or click in the specified window, whichever is later, unless the latest open was recorded as Apple Privacy open. When Contacts have https://support.apple.com/guide/iphone/use-mail-privacy-protection-iphf084865c7/ios[Apple Privacy settings] turned on, all emails delivered to their inboxes are automatically considered opened. Because the email has not been confirmed opened, this metric is inherently inflated.
+* *Clicked emails only*—Attribution will be applied to purchases based on the latest email click only in the specified window
+
+The specified window for email opens and clicks can be between one and thirty days.
+Sendlane’s default window is five days.
+
+==== SMS attribution options
+
+* *Sent or clicked SMS*—Attribution will be applied to purchases based on the latest SMS message the Contact was sent or the last SMS message the Contact clicked in the specified window, whichever is later
+* *Clicked SMS*—Attribution will be applied to purchases based on the latest SMS click only in the specified window
+
+The specified window for sent SMS messages and SMS clicks can be between one and thirty days.
+Sendlane’s default sent window is one day, and the default clicked window is five days.
+
+[#open-sms]
+[NOTE]
+.There is no open metric for SMS
+====
+Open metrics are made possible for email by the tracking pixel in all emails sent from Sendlane. There is no way to embed a tracking pixel or any other tracker in an SMS message that can determine whether someone has opened the message.
+
+SMS messages tend to have a relatively high open rate compared with email,
+which is why some SMS providers display SMS "open" rates. However,
+it is only possible to know that the SMS has been sent,
+so Sendlane displays "sent" rates for SMS messages instead of "opens."
+====
+
+[#examples]
+== Attribution examples
+
+Let’s look at some examples of how to apply Sendlane's attribution logic to real-world scenarios:
+
+* Contact receives an email on day one, opens the email but does not click a link on day two, opens the email and clicks a link and completes a purchase on day three. Purchase is attributed to the email click because it is the last action the Contact took before completing the purchase.
+* Contact receives an email on day one, opens and clicks the email on day one, but does not make a purchase until day six. Purchase is not attributed to the email because the purchase occurred outside the default five-day click window.
+* Contact is sent an SMS message on day one and clicks the message’s tracking link. The Contact makes a purchase on day four, and the purchase is attributed to the SMS message.
+* Contact receives an SMS message on day one and an email on day two. The Contact opens and clicks on the email on day two, then clicks SMS message’s tracking link on day three, and completes a purchase later on day three after going back to the website by typing the URL into a new window. Purchase is attributed to the SMS message and email message because the Contact met the attribution setting requirements for both channels.
+
+[#older]
+[NOTE]
+.Contact interaction with older messages may result in attribution
+====
+
+You may see orders attributed to older messages if contacts open or click an older email, or click an older SMS message, and make a purchase without seeing a corresponding open or click record on the contact's profile.
+
+Open and click events are displayed in a contact's profiles for two weeks after the campaign is sent.
+If contacts open or click a campaign after that two-week period,
+the open or click will not show on the contact's profile,
+but it will still be recorded in the campaign report.
+
+This means you may see an order attributed to an older message in a contact's profile without seeing an open or click record. In the example below, an order from June 17th is attributed to a campaign sent on May 27th. Even though we can't see it on the contact profile page, this contact did open the May 27th message within the attribution window settings.
+
+image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6679d957dd0f8c60bb3fd7c8/file-Iwo7zc5nOl.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/6679d957dd0f8c60bb3fd7c8/file-Iwo7zc5nOl]
+====
+
+link:#top[Back to top]
+
+[#timing]
+== Timing and timezones
+
+Campaign and Automation email and SMS reports will show attribution for purchases made within the set window, even if the purchases occurred days after the message was sent.
+
+For example, let's say your account attributes purchases to emails opened within a five-day period.
+A contact receives an email and makes a purchase four days later.
+That purchase will be attributed to the email.
+
+Attribution windows are based on the https://www.nist.gov/pml/time-and-frequency-division/time-realization/utcnist-time-scale-0[UTC day]. Attribution windows set to one or more days will attribute all purchases made until UTC+00:00 of the following day.
+
+link:#top[Back to top]
+
+[#third-party]
+== View attribution data in third party analytics platforms to confirm performance
+
+We highly recommend that you use third party analytics for outside confirmation of your marketing attribution data. If you’re just getting started with third party analytics, check out https://help.sendlane.com/article/595-understanding-utm-tracking-options[Understanding UTM Tracking Options] to learn more.
+
+When you’re ready to start, follow the instructions outlined in https://help.sendlane.com/article/559-global-utm-settings[How to Set Up Global UTM Tracking] to learn how to turn on global UTM tracking and adjust UTM tracking for individual messages.
+
+We highly encourage all Sendlane users to integrate with a third party data analytics platform for the most comprehensive and customizable view of your marketing data, and it is important to understand that there may be discrepancies between Sendlane and third party analytics’ attribution calculations.
+
+Conversion tracking for https://support.google.com/google-ads/answer/6331304?hl=en[Google Analytics] and many other third party analytics providers rely on click tracking to attribute conversions. This means that GA can’t record a conversion if a Contact doesn’t complete their purchase in the same session that began when they clicked a tracking link in one of your messages. Examples of customer journeys that won’t be tracked with GA and other click based attribution models include but are not limited to:
+
+* Contact clicks a tracking link in an email, navigates away from your website, and returns to complete their purchase later
+* Contact receives an SMS message, does not click the tracking link, but goes to your website on their own to complete a purchase
+
+link:#top[Back to top]
+
+'''''
+
+=== ⏭️ Next Steps
+
+If you’d like to change your attribution window settings from Sendlane’s defaults, check out https://help.sendlane.com/article/572-how-to-adjust-attribution-settings[our guide to adjusting attribution settings]!

@@ -1,0 +1,58 @@
+// Replace [category name] with the name of the category (nail biter, huh)
+
+:page-title: Account settings  // Default page title, modify per article
+:page-tags: account, settings
+:page-aliases:  // Add aliases as /path/to/old/url comma separated for multiples
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description: Overview of available account settings in Sendlane // Optimize for SEO
+:author: Author Name
+:keywords: account, settings
+:page-diataxis:  // Options: explanation, how-to, reference, tutorial
+:last-update-label:
+:page-redirect-from: How_to_Update_Your_Sendlane_Account_Details.adoc
+
+[#account-settings]
+= Account settings
+
+[#abstract]
+[abstract]
+--
+This page explains all available options on the https://app.sendlane.com/account/[account settings page] in Sendlane and links to tutorials for configuring advanced settings and tools.
+--
+
+== Access the account settings page
+
+Access the account settings page by clicking the gear icon (image:../assets/ icon_audience.png[Account Icon]) in the left sidebar.
+
+Click https://app.sendlane.com/account/[this link] to be redirected to the account settings page if you're logged into Sendlane. If you're not logged in, you will be redirected to the account settings page on login.
+
+== Adjust basic account details
+
+On the account settings landing page, you can update the following account details
+
+* Timezone
+* Name
+* Phone number
+* Organization or company name, address, tax ID, tax ID type, and default currency display.
+
+To make changes to your profile information:
+
+. Click the *Account* icon
+. Click *Account*
+. Make changes
+. Click *Save*
+
+== Other account settings and tools
+
+The sub-navigation menu of the account page provides access to more settings, configuration options, and tools. Review the linked articles below to learn more about what you can do on each page:
+
+* *Email*: xref:How_to_Customize_Landing_Pages_for_Subscription_Preferences.adoc[Customize opt-in and unsubscribe landing pages]
+* *Integrations*: Install and configure integrations
+* *Custom Data*: Upload custom data
+* *Coupons*: Manage custom uploaded coupons or automatically generate coupons for Shopify
+* *Attribution*: Adjust your account's attribution settings
+* *UTM Tracking*: Set up global UTMs for campaigns and automations
+* *User Management*: Create and manage user accounts
+* *Beacon*: Retrieve the Beacon script and create custom Beacon events*
+* *Billing*: Update your payment information, email or SMS plan, and download invoices
+

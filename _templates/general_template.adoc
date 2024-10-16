@@ -1,0 +1,28 @@
+:last-update-label:
+[#top]
+= Article Title
+:page-title: Article Title  // Default page title, modify per article
+:page-aliases:  // Add aliases as /path/to/old/url
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description:  // Optimize for SEO
+:author: Author Name
+:keywords: keyword1, keyword2
+:page-diataxis:  // Options: explanation (explaining a concept not guiding users through a process), how-to (guiding users through a process with a prescriptive outcome), reference, tutorial (teaches users a new concept)
+
+// Article content starts here
+[#abstract]
+[abstract]
+--
+This article explains [description of the task or concept], [optional benefit or goal].
+--
+
+[#intro]
+== Introduction
+
+This article [does something] to help [target audience] [achieve goal or solve problem].
+
+It is intended for [type/situation of user] and assumes familiarity with [prerequisites, if any].
+
+
+[#troubleshooting]
+== Troubleshooting
