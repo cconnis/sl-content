@@ -1,0 +1,40 @@
+# emergency-update.yml
+name: Emergency Documentation Update
+description: Template for urgent content changes
+title: "[URGENT]: "
+labels: ["documentation", "emergency"]
+body:
+  - type: input
+    id: affected-pages
+    attributes:
+      label: Affected Pages
+      description: Which documentation pages need urgent updates?
+      placeholder: "account/manage-users.adoc, api/authentication.adoc"
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: Required Changes
+      value: |
+        ## Current Content Issue
+        
+        ## Required Updates
+        
+        ## Verification Steps
+    validations:
+      required: true
+
+  - type: dropdown
+    id: notification
+    attributes:
+      label: Notify Teams
+      multiple: true
+      options:
+        - Support
+        - Product
+        - Development
+        - Marketing
+    validations:
+      required: true

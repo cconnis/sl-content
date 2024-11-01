@@ -1,0 +1,46 @@
+# template-update.yml
+name: Template Update
+description: Template for updating AsciiDoc templates
+title: "[TEMPLATE]: "
+labels: ["template"]
+body:
+  - type: dropdown
+    id: template-type
+    attributes:
+      label: Template Type
+      options:
+        - Article template
+        - Category page template
+        - Release notes template
+        - Resource partial
+        - Navigation template
+    validations:
+      required: true
+
+  - type: textarea
+    id: template-changes
+    attributes:
+      label: Template Changes
+      description: What needs to be updated in the template?
+      value: |
+        ## Current Template Issues
+        
+        ## Proposed Changes
+        
+        ## AsciiDoc Components Affected
+    validations:
+      required: true
+
+  - type: textarea
+    id: migration
+    attributes:
+      label: Content Migration
+      description: How will existing content be updated?
+      value: |
+        ## Affected Files
+        
+        ## Migration Steps
+        
+        ## Validation Process
+    validations:
+      required: true

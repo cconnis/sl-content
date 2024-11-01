@@ -1,0 +1,71 @@
+# documentation-update.yml
+name: Documentation Update
+description: Template for content changes or additions
+title: "[DOC]: "
+labels: ["documentation"]
+body:
+  - type: dropdown
+    id: module
+    attributes:
+      label: Documentation Module
+      description: Which module does this content belong to?
+      options:
+        - account
+        - automations
+        - campaigns
+        - api
+        - getting-started
+    validations:
+      required: true
+
+  - type: dropdown
+    id: content-type
+    attributes:
+      label: Content Type
+      options:
+        - New article
+        - Article update
+        - Category page
+        - Navigation update
+        - Asset addition
+    validations:
+      required: true
+
+  - type: input
+    id: file-path
+    attributes:
+      label: File Path
+      description: Relative path to the content file(s)
+      placeholder: "modules/account/pages/managing/example.adoc"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Content Changes
+      description: What content needs to be updated/created?
+      value: |
+        ## Current Status
+        
+        ## Required Changes
+        
+        ## Related Content
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks
+      value: |
+        - [ ] Write/update content
+        - [ ] Add/update examples
+        - [ ] Add/update images
+        - [ ] Update nav.adoc (if needed)
+        - [ ] Run Vale checks
+        - [ ] Test build locally
+    validations:
+      required: true
+
+---
