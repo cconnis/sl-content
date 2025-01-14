@@ -54,14 +54,14 @@ link:#top[Back to top]
 
 [cols="1,1"]
 |===
-|Resend a user's invitation
+|Resend a user invitation
 |Click the envelope icon image:../../../assets/icon_resend.png[Envelope icon] next to the user's information
 
 |Edit a user profile
 |Click the pencil icon image:../../../assets/icon_edit.png[Edit icon] next to the user's information
 
 |Delete a user profile
-|Click the trash can icon image:../../../assets/icon_edit.png[Delete icon] next to the user's information
+|Click the trash can icon image:../../../assets/icon_trash.png[Delete icon] next to the user's information
 |===
 
 link:#top[Back to top]

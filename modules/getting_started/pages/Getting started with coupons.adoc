@@ -1,0 +1,50 @@
+:last-update-label:
+[#top]
+= Getting started with coupons
+:page-title: Article Title  // Default page title, modify per article
+:page-aliases:  // Add aliases as /path/to/old/url
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description:  // Optimize for SEO
+:author: Author Name
+:keywords: keyword1, keyword2
+:page-diataxis:  // Options: explanation (explaining a concept not guiding users through a process), how-to (guiding users through a process with a prescriptive outcome), reference, tutorial (teaches users a new concept)
+
+// Article content starts here
+[#abstract]
+[abstract]
+--
+This article is the sixth in a series of six guides to xref:getting_started:Getting started with Sendlane.adoc[getting started with Sendlane].
+It explains available coupon generation options and links to detailed guides for setting up coupon generation and using coupon codes in email and SMS.
+--
+
+[#intro]
+== Introduction
+
+Shopify users can generate automatically recurring coupon codes, and users of any other eCommerce solution can upload sets of unique coupon codes to be sent via email or SMS.
+
+When you've completed the steps in the linked guides, you'll know how to set up unique coupon codes, how to insert them into email or SMS messages, and how to replenish them.
+
+[#shopify]
+== Coupons for Shopify
+
+Shopify users can set up discounts in their Shopify stores that automatically regenerate and populate unique coupon codes in email or SMS messages.
+
+For detailed instructions, see https://help.sendlane.com/article/507-how-to-generate-unique-coupons-for-shopify[How to generate unique coupons for Shopify].
+
+link:#top[Back to top]
+
+[#other]
+== Coupons for all other eCommerce solutions
+
+Users of any eCommerce solution can generate a set of your own unique coupon codes and upload them to Sendlane for use in email and SMS.
+
+For detailed instructions, see https://help.sendlane.com/article/492-how-to-send-unique-coupon-codes[How to upload and manage imported coupon collections].
+
+link:#top[Back to top]
+
+[#next]
+== Next steps
+
+include::getting_started:partial$getting-started-guide-identification.adoc[]
+six!
+include::partial$getting-started-guide-list.adoc[]

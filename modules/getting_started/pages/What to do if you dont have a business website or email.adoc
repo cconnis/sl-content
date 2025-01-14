@@ -1,0 +1,30 @@
+To use Sendlane you must have a business website and email address. Free
+email/inbox providers like Gmail, Yahoo, or Microsoft cannot be used to
+create a Sendlane account.
+
+All data processing and privacy regulations (including but not limited
+to
+https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business[CAN-SPAM])
+require a custom domain email address to be used for marketing purposes.
+
+*If you don't have a business website or email address, read on for
+recommended next steps!*
+
+. Select a domain provider - We recommend
+https://www.godaddy.com/domains[GoDaddy],
+https://www.cloudflare.com/products/registrar/[Cloudflare], or
+https://www.namecheap.com/[Namecheap].
+. Purchase your domain - Domain providers allow you to search for and
+purchase any available domain. Choose a domain that clearly represents
+your business.
+. Create an email address using your new domain -
+https://www.godaddy.com/garage/how-to-use-a-custom-domain-name-for-email/[GoDaddy],
+https://developers.cloudflare.com/email-routing/get-started/enable-email-routing/[Cloudflare],
+and
+https://www.namecheap.com/support/knowledgebase/article.aspx/1049/2215/how-to-create-namecheap-private-email-mailbox/[Namecheap]
+make this process simple!
+
+For more tips on ramping up with email marketing, check out our
+https://help.sendlane.com/article/489-email-onboarding-guide[getting
+started guide] and dozens of additional resources on the
+https://www.sendlane.com/resources[Sendlane blog]!

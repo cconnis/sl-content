@@ -18,11 +18,11 @@ This article explains [description of the task or concept], [optional benefit or
 
 [#intro]
 == Introduction
+[Briefly describe feature and its benefits or process and its outcomes]
 
-This article [does something] to help [target audience] [achieve goal or solve problem].
+This article intended for [type/situation of user] and assumes familiarity with [prerequisites, if any].
 
-It is intended for [type/situation of user] and assumes familiarity with [prerequisites, if any].
-
+When you've completed the steps in this guide, [something will happen]
 
 [#troubleshooting]
 == Troubleshooting

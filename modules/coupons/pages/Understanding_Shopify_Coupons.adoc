@@ -21,17 +21,19 @@ Shopify coupon.
 [cols=",",options="header",]
 |===
 |Term |Definition
-|`+Discount+` |A https://help.shopify.com/en/manual/discounts[discount]
+|`Discount` |A https://help.shopify.com/en/manual/discounts[discount]
 created in your Shopify store.
 
-|`+Coupon+` |A batch of codes created in your Sendlane account, which is
-connected to a discount. You can see your account’s coupons by
+|`Coupon` |A batch of codes created in your Sendlane account, which is
+connected to a discount.
+
+You can see your account’s coupons by
 navigating to Account Settings > Coupons. Each item on this page is a
 coupon.
 
-|`+Code+` |The unique code each contact receives, comprised of the
+|`Code` |The unique code each contact receives, comprised of the
 prefix you enter in Sendlane and the random alphanumerics generated from
-the discount (for example, WELCOME15-123ABC).
+the discount, for example, `WELCOME15-123ABC`.
 |===
 
 link:#top[Back to top]

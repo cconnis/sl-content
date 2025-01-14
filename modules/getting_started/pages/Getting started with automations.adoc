@@ -1,0 +1,142 @@
+:last-update-label:
+[#top]
+= Getting started with automations
+:page-title: Getting started with automations  // Default page title, modify per article
+:page-aliases:  // Add aliases as /path/to/old/url
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description:  // Optimize for SEO
+:author: Author Name
+:keywords: keyword1, keyword2
+:page-diataxis:  // Options: explanation (explaining a concept not guiding users through a process), how-to (guiding users through a process with a prescriptive outcome), reference, tutorial (teaches users a new concept)
+
+// Article content starts here
+[#abstract]
+[abstract]
+--
+This article is intended for Sendlane users who are new to automations.
+It explains what an automation is and links to guides on how to create, manage, and troubleshoot automations.
+--
+
+[#intro]
+== Introduction
+Welcome to the exciting world of automations!
+
+With automations, you can create the perfect email and SMS marketing funnel to welcome new contacts, nurture leads and customers, or even update contact profiles.
+
+This guide links to detailed guides for setting up welcome and purchase sequence automations.
+When you've finished following each guide, you'll have up to five automations set up and flowing!
+
+If you want to send information about a sale or special offer, date, event-specific, or otherwise one-time-only content to your contacts, check out our guide to https://help.sendlane.com/article/153-campaigns[campaigns].
+
+[#what]
+== What is an automation?
+
+An automation is a series of scheduled actions that are started by triggers set to respond to a specified action, event, or time.
+
+When an automation is triggered, the automation nodes containing messages, wait times, profile updates, or other logic are scheduled for the contact who triggered the automation.
+This means that a contact's path through an automation is set as soon as they trigger it.
+
+Let's see how this works with a simple welcome automation:
+
+image::simple-welcome-automation.png[]
+
+When contacts subscribe to the newsletter list, the automation queues up the first email to be sent to the contact as soon as they've subscribed.
+The second email is scheduled for 24 hours later due to the wait node between the two emails.
+
+Now let's look at a more complex order placed automation:
+
+image::order-placed-with-split.png[]
+
+This automation is triggered when someone places an order. The automation's first node is a conditional split that checks to see if the contact's order contains a gift card. If it does, the contact is scheduled to receive the Yes Gift Card email.
+If it doesn't, the contact is scheduled to receive the No Gift Card email.
+
+Because automation nodes are scheduled at the time the automation is triggered, it's important to ensure that your automation is just how you want it before you activate it.
+Once automations are triggered, contacts' paths through them are set and can't be changed.
+
+The only edit you can make to an automation that will be shown to contacts who have already triggered it is email or SMS message content.
+The content of email and SMS messages is set just before the message is sent.
+
+[[components]]
+=== Automation components
+
+Automations are made of four components or types of nodes: triggers, actions, and logic and timing. Click on the name of each component below to read our guides for each component type.
+
+[width="100%",]
+|===
+|*Component* |*Description*
+
+|https://help.sendlane.com/article/448-automation-triggers[Triggers]
+|Triggers are user-based actions that start your automation.
+Every automation needs a trigger to begin the automation.
+
+|https://help.sendlane.com/article/449-automation-actions[Actions]
+|Actions happen due to a trigger's conditions being met, such as sending an SMS or email message, updating a contact's profile, updating an automation, or passing information with a Webhook.
+
+|https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation[Logic
+and Timing] + |Wait times, Goals, conditional splits, and Audience
+Splits allow you to use advanced targeting to send your contacts highly relevant content at the right time.
+|===
+
+Review the following guides for detailed instructions on creating automations, and browse the https://help.sendlane.com/category/4-automations?sort=updatedAt[Automations section of the knowledge base]:
+
+* https://help.sendlane.com/article/703-how-to-send-email-and-sms-messages-with-automations[How to send email and SMS messages with automations]
+* https://help.sendlane.com/article/373-welcome-new-contacts[How to set up a welcome automation]
+* https://help.sendlane.com/article/664-how-to-set-up-an-abandoned-cart-automation[How to set up an abandoned cart automation]
+* https://help.sendlane.com/article/662-how-to-set-up-an-abandoned-checkout-automation[How to set up an abandoned checkout automation]
+* https://help.sendlane.com/article/666-how-to-set-up-a-post-purchase-automatio[How to set up a post purchase automation]
+* https://help.sendlane.com/article/707-how-to-set-up-a-price-drop-automation[How to set up a price drop automation]
+
+link:#top[Back to top]
+
+[[manage]]
+== Managing automations
+
+Review the following guides for detailed instructions on managing your
+automations:
+
+* https://help.sendlane.com/article/759-how-to-create-an-automatio[How to create an automation]
+* https://help.sendlane.com/article/758-edit-automation[How to edit an automation]
+* https://help.sendlane.com/article/668-how-to-activate-an-automation[How to activate an automation]
+* https://help.sendlane.com/article/669-how-to-deactivate-an-automatio[How to deactivate an automation]
+* https://help.sendlane.com/article/751-how-to-change-an-automations-trigger[How to change an automation's trigger]
+* https://help.sendlane.com/article/752-how-to-duplicate-an-automation[How to duplicate an automation]
+* https://help.sendlane.com/article/750-how-to-configure-an-automation-trigger[How to configure an automation trigger]
+* https://help.sendlane.com/article/665-how-to-pause-an-automation[How to pause an automation]
+* https://help.sendlane.com/article/760-how-to-delete-an-automation[How to delete an automation]
+
+link:#top[Back to top]
+
+== Next steps
+
+include::getting_started:partial$getting-started-guide-identification.adoc[]
+four!
+include::partial$getting-started-guide-list.adoc[]
+
+[#troubleshooting]
+== Troubleshooting
+
+[#nodes]
+====== The add node button isn't working!
+
+Automations have a limit of 50 nodes. If your automation has less than 50 nodes, and you can't add a new node, please contact your customer success manager or our 24/7 product support team!
+
+[#not-starting]
+====== My automation isn't starting!
+
+If your automation is not starting when it should, make sure it is set to active. Check that the toggle in the upper right corner is green and says *Active*.
+
+[#not-sending]
+====== My automation email isn't sending!
+
+Make sure your automation email is set to Active if contacts are not receiving emails from nodes they meet the conditions for.
+
+[#conditional-split]
+====== My conditional split isn't flowing!
+
+Some conditional split actions have built-in required wait times between actions.
+Review our https://help.sendlane.com/article/353-how-to-use-goals-and-conditional-splits-in-an-automation#split[conditional split guide] for detailed information!
+
+[#infinite-loop]
+====== I'm getting an infinite loop error message!
+
+The automation builder will prevent your contacts from getting stuck in "infinite loops," where one or more automation sends a contact back and forth through a flow. Avoid this issue by creating new automations with fresh content for your audience to flow through to boost engagement and avoid spam complaints!

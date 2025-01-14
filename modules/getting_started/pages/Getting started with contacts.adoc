@@ -1,0 +1,32 @@
+Overview
+
+Your audience (or "list") is a collection of contacts who have signed up
+to receive your marketing content. You can organize your contacts into
+static lists, create dynamic segments based on their characteristics or
+behavior, and add tags to their profiles. Read on to learn how to import
+and organize contacts.
+
+In this guide
+
+* link:#[Export contacts from your previous email service provider]
+* link:#[Create lists]
+* link:#[Import contacts]
+* link:#[Create segments]
+* link:#[Create and apply tags]
+
+'''''
+
+[[list]]
+== Create lists
+
+asdfg
+
+[[segment]]
+== Create segments
+
+asdfg
+
+[[tag]]
+== Create and apply tags
+
+asdfg

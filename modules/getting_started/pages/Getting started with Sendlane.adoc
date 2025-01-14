@@ -1,0 +1,250 @@
+[[top]]
+==== Overview
+
+This article is intended for new Sendlane users. Welcome!
+
+Starting a new retention marketing program or migrating to Sendlane
+involves several steps. This guide provides step-by-step instructions
+for each task with links to more detailed guides for further
+information.
+
+When the tasks in this guide are complete, you'll be ready to send your
+first email campaign to yourself. At the end of this article, you'll
+find links to more guides that will help you set up and use all of
+Sendlane's features.
+
+==== In this guide
+
+* link:#account-settings[Step One: Configure account settings]
+* link:#ecommerce-integration[Step Two: Integrate your eCommerce store]
+* link:#send-an-email[Step Three: Send a test campaign]
+
+'''''
+
+[[account-settings]]
+=== Step One: Configure account settings
+
+You'll find all the settings described below on your
+https://app.sendlane.com/account/[account settings page]. To access the
+account settings page, click the Account icon in the left-hand sidebar.
+
+* https://help.sendlane.com/article/572-how-to-adjust-attribution-settings[Configure
+attribution settings] to ensure revenue is tracked and attributed with
+the same parameters as your previous platform
+* https://help.sendlane.com/article/559-global-utm-settings[Set up
+global UTM parameters] to enable third-party data analytics tools like
+Google Analytics or Triple Whale
+* https://help.sendlane.com/article/399-users[Add user accounts] for
+staff or partner access
+* https://help.sendlane.com/article/682-branding[Import custom fonts and
+create a branded color palette] to ensure consistent branding across
+your emails, forms, reviews pages, and more
+
+'''''
+
+[[ecommerce-integration]]
+=== Step Two: Integrate your eCommerce store
+
+Integration enables Sendlane to access your store's data, which can be
+used to personalize content, create dynamic segments, and more.
+
+See the guide for your eCommerce integration for detailed instructions
+on integrating your eCommerce store with your Sendlane account:
+
+* https://help.sendlane.com/article/96-how-to-integrate-shopify-and-sendlane[How
+to integrate Shopify and Sendlane]
+* https://help.sendlane.com/article/454-integrate-bigcommerce-and-sendlane[How
+to integrate BigCommerce and Sendlane]
+* https://help.sendlane.com/article/98-how-to-integrate-woocommerce-and-sendlane[How
+to integrate WooCommerce and Sendlane]^[link:#_footnotedef_1[1]]^
+* https://help.sendlane.com/article/346-how-to-integrate-miva-and-sendlane[How
+to integrate Miva and Sendlane]^[link:#_footnotedef_2[2]]^
+* https://help.sendlane.com/article/451-custom-integration-setup[Sendlane's
+custom integration]^[link:#_footnotedef_3[3]]^
+
+[[list-warning]]
+====== ⚠️ Add your email address to a list before continuing
+
+Before proceeding, ensure you've added your email address to one of the
+lists you created while integrating your eCommerce store. Your email
+address needs to be on the list you select for your test campaign so you
+can receive it.
+
+To add your email address to a list:
+
+. Click the *Audience* icon in the left-hand sidebar
+. Click the *Lists* tab
+. Click any list
+. Click *+ Add Contact*
+. Enter your email address (other fields are optional)
+. Click *Create*
+
+'''''
+
+[[send-an-email]]
+=== Step Three: Send a test campaign
+
+Now that you've connected your Sendlane account to your eCommerce store,
+configured critical settings, and added branding fonts and colors,
+you're ready to work on your first campaign.
+
+You will create a sender profile, configure your campaign's settings,
+design your campaign, and send it to yourself.
+
+[[sender-profile]]
+===== Create your first sender profile
+
+Sender profiles contain information recipients will see in their inboxes
+when they receive your email. To create a sender profile:
+
+. Click the *Audience* icon in the left-hand sidebar
+. Click the *Sender Profile* tab
+. Click *+ Sender Profile*
+. For detailed information about each field, see
+https://help.sendlane.com/article/107-senders[How to create and manage
+sender profiles] (select *Unverified* and enter your email address as
+the domain for now)
+. Click Save
+
+[[campaign-settings]]
+===== Configure your campaign's settings
+
+. Click the campaign icon in the left-hand sidebar
+. In the top right corner, click *New Campaign*
+. Click *Create Email Campaign*
+. Give your campaign a descriptive name (this won't be visible to
+recipients)
+. In the *Sender Profile* dropdown, select the sender profile you just
+created
+. In the *Send to* dropdown, select link:#list-warning[the list you
+added your email address to] (ignore the *Don't send to* and *Advanced*
+sections for now as they are not required for this exercise)
+. Enter a *Subject line* for your email
+. Optionally, enter a preheader for your email
+. Click *Create Email*
+. Click *Start From Scratch*
+. Click *Visual Builder*
+
+[[design]]
+===== Design your campaign
+
+Your campaign is taking shape and is now ready to design. This exercise
+is intended to introduce you to the visual email builder, not
+necessarily to create the most beautiful email possible (that will come
+later).
+
+The easiest way to learn to use the visual builder is to experiment with
+it. Use
+https://help.sendlane.com/article/723-understanding-the-visual-builder[Understanding
+the visual email builder] as a guide and add content to your email.
+
+Here's an example design flow you can follow:
+
+. Drag an *image element* from the left-hand sidebar into the
+automatically added full row layout block
+. Use the file uploader to select an image of your company's logo from
+your desktop
+. Add alt text that says something like "[Company name]'s logo"
+. Click outside of the image block to return to the email builder
+. Drag another *full row layout block* from the left-hand sidebar to the
+space under your logo image and above the footer
+. Replace the placeholder text with a short message welcoming customers
+to your retention marketing program
+. Return to the email builder
+. Click the *2 Col* layout block (you can drag layout blocks to the
+desired position or click them to add the block to the end of your
+email)
+. Drag an image block into one of the two columns in the 2 Col layout
+block
+. Upload or link to an image of a product or other company artifact
+. Repeat the previous two steps for the other column in the 2 Col layout
+block
+. Under *Elements* you should see a section for your eCommerce
+integration; click the *Product* block
+. Click into the *product block* > *Products* tab
+. Under *Add Products*, select *Dynamic*
+
+You've just created an email in the Sendlane visual builder with copy,
+company assets, and information about your best-selling products.
+
+Review the following articles for more information on each of Sendlane's
+three email builders:
+
+* https://help.sendlane.com/article/499-sendlanes-new-email-builder[Understanding
+Sendlane's email builders]
+* https://help.sendlane.com/article/723-understanding-the-visual-builder[Understanding
+the visual builder]
+* https://help.sendlane.com/article/531-how-to-display-selected-products-in-an-email[How
+to display products in an email]
+
+[[send]]
+===== Send your campaign
+
+Now it's time to send your email:
+
+. Click *Save & Continue*
+. Under *Schedule*, select *Send Immediately*
+. In the top right corner, click *Send Immediately*
+. Check your inbox for your email (because we used an unverified domain,
+it may land in your spam folder)^[link:#_footnotedef_4[4]]^
+
+Congratulations! You've successfully set up your Sendlane account,
+integrated your eCommerce store, and sent an email campaign. Check out
+the Next Steps section below for more guides on getting started with
+Sendlane.
+
+'''''
+
+=== Next steps
+
+You've completed the first getting started guide in Sendlane's
+onboarding series. We highly recommend completing the guides in the
+order they appear below:
+
+Getting started with Sendlane
+
+https://help.sendlane.com/article/749-getting-started-with-integrations[Getting
+started with integrations]
+
+https://help.sendlane.com/article/756-getting-started-with-email-warming[Getting
+started with warming]
+
+https://help.sendlane.com/article/73-automations[Getting started with
+automations]
+
+https://help.sendlane.com/article/634-getting-started-with-sendlane-forms[Getting
+started with forms]
+
+https://help.sendlane.com/article/761-getting-started-with-coupons[Getting
+started with coupons]
+
+'''''
+
+link:#_footnoteref_1[1]. The WooCommerce integration is no longer
+supported. WooCommerce users should set up a custom integration to
+connect their WooCommerce store to Sendlane. Setting up a custom
+integration to connect a WooCommerce store to Sendlane requires custom
+development work. It is not intended for users who do not have
+consistent access to development resources. Sendlane cannot provide
+technical support for developing a WooCommerce-based custom integration
+into Sendlane.
+
+link:#_footnoteref_2[2]. Miva manages an implementation of the Sendlane
+custom integration, which acts as the official Miva integration for
+Sendlane. Contact Miva for all support questions related to the
+integration; Sendlane cannot provide technical support for the Miva
+custom integration.
+
+link:#_footnoteref_3[3]. The custom integration allows custom-built
+stores or stores hosted on providers without a Sendlane integration to
+connect to Sendlane. Setting up a custom integration requires custom
+development work and is not intended for users who do not have
+consistent access to development resources. Sendlane cannot provide
+technical support for the development of custom integrations.
+
+link:#_footnoteref_4[4]. If you don't see your email in your inbox or
+spam folder, check your sender profile and
+https://help.sendlane.com/article/188-contacts[contact profile] for
+errors. If you find an error in your sender or contact profile, you can
+https://help.sendlane.com/article/153-campaigns#actions[duplicate your
+campaign] and send it again after you fix the errors.

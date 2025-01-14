@@ -22,7 +22,7 @@ This page explains all available options on the https://app.sendlane.com/account
 
 == Access the account settings page
 
-Access the account settings page by clicking the gear icon (image:../assets/ icon_audience.png[Account Icon]) in the left sidebar.
+Access the account settings page by clicking the Account icon (image:../assets/ icon_audience.png[Account Icon]) in the left sidebar.
 
 Click https://app.sendlane.com/account/[this link] to be redirected to the account settings page if you're logged into Sendlane. If you're not logged in, you will be redirected to the account settings page on login.
 
@@ -37,7 +37,7 @@ On the account settings landing page, you can update the following account detai
 
 To make changes to your profile information:
 
-. Click the *Account* icon
+. Click the *Account* icon (image:../assets/ icon_audience.png[Account Icon])
 . Click *Account*
 . Make changes
 . Click *Save*

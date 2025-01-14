@@ -6,36 +6,23 @@
 :page-status: draft  // Options: draft, in-review, published, deprecated
 :page-description:  // Optimize for SEO
 :author: Author Name
-:keywords: keyword1, keyword2
+:keywords: utm, tracking
 :page-diataxis: explanation // Options: explanation (explaining a concept not guiding users through a process), how-to (guiding users through a process with a prescriptive outcome), reference, tutorial (teaches users a new concept)
 
 // Article content starts here
 [#abstract]
 [abstract]
 --
-This article explains [description of the task or concept], [optional benefit or goal].
+This article explains what UTM parameters are and how to decide when to use global versus message specific UTM settings.
 --
 
 [[top]]
-==== Overview
+== Introduction
 
-Sendlane provides UTM tracking functionality that can be applied
-automatically to all Campaign and Automation emails and can be
-customized for individual emails. Read on to learn about how UTM
-tracking works, and when to override global UTM tracking with customized
-parameters.
+Sendlane provides UTM tracking functionality that can be applied automatically to all Campaign and Automation emails and can be customized for individual emails. Read on to learn about how UTM tracking works, and when to override global UTM tracking with customized parameters.
 
-==== In This Guide
 
-* link:#what-are-utm[What Are UTM Parameters?]
-* link:#global-vs-customized[Determine Global and Customized UTM
-Settings]
-** link:#global[Global UTM Tracking]
-** link:#customized[Customized UTM Tracking]
-
-'''''
-
-=== What Are UTM Parameters?
+== What Are UTM Parameters?
 
 UTM parameters are key-value pairs separated by an ampersand that are
 appended to a URL to determine the source of website traffic. When you
@@ -77,15 +64,12 @@ least somewhat interested in Reviews and could add a Tag to the
 Contact's profile to make sure they get more content about Reviews.
 
 [[global-vs-customized]]
-=== Determine Global and Customized UTM Settings
+== Determine Global and Customized UTM Settings
 
-The UTM medium and content parameters in the above example from the
-Sendlane marketing blog are very specific to that individual email and
-won't provide useful data if applied globally because their focus is too
-small. Applying `+utm_medium=fri-newsletter+` parameter to all emails
-will make it seem like all email traffic comes from the Friday
-newsletter, and
-`+utm_content=importance%20of%20reviews%20in%20ecom%20hyperlink+`
+The UTM medium and content parameters of the example in the previous section, from the Sendlane marketing blog, are very specific to that individual email and won't provide useful data if applied globally because their focus is too small.
+Applying `+utm_medium=fri-newsletter+` parameter to all emails will make
+it seem like all email traffic comes from the Friday newsletter,
+and `+utm_content=importance%20of%20reviews%20in%20ecom%20hyperlink+`
 applied globally will make it seem like the only link anyone ever clicks
 on is this specific link.
 
@@ -96,7 +80,7 @@ content parameters tend to be customized for individual emails.
 Looking again at the example URL above, global UTM Tracking and
 customized UTM Tracking set up in Sendlane would look like this:
 
-==== Global UTM Tracking
+=== Global UTM Tracking
 
 Since the Sendlane marketing team uses a variety of values for Campaign,
 Term, and Content, those parameters are turned off on the UTM Tracking
@@ -104,7 +88,7 @@ page. Only Source and Medium are turned on globally.
 
 image:https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/653adcc072690e4bf4d1d0fa/file-IaQDKP0SM2.png[https://s3.amazonaws.com/helpscout.net/docs/assets/5cd30c272c7d3a177d6e82b7/images/653adcc072690e4bf4d1d0fa/file-IaQDKP0SM2]
 
-==== Customized UTM Tracking
+=== Customized UTM Tracking
 
 On the settings page of the email builder, the Sendlane marketing team
 decides to override the global values of Medium and Campaign. All other

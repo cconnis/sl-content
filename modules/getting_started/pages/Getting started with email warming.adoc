@@ -1,0 +1,57 @@
+:last-update-label:
+[#top]
+= Getting started with email warming
+:page-title: Getting started with email warming  // Default page title, modify per article
+:page-aliases:  // Add aliases as /path/to/old/url
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description:  // Optimize for SEO
+:author: Author Name
+:keywords: keyword1, keyword2
+:page-diataxis:  // Options: explanation (explaining a concept not guiding users through a process), how-to (guiding users through a process with a prescriptive outcome), reference, tutorial (teaches users a new concept)
+
+// Article content starts here
+[#abstract]
+[abstract]
+--
+This article is the third in a series of six guides to getting started with Sendlane.
+It explains what coupon generation options are available to you and links to detailed guides for setting up coupon generation.
+--
+
+[#intro]
+== Introduction
+
+When you start a brand-new retention marketing program or migrate to a new email service provider, you need to develop your sending reputation from zero.
+This process is called "warming," and its successful completion sets you up with a solid sending reputation which is critical for reaching your contacts' inboxes.
+
+When the tasks in this guide are complete, you'll have installed Sendlane's tracking pixel, authenticated a domain for sending, and warmed your new authenticated domain.
+
+[#beacon]
+== Step One: Install Beacon
+
+The Beacon tracking pixel helps you track and understand how contacts interact with your emails, SMS tracking links, and website. It is an invisible image file embedded in emails and enabled on-site by a JavaScript snippet added to a store's website.
+
+Read https://help.sendlane.com/article/742-understanding-the-beacon-tracking-pixel[Understanding the Beacon tracking pixel] for detailed information about Beacon. Follow the instructions in the https://help.sendlane.com/article/742-understanding-the-beacon-tracking-pixel?#installing[How do I install Beacon? section] for your eCommerce integration.
+
+link:#top[Back to top]
+
+[#authenticate]
+== Step Two: Verify a sending domain and authenticate a sender profile
+
+Verified sending domains are subdomains of your business's primary domain and are used exclusively for email marketing. Once you've verified a sending domain, you'll authenticate a sender profile to use your new verified domain to send email.
+
+Read https://help.sendlane.com/article/433-authenticating-a-sending-domain[What is a verified sending domain?] for more information, then follow the instructions in https://help.sendlane.com/article/550-how-to-authenticate-a-sending-domain[How to verify a sending domain].
+
+link:#top[Back to top]
+
+[#warm]
+== Step Three: Warm your authenticated domain
+
+Once your authenticated sender profile is set up, you're ready to start warming your new sending domain! Read and follow the instructions in https://help.sendlane.com/article/702-how-to-warm-your-authenticated-domain[How to warm your authenticated domain] carefully.
+
+link:#top[Back to top]
+
+== Next steps
+
+include::getting_started:partial$getting-started-guide-identification.adoc[]
+three!
+include::partial$getting-started-guide-list.adoc[]

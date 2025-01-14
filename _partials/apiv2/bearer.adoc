@@ -1,0 +1,8 @@
+To generate a bearer token:
+
+. Click the Account icon
+. Click API
+. Click + API Token
+. Enter a Token name
+. Click Create
+. Click Copy API Token

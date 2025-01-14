@@ -1,0 +1,72 @@
+==== Overview
+
+You can connect dozens of platforms to your Sendlane account, usually
+with just one API key. Read on to learn where to find integrations and
+get started with native and third-party integrations.
+
+==== In this guide
+
+* link:#find[Find integrations]
+* link:#api[Generate an API key]
+
+'''''
+
+[[find]]
+=== Find integrations
+
+You can find a list of integrations Sendlane supports in your account or
+on the
+https://partnerdirectory.sendlane.com/tech-partners#directoryApp[integrations
+marketplace].
+
+To view available integrations in your account:
+
+. Click the *Account* icon
+. Click *Integrations*
+. Use the search bar or filters to find your integration
+
+Most integrations are "third-party," meaning Sendlane doesn't control
+them. These integrations generally require an API key for setup, and
+sometimes, a Sendlane custom integration is used to access all features
+like
+https://help.sendlane.com/article/521-how-to-create-a-custom-api-call[event
+tracking].
+
+You'll find links to setup guides for third-party integrations in the
+integration's card on the integrations page in Sendlane. If the
+integration only requires an API key from Sendlane, the guide will
+likely link to the integration creator's documentation. If the
+integration requires additional work in Sendlane, it will likely link to
+an article in this knowledge base.
+
+[[api]]
+=== Generate an API key
+
+Review
+https://help.sendlane.com/article/706-how-to-generate-authorization-tokens[How
+to generate API and custom integration authorization tokens] for
+detailed instructions on generating whatever type of authentication your
+integration requires.
+
+=== Next steps
+
+If you're following Sendlane's onboarding guides, you've now completed
+guide two! We highly recommend completing the guides in the order they
+appear below:
+
+https://help.sendlane.com/article/489-email-onboarding-guide[Getting
+started with Sendlane]
+
+ Getting started with integrations
+
+https://help.sendlane.com/article/756-getting-started-with-email-warming[Getting
+started with warming]
+
+https://help.sendlane.com/article/73-automations[Getting started with
+automations]
+
+https://help.sendlane.com/article/634-getting-started-with-sendlane-forms[Getting
+started with forms]
+
+https://help.sendlane.com/article/761-getting-started-with-coupons[Getting
+started with coupons]

@@ -1,1 +1,2 @@
-* xref:custom-integration:start.adoc[Getting Started with Custom Integration]
+* xref:customintegration:start.adoc[Getting Started with Custom Integration]
+* include::_partials$nav-getting-started.adoc[]

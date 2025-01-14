@@ -1,0 +1,91 @@
+name: Feature
+description: Request a new feature for the documentation site
+title: "[FEATURE]: "
+labels: ["feature", "site-enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a new documentation site feature!
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Brief description of the documentation site feature needed
+      placeholder: This feature would allow...
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Why we need this feature / what problem it solves
+      placeholder: This solves the problem of...
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: List the requirements for this feature
+      value: |
+        - [ ] Requirement 1
+        - [ ] Requirement 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-considerations
+    attributes:
+      label: Technical Considerations
+      description: Technical aspects to consider
+      value: |
+        - Integration with Antora:
+        - Impact on existing content:
+        - Dependencies:
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-tasks
+    attributes:
+      label: Implementation Tasks
+      description: Steps needed to implement this feature
+      value: |
+        - [ ] Research possible solutions
+        - [ ] Choose implementation method
+        - [ ] Create proof of concept
+        - [ ] Document implementation
+        - [ ] Test in development
+        - [ ] Document usage for other writers (if applicable)
+    validations:
+      required: true
+
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria
+      description: What needs to be true for this to be considered complete
+      placeholder: This feature will be complete when...
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any other context or ideas
+    validations:
+      required: false
+
+  - type: input
+    id: estimate
+    attributes:
+      label: Estimate
+      description: Estimated story points
+      placeholder: "5"
+    validations:
+      required: false

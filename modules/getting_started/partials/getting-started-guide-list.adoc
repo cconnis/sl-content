@@ -1,0 +1,8 @@
+We highly recommend completing the remaining of the guides in the order they appear below:
+
+. https://help.sendlane.com/article/489-email-onboarding-guide[Getting started with Sendlane]
+. https://help.sendlane.com/article/749-getting-started-with-integrations[Getting started with integrations]
+. https://help.sendlane.com/article/756-getting-started-with-email-warming[Getting started with warming]
+. https://help.sendlane.com/article/73-automations[Getting started with automations]
+. https://help.sendlane.com/article/634-getting-started-with-sendlane-forms[Getting started with forms]
+. https://help.sendlane.com/article/761-getting-started-with-coupons[Getting started with coupons]

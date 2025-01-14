@@ -1,0 +1,43 @@
+:last-update-label:
+[#top]
+= Sendlane's free trial
+:page-title: Sendlane's free trial  // Default page title, modify per article
+:page-aliases:  // Add aliases as /path/to/old/url
+:page-status: draft  // Options: draft, in-review, published, deprecated
+:page-description:  // Optimize for SEO
+:author: Author Name
+:keywords: keyword1, keyword2
+:page-diataxis: explanation // Options: explanation (explaining a concept not guiding users through a process), how-to (guiding users through a process with a prescriptive outcome), reference, tutorial (teaches users a new concept)
+
+// Article content starts here
+[#abstract]
+[abstract]
+--
+This article explains the details of Sendlane's free trial to help prospective Sendlane customers evaluate Sendlane.
+--
+
+[#intro]
+== Introduction
+Sendlane's free trial offers the ability to test drive all of Sendlane's email-based features for 60 days.
+
+You can collect up to 100 https://help.sendlane.com/article/188-contacts[Contacts] and send up to 500 https://help.sendlane.com/category/167-campaigns[emails] during your free trial.
+When you're ready to move up to a paid account https://help.sendlane.com/article/435-changing-your-subscription-plan[you can upgrade in Sendlane].
+
+== Create a Sendlane account
+
+To redeem your free 60-day trial and create a Sendlane account, https://sendlane.com/register[visit the registration page], enter your new account details and click *Get Started*.
+
+Sendlane complies with all local, state, and federal regulations regarding data processing, privacy, and marketing content.
+
+Current regulations specify that only https://help.sendlane.com/article/108-business-website-company-email[business/custom domain email address] can be used to send marketing emails.
+Email addresses from free email service providers such as Gmail, Yahoo, or Microsoft cannot be used to sign up for a Sendlane account.
+
+== Activate Your Sendlane Account
+
+Once you create your account, you'll receive an email confirming your registration. Click the *_Verify my email_* button in the email to verify your email address and get started with Sendlane!
+
+If you don't receive an activation email within five minutes of submitting your registration form, please check your spam and junk folders.
+
+While free trials cannot be extended, you can always continue with your
+Sendlane account after the initial 60 days.
+Navigate to the https://app.sendlane.com/billing[Billing page] and click *Upgrade* to convert your free trial to an ongoing plan!
